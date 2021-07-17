@@ -1,0 +1,47 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.417 --> 00:00:03.439
+Bem-vindo à aula
+sobre estruturas de dados.
+
+00:00:03.472 --> 00:00:06.239
+Até agora lidamos com variáveis
+que representam
+
+00:00:06.272 --> 00:00:08.439
+tipos de dados básicos
+individuais,
+
+00:00:08.472 --> 00:00:12.511
+como inteiros, frações,
+booleanos e strings.
+
+00:00:12.544 --> 00:00:16.334
+Nesta aula, agruparemos
+e ordenaremos os tipos de dados
+
+00:00:16.367 --> 00:00:18.311
+em diferentes
+estruturas de dados:
+
+00:00:18.344 --> 00:00:21.814
+em listas, tuplas, conjuntos,
+
+00:00:21.847 --> 00:00:24.862
+dicionários
+e estruturas compostas de dados.
+
+00:00:24.895 --> 00:00:28.761
+Também veremos os dois últimos
+tipos de operadores no Python,
+
+00:00:28.794 --> 00:00:31.104
+o de associação
+e o de identidade,
+
+00:00:31.137 --> 00:00:35.042
+além das funções e dos métodos.
+Vamos começar.
+

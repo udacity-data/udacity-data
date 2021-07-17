@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.332 --> 00:00:02.995
+ESTRUTURAS DE DADOS COMPOSTOS
+
+00:00:03.028 --> 00:00:05.705
+No dicionário de elementos
+que vimos,
+
+00:00:05.738 --> 00:00:07.927
+os nomes dos elementos -
+que são strings -
+
+00:00:07.960 --> 00:00:10.235
+são mapeados
+para os números atômicos -
+
+00:00:10.268 --> 00:00:11.547
+que são inteiros.
+
+00:00:11.580 --> 00:00:14.059
+Mas e se quiséssemos
+armazenar mais informações
+
+00:00:14.092 --> 00:00:17.740
+sobre cada elemento,
+como o peso e o símbolo?
+
+00:00:17.773 --> 00:00:20.475
+Podemos fazer isso ajustando
+o dicionário,
+
+00:00:20.508 --> 00:00:22.693
+para que ele mapeie
+os nomes dos elementos
+
+00:00:22.726 --> 00:00:24.011
+para outro dicionário
+
+00:00:24.044 --> 00:00:26.320
+que armazene
+a coleção de dados.
+
+00:00:26.353 --> 00:00:28.967
+Podemos procurar por informações
+sobre uma entrada
+
+00:00:29.000 --> 00:00:30.515
+neste dicionário aninhado
+
+00:00:30.548 --> 00:00:32.652
+da mesma forma
+que fizemos antes,
+
+00:00:32.685 --> 00:00:35.707
+usando os colchetes
+ou o método get.
+
+00:00:35.740 --> 00:00:40.628
+Podemos procurar por informações
+específicas do dicionário assim.
+
+00:00:40.661 --> 00:00:43.643
+O código está procurando
+pela chave "hélio"
+
+00:00:43.676 --> 00:00:45.285
+no dicionário de elementos,
+
+00:00:45.318 --> 00:00:48.220
+produzindo o dicionário hélio.
+
+00:00:48.253 --> 00:00:50.146
+A segunda busca – a do peso -
+
+00:00:50.179 --> 00:00:53.820
+procurará pela chave "weight"
+no dicionário hélio
+
+00:00:53.853 --> 00:00:55.886
+para encontrar o peso atômico
+do hélio.
+

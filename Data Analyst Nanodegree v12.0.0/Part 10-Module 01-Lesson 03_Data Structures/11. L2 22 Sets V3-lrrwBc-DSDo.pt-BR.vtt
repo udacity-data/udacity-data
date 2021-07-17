@@ -1,0 +1,140 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.703 --> 00:00:03.510
+ESTRUTURAS DE DADOS
+E OPERADORES CONJUNTOS
+
+00:00:03.543 --> 00:00:05.919
+Imagine que você administra
+um motor de busca
+
+00:00:05.952 --> 00:00:09.806
+e pesquisou entre seus usuários
+para ver de onde navegam.
+
+00:00:09.839 --> 00:00:12.583
+Você coletou 785 respostas
+
+00:00:12.616 --> 00:00:16.093
+e as juntou
+em uma lista de países.
+
+00:00:16.126 --> 00:00:19.079
+Não existem 785 países
+no mundo,
+
+00:00:19.112 --> 00:00:22.751
+então há entradas repetidas
+na lista de países.
+
+00:00:22.784 --> 00:00:26.991
+Fatiar a lista para ver os primeiros
+elementos confirmará isso.
+
+00:00:27.024 --> 00:00:29.694
+Será útil remover
+as repetições
+
+00:00:29.727 --> 00:00:32.030
+para produzir uma lista
+de todos os países
+
+00:00:32.063 --> 00:00:33.886
+dos quais os usuários
+navegam.
+
+00:00:33.919 --> 00:00:37.047
+Os conjuntos, no Python,
+fazem exatamente isso,
+
+00:00:37.080 --> 00:00:39.728
+pois são contêineres
+de elementos únicos
+
+00:00:39.761 --> 00:00:41.896
+sem nenhuma ordem em especial.
+
+00:00:41.929 --> 00:00:45.519
+Podemos criar um a partir
+de uma lista desta forma.
+
+00:00:45.552 --> 00:00:47.600
+O conjunto
+remove as repetições
+
+00:00:47.633 --> 00:00:50.173
+e a função print
+imprime os valores únicos,
+
+00:00:50.206 --> 00:00:53.372
+resultando em 196 países.
+
+00:00:53.405 --> 00:00:57.404
+O conjunto suporta a operação in
+da mesma forma que as listas.
+
+00:00:57.437 --> 00:00:59.714
+A Índia está neste conjunto.
+
+00:01:00.330 --> 00:01:02.507
+Podemos adicionar elementos
+aos conjuntos,
+
+00:01:02.540 --> 00:01:05.729
+mas não usamos o método append
+que usamos com as listas.
+
+00:01:05.762 --> 00:01:08.426
+Em vez disso,
+usamos o método add.
+
+00:01:08.459 --> 00:01:10.802
+Aqui a Itália foi adicionada.
+
+00:01:10.835 --> 00:01:12.936
+O conjunto também possui
+um método pop(),
+
+00:01:12.969 --> 00:01:14.327
+assim como a lista.
+
+00:01:14.360 --> 00:01:16.601
+Ao pegarmos um elemento
+de um conjunto,
+
+00:01:16.634 --> 00:01:18.760
+um elemento aleatório
+será removido.
+
+00:01:18.793 --> 00:01:22.534
+Os conjuntos – ao contrário
+das listas - não têm ordem,
+
+00:01:22.567 --> 00:01:24.948
+então não há último elemento.
+
+00:01:24.981 --> 00:01:27.808
+Outras operações que podemos
+realizar com os conjuntos
+
+00:01:27.841 --> 00:01:30.470
+incluem aquelas
+dos conjuntos matemáticos.
+
+00:01:30.503 --> 00:01:34.422
+Métodos como união,
+intersecção e diferença
+
+00:01:34.455 --> 00:01:36.479
+são mais fáceis
+com os conjuntos
+
+00:01:36.512 --> 00:01:38.826
+e são bem mais rápidos
+do que os operadores
+
+00:01:38.859 --> 00:01:40.308
+nos outros contêineres.
+

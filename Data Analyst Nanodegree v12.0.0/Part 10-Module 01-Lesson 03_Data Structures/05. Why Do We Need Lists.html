@@ -1,0 +1,437 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Why Do We Need Lists?
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Structures
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Lists and Membership Operators.html">
+       02. Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Quiz Lists and Membership Operators.html">
+       03. Quiz: Lists and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution List and Membership Operators.html">
+       04. Solution: List and Membership Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Why Do We Need Lists.html">
+       05. Why Do We Need Lists?
+      </a>
+     </li>
+     <li class="">
+      <a href="06. List Methods.html">
+       06. List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Quiz List Methods.html">
+       07. Quiz: List Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Check for Understanding Lists.html">
+       08. Check for Understanding: Lists
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Tuples.html">
+       09. Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Quiz Tuples.html">
+       10. Quiz: Tuples
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Sets.html">
+       11. Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Quiz Sets.html">
+       12. Quiz: Sets
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Dictionaries and Identity Operators.html">
+       13. Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Quiz Dictionaries and Identity Operators.html">
+       14. Quiz: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Solution Dictionaries and Identity Operators.html">
+       15. Solution: Dictionaries and Identity Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Quiz More With Dictionaries.html">
+       16. Quiz: More With Dictionaries
+      </a>
+     </li>
+     <li class="">
+      <a href="17. When to Use Dictionaries.html">
+       17. When to Use Dictionaries?
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Check for Understanding Data Structures.html">
+       18. Check for Understanding: Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Compound Data Structures.html">
+       19. Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Quiz Compound Data Structures.html">
+       20. Quiz: Compound Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Solution Compound Data Structions.html">
+       21. Solution: Compound Data Structions
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Practice Questions.html">
+       22. Practice Questions
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Solution Practice Questions.html">
+       23. Solution: Practice Questions
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Conclusion.html">
+       24. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          05. Why Do We Need Lists?
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="why-do-we-need-lists">
+          Why Do We Need Lists?
+         </h2>
+         <p>
+          <br/>
+          <br>
+           Let's talk about why we need a data structure like a list or when to use it. We will borrow an example from the world of Wall Street for this discussion.
+          </br>
+         </p>
+         <p>
+          Companies listed on the NASDAQ exchange have ticker symbols or abbreviations for each company name. For e.g., the ticker symbol for Alphabet, Inc. is GOOGL.
+         </p>
+         <p>
+          Imagine now that you own stocks for one company, say Microsoft, and want to be able to print out the ticker symbol of your stock. Since it is one value,  you can store it in the variable
+          <code>
+           microsoft
+          </code>
+          , and assign it the value of MSFT. Like this:
+         </p>
+         <p>
+          <code>
+           microsoft = MSFT
+          </code>
+         </p>
+         <p>
+          Well, that's convenient! So, now when you want to print the ticker symbol for the company you hold stocks for, you use the print command.
+          <br/>
+          ```
+          <br/>
+          print(microsoft)
+         </p>
+         <blockquote>
+          <blockquote>
+           <blockquote>
+            <p>
+             MSFT ```
+            </p>
+           </blockquote>
+          </blockquote>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Let's now consider that you are an investment fund manager, and you want to print out the stocks (or holdings) you own in an index fund (e.g.,
+          <a href="https://www.marketwatch.com/investing/fund/vinix/holdings" rel="noopener noreferrer" target="_blank">
+           Vanguard Institutional Index Fund
+          </a>
+          ). An index fund includes stocks (also called holdings) for a large number of companies. Turns out Vanguard Institutional Index Fund has
+          <a href="https://investor.vanguard.com/mutual-funds/profile/VINIX" rel="noopener noreferrer" target="_blank">
+           506 holdings
+          </a>
+          !
+         </p>
+         <p>
+          Printing the tickets for all 506 holdings using individual strings would require 506 strings.
+          <em>
+           Not ideal!
+          </em>
+          Because we'll need to remember the name of each string to print it.
+          <br/>
+          <br>
+           You also have to think about how  to group the 506 strings under the same index fund.
+           <em>
+            Not convenient at all!
+           </em>
+          </br>
+         </p>
+         <p>
+          ** This is where the beauty of data structures comes into play!  You can use a list.**
+         </p>
+         <p>
+          Since index funds have ticker symbols too, you use that as the name for the list, here VINIX, and add the ticker symbols for all the holdings into that list. Let's populate the list with the top holdings listed for
+          <a href="https://www.marketwatch.com/investing/fund/vinix/holdings" rel="noopener noreferrer" target="_blank">
+           Vanguard Institutional Index Fund
+          </a>
+          .
+         </p>
+         <pre><code>VINIX = ['C', 'MA', 'BA', 'PG', 'CSCO', 'VZ', 'PFE', 'HD', 'INTC', 'T', 'V', 'UNH', 'WFC', 'CVX', 'BAC', 'JNJ', 'GOOGL', 'GOOG', 'BRK.B', 'XOM', 'JPM', 'FB', 'AMZN', 'MSFT', 'AAPL']```
+
+Now, printing the tickers becomes slightly easier. And you don't have to remember the names of the strings!</code></pre>
+         <p>
+          <br/>
+          print(VINIX[0])
+         </p>
+         <blockquote>
+          <blockquote>
+           <blockquote>
+            <p>
+             C
+             <br/>
+             print(VINIX[1])
+             <br/>
+             MA
+            </p>
+           </blockquote>
+          </blockquote>
+         </blockquote>
+         <pre><code>_Later you will learn about more efficient ways to print the elements in a list._
+
+You can even use the list to see if a particular stock ** is in** the index fund ` VINIX` or not. &lt;br&gt;
+Like this:</code></pre>
+         <p>
+          'GE' in VINIX
+         </p>
+         <blockquote>
+          <blockquote>
+           <blockquote>
+            <p>
+             False
+            </p>
+           </blockquote>
+          </blockquote>
+         </blockquote>
+         <p>
+          'GOOGL' in VINIX
+         </p>
+         <blockquote>
+          <blockquote>
+           <blockquote>
+            <p>
+             True
+             <br/>
+             ```
+            </p>
+           </blockquote>
+          </blockquote>
+         </blockquote>
+         <p>
+          <em>
+           We'll revisit this example of Wall Street later in the lesson to show how data structures can add even more details!
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="06. List Methods.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. Why Do We Need Lists?')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
