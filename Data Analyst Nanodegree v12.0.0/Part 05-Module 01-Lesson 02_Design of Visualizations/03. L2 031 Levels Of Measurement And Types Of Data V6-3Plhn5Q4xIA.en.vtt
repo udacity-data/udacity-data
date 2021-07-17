@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.750 --> 00:00:07.629
+In order to choose an appropriate plot for your data,
+
+00:00:07.629 --> 00:00:10.195
+you need to understand the types of the data you have.
+
+00:00:10.195 --> 00:00:14.345
+One common method divide data into four data types: Nominal,
+
+00:00:14.345 --> 00:00:17.589
+ordinal, interval and ratio.
+
+00:00:17.589 --> 00:00:21.370
+The first two are known as qualitative or categorical types while
+
+00:00:21.370 --> 00:00:25.330
+the last two are known as quantitative or numeric types.
+
+00:00:25.329 --> 00:00:28.779
+Furthermore, quantitative types include a second kind of
+
+00:00:28.780 --> 00:00:32.740
+classification: Discrete or continuous.
+
+00:00:32.740 --> 00:00:38.395
+Features that are categorical are those that act as non-numeric labels on the data.
+
+00:00:38.395 --> 00:00:42.685
+Nominal data are pure labels without any natural ordering.
+
+00:00:42.685 --> 00:00:44.890
+Examples of this include things like,
+
+00:00:44.890 --> 00:00:47.564
+movie genre or country.
+
+00:00:47.564 --> 00:00:51.349
+Ordinal variables are also labels but unlike
+
+00:00:51.350 --> 00:00:54.844
+nominal variables these include an intrinsic ordering.
+
+00:00:54.844 --> 00:00:57.710
+Examples of this type of variable include,
+
+00:00:57.710 --> 00:01:01.984
+letter grade on a test or ranking at the end of a competition.
+
+00:01:01.984 --> 00:01:06.010
+While categorical variables might be recorded numerically,
+
+00:01:06.010 --> 00:01:10.280
+we should not make the mistake of performing numeric operations with them.
+
+00:01:10.280 --> 00:01:12.890
+For example, let's say that the rankings
+
+00:01:12.890 --> 00:01:15.530
+above come from a list of the best books of the year.
+
+00:01:15.530 --> 00:01:20.974
+We wouldn't expect the goodness of the first and second place books combined to
+
+00:01:20.974 --> 00:01:23.530
+equal that of the third place book or
+
+00:01:23.530 --> 00:01:27.400
+that the second and third place books some of to the first place book.
+
+00:01:27.400 --> 00:01:31.525
+You can only say that first place is better than second place,
+
+00:01:31.525 --> 00:01:33.625
+and second place is better than third,
+
+00:01:33.625 --> 00:01:35.644
+but not by how much.
+
+00:01:35.644 --> 00:01:39.289
+Knowing the difference between first second doesn't necessarily
+
+00:01:39.290 --> 00:01:43.250
+tell you that the difference between second third will be the same.
+
+00:01:43.250 --> 00:01:45.829
+Quantitative data on the other hand,
+
+00:01:45.829 --> 00:01:49.700
+take numerical values that allow for mathematical operations.
+
+00:01:49.700 --> 00:01:51.620
+For interval type data,
+
+00:01:51.620 --> 00:01:54.500
+differences between numeric values are meaningful.
+
+00:01:54.500 --> 00:01:56.885
+Examples of this type of variable include,
+
+00:01:56.885 --> 00:01:59.840
+year or temperature in Celsius.
+
+00:01:59.840 --> 00:02:02.990
+An increase or decrease of one point will
+
+00:02:02.989 --> 00:02:06.664
+mean the same thing no matter what you have at each scale.
+
+00:02:06.665 --> 00:02:10.430
+Ratio type data also allows for difference comparisons,
+
+00:02:10.430 --> 00:02:13.099
+but also requires an additional property.
+
+00:02:13.099 --> 00:02:15.859
+For a variable to be considered ratio type,
+
+00:02:15.860 --> 00:02:20.525
+there must be a meaningful zero point such that ratio judgments are meaningful.
+
+00:02:20.525 --> 00:02:24.485
+Consider the earlier example regarding temperature in Celsius.
+
+00:02:24.485 --> 00:02:26.600
+Since temperature is interval,
+
+00:02:26.599 --> 00:02:29.155
+the difference between five degrees and 10 degrees
+
+00:02:29.155 --> 00:02:32.265
+is the same as that between 10 and 15 degrees.
+
+00:02:32.264 --> 00:02:35.344
+But Celsius is not a ratio type variable.
+
+00:02:35.344 --> 00:02:38.090
+You wouldn't say that 10 degrees is twice as hot as
+
+00:02:38.090 --> 00:02:42.125
+five degrees or 15 degrees three times as hot as five.
+
+00:02:42.125 --> 00:02:47.330
+Examples of ratio type data include: the length of a document by word count,
+
+00:02:47.330 --> 00:02:50.165
+or measurement of mass in kilograms.
+
+00:02:50.164 --> 00:02:53.870
+All quantitative variables, whether interval or ratio
+
+00:02:53.870 --> 00:02:58.189
+type can also be classified as discrete or continuous.
+
+00:02:58.189 --> 00:03:02.479
+Discrete quantitative variables can only take on specific values,
+
+00:03:02.479 --> 00:03:05.704
+while continuous variables can take on any value.
+
+00:03:05.705 --> 00:03:09.635
+Year and word count are examples of discrete variables.
+
+00:03:09.634 --> 00:03:12.349
+They can only take on integer values.
+
+00:03:12.349 --> 00:03:16.775
+Temperature and mass are examples of continuous variables.
+
+00:03:16.775 --> 00:03:20.120
+These variables can take on any number of decimal values,
+
+00:03:20.120 --> 00:03:23.909
+if we had instruments capable of recording them with that precision.
+
+00:03:23.909 --> 00:03:25.799
+Cut.
+

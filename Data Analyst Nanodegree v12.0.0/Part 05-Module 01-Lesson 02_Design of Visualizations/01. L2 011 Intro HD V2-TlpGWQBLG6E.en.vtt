@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.640
+Before you start making visualizations,
+
+00:00:02.640 --> 00:00:05.610
+we'll first talk about the design of visualizations.
+
+00:00:05.610 --> 00:00:08.714
+When it comes to explanatory data visualizations,
+
+00:00:08.714 --> 00:00:12.210
+it is important to adhere to good design principles in order to make
+
+00:00:12.210 --> 00:00:15.945
+sure that your findings are conveyed accurately and clearly.
+
+00:00:15.945 --> 00:00:19.335
+Otherwise, you run the risk of your audience not following your story,
+
+00:00:19.335 --> 00:00:22.890
+or worse, misled to the wrong conclusions.
+
+00:00:22.890 --> 00:00:25.530
+Design principles are also useful during
+
+00:00:25.530 --> 00:00:28.725
+the exploratory phase of the data analysis process.
+
+00:00:28.725 --> 00:00:32.745
+After all, there is still an audience present here, yourself.
+
+00:00:32.744 --> 00:00:37.829
+By using design principles to select an appropriate plot in useful encodings,
+
+00:00:37.829 --> 00:00:40.769
+you'll be able to learn from the data in an efficient manner.
+

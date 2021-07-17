@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.580
+In this lesson, you learned about a number of
+
+00:00:02.580 --> 00:00:05.700
+different aspects regarding the design of visualizations.
+
+00:00:05.700 --> 00:00:08.250
+You first learn about levels of measurement.
+
+00:00:08.250 --> 00:00:10.904
+Depending on the types of data you want to plot,
+
+00:00:10.904 --> 00:00:14.445
+qualitative or quantitative, discrete or continuous,
+
+00:00:14.445 --> 00:00:17.804
+there will be different plot types that are best suited for the job.
+
+00:00:17.804 --> 00:00:20.879
+Your choice of visual encodings such as position,
+
+00:00:20.879 --> 00:00:24.375
+color, and shape will depend on the types of data you plot.
+
+00:00:24.375 --> 00:00:27.765
+You will see this in action in the upcoming lessons.
+
+00:00:27.765 --> 00:00:30.530
+You also learned about design elements that can
+
+00:00:30.530 --> 00:00:33.620
+interfere with the clarity and accuracy of your plots.
+
+00:00:33.619 --> 00:00:37.129
+By being mindful of chart junk, data-ink ratios,
+
+00:00:37.130 --> 00:00:39.320
+and life factors, you can ensure that
+
+00:00:39.320 --> 00:00:42.829
+your visualizations present their messages at their best.
+
+00:00:42.829 --> 00:00:45.170
+While these concepts are most pertinent during
+
+00:00:45.170 --> 00:00:47.600
+the creation of explanatory visualizations,
+
+00:00:47.600 --> 00:00:51.710
+your awareness of these issues will also be useful during exploration.
+
+00:00:51.710 --> 00:00:53.780
+This will ensure that you come up with
+
+00:00:53.780 --> 00:00:56.660
+the proper conclusions before sharing them with others.
+
