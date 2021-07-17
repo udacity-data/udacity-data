@@ -1,0 +1,150 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:02.747
+INTERPRETANDO RESULTADOS
+DE REGRESSÃO LINEAR MÚLTIPLA
+
+00:00:02.780 --> 00:00:07.858
+Utilizando o que aprendemos
+ao comparar as duas variáveis,
+
+00:00:07.891 --> 00:00:12.379
+já entendemos muito sobre modelos
+de regressão linear múltipla.
+
+00:00:12.412 --> 00:00:17.178
+Essencialmente é como quando
+usamos uma variável explanatória,
+
+00:00:17.211 --> 00:00:19.882
+exceto que, ao interpretarmos
+os coeficientes,
+
+00:00:19.915 --> 00:00:21.338
+adicionamos a instrução
+
+00:00:21.371 --> 00:00:24.139
+para segurar a constante
+de outras variáveis.
+
+00:00:24.172 --> 00:00:26.297
+O que exatamente
+isso significa?
+
+00:00:26.330 --> 00:00:29.101
+Se quisermos interpretar
+este coeficiente
+
+00:00:29.134 --> 00:00:31.306
+anexado à metragem quadrada
+da casa,
+
+00:00:31.339 --> 00:00:35.658
+diremos que, para cada ampliação
+na metragem da casa,
+
+00:00:35.691 --> 00:00:39.730
+o preço aumentaria
+em $ 345,91,
+
+00:00:39.763 --> 00:00:43.033
+desde que as outras variáveis
+continuem as mesmas.
+
+00:00:43.066 --> 00:00:47.994
+Se observamos que estas casas
+possuem um banheiro e um quarto,
+
+00:00:48.027 --> 00:00:51.370
+mas que uma das casas
+tem 1m² a mais,
+
+00:00:51.403 --> 00:00:55.513
+esperamos que o preço
+seja $ 345,91 mais alto.
+
+00:00:55.546 --> 00:01:00.089
+Essa interpretação, que é
+quase igual à da aula anterior,
+
+00:01:00.122 --> 00:01:03.632
+é o que faremos para cada
+variável quantitativa
+
+00:01:03.665 --> 00:01:06.135
+no modelo
+de regressão linear múltipla.
+
+00:01:06.168 --> 00:01:09.327
+Além disso,
+se observarmos os valores P,
+
+00:01:09.360 --> 00:01:12.875
+teremos algum contexto
+para saber se uma variável
+
+00:01:12.908 --> 00:01:15.391
+se relaciona estatisticamente
+com a resposta.
+
+00:01:15.424 --> 00:01:17.703
+Essa não é a única conferência
+a ser feita,
+
+00:01:17.736 --> 00:01:22.983
+mas é algo rápido para entender
+quais relações importam.
+
+00:01:23.016 --> 00:01:26.519
+Dois pontos de aprofundamento
+vêm desses exercícios.
+
+00:01:26.552 --> 00:01:29.823
+Primeiro perceba
+que observar a relação
+
+00:01:29.856 --> 00:01:33.207
+somente entre a quantidade
+de banheiros e o preço
+
+00:01:33.240 --> 00:01:35.832
+mostrou uma relação
+estatisticamente significante,
+
+00:01:35.865 --> 00:01:39.455
+mas, ao observar
+todas as variáveis de uma vez,
+
+00:01:39.488 --> 00:01:41.543
+essa relação desapareceu.
+
+00:01:41.576 --> 00:01:44.080
+Há alguns motivos
+para isso ter acontecido,
+
+00:01:44.113 --> 00:01:46.415
+e exploraremos isso
+no próximo conceito.
+
+00:01:46.448 --> 00:01:50.286
+Segundo, ao adicionarmos
+variáveis quantitativas ao modelo,
+
+00:01:50.319 --> 00:01:53.062
+isso funcionou
+como na aula anterior,
+
+00:01:53.095 --> 00:01:55.254
+mas e as variáveis
+categóricas?
+
+00:01:55.287 --> 00:01:58.224
+Quando tentamos adicioná-las,
+tudo quebrou.
+
+00:01:58.257 --> 00:02:01.387
+Vamos explorar esses dois pontos
+um pouco mais.
+

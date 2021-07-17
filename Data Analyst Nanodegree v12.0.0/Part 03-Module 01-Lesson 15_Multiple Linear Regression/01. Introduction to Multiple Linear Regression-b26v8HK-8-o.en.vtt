@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.690 --> 00:00:06.189
+In the last lesson, you learned about how you can predict
+
+00:00:06.190 --> 00:00:10.929
+the response variable using a single explanatory variable in simple linear regression.
+
+00:00:10.929 --> 00:00:14.115
+In this lesson, you'll extend that knowledge further.
+
+00:00:14.115 --> 00:00:18.690
+You will learn about how you can predict a response variable by using multiple inputs,
+
+00:00:18.690 --> 00:00:22.335
+including both quantitative and categorical variables.
+
+00:00:22.335 --> 00:00:24.929
+With your understanding of simple linear regression,
+
+00:00:24.929 --> 00:00:28.620
+you're in a great position to master the ideas in this lesson.
+
+00:00:28.620 --> 00:00:30.164
+At the end of this lesson,
+
+00:00:30.164 --> 00:00:34.109
+you will learn not only how to build multiple linear regression models in Python,
+
+00:00:34.109 --> 00:00:37.950
+but you will also learn the pros and cons of this modeling technique,
+
+00:00:37.950 --> 00:00:40.020
+and how to interpret your results.
+
+00:00:40.020 --> 00:00:42.240
+For those who like additional resources,
+
+00:00:42.240 --> 00:00:45.785
+I've linked a full text of introduction to statistical learning.
+
+00:00:45.784 --> 00:00:47.359
+This is a great book.
+
+00:00:47.359 --> 00:00:51.325
+Chapter three specifically, is a great resource for this lesson.
+
+00:00:51.325 --> 00:00:53.000
+With that, let's get started.
+

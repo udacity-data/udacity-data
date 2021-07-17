@@ -1,0 +1,165 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.179 --> 00:00:03.276
+INTERPRETANDO INTERAÇÕES
+
+00:00:03.309 --> 00:00:07.197
+Sempre que adicionarmos funções
+de ordem superior ou de interação,
+
+00:00:07.230 --> 00:00:10.612
+devemos adicionar
+as funções de ordem inferior.
+
+00:00:10.645 --> 00:00:14.546
+Vimos como podemos identificar
+um relacionamento quadrático
+
+00:00:14.579 --> 00:00:17.124
+e que as funções de ordem
+superior podem ser úteis
+
+00:00:17.157 --> 00:00:19.457
+quando vemos muitas curvas
+na relação
+
+00:00:19.490 --> 00:00:21.972
+entre a resposta
+e as variáveis explanatórias.
+
+00:00:22.005 --> 00:00:25.242
+Mas como saber quando devemos
+adicionar um termo de interação?
+
+00:00:25.275 --> 00:00:28.612
+Por que adicionaríamos
+algo parecido a isso ao modelo?
+
+00:00:28.645 --> 00:00:31.955
+Vejamos um pequeno exemplo
+para demonstrar a ideia.
+
+00:00:31.988 --> 00:00:33.871
+Ao adicionarmos
+termos de interação,
+
+00:00:33.904 --> 00:00:38.380
+observamos se a relação
+da variável X1 com a resposta Y
+
+00:00:38.413 --> 00:00:41.332
+depende de outra variável X2.
+
+00:00:41.365 --> 00:00:44.468
+Como exemplo, imagine que,
+para a vizinhança A,
+
+00:00:44.501 --> 00:00:47.285
+a relação entre
+a metragem quadrada da casa
+
+00:00:47.318 --> 00:00:49.829
+e o preço seja desta forma.
+
+00:00:49.862 --> 00:00:51.533
+E que, para a vizinhança B,
+
+00:00:51.566 --> 00:00:55.676
+a relação entre a metragem quadrada
+da casa e o preço seja esta.
+
+00:00:55.709 --> 00:00:59.604
+Vemos que os ângulos das linhas
+que melhor encaixam
+
+00:00:59.637 --> 00:01:01.997
+cada conjunto de dados
+são os mesmos.
+
+00:01:02.030 --> 00:01:04.862
+Embora esta vizinhança
+tenha casas mais caras
+
+00:01:04.895 --> 00:01:06.684
+pela mesma metragem,
+
+00:01:06.717 --> 00:01:09.373
+isso é devido
+às variáveis fictícias,
+
+00:01:09.406 --> 00:01:12.311
+pois o espaço entre as duas linhas
+é consistente.
+
+00:01:12.344 --> 00:01:16.453
+Independentemente da vizinhança,
+o aumento será o mesmo,
+
+00:01:16.486 --> 00:01:19.749
+representado por este coeficiente
+no nosso modelo.
+
+00:01:19.782 --> 00:01:24.708
+Porém, imagine uma relação
+como esta para a vizinhança B.
+
+00:01:24.741 --> 00:01:27.571
+Vemos que os ângulos
+destas duas linhas
+
+00:01:27.604 --> 00:01:30.844
+não combinam mais.
+Para representar isso,
+
+00:01:30.877 --> 00:01:33.852
+adicionaríamos um termo
+de interação entre a vizinhança
+
+00:01:33.885 --> 00:01:36.517
+e a metragem da casa
+ao modelo, desta forma.
+
+00:01:36.550 --> 00:01:38.980
+Aqui vemos que a forma
+como a metragem
+
+00:01:39.013 --> 00:01:40.687
+se relaciona
+com o valor da casa
+
+00:01:40.720 --> 00:01:43.396
+depende da vizinhança,
+
+00:01:43.429 --> 00:01:46.811
+ou que a forma da relação
+entre X1 e Y
+
+00:01:46.844 --> 00:01:49.074
+depende do valor de X2.
+
+00:01:49.107 --> 00:01:50.962
+A questão de adicionar
+uma interação
+
+00:01:50.995 --> 00:01:54.595
+depende da igualdade
+entre os ângulos.
+
+00:01:54.628 --> 00:01:56.516
+Se eles forem próximos
+à igualdade,
+
+00:01:56.549 --> 00:01:58.474
+então não adicionamos
+uma interação.
+
+00:01:58.507 --> 00:02:01.082
+Porém,
+se eles não forem iguais,
+
+00:02:01.115 --> 00:02:04.624
+isso indica que devemos adicionar
+uma interação ao modelo.
+

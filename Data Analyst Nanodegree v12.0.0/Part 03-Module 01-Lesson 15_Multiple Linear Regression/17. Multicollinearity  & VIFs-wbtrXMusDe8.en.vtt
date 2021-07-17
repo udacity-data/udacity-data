@@ -1,0 +1,214 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.399
+One of the main assumptions of multiple linear regression models,
+
+00:00:03.399 --> 00:00:07.349
+is that our predictor variables are uncorrelated with one another.
+
+00:00:07.349 --> 00:00:10.734
+We want our predictor variables to be correlated with our response,
+
+00:00:10.734 --> 00:00:12.734
+but not with one another.
+
+00:00:12.734 --> 00:00:15.939
+In this example where we're looking at the characteristics of homes,
+
+00:00:15.939 --> 00:00:18.114
+you can imagine that the size of the home,
+
+00:00:18.114 --> 00:00:19.539
+the number of bedrooms,
+
+00:00:19.539 --> 00:00:23.460
+the number of bathrooms are all pretty related to one another.
+
+00:00:23.460 --> 00:00:28.150
+We might expect larger homes to have more bedrooms and more bathrooms.
+
+00:00:28.149 --> 00:00:30.714
+We can get a quick look at the relationships between
+
+00:00:30.714 --> 00:00:34.189
+each pair of variables in our dataset using seaborn.
+
+00:00:34.189 --> 00:00:36.684
+Here you can see I read in seaborn as sb,
+
+00:00:36.685 --> 00:00:40.425
+and I'm using matplotlib inline so that will see the graphics.
+
+00:00:40.424 --> 00:00:43.629
+Seaborn has this really nice thing called a pairplot,
+
+00:00:43.630 --> 00:00:47.660
+which allows us to view the relationship between each of our variables.
+
+00:00:47.659 --> 00:00:53.082
+Here, I want to look at the relationships between each of these three x variables.
+
+00:00:53.082 --> 00:00:58.739
+So 'area, 'bedrooms' and 'bathrooms'.
+
+00:00:58.740 --> 00:01:01.210
+You can see that each of these relationships has
+
+00:01:01.210 --> 00:01:04.299
+pretty strong positive relationships between one another.
+
+00:01:04.299 --> 00:01:06.369
+So, in this corner you can see the bathrooms
+
+00:01:06.370 --> 00:01:09.025
+versus the area has a pretty positive relationship,
+
+00:01:09.025 --> 00:01:10.900
+area versus the bedrooms,
+
+00:01:10.900 --> 00:01:12.940
+bedrooms versus the bathrooms,
+
+00:01:12.939 --> 00:01:15.200
+and let's see here.
+
+00:01:15.200 --> 00:01:17.389
+I think that's all. Bathrooms vs the area,
+
+00:01:17.390 --> 00:01:19.320
+area vs. the bedrooms.
+
+00:01:19.319 --> 00:01:22.554
+So, these three plots essentially match these three plots,
+
+00:01:22.555 --> 00:01:26.105
+just what on x and y axis changes.
+
+00:01:26.105 --> 00:01:28.525
+Now let's try fitting a multiple linear regression model,
+
+00:01:28.525 --> 00:01:30.700
+using these three coefficients.
+
+00:01:30.700 --> 00:01:33.862
+First, we'll create our intercept as usual.
+
+00:01:33.862 --> 00:01:35.480
+I run in statsmodels as sm,
+
+00:01:35.480 --> 00:01:41.620
+so I'm going to fit sm.OLS as- so the thing we want to predict is the
+
+00:01:41.620 --> 00:01:45.100
+'price' and what we're going to use
+
+00:01:45.099 --> 00:01:50.719
+is the 'intercept' as well as each of these x variables.
+
+00:01:50.719 --> 00:01:54.120
+I'm just going to copy them from here.
+
+00:01:54.120 --> 00:01:56.550
+And then, we store that in our linear model.
+
+00:01:56.549 --> 00:01:58.920
+We do it now.
+
+00:01:58.920 --> 00:02:01.049
+So this is interesting,
+
+00:02:01.049 --> 00:02:03.810
+even though we'd expect all area,
+
+00:02:03.810 --> 00:02:07.545
+bedrooms and bathrooms to have the same relationship with the response,
+
+00:02:07.545 --> 00:02:11.430
+that is as they increase we'd expect the response to increase,
+
+00:02:11.430 --> 00:02:15.355
+the bedrooms has a negative coefficient associated with it.
+
+00:02:15.354 --> 00:02:20.159
+So, even though price and bedrooms have a positive relationship between one another,
+
+00:02:20.159 --> 00:02:24.199
+in our multiple linear regression model it showed up negative.
+
+00:02:24.199 --> 00:02:27.839
+The interpretation of this coefficient is now counter-intuitive to
+
+00:02:27.840 --> 00:02:32.263
+the relationship we'd expect and what is actually true in the bivariate case.
+
+00:02:32.263 --> 00:02:36.900
+This is one potential side effect of having multicollinearity in our model,
+
+00:02:36.900 --> 00:02:40.409
+is these flipped coefficients from what you expect to be true.
+
+00:02:40.409 --> 00:02:44.164
+Another common way to identify our predictors is correlated with one another,
+
+00:02:44.164 --> 00:02:46.889
+besides the plot that we saw appear is with
+
+00:02:46.889 --> 00:02:50.724
+something called variance inflation factors, or VIFs.
+
+00:02:50.724 --> 00:02:54.405
+A link to a helpful post in this topic is provided below.
+
+00:02:54.405 --> 00:03:00.164
+From statsmodels, we can calculate the VIFs for each of our x variables like this.
+
+00:03:00.164 --> 00:03:05.854
+So here, this dmatrices is something that we read in a peer from patsy.
+
+00:03:05.854 --> 00:03:08.819
+This allows us to create our equation for x and y,
+
+00:03:08.819 --> 00:03:11.039
+and they'll give back matrices that we then
+
+00:03:11.039 --> 00:03:13.814
+pass through this variance inflation factor function,
+
+00:03:13.814 --> 00:03:16.353
+which we read in from statsmodels.
+
+00:03:16.353 --> 00:03:22.629
+Within the price using intercept,
+
+00:03:22.629 --> 00:03:32.939
+and the area, and the bedrooms and the bathrooms.
+
+00:03:32.939 --> 00:03:35.859
+So here, it looks like the intercept was provided for
+
+00:03:35.860 --> 00:03:38.838
+us so I ran it again to get rid of the two intercepts,
+
+00:03:38.837 --> 00:03:41.354
+which is kind of strange.
+
+00:03:41.354 --> 00:03:44.189
+We can see that the VIFs for each variable are
+
+00:03:44.189 --> 00:03:47.805
+available through this VIF data frame that I created.
+
+00:03:47.805 --> 00:03:51.599
+We likely would want to remove at least one of these two variables
+
+00:03:51.599 --> 00:03:55.685
+here as both of their variants inflation factors are larger than 10.
+
+00:03:55.685 --> 00:03:59.250
+There's a bit more discussion on this topic in the next video and then,
+
+00:03:59.250 --> 00:04:00.289
+you'll try this yourself.
+

@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.780 --> 00:00:05.299
+Let's imagine you're looking to invest in a home.
+
+00:00:05.299 --> 00:00:08.449
+In particular, you would like to purchase a home where you
+
+00:00:08.449 --> 00:00:11.410
+think it's worth more than the listed price.
+
+00:00:11.410 --> 00:00:15.669
+We collect information on recently sold homes to use in your pursuit.
+
+00:00:15.669 --> 00:00:19.640
+Here is a table of the information you collect, the price of the home,
+
+00:00:19.640 --> 00:00:25.230
+the neighborhood which has three categories of neighborhoods a,b or c,
+
+00:00:25.230 --> 00:00:26.945
+the square footage of the house,
+
+00:00:26.945 --> 00:00:28.414
+the number of bedrooms,
+
+00:00:28.414 --> 00:00:30.875
+the number of bathrooms and the style,
+
+00:00:30.875 --> 00:00:33.814
+either ranch, Victorian or lodge.
+
+00:00:33.814 --> 00:00:34.939
+In the last lesson,
+
+00:00:34.939 --> 00:00:36.199
+you learned how to use one of
+
+00:00:36.200 --> 00:00:39.355
+these quantitative columns to predict the price of the house.
+
+00:00:39.354 --> 00:00:41.704
+But what if we wanted to use all of these?
+
+00:00:41.704 --> 00:00:43.519
+And what about these columns?
+
+00:00:43.520 --> 00:00:46.730
+Multiplying a slope of seven by a neighborhood of a,
+
+00:00:46.729 --> 00:00:50.494
+or homestyle Victorian, what would that even mean?
+
+00:00:50.494 --> 00:00:54.104
+It turns out that we can use linear algebra to predict
+
+00:00:54.104 --> 00:00:57.765
+the y value using all of these inputs at the same time.
+
+00:00:57.765 --> 00:01:01.256
+The way we do this is by creating a matrix of inputs,
+
+00:01:01.256 --> 00:01:06.034
+so these values here and we create a vector of the response that we want to predict.
+
+00:01:06.034 --> 00:01:10.140
+This matrix is often denoted as a capital X,
+
+00:01:10.140 --> 00:01:13.620
+while this vector for the response is denoted with Y.
+
+00:01:13.620 --> 00:01:15.844
+To differentiate from the notation you saw
+
+00:01:15.844 --> 00:01:19.319
+earlier each of these generally is notated as bold.
+
+00:01:19.319 --> 00:01:21.929
+In order to really grasp all of what is
+
+00:01:21.930 --> 00:01:25.050
+happening with multiple linear regression and how it works,
+
+00:01:25.049 --> 00:01:29.799
+you need to understand how these vectors and matrices work together.
+
+00:01:29.799 --> 00:01:32.819
+There is a matrix and numpy refresher course but I pulled from
+
+00:01:32.819 --> 00:01:35.129
+the Deep Learning Nanodegree class to help with
+
+00:01:35.129 --> 00:01:37.769
+these ideas and the extra curricular materials.
+
+00:01:37.769 --> 00:01:39.599
+Additionally, there is a link to
+
+00:01:39.599 --> 00:01:43.000
+the available linear algebra courses on Khan Academy link below.
+

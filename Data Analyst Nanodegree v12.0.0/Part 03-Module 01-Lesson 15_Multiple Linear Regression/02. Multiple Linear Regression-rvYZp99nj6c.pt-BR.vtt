@@ -1,0 +1,140 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.188 --> 00:00:02.706
+REGRESSÃO LINEAR MÚLTIPLA:
+PRIMEIRO EXEMPLO
+
+00:00:02.739 --> 00:00:05.409
+Imagine que você quer
+investir em uma casa.
+
+00:00:05.442 --> 00:00:07.969
+Em especial, você deseja
+comprar uma casa
+
+00:00:08.002 --> 00:00:11.144
+que vale mais
+do que o valor anunciado.
+
+00:00:11.177 --> 00:00:13.976
+Reunimos informações
+sobre casas recém-vendidas
+
+00:00:14.009 --> 00:00:15.512
+para usar na busca.
+
+00:00:15.545 --> 00:00:18.202
+Esta é a tabela
+das informações coletadas:
+
+00:00:18.235 --> 00:00:20.833
+o valor da casa,
+a vizinhança,
+
+00:00:20.866 --> 00:00:25.015
+que possui as categorias
+A, B ou C,
+
+00:00:25.048 --> 00:00:28.478
+o metro quadrada da casa,
+a quantidade de quartos,
+
+00:00:28.511 --> 00:00:30.846
+de banheiros e o estilo,
+
+00:00:30.879 --> 00:00:33.568
+rústico, vitoriano ou cabana.
+
+00:00:33.601 --> 00:00:34.926
+Na última aula,
+
+00:00:34.959 --> 00:00:37.673
+vimos como utilizar
+uma dessas colunas quantitativas
+
+00:00:37.706 --> 00:00:39.423
+para prever o valor de casa.
+
+00:00:39.456 --> 00:00:41.808
+Mas e se quisermos
+utilizar todas?
+
+00:00:41.841 --> 00:00:43.531
+E estas colunas?
+
+00:00:43.564 --> 00:00:47.001
+Multiplicar um coeficiente angular
+igual a sete pela vizinhança A,
+
+00:00:47.034 --> 00:00:50.112
+ou pelo estilo vitoriano,
+significaria o quê?
+
+00:00:51.007 --> 00:00:54.871
+Podemos utilizar álgebra linear
+para prever o valor Y,
+
+00:00:54.904 --> 00:00:57.918
+utilizando todas as colunas
+ao mesmo tempo.
+
+00:00:57.951 --> 00:01:00.991
+Fazemos isso
+criando uma matriz de entradas,
+
+00:01:01.024 --> 00:01:02.527
+estes valores aqui,
+
+00:01:02.560 --> 00:01:06.110
+e criando um vetor
+da resposta que queremos prever.
+
+00:01:06.143 --> 00:01:10.071
+Essa matriz geralmente
+é denotada com um X maiúsculo,
+
+00:01:10.104 --> 00:01:13.790
+enquanto o vetor das respostas
+é denotado com Y.
+
+00:01:13.823 --> 00:01:16.407
+Para diferenciar
+da notação que vimos antes,
+
+00:01:16.440 --> 00:01:19.471
+cada um deles geralmente
+é notado em negrito.
+
+00:01:19.504 --> 00:01:22.130
+Para entender a fundo
+tudo que está acontecendo
+
+00:01:22.163 --> 00:01:24.915
+na regressão linear múltipla
+e ver como ela funciona,
+
+00:01:24.948 --> 00:01:29.724
+é preciso entender como os vetores
+e as matrizes funcionam juntos.
+
+00:01:29.757 --> 00:01:31.974
+Existe um curso
+sobre matrizes e NumPy
+
+00:01:32.007 --> 00:01:34.398
+que peguei
+do curso de Deep Learning.
+
+00:01:34.431 --> 00:01:37.662
+Ele pode servir
+como material extracurricular.
+
+00:01:37.695 --> 00:01:40.974
+Além disso, há um link
+para os cursos de álgebra linear
+
+00:01:41.007 --> 00:01:43.036
+da Khan Academy abaixo.
+

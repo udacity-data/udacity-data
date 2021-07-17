@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.730 --> 00:00:04.290
+Just using what you know from
+
+00:00:04.290 --> 00:00:07.905
+the bivariate case of comparing two variables in the last lesson,
+
+00:00:07.905 --> 00:00:12.350
+you probably know more than you think about multiple linear regression models.
+
+00:00:12.349 --> 00:00:17.259
+It's essentially the same as with using only one explanatory variable.
+
+00:00:17.260 --> 00:00:19.935
+Except that when you interpret your coefficients,
+
+00:00:19.934 --> 00:00:24.224
+you'll add the statement of holding all other variables constant.
+
+00:00:24.225 --> 00:00:26.190
+So what exactly does this mean?
+
+00:00:26.190 --> 00:00:28.214
+Well, if you were to interpret
+
+00:00:28.214 --> 00:00:31.364
+this coefficient attached to the square footage of the house,
+
+00:00:31.364 --> 00:00:35.685
+we would say for each additional unit increase in the area of the house,
+
+00:00:35.685 --> 00:00:37.850
+the price is expected to increase by
+
+00:00:37.850 --> 00:00:43.079
+345.9 as long as all the other variables stay the same.
+
+00:00:43.079 --> 00:00:47.879
+So assuming that these houses both have one bathroom, one bedroom,
+
+00:00:47.880 --> 00:00:51.574
+but one house has one square foot more than the other,
+
+00:00:51.573 --> 00:00:55.750
+we would expect its price to be 345.9 higher.
+
+00:00:55.750 --> 00:01:00.210
+This interpretation which is almost exactly the same in the earlier lesson,
+
+00:01:00.210 --> 00:01:01.785
+is what you would do for
+
+00:01:01.784 --> 00:01:06.375
+every quantitative variable in our multiple linear regression model.
+
+00:01:06.375 --> 00:01:10.049
+Additionally, a quick glance at the P values can provide
+
+00:01:10.049 --> 00:01:12.390
+some context for whether or not we think
+
+00:01:12.390 --> 00:01:15.560
+a variable is statistically related to the response.
+
+00:01:15.560 --> 00:01:17.768
+This isn't the only check you should do,
+
+00:01:17.768 --> 00:01:22.760
+but it's a great quick check to understand which relationships appear to be important.
+
+00:01:22.760 --> 00:01:26.755
+Two points for further exploration come from these exercises.
+
+00:01:26.754 --> 00:01:30.479
+First, notice that even though looking at the relationship between
+
+00:01:30.480 --> 00:01:32.490
+only the number of bathrooms and
+
+00:01:32.489 --> 00:01:35.884
+the price showed a statistically significant relationship.
+
+00:01:35.885 --> 00:01:37.905
+When we added this to looking at
+
+00:01:37.905 --> 00:01:41.519
+all the variables at once, this relationship disappeared.
+
+00:01:41.519 --> 00:01:43.950
+There are few reasons why this might have happened.
+
+00:01:43.950 --> 00:01:46.570
+And we'll explore those in the next concept.
+
+00:01:46.569 --> 00:01:50.339
+Second, when adding quantitative variables to our model,
+
+00:01:50.340 --> 00:01:53.075
+it worked just like you saw in the last lesson.
+
+00:01:53.075 --> 00:01:55.370
+But what about with categorical variables?
+
+00:01:55.370 --> 00:01:58.245
+When we tried to add them everything broke.
+
+00:01:58.245 --> 00:02:01.620
+So let's explore these two findings a little bit more.
+

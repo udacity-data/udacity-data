@@ -1,0 +1,71 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.151 --> 00:00:02.814
+COMO SABER
+SE O MODELO SE ADEQUA BEM?
+
+00:00:02.847 --> 00:00:06.682
+É possível usar modelos lineares
+que parecem com os não lineares
+
+00:00:06.715 --> 00:00:08.632
+adicionando termos
+de ordem superior,
+
+00:00:08.665 --> 00:00:11.365
+como as interações,
+os quadráticos, os cúbicos
+
+00:00:11.398 --> 00:00:14.143
+e até mesmo os valores
+de ordem superior ao modelo.
+
+00:00:14.176 --> 00:00:17.952
+Embora os termos de ordem superior
+permitam prever melhor a resposta,
+
+00:00:17.985 --> 00:00:20.728
+geralmente evito
+utilizar esses tipos de termos,
+
+00:00:20.761 --> 00:00:24.031
+a não ser que eu perceba
+a relação nos dados.
+
+00:00:24.064 --> 00:00:28.336
+Adicionar esses termos complica
+a interpretação dos resultados
+
+00:00:28.369 --> 00:00:31.762
+e as interpretações
+dos termos de ordem inferior,
+
+00:00:31.795 --> 00:00:33.849
+pois os ângulos
+dos metros quadrados
+
+00:00:33.882 --> 00:00:36.951
+ou do nível
+de uma variável categórica
+
+00:00:36.984 --> 00:00:39.055
+não serão mais facilmente
+interpretados
+
+00:00:39.088 --> 00:00:41.558
+quando os termos forem
+de ordem superior.
+
+00:00:41.591 --> 00:00:44.564
+Vamos adicionar alguns termos
+de ordem superior ao modelo
+
+00:00:44.597 --> 00:00:46.176
+para ver como eles funcionam
+
+00:00:46.209 --> 00:00:48.314
+e para saber
+quando utilizá-los.
+

@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.149 --> 00:00:05.660
+So you saw that you can't add categorical explanatory variables into
+
+00:00:05.660 --> 00:00:09.679
+your X matrix as nicely as you were able to add quantitative variables.
+
+00:00:09.679 --> 00:00:14.554
+Instead of adding columns like this into your X matrix with values such as A,
+
+00:00:14.554 --> 00:00:16.399
+B, and C for the neighborhood,
+
+00:00:16.399 --> 00:00:19.759
+we end up creating what are known as dummy variables.
+
+00:00:19.760 --> 00:00:22.505
+There are a few different ways to encode dummy variables.
+
+00:00:22.504 --> 00:00:28.254
+But most commonly used are the ones where you encode one and zero.
+
+00:00:28.254 --> 00:00:33.524
+The way this works is we create a column for each value in this column.
+
+00:00:33.524 --> 00:00:35.244
+And for each column,
+
+00:00:35.244 --> 00:00:40.344
+there's a one if the value exists in the column and a zero otherwise.
+
+00:00:40.344 --> 00:00:45.100
+So the column we would create for the A values would look like this.
+
+00:00:45.100 --> 00:00:48.145
+Then, when we want to create a column for the B values,
+
+00:00:48.145 --> 00:00:49.615
+it would look like this.
+
+00:00:49.615 --> 00:00:53.920
+And finally, the last column for C would look like this.
+
+00:00:53.920 --> 00:00:55.690
+You will want to do this for each of
+
+00:00:55.689 --> 00:00:58.859
+the categorical variables that you want to add in your data set.
+
+00:00:58.859 --> 00:01:02.695
+Because this last column can be inferred from the earlier two columns,
+
+00:01:02.695 --> 00:01:05.245
+as the one values are only in the rows
+
+00:01:05.245 --> 00:01:08.200
+that didn't have ones in one of these other columns,
+
+00:01:08.200 --> 00:01:12.219
+we actually end up choosing to drop this column.
+
+00:01:12.219 --> 00:01:15.875
+Which one you drop doesn't really matter too much.
+
+00:01:15.875 --> 00:01:17.215
+In the next concept,
+
+00:01:17.215 --> 00:01:20.750
+you will see the mathematical reasoning for dropping a column.
+
+00:01:20.750 --> 00:01:24.280
+And then, the screencast will show you how this works in practice.
+

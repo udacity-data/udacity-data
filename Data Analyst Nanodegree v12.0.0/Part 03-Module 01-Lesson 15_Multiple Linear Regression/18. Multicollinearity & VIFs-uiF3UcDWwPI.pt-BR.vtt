@@ -1,0 +1,114 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.020 --> 00:00:02.421
+MULTICOLINEARIDADE E VIFS
+
+00:00:03.165 --> 00:00:06.228
+Vimos no exemplo anterior
+um caso cujas variáveis X
+
+00:00:06.261 --> 00:00:08.050
+se correlacionavam.
+
+00:00:08.083 --> 00:00:10.846
+Isso pode levar a coeficientes
+de regressão inversa
+
+00:00:10.879 --> 00:00:12.461
+das relações esperadas
+
+00:00:12.494 --> 00:00:15.675
+e a resultados de testes
+de hipóteses imprecisos.
+
+00:00:15.708 --> 00:00:18.771
+Queremos que as variáveis X
+se relacionem a Y,
+
+00:00:18.804 --> 00:00:21.606
+mas, quando as variáveis X
+se relacionam entre si,
+
+00:00:21.639 --> 00:00:24.390
+os resultados
+podem ser enganosos.
+
+00:00:24.423 --> 00:00:27.780
+Vimos que as duas formas
+de identificar multicolinearidade
+
+00:00:27.813 --> 00:00:29.887
+são com a matriz
+de gráfico de dispersão
+
+00:00:29.920 --> 00:00:32.157
+e com os fatores
+de inflação da variância,
+
+00:00:32.190 --> 00:00:33.804
+os VIFs.
+
+00:00:33.837 --> 00:00:36.635
+Conferimos
+se os VIFs são grandes.
+
+00:00:36.668 --> 00:00:40.633
+Geralmente, quando o VIF
+é maior do que dez,
+
+00:00:40.666 --> 00:00:43.167
+então há multicolinearidade
+no modelo.
+
+00:00:43.200 --> 00:00:45.241
+O VIF para uma variável
+
+00:00:45.274 --> 00:00:48.288
+é calculado como um sobre um,
+menos R ao quadrado,
+
+00:00:48.321 --> 00:00:51.630
+sendo que R ao quadrado
+é calculado como R quadrado
+
+00:00:51.663 --> 00:00:55.605
+da variável X prevista
+por todas as variáveis X.
+
+00:00:55.638 --> 00:00:59.148
+Desse modo, se X for altamente
+relacionado às outras variáveis,
+
+00:00:59.181 --> 00:01:01.092
+esta parte aumenta,
+
+00:01:01.125 --> 00:01:06.516
+diminuindo todo o denominador
+e aumentando o VIF do termo.
+
+00:01:06.549 --> 00:01:11.492
+Não é comum encontrar
+um VIF grande no modelo,
+
+00:01:11.525 --> 00:01:14.620
+pois se duas ou mais variáveis X
+forem relacionadas,
+
+00:01:14.653 --> 00:01:17.736
+cada uma das variáveis
+terá VIF alto.
+
+00:01:17.769 --> 00:01:20.109
+A forma mais comum
+de trabalhar com variáveis
+
+00:01:20.142 --> 00:01:22.072
+que são correlacionadas
+em regressão
+
+00:01:22.105 --> 00:01:25.285
+é removendo as que menos
+nos interessam.
+

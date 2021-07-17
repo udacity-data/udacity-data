@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.970
+You actually are very well equipped to take on fitting
+
+00:00:02.970 --> 00:00:07.310
+multiple linear regression models as well as interpreting the results from these models.
+
+00:00:07.309 --> 00:00:09.314
+Let's take a look at an example.
+
+00:00:09.314 --> 00:00:10.740
+This is a similar dataset,
+
+00:00:10.740 --> 00:00:14.789
+the housing dataset you saw in the last lesson which is available in the resources,
+
+00:00:14.789 --> 00:00:17.234
+and in the next concept for you to follow along.
+
+00:00:17.234 --> 00:00:21.119
+Here, I've written the appropriate libraries as well as the dataset.
+
+00:00:21.120 --> 00:00:23.163
+Now, to fit our linear model,
+
+00:00:23.163 --> 00:00:25.140
+let's first create an intercept.
+
+00:00:25.140 --> 00:00:29.535
+Then, we can again use stats models similar to what you did in the last lesson.
+
+00:00:29.535 --> 00:00:34.490
+But we'll need to add all of our variables into the list for the X portion.
+
+00:00:34.490 --> 00:00:36.164
+So here we're adding the intercept,
+
+00:00:36.164 --> 00:00:40.079
+and we're interested in predicting the price.
+
+00:00:40.079 --> 00:00:42.945
+And on the right-hand side here,
+
+00:00:42.945 --> 00:00:46.755
+we need to add all of our variables that are quantitative.
+
+00:00:46.755 --> 00:00:48.638
+If you try to add the categorical variables,
+
+00:00:48.637 --> 00:00:50.570
+you'll notice that that breaks.
+
+00:00:50.570 --> 00:00:53.740
+Store that in LM for a linear model.
+
+00:00:53.740 --> 00:00:58.987
+We will fit the model.
+
+00:00:58.987 --> 00:01:01.344
+Now, it's your turn.
+
+00:01:01.344 --> 00:01:03.629
+Use the environment on the next concept to follow
+
+00:01:03.630 --> 00:01:06.329
+along with creating your first multiple linear aggression model.
+

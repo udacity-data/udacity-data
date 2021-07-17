@@ -1,0 +1,327 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Video: Dummy Variables Recap
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Multiple Linear Regression
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Video Introduction.html">
+       01. Video: Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Video Multiple Linear Regression.html">
+       02. Video: Multiple Linear Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Screencast Fitting A Multiple Linear Regression Model.html">
+       03. Screencast: Fitting A Multiple Linear Regression Model
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Notebook + Quiz Fitting A MLR Model.html">
+       04. Notebook + Quiz: Fitting A MLR Model
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Screencast + Text How Does MLR Work.html">
+       05. Screencast + Text: How Does MLR Work?
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Video Multiple Linear Regression Model Results.html">
+       06. Video: Multiple Linear Regression Model Results
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Quiz Interpreting Coefficients in MLR.html">
+       07. Quiz: Interpreting Coefficients in MLR
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Video Dummy Variables.html">
+       08. Video: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Text Dummy Variables.html">
+       09. Text: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Dummy Variables.html">
+       10. Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Screencast Dummy Variables.html">
+       11. Screencast: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Notebook + Quiz Dummy Variables.html">
+       12. Notebook + Quiz: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Video Dummy Variables Recap.html">
+       13. Video: Dummy Variables Recap
+      </a>
+     </li>
+     <li class="">
+      <a href="14. [Optional] Notebook + Quiz Other Encodings.html">
+       14. [Optional] Notebook + Quiz: Other Encodings
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Video Potential Problems.html">
+       15. Video: Potential Problems
+      </a>
+     </li>
+     <li class="">
+      <a href="16. [Optional] Text Linear Model Assumptions.html">
+       16. [Optional] Text: Linear Model Assumptions
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Screencast Multicollinearity &amp; VIFs.html">
+       17. Screencast: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Video Multicollinearity &amp; VIFs.html">
+       18. Video: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Notebook + Quiz Multicollinearity &amp; VIFs.html">
+       19. Notebook + Quiz: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Video Higher Order Terms.html">
+       20. Video: Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Text Higher Order Terms.html">
+       21. Text: Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Screencast How to Add Higher Order Terms.html">
+       22. Screencast: How to Add Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Video Interpreting Interactions.html">
+       23. Video: Interpreting Interactions
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Text Interpreting Interactions.html">
+       24. Text: Interpreting Interactions
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Notebook + Quiz Interpreting Model Coefficients.html">
+       25. Notebook + Quiz: Interpreting Model Coefficients
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Video Recap.html">
+       26. Video: Recap
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Text Recap.html">
+       27. Text: Recap
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          13. Video: Dummy Variables Recap
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Dummy Variables Recap
+         </p>
+        </h3>
+        <video controls="">
+         <source src="13. Dummy Variables Recap-r7Lek8rsIcg.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="13. Dummy Variables Recap-r7Lek8rsIcg.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="13. Dummy Variables Recap-r7Lek8rsIcg.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="13. Dummy Variables Recap-r7Lek8rsIcg.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Though Python and R use 1, 0 encodings in the default functionality, there are many ways we might encode dummy variables.
+          <a href="https://www.sas.com/en_us/software/stat.html" rel="noopener noreferrer" target="_blank">
+           SAS
+          </a>
+          is a common programming language that uses a different encoding than you have used so far. Being comfortable with the binary (1, 0) encodings we've been using is really all you need, but if you are curious about other encodings you can try out the quiz on the next page to see how this works.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="14. [Optional] Notebook + Quiz Other Encodings.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('13. Video: Dummy Variables Recap')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

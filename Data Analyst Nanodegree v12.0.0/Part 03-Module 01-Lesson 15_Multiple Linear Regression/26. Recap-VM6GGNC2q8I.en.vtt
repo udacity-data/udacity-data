@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.700
+This lesson had a lot of information.
+
+00:00:02.700 --> 00:00:07.620
+A quick recap of the different topics is provided in the text on the next concept.
+
+00:00:07.620 --> 00:00:11.234
+Understanding multiple linear regression in terms of applications,
+
+00:00:11.234 --> 00:00:14.414
+potential problems, and how to assess model fit,
+
+00:00:14.414 --> 00:00:17.829
+is at the heart of more complex machine learning methods.
+
+00:00:17.829 --> 00:00:20.250
+In this lesson, you looked at how you could use
+
+00:00:20.250 --> 00:00:23.039
+regression to predict quantitative response variables.
+
+00:00:23.039 --> 00:00:25.849
+In the next lesson you'll do the same,
+
+00:00:25.850 --> 00:00:28.679
+but for response variables that are categorical.
+
+00:00:28.679 --> 00:00:31.019
+See you in the next lesson, on logistic regression.
+

@@ -1,0 +1,280 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.131 --> 00:00:03.385
+Uma das premissas dos modelos
+de regressão linear múltipla
+
+00:00:03.418 --> 00:00:07.258
+é que as variáveis de previsão
+não se correlacionam.
+
+00:00:07.291 --> 00:00:10.737
+Queremos que elas se correlacionem
+com a nossa resposta,
+
+00:00:10.770 --> 00:00:12.577
+mas não entre elas.
+
+00:00:12.610 --> 00:00:15.985
+Neste exemplo, no qual observamos
+as características das casas,
+
+00:00:16.018 --> 00:00:17.978
+podemos dizer
+que o tamanho da casa,
+
+00:00:18.011 --> 00:00:20.986
+a quantidade de quartos
+e de banheiros
+
+00:00:21.019 --> 00:00:23.417
+se relacionam
+uns com os outros.
+
+00:00:23.450 --> 00:00:28.434
+Esperamos que casas maiores
+tenham mais quartos e banheiros.
+
+00:00:28.467 --> 00:00:32.135
+Podemos observar as relações
+entre cada par de variáveis
+
+00:00:32.168 --> 00:00:34.110
+utilizando Seaborn.
+
+00:00:34.143 --> 00:00:36.727
+Eu adicionei
+Seaborn como "sb"
+
+00:00:36.760 --> 00:00:40.223
+e utilizo "matplotlib" na linha
+para vermos o gráfico.
+
+00:00:40.999 --> 00:00:43.686
+A Seaborn possui um pairplot
+
+00:00:43.719 --> 00:00:47.710
+que nos permite ver
+a ligação entre as variáveis.
+
+00:00:47.743 --> 00:00:52.575
+Quero observar as relações
+entre as três variáveis X.
+
+00:00:53.183 --> 00:00:58.127
+A área, os quartos
+e os banheiros.
+
+00:00:58.918 --> 00:01:00.842
+Vemos que cada uma
+das relações
+
+00:01:00.875 --> 00:01:04.409
+possui uma ligação
+muito positiva com as outras.
+
+00:01:04.442 --> 00:01:09.004
+Vemos que os banheiros versus a área
+possuem uma relação positiva,
+
+00:01:09.037 --> 00:01:12.928
+área versus os quartos,
+quartos versus os banheiros
+
+00:01:12.961 --> 00:01:15.136
+e, vejamos aqui...
+
+00:01:15.169 --> 00:01:17.560
+É só isso.
+Banheiros versus a área,
+
+00:01:17.593 --> 00:01:19.185
+área versus os quartos...
+
+00:01:19.218 --> 00:01:22.516
+Estes três gráficos
+se parecem com estes aqui.
+
+00:01:22.549 --> 00:01:25.946
+Apenas o que está nos eixos X e Y
+sofre alteração.
+
+00:01:25.979 --> 00:01:28.662
+Vamos aplicar o modelo
+de regressão linear múltipla
+
+00:01:28.695 --> 00:01:30.668
+utilizando
+os três coeficientes.
+
+00:01:30.701 --> 00:01:33.764
+Primeiro vamos criar o intercepto,
+como de costume.
+
+00:01:33.797 --> 00:01:36.420
+Eu rodo statsmodel como "sm".
+
+00:01:36.453 --> 00:01:40.132
+Vou colocar "sm.ols" como...
+
+00:01:40.165 --> 00:01:42.710
+Queremos prever o preço.
+
+00:01:43.965 --> 00:01:48.059
+Vamos utilizar um intercepto
+
+00:01:48.092 --> 00:01:50.708
+e cada uma das variáveis X.
+
+00:01:50.741 --> 00:01:53.420
+Vou copiá-las daqui.
+
+00:01:53.453 --> 00:01:56.605
+Armazenamos
+no modelo linear.
+
+00:01:56.638 --> 00:01:59.612
+Vamos fazer isso agora.
+
+00:01:59.645 --> 00:02:01.157
+Isso é interessante.
+
+00:02:01.190 --> 00:02:05.228
+Mesmo esperando que a área,
+os quartos e os banheiros
+
+00:02:05.261 --> 00:02:07.604
+tenham a mesma relação
+com a resposta,
+
+00:02:07.637 --> 00:02:11.476
+ou seja, conforme eles aumentam
+a resposta deveria aumentar,
+
+00:02:11.509 --> 00:02:15.412
+os quartos possuem um coeficiente
+negativo associado a eles.
+
+00:02:15.445 --> 00:02:20.148
+Embora o preço e os quartos
+tenham uma ligação positiva,
+
+00:02:20.181 --> 00:02:24.076
+no modelo de regressão linear,
+isso aparece como negativo.
+
+00:02:24.109 --> 00:02:26.005
+A interpretação
+desse coeficiente
+
+00:02:26.038 --> 00:02:29.588
+agora é contrária
+à relação que esperávamos,
+
+00:02:29.621 --> 00:02:32.412
+e isso é verdade
+no caso dessa região.
+
+00:02:32.445 --> 00:02:34.631
+Esse é um dos efeitos
+colaterais possíveis
+
+00:02:34.664 --> 00:02:36.973
+quando se tem multicolinearidade
+no modelo.
+
+00:02:37.006 --> 00:02:40.284
+São coeficientes diferentes
+do esperado.
+
+00:02:40.317 --> 00:02:44.148
+Outra forma de identificar
+se o previsor é correlacionado,
+
+00:02:44.181 --> 00:02:46.572
+além do gráfico
+que vimos aqui em cima,
+
+00:02:46.605 --> 00:02:50.746
+é com o fator de inflação
+da variância, VIF.
+
+00:02:50.779 --> 00:02:54.479
+Há um link para uma postagem
+sobre o assunto abaixo.
+
+00:02:54.512 --> 00:02:57.270
+A partir dos modelos estatísticos,
+calculamos os VIFs
+
+00:02:57.303 --> 00:03:00.557
+de cada variável X
+desta forma.
+
+00:03:00.590 --> 00:03:05.773
+Aqui as matrizes são algo
+que pegamos do Patsy.
+
+00:03:05.806 --> 00:03:08.943
+Isso nos permite criar
+a equação para X e Y
+
+00:03:08.976 --> 00:03:10.581
+e nos devolve matrizes,
+
+00:03:10.614 --> 00:03:13.934
+que passamos pela função
+do fator de inflação da variância,
+
+00:03:13.967 --> 00:03:16.318
+que pegamos
+dos modelos estatísticos.
+
+00:03:17.103 --> 00:03:18.718
+Vou colocar o preço
+
+00:03:19.942 --> 00:03:22.071
+utilizando o intercepto...
+
+00:03:23.822 --> 00:03:28.879
+A área, os quartos
+
+00:03:30.349 --> 00:03:32.294
+e os banheiros.
+
+00:03:32.327 --> 00:03:36.052
+Muito bem. Parece
+que o intercepto foi fornecido,
+
+00:03:36.085 --> 00:03:38.894
+então eu rodo novamente
+para me livrar dos interceptos,
+
+00:03:38.927 --> 00:03:40.542
+o que é meio estranho.
+
+00:03:41.359 --> 00:03:43.918
+Vemos que os VIFs
+de cada variável
+
+00:03:43.951 --> 00:03:47.692
+são disponibilizados
+pela estrutura de dados VIF.
+
+00:03:47.725 --> 00:03:52.104
+Nós desejaremos remover
+ao menos uma das duas variáveis,
+
+00:03:52.137 --> 00:03:55.808
+pois ambos fatores de inflação
+da variante são maiores do que 10.
+
+00:03:55.841 --> 00:03:58.881
+Discutiremos mais esse assunto
+no próximo vídeo
+
+00:03:58.914 --> 00:04:00.597
+para você poder tentar sozinho.
+

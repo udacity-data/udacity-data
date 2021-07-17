@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.779
+Here I would like to show how the coefficients are retrieved in
+
+00:00:03.779 --> 00:00:08.000
+your multiple in your aggression model using the matrix that you see here.
+
+00:00:08.000 --> 00:00:10.410
+So here was the output that we received from
+
+00:00:10.410 --> 00:00:13.849
+the multiple lineal regression model that you saw in the last screen cast.
+
+00:00:13.849 --> 00:00:16.164
+You can see that the coefficients are right here.
+
+00:00:16.164 --> 00:00:18.285
+These four values next to the intercept,
+
+00:00:18.285 --> 00:00:21.135
+the number bathrooms, the number of bedrooms and the area.
+
+00:00:21.135 --> 00:00:22.740
+We're going to show how do you get
+
+00:00:22.739 --> 00:00:27.704
+these four things using just this data from the matrix up here.
+
+00:00:27.704 --> 00:00:30.899
+First let's create an X matrix which will
+
+00:00:30.899 --> 00:00:34.769
+just contain the portions that we saw in the output here.
+
+00:00:34.770 --> 00:00:36.345
+So we'll need one for the intercept,
+
+00:00:36.344 --> 00:00:39.390
+one for the bathrooms, one for the bedrooms and one for the area.
+
+00:00:39.390 --> 00:00:43.255
+And actually we could just pull this part right here.
+
+00:00:43.255 --> 00:00:49.030
+I'm going to call that our x matrix and y will then be just our response.
+
+00:00:49.030 --> 00:00:54.185
+So, it will be only the price is the thing that we're trying to predict.
+
+00:00:54.185 --> 00:00:57.145
+The closed form solution you can see up here.
+
+00:00:57.145 --> 00:01:01.109
+So, it says we get the estimates of our coefficient by taking
+
+00:01:01.109 --> 00:01:06.105
+x and then this thing's called a transpose and then we multiply that by X.
+
+00:01:06.105 --> 00:01:09.120
+We take the inverse and then we multiply that by
+
+00:01:09.120 --> 00:01:12.840
+the X transpose again and then by our response vector Y.
+
+00:01:12.840 --> 00:01:18.105
+So this is what we want to do and we'll obtain the coefficients that we get here.
+
+00:01:18.105 --> 00:01:21.685
+In matrix multiplication, you don't multiply the same way you do with
+
+00:01:21.685 --> 00:01:25.620
+scalars you're going to multiply using the dot product.
+
+00:01:25.620 --> 00:01:29.880
+Let's do a quick numPy search and see how we can get the transpose,
+
+00:01:29.879 --> 00:01:34.212
+the inverses and the dot products to be able to calculate this.
+
+00:01:34.212 --> 00:01:41.009
+So, here we can see that we have matrix transposing using this transpose and numPy.
+
+00:01:41.010 --> 00:01:44.359
+So, numPy and then transpose the matrix.
+
+00:01:44.359 --> 00:01:47.439
+And then the other things that we want,
+
+00:01:47.439 --> 00:01:51.575
+the dot product and we can see that the documentation is available here.
+
+00:01:51.575 --> 00:01:55.915
+So numPy dot and then the last thing we want to do is invert.
+
+00:01:55.915 --> 00:02:00.800
+Great. And it looks like that's available with a numPy within a linear algebra portion.
+
+00:02:00.799 --> 00:02:02.480
+And then there's an inverse.
+
+00:02:02.480 --> 00:02:04.520
+So let's go ahead and try to use these.
+
+00:02:04.519 --> 00:02:07.614
+So, again, our formula looks like this right here.
+
+00:02:07.614 --> 00:02:13.479
+So, we're going to take x transpose times X which will be a dot product of
+
+00:02:13.479 --> 00:02:16.389
+these two things and then we want to invert that and then
+
+00:02:16.389 --> 00:02:19.669
+dot product with the transpose and then dot product with the response.
+
+00:02:19.669 --> 00:02:22.569
+And that should give us the estimates for our coefficients.
+
+00:02:22.569 --> 00:02:24.935
+So that should give us the transpose.
+
+00:02:24.935 --> 00:02:29.000
+And then we want to multiply that by X,
+
+00:02:29.000 --> 00:02:31.460
+which is the dot product,
+
+00:02:31.460 --> 00:02:38.835
+and then we want to multiply that by so dot product that with X transpose again.
+
+00:02:38.835 --> 00:02:43.070
+And then we want a final dot product with the response.
+
+00:02:43.069 --> 00:02:46.109
+We have X transpose rate,
+
+00:02:46.110 --> 00:02:52.840
+so x transpose X but then we need to invert this whole portion which we see up here.
+
+00:02:52.840 --> 00:02:56.360
+So we need to use that linear algebra portion there.
+
+00:02:56.360 --> 00:03:01.760
+So, in here I'm going to say np.linalg and then
+
+00:03:01.759 --> 00:03:04.969
+we want the inverse of
+
+00:03:04.969 --> 00:03:08.509
+that and then we're going to multiply that by the transpose and then the response.
+
+00:03:08.509 --> 00:03:11.495
+Perfect. So, now you can see that
+
+00:03:11.495 --> 00:03:16.789
+our intercept value matches here and then the slope attached
+
+00:03:16.789 --> 00:03:20.539
+to the number of bathrooms and then the slope attached to the number of
+
+00:03:20.539 --> 00:03:25.939
+bedrooms matches and then again the slope attached to the area matches.
+
+00:03:25.939 --> 00:03:28.814
+Because libraries like stats models exist,
+
+00:03:28.814 --> 00:03:31.240
+we don't need to perform the operations in this way.
+
+00:03:31.240 --> 00:03:33.530
+However, having an understanding of
+
+00:03:33.530 --> 00:03:35.689
+the optimization techniques can help you
+
+00:03:35.689 --> 00:03:38.509
+understand why certain operations might not work.
+
+00:03:38.509 --> 00:03:40.479
+In the next optional section,
+
+00:03:40.479 --> 00:03:42.259
+we will see an example where understanding
+
+00:03:42.259 --> 00:03:45.139
+this equation is helpful for understanding our results.
+

@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.016 --> 00:00:02.766
+INTRODUÇÃO
+AOS PROBLEMAS EM POTENCIAL
+
+00:00:02.799 --> 00:00:05.409
+Ao construir modelos
+de regressão linear múltipla,
+
+00:00:05.442 --> 00:00:07.637
+alguns problemas podem surgir,
+
+00:00:07.670 --> 00:00:10.187
+mas definir o que é constituído
+como um problema
+
+00:00:10.220 --> 00:00:13.120
+depende do uso
+do seu modelo.
+
+00:00:13.153 --> 00:00:16.065
+Você está tentando entender
+como as variáveis X e Y
+
+00:00:16.098 --> 00:00:17.238
+se relacionam?
+
+00:00:17.271 --> 00:00:20.911
+Ou está tentando prever
+a variável de respostas?
+
+00:00:20.944 --> 00:00:24.032
+Ou você deseja encontrar
+quais variáveis
+
+00:00:24.065 --> 00:00:27.135
+são úteis
+para prever a resposta?
+
+00:00:27.168 --> 00:00:30.464
+Todos podem apresentar
+alguns problemas.
+
+00:00:30.497 --> 00:00:33.689
+Dependendo dos aspectos
+que mais interessam,
+
+00:00:33.722 --> 00:00:38.113
+isso ajuda a determinar a quais
+problemas desejamos nos dirigir.
+
+00:00:38.146 --> 00:00:40.500
+Em "An Introduction
+to Statistical Learning",
+
+00:00:40.533 --> 00:00:42.866
+vemos os seguintes problemas:
+
+00:00:42.899 --> 00:00:46.026
+primeiro, uma relação linear
+pode não existir
+
+00:00:46.059 --> 00:00:48.481
+entre sua resposta
+e as variáveis de previsão;
+
+00:00:48.514 --> 00:00:51.177
+segundo, pode haver
+erros correlacionados;
+
+00:00:51.210 --> 00:00:54.689
+terceiro, pode não haver
+variância constante dos erros;
+
+00:00:54.722 --> 00:00:57.603
+quarto, pode haver valores atípicos
+ou pontos de ajuste
+
+00:00:57.636 --> 00:01:00.074
+que prejudicam o modelo;
+e, por fim,
+
+00:01:00.107 --> 00:01:02.205
+pode haver multicolinearidade.
+
+00:01:02.238 --> 00:01:06.707
+Existem vários livros e cursos
+para cada um desses problemas,
+
+00:01:06.740 --> 00:01:11.076
+então a discussão desses tópicos
+nesta aula não será exaustiva.
+
+00:01:11.109 --> 00:01:13.990
+O capítulo três
+trata de cada um dos casos.
+
+00:01:14.023 --> 00:01:16.782
+Eu farei uma abordagem
+mais focada na indústria
+
+00:01:16.815 --> 00:01:18.553
+ao me referir
+a esses problemas,
+
+00:01:18.586 --> 00:01:21.255
+e o livro "An Introduction
+to Statistical Learning"
+
+00:01:21.288 --> 00:01:23.522
+faz uma abordagem acadêmica.
+
+00:01:23.555 --> 00:01:27.884
+Um sumário da abordagem acadêmica
+está no conceito seguinte,
+
+00:01:27.917 --> 00:01:30.731
+mas, se quiser ver
+como se aplica na prática,
+
+00:01:30.764 --> 00:01:34.004
+siga para o trecho aplicado
+que segue.
+

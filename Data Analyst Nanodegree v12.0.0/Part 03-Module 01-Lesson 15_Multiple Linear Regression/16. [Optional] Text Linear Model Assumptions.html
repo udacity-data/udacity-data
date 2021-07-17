@@ -1,0 +1,459 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   [Optional] Text: Linear Model Assumptions
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Multiple Linear Regression
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Video Introduction.html">
+       01. Video: Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Video Multiple Linear Regression.html">
+       02. Video: Multiple Linear Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Screencast Fitting A Multiple Linear Regression Model.html">
+       03. Screencast: Fitting A Multiple Linear Regression Model
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Notebook + Quiz Fitting A MLR Model.html">
+       04. Notebook + Quiz: Fitting A MLR Model
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Screencast + Text How Does MLR Work.html">
+       05. Screencast + Text: How Does MLR Work?
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Video Multiple Linear Regression Model Results.html">
+       06. Video: Multiple Linear Regression Model Results
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Quiz Interpreting Coefficients in MLR.html">
+       07. Quiz: Interpreting Coefficients in MLR
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Video Dummy Variables.html">
+       08. Video: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Text Dummy Variables.html">
+       09. Text: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Dummy Variables.html">
+       10. Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Screencast Dummy Variables.html">
+       11. Screencast: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Notebook + Quiz Dummy Variables.html">
+       12. Notebook + Quiz: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Video Dummy Variables Recap.html">
+       13. Video: Dummy Variables Recap
+      </a>
+     </li>
+     <li class="">
+      <a href="14. [Optional] Notebook + Quiz Other Encodings.html">
+       14. [Optional] Notebook + Quiz: Other Encodings
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Video Potential Problems.html">
+       15. Video: Potential Problems
+      </a>
+     </li>
+     <li class="">
+      <a href="16. [Optional] Text Linear Model Assumptions.html">
+       16. [Optional] Text: Linear Model Assumptions
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Screencast Multicollinearity &amp; VIFs.html">
+       17. Screencast: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Video Multicollinearity &amp; VIFs.html">
+       18. Video: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Notebook + Quiz Multicollinearity &amp; VIFs.html">
+       19. Notebook + Quiz: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Video Higher Order Terms.html">
+       20. Video: Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Text Higher Order Terms.html">
+       21. Text: Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Screencast How to Add Higher Order Terms.html">
+       22. Screencast: How to Add Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Video Interpreting Interactions.html">
+       23. Video: Interpreting Interactions
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Text Interpreting Interactions.html">
+       24. Text: Interpreting Interactions
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Notebook + Quiz Interpreting Model Coefficients.html">
+       25. Notebook + Quiz: Interpreting Model Coefficients
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Video Recap.html">
+       26. Video: Recap
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Text Recap.html">
+       27. Text: Recap
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          16. [Optional] Text: Linear Model Assumptions
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="model-assumptions-and-how-to-address-each">
+          Model Assumptions And How To Address Each
+         </h3>
+         <p>
+          Here are the five potential problems related to Multiple Linear Regression that we mentioned in the previous video, that are addressed in
+          <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf" rel="noopener noreferrer" target="_blank">
+           Introduction to Statistical Learning
+          </a>
+          :
+         </p>
+         <ol>
+          <li>
+           Non-linearity of the response-predictor relationships
+          </li>
+          <li>
+           Correlation of error terms
+          </li>
+          <li>
+           Non-constant Variance and Normally Distributed Errors
+          </li>
+          <li>
+           Outliers/ High leverage points
+          </li>
+          <li>
+           Multicollinearity
+          </li>
+         </ol>
+         <p>
+          This text is a summary of how to identify whether these problems exist, as well as how to address them.
+          <br/>
+          This is a common interview question asked by statisticians, but its practical importance is hit or miss depending on the purpose of your model.  In the upcoming concepts, we will look more closely at specific points that I believe deserve more attention, but below you will see a more exhaustive introduction to each topic.  Let's take a closer look at each of these items.
+         </p>
+         <h4 id="linearity">
+          Linearity
+         </h4>
+         <p>
+          The assumption of linearity is that a linear model is the relationship that truly exists between your response and predictor variables.  If this isn't true, then your predictions will not be very accurate.  Additionally, the linear relationships associated with your coefficients really aren't useful either.
+         </p>
+         <p>
+          In order to assess if a linear relationship is reasonable, a plot of the residuals
+          <span class="mathquill ud-math">
+           (y - \hat{y})
+          </span>
+          by the predicted values
+          <span class="mathquill ud-math">
+           (\hat{y})
+          </span>
+          is often  useful.  If there are curvature patterns in this plot, it suggests that a linear model might not actually fit the data, and some other relationship exists between the predictor variables and response.  There are many ways to create non-linear models (even using the linear model form), and you will be introduced to a few of these later in this lesson.
+         </p>
+         <p>
+          In the image at the bottom of this page, these are considered the
+          <strong>
+           biased
+          </strong>
+          models.  Ideally, we want to see a random scatter of points like the top left residual plot in the image.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4 id="correlated-errors">
+          Correlated Errors
+         </h4>
+         <p>
+          Correlated errors frequently occur when our data are collected over time (like in forecasting stock prices or interest rates in the future) or data are spatially related (like predicting flood or drought regions).  We can often improve our predictions by using information from the past data points (for time) or the points nearby (for space).
+         </p>
+         <p>
+          The main problem with not accounting for correlated errors is that you can often use this correlation to your advantage to better predict future events or events spatially close to one another.
+         </p>
+         <p>
+          One of the most common ways to identify if you have correlated errors is based on the domain from which the data were collected.  If you are unsure, there is a test known as a
+          <a href="https://en.wikipedia.org/wiki/Durbin%E2%80%93Watson_statistic" rel="noopener noreferrer" target="_blank">
+           Durbin-Watson
+          </a>
+          test that is commonly used to assess whether correlation of the errors is an issue.  Then
+          <a href="http://www.statsref.com/HTML/index.html?arima.html" rel="noopener noreferrer" target="_blank">
+           ARIMA or ARMA
+          </a>
+          models are commonly implemented to use this correlation to make better predictions.
+         </p>
+         <h4 id="non-constant-variance-and-normally-distributed-errors">
+          Non-constant Variance and Normally Distributed Errors
+         </h4>
+         <p>
+          Non-constant variance is when the spread of your predicted values differs depending on which value you are trying to predict.  This isn't a huge problem in terms of predicting well.  However, it does lead to confidence intervals and p-values that are inaccurate.  Confidence intervals for the coefficients will be too wide for areas where the actual values are closer to the predicted values, but too narrow for areas where the actual values are more spread out from the predicted values.
+         </p>
+         <p>
+          Commonly, a log (or some other transformation of the response variable is done) in order to "get rid" of the non-constant variance.  In order to choose the transformation, a
+          <a href="http://www.statisticshowto.com/box-cox-transformation/" rel="noopener noreferrer" target="_blank">
+           Box-Cox
+          </a>
+          is commonly used.
+         </p>
+         <p>
+          Non-constant variance can be assessed again using a plot of the residuals by the predicted values.  In the image at the bottom of the page, non-constant variance is labeled as
+          <strong>
+           heteroscedastic
+          </strong>
+          .  Ideally, we want an unbiased model with homoscedastic residuals (consistent across the range of values).
+         </p>
+         <p>
+          Though the text does not discuss normality of the residuals, this is an important assumption of regression if you are interested in creating reliable confidence intervals.  More on this topic is provided
+          <a href="http://www.itl.nist.gov/div898/handbook/pri/section2/pri24.htm" rel="noopener noreferrer" target="_blank">
+           here
+          </a>
+          .
+         </p>
+         <h4 id="outliersleverage-points">
+          Outliers/Leverage Points
+         </h4>
+         <p>
+          Outliers and leverage points are points that lie far away from the regular trends of your data.  These points can have a large influence on your solution.  In practice, these points might even be typos.  If you are aggregating data from multiple sources, it is possible that some of the data values were carried over incorrectly or aggregated incorrectly.
+         </p>
+         <p>
+          Other times outliers are accurate and true data points, not necessarily measurement or data entry errors.  In these cases, 'fixing' is more subjective. Often the strategy for working with these points is dependent on the goal of your analysis.  Linear models using ordinary least squares, in particular, are not very robust.  That is, large outliers may greatly change our results.  There are techniques to combat this - largely known as
+          <strong>
+           regularization
+          </strong>
+          techniques.  These are beyond the scope of this class, but they are quickly discussed in the
+          <a href="https://classroom.udacity.com/courses/ud120" rel="noopener noreferrer" target="_blank">
+           free course on machine learning
+          </a>
+          .
+         </p>
+         <h4 id="multi-collinearity">
+          Multi-collinearity
+         </h4>
+         <p>
+          Multicollinearity is when we have predictor variables that are correlated with one another.  One of the main concerns of multicollinearity is that it can lead to coefficients being flipped from the direction we expect from simple linear regression.
+         </p>
+         <p>
+          One of the most common ways to identify multicollinearity is with bivariate plots or with
+          <strong>
+           variance inflation factors (or VIFs)
+          </strong>
+          .  This is a topic we will dive into in the next concept, so we won't spend as much time on it here.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/resid-plots.gif"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="17. Screencast Multicollinearity &amp; VIFs.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('16. [Optional] Text: Linear Model Assumptions')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

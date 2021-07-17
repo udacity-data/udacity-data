@@ -1,0 +1,169 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.674
+It is now time to get some practice adding dummy variables to a linear model.
+
+00:00:04.674 --> 00:00:06.974
+In this video we'll do this together.
+
+00:00:06.974 --> 00:00:09.524
+Then in the next concept you'll do this on your own.
+
+00:00:09.525 --> 00:00:13.065
+First let's load the necessary libraries and the data.
+
+00:00:13.064 --> 00:00:15.144
+In order to create our dummy variables,
+
+00:00:15.144 --> 00:00:18.384
+Pandas has a useful method called Get dummies.
+
+00:00:18.385 --> 00:00:21.429
+A quick google search gets us to the documentation.
+
+00:00:21.429 --> 00:00:23.379
+Let's see how this works.
+
+00:00:23.379 --> 00:00:26.070
+If we pass our categorical column to get dummies,
+
+00:00:26.070 --> 00:00:28.260
+the output we get is just what you saw in
+
+00:00:28.260 --> 00:00:31.590
+the earlier video where each output column is one
+
+00:00:31.589 --> 00:00:37.332
+of the categorical levels and the value of each column is either a one or a zero.
+
+00:00:37.332 --> 00:00:39.809
+So if we pass the neighborhood column,
+
+00:00:39.810 --> 00:00:41.661
+you'll see that we get back the A's,
+
+00:00:41.661 --> 00:00:44.820
+B's and C's where there's three B's here and
+
+00:00:44.820 --> 00:00:48.250
+you can see there's three ones there and then there's an A.
+
+00:00:48.250 --> 00:00:50.759
+And so we see the one for the A and there's basically
+
+00:00:50.759 --> 00:00:53.293
+zeroes otherwise for these other columns.
+
+00:00:53.293 --> 00:00:56.159
+Let's store this output A,
+
+00:00:56.159 --> 00:00:59.959
+B and C. As you saw in the earlier quiz,
+
+00:00:59.960 --> 00:01:03.870
+just using the categorical columns in our linear models didn't work.
+
+00:01:03.869 --> 00:01:06.019
+Let's see if we have more success using
+
+00:01:06.019 --> 00:01:09.019
+these dummy variables and our linear regression model.
+
+00:01:09.019 --> 00:01:10.704
+Here I've created the neighborhood.
+
+00:01:10.704 --> 00:01:13.394
+Let's do this again with the style.
+
+00:01:13.394 --> 00:01:17.640
+Your categorical variables will always come back in alphabetical order so,
+
+00:01:17.640 --> 00:01:19.969
+whichever comes first alphabetically is
+
+00:01:19.969 --> 00:01:22.959
+the first one that will be returned as your column.
+
+00:01:22.959 --> 00:01:24.779
+So before you saw that we couldn't pass
+
+00:01:24.780 --> 00:01:28.775
+these categorical variables straight into our linear regression models.
+
+00:01:28.775 --> 00:01:31.755
+Let's try again using these dummy variables.
+
+00:01:31.754 --> 00:01:35.194
+Remember, you will always want to drop one of the columns.
+
+00:01:35.194 --> 00:01:38.684
+The column you drop is called the baseline category here.
+
+00:01:38.685 --> 00:01:42.370
+Let's drop the Victorian column and just use these other two.
+
+00:01:42.370 --> 00:01:45.579
+So we're gonna drop this column and just use these two here.
+
+00:01:45.579 --> 00:01:48.149
+And similarly we could create the baseline with A,
+
+00:01:48.150 --> 00:01:51.975
+B or C so we'll drop one of those when we add it to our linear model.
+
+00:01:51.974 --> 00:01:56.765
+To create a linear model that just uses the homes, we can do the following.
+
+00:01:56.765 --> 00:01:58.989
+So we'll be predicting the price.
+
+00:01:58.989 --> 00:02:01.795
+And let's add an intercept.
+
+00:02:01.795 --> 00:02:04.609
+And then in our model,
+
+00:02:04.609 --> 00:02:07.280
+I'll have the intercept.
+
+00:02:07.280 --> 00:02:09.604
+So here you can see we have more success.
+
+00:02:09.604 --> 00:02:11.869
+Here, we fit the model and then
+
+00:02:11.870 --> 00:02:14.705
+finally we can look at the results with the summary command.
+
+00:02:14.705 --> 00:02:17.270
+Let's interpret a few of these coefficients.
+
+00:02:17.270 --> 00:02:19.985
+So this has six zeros on the end of it.
+
+00:02:19.985 --> 00:02:22.205
+So 1 2 3,
+
+00:02:22.205 --> 00:02:24.980
+so it's like one million.
+
+00:02:24.979 --> 00:02:31.489
+So the intercept means that if our home is a Victorian home,
+
+00:02:31.490 --> 00:02:36.890
+we predict its price to be 1,046,000 dollars
+
+00:02:36.889 --> 00:02:44.929
+and lodge is predicted to be 741,000 less than a Victorian.
+
+00:02:44.930 --> 00:02:51.860
+And similarly, a ranch is predicted to be 471,000 less than a Victorian.
+
+00:02:51.860 --> 00:02:55.310
+So each of these is a comparison to
+
+00:02:55.310 --> 00:02:59.000
+the baseline category and this is our prediction for the baseline.
+

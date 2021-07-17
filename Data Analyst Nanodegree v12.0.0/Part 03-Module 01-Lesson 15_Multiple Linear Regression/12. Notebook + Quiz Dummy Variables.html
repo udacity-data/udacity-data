@@ -1,0 +1,944 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Notebook + Quiz: Dummy Variables
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Multiple Linear Regression
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Video Introduction.html">
+       01. Video: Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Video Multiple Linear Regression.html">
+       02. Video: Multiple Linear Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Screencast Fitting A Multiple Linear Regression Model.html">
+       03. Screencast: Fitting A Multiple Linear Regression Model
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Notebook + Quiz Fitting A MLR Model.html">
+       04. Notebook + Quiz: Fitting A MLR Model
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Screencast + Text How Does MLR Work.html">
+       05. Screencast + Text: How Does MLR Work?
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Video Multiple Linear Regression Model Results.html">
+       06. Video: Multiple Linear Regression Model Results
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Quiz Interpreting Coefficients in MLR.html">
+       07. Quiz: Interpreting Coefficients in MLR
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Video Dummy Variables.html">
+       08. Video: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Text Dummy Variables.html">
+       09. Text: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Dummy Variables.html">
+       10. Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Screencast Dummy Variables.html">
+       11. Screencast: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Notebook + Quiz Dummy Variables.html">
+       12. Notebook + Quiz: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Video Dummy Variables Recap.html">
+       13. Video: Dummy Variables Recap
+      </a>
+     </li>
+     <li class="">
+      <a href="14. [Optional] Notebook + Quiz Other Encodings.html">
+       14. [Optional] Notebook + Quiz: Other Encodings
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Video Potential Problems.html">
+       15. Video: Potential Problems
+      </a>
+     </li>
+     <li class="">
+      <a href="16. [Optional] Text Linear Model Assumptions.html">
+       16. [Optional] Text: Linear Model Assumptions
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Screencast Multicollinearity &amp; VIFs.html">
+       17. Screencast: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Video Multicollinearity &amp; VIFs.html">
+       18. Video: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Notebook + Quiz Multicollinearity &amp; VIFs.html">
+       19. Notebook + Quiz: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Video Higher Order Terms.html">
+       20. Video: Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Text Higher Order Terms.html">
+       21. Text: Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Screencast How to Add Higher Order Terms.html">
+       22. Screencast: How to Add Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Video Interpreting Interactions.html">
+       23. Video: Interpreting Interactions
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Text Interpreting Interactions.html">
+       24. Text: Interpreting Interactions
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Notebook + Quiz Interpreting Model Coefficients.html">
+       25. Notebook + Quiz: Interpreting Model Coefficients
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Video Recap.html">
+       26. Video: Recap
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Text Recap.html">
+       27. Text: Recap
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          12. Notebook + Quiz: Dummy Variables
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Use the linear model results from the first question to mark all of the below that are true.
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1510616512740" name="461534" type="checkbox" value="a1510616512740"/>
+           <label for="a1510616512740">
+            <p>
+             The confidence interval for the intercept is a range from a very very large negative number to a very very large positive number.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1510616648849" name="461534" type="checkbox" value="a1510616648849"/>
+           <label for="a1510616648849">
+            <p>
+             The confidence interval for the slope associated with neighborhood A is a range from a very very large negative number to a very very large positive number.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1510616683972" name="461534" type="checkbox" value="a1510616683972"/>
+           <label for="a1510616683972">
+            <p>
+             The confidence interval for the slope associated with neighborhood B is a range from a very very large negative number to a very very large positive number.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1510616694235" name="461534" type="checkbox" value="a1510616694235"/>
+           <label for="a1510616694235">
+            <p>
+             The confidence interval for the slope associated with neighborhood C is a range from a very very large negative number to a very very large positive number.
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            The confidence interval for the intercept is a range from a very very large negative number to a very very large positive number.
+           </li>
+           <li>
+            The confidence interval for the slope associated with neighborhood A is a range from a very very large negative number to a very very large positive number.
+           </li>
+           <li>
+            The confidence interval for the slope associated with neighborhood B is a range from a very very large negative number to a very very large positive number.
+           </li>
+           <li>
+            The confidence interval for the slope associated with neighborhood C is a range from a very very large negative number to a very very large positive number.
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Based on the results of your multiple linear regression model from question 2, match each neighborhood to the description that correctly describes how the neighborhood homes compare to the other neighborhoods.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           A
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           B
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           C
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Neighborhood
+            </p>
+           </th>
+           <th>
+            <p>
+             Description
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             On average, this neighborhood is the
+             <strong>
+              least
+             </strong>
+             expensive.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             On average, this neighborhood is the
+             <strong>
+              second
+             </strong>
+             most expensive of the three neighborhoods.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             On average, this neighborhood is the
+             <strong>
+              most
+             </strong>
+             expensive.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Neighborhood
+             </p>
+            </th>
+            <th>
+             <p>
+              Description
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              On average, this neighborhood is the
+              <strong>
+               least
+              </strong>
+              expensive.
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               C
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              On average, this neighborhood is the
+              <strong>
+               second
+              </strong>
+              most expensive of the three neighborhoods.
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               A
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              On average, this neighborhood is the
+              <strong>
+               most
+              </strong>
+              expensive.
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               B
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Using your results from question 2 in the notebook, select each of the statements below that are true.
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1510618139991" name="461544" type="checkbox" value="a1510618139991"/>
+           <label for="a1510618139991">
+            <p>
+             There is statistically significant evidence that the average home price in neighborhood B differs from the average home price in neighborhood A.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1510618313918" name="461544" type="checkbox" value="a1510618313918"/>
+           <label for="a1510618313918">
+            <p>
+             There is statistically significant evidence that the average home price in neighborhood A differs from the average home price in neighborhood C.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1510618341650" name="461544" type="checkbox" value="a1510618341650"/>
+           <label for="a1510618341650">
+            <p>
+             There is statistically significant evidence that the average home price in neighborhood B differs from the average home price in neighborhood C.
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            There is statistically significant evidence that the average home price in neighborhood B differs from the average home price in neighborhood A.
+           </li>
+           <li>
+            There is statistically significant evidence that the average home price in neighborhood B differs from the average home price in neighborhood C.
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Use the results from your multiple linear regression model in question 4 above to match the values to the appropriate spot in the descriptions below.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           <strong>
+            __
+           </strong>
+           % of the variability in price can be explained by the linear model built using bedrooms, bathrooms, neighborhood, and home style.
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           For every additional bedroom a home has we can expect the price to increase by
+           <strong>
+            __
+           </strong>
+           , holding all other variables constant.
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           For every additional bathroom a home has we can expect the price to increase by
+           <strong>
+            __
+           </strong>
+           , holding all other variables constant.
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           We  expect that a victorian house will cost
+           <strong>
+            <em>
+             <strong>
+              _ more than a _
+             </strong>
+            </em>
+           </strong>
+           house, all else being equal.
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           We  expect that a house in neighborhood C will cost
+           <strong>
+            <em>
+             <strong>
+              _ less than a neighborhood _
+             </strong>
+            </em>
+           </strong>
+           house, all else being equal.
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Description
+            </p>
+           </th>
+           <th>
+            <p>
+             Value
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             8.1
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             7168,  B
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             80.9
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             7168, A
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             70560, ranch
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             99960
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             70560, lodge
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             173200
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             9996
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             17320
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Description
+             </p>
+            </th>
+            <th>
+             <p>
+              Value
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              80.9
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               <strong>
+                __
+               </strong>
+               % of the variability in price can be explained by the linear model built using bedrooms, bathrooms, neighborhood, and home style.
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              7168, A
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               We  expect that a house in neighborhood C will cost
+               <strong>
+                <em>
+                 <strong>
+                  _ less than a neighborhood _
+                 </strong>
+                </em>
+               </strong>
+               house, all else being equal.
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              70560, ranch
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               We  expect that a victorian house will cost
+               <strong>
+                <em>
+                 <strong>
+                  _ more than a _
+                 </strong>
+                </em>
+               </strong>
+               house, all else being equal.
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              99960
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               For every additional bathroom a home has we can expect the price to increase by
+               <strong>
+                __
+               </strong>
+               , holding all other variables constant.
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              173200
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               For every additional bedroom a home has we can expect the price to increase by
+               <strong>
+                __
+               </strong>
+               , holding all other variables constant.
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="13. Video Dummy Variables Recap.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. Notebook + Quiz: Dummy Variables')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

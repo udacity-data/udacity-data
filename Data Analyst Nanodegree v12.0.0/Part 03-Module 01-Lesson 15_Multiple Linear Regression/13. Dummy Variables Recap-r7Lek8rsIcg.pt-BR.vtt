@@ -1,0 +1,92 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:02.991
+RECAPITULAÇÃO
+DAS VARIÁVEIS FICTÍCIAS
+
+00:00:03.024 --> 00:00:06.006
+Vimos como utilizar
+variáveis categóricas
+
+00:00:06.039 --> 00:00:07.494
+e modelos de regressão.
+
+00:00:07.527 --> 00:00:11.246
+Vimos como ajustar modelos
+utilizando as variáveis categóricas
+
+00:00:11.279 --> 00:00:13.606
+e como interpretar
+os resultados.
+
+00:00:13.639 --> 00:00:17.414
+Você já deve estar familiarizado
+com o método mais comum
+
+00:00:17.447 --> 00:00:20.591
+de linguagens de programação
+como o Python e o R.
+
+00:00:20.624 --> 00:00:24.390
+Mas existe mais um método
+para codificar variáveis fictícias
+
+00:00:24.423 --> 00:00:27.879
+que é muito comum na linguagem
+de programação chamada SAS.
+
+00:00:27.912 --> 00:00:32.543
+Para SAS, a codificação padrão
+é 1, 0, -1.
+
+00:00:32.576 --> 00:00:35.231
+A SAS é uma linguagem
+muito popular
+
+00:00:35.264 --> 00:00:37.191
+utilizada na área da saúde.
+
+00:00:37.224 --> 00:00:39.775
+O grande motivo
+para perceber a diferença
+
+00:00:39.808 --> 00:00:43.278
+é que ela altera os coeficientes
+obtidos com o modelo
+
+00:00:43.311 --> 00:00:46.190
+e a forma como interpretamos
+os coeficientes.
+
+00:00:46.223 --> 00:00:48.686
+Vimos que utilizar
+a codificação 1/0
+
+00:00:48.719 --> 00:00:50.349
+interpreta os coeficientes
+
+00:00:50.382 --> 00:00:52.919
+em comparação
+com a categoria da linha de base.
+
+00:00:52.952 --> 00:00:56.295
+Porém, ao utilizar
+a codificação 1/0/-1,
+
+00:00:56.328 --> 00:00:58.909
+os coeficientes
+são comparados com a média,
+
+00:00:58.942 --> 00:01:00.807
+independentemente do grupo.
+
+00:01:00.840 --> 00:01:04.558
+Para ver como isso funciona
+e como os resultados mudam,
+
+00:01:04.591 --> 00:01:08.097
+adicionei um bloco de anotações
+e questionários no próximo conceito.
+

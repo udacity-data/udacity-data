@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.359 --> 00:00:05.400
+You saw in the previous example a case where
+
+00:00:05.400 --> 00:00:08.195
+your X variables were correlated with one another.
+
+00:00:08.195 --> 00:00:12.480
+This can lead to flipped regression coefficients from the expected relationships,
+
+00:00:12.480 --> 00:00:15.509
+and inaccurate hypothesis testing results.
+
+00:00:15.509 --> 00:00:18.675
+We want X variables to be related to Y,
+
+00:00:18.675 --> 00:00:24.535
+but when the X variables are related to one another these results can be very misleading.
+
+00:00:24.535 --> 00:00:28.199
+You saw that two ways you might identify multicollinearity are
+
+00:00:28.199 --> 00:00:32.115
+with a Scatterplot Matrix or with Variance Inflation Factors,
+
+00:00:32.115 --> 00:00:33.885
+or VIFs for short.
+
+00:00:33.884 --> 00:00:36.570
+A quick check of having large VIFs.
+
+00:00:36.570 --> 00:00:40.664
+A rule of thumb is that if you have larger than ten for a VIF,
+
+00:00:40.664 --> 00:00:43.004
+then you have multicollinearity in your model.
+
+00:00:43.005 --> 00:00:48.285
+VIF for a particular variable is computed as one over one minus R squared,
+
+00:00:48.284 --> 00:00:51.389
+where the R squared is computed as the R squared for
+
+00:00:51.390 --> 00:00:55.609
+that X variable being predicted by all the other X variables.
+
+00:00:55.609 --> 00:01:01.125
+Therefore, if the X is highly related to the other variables this portion increases,
+
+00:01:01.125 --> 00:01:06.599
+which decreases the entire denominator and increases the VIF for that term.
+
+00:01:06.599 --> 00:01:11.384
+You can imagine that it's unusual to find only one large VIF in a model,
+
+00:01:11.385 --> 00:01:14.760
+because if two or more X variables are related to one another,
+
+00:01:14.760 --> 00:01:18.025
+you would expect each of these variables to have a high VIF.
+
+00:01:18.025 --> 00:01:21.840
+The most common way to work with variables that are correlated in regression,
+
+00:01:21.840 --> 00:01:25.490
+is to remove the one or ones that are of least interest.
+

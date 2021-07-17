@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.030 --> 00:00:02.709
+INTRODUÇÃO
+À REGRESSÃO LINEAR MÚLTIPLA
+
+00:00:03.590 --> 00:00:07.180
+Na última aula, vimos como prever
+uma variável responsiva
+
+00:00:07.213 --> 00:00:09.407
+utilizando uma única
+variável explanatória
+
+00:00:09.440 --> 00:00:11.068
+na regressão linear simples.
+
+00:00:11.101 --> 00:00:14.123
+Nesta aula, expandiremos
+esse conhecimento.
+
+00:00:14.156 --> 00:00:16.813
+Veremos como prever
+uma variável responsiva
+
+00:00:16.846 --> 00:00:18.749
+utilizando várias entradas,
+
+00:00:18.782 --> 00:00:22.267
+incluindo as variáveis
+quantitativas e categóricas.
+
+00:00:22.300 --> 00:00:24.858
+Com o que já sabemos
+da regressão linear simples,
+
+00:00:24.891 --> 00:00:28.421
+estamos a caminho
+de dominar as ideias desta aula.
+
+00:00:28.454 --> 00:00:29.977
+Ao fim desta aula,
+
+00:00:30.010 --> 00:00:33.256
+aprenderemos a construir modelos
+de regressão linear múltipla
+
+00:00:33.289 --> 00:00:36.357
+no Python e também veremos
+os prós e contras
+
+00:00:36.390 --> 00:00:40.060
+dessa técnica de modelagem
+e como interpretar os resultados.
+
+00:00:40.093 --> 00:00:41.989
+Para quem gosta
+de material extra,
+
+00:00:42.022 --> 00:00:45.509
+inseri um link para "An Introduction
+to Statistical Learning".
+
+00:00:45.542 --> 00:00:47.163
+Esse é um ótimo livro.
+
+00:00:47.196 --> 00:00:48.919
+O capítulo três,
+especificamente,
+
+00:00:48.952 --> 00:00:51.332
+é um ótimo recurso
+para esta aula.
+
+00:00:51.365 --> 00:00:52.819
+Com isso, vamos começar.
+

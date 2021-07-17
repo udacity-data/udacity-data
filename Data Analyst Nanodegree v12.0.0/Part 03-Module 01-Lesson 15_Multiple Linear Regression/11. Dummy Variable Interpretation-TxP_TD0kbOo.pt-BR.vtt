@@ -1,0 +1,220 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.236 --> 00:00:03.331
+Chegou a hora de adicionar
+variáveis fictícias
+
+00:00:03.364 --> 00:00:04.635
+a um modelo linear.
+
+00:00:04.668 --> 00:00:06.874
+Neste vídeo,
+faremos isso juntos.
+
+00:00:06.907 --> 00:00:09.516
+No próximo conceito,
+você fará isso sozinho.
+
+00:00:09.549 --> 00:00:13.374
+Vamos carregar as bibliotecas
+e os dados necessários.
+
+00:00:13.407 --> 00:00:15.175
+Para criar
+variáveis fictícias,
+
+00:00:15.208 --> 00:00:18.291
+o Pandas possui um método útil
+chamado "get_dummies".
+
+00:00:18.324 --> 00:00:21.258
+Uma procura no Google
+nos leva até a documentação.
+
+00:00:21.883 --> 00:00:23.359
+Vejamos como funciona.
+
+00:00:23.392 --> 00:00:26.135
+Se passarmos a coluna categórica
+para "get_dummies",
+
+00:00:26.168 --> 00:00:29.283
+o resultado será o que vimos
+no vídeo anterior,
+
+00:00:29.316 --> 00:00:33.107
+no qual cada coluna de resultado
+representa um nível categórico,
+
+00:00:33.140 --> 00:00:37.492
+e o valor de cada coluna
+será um ou zero.
+
+00:00:37.525 --> 00:00:40.083
+Se passarmos a coluna
+de vizinhança,
+
+00:00:40.116 --> 00:00:44.691
+obteremos A, B e C,
+sendo que há três Bs aqui,
+
+00:00:44.724 --> 00:00:46.709
+pois há três ocorrências
+do número um.
+
+00:00:46.742 --> 00:00:49.987
+Há um A, pois vemos
+o número um no A,
+
+00:00:50.020 --> 00:00:53.571
+e o resto está com zero.
+
+00:00:53.604 --> 00:00:58.211
+Vamos armazenar
+o resultado A, B e C.
+
+00:00:58.244 --> 00:01:00.044
+Como vimos
+em outro questionário,
+
+00:01:00.077 --> 00:01:03.865
+utilizar somente as colunas
+categóricas não funcionou.
+
+00:01:03.898 --> 00:01:07.182
+Vejamos se temos mais sucesso
+utilizando as variáveis fictícias
+
+00:01:07.215 --> 00:01:08.963
+no modelo
+de regressão linear.
+
+00:01:08.996 --> 00:01:13.787
+Aqui eu criei a vizinhança.
+Façamos o mesmo com o estilo.
+
+00:01:13.820 --> 00:01:17.467
+As variáveis categóricas sempre
+retornarão em ordem alfabética.
+
+00:01:17.500 --> 00:01:19.796
+O que vier primeiro,
+alfabeticamente,
+
+00:01:19.829 --> 00:01:22.907
+será o primeiro a ser retornado
+como coluna.
+
+00:01:22.940 --> 00:01:26.036
+Antes não podíamos passar
+as variáveis categóricas
+
+00:01:26.069 --> 00:01:28.602
+diretamente para os modelos
+de regressão linear.
+
+00:01:28.635 --> 00:01:31.900
+Vamos tentar novamente
+com as variáveis fictícias.
+
+00:01:31.933 --> 00:01:35.284
+Lembre-se de que sempre
+abandonaremos uma coluna.
+
+00:01:35.317 --> 00:01:38.067
+Essa coluna é chamada
+de linha de base.
+
+00:01:38.100 --> 00:01:40.546
+Aqui nós abandonaremos
+a coluna vitoriana
+
+00:01:40.579 --> 00:01:42.336
+e utilizaremos
+as outras duas.
+
+00:01:42.369 --> 00:01:45.694
+Abandonaremos esta coluna
+e utilizaremos as outras duas.
+
+00:01:45.727 --> 00:01:48.990
+Da mesma forma, podemos criar
+a linha de base com A, B ou C.
+
+00:01:49.023 --> 00:01:52.174
+Vou abandonar uma
+ao adicionar ao modelo linear.
+
+00:01:52.207 --> 00:01:55.164
+Para criar um modelo linear
+que só utiliza as casas,
+
+00:01:55.197 --> 00:01:56.588
+faremos o seguinte.
+
+00:01:56.621 --> 00:01:58.637
+Faremos a previsão do preço.
+
+00:01:59.389 --> 00:02:01.509
+Vamos adicionar um intercepto.
+
+00:02:02.141 --> 00:02:06.597
+E o modelo linear.
+Temos o intercepto.
+
+00:02:07.245 --> 00:02:09.756
+Aqui tivemos mais sucesso.
+
+00:02:09.789 --> 00:02:13.315
+Nós ajustamos o modelo
+e podemos observar os resultados
+
+00:02:13.348 --> 00:02:14.868
+com o comando sumário.
+
+00:02:14.901 --> 00:02:17.532
+Vamos interpretar
+alguns desses coeficientes.
+
+00:02:17.565 --> 00:02:20.060
+Este está com seis zeros.
+
+00:02:20.093 --> 00:02:23.542
+Então, um, dois, três...
+Parece um milhão.
+
+00:02:25.285 --> 00:02:27.628
+O intercepto significa
+
+00:02:27.661 --> 00:02:31.588
+que, se a nossa casa
+for no estilo vitoriano,
+
+00:02:31.621 --> 00:02:37.061
+prevemos que o preço
+será igual a $ 1.046.000.
+
+00:02:37.094 --> 00:02:41.996
+A previsão é que uma cabana
+custe $ 741 mil
+
+00:02:42.029 --> 00:02:45.060
+a menos do que a vitoriana.
+
+00:02:45.093 --> 00:02:50.756
+Da mesma forma, um estilo rústico
+deverá custar $ 471 mil a menos
+
+00:02:50.789 --> 00:02:52.019
+do que a vitoriana.
+
+00:02:52.052 --> 00:02:56.605
+Cada um aqui é uma comparação
+a partir da linha de base,
+
+00:02:56.638 --> 00:02:58.967
+e essa é nossa previsão
+para a linha de base.
+

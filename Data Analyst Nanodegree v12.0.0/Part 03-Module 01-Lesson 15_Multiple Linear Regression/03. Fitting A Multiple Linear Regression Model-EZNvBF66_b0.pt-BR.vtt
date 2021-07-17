@@ -1,0 +1,81 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.128 --> 00:00:04.768
+Você está bem equipado para usar
+modelos de regressão linear múltipla
+
+00:00:04.801 --> 00:00:07.497
+e para interpretar
+os resultados deles.
+
+00:00:07.530 --> 00:00:09.234
+Vejamos um exemplo.
+
+00:00:09.267 --> 00:00:13.107
+Este é um conjunto de dados
+parecido com o das casas,
+
+00:00:13.140 --> 00:00:17.202
+que está disponível no material
+e no próximo conceito.
+
+00:00:17.235 --> 00:00:21.210
+Eu rodei as bibliotecas apropriadas
+e o conjunto de dados.
+
+00:00:21.243 --> 00:00:25.041
+Para adequar nosso modelo linear,
+vamos criar um intercepto.
+
+00:00:25.074 --> 00:00:27.514
+Depois podemos utilizar
+os modelos estatísticos
+
+00:00:27.547 --> 00:00:29.879
+parecidos com o que fizemos
+na aula anterior.
+
+00:00:29.912 --> 00:00:32.522
+Só precisamos adicionar
+nossas variáveis à lista
+
+00:00:32.555 --> 00:00:34.434
+para a porção X.
+
+00:00:34.467 --> 00:00:36.314
+Aqui adicionamos o intercepto.
+
+00:00:36.347 --> 00:00:39.770
+Queremos prever o preço.
+
+00:00:39.803 --> 00:00:45.594
+Do lado direito, adicionamos
+todas as variáveis
+
+00:00:45.627 --> 00:00:46.810
+que são quantitativas.
+
+00:00:46.843 --> 00:00:50.622
+Se tentarmos adicionar as variáveis
+categóricas, dará erro.
+
+00:00:50.655 --> 00:00:53.591
+Vamos armazenar no LM
+para um modelo linear.
+
+00:00:54.271 --> 00:00:57.567
+Nós vamos adequar o modelo.
+
+00:01:00.255 --> 00:01:01.382
+Agora é a sua vez.
+
+00:01:01.415 --> 00:01:03.182
+Use o ambiente
+no próximo conceito
+
+00:01:03.215 --> 00:01:06.366
+para criar seu primeiro modelo
+de regressão linear múltipla.
+

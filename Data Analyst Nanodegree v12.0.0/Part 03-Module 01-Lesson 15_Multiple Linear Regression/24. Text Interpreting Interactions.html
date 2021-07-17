@@ -1,0 +1,532 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Text: Interpreting Interactions
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Multiple Linear Regression
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Video Introduction.html">
+       01. Video: Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Video Multiple Linear Regression.html">
+       02. Video: Multiple Linear Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Screencast Fitting A Multiple Linear Regression Model.html">
+       03. Screencast: Fitting A Multiple Linear Regression Model
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Notebook + Quiz Fitting A MLR Model.html">
+       04. Notebook + Quiz: Fitting A MLR Model
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Screencast + Text How Does MLR Work.html">
+       05. Screencast + Text: How Does MLR Work?
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Video Multiple Linear Regression Model Results.html">
+       06. Video: Multiple Linear Regression Model Results
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Quiz Interpreting Coefficients in MLR.html">
+       07. Quiz: Interpreting Coefficients in MLR
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Video Dummy Variables.html">
+       08. Video: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Text Dummy Variables.html">
+       09. Text: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Dummy Variables.html">
+       10. Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Screencast Dummy Variables.html">
+       11. Screencast: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Notebook + Quiz Dummy Variables.html">
+       12. Notebook + Quiz: Dummy Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Video Dummy Variables Recap.html">
+       13. Video: Dummy Variables Recap
+      </a>
+     </li>
+     <li class="">
+      <a href="14. [Optional] Notebook + Quiz Other Encodings.html">
+       14. [Optional] Notebook + Quiz: Other Encodings
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Video Potential Problems.html">
+       15. Video: Potential Problems
+      </a>
+     </li>
+     <li class="">
+      <a href="16. [Optional] Text Linear Model Assumptions.html">
+       16. [Optional] Text: Linear Model Assumptions
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Screencast Multicollinearity &amp; VIFs.html">
+       17. Screencast: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Video Multicollinearity &amp; VIFs.html">
+       18. Video: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Notebook + Quiz Multicollinearity &amp; VIFs.html">
+       19. Notebook + Quiz: Multicollinearity &amp; VIFs
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Video Higher Order Terms.html">
+       20. Video: Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Text Higher Order Terms.html">
+       21. Text: Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Screencast How to Add Higher Order Terms.html">
+       22. Screencast: How to Add Higher Order Terms
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Video Interpreting Interactions.html">
+       23. Video: Interpreting Interactions
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Text Interpreting Interactions.html">
+       24. Text: Interpreting Interactions
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Notebook + Quiz Interpreting Model Coefficients.html">
+       25. Notebook + Quiz: Interpreting Model Coefficients
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Video Recap.html">
+       26. Video: Recap
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Text Recap.html">
+       27. Text: Recap
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          24. Text: Interpreting Interactions
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="interaction-terms">
+          Interaction Terms
+         </h3>
+         <p>
+          In the previous video, you were introduced to how you might interpret interactions, and how you might observe the need for an interaction in your model.
+         </p>
+         <p>
+          Mathematically, an interaction is created by multiplying two variables by one another and adding this term to our linear regression model.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2017-12-07-at-3.45.19-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The example from the previous video used
+          <strong>
+           area
+          </strong>
+          (
+          <span class="mathquill ud-math">
+           x_1
+          </span>
+          ) and the
+          <strong>
+           neighborhood
+          </strong>
+          (
+          <span class="mathquill ud-math">
+           x_2
+          </span>
+          ) of a home (either
+          <strong>
+           A
+          </strong>
+          or
+          <strong>
+           B
+          </strong>
+          ) to predict the home
+          <strong>
+           price
+          </strong>
+          (
+          <span class="mathquill ud-math">
+           y
+          </span>
+          ).  At the top of the screen in the video, you might have noticed the equation for a linear model using these variables as:
+         </p>
+         <p>
+          <span class="mathquill ud-math">
+           \hat{y} = b_0 + b_1x_1 + b_2x_2
+          </span>
+         </p>
+         <p>
+          This example does not involve an interaction term, and this model is appropriate if the relationship of the variables looks like that in the plot below.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2017-12-07-at-3.48.20-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          where
+          <span class="mathquill ud-math">
+           b_1
+          </span>
+          is the way we estimate the relationship between
+          <strong>
+           area
+          </strong>
+          and
+          <strong>
+           price
+          </strong>
+          , which in this model we believe to be the same regardless of the neighborhood.
+         </p>
+         <p>
+          Then
+          <span class="mathquill ud-math">
+           b_2
+          </span>
+          is the difference in price depending on which neighborhood you are in, which is the
+          <strong>
+           vertical
+          </strong>
+          distance between the two lines here:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2017-12-07-at-3.56.39-pm.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Notice here that:
+         </p>
+         <ul>
+          <li>
+           The way that
+           <strong>
+            area
+           </strong>
+           is related to
+           <strong>
+            price
+           </strong>
+           is the same regardless of
+           <strong>
+            neighborhood
+           </strong>
+           .
+          </li>
+         </ul>
+         <p>
+          AND
+         </p>
+         <ul>
+          <li>
+           The difference in
+           <strong>
+            price
+           </strong>
+           for the different
+           <strong>
+            neighborhoods
+           </strong>
+           is the same regardless of the
+           <strong>
+            area
+           </strong>
+           .
+          </li>
+         </ul>
+         <p>
+          When these statements are true, we do not need an interaction term in our model. However, we need an interaction when
+          <strong>
+           the way that area is related to price is different depending on the neighborhood
+          </strong>
+          .
+         </p>
+         <p>
+          Mathematically, when the way area relates to price depends on the neighborhood, this suggests we should add an interaction. By adding the interaction, we allow the slopes of the line for each neighborhood to be different, as shown in the plot below. Here we have added the interaction, and you can see this allows for a difference in these two slopes.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screen-shot-2018-04-29-at-10.10.52-am.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          These lines might even cross or grow apart quickly.  Either of these would suggest an interaction is present between
+          <strong>
+           area
+          </strong>
+          and
+          <strong>
+           neighborhood
+          </strong>
+          in the way they related to the
+          <strong>
+           price
+          </strong>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="25. Notebook + Quiz Interpreting Model Coefficients.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('24. Text: Interpreting Interactions')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

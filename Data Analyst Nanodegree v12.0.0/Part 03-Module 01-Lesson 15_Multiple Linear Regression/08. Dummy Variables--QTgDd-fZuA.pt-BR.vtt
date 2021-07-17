@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.134 --> 00:00:02.124
+VARIÁVEIS FICTÍCIAS
+
+00:00:02.157 --> 00:00:05.228
+Não podemos adicionar variáveis
+explanatórias categóricas
+
+00:00:05.261 --> 00:00:09.693
+na matriz X tão bem quanto
+as variáveis quantitativas.
+
+00:00:09.726 --> 00:00:12.716
+Em vez de adicionar uma coluna
+como esta na matriz X
+
+00:00:12.749 --> 00:00:16.381
+com valores como A, B e C
+para a vizinhança,
+
+00:00:16.414 --> 00:00:19.588
+nós acabamos criando
+variáveis fictícias.
+
+00:00:19.621 --> 00:00:22.500
+Há algumas maneiras
+de codificar essas variáveis,
+
+00:00:22.533 --> 00:00:24.244
+mas as mais utilizadas
+
+00:00:24.277 --> 00:00:28.084
+são as que codificamos
+um e zero.
+
+00:00:28.117 --> 00:00:33.675
+Para isso, criamos uma coluna
+para cada valor da coluna.
+
+00:00:33.708 --> 00:00:36.102
+E cada coluna receberá 1
+
+00:00:36.135 --> 00:00:40.437
+se o valor existir na coluna,
+e zero se não existir.
+
+00:00:40.470 --> 00:00:43.261
+A coluna que criaríamos
+para os valores A
+
+00:00:43.294 --> 00:00:44.890
+seriam assim.
+
+00:00:44.923 --> 00:00:48.138
+Então, se criássemos uma coluna
+para os valores B,
+
+00:00:48.171 --> 00:00:49.706
+ela seria assim.
+
+00:00:49.739 --> 00:00:53.674
+Por fim, a última coluna
+para C seria assim.
+
+00:00:53.707 --> 00:00:56.962
+Fazemos isso
+para cada variável categórica
+
+00:00:56.995 --> 00:00:58.978
+que adicionarmos
+ao conjunto de dados.
+
+00:00:59.011 --> 00:01:02.690
+Como a última coluna pode
+ser inferida das duas anteriores,
+
+00:01:02.723 --> 00:01:05.218
+pois os valores 1
+só existem nas linhas
+
+00:01:05.251 --> 00:01:08.098
+que não possuíam valor
+nas colunas anteriores,
+
+00:01:08.131 --> 00:01:12.282
+nós acabamos optando
+por abandonar essa coluna.
+
+00:01:12.315 --> 00:01:15.915
+A coluna que abandonamos
+não faz muita diferença.
+
+00:01:15.948 --> 00:01:17.162
+No próximo conceito,
+
+00:01:17.195 --> 00:01:20.738
+veremos o raciocínio matemático
+para abandonar uma coluna.
+
+00:01:20.771 --> 00:01:23.983
+O vídeo mostrará
+como isso funciona na prática.
+
