@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.380 --> 00:00:04.030
+Vou mostrar a você concretamente como é uma regressão
+
+00:00:04.030 --> 00:00:06.920
+quando ela está sobreajustando, para que você saiba porque isso é tão ruim.
+
+00:00:06.920 --> 00:00:09.060
+Suponhamos que estes sejam meus dados de entrada.
+
+00:00:09.060 --> 00:00:12.370
+Minha linha de melhor ajuste pode ser algo assim.
+
+00:00:12.370 --> 00:00:16.160
+Mas, suponhamos que, devido ao modelo e às características
+
+00:00:16.160 --> 00:00:17.480
+que estou usando,
+
+00:00:17.480 --> 00:00:22.600
+eu também tenha a possibilidade de fazer uma regressão que seja um pouco não linear.
+
+00:00:22.600 --> 00:00:25.300
+Por exemplo, eu poderia fazer um ajuste mais ou menos assim,
+
+00:00:26.360 --> 00:00:28.980
+em que haja uma pequena curvatura na linha.
+
+00:00:28.980 --> 00:00:31.910
+E ter uma linha curva provavelmente não seja necessário neste caso.
+
+00:00:31.910 --> 00:00:34.890
+Você viu que a linha reta ajusta isso perfeitamente, mas a questão agora
+
+00:00:34.890 --> 00:00:38.730
+é que o computador, de certa forma, tem isso disponível como uma possível solução.
+
+00:00:38.730 --> 00:00:42.380
+Quando a curvatura for permitida e eu deixar que ela se torne muito complexa usando
+
+00:00:42.380 --> 00:00:45.780
+muitas características, poderei obter algo parecido com isto.
+
+00:00:45.780 --> 00:00:50.010
+É compreensível que um computador que está tentando encontrar uma função que
+
+00:00:50.010 --> 00:00:53.950
+minimize a soma sobre os erros ao quadrado no conjunto de treinamento
+
+00:00:53.950 --> 00:00:56.260
+prefira uma função como esta,
+
+00:00:56.260 --> 00:00:59.470
+porque ela se aproxima muito de todos os pontos de treinamento.
+
+00:00:59.470 --> 00:01:02.920
+No entanto, se eu usasse outro exemplo mais ou menos da
+
+00:01:02.920 --> 00:01:04.540
+mesma população...
+
+00:01:04.540 --> 00:01:07.830
+Coleto aqui mais alguns pontos de dados que sejam consistentes com os
+
+00:01:07.830 --> 00:01:09.395
+que eu já coletei...
+
+00:01:09.395 --> 00:01:13.130
+Bem, é compreensível que esta linha sinuosa faça a previsão da tendência
+
+00:01:13.130 --> 00:01:15.880
+nestes pontos de dados vermelhos pior do que minha
+
+00:01:15.880 --> 00:01:17.820
+linha reta original.
+
+00:01:17.820 --> 00:01:20.750
+Esta linha sinuosa será um caso clássico do uso excessivo de
+
+00:01:20.750 --> 00:01:21.890
+características.
+
+00:01:21.890 --> 00:01:25.070
+É uma solução de variância muito alta, e ela não generalizará de modo satisfatório.
+

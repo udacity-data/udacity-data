@@ -1,0 +1,202 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.180 --> 00:00:02.150
+Então, vamos deixar esse exemplo mais concreto,
+
+00:00:02.150 --> 00:00:03.670
+o que pode ajudá-lo a entender o que quero dizer.
+
+00:00:03.670 --> 00:00:07.670
+Vou mostrar alguns exemplos reais de um código que você, na verdade,
+
+00:00:07.670 --> 00:00:10.640
+já está executando nessa lição, talvez sem nem ter notado.
+
+00:00:10.640 --> 00:00:12.040
+Então, lembre das duas primeiras
+
+00:00:12.040 --> 00:00:15.240
+lições, nas quais aprendemos sobre algoritmos de classificação supervisionada e
+
+00:00:15.240 --> 00:00:18.410
+tentamos identificar emails pelos autores.
+
+00:00:18.410 --> 00:00:23.030
+Eu queria que você se concentrasse no classificador de base simples,
+
+00:00:23.030 --> 00:00:26.290
+SVM ou algo do gênero e deixasse o pré-processamento para mim.
+
+00:00:26.290 --> 00:00:28.680
+Eu cuidaria da leitura dos emails e
+
+00:00:28.680 --> 00:00:31.420
+da formatação para deixar tudo em um formato bom para você.
+
+00:00:31.420 --> 00:00:34.040
+Agora, estou levando você para o código onde eu
+
+00:00:34.040 --> 00:00:36.440
+realmente realizei a etapa de pré-processamento.
+
+00:00:36.440 --> 00:00:39.200
+Isso para que você possa ver que realmente não há magia negra aqui.
+
+00:00:39.200 --> 00:00:43.300
+E que você conseguirá fazer tudo isso sozinho no futuro.
+
+00:00:43.300 --> 00:00:45.660
+Deixe-me levá-lo para o código e mostrar o que estou fazendo.
+
+00:00:45.660 --> 00:00:46.780
+Então, eu carrego os dados.
+
+00:00:46.780 --> 00:00:51.000
+Eu os coloco em meu TfidfVectorizer, com o qual você está familiarizado.
+
+00:00:51.000 --> 00:00:53.240
+Então tem outra etapa bem aqui.
+
+00:00:53.240 --> 00:00:54.510
+Selecione o percentil.
+
+00:00:54.510 --> 00:00:57.380
+Eu faço um seletor e seleciono o percentil.
+
+00:00:57.380 --> 00:01:02.180
+A verdadeira função dessa etapa é realmente descartar muitos recursos.
+
+00:01:02.180 --> 00:01:03.570
+Eu sei que esses são dados de texto.
+
+00:01:03.570 --> 00:01:06.450
+E que você terá centenas ou talvez
+
+00:01:06.450 --> 00:01:09.770
+milhares de recursos por causa dos amplos vocabulários que temos.
+
+00:01:09.770 --> 00:01:14.010
+Também sei que muitas dessas palavras serão irrelevantes.
+
+00:01:14.010 --> 00:01:16.340
+As palavras irrelevantes são um exemplo de palavras que não nos interessam.
+
+00:01:16.340 --> 00:01:19.100
+No entanto, provavelmente há muitas palavras aqui que não são irrelevantes, mas
+
+00:01:19.100 --> 00:01:21.510
+que também não têm muitas informações.
+
+00:01:21.510 --> 00:01:24.750
+Elas não são muito boas para me ajudar a descobrir quem é o autor.
+
+00:01:24.750 --> 00:01:29.440
+Logo, o que eu fiz nessa etapa onde selecionei o percentil foi,
+
+00:01:29.440 --> 00:01:32.500
+na verdade, me livrar de um monte de recursos.
+
+00:01:32.500 --> 00:01:37.020
+Você entra e descobre, para cada recurso, o quanto ele é bom
+
+00:01:37.020 --> 00:01:40.850
+para diferenciar os dois emails.
+
+00:01:40.850 --> 00:01:43.870
+E aceitaremos apenas os melhores 10% dos recursos para
+
+00:01:43.870 --> 00:01:45.630
+usar no classificador.
+
+00:01:45.630 --> 00:01:49.010
+Então, o que fiz aqui foi separar aquela camada superior.
+
+00:01:49.010 --> 00:01:51.030
+Os recursos que parecem ter mais informações.
+
+00:01:51.030 --> 00:01:54.220
+Estou me concentrando neles ao criar meu classificador.
+
+00:01:54.220 --> 00:01:58.240
+Há um outro local onde também fiz redução de recursos.
+
+00:01:58.240 --> 00:02:00.650
+E você nem sempre pode querer misturar esses dois.
+
+00:02:00.650 --> 00:02:03.990
+Mas quero que você participe de uma pequena caça ao tesouro para encontrá-lo.
+
+00:02:03.990 --> 00:02:06.310
+Eu te contei sobre a seleção de percentil.
+
+00:02:06.310 --> 00:02:08.630
+Isso é algo que foi disponibilizado para mim no
+
+00:02:08.630 --> 00:02:11.270
+módulo sklearn.feature_selection.
+
+00:02:11.270 --> 00:02:14.480
+No entanto, há uma seleção de recursos que posso fazer
+
+00:02:14.480 --> 00:02:18.300
+quando estiver realizando a fidfVectorization dos meus dados.
+
+00:02:18.300 --> 00:02:21.240
+Quando eu realmente estiver pegando as palavras no meu conjunto e
+
+00:02:21.240 --> 00:02:23.480
+colocando-as na minha matriz Tfidf.
+
+00:02:24.850 --> 00:02:29.120
+O que quero que você faça é pesquisar pela documentação dessa função,
+
+00:02:29.120 --> 00:02:31.260
+o TfidfVectorizer.
+
+00:02:31.260 --> 00:02:33.810
+E dê uma olhada nos argumentos que estou passando para ele.
+
+00:02:33.810 --> 00:02:36.450
+Um desses argumentos faz uma coisa meio interessante.
+
+00:02:36.450 --> 00:02:38.930
+Ele diz que tem uma palavra bastante frequente,
+
+00:02:38.930 --> 00:02:41.330
+que é algo que também queremos ignorar.
+
+00:02:41.330 --> 00:02:46.560
+E, quando digo bastante frequente, isso significa que ela aparece em vários documentos.
+
+00:02:46.560 --> 00:02:50.850
+Então, por exemplo, se você tem uma palavra que aparece em todos os documentos, há
+
+00:02:50.850 --> 00:02:56.200
+um argumento que a removerá ao realizar o Tfidf.
+
+00:02:56.200 --> 00:02:57.950
+Esse teste é meio pegadinha,
+
+00:02:57.950 --> 00:03:01.170
+pois eu não te disse exatamente qual argumento está fazendo isso.
+
+00:03:01.170 --> 00:03:03.120
+Ainda que uma pesquisa rápida no Google e
+
+00:03:03.120 --> 00:03:05.630
+a documentação de sklearn possam esclarecer isso.
+
+00:03:05.630 --> 00:03:10.980
+Mas a pergunta que farei no teste é qual é o limite para
+
+00:03:10.980 --> 00:03:14.200
+esse Tfidf específico ignorar a palavra.
+
+00:03:14.200 --> 00:03:16.566
+Ou seja, quando uma palavra é descartada?
+
+00:03:16.566 --> 00:03:20.960
+Se ela ocorre em 10%, 50% ou 90% dos documentos?
+

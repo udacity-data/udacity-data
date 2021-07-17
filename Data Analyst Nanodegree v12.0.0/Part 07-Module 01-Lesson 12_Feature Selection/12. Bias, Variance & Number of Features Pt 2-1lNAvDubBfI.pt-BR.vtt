@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.160 --> 00:00:01.890
+Tenho outra pergunta para você.
+
+00:00:01.890 --> 00:00:05.710
+Imagine que você tenha um modelo ajustado cuidadosamente para minimizar
+
+00:00:05.710 --> 00:00:09.190
+a soma de erros ao quadrado em uma regressão.
+
+00:00:09.190 --> 00:00:11.630
+Para minimizar a soma de erros ao quadrado, você
+
+00:00:11.630 --> 00:00:15.360
+ajusta os parâmetros com cuidado e usa vários recursos
+
+00:00:15.360 --> 00:00:17.950
+para tentar obter todas as informações
+
+00:00:17.950 --> 00:00:19.490
+possíveis dos dados.
+
+00:00:19.490 --> 00:00:22.380
+Você pode estar usando todos os recursos imagináveis,
+
+00:00:22.380 --> 00:00:24.390
+possivelmente dezenas deles.
+
+00:00:24.390 --> 00:00:27.280
+Nessa situação, você acredita que deve se preocupar mais com a variação ou
+
+00:00:27.280 --> 00:00:29.370
+o viés do modelo?
+
+00:00:29.370 --> 00:00:30.560
+Clique na que parece certa para você.
+

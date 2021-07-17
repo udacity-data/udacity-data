@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.270 --> 00:00:04.320
+Agora que você me ajudou a ajustar minha regressão, quero conseguir prever um rótulo para
+
+00:00:04.320 --> 00:00:05.220
+um novo ponto.
+
+00:00:05.220 --> 00:00:08.800
+Então, a pergunta é: qual é a próxima linha de código que devo escrever?
+
+00:00:08.800 --> 00:00:10.120
+Apenas para ser mais concreta sobre isso,
+
+00:00:10.120 --> 00:00:13.770
+digamos que o novo ponto tenha os recursos 2 e 4.
+
+00:00:13.770 --> 00:00:17.230
+Portanto, digite a linha de código que escreveria depois de executar o ajuste
+
+00:00:17.230 --> 00:00:19.090
+a fim de prever um rótulo para um novo ponto.
+

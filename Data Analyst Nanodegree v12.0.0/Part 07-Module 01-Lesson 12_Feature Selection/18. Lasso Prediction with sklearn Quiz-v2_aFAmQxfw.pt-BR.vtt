@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.160 --> 00:00:04.750
+Para prever o rótulo de um ponto novo você quer usar a função predict.
+
+00:00:04.750 --> 00:00:07.850
+Você passa para a função os recursos do ponto novo para os quais deseja
+
+00:00:07.850 --> 00:00:10.750
+fazer uma previsão e, em seguida, chama essa
+
+00:00:10.750 --> 00:00:14.190
+função predict na regressão que você criou e ajustou.
+
+00:00:14.190 --> 00:00:16.960
+Portanto, a linha deve ser semelhante a isto.
+

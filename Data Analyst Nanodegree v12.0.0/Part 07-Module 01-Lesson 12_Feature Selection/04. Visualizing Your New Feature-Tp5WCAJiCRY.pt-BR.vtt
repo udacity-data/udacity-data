@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.150 --> 00:00:03.130
+Quando visualizo esse novo recurso, obtenho algo que parece realmente
+
+00:00:03.130 --> 00:00:04.200
+bom.
+
+00:00:04.200 --> 00:00:07.830
+No eixo x, tenho a fração de emails que essa pessoa recebe
+
+00:00:07.830 --> 00:00:08.930
+de uma pessoa de interesse.
+
+00:00:08.930 --> 00:00:12.640
+No eixo y está a fração de emails que essa pessoa envia
+
+00:00:12.640 --> 00:00:14.010
+para pessoas de interesse.
+
+00:00:14.010 --> 00:00:18.130
+E consigo ver que, embora os pontos vermelhos não estejam particularmente agrupados,
+
+00:00:18.130 --> 00:00:21.400
+parece haver grandes fatias de espaço de recurso em que não há nenhuma pessoa
+
+00:00:21.400 --> 00:00:22.710
+de interesse.
+
+00:00:22.710 --> 00:00:27.600
+Então, por exemplo, se menos de 20% das mensagens enviadas por você forem enviadas para
+
+00:00:27.600 --> 00:00:31.490
+pessoas de interesse, isso o coloca neste grupo de pontos aqui.
+
+00:00:31.490 --> 00:00:35.600
+Isso significa que você, quase certamente, não é uma pessoa de interesse.
+
+00:00:35.600 --> 00:00:39.020
+E padrões como este podem ser aproveitados em seus algoritmos de aprendizado
+
+00:00:39.020 --> 00:00:41.590
+de máquina para ajudar você a obter um melhor desempenho.
+

@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.310 --> 00:00:03.020
+Até agora, falamos sobre os novos recursos de engenharia que você
+
+00:00:03.020 --> 00:00:05.130
+pode desejar adicionar a um conjunto de dados.
+
+00:00:05.130 --> 00:00:08.160
+Mas também é importante saber como se livrar de recursos que você
+
+00:00:08.160 --> 00:00:09.670
+pode não desejar.
+
+00:00:09.670 --> 00:00:12.990
+Pode não estar claro neste momento: porque você desejaria se
+
+00:00:12.990 --> 00:00:13.730
+livrar de um recurso?
+
+00:00:13.730 --> 00:00:14.660
+Você pode estar pensando: mas,
+
+00:00:14.660 --> 00:00:17.640
+Katie, isso é jogar informações fora, isso é jogar dados fora.
+
+00:00:17.640 --> 00:00:18.600
+Por que eu desejaria fazer isso?
+
+00:00:18.600 --> 00:00:22.590
+E eu diria a você que há muitas razões muito boas de porque você
+
+00:00:22.590 --> 00:00:24.330
+pode desejar se livrar de recursos.
+
+00:00:24.330 --> 00:00:27.300
+Falaremos sobre algumas dessas razões no restante desta lição.
+
+00:00:27.300 --> 00:00:29.850
+Mas quero fazer você pensar sobre isso por si mesmo primeiro.
+
+00:00:29.850 --> 00:00:33.418
+Aqui estão algumas razões pelas quais você pode desejar ignorar um recurso.
+
+00:00:33.418 --> 00:00:36.730
+Quero que você coloque uma marca de verificação em todas as que você acha
+
+00:00:36.730 --> 00:00:39.260
+que realmente parecem boas razões para ignorar um recurso.
+
+00:00:39.260 --> 00:00:42.070
+Portanto, talvez um problema com um recurso seja ele ser ruidoso,
+
+00:00:42.070 --> 00:00:44.170
+ser difícil de distinguir se
+
+00:00:44.170 --> 00:00:48.300
+é confiável para medir o que você quer medir.
+
+00:00:48.300 --> 00:00:52.600
+Potencialmente, outra coisa que pode estar acontecendo é que um recurso, talvez,
+
+00:00:52.600 --> 00:00:55.590
+esteja fazendo com que seu modelo sobreajuste por alguma razão.
+
+00:00:55.590 --> 00:00:58.840
+Talvez, você acredite que o recurso esteja fortemente relacionado ou
+
+00:00:58.840 --> 00:01:02.850
+o que chamamos de altamente correlacionado com um recurso que já esteja presente.
+
+00:01:02.850 --> 00:01:06.990
+Portanto, ele está fornecendo informações a você, mas apenas repetindo informações
+
+00:01:06.990 --> 00:01:10.760
+que já estão presentes na forma de outro recurso.
+
+00:01:10.760 --> 00:01:14.300
+E a última possibilidade é que recursos adicionais talvez tornem
+
+00:01:14.300 --> 00:01:17.180
+o processo de treinamento ou de testes lento.
+
+00:01:17.180 --> 00:01:22.760
+E, portanto, para manter as coisas acontecendo rapidamente, você queira trabalhar com
+
+00:01:22.760 --> 00:01:26.910
+o número mínimo de recursos necessários para obter bom desempenho.
+
+00:01:26.910 --> 00:01:28.870
+Portanto, diga-me o que você acha.
+
+00:01:28.870 --> 00:01:31.160
+Quais destas são boas razões para ignorar um recurso?
+

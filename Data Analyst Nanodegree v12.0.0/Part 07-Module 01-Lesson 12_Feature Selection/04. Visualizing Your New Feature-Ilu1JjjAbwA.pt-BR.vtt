@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.340 --> 00:00:03.900
+Esta visualização tornou claro que, talvez, o número de
+
+00:00:03.900 --> 00:00:08.130
+emails de uma pessoa de interesse para uma determinada pessoa não seja útil ou
+
+00:00:08.130 --> 00:00:11.010
+o número de emails que uma pessoa envia para pessoas de interesse.
+
+00:00:11.010 --> 00:00:15.350
+Mas agora estou usando minha intuição humana para dizer que talvez o que eu queira é dimensionar efetivamente
+
+00:00:15.350 --> 00:00:19.940
+este recurso pelo número total de mensagens enviadas ou recebidas por esta pessoa.
+
+00:00:19.940 --> 00:00:24.380
+E isso é algo que vou pedir para você fazer em um teste de codificação.
+
+00:00:24.380 --> 00:00:26.840
+Darei a você o conjunto de dados da Enron e
+
+00:00:26.840 --> 00:00:29.700
+apontarei você em direção aos recursos que são relevantes.
+
+00:00:29.700 --> 00:00:33.820
+Darei a você esses dois recursos e também o número total de mensagens recebidas e enviadas
+
+00:00:33.820 --> 00:00:38.000
+por uma pessoa e quero que você retorne dois novos recursos.
+
+00:00:38.000 --> 00:00:41.080
+Darei a você esses dois recursos que você acabou de criar e
+
+00:00:41.080 --> 00:00:45.550
+também o número total de mensagens enviadas e recebidas de cada pessoa no conjunto de dados.
+
+00:00:45.550 --> 00:00:47.730
+E quero que você faça a divisão de forma a
+
+00:00:47.730 --> 00:00:51.070
+obter uma espécie de uma variável dimensionada de volta.
+
+00:00:51.070 --> 00:00:55.050
+A fração das mensagens para esta pessoa vindas de pessoas de interesse e
+
+00:00:55.050 --> 00:00:56.780
+desta pessoa para pessoas de interesse.
+

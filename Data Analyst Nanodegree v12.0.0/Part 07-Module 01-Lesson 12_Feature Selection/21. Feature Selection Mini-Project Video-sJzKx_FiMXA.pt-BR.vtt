@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.420 --> 00:00:03.330
+Bem-vindo ao miniprojeto para seleção de recursos.
+
+00:00:03.330 --> 00:00:06.840
+Em um dos vídeos anteriores nesta lição, falei que quando eu estava trabalhando
+
+00:00:06.840 --> 00:00:10.230
+com os dados de email, havia uma palavra que estava efetivamente servindo como
+
+00:00:10.230 --> 00:00:14.250
+uma assinatura nos emails, e que inicialmente eu não percebi isso.
+
+00:00:14.250 --> 00:00:17.450
+Agora, a marca de um bom aprendiz de máquina não significa que ele nunca comete
+
+00:00:17.450 --> 00:00:19.690
+erros ou que seus recursos sejam sempre perfeitos.
+
+00:00:19.690 --> 00:00:21.820
+Significa que ele está à procura de maneiras de verificar isso e de
+
+00:00:21.820 --> 00:00:25.160
+descobrir se há um bug lá que precisa ser corrigido.
+
+00:00:25.160 --> 00:00:28.490
+Portanto, neste caso, significa que há um tipo de palavra de assinatura
+
+00:00:28.490 --> 00:00:30.490
+que precisamos remover para
+
+00:00:30.490 --> 00:00:34.590
+sentirmos que estamos sendo justos em nossa classificação supervisionada.
+
+00:00:34.590 --> 00:00:36.600
+Portanto, essa foi uma experiência realmente grande para mim.
+
+00:00:36.600 --> 00:00:39.270
+E eu gostaria de compartilhá-la com você neste miniprojeto.
+
+00:00:39.270 --> 00:00:42.080
+Vou fazer você pensar como eu quando eu estava tentando
+
+00:00:42.080 --> 00:00:46.080
+descobrir o que estava acontecendo que eu não conseguia sobreajustar essa árvore de decisão.
+
+00:00:46.080 --> 00:00:48.760
+E como eu descobri que havia um recurso ou
+
+00:00:48.760 --> 00:00:51.070
+alguns recursos que eram responsáveis por isso.
+
+00:00:51.070 --> 00:00:52.080
+E então, especificamente,
+
+00:00:52.080 --> 00:00:55.972
+como eu descobri quais eram as palavras e como as removi.
+
+00:00:55.972 --> 00:00:56.660
+Então, isso é o que você vai fazer neste miniprojeto.
+

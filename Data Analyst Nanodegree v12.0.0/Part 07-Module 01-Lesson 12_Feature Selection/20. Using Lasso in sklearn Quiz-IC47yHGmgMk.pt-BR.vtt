@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:01.770
+Aqui está seu último teste.
+
+00:00:01.770 --> 00:00:04.080
+E este é como interpretar os coeficientes.
+
+00:00:04.080 --> 00:00:08.080
+Suponha que eu chame este comando print regression.coef_.
+
+00:00:08.080 --> 00:00:12.200
+Que retornará uma lista dos coeficientes nos diferentes recursos.
+
+00:00:12.200 --> 00:00:15.640
+E vamos supor que a lista que é retornada contenha dois elementos.
+
+00:00:15.640 --> 00:00:17.158
+Um tem um valor de 0,7.
+
+00:00:17.158 --> 00:00:19.620
+O outro tem um valor de 0.
+
+00:00:19.620 --> 00:00:23.000
+Nessa situação, quantos recursos você diria
+
+00:00:23.000 --> 00:00:26.070
+que realmente têm importância na regressão?
+
+00:00:26.070 --> 00:00:27.600
+Quantos recursos são realmente importantes?
+

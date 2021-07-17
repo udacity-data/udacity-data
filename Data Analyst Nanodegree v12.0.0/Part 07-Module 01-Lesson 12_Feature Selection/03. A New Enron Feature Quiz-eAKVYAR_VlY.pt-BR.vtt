@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.290 --> 00:00:02.710
+Esta é uma visualização do novo recurso.
+
+00:00:02.710 --> 00:00:06.060
+Ao longo do eixo x aqui, eu tenho o número de emails de uma pessoa de
+
+00:00:06.060 --> 00:00:08.960
+interesse para uma determinada pessoa no conjunto de dados.
+
+00:00:08.960 --> 00:00:10.020
+Ao longo do eixo y,
+
+00:00:10.020 --> 00:00:13.670
+eu tenho algo mais alguma coisa que acredito também me fornecerá alguma distinção.
+
+00:00:13.670 --> 00:00:18.460
+Que é o número de emails que esta pessoa envia para pessoas de interesse.
+
+00:00:18.460 --> 00:00:22.660
+O que eu também fiz foi colorir minhas pessoas de interesse de vermelho no gráfico de dispersão,
+
+00:00:22.660 --> 00:00:26.380
+para poder identificar facilmente se há algum tipo de padrão neste recurso que eu
+
+00:00:26.380 --> 00:00:29.660
+comece a ver grupos de pontos vermelhos todos juntos, por exemplo.
+
+00:00:29.660 --> 00:00:32.460
+Isso seria uma indicação de algo que um algoritmo de aprendizado
+
+00:00:32.460 --> 00:00:37.020
+supervisionado poderia explorar para tentar prever pessoas de interesse.
+
+00:00:37.020 --> 00:00:41.240
+E o que eu vejo é que essa não parece ser uma tendência muito forte aqui.
+
+00:00:41.240 --> 00:00:45.110
+Os pontos vermelhos parecem estar misturados uniformemente com os pontos azuis.
+
+00:00:45.110 --> 00:00:48.360
+Outra coisa que observo é que há alguns outliers.
+
+00:00:48.360 --> 00:00:52.130
+Para a maioria das pessoas, nós temos apenas menos que 100 emails enviados ou
+
+00:00:52.130 --> 00:00:55.330
+recebidos, mas algumas pessoas têm muito, muito mais que isso.
+
+00:00:55.330 --> 00:01:00.500
+Portanto, esta visualização me leva para a próxima etapa de repetição deste processo.
+
+00:01:00.500 --> 00:01:04.950
+Usando minha intuição humana para pensar sobre quais recursos podem ser valiosos aqui.
+
+00:01:04.950 --> 00:01:08.090
+O que eu estou pensando neste ponto é que talvez o recurso de que eu
+
+00:01:08.090 --> 00:01:12.628
+preciso não seja o número absoluto de emails de uma pessoa de interesse para uma...
+
+00:01:12.628 --> 00:01:14.220
+uma determinada pessoa.
+
+00:01:14.220 --> 00:01:17.690
+Mas a fração de emails que uma pessoa recebe
+
+00:01:17.690 --> 00:01:19.390
+de uma pessoa de interesse.
+
+00:01:19.390 --> 00:01:23.890
+Em outras palavras, se você obtiver 80% de seus emails de pessoas de interesse,
+
+00:01:23.890 --> 00:01:26.650
+minha intuição poderá ser que você é uma delas.
+
+00:01:26.650 --> 00:01:30.320
+Mas, é claro, eu preciso realmente codificar o recurso para testar essa hipótese.
+

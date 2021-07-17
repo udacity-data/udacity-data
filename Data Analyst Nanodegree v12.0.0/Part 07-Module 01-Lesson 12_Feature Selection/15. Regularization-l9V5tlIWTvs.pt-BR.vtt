@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.520 --> 00:00:05.050
+Um excelente lugar em que você pode usar a regularização é na regressão.
+
+00:00:05.050 --> 00:00:06.840
+Regularização é um método de
+
+00:00:06.840 --> 00:00:11.020
+penalizar automaticamente os recursos extras que usar em seu modelo.
+
+00:00:11.020 --> 00:00:13.340
+Então, deixe-me concretizar isso um pouco mais.
+
+00:00:13.340 --> 00:00:17.140
+Existe um tipo de regressão regularizada chamada de regressão Lasso.
+
+00:00:17.140 --> 00:00:19.560
+E esta é a fórmula bruta da regressão Lasso.
+
+00:00:20.630 --> 00:00:22.350
+Uma regressão linear comum diria:
+
+00:00:22.350 --> 00:00:27.640
+eu apenas quero minimizar a soma dos erros ao quadrado em meu ajuste.
+
+00:00:27.640 --> 00:00:30.840
+Quero minimizar a distância entre meu ajuste e
+
+00:00:30.840 --> 00:00:35.210
+qualquer outro ponto de dados, ou o quadrado dessa distância.
+
+00:00:35.210 --> 00:00:39.740
+O que a regressão Lasso diz é: sim, queremos uma pequena soma do erro ao quadrado.
+
+00:00:39.740 --> 00:00:42.890
+Mas, além de minimizar a soma dos erros ao quadrado,
+
+00:00:42.890 --> 00:00:45.720
+também quero minimizar o número de recursos que estou usando.
+
+00:00:45.720 --> 00:00:49.390
+E, por isso, vamos adicionar um segundo termo aqui, no qual
+
+00:00:49.390 --> 00:00:53.570
+temos um parâmetro de penalidade e os coeficientes da minha regressão.
+
+00:00:53.570 --> 00:00:58.040
+Portanto, isso é basicamente o termo que descreve quantos recursos estou usando.
+
+00:00:58.040 --> 00:01:00.200
+E este é resultado desta fórmula.
+
+00:01:00.200 --> 00:01:05.030
+Quando estou executando meu ajuste, considero ambos os erros provenientes desse
+
+00:01:05.030 --> 00:01:09.060
+ajuste e, também, o número de recursos que estão sendo usados.
+
+00:01:09.060 --> 00:01:11.390
+Então, vamos supor que estamos comparando dois ajustes diferentes
+
+00:01:11.390 --> 00:01:12.890
+que têm quantidades diferentes de recursos.
+
+00:01:13.930 --> 00:01:16.150
+O que tem mais recursos incluídos
+
+00:01:16.150 --> 00:01:19.300
+quase certamente terá uma soma menor do erro ao quadrado,
+
+00:01:19.300 --> 00:01:22.640
+pois pode se ajustar com mais precisão aos pontos.
+
+00:01:22.640 --> 00:01:25.400
+Mas pagamos uma penalidade por usar esse recurso extra.
+
+00:01:25.400 --> 00:01:29.300
+E isso está no segundo termo com o termo de penalidade e
+
+00:01:29.300 --> 00:01:31.130
+os coeficientes de regressão que obteremos para
+
+00:01:31.130 --> 00:01:33.880
+esse recurso adicional que estamos usando.
+
+00:01:33.880 --> 00:01:36.660
+E o que isso está dizendo é que o ganho obtido
+
+00:01:36.660 --> 00:01:38.740
+em termos de precisão,
+
+00:01:38.740 --> 00:01:43.630
+a adequação do ajuste da minha regressão, deve ser um ganho maior do que a perda
+
+00:01:43.630 --> 00:01:47.730
+obtida como resultado de ter esse recurso adicional em minha regressão.
+
+00:01:49.220 --> 00:01:52.820
+Isso formula precisamente de modo matemático a compensação entre
+
+00:01:52.820 --> 00:01:58.910
+ter pequenos erros e ter um ajuste mais simples que usa menos recursos.
+
+00:01:58.910 --> 00:02:01.040
+Portanto, o que a regressão Lasso faz
+
+00:02:01.040 --> 00:02:04.970
+é considerar automaticamente este parâmetro de penalidade.
+
+00:02:04.970 --> 00:02:08.780
+E, ao fazer isso, ela ajuda você a descobrir, de fato, quais são os recursos
+
+00:02:08.780 --> 00:02:12.040
+que têm um efeito mais importante em sua regressão.
+
+00:02:12.040 --> 00:02:15.010
+Depois de esses recursos serem encontrados, ela pode realmente eliminar, ou
+
+00:02:15.010 --> 00:02:19.500
+definir como zero, os coeficientes dos recursos que, essencialmente, não ajudam
+

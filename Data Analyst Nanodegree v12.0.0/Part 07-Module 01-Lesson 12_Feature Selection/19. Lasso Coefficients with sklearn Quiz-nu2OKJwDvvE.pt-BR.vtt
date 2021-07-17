@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.390 --> 00:00:03.770
+Sabíamos que este seria um teste difícil pois nunca fizemos isso antes.
+
+00:00:03.770 --> 00:00:06.700
+Espero que você tenha encontrado isso na página de documentação
+
+00:00:06.700 --> 00:00:07.939
+ou na Internet.
+
+00:00:07.939 --> 00:00:11.660
+Para obter coeficientes de uma regressão Lasso ou de qualquer
+
+00:00:11.660 --> 00:00:16.790
+regressão, basta chamá-la de .coef_ na sua regressão.
+
+00:00:16.790 --> 00:00:21.270
+No nosso caso, ela tem o nome regressão.
+
+00:00:21.270 --> 00:00:24.670
+Se você chamar esta instrução print, ela retornará uma lista
+
+00:00:24.670 --> 00:00:28.290
+contendo todos os coeficientes encontrados pela sua regressão.
+
+00:00:28.290 --> 00:00:32.439
+Nesta lista, você pode detectar os recursos contendo os coeficientes
+
+00:00:32.439 --> 00:00:35.700
+com valores altos e que são, portanto, recursos importantes,
+
+00:00:35.700 --> 00:00:38.430
+e aqueles com coeficientes definidos com valores menores.
+

@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.080 --> 00:00:02.130
+Veja outra maneira de analisar essa compensação.
+
+00:00:02.130 --> 00:00:05.780
+Queremos compensar os erros gerados pela regressão,
+
+00:00:05.780 --> 00:00:09.140
+com o número de recursos que são necessários para reproduzir esses erros.
+
+00:00:09.140 --> 00:00:12.460
+Tentaremos maximizar a qualidade do modelo que estamos fazendo.
+
+00:00:12.460 --> 00:00:15.120
+Ainda não defini isso totalmente, mas vou preencher esse gráfico para
+
+00:00:15.120 --> 00:00:17.230
+dar uma ideia do que eu quero dizer.
+
+00:00:17.230 --> 00:00:20.030
+Digamos que meu modelo tenha um recurso.
+
+00:00:20.030 --> 00:00:22.848
+Então, eu diria que a probabilidade de ajustar indevidamente
+
+00:00:22.848 --> 00:00:24.050
+os dados é muito alta.
+
+00:00:24.050 --> 00:00:27.070
+Sim, o viés é muito alto.
+
+00:00:27.070 --> 00:00:29.520
+Digamos que a qualidade do modelo possa ser satisfatória.
+
+00:00:29.520 --> 00:00:32.100
+Mas não tão boa quanto poderia ser.
+
+00:00:32.100 --> 00:00:35.610
+Agora, imagine que eu aumente um pouco a complexidade do meu modelo.
+
+00:00:35.610 --> 00:00:37.310
+Permito o uso de três recursos.
+
+00:00:37.310 --> 00:00:40.330
+Acabo escolhendo três recursos que são bons em
+
+00:00:40.330 --> 00:00:41.730
+descrever os padrões nos dados.
+
+00:00:42.750 --> 00:00:44.810
+Então, o erro não acontecerá,
+
+00:00:44.810 --> 00:00:48.490
+porque o modelo agora está ajustando os dados de uma maneira mais precisa.
+
+00:00:49.500 --> 00:00:50.850
+Mas ainda não muito complexa.
+
+00:00:50.850 --> 00:00:52.900
+Estou usando somente três recursos, e verifiquei cada um deles.
+
+00:00:52.900 --> 00:00:55.220
+Assim, a qualidade do modelo agora melhorou.
+
+00:00:55.220 --> 00:00:57.200
+Então vejo que ficou muito bom.
+
+00:00:57.200 --> 00:01:00.540
+Posso melhorar o modelo simplesmente adicionando mais recursos.
+
+00:01:00.540 --> 00:01:02.290
+Vou tentar adicionar um conjunto de recursos.
+
+00:01:02.290 --> 00:01:03.670
+Vou usar 15 recursos.
+
+00:01:03.670 --> 00:01:06.610
+Espero que isso aumente a qualidade do modelo,
+
+00:01:06.610 --> 00:01:09.720
+digamos, até aqui, o valor máximo possível.
+
+00:01:09.720 --> 00:01:14.070
+Acabarei descobrindo que estou começando a ficar suscetível a
+
+00:01:14.070 --> 00:01:16.800
+esse regime de ajuste em excesso e alta variância.
+
+00:01:16.800 --> 00:01:20.750
+Talvez a qualidade do modelo tenha ficado um pouco
+
+00:01:20.750 --> 00:01:24.660
+abaixo da qualidade apresentada com três recursos.
+
+00:01:24.660 --> 00:01:26.190
+Porque agora estou começando a ajustar em excesso,
+
+00:01:26.190 --> 00:01:30.030
+não como antes, e usando 15 recursos.
+
+00:01:30.030 --> 00:01:33.150
+Se eu tivesse usado 20 recursos,
+
+00:01:33.150 --> 00:01:37.210
+poderia ser ainda pior do que ter apenas um recurso de entrada.
+
+00:01:37.210 --> 00:01:40.480
+Você pode imaginar que, se eu tivesse feito isso,
+
+00:01:40.480 --> 00:01:45.280
+o gráfico de todos os possíveis recursos que eu poderia obter,
+
+00:01:45.280 --> 00:01:51.100
+a qualidade do modelo seria maximizada em algum momento.
+
+00:01:51.100 --> 00:01:54.530
+É razoável pensar assim. Nos próximos vídeos, falaremos
+
+00:01:54.530 --> 00:01:59.450
+como é possível definir matematicamente como esse arco pode ser para
+
+00:01:59.450 --> 00:02:01.830
+que possamos encontrar esse ponto máximo.
+
+00:02:01.830 --> 00:02:04.500
+É um processo chamado de regularização.
+
+00:02:04.500 --> 00:02:08.479
+É uma forma automática de seleção de recursos que alguns algoritmos podem
+
+00:02:08.479 --> 00:02:13.330
+fazer totalmente sozinhos. Eles podem fazer uma compensação entre a precisão,
+
+00:02:13.330 --> 00:02:18.530
+a adequação do ajuste, os erros muito baixos e a complexidade
+
+00:02:18.530 --> 00:02:20.670
+de ajustar vários recursos diferentes.
+
+00:02:20.670 --> 00:02:24.940
+Mostrarei o exemplo de como a regularização funciona em regressões.
+

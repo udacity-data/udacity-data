@@ -1,0 +1,384 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Feature Selection in TfIdf Vectorizer
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Feature Selection
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Why Feature Selection.html">
+       01. Why Feature Selection?
+      </a>
+     </li>
+     <li class="">
+      <a href="02. A New Enron Feature.html">
+       02. A New Enron Feature
+      </a>
+     </li>
+     <li class="">
+      <a href="03. A New Enron Feature Quiz.html">
+       03. A New Enron Feature Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Visualizing Your New Feature.html">
+       04. Visualizing Your New Feature
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Beware of Feature Bugs!.html">
+       05. Beware of Feature Bugs!
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Example Buggy Feature.html">
+       06. Example: Buggy Feature
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Getting Rid of Features.html">
+       07. Getting Rid of Features
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Features != Information.html">
+       08. Features != Information
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Univariate Feature Selection.html">
+       09. Univariate Feature Selection
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Feature Selection in TfIdf Vectorizer.html">
+       10. Feature Selection in TfIdf Vectorizer
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Bias, Variance, and Number of Features.html">
+       11. Bias, Variance, and Number of Features
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Bias, Variance &amp; Number of Features Pt 2.html">
+       12. Bias, Variance &amp; Number of Features Pt 2
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Overfitting by Eye.html">
+       13. Overfitting by Eye
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Balancing Error with Number of Features.html">
+       14. Balancing Error with Number of Features
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Regularization.html">
+       15. Regularization
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Lasso Regression.html">
+       16. Lasso Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Lasso Code Quiz.html">
+       17. Lasso Code Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Lasso Prediction with sklearn Quiz.html">
+       18. Lasso Prediction with sklearn Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Lasso Coefficients with sklearn Quiz.html">
+       19. Lasso Coefficients with sklearn Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Using Lasso in sklearn Quiz.html">
+       20. Using Lasso in sklearn Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Feature Selection Mini-Project Video.html">
+       21. Feature Selection Mini-Project Video
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Feature Selection Mini-Project.html">
+       22. Feature Selection Mini-Project
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Overfitting a Decision Tree 1.html">
+       23. Overfitting a Decision Tree 1
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Overfitting a Decision Tree 2.html">
+       24. Overfitting a Decision Tree 2
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Number of Features and Overfitting.html">
+       25. Number of Features and Overfitting
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Accuracy of Your Overfit Decision Tree.html">
+       26. Accuracy of Your Overfit Decision Tree
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Identify the Most Powerful Features.html">
+       27. Identify the Most Powerful Features
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Use TfIdf to Get the Most Important Word.html">
+       28. Use TfIdf to Get the Most Important Word
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Remove, Repeat.html">
+       29. Remove, Repeat
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Checking Important Features Again.html">
+       30. Checking Important Features Again
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Accuracy of the Overfit Tree.html">
+       31. Accuracy of the Overfit Tree
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          10. Feature Selection in TfIdf Vectorizer
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Feature Selection in TfIdf Vectorizer
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Question:
+          </h4>
+          <video controls="">
+           <source src="10. Feature Selection in TfIdf Vectorizer-GdsLRKjjKLw.mp4" type="video/mp4"/>
+           <track default="false" kind="subtitles" label="ar" src="10. Feature Selection in TfIdf Vectorizer-GdsLRKjjKLw.ar.vtt" srclang="ar"/>
+           <track default="false" kind="subtitles" label="US" src="10. Feature Selection in TfIdf Vectorizer-GdsLRKjjKLw.en-US.vtt" srclang="US"/>
+           <track default="true" kind="subtitles" label="en" src="10. Feature Selection in TfIdf Vectorizer-GdsLRKjjKLw.en.vtt" srclang="en"/>
+           <track default="false" kind="subtitles" label="BR" src="10. Feature Selection in TfIdf Vectorizer-GdsLRKjjKLw.pt-BR.vtt" srclang="BR"/>
+           <track default="false" kind="subtitles" label="CN" src="10. Feature Selection in TfIdf Vectorizer-GdsLRKjjKLw.zh-CN.vtt" srclang="CN"/>
+          </video>
+         </div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div style="display: block;">
+           <div style="position: relative;">
+            <img alt="" src="img/3056138568.gif" style="width: 100%; max-height: 100%"/>
+            <div style="
+    position: absolute; top: 47%; left: 42.5%; width: 5%; height: 5%;
+  ">
+             <input aria-label="" id="radio1" name="group1" type="radio"/>
+            </div>
+            <div style="
+    position: absolute; top: 57.49999999999999%; left: 42.5%; width: 5%; height: 5%;
+  ">
+             <input aria-label="" id="radio2" name="group1" type="radio"/>
+            </div>
+            <div style="
+    position: absolute; top: 68%; left: 42.5%; width: 5%; height: 5%;
+  ">
+             <input aria-label="" id="radio3" name="group1" type="radio"/>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div>
+          <details>
+           <summary>
+            <strong>
+             Solution:
+            </strong>
+           </summary>
+           <div>
+            <video controls="">
+             <source src="10. Feature Selection in TfIdf Vectorizer-oZkDSuhBEkE.mp4" type="video/mp4"/>
+             <track default="false" kind="subtitles" label="ar" src="10. Feature Selection in TfIdf Vectorizer-oZkDSuhBEkE.ar.vtt" srclang="ar"/>
+             <track default="true" kind="subtitles" label="en" src="10. Feature Selection in TfIdf Vectorizer-oZkDSuhBEkE.en.vtt" srclang="en"/>
+             <track default="false" kind="subtitles" label="BR" src="10. Feature Selection in TfIdf Vectorizer-oZkDSuhBEkE.pt-BR.vtt" srclang="BR"/>
+             <track default="false" kind="subtitles" label="CN" src="10. Feature Selection in TfIdf Vectorizer-oZkDSuhBEkE.zh-CN.vtt" srclang="CN"/>
+            </video>
+           </div>
+          </details>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="11. Bias, Variance, and Number of Features.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('10. Feature Selection in TfIdf Vectorizer')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

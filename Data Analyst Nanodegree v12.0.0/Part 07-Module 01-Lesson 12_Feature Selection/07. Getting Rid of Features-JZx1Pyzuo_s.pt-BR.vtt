@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.480 --> 00:00:04.590
+E eu, na verdade, diria que, de tempos em tempos, você verá exemplos de
+
+00:00:04.590 --> 00:00:07.640
+todos esses acontecendo em recursos que você possui.
+
+00:00:07.640 --> 00:00:12.080
+Eles podem ser ruidosos, podem estar fazendo com que seu modelo se ajuste em excesso e seja executado lentamente.
+
+00:00:12.080 --> 00:00:16.370
+E, também, dependendo do modelo, especialmente se você incluir recursos
+
+00:00:16.370 --> 00:00:17.550
+redundantes entre si,
+
+00:00:17.550 --> 00:00:21.580
+que têm correlações muito altas, isso pode realmente fazer com que o modelo falhe.
+
+00:00:21.580 --> 00:00:22.990
+A matemática para de funcionar.
+
+00:00:22.990 --> 00:00:25.140
+Seu código terá um problema.
+
+00:00:25.140 --> 00:00:26.700
+E você não saberá o motivo.
+
+00:00:26.700 --> 00:00:31.210
+Então, qualquer um destes pode ser realmente um bom motivo para ser cético sobre seus recursos
+
+00:00:31.210 --> 00:00:34.160
+e se livrar deles se você achar realmente que eles não são necessários.
+

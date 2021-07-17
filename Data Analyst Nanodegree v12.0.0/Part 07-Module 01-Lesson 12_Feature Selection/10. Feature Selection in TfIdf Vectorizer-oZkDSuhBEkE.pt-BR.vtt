@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.250 --> 00:00:05.030
+Esse argumento max df diminuirá o tamanho do meu vocabulário.
+
+00:00:06.230 --> 00:00:09.180
+Ele o usará com base no número de documentos nos quais
+
+00:00:09.180 --> 00:00:11.230
+uma palavra aparece.
+
+00:00:11.230 --> 00:00:14.420
+Se houver uma palavra que aparece em mais de 50% dos documentos,
+
+00:00:14.420 --> 00:00:18.140
+esse argumento diz para não usá-la no tfidf,
+
+00:00:18.140 --> 00:00:20.990
+porque ele provavelmente não tem muitas informações,
+
+00:00:20.990 --> 00:00:22.540
+por ser muito comum.
+
+00:00:22.540 --> 00:00:25.110
+Este é um exemplo de outro lugar onde você pode fazer
+
+00:00:25.110 --> 00:00:29.650
+uma redução de recursos, ou redução de dimensionalidade, como a chamamos.
+
+00:00:29.650 --> 00:00:30.180
+Mas é claro que
+
+00:00:30.180 --> 00:00:34.310
+você também tem seu modo de espera, como o SelectPercentile.
+
+00:00:35.360 --> 00:00:38.410
+Espero que o que você tenha encontrado nesse exercício de codificação saliente
+
+00:00:38.410 --> 00:00:42.570
+o ponto de que recursos não são o mesmo que informações.
+
+00:00:42.570 --> 00:00:45.890
+Você acabou de excluir 90% dos recurso de texto, mas
+
+00:00:45.890 --> 00:00:49.570
+a precisão do seu classificador não sofreu com isso.
+
+00:00:49.570 --> 00:00:53.120
+Na verdade, o desempenho melhorou de algumas formas, porque é executado mais
+
+00:00:53.120 --> 00:00:56.080
+rapidamente em um número menor de recursos.
+
+00:00:56.080 --> 00:00:57.140
+Obviamente, isso
+
+00:00:57.140 --> 00:00:59.070
+é algo que você deve ter sempre em mente.
+
+00:00:59.070 --> 00:01:01.760
+Especialmente quando estiver trabalhando com dados de dimensionalidade alta.
+
+00:01:01.760 --> 00:01:04.080
+Dados com muitos recursos.
+
+00:01:04.080 --> 00:01:06.730
+Seja cético quanto a todos esses recursos. Pense em quais
+
+00:01:06.730 --> 00:01:10.330
+você terá melhor retorno.
+

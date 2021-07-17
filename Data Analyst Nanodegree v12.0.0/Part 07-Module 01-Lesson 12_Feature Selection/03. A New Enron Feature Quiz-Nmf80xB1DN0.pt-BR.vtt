@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.240 --> 00:00:02.080
+O novo recurso que você irá codificar será chamado
+
+00:00:02.080 --> 00:00:06.760
+de algo como from_poi_to_this_person, que deve ser um inteiro.
+
+00:00:06.760 --> 00:00:09.920
+Ele é a contagem de mensagens que estão na caixa de entrada dessa pessoa,
+
+00:00:09.920 --> 00:00:12.660
+mas são enviadas para elas de pessoas de interesse.
+
+00:00:12.660 --> 00:00:15.160
+Então, isto é o que você fará no teste de programação.
+
+00:00:15.160 --> 00:00:18.730
+De cada mensagem, temos de extrair o autor da mensagem.
+
+00:00:18.730 --> 00:00:20.400
+Eu já fiz isso para você.
+
+00:00:20.400 --> 00:00:22.070
+E isso estará no código base.
+
+00:00:22.070 --> 00:00:25.330
+Em seguida, o que deve fazer é comparar o endereço de email deste autor
+
+00:00:25.330 --> 00:00:28.850
+com a lista de endereços de email de pessoas de interesse conhecidas.
+
+00:00:28.850 --> 00:00:31.810
+Basicamente, se o autor é uma pessoa de interesse.
+
+00:00:31.810 --> 00:00:35.000
+Você retorna um booliano, que é a resposta a essa pergunta, e,
+
+00:00:35.000 --> 00:00:38.490
+depois, repete isso em todos os emails de uma determinada pessoa.
+
+00:00:38.490 --> 00:00:40.770
+De modo que o resultado seja um inteiro.
+
+00:00:40.770 --> 00:00:44.430
+Experimente no teste de programação e, quando eu mostrar a solução,
+
+00:00:44.430 --> 00:00:47.490
+tentarei mostrar qual é a aparência real deste recurso no conjunto de dados da Enron.
+

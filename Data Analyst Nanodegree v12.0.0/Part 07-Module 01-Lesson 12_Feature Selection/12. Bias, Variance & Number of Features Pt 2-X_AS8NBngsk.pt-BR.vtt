@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.420 --> 00:00:04.019
+Casos nos quais muitos recursos são usados para obter a regressão
+
+00:00:04.019 --> 00:00:05.050
+mais bem ajustada, ou
+
+00:00:05.050 --> 00:00:09.180
+um possível classificador, são uma clássica situação de variação de Hyde.
+
+00:00:09.180 --> 00:00:12.240
+Você deve tomar cuidado para não sobreajustar os dados quando
+
+00:00:12.240 --> 00:00:14.140
+estiver nessa situação.
+
+00:00:14.140 --> 00:00:17.300
+E uma outra forma de estruturar toda essa discussão sobre o número de recursos
+
+00:00:17.300 --> 00:00:22.460
+a ser usado pode ser expressa por meio do dilema variação de viés
+
+00:00:22.460 --> 00:00:24.400
+ou de quantos recursos devem ser usados para que
+
+00:00:24.400 --> 00:00:26.580
+você consiga equilibrar essas duas questões.
+
+00:00:26.580 --> 00:00:29.620
+Você precisa ter a descrição precisa que é obtida quando você tem variação
+
+00:00:29.620 --> 00:00:33.110
+suficiente no seu modelo. Com ela, você pode ajustar os dados
+
+00:00:33.110 --> 00:00:36.140
+de forma precisa e genuína.
+
+00:00:36.140 --> 00:00:36.760
+Mas você quer fazer isso
+
+00:00:36.760 --> 00:00:39.620
+com o número mínimo de recursos necessários para a tarefa.
+
+00:00:41.040 --> 00:00:44.940
+Há essa compensação entre o tipo de qualidade do ajuste e
+
+00:00:44.940 --> 00:00:46.150
+a simplicidade do ajuste,
+
+00:00:46.150 --> 00:00:49.730
+o número de recursos que você tem que usar para alcançar essa qualidade de ajuste.
+
+00:00:49.730 --> 00:00:53.440
+Isso significa que você quer ajustar um algoritmo com novos recursos.
+
+00:00:53.440 --> 00:00:57.820
+Mas usando o caso de uma regressão como um grande r² ou,
+
+00:00:57.820 --> 00:01:01.310
+de modo inverso, uma soma das raízes quadradas de erros de joule.
+
+00:01:01.310 --> 00:01:03.127
+Esse é o ponto ideal que você deve encontrar.
+

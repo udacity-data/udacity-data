@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.220 --> 00:00:02.469
+Agora este é um teste difícil porque nunca fizemos isso antes.
+
+00:00:02.469 --> 00:00:04.939
+Então, provavelmente você fará a página de documentação para saber
+
+00:00:04.939 --> 00:00:05.930
+como fazer isso.
+
+00:00:05.930 --> 00:00:07.390
+Aqui vai a pergunta.
+
+00:00:07.390 --> 00:00:10.410
+Suponhamos agora que eu tenha feito meu ajuste com a regressão Lasso,
+
+00:00:10.410 --> 00:00:12.845
+talvez prevendo um ponto ou dois com isso.
+
+00:00:12.845 --> 00:00:16.810
+Digamos que eu queira entender o efeito do fato de esta ser
+
+00:00:16.810 --> 00:00:18.760
+uma regressão regularizada,
+
+00:00:18.760 --> 00:00:21.870
+o que significa que eu quero ver os coeficientes da regressão.
+
+00:00:21.870 --> 00:00:25.420
+Quero ver, por exemplo, se ela está definindo qualquer um deles para zero
+
+00:00:25.420 --> 00:00:30.840
+ou valores muito baixos, o que é efetivamente o mesmo que descartar esses recursos.
+
+00:00:30.840 --> 00:00:34.080
+Ou seja, quero começar acessando as informações de quais
+
+00:00:34.080 --> 00:00:36.730
+recursos são os mais importantes nos resultados da minha regressão.
+
+00:00:36.730 --> 00:00:40.570
+Então, a pergunta para você é: o que você colocaria nesta caixa
+
+00:00:40.570 --> 00:00:42.810
+para gerar os coeficientes da regressão?
+
+00:00:42.810 --> 00:00:45.690
+Então, eu já forneci o comando print, e a pergunta
+
+00:00:45.690 --> 00:00:49.830
+é: que linha você colocaria nesta caixa para acessar os coeficientes?
+

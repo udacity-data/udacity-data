@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.210 --> 00:00:04.770
+Vejamos como uma regressão lasso pode de fato simplificar uma regressão
+
+00:00:04.770 --> 00:00:07.620
+em termos do número de recursos utilizados.
+
+00:00:07.620 --> 00:00:12.110
+Para os recursos que não ajudam tanto nos resultados da regressão,
+
+00:00:12.110 --> 00:00:15.820
+ela pode definir um coeficiente desses recursos com um valor menor,
+
+00:00:15.820 --> 00:00:17.360
+potencialmente como zero.
+
+00:00:17.360 --> 00:00:20.740
+Imagine que tenho até quatro recursos disponíveis,
+
+00:00:20.740 --> 00:00:24.520
+de x1 até x4, e não sei quais são mais poderosos.
+
+00:00:24.520 --> 00:00:26.650
+Quais realmente desejo utilizar?
+
+00:00:26.650 --> 00:00:29.120
+Não quero utilizar todos se não preciso fazer isso.
+
+00:00:29.120 --> 00:00:33.380
+E m1 a m4 são os coeficientes de regressão que obtenho para esses
+
+00:00:33.380 --> 00:00:36.918
+recursos quando faço o ajuste.
+
+00:00:36.918 --> 00:00:40.050
+Terei um resultado como este
+
+00:00:40.050 --> 00:00:42.310
+em uma regressão comum de multivariáveis.
+
+00:00:42.310 --> 00:00:45.280
+Ela usará todos os recursos disponíveis e
+
+00:00:45.280 --> 00:00:48.184
+atribuirá um coeficiente de regressão a cada um.
+
+00:00:48.184 --> 00:00:52.100
+A regressão lasso tentará adicionar um recurso de cada vez.
+
+00:00:52.100 --> 00:00:54.720
+E se o novo recurso não melhorar o ajuste para
+
+00:00:54.720 --> 00:00:58.910
+superar o termo de penalidade por incluir esse recurso, ele não será adicionado.
+
+00:00:58.910 --> 00:01:01.870
+O fato de não ser incluído significa que o coeficiente é definido como zero.
+
+00:01:01.870 --> 00:01:04.060
+Vamos supor que x1 e x2
+
+00:01:04.060 --> 00:01:07.560
+são dois recursos que devem ser incluídos na nossa regressão.
+
+00:01:07.560 --> 00:01:11.660
+Eles descrevem o padrão com potência baixa.
+
+00:01:11.660 --> 00:01:14.880
+Mas x3 e x4 não melhoram muito o ajuste.
+
+00:01:14.880 --> 00:01:18.610
+Talvez melhorem um pouco, mas podemos estar nos ajustando ao ruído.
+
+00:01:18.610 --> 00:01:21.133
+Dessa forma, os coeficientes para esses
+
+00:01:21.133 --> 00:01:23.124
+dois recursos será definido como zero.
+
+00:01:23.124 --> 00:01:27.750
+Os valores m3 e m4 serão definidos como 0.
+
+00:01:27.750 --> 00:01:30.850
+O que significa que esses dois recursos se tornaram irrelevantes no ajuste,
+
+00:01:30.850 --> 00:01:33.780
+e só restam x1 e x2,
+
+00:01:33.780 --> 00:01:37.360
+os dois recursos originais que desejávamos ter.
+
+00:01:37.360 --> 00:01:40.730
+O poder da regularização, a vantagem de ter este termo de penalidade
+
+00:01:40.730 --> 00:01:44.440
+para os recursos extras, é que ele pode fazer esta seleção automática para você.
+

@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.130 --> 00:00:03.030
+Vamos nos aprofundar um pouco mais para ver como o número de recursos que você usa em
+
+00:00:03.030 --> 00:00:06.480
+seu algoritmo é conectado ao dilema de variância de desvio.
+
+00:00:06.480 --> 00:00:10.190
+Lembre-se do que dissemos antes sobre que um algoritmo de alto desvio é um algoritmo
+
+00:00:10.190 --> 00:00:14.310
+que presta pouca atenção aos dados de treinamento é supersimplificado.
+
+00:00:14.310 --> 00:00:16.050
+Ele simplesmente faz a mesma coisa
+
+00:00:16.050 --> 00:00:20.380
+repetidamente independentemente do que os dados possam estar tentando dizer a você para fazer.
+
+00:00:20.380 --> 00:00:23.420
+Por outro lado, uma algoritmo que tem uma variância muito alta
+
+00:00:23.420 --> 00:00:25.310
+presta muita atenção aos dados.
+
+00:00:25.310 --> 00:00:29.690
+Ele não generaliza bem para novas situações que não tenha visto antes.
+
+00:00:29.690 --> 00:00:32.270
+Basicamente, ele apenas memoriza os exemplos de treinamento.
+
+00:00:32.270 --> 00:00:35.310
+E assim que ele obtém um novo exemplo ou um novo ponto de dados que não é
+
+00:00:35.310 --> 00:00:39.280
+exatamente igual a um dos exemplos de treinamento, ele não sabe realmente o que fazer.
+
+00:00:39.280 --> 00:00:42.330
+Outra maneira de pensar sobre isso é que ele é superajustado para os dados.
+
+00:00:42.330 --> 00:00:46.010
+Outra coisa que seria justo dizer é que algoritmos de alto desvio tendem a
+
+00:00:46.010 --> 00:00:48.290
+ter erros altos no conjunto de treinamento.
+
+00:00:48.290 --> 00:00:51.116
+Portanto, no caso de uma regressão, por exemplo, isso significaria um valor
+
+00:00:51.116 --> 00:00:55.580
+baixo de r ao quadrado ou uma grande soma de erros residuais ao quadrado.
+
+00:00:55.580 --> 00:01:00.620
+A alta variância, por outro lado, pode ter um ajuste muito, muito bom para o dados
+
+00:01:00.620 --> 00:01:06.500
+de treinamento, mas um ajuste inadequado para os dados de teste porque ela não generaliza muito bem.
+
+00:01:06.500 --> 00:01:09.170
+Portanto, assim que você fornece alguma coisa nova a ele, ele começa a ter
+
+00:01:09.170 --> 00:01:10.740
+problemas imediatamente.
+
+00:01:10.740 --> 00:01:13.410
+Normalmente, você espera sair-se um pouco melhor no conjunto de treinamento que
+
+00:01:13.410 --> 00:01:14.660
+no conjunto de testes.
+
+00:01:14.660 --> 00:01:18.650
+Mas a alta variância indica que você está se saindo melhor no conjunto de treinamento.
+
+00:01:18.650 --> 00:01:21.201
+Alta variância é quando você está superajustando o conjunto de treinamento,
+
+00:01:21.201 --> 00:01:23.450
+você obtém desempenho pior no conjunto de testes.
+
+00:01:23.450 --> 00:01:24.830
+Portanto, aqui esta uma pergunta de teste para você.
+
+00:01:24.830 --> 00:01:29.530
+Vamos supor que você tenha um algoritmo que está usando apenas alguns recursos
+
+00:01:29.530 --> 00:01:32.520
+dos, digamos, muitos que você tem disponíveis.
+
+00:01:32.520 --> 00:01:35.190
+Talvez um ou dois de potencialmente dezenas.
+
+00:01:35.190 --> 00:01:37.670
+Sem saber nada mais sobre o problema exato ou
+
+00:01:37.670 --> 00:01:41.530
+os recursos exatos que você está usando, você acha que essa estaria
+
+00:01:41.530 --> 00:01:46.270
+mais inclinada a ser uma situação de alto desvio ou uma situação de alta variância?
+
+00:01:46.270 --> 00:01:47.590
+Clique naquela que parece certa para você.
+

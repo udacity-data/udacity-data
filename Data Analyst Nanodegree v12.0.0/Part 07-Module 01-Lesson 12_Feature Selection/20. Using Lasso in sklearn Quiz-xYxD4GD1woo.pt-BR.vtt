@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.750 --> 00:00:04.014
+Neste caso, apenas um elemento de fato nos interessa.
+
+00:00:04.014 --> 00:00:07.250
+Temos, potencialmente, dois elementos disponíveis,
+
+00:00:07.250 --> 00:00:11.150
+pois há dois elementos para cada ponto de treinamento.
+
+00:00:11.150 --> 00:00:13.980
+Mas note que o coeficiente para o segundo está definido como zero.
+
+00:00:13.980 --> 00:00:17.410
+Isso significa que ele não está sendo de fato usado na regressão.
+
+00:00:17.410 --> 00:00:20.520
+Ao usar esse resultado, posso dizer que o segundo elemento
+
+00:00:20.520 --> 00:00:24.600
+pode ser ignorado, pelo menos nesta regressão específica, e
+
+00:00:24.600 --> 00:00:28.360
+que o poder discriminante recai sobre o primeiro elemento.
+

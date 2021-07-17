@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.270 --> 00:00:02.750
+E a resposta que você deve ter obtido tem a ver com esta última linha de
+
+00:00:02.750 --> 00:00:05.100
+código aqui, onde você está tentando fazer o ajuste.
+
+00:00:05.100 --> 00:00:09.540
+Portanto, lembre-se de que uma repressão será um algoritmo de aprendizado supervisionado.
+
+00:00:09.540 --> 00:00:12.380
+Portanto, você precisa ter os recursos e os destinos.
+
+00:00:12.380 --> 00:00:14.090
+Quando você está criando o ajuste,
+
+00:00:14.090 --> 00:00:16.830
+você precisa para os dois para o comando fit.
+
+00:00:18.040 --> 00:00:18.640
+Caso contrário,
+
+00:00:18.640 --> 00:00:21.190
+ele não saberá como descobrir qual é a resposta que ele é suposto obter.
+

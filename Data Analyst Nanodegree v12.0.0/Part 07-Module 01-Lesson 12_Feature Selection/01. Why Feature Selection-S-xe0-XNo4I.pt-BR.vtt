@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:03.570
+Bem-vindo à lição sobre Seleção de Recursos.
+
+00:00:03.570 --> 00:00:06.910
+Albert Einstein dizia que você deve
+
+00:00:06.910 --> 00:00:11.020
+tornar tudo o mais simples possível, mas não simplificado.
+
+00:00:11.020 --> 00:00:14.070
+A seleção de recursos se baseia na ideia de que você deseja ter
+
+00:00:14.070 --> 00:00:18.110
+o mínimo de recursos necessários para capturar as tendências e
+
+00:00:18.110 --> 00:00:19.760
+os padrões nos seus dados.
+
+00:00:19.760 --> 00:00:23.210
+O algoritmo de aprendizado de máquina será tão bom quanto os recursos que
+
+00:00:23.210 --> 00:00:24.300
+você incluir nele.
+
+00:00:24.300 --> 00:00:26.910
+Você deve realmente dedicar algum tempo e atenção a isso,
+
+00:00:26.910 --> 00:00:28.740
+como um aprendiz de máquina.
+
+00:00:28.740 --> 00:00:31.900
+Há dois pontos a serem frisados aqui.
+
+00:00:31.900 --> 00:00:34.740
+Primeiramente, você deve encontrar uma forma de selecionar os
+
+00:00:34.740 --> 00:00:36.130
+melhores recursos disponíveis.
+
+00:00:36.130 --> 00:00:39.450
+Ou seja, deixando de lado tudo o que não for de fato útil para você.
+
+00:00:39.450 --> 00:00:42.230
+Por outro lado, esperamos que seus dados tenham padrões que você
+
+00:00:42.230 --> 00:00:45.660
+possa identificar. Assim, a potencial adição de novos recursos pode
+
+00:00:45.660 --> 00:00:50.270
+levá-lo a usar sua intuição para acessar esses padrões.
+
+00:00:50.270 --> 00:00:52.400
+Analisaremos esses dois exemplos nesta lição.
+
