@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.370 --> 00:00:03.450
+Bem-vindo ao miniprojeto sobre agrupamento k-means.
+
+00:00:03.450 --> 00:00:06.000
+Você sabe muita coisa sobre o agrupamento k-means neste ponto, mas
+
+00:00:06.000 --> 00:00:10.480
+isso foi feito em uma espécie de conjuntos de dados inventados para fins pedagógicos.
+
+00:00:10.480 --> 00:00:12.870
+Agora vamos aplicar o agrupamento k-means em dados reais,
+
+00:00:12.870 --> 00:00:15.840
+neste caso, os dados financeiros da Enron.
+
+00:00:15.840 --> 00:00:19.250
+E como fazemos algumas vezes na segunda parte do miniprojeto, vamos fornecer
+
+00:00:19.250 --> 00:00:22.610
+a você um vislumbre na próxima lição que é sobre dimensionamento de recurso.
+
+00:00:22.610 --> 00:00:25.760
+O dimensionamento de recurso é um pré-processamento que você pode fazer em seus recursos,
+
+00:00:25.760 --> 00:00:29.260
+e ele realmente alterará a saída de seu algoritmo de agrupamento depois que você
+
+00:00:29.260 --> 00:00:30.180
+tiver executado o dimensionamento de recurso
+
+00:00:30.180 --> 00:00:33.630
+Portanto, você terá uma ideia do que está em jogo ao fazer alguma coisa como essa.
+
