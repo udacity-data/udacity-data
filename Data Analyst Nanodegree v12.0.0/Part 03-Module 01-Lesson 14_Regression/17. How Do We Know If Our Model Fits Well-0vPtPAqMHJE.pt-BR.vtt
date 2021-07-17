@@ -1,0 +1,99 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.378 --> 00:00:02.928
+COMO SABER SE NOSSO MODELO
+SE AJUSTA BEM?
+
+00:00:03.476 --> 00:00:05.181
+Uma das técnicas mais comuns
+
+00:00:05.215 --> 00:00:09.068
+para entender a relação
+entre duas variáveis na regressão,
+
+00:00:09.102 --> 00:00:11.747
+é o coeficiente de correlação
+que você viu antes.
+
+00:00:11.781 --> 00:00:15.547
+Esta parte dos resultados fornece
+muitas medidas adicionais,
+
+00:00:15.581 --> 00:00:17.478
+que são úteis para entender
+
+00:00:17.512 --> 00:00:19.967
+o quão bem nossa linha se ajusta
+aos dados.
+
+00:00:20.001 --> 00:00:22.932
+Uma das medidas mais comuns
+é esse valor aqui,
+
+00:00:22.966 --> 00:00:24.842
+chamado de "valor R-quadrado".
+
+00:00:24.876 --> 00:00:28.101
+Basicamente, quanto mais próximo
+este valor for 1,
+
+00:00:28.135 --> 00:00:29.846
+melhor o nosso modelo
+se ajusta.
+
+00:00:29.880 --> 00:00:31.966
+E quanto mais próximo
+o valor for zero,
+
+00:00:32.000 --> 00:00:33.808
+pior o modelo se ajusta.
+
+00:00:33.842 --> 00:00:38.380
+Esse valor é só o quadrado
+do coeficiente de correlação.
+
+00:00:38.610 --> 00:00:39.769
+Por isso o nome.
+
+00:00:40.110 --> 00:00:41.576
+Muitas vezes, você ouvirá
+
+00:00:41.610 --> 00:00:43.707
+a interpretação
+do valor R-quadrado
+
+00:00:43.741 --> 00:00:46.222
+como a quantidade da variabilidade
+na resposta
+
+00:00:46.256 --> 00:00:48.880
+que pode ser esclarecida
+por sua variável explicativa.
+
+00:00:48.914 --> 00:00:54.074
+Então, aqui, podemos dizer
+que 67.8% da variabilidade no preço,
+
+00:00:54.108 --> 00:00:56.507
+é explicada pela área da casa.
+
+00:00:56.541 --> 00:00:58.995
+Os 33% restantes
+da variabilidade
+
+00:00:59.029 --> 00:01:02.955
+são devido às características
+da casa que não são a área.
+
+00:01:02.989 --> 00:01:04.142
+Na próxima lição,
+
+00:01:04.176 --> 00:01:07.166
+você vai aprender por que usar
+esse valor direto do resultado
+
+00:01:07.200 --> 00:01:08.401
+pode ser enganoso.
+

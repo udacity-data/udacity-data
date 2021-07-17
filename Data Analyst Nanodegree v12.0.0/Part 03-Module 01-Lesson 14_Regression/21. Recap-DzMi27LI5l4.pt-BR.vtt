@@ -1,0 +1,56 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.777 --> 00:00:03.420
+ESTATÍSTICA PRÁTICA
+RESUMO
+
+00:00:03.817 --> 00:00:05.960
+Nesta lição, você aprendeu
+sobre os aspectos de matemática
+
+00:00:05.994 --> 00:00:09.580
+e programação para ajustar
+a regressão linear simples.
+
+00:00:09.809 --> 00:00:12.555
+Além disso, você aprendeu
+como interpretar os coeficientes
+
+00:00:12.589 --> 00:00:13.904
+do seu modelo de regressão
+
+00:00:13.938 --> 00:00:16.509
+e como avaliar
+se sua variável explicativa
+
+00:00:16.543 --> 00:00:17.951
+está fazendo um bom trabalho
+
+00:00:17.985 --> 00:00:20.320
+para permitir que você preveja
+a variável de resposta.
+
+00:00:20.354 --> 00:00:21.821
+Agora que você entende
+
+00:00:21.855 --> 00:00:24.499
+a regressão linear
+entre duas variáveis quantitativas,
+
+00:00:24.714 --> 00:00:26.424
+vamos dar um passo adiante,
+
+00:00:26.458 --> 00:00:29.512
+observando como podemos
+incorporar mais variáveis,
+
+00:00:29.546 --> 00:00:32.750
+incluindo tanto variáveis
+quantitativas quanto categóricas.
+
+00:00:32.784 --> 00:00:34.780
+Mas falaremos mais sobre isso
+na próxima lição.
+

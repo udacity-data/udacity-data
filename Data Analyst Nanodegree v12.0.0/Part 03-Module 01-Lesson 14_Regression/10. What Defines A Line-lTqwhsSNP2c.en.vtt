@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.029 --> 00:00:05.230
+When we fit line to a set of points,
+
+00:00:05.230 --> 00:00:07.610
+we commonly define it by two values,
+
+00:00:07.610 --> 00:00:09.794
+an intercept and a slope.
+
+00:00:09.794 --> 00:00:12.089
+The Intercept tells us the predicted value of
+
+00:00:12.089 --> 00:00:15.404
+the response when the explanatory variable is zero.
+
+00:00:15.404 --> 00:00:20.189
+We commonly use this notation for the population and sample intercept values,
+
+00:00:20.190 --> 00:00:25.770
+pronounced beta knot for the parameter and B0 for the statistic.
+
+00:00:25.769 --> 00:00:29.085
+The slope tells us the predicted change in the response for
+
+00:00:29.085 --> 00:00:33.439
+each additional one unit increase in the explanatory variable.
+
+00:00:33.439 --> 00:00:36.269
+Similarly, the notation for the population
+
+00:00:36.270 --> 00:00:39.856
+and sample slope values are notated in this way,
+
+00:00:39.856 --> 00:00:42.704
+pronounced as beta one for the parameter,
+
+00:00:42.704 --> 00:00:45.184
+and B1 for the statistic.
+
+00:00:45.185 --> 00:00:47.130
+Once we've fit a line to these points,
+
+00:00:47.130 --> 00:00:49.260
+we define it with this equation.
+
+00:00:49.259 --> 00:00:52.530
+This point here at the beginning of the line is the intercept value,
+
+00:00:52.530 --> 00:00:55.335
+that is, where the x value is equal to zero.
+
+00:00:55.335 --> 00:00:59.250
+And if we were to increase by one along the x-axis, like this,
+
+00:00:59.250 --> 00:01:03.700
+then the change along the y-axis in the line is the slope value,
+
+00:01:03.700 --> 00:01:06.015
+one last important note on notation.
+
+00:01:06.015 --> 00:01:07.739
+Commonly, you will see y,
+
+00:01:07.739 --> 00:01:10.424
+and Y-hat values like these in regression.
+
+00:01:10.424 --> 00:01:13.334
+These actually notate two different things.
+
+00:01:13.334 --> 00:01:17.129
+Y-hat values define the values that we get from the fitted line,
+
+00:01:17.129 --> 00:01:20.515
+but the y defines the actual data points.
+
+00:01:20.515 --> 00:01:24.254
+So this value would be defined as y1, x1.
+
+00:01:24.254 --> 00:01:26.000
+But if we were to go to the line,
+
+00:01:26.000 --> 00:01:29.099
+we would define this as Y-hat_1, X1.
+
+00:01:29.099 --> 00:01:31.750
+Now that you understand that there are two values that
+
+00:01:31.750 --> 00:01:34.230
+define a line and how they're represented,
+
+00:01:34.230 --> 00:01:38.040
+both in notation and visually, in the next video,
+
+00:01:38.040 --> 00:01:40.950
+you'll see how we actually figure out what line best
+
+00:01:40.950 --> 00:01:44.070
+fits the points and exactly what best means.
+

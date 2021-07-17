@@ -1,0 +1,141 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.230 --> 00:00:02.920
+INTRODUÇÃO
+AO APRENDIZADO DE MÁQUINA
+
+00:00:03.485 --> 00:00:04.812
+Antes de começarmos,
+
+00:00:04.846 --> 00:00:07.547
+vamos voltar
+e olhar para o quadro geral
+
+00:00:07.581 --> 00:00:10.952
+do que é aprendizado de máquina
+e como a regressão se encaixa nele.
+
+00:00:11.323 --> 00:00:12.805
+Você pode ter ouvido
+sobre aprendizado de máquina,
+
+00:00:12.839 --> 00:00:15.087
+pois atualmente
+é um tópico em alta,
+
+00:00:15.360 --> 00:00:17.621
+mas a verdade é que
+não é nenhuma novidade.
+
+00:00:17.655 --> 00:00:19.319
+É apenas uma nova maneira
+de integrar coisas
+
+00:00:19.353 --> 00:00:21.732
+que já existem há muito tempo.
+
+00:00:22.022 --> 00:00:24.244
+Dois campos primários
+do aprendizado de máquina
+
+00:00:24.278 --> 00:00:25.926
+são chamados
+de aprendizado supervisionado
+
+00:00:25.960 --> 00:00:27.723
+e aprendizado
+não supervisionado.
+
+00:00:27.757 --> 00:00:30.617
+O aprendizado supervisionado
+é quando usamos dados de entrada
+
+00:00:30.651 --> 00:00:32.777
+para prever um rótulo
+para esses dados.
+
+00:00:32.811 --> 00:00:34.865
+Exemplos desse tipo
+de aprendizado de máquina
+
+00:00:34.899 --> 00:00:36.884
+usam dados de transações
+de cartão de crédito
+
+00:00:36.918 --> 00:00:39.183
+para prever
+transações fraudulentas,
+
+00:00:39.519 --> 00:00:41.865
+usam dados financeiros
+do cliente
+
+00:00:41.899 --> 00:00:44.223
+para prever a chance de inadimplência
+em um empréstimo,
+
+00:00:44.456 --> 00:00:46.602
+ou usam as características
+do bairro
+
+00:00:46.636 --> 00:00:48.189
+para prever
+os preços das casas.
+
+00:00:48.488 --> 00:00:50.368
+Outro grande ramo
+do aprendizado de máquina
+
+00:00:50.574 --> 00:00:52.881
+é conhecido como
+aprendizado sem supervisão.
+
+00:00:52.915 --> 00:00:54.576
+Nesse tipo
+de aprendizado de máquina
+
+00:00:54.610 --> 00:00:57.806
+você agrega dados com base
+em características comuns.
+
+00:00:58.079 --> 00:00:59.465
+Esses dados
+não possuem rótulos
+
+00:00:59.499 --> 00:01:01.820
+como nas técnicas supervisionadas
+de aprendizado de máquina.
+
+00:01:01.854 --> 00:01:04.832
+Problemas comuns não supervisionados
+incluem tentar agrupar
+
+00:01:04.866 --> 00:01:06.666
+segmentos
+de clientes semelhantes
+
+00:01:06.700 --> 00:01:09.561
+ou documentos de grupo
+que abrangem tópicos semelhantes.
+
+00:01:09.595 --> 00:01:11.626
+Existem outras abordagens
+de aprendizado de máquina,
+
+00:01:11.660 --> 00:01:13.787
+mas esses são
+os ramos principais.
+
+00:01:13.821 --> 00:01:15.077
+E, como vimos,
+
+00:01:15.111 --> 00:01:16.559
+a regressão linear
+e a regressão logística
+
+00:01:16.593 --> 00:01:19.053
+caem no ramo
+do aprendizado supervisionado.
+

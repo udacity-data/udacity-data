@@ -1,0 +1,108 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.098 --> 00:00:01.238
+Neste vídeo,
+
+00:00:01.272 --> 00:00:03.089
+estudaremos como ajustar
+um modelo linear
+
+00:00:03.123 --> 00:00:04.500
+para dados no Python.
+
+00:00:04.534 --> 00:00:06.843
+Vamos usar
+a biblioteca "statsmodel".
+
+00:00:06.877 --> 00:00:09.753
+Carreguei as bibliotecas necessárias
+que usaremos aqui,
+
+00:00:09.960 --> 00:00:12.683
+além de carregar
+o conjunto de dados usando o Pandas.
+
+00:00:14.365 --> 00:00:16.484
+Se você não tem
+"statsmodels" instaladas,
+
+00:00:16.518 --> 00:00:19.032
+precisará instalar
+antes de começar.
+
+00:00:19.842 --> 00:00:21.683
+Aqui fiz uma instalação "PIP".
+
+00:00:22.527 --> 00:00:23.880
+No final desta lição,
+
+00:00:23.914 --> 00:00:26.200
+você executará esse processo
+algumas vezes
+
+00:00:26.234 --> 00:00:27.566
+em conjuntos de dados
+diferentes,
+
+00:00:27.600 --> 00:00:30.012
+para garantir que se sinta
+tranquilo com esse processo
+
+00:00:30.046 --> 00:00:31.701
+e os resultados fornecidos.
+
+00:00:31.735 --> 00:00:33.280
+Antes de ajustarmos o modelo,
+
+00:00:33.314 --> 00:00:35.923
+precisamos garantir a adição
+de uma coluna para a interceptação.
+
+00:00:35.957 --> 00:00:39.230
+Infelizmente, "statsmodels"
+não fazem isso automaticamente,
+
+00:00:39.566 --> 00:00:43.450
+e só em casos raros você não quer
+adicionar uma intercepção.
+
+00:00:43.484 --> 00:00:47.023
+Um link que discute esse tópico
+é fornecido nas notas do instrutor.
+
+00:00:47.916 --> 00:00:52.011
+Aqui estamos fornecendo
+ao método OLS, as variáveis Y e X.
+
+00:00:52.289 --> 00:00:54.734
+OLS significa
+"Mínimos Quadrados Comuns",
+
+00:00:54.768 --> 00:00:57.157
+e esse é o método
+que queremos usar.
+
+00:00:57.725 --> 00:00:59.459
+Primeiro nós fornecemos o Y,
+
+00:01:00.381 --> 00:01:02.838
+e depois uma lista
+das variáveis X.
+
+00:01:04.061 --> 00:01:05.942
+Ajustamos o modelo com isso,
+
+00:01:06.894 --> 00:01:10.111
+e, por fim, podemos armazenar
+os resultados e analisar um resumo.
+
+00:01:10.754 --> 00:01:13.401
+Nos conceitos restantes,
+analisaremos como interpretar
+
+00:01:13.435 --> 00:01:16.343
+algumas das informações
+mais importantes desse resultado.
+

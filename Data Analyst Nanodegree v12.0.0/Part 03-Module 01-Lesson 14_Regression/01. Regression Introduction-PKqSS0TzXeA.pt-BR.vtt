@@ -1,0 +1,47 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.261 --> 00:00:02.873
+ESTATÍSTICA PRÁTICA
+REGRESSÃO LINEAR SIMPLES
+
+00:00:03.163 --> 00:00:05.123
+Bem-vindo a esta lição
+sobre regressão.
+
+00:00:05.157 --> 00:00:06.641
+Esta lição será a entrada
+
+00:00:06.675 --> 00:00:08.292
+para a compressão
+dos tipos de problemas
+
+00:00:08.326 --> 00:00:10.284
+que podem ser resolvidos
+com técnicas de regressão.
+
+00:00:10.318 --> 00:00:13.255
+Você aprenderá como identificar
+problemas que podem ser resolvidos,
+
+00:00:13.533 --> 00:00:16.239
+um pouco sobre algoritmo
+e seu funcionamento interno
+
+00:00:16.469 --> 00:00:19.299
+e como aplicar essa técnica
+nos dados usando o Python.
+
+00:00:19.601 --> 00:00:21.836
+As habilidades adquiridas
+nesta lição serão fundamentais
+
+00:00:21.870 --> 00:00:23.391
+para compreender
+as lições posteriores
+
+00:00:23.425 --> 00:00:26.047
+sobre regressão linear múltipla
+e regressão logística.
+

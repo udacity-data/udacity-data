@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.469
+In this video, we'll be looking at fitting a linear model to our data in Python.
+
+00:00:04.469 --> 00:00:06.934
+We will be using the statsmodel library.
+
+00:00:06.934 --> 00:00:09.089
+I've loaded the necessary libraries we'll be using
+
+00:00:09.089 --> 00:00:13.125
+here as well as loading the data set using pandas.
+
+00:00:13.125 --> 00:00:16.329
+It looks like if you don't have statsmodels installed,
+
+00:00:16.329 --> 00:00:19.104
+you'll have to install that before we can get started.
+
+00:00:19.105 --> 00:00:20.920
+Here, I've done a pip install.
+
+00:00:20.920 --> 00:00:23.545
+At the end of this lesson,
+
+00:00:23.545 --> 00:00:26.380
+you will be performing this process a few times on
+
+00:00:26.379 --> 00:00:29.960
+different datasets to assure you are comfortable with this process,
+
+00:00:29.960 --> 00:00:31.609
+and the provided results.
+
+00:00:31.609 --> 00:00:33.130
+Before we fit our model,
+
+00:00:33.130 --> 00:00:35.945
+we need to make sure to add a column for our intercept.
+
+00:00:35.945 --> 00:00:39.234
+Unfortunately, statsmodels doesn't automatically do this,
+
+00:00:39.234 --> 00:00:43.109
+and there are only rare cases where you will not want to add an intercept.
+
+00:00:43.109 --> 00:00:47.774
+A link discussing this topic is provided in the instructor notes below.
+
+00:00:47.774 --> 00:00:52.289
+Here, we are providing OLS method the Y and X variables.
+
+00:00:52.289 --> 00:00:54.564
+OLS stands for ordinary least squares,
+
+00:00:54.564 --> 00:00:56.905
+as this is the method we want to use.
+
+00:00:56.905 --> 00:00:59.664
+First, we provide our Y,
+
+00:00:59.664 --> 00:01:03.534
+and then a list of the X variables.
+
+00:01:03.534 --> 00:01:06.489
+We then fit the model with this,
+
+00:01:06.489 --> 00:01:10.009
+and finally, we can store our results and look at a summary.
+
+00:01:10.010 --> 00:01:11.785
+In the remaining concepts,
+
+00:01:11.784 --> 00:01:13.479
+we'll go through how to interpret some of
+
+00:01:13.480 --> 00:01:16.329
+the most important information from this output.
+

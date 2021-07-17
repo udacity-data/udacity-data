@@ -1,0 +1,341 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Scatter Plots
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Regression
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Video Introduction.html">
+       01. Video: Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Video Introduction to Machine Learning.html">
+       02. Video: Introduction to Machine Learning
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Quiz Machine Learning Big Picture.html">
+       03. Quiz: Machine Learning Big Picture
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Video Introduction to Linear Regression.html">
+       04. Video: Introduction to Linear Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quiz Linear Regression Language.html">
+       05. Quiz: Linear Regression Language
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Scatter Plots.html">
+       06. Scatter Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Quizzes On Scatter Plots.html">
+       07. Quizzes On Scatter Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Correlation Coefficients.html">
+       08. Correlation Coefficients
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Correlation Coefficient Quizzes.html">
+       09. Correlation Coefficient Quizzes
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Video What Defines A Line.html">
+       10. Video: What Defines A Line?
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Quiz What Defines A Line - Notation Quiz.html">
+       11. Quiz: What Defines A Line? - Notation Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Quiz What Defines A Line - Line Basics Quiz.html">
+       12. Quiz: What Defines A Line? - Line Basics Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Video Fitting A Regression Line.html">
+       13. Video: Fitting A Regression Line
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Text The Regression Closed Form Solution.html">
+       14. Text: The Regression Closed Form Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Screencast Fitting A Regression Line in Python.html">
+       15. Screencast: Fitting A Regression Line in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Video How to Interpret the Results.html">
+       16. Video: How to Interpret the Results?
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Video Does the Line Fit the Data Well.html">
+       17. Video: Does the Line Fit the Data Well?
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Notebook + Quiz How to Interpret the Results.html">
+       18. Notebook + Quiz: How to Interpret the Results
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Notebook + Quiz Regression - Your Turn - Part I.html">
+       19. Notebook + Quiz: Regression - Your Turn - Part I
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Notebook + Quiz Your Turn - Part II.html">
+       20. Notebook + Quiz: Your Turn - Part II
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Video Recap.html">
+       21. Video: Recap
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Text Recap + Next Steps.html">
+       22. Text: Recap + Next Steps
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. Scatter Plots
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Scatter Plots
+         </p>
+        </h3>
+        <video controls="">
+         <source src="06. Scatter Plots -DvlxZ37O4i8.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="06. Scatter Plots -DvlxZ37O4i8.ar.vtt" srclang="ar"/>
+         <track default="true" kind="subtitles" label="en" src="06. Scatter Plots -DvlxZ37O4i8.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="06. Scatter Plots -DvlxZ37O4i8.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="uz" src="06. Scatter Plots -DvlxZ37O4i8.uz.vtt" srclang="uz"/>
+         <track default="false" kind="subtitles" label="CN" src="06. Scatter Plots -DvlxZ37O4i8.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="scatter-plots">
+          Scatter plots
+         </h3>
+         <p>
+          Scatter plots are a common visual for comparing two quantitative variables.  A common summary statistic that relates to a scatter plot is the
+          <strong>
+           correlation coefficient
+          </strong>
+          commonly denoted by
+          <strong>
+           r
+          </strong>
+          .
+         </p>
+         <p>
+          Though there are a
+          <a href="http://www.statisticssolutions.com/correlation-pearson-kendall-spearman/" rel="noopener noreferrer" target="_blank">
+           few different ways
+          </a>
+          to measure correlation between two variables, the most common way is with
+          <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient" rel="noopener noreferrer" target="_blank">
+           Pearson's correlation coefficient
+          </a>
+          .  Pearson's correlation coefficient provides the:
+         </p>
+         <ol>
+          <li>
+           Strength
+          </li>
+          <li>
+           Direction
+          </li>
+         </ol>
+         <p>
+          of a
+          <strong>
+           linear relationship
+          </strong>
+          .
+          <a href="https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient" rel="noopener noreferrer" target="_blank">
+           Spearman's Correlation Coefficient
+          </a>
+          does not measure linear relationships specifically, and it might be more appropriate for certain cases of associating two variables.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. Quizzes On Scatter Plots.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. Scatter Plots')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.600 --> 00:00:04.734
+Before we get started,
+
+00:00:04.740 --> 00:00:07.679
+let's take a step back and look at the big picture of
+
+00:00:07.680 --> 00:00:11.169
+what machine learning is and how reggression fits into it.
+
+00:00:11.169 --> 00:00:15.060
+You might have heard of machine learning as it's currently a really hot topic,
+
+00:00:15.074 --> 00:00:17.384
+but the truth is that it isn't really new.
+
+00:00:17.385 --> 00:00:22.085
+It's just a new way to package things that have actually existed for a really long time.
+
+00:00:22.085 --> 00:00:24.539
+Two primary branches of machine learning are called
+
+00:00:24.539 --> 00:00:27.494
+supervised learning and unsupervised learning.
+
+00:00:27.495 --> 00:00:32.850
+Supervised learning is where we use input data to predict a label for that data.
+
+00:00:32.850 --> 00:00:35.250
+Examples of this type of machine learning are using
+
+00:00:35.250 --> 00:00:39.134
+credit card transaction data to predict fraudulent transactions,
+
+00:00:39.134 --> 00:00:44.054
+or using customer financial data to predict the chance of a default on a loan,
+
+00:00:44.054 --> 00:00:48.090
+or using neighborhood characteristics to predict home prices.
+
+00:00:48.090 --> 00:00:52.920
+Another large branch of machine learning is known as unsupervised machine learning.
+
+00:00:52.920 --> 00:00:54.375
+In this type of machine learning,
+
+00:00:54.375 --> 00:00:57.935
+you're clustering together data based on common characteristics.
+
+00:00:57.935 --> 00:01:01.575
+These data don't have labels like in supervised machine learning techniques.
+
+00:01:01.575 --> 00:01:06.480
+Common unsupervised problems include trying to group similar customer segments,
+
+00:01:06.480 --> 00:01:09.480
+or group documents that cover similar topics.
+
+00:01:09.480 --> 00:01:13.555
+There are other machine learning approaches but these are the two main branches.
+
+00:01:13.555 --> 00:01:14.939
+And as it turns out,
+
+00:01:14.939 --> 00:01:19.000
+linear and logistic regression fall into the supervised machine learning branch.
+

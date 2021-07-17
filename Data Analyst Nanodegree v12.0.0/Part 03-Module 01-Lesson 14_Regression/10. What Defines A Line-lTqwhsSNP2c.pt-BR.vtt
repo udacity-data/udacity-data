@@ -1,0 +1,159 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.261 --> 00:00:02.857
+ESTATÍSTICA PRÁTICA
+O QUE DEFINE UMA LINHA?
+
+00:00:03.064 --> 00:00:05.197
+Quando ajustamos uma linha
+a um conjunto de pontos,
+
+00:00:05.231 --> 00:00:07.587
+comumente a definimos
+por dois valores,
+
+00:00:07.621 --> 00:00:09.869
+um de intercepção
+e um de inclinação.
+
+00:00:09.903 --> 00:00:12.867
+A intercepção nos informa
+o valor previsto da resposta
+
+00:00:13.177 --> 00:00:15.517
+quando a variável explicativa
+é zero.
+
+00:00:15.551 --> 00:00:17.840
+Costumamos usar esta notação
+
+00:00:17.874 --> 00:00:20.374
+para valores de intercepção
+de amostra e população,
+
+00:00:20.408 --> 00:00:22.944
+pronunciado beta-zero
+para o parâmetro
+
+00:00:22.978 --> 00:00:25.499
+e B0 para a estatística.
+
+00:00:25.919 --> 00:00:28.833
+A inclinação nos diz
+a mudança prevista na resposta
+
+00:00:28.867 --> 00:00:31.382
+para cada aumento adicional
+de uma unidade
+
+00:00:31.724 --> 00:00:33.190
+na variável explicativa.
+
+00:00:33.604 --> 00:00:36.298
+Da mesma forma,
+a notação para a população
+
+00:00:36.332 --> 00:00:38.119
+e os valores da inclinação
+da amostra
+
+00:00:38.153 --> 00:00:39.922
+são notados desta maneira,
+
+00:00:39.956 --> 00:00:42.701
+pronunciado como beta-um
+para o parâmetro,
+
+00:00:42.929 --> 00:00:45.080
+e B1 para a estatística.
+
+00:00:45.423 --> 00:00:47.180
+Quando temos uma linha
+para esses pontos,
+
+00:00:47.214 --> 00:00:49.101
+nós a definimos
+com esta equação.
+
+00:00:49.419 --> 00:00:52.605
+Este ponto aqui no início da linha
+é o valor de intercepção,
+
+00:00:52.884 --> 00:00:55.372
+isto é, onde o valor de X
+é igual a zero.
+
+00:00:55.805 --> 00:00:59.226
+E se aumentássemos em 1
+ao longo do eixo X, assim,
+
+00:00:59.560 --> 00:01:03.420
+então a mudança ao longo do eixo Y
+na linha é o valor da inclinação,
+
+00:01:03.849 --> 00:01:06.125
+uma última nota importante
+na notação.
+
+00:01:06.420 --> 00:01:09.168
+Geralmente, você verá os valores
+de Y e Y-chapéu
+
+00:01:09.202 --> 00:01:10.734
+como esses na regressão.
+
+00:01:10.768 --> 00:01:13.282
+Eles realmente apresentam
+duas coisas diferentes.
+
+00:01:13.734 --> 00:01:15.679
+Os valores de Y-chapéu
+definem os valores
+
+00:01:15.713 --> 00:01:17.357
+que obtemos da linha ajustada,
+
+00:01:17.391 --> 00:01:20.378
+mas o Y define
+os pontos de dados reais.
+
+00:01:20.793 --> 00:01:24.132
+Então esse valor seria definido
+como y1, x1.
+
+00:01:24.433 --> 00:01:26.019
+Mas, se tivéssemos
+que ir à linha,
+
+00:01:26.053 --> 00:01:28.965
+nós definiríamos isso
+como Y-chapéu_1, x1.
+
+00:01:29.685 --> 00:01:31.772
+Agora você entende
+que existem dois valores
+
+00:01:31.806 --> 00:01:34.208
+que definem uma linha
+e como eles são representados,
+
+00:01:34.242 --> 00:01:36.620
+tanto na notação
+como visualmente.
+
+00:01:36.957 --> 00:01:38.225
+No próximo vídeo,
+
+00:01:38.259 --> 00:01:40.646
+você verá como descobrimos
+qual linha
+
+00:01:40.680 --> 00:01:42.157
+melhor se ajusta aos pontos
+
+00:01:42.191 --> 00:01:44.322
+e exatamente o que isso
+significa.
+

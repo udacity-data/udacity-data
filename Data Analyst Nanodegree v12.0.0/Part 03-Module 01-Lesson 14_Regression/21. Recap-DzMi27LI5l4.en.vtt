@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.690 --> 00:00:05.299
+In this lesson, you learned about
+
+00:00:05.299 --> 00:00:09.506
+the math and programming aspects of fitting simple linear regression.
+
+00:00:09.506 --> 00:00:11.689
+Additionally, you learned how to interpret
+
+00:00:11.689 --> 00:00:14.269
+the coefficients of your regression model and how to
+
+00:00:14.269 --> 00:00:17.000
+assess if your explanatory variable is doing
+
+00:00:17.000 --> 00:00:20.339
+a good job at allowing you to predict the response variable.
+
+00:00:20.339 --> 00:00:21.739
+Now that you have an understanding of
+
+00:00:21.739 --> 00:00:24.473
+linear regression between two quantitative variables,
+
+00:00:24.474 --> 00:00:28.295
+let's take this another step further by looking at how we can incorporate
+
+00:00:28.295 --> 00:00:32.700
+more variables including both quantitative and categorical variables.
+
+00:00:32.700 --> 00:00:35.000
+But more of this is in the next lesson.
+

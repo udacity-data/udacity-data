@@ -1,0 +1,174 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.182 --> 00:00:03.198
+ESTATÍSTICA PRÁTICA
+AJUSTANDO UMA LINHA DE REGRESSÃO
+
+00:00:03.635 --> 00:00:05.049
+No caso bivariante,
+
+00:00:05.083 --> 00:00:07.831
+estamos interessados em encontrar
+uma linha que melhor nos permita
+
+00:00:07.865 --> 00:00:11.420
+prever a variável de resposta
+usando a variável explicativa.
+
+00:00:11.883 --> 00:00:14.413
+O algoritmo principal usado
+para encontrar a melhor linha
+
+00:00:14.447 --> 00:00:15.545
+é conhecido como
+
+00:00:15.579 --> 00:00:18.205
+algoritmo de regressão
+de mínimos quadrados.
+
+00:00:18.239 --> 00:00:20.340
+E a forma como a linha
+é escolhida
+
+00:00:20.734 --> 00:00:24.313
+é minimizando a soma
+das distâncias verticais ao quadrado
+
+00:00:24.347 --> 00:00:27.755
+entre a nossa linha ajustada
+e cada um desses pontos.
+
+00:00:28.033 --> 00:00:29.824
+Vamos ver como isso funciona.
+
+00:00:29.858 --> 00:00:31.713
+Imagine o mesmo
+conjunto de pontos,
+
+00:00:31.747 --> 00:00:34.846
+estamos considerando ajustar
+essas duas linhas.
+
+00:00:35.427 --> 00:00:39.109
+A maneira de decidir qual
+dessas duas linhas devemos escolher
+
+00:00:39.434 --> 00:00:41.554
+é olhar essas distâncias.
+
+00:00:41.927 --> 00:00:44.863
+Mas se estivéssemos apenas usado
+a soma desses valores,
+
+00:00:45.093 --> 00:00:48.915
+os negativos e positivos acabariam
+por cancelar cada linha.
+
+00:00:49.379 --> 00:00:51.244
+Então em vez
+de apenas somar esses,
+
+00:00:51.469 --> 00:00:53.969
+somamos o quadrado
+dessas distâncias
+
+00:00:54.223 --> 00:00:56.866
+e depois encontramos
+a linha que minimiza, assim.
+
+00:00:57.182 --> 00:01:00.016
+A maneira que notaríamos
+essa diferença é assim,
+
+00:01:00.480 --> 00:01:04.325
+e o nosso objetivo é minimizar
+essa função que diz:
+
+00:01:04.585 --> 00:01:06.990
+para cada um dos pontos de dados
+no conjunto de dados,
+
+00:01:07.024 --> 00:01:10.975
+procure a distância entre os valores
+previstos e os reais,
+
+00:01:11.332 --> 00:01:14.102
+eleve ao quadrado
+e então some todos eles.
+
+00:01:14.549 --> 00:01:19.043
+E se a linha cria um valor menor
+do que para qualquer outra linha,
+
+00:01:19.590 --> 00:01:22.090
+então esta é a linha
+que queremos usar.
+
+00:01:22.124 --> 00:01:25.045
+Você pode estar pensando:
+por que escolhemos essa função?
+
+00:01:25.406 --> 00:01:28.262
+Por que não usar o valor absoluto
+em vez do quadrado?
+
+00:01:28.652 --> 00:01:30.366
+Ou por que não usar
+um exponencial
+
+00:01:30.400 --> 00:01:32.325
+para tornar
+todos os valores positivos?
+
+00:01:32.621 --> 00:01:34.854
+E a verdade é que existem
+muitas funções
+
+00:01:34.888 --> 00:01:36.877
+que podemos escolher
+para otimizar.
+
+00:01:36.911 --> 00:01:39.444
+Entretanto, existem
+propriedades matemáticas
+
+00:01:39.671 --> 00:01:42.703
+que tornam essa função específica
+muito boa.
+
+00:01:43.059 --> 00:01:45.253
+Algumas são baseadas
+nas ideias de cálculo
+
+00:01:45.287 --> 00:01:47.229
+e algumas são apenas baseadas
+na tradição.
+
+00:01:47.263 --> 00:01:51.113
+Na maioria dos casos, você realmente
+não calcula esses valores.
+
+00:01:51.147 --> 00:01:52.824
+Isso é feito no software,
+
+00:01:52.858 --> 00:01:55.938
+como você fará no Python,
+por padrão.
+
+00:01:55.972 --> 00:01:58.801
+E funciona muito bem para a maioria
+dos conjuntos de dados.
+
+00:01:58.835 --> 00:02:01.072
+Se você decidir que quer otimizar
+esse problema
+
+00:02:01.106 --> 00:02:02.359
+de uma maneira diferente,
+
+00:02:02.393 --> 00:02:05.209
+provavelmente terá
+que escrever o programa.
+

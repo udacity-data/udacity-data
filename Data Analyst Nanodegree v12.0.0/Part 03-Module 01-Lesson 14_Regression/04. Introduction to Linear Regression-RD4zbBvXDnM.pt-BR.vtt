@@ -1,0 +1,108 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.142 --> 00:00:02.650
+ESTATÍSTICA PRÁTICA
+INTRODUÇÃO À REGRESSÃO LINEAR
+
+00:00:03.094 --> 00:00:04.923
+O primeiro tipo de regressão
+que analisaremos
+
+00:00:04.957 --> 00:00:06.952
+é chamado
+de regressão linear simples.
+
+00:00:06.986 --> 00:00:08.076
+E, nesses casos,
+
+00:00:08.110 --> 00:00:10.775
+estamos comparando
+apenas duas variáveis quantitativas.
+
+00:00:11.100 --> 00:00:12.966
+E, na forma mais simples
+de regressão,
+
+00:00:13.000 --> 00:00:16.547
+estamos interessados apenas
+na relação de duas variáveis.
+
+00:00:16.839 --> 00:00:18.656
+Isso poderia ser
+preço versus vendas,
+
+00:00:18.890 --> 00:00:21.674
+temperatura versus umidade,
+altura versus peso
+
+00:00:22.025 --> 00:00:23.999
+ou horas de estudo
+versus nota do teste.
+
+00:00:24.292 --> 00:00:26.600
+Uma maneira comum de visualizar
+essas relações
+
+00:00:26.634 --> 00:00:28.273
+é com um gráfico de dispersão.
+
+00:00:28.307 --> 00:00:32.567
+A variável neste eixo é chamada
+de resposta ou variável dependente,
+
+00:00:32.601 --> 00:00:34.368
+em que a variável neste eixo
+
+00:00:34.402 --> 00:00:37.166
+é chamada de variável explicativa
+ou independente.
+
+00:00:37.485 --> 00:00:40.879
+A variável de resposta
+é a que nos interessa na predição,
+
+00:00:40.913 --> 00:00:44.242
+enquanto a variável explicativa
+é usada para prever a resposta.
+
+00:00:44.500 --> 00:00:46.139
+No caso
+de preço versus vendas,
+
+00:00:46.173 --> 00:00:48.694
+provavelmente teremos
+mais controle sobre o preço,
+
+00:00:48.728 --> 00:00:52.571
+pois as vendas são o que queremos
+prever com base no preço.
+
+00:00:52.844 --> 00:00:56.238
+Portanto, consideramos o preço
+como a variável explicativa
+
+00:00:56.272 --> 00:00:58.555
+e as vendas
+como a variável de resposta.
+
+00:00:58.782 --> 00:00:59.913
+Na regressão linear,
+
+00:00:59.947 --> 00:01:02.905
+o jeito de fazermos isso
+é ajustando uma linha para os dados.
+
+00:01:03.119 --> 00:01:05.205
+Antes de continuarmos
+com a regressão,
+
+00:01:05.461 --> 00:01:07.480
+vamos examinar mais de perto
+os gráficos de dispersão
+
+00:01:07.514 --> 00:01:09.992
+e o que é conhecido
+como coeficiente de correlação.
+

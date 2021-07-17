@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.529 --> 00:00:04.820
+In the bi-variate case,
+
+00:00:04.820 --> 00:00:07.849
+we're interested in finding a line that best allows us to
+
+00:00:07.849 --> 00:00:11.509
+predict the response variable using the explanatory variable.
+
+00:00:11.509 --> 00:00:14.480
+The main algorithm used to find the best line
+
+00:00:14.480 --> 00:00:17.925
+is known as the least squares regression algorithm.
+
+00:00:17.925 --> 00:00:22.339
+And the way the line is chosen is by minimizing the sum of
+
+00:00:22.339 --> 00:00:27.884
+squared vertical distances between our fitted line and each of these points.
+
+00:00:27.885 --> 00:00:29.510
+Let's look at how this works.
+
+00:00:29.510 --> 00:00:31.760
+Imagine with the same set of points,
+
+00:00:31.760 --> 00:00:34.940
+we are considering fitting these two lines.
+
+00:00:34.939 --> 00:00:38.164
+The way we could decide between which of these two lines
+
+00:00:38.164 --> 00:00:41.640
+we should choose is in looking at these distances.
+
+00:00:41.640 --> 00:00:44.795
+But if we were to just use the sum of these values
+
+00:00:44.795 --> 00:00:49.189
+the negatives and positives would end up cancelling out each line.
+
+00:00:49.189 --> 00:00:51.140
+So instead of just summing these,
+
+00:00:51.140 --> 00:00:53.825
+we sum the square of these distances,
+
+00:00:53.825 --> 00:00:56.885
+and then finding the line that minimizes this.
+
+00:00:56.884 --> 00:01:00.140
+The way we would notate this difference is like this,
+
+00:01:00.140 --> 00:01:04.310
+and then our goal is to minimize this function which says,
+
+00:01:04.310 --> 00:01:06.740
+for each of the data points in the data set,
+
+00:01:06.739 --> 00:01:11.000
+look at the distance between the predicted and actual values,
+
+00:01:11.000 --> 00:01:14.340
+square these, and then sum them all together.
+
+00:01:14.340 --> 00:01:19.159
+And if our line creates a smaller value than for any other line,
+
+00:01:19.159 --> 00:01:22.045
+then this is the line we want to use.
+
+00:01:22.045 --> 00:01:25.250
+You might be thinking, why do we choose this function?
+
+00:01:25.250 --> 00:01:28.280
+Why not just use the absolute value instead of the square?
+
+00:01:28.280 --> 00:01:32.180
+Or why not use an exponential to turn all the values positive?
+
+00:01:32.180 --> 00:01:36.830
+And the truth is that there are lots of functions we might choose to optimize on.
+
+00:01:36.829 --> 00:01:42.724
+However, there are mathematical properties that make this particular function quite nice.
+
+00:01:42.724 --> 00:01:47.174
+Some are based on the ideas of calculus and some are just based on tradition.
+
+00:01:47.174 --> 00:01:49.700
+In most cases, you don't actually compute
+
+00:01:49.700 --> 00:01:52.625
+these values yourself but this is what software,
+
+00:01:52.625 --> 00:01:55.730
+like what you will be doing in Python, do by default.
+
+00:01:55.730 --> 00:01:58.820
+And it tends to work pretty well for most data sets.
+
+00:01:58.819 --> 00:02:02.119
+If you decide you want to optimize this problem in a different way,
+
+00:02:02.120 --> 00:02:05.000
+then you will probably have to write the program yourself.
+

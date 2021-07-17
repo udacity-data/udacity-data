@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.100 --> 00:00:04.945
+Welcome to this lesson on regression.
+
+00:00:04.945 --> 00:00:07.210
+This lesson will be a starter for understanding
+
+00:00:07.209 --> 00:00:10.224
+the types of problems that can be solved with regression techniques.
+
+00:00:10.224 --> 00:00:13.344
+You will learn how to identify the problems that can be solved,
+
+00:00:13.345 --> 00:00:16.150
+a bit about the algorithm and how it works under the hood,
+
+00:00:16.149 --> 00:00:19.334
+and how to apply this technique to data using Python.
+
+00:00:19.335 --> 00:00:22.420
+The skills gained in this lesson will be fundamental to understanding
+
+00:00:22.420 --> 00:00:26.000
+later lessons on multiple linear regression, and logistic regression.
+

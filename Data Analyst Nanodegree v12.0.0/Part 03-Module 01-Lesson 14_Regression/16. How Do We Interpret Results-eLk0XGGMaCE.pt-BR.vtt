@@ -1,0 +1,149 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.071 --> 00:00:02.142
+ESTATÍSTICA PRÁTICA
+COMO INTERPRETAR RESULTADOS?
+
+00:00:02.176 --> 00:00:05.026
+Agora que você viu como ajustar
+um modelo linear no Python,
+
+00:00:05.357 --> 00:00:07.325
+é importante que possa interpretar
+os resultados
+
+00:00:07.359 --> 00:00:09.355
+que obteve da linha ajustada.
+
+00:00:09.671 --> 00:00:12.467
+Você pode ter observado
+que o resumo do modelo linear
+
+00:00:12.501 --> 00:00:15.570
+que você recuperou do Python
+forneceu muita informação.
+
+00:00:15.876 --> 00:00:19.115
+Discutiremos em breve
+as informações desta parte.
+
+00:00:19.387 --> 00:00:22.424
+Mas por enquanto,
+vamos ver essa parte dos resultados.
+
+00:00:22.458 --> 00:00:26.119
+Bem aqui, está área que nos fala
+sobre o modelo em ajustamos.
+
+00:00:26.363 --> 00:00:27.512
+Especificamente,
+
+00:00:27.546 --> 00:00:30.070
+esta é a intercepção
+e esta é a inclinação.
+
+00:00:30.389 --> 00:00:32.710
+Podemos construir um modelo linear
+dessa maneira.
+
+00:00:32.744 --> 00:00:37.088
+O preço previsto da casa
+é igual a $ 9.588
+
+00:00:37.358 --> 00:00:40.581
+mais 348 vezes a área da casa.
+
+00:00:41.001 --> 00:00:44.137
+Então, de alguma forma,
+a casa tinha uma área de zero,
+
+00:00:44.413 --> 00:00:48.720
+e poderíamos prever
+que o modelo custaria $ 9.588.
+
+00:00:49.169 --> 00:00:51.775
+Para cada aumento
+de uma unidade na área,
+
+00:00:52.080 --> 00:00:55.852
+podemos prever que o preço
+aumentaria em 348.
+
+00:00:56.088 --> 00:00:58.534
+Se as unidades do preço
+fossem em dólares
+
+00:00:58.568 --> 00:01:02.483
+e em sua área fossem pés,
+as unidades aqui corresponderiam.
+
+00:01:02.791 --> 00:01:05.205
+Você quer que todos os dados
+em uma única coluna
+
+00:01:05.239 --> 00:01:06.460
+tenham as mesmas unidades,
+
+00:01:06.494 --> 00:01:08.557
+para que sua análise
+funcione corretamente.
+
+00:01:08.591 --> 00:01:11.234
+Além disso,
+esses são os valores P.
+
+00:01:11.268 --> 00:01:14.209
+Na regressão, os valores P
+são sempre fornecidos
+
+00:01:14.243 --> 00:01:17.552
+para testar se o parâmetro
+para a intercepção ou inclinação
+
+00:01:17.846 --> 00:01:21.300
+são iguais a zero
+e a hipótese nula, como aqui.
+
+00:01:21.614 --> 00:01:24.475
+Na alternativa, por padrão,
+
+00:01:24.799 --> 00:01:27.498
+o Python e outros softwares
+calculam os valores P
+
+00:01:27.532 --> 00:01:29.280
+usando "diferente de".
+
+00:01:29.314 --> 00:01:31.546
+Esses valores P podem
+fornecer uma visão rápida
+
+00:01:31.797 --> 00:01:33.928
+sobre se uma
+determinada variável
+
+00:01:33.962 --> 00:01:36.363
+é útil ou não
+para prever a resposta.
+
+00:01:36.397 --> 00:01:40.729
+O valor P aqui na intercepção
+não é tão útil como este aqui,
+
+00:01:41.065 --> 00:01:44.676
+o que sugere que a área
+é estatisticamente significativa
+
+00:01:44.954 --> 00:01:46.571
+em relação ao preço.
+
+00:01:46.605 --> 00:01:49.104
+Isso se tornará mais útil
+na próxima lição,
+
+00:01:49.382 --> 00:01:52.808
+quando analisarmos muitos
+desses coeficientes ao mesmo tempo.
+

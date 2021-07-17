@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.139 --> 00:00:05.064
+Now that you've seen how to fit a linear model in Python,
+
+00:00:05.065 --> 00:00:09.470
+it's important that you can interpret the results that you obtain from the line you fit.
+
+00:00:09.470 --> 00:00:12.250
+You might have noticed that the summary of the linear model
+
+00:00:12.250 --> 00:00:15.474
+you retrieve from Python gave a lot of information.
+
+00:00:15.474 --> 00:00:17.530
+Information in this portion,
+
+00:00:17.530 --> 00:00:19.200
+we will discuss soon enough.
+
+00:00:19.199 --> 00:00:22.285
+But for right now, let's look at this part of the results.
+
+00:00:22.285 --> 00:00:25.920
+Right here, is an area that tells us about the model we fit.
+
+00:00:25.920 --> 00:00:29.965
+Specifically, this is the intercept, and this is the slope.
+
+00:00:29.964 --> 00:00:32.500
+We can build a linear model in this way.
+
+00:00:32.500 --> 00:00:40.840
+The predicted house price is equal to 9,588 plus 348 times the area of the house.
+
+00:00:40.840 --> 00:00:44.130
+So if somehow, a home had an area of zero,
+
+00:00:44.130 --> 00:00:48.700
+we would predict that the model would cost 9,588.
+
+00:00:48.700 --> 00:00:51.850
+For every one unit increase in the area,
+
+00:00:51.850 --> 00:00:55.814
+we would predict that the price would increase by 348.
+
+00:00:55.814 --> 00:00:58.772
+If the units on the price were dollars and on
+
+00:00:58.773 --> 00:01:02.595
+your area were feet then the units here would match.
+
+00:01:02.594 --> 00:01:05.289
+You will want all the data in a single column to
+
+00:01:05.290 --> 00:01:08.350
+have the same units for your analysis to work correctly.
+
+00:01:08.349 --> 00:01:11.019
+Additionally, these here are the 'P' values.
+
+00:01:11.019 --> 00:01:15.849
+In regression, 'P' values are always given for testing if the parameter for
+
+00:01:15.849 --> 00:01:21.424
+the intercept or the slope are equal to zero and the null hypothesis, like this.
+
+00:01:21.424 --> 00:01:24.484
+Then in the alternative, by default,
+
+00:01:24.484 --> 00:01:28.944
+Python and other software compute 'P' values using a not equal to.
+
+00:01:28.944 --> 00:01:32.529
+These 'P' values can give a quick glimpse as to whether or not
+
+00:01:32.530 --> 00:01:36.344
+a particular variable is useful for predicting the response.
+
+00:01:36.344 --> 00:01:40.734
+The 'P' value here on the intercept isn't as useful as this one here,
+
+00:01:40.734 --> 00:01:46.569
+which suggests that the area is statistically significant in relating to the price.
+
+00:01:46.569 --> 00:01:49.479
+This will become more useful in the next lesson when we
+
+00:01:49.480 --> 00:01:52.439
+look at many of these coefficients all at the same time.
+
