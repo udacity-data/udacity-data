@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.470 --> 00:00:03.020
+Chegamos ao fim do tópico sobre máquinas de vetor de suporte,
+
+00:00:03.020 --> 00:00:04.650
+e acho que aprendemos bastante.
+
+00:00:04.650 --> 00:00:05.430
+&gt;&gt; É verdade.
+
+00:00:05.430 --> 00:00:08.610
+Ao final do tópico sobre Naive Bayes, começamos uma lista de tudo que
+
+00:00:08.610 --> 00:00:10.670
+devemos considerar ao escolher um algoritmo.
+
+00:00:10.670 --> 00:00:13.450
+Aprendemos muito sobre máquinas de vetor de suporte e, agora, podemos incluir esse tópico
+
+00:00:13.450 --> 00:00:14.480
+na lista.
+
+00:00:14.480 --> 00:00:17.830
+&gt;&gt; Sim. Elas funcionam muito bem em domínios complicados em que existe
+
+00:00:17.830 --> 00:00:20.250
+uma clara margem de separação.
+
+00:00:20.250 --> 00:00:23.280
+Mas não funcionam tão bem em conjuntos de dados muito grandes,
+
+00:00:23.280 --> 00:00:26.145
+pois o tempo de treinamento parece ser cúbico no tamanho do conjunto de dados.
+
+00:00:26.145 --> 00:00:28.780
+Também não funcionam bem com grandes quantidades de ruído.
+
+00:00:28.780 --> 00:00:32.470
+Por isso, quando a classe está muito sobreposta, você tem de contar evidências independentes[INAUDIBLE].
+
+00:00:32.470 --> 00:00:34.550
+Neste caso, [INAUDIBLE]o classificador Naive Bayes seria melhor.
+
+00:00:34.550 --> 00:00:37.590
+&gt;&gt; Então, de novo, isso remete ao conjunto de dados que você tem e
+
+00:00:37.590 --> 00:00:38.780
+às características que tem disponíveis.
+
+00:00:38.780 --> 00:00:41.010
+Se você tiver um conjunto de dados grande e muitas
+
+00:00:41.010 --> 00:00:44.540
+características, as SVMs prontas para uso poderão ser muito lentas.
+
+00:00:44.540 --> 00:00:47.670
+E elas podem estar propensas ao sobreajuste de alguns ruídos nos dados.
+
+00:00:47.670 --> 00:00:49.600
+&gt;&gt; Certo. Então, apenas teste-as no conjunto de testes.
+
+00:00:49.600 --> 00:00:50.880
+Veja qual é seu desempenho.
+
+00:00:50.880 --> 00:00:51.880
+E você estará pronto para prosseguir.
+
+00:00:51.880 --> 00:00:52.630
+&gt;&gt; Exatamente.
+
+00:00:52.630 --> 00:00:55.230
+Acho que estamos prontos para passarmos para a próxima lição.
+
+00:00:55.230 --> 00:00:55.790
+&gt;&gt; Legal.
+
+00:00:55.790 --> 00:00:56.290
+&gt;&gt; Excelente.
+

@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.330 --> 00:00:03.230
+Agora vamos aprender uma dica que poderá alterar sua
+
+00:00:03.230 --> 00:00:06.120
+resposta de não para sim.
+
+00:00:06.120 --> 00:00:08.430
+E essa dica se relaciona aos recursos.
+
+00:00:08.430 --> 00:00:12.490
+Até agora presumimos que inserimos nossos recursos de dados, X e
+
+00:00:12.490 --> 00:00:18.470
+Y, nesta mágica máquina de vetor de suporte a serviço da indústria e temos um rótulo.
+
+00:00:18.470 --> 00:00:21.790
+Onde o rótulo fica no círculo azul ou no x vermelho.
+
+00:00:21.790 --> 00:00:26.130
+Vamos selecionar um recurso que é útil para meu exemplo aqui.
+
+00:00:26.130 --> 00:00:29.100
+Será x ao quadrado mais y ao quadrado.
+
+00:00:29.100 --> 00:00:30.330
+Por que isso?
+
+00:00:30.330 --> 00:00:31.940
+Você verá em um minuto.
+
+00:00:31.940 --> 00:00:36.410
+Posso convencer você de que é fácil calcular x ao quadrado mais y
+
+00:00:36.410 --> 00:00:38.580
+ao quadrado a partir de x e y.
+
+00:00:38.580 --> 00:00:41.530
+Então, agora tenho um espaço de entrada tridimensional.
+
+00:00:41.530 --> 00:00:42.670
+É difícil traçar aqui.
+
+00:00:44.240 --> 00:00:48.350
+Posso executar o mesmo algoritmo exato nesses três
+
+00:00:48.350 --> 00:00:52.580
+recursos que executei anteriormente nos dois recursos.
+
+00:00:52.580 --> 00:00:53.925
+E essa é minha pergunta de $ 100.000.
+
+00:00:53.925 --> 00:00:55.660
+As máquinas de vetor de suporte estão funcionando?
+
+00:00:55.660 --> 00:01:00.340
+Ou, em outras palavras, esta nova situação é separável linearmente?
+
+00:01:01.370 --> 00:01:05.239
+Com isso quero dizer, podemos localizar a linha ou um hiperplano que
+
+00:01:05.239 --> 00:01:09.800
+separa o eixo dos círculos, se este for um espaço oficial agora?
+
+00:01:09.800 --> 00:01:11.340
+É uma pergunta difícil.
+
+00:01:11.340 --> 00:01:14.800
+É uma pergunta de cem mil dólares, o que significa que se você acertar
+
+00:01:14.800 --> 00:01:16.129
+não vou lhe dar cem mil dólares.
+
+00:01:17.390 --> 00:01:17.930
+Mas vamos tentar.
+

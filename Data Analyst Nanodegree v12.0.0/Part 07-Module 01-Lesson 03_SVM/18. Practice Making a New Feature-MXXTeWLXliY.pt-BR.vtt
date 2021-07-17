@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.510 --> 00:00:04.580
+A resposta é o valor absoluto de x, e posso provar isso para você.
+
+00:00:05.689 --> 00:00:10.740
+Se você fosse mostrar o valor absoluto de x, ele não poderia ser nada negativo.
+
+00:00:10.740 --> 00:00:15.920
+Todos os pontos aqui são movidos do lado negativo para o positivo.
+
+00:00:15.920 --> 00:00:20.280
+Este ponto aqui, especificamente, se torna este ponto.
+
+00:00:20.280 --> 00:00:21.110
+Este sai.
+
+00:00:21.110 --> 00:00:23.640
+Este ponto aqui se torna este ponto.
+
+00:00:25.210 --> 00:00:28.460
+É assim que fica se você ver quase todos os pontos do valor
+
+00:00:28.460 --> 00:00:30.200
+absoluto de x no sistema de cantos.
+
+00:00:31.210 --> 00:00:32.630
+Você os movimenta.
+
+00:00:32.630 --> 00:00:34.390
+Se você analisar este diagrama,
+
+00:00:34.390 --> 00:00:39.630
+o que encontra é uma linda separação linear perfeita.
+
+00:00:40.960 --> 00:00:45.602
+Se você se pergunta como a separação linear era no espaço
+
+00:00:45.602 --> 00:00:50.528
+original de x e y, é algo deste tipo.
+
+00:00:50.528 --> 00:00:54.516
+É não linear, porque tem este ponto de inflexão.
+
+00:00:54.516 --> 00:00:57.500
+Isso é não trivial de se ver, mas
+
+00:00:57.500 --> 00:01:02.010
+ao ver isso, espero que você entenda que a inclusão desse novo recurso não linear
+
+00:01:03.310 --> 00:01:07.950
+faz com que a máquina de vetor de suporte linear separe os xs dos círculos.
+

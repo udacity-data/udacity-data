@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.120 --> 00:00:03.350
+Sebastian, isso parece muito útil, mas realmente difícil.
+
+00:00:03.350 --> 00:00:06.610
+Você está dizendo que eu preciso escrever uma série de características novas?
+
+00:00:06.610 --> 00:00:09.820
+&gt;&gt; O interessante sobre as máquinas de vetor de suporte é que você não precisa.
+
+00:00:09.820 --> 00:00:12.950
+É o que chamamos de truque de kernel.
+
+00:00:12.950 --> 00:00:15.330
+&gt;&gt; Então, você vai explicar para nós o truque de kernel?
+
+00:00:15.330 --> 00:00:19.030
+Aposto que sim. &gt;&gt; Não exatamente, direi apenas a essência dele.
+
+00:00:19.030 --> 00:00:23.140
+Há funções que usam um espaço de entrada ou de característica
+
+00:00:23.140 --> 00:00:28.670
+de baixa dimensionalidade e o mapeiam para um espaço de alta dimensionalidade.
+
+00:00:28.670 --> 00:00:33.470
+E o que costumava ser não separável linearmente
+
+00:00:33.470 --> 00:00:35.040
+foi transformado em um problema separável.
+
+00:00:36.180 --> 00:00:40.390
+Sem entrar em detalhes, essas funções são chamadas kernels.
+
+00:00:40.390 --> 00:00:43.856
+Recomendo que você verifique isso. Não são apenas funções com
+
+00:00:43.856 --> 00:00:47.810
+um espaço de característica; são funções sobre duas entradas.
+
+00:00:47.810 --> 00:00:51.170
+Ao aplicar o truque de kernel para alterar o espaço de entrada de x,
+
+00:00:51.170 --> 00:00:56.400
+y para um espaço de entrada muito maior, separe o ponto de dados usando
+
+00:00:56.400 --> 00:01:01.909
+as máquinas de vetor de suporte, obtenha a solução e retorne ao espaço original.
+
+00:01:03.110 --> 00:01:05.180
+Agora, você tem uma separação não linear.
+
+00:01:06.180 --> 00:01:09.900
+Isso é que é interessante sobre as máquinas de vetor de suporte.
+
+00:01:09.900 --> 00:01:14.610
+Você pode usar uma ideia muito simples, que é encontrar o melhor separador linear, ou uma
+
+00:01:14.610 --> 00:01:18.750
+linha linear entre diferentes classes, aplicar o truque de kernel
+
+00:01:20.940 --> 00:01:26.440
+em um espaço alto a médio e o resultado é um sistema poderosíssimo
+
+00:01:27.520 --> 00:01:33.260
+para definir conjuntos de dados separados em que a linha de divisão pode ser não linear.
+
+00:01:33.260 --> 00:01:34.300
+Isso é muito interessante
+
+00:01:34.300 --> 00:01:37.450
+e um dos melhores truques em todo o aprendizado de máquina.
+

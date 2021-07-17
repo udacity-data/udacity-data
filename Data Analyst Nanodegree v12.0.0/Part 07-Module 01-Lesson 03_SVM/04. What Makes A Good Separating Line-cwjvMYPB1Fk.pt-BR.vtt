@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:05.630
+O que essa linha faz que as outras não fazem? Ela maximiza a distância até
+
+00:00:05.630 --> 00:00:10.060
+o ponto mais próximo, com relação a ambas as classes.
+
+00:00:10.060 --> 00:00:13.670
+É uma linha que maximiza a distância até os pontos mais próximos em qualquer classe,
+
+00:00:13.670 --> 00:00:16.320
+e essa distância costuma ser chamada de margem.
+
+00:00:17.420 --> 00:00:19.590
+Se você for a algum evento de aprendizado de máquina e
+
+00:00:19.590 --> 00:00:22.430
+todos falarem sobre máquinas de vetor de suporte,
+
+00:00:22.430 --> 00:00:26.383
+é muito bom reconhecer a palavra margem porque ela se refere ao que está
+
+00:00:26.383 --> 00:00:28.030
+sendo maximizado.
+
+00:00:28.030 --> 00:00:30.946
+A margem é a distância entre a linha e
+
+00:00:30.946 --> 00:00:34.260
+o ponto mais próximo de uma das duas classes.
+
+00:00:34.260 --> 00:00:37.510
+Isso é mais simples, é a linha com um eixo.
+
+00:00:37.510 --> 00:00:42.020
+Eu escolhi a linha aleatoriamente ou há algo mais aqui?
+
+00:00:42.020 --> 00:00:45.460
+Existe algum critério que o levou a escolher essa linha,
+
+00:00:45.460 --> 00:00:47.500
+e não as outras duas linhas fornecidas?
+

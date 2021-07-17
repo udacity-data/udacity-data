@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.440 --> 00:00:03.310
+Certo. Agora que sabemos tudo sobre kernels, vamos voltar para
+
+00:00:03.310 --> 00:00:08.310
+a documentação do SK Learn e verificar como é o suporte a kernels no código atual.
+
+00:00:08.310 --> 00:00:11.840
+Verificar se existem kernels diferentes que podemos tentar usar e
+
+00:00:11.840 --> 00:00:15.650
+como eles afetam a fronteira de decisão fornecida por nossa SVM.
+
+00:00:15.650 --> 00:00:19.430
+Então, tudo certo, estamos de volta na página em que estávamos há alguns vídeos.
+
+00:00:19.430 --> 00:00:20.870
+Agora, estou olhando para estes,
+
+00:00:20.870 --> 00:00:23.580
+para alguns destes pontos, com um pouco mais de atenção, e uma das coisas que
+
+00:00:23.580 --> 00:00:26.940
+percebi é que existem funções de kernel diferentes que podem ser especificadas para
+
+00:00:26.940 --> 00:00:27.680
+a função de decisão.
+
+00:00:29.050 --> 00:00:31.720
+Portanto, existem kernels comuns que posso usar de forma direta.
+
+00:00:31.720 --> 00:00:32.500
+Excelente.
+
+00:00:32.500 --> 00:00:34.270
+E também existe a opção de
+
+00:00:34.270 --> 00:00:36.670
+kernels personalizados se eu quiser mais sofisticação.
+
+00:00:36.670 --> 00:00:39.030
+Vamos usar os kernels comuns, que você pode usar de forma direta.
+
+00:00:39.030 --> 00:00:40.470
+Mas pode haver coisas realmente interessantes
+
+00:00:40.470 --> 00:00:42.530
+para conhecer ao escrever seu próprio kernel.
+
+00:00:42.530 --> 00:00:46.760
+Existem várias SVMs diferentes no scikit-learn que você pode usar.
+
+00:00:46.760 --> 00:00:51.650
+A que estamos usando é o SVC, o classificador de vetor de suporte.
+
+00:00:51.650 --> 00:00:55.890
+Certo. Isso nos leva para outra página de documentação do classificador de vetor
+
+00:00:55.890 --> 00:00:57.990
+de suporte e temos esta caixa na parte superior.
+
+00:00:57.990 --> 00:01:01.110
+Isso pode fazer com que você se lembre um pouco do que estávamos vendo
+
+00:01:01.110 --> 00:01:02.740
+na documentação anterior de Naive Bayes.
+
+00:01:03.820 --> 00:01:07.790
+Então, temos toda essa coisa complicada aqui
+
+00:01:07.790 --> 00:01:11.380
+que me diz como posso criar meu SVC.
+
+00:01:11.380 --> 00:01:13.660
+Também observei que há todos os tipos de argumentos,
+
+00:01:13.660 --> 00:01:17.950
+todos os tipos de parâmetros que posso passar durante a criação.
+
+00:01:17.950 --> 00:01:20.280
+Um desses deve ser o kernel.
+
+00:01:20.280 --> 00:01:22.470
+Agora, vamos voltar para o código que escrevemos.
+
+00:01:22.470 --> 00:01:24.850
+Você deve reconhecê-lo de nosso último teste.
+
+00:01:24.850 --> 00:01:27.930
+E uma das linhas de código que forneci a você, que disse que explicaria
+
+00:01:27.930 --> 00:01:32.250
+depois, era esta linha aqui, em que estou criando o classificador.
+
+00:01:32.250 --> 00:01:37.630
+Esta linha de código aqui deve funcionar se estes parênteses estiverem vazios,
+
+00:01:37.630 --> 00:01:38.220
+mas eles não estão.
+
+00:01:38.220 --> 00:01:40.540
+O que eu fiz foi especificar um kernel.
+
+00:01:40.540 --> 00:01:44.150
+No primeiro exemplo em que tínhamos uma fronteira de decisão direta,
+
+00:01:44.150 --> 00:01:46.740
+isso usava um kernel linear.
+
+00:01:46.740 --> 00:01:47.670
+Isso faz sentido.
+
+00:01:47.670 --> 00:01:48.940
+Então, agora, tenho um teste para você.
+
+00:01:48.940 --> 00:01:52.060
+Este é um teste um pouco difícil porque eu não mostrei a você exatamente como
+
+00:01:52.060 --> 00:01:55.690
+responder a essa pergunta ainda, mas darei uma boa dica.
+
+00:01:55.690 --> 00:01:59.520
+A resposta está aqui nesta página de documentação.
+
+00:01:59.520 --> 00:02:00.586
+E a pergunta é quais
+
+00:02:00.586 --> 00:02:04.510
+dos seguintes são kernels de SVC que podemos usar?
+
+00:02:04.510 --> 00:02:12.490
+Suas opções são linear, poly, rbf, sigmoid ou todas estas opções e mais algumas.
+
+00:02:12.490 --> 00:02:15.190
+Portanto, quais destes kernels estão disponíveis para você
+
+00:02:15.190 --> 00:02:16.525
+ao usar o SVC do SK Learn?
+

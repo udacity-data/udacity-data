@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.110 --> 00:00:03.430
+Então, relembrando, esta é a aparência de nossos dados de treinamento.
+
+00:00:03.430 --> 00:00:06.210
+São os mesmos dados de terreno que tínhamos no último.
+
+00:00:06.210 --> 00:00:08.710
+E estamos tentando descobrir se você pode ir rápido ou
+
+00:00:08.710 --> 00:00:10.890
+se precisa reduzir a velocidade neste terreno.
+
+00:00:10.890 --> 00:00:13.480
+Com isso, vou voltar para o Google.
+
+00:00:13.480 --> 00:00:17.400
+Eu sei que quero usar scikit-learn e máquina de vetor de suporte.
+
+00:00:17.400 --> 00:00:20.520
+Muito bem, temos muitas opções aqui.
+
+00:00:20.520 --> 00:00:21.288
+Mãos à obra.
+
+00:00:21.288 --> 00:00:22.890
+Clicaremos no primeiro.
+
+00:00:22.890 --> 00:00:25.650
+Ok, máquinas de vetor de suporte. Rolando um pouco a tela,
+
+00:00:25.650 --> 00:00:27.800
+a primeira coisa que vejo é que há algumas vantagens e
+
+00:00:27.800 --> 00:00:30.170
+desvantagens em relação a máquinas de vetor de suporte.
+
+00:00:30.170 --> 00:00:31.380
+Isso é muito interessante.
+
+00:00:31.380 --> 00:00:35.490
+Estes são pontos que acessaremos de novo mais adiante na aula,
+
+00:00:35.490 --> 00:00:38.640
+mas estou impaciente e quero começar a codificar.
+
+00:00:38.640 --> 00:00:41.220
+O que vejo logo em seguida é classificação.
+
+00:00:41.220 --> 00:00:46.080
+Fantástico! Posso ver que já existe um código de exemplo pronto para uso.
+
+00:00:46.080 --> 00:00:47.420
+Vamos encontrar esse código de exemplo.
+
+00:00:48.950 --> 00:00:50.800
+Ok. Isso está começando a parecer um pouco familiar agora.
+
+00:00:50.800 --> 00:00:57.810
+Eu tenho minha declaração import, minhas características de treinamento
+
+00:00:57.810 --> 00:01:02.119
+e meus rótulos de treinamento, como no último exemplo com o Naive Bayes.
+
+00:01:03.160 --> 00:01:05.160
+Eu crio meu classificador.
+
+00:01:05.160 --> 00:01:11.040
+Eu o ajusto usando as características de treinamento e os rótulos de treinamento e,
+
+00:01:11.040 --> 00:01:14.770
+aqui, eles nos mostram como fazer uma previsão.
+
+00:01:14.770 --> 00:01:20.130
+Como você pode ver, estas são exatamente as mesmas linhas de código.
+
+00:01:20.130 --> 00:01:23.020
+Só que, em vez de dizer Gaussian Naive Bayes ou
+
+00:01:23.020 --> 00:01:24.860
+qualquer outra coisa, estou chamando isto de SVC.
+
+00:01:24.860 --> 00:01:28.690
+E esse é um dos pontos realmente interessantes sobre o scikit-learn:
+
+00:01:28.690 --> 00:01:31.640
+é que, basicamente, todos os classificadores que estamos vendo e
+
+00:01:31.640 --> 00:01:35.610
+todos os classificadores que podemos usar por nossa conta no futuro
+
+00:01:35.610 --> 00:01:40.510
+seguirão o mesmo padrão, em que você importa, cria,
+
+00:01:40.510 --> 00:01:42.140
+ajusta e faz previsões.
+
+00:01:42.140 --> 00:01:43.840
+E a sintaxe sempre será a mesma.
+

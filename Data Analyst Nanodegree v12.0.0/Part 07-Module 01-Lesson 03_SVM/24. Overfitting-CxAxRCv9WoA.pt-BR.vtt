@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.260 --> 00:00:03.260
+Acabamos de ver um exemplo no qual a fronteira de decisão foi realmente
+
+00:00:03.260 --> 00:00:04.840
+muito complicada.
+
+00:00:04.840 --> 00:00:06.920
+Então temos uma situação como esta.
+
+00:00:06.920 --> 00:00:11.390
+Que chamamos sobreposição e é um fenômeno comum no aprendizado de máquina.
+
+00:00:11.390 --> 00:00:15.140
+Você deve saber disso sempre que executamos esse aprendizado.
+
+00:00:15.140 --> 00:00:18.700
+Para ver um exemplo, se você verificar os dados aqui,
+
+00:00:18.700 --> 00:00:20.090
+eles parecem estar separados linearmente.
+
+00:00:20.090 --> 00:00:24.770
+Um serviço de decisão entre vermelho e azul parece com esse.
+
+00:00:24.770 --> 00:00:30.880
+Os dados em vermelho estão classificados corretamente, mas parecem irregulares em muitos outros locais.
+
+00:00:30.880 --> 00:00:32.930
+Isso ocorre quando você utiliza dados muito literais,
+
+00:00:32.930 --> 00:00:37.160
+e quando está fazendo e produzindo algo tão complexo quanto isso,
+
+00:00:37.160 --> 00:00:43.430
+em vez de algo tão simples quanto isto que você está sobrepondo.
+
+00:00:43.430 --> 00:00:48.340
+No aprendizado de máquina, realmente queremos evitar a sobreposição.
+
+00:00:48.340 --> 00:00:51.960
+&gt;&gt; Uma das formas de controlar a sobreposição é através do parâmetro do
+
+00:00:51.960 --> 00:00:53.110
+seu algoritmo.
+
+00:00:53.110 --> 00:00:55.880
+No SVM temos vários parâmetros sobre os quais já falamos.
+
+00:00:55.880 --> 00:00:58.750
+Lembro de C, gama e kernel.
+
+00:00:58.750 --> 00:01:02.210
+Quais desses você acha que têm efeito na sobreposição potencial de um SVM?
+
+00:01:03.360 --> 00:01:05.170
+Clique em todos que achar que estão corretos.
+

@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.370 --> 00:00:03.500
+Bem-vindo ao miniprojeto sobre máquinas de vetor de suporte.
+
+00:00:03.500 --> 00:00:06.740
+Vamos abordar o mesmo tópico que abordamos para Naive Bayes que é:
+
+00:00:06.740 --> 00:00:10.480
+você pode identificar o autor de um email com base nas palavras usadas no
+
+00:00:10.480 --> 00:00:12.120
+texto desse email?
+
+00:00:12.120 --> 00:00:15.130
+Na segunda parte do projeto, também nos aprofundaremos um pouco mais
+
+00:00:15.130 --> 00:00:16.760
+nos parâmetros do SVM.
+
+00:00:16.760 --> 00:00:19.200
+Você teve um pouco de prática com gama e C
+
+00:00:19.200 --> 00:00:21.510
+e agora vamos brincar com esses parâmetros e
+
+00:00:21.510 --> 00:00:26.550
+ver como eles aceleram o tempo do treinamento ou o tempo da previsão do SVM
+
+00:00:26.550 --> 00:00:28.370
+e também como ele afeta a precisão do SVM.
+
+00:00:28.370 --> 00:00:29.980
+Vamos começar.
+

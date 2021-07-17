@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.320 --> 00:00:03.110
+Bom, quando você se aprofunda no código de SVMs,
+
+00:00:03.110 --> 00:00:06.160
+vê que é um software que ignora outliers.
+
+00:00:06.160 --> 00:00:10.000
+Então, só para praticar, neste exemplo aqui de dados vermelhos
+
+00:00:10.000 --> 00:00:13.580
+e azuis, onde parece haver exatamente um outlier,
+
+00:00:13.580 --> 00:00:15.780
+digamos que você queira ignorar um outlier.
+
+00:00:15.780 --> 00:00:17.290
+Que linha separada você escolheria?
+
+00:00:18.430 --> 00:00:19.560
+Basta escolher uma das três
+

@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.260 --> 00:00:04.059
+O outro parâmetro importante para um SVM é o parâmetro C.
+
+00:00:04.059 --> 00:00:05.490
+Então, o que o C faz?
+
+00:00:05.490 --> 00:00:09.070
+Ele controla o tradeoff entre uma fronteira de decisão suave e
+
+00:00:09.070 --> 00:00:11.930
+uma que classifica todos os pontos de treinamento corretamente.
+
+00:00:11.930 --> 00:00:14.410
+Vamos supor que nossos dados são parecidos com isto.
+
+00:00:14.410 --> 00:00:17.100
+E assim como vimos com gamma, há um número de fronteiras de decisão diferentes
+
+00:00:17.100 --> 00:00:20.730
+e totalmente válidas que você pode desenhar aqui.
+
+00:00:20.730 --> 00:00:22.930
+Você poderia desenhar algo que poderia ser bastante reto, mas
+
+00:00:22.930 --> 00:00:26.210
+ao custo de ter alguns pontos classificados incorretamente.
+
+00:00:26.210 --> 00:00:29.940
+Você também poderia desenhar algo que é consideravelmente mais sinuoso, mas
+
+00:00:29.940 --> 00:00:33.980
+no qual você potencialmente obtém todos os pontos de treinamento corretos.
+
+00:00:33.980 --> 00:00:36.580
+É claro que o tradeoff de ter algo que é muito intrincado,
+
+00:00:36.580 --> 00:00:37.660
+muito complicado como isto
+
+00:00:37.660 --> 00:00:40.920
+é que é possível que seu
+
+00:00:40.920 --> 00:00:42.200
+conjunto de testes no seja generalizado tão bem.
+
+00:00:42.200 --> 00:00:43.610
+Portanto, algo um pouco mais reto,
+
+00:00:43.610 --> 00:00:47.470
+um pouco mais direto pode realmente ser a melhor opção depois que você
+
+00:00:47.470 --> 00:00:50.140
+começa a examinar a precisão em seu conjunto de testes.
+
+00:00:50.140 --> 00:00:51.670
+E aqui está um teste para você.
+
+00:00:51.670 --> 00:00:55.360
+Ele é um pouco complicado porque você precisará consultar a documentação do SK Learn
+
+00:00:55.360 --> 00:00:58.020
+ou potencialmente brincar com algum código por conta própria para obter
+
+00:00:58.020 --> 00:00:59.110
+a resposta.
+
+00:00:59.110 --> 00:01:01.590
+E a pergunta é, vamos dizer que você tem um grande valor de C,
+
+00:01:01.590 --> 00:01:05.390
+isso significa que você obterá uma fronteira suave ou
+
+00:01:05.390 --> 00:01:07.980
+que você obterá mais pontos de treinamento corretos?
+
+00:01:07.980 --> 00:01:09.410
+Haverá um tradeoff.
+
+00:01:09.410 --> 00:01:12.820
+Mais uma vez, para responder este teste você vai desejar consultar o Google ou
+
+00:01:12.820 --> 00:01:15.480
+potencialmente a documentação do SK Learn.
+
+00:01:15.480 --> 00:01:17.150
+Para quem for mais aventureiro ou
+
+00:01:17.150 --> 00:01:19.910
+que goste de ir diretamente para o código para descobrir essas coisas,
+
+00:01:19.910 --> 00:01:23.860
+você certamente pode brincar com um pouco do código que o ajudará a visualizar isto.
+
+00:01:23.860 --> 00:01:26.610
+Uma maneira de fazer isso é voltar para a lição anterior,
+
+00:01:26.610 --> 00:01:30.390
+a lição sobre Naive Bayes onde você desenhou algumas fronteiras de decisão que você
+
+00:01:30.390 --> 00:01:34.140
+realmente pudesse visualizar no interpretador do Udacity.
+
+00:01:34.140 --> 00:01:35.880
+E, em vez de executá-las com o Naive Bayes,
+
+00:01:35.880 --> 00:01:37.770
+naturalmente, você pode apenas executá-las com um SVM e
+
+00:01:37.770 --> 00:01:41.470
+brincar com diferentes valores de C e usar isso para responder a pergunta.
+
+00:01:41.470 --> 00:01:44.630
+Se você fizer isso, apenas uma dica de profissional, use o kernel rbf, porque lá é
+
+00:01:44.630 --> 00:01:48.600
+onde você realmente verá uma grande diferença com base no valor de C que você usa.
+

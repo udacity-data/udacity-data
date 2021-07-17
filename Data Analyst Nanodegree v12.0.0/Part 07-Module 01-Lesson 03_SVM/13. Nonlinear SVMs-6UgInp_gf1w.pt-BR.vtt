@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.375 --> 00:00:02.310
+Certo. Agora, quero mostrar a você algo muito louco,
+
+00:00:02.310 --> 00:00:07.200
+que vai deixar imediatamente claro o quanto as SVMs podem ser legais.
+
+00:00:07.200 --> 00:00:10.960
+O que estou mostrando aqui são duas SVMs diferentes;
+
+00:00:10.960 --> 00:00:14.520
+esta você acabou de fazer e esta eu acabei de fazer.
+
+00:00:14.520 --> 00:00:16.560
+Você ainda não sabe, mas
+
+00:00:16.560 --> 00:00:18.610
+vamos gastar bastante tempo falando sobre isso.
+
+00:00:18.610 --> 00:00:20.580
+Veja como está intrincada esta fronteira de decisão;
+
+00:00:20.580 --> 00:00:26.220
+existem pequenas bolsas e penínsulas muito pequenas que se estendem.
+
+00:00:26.220 --> 00:00:30.630
+Você pode ver que uma SVM pode definir formas realmente complicadas
+
+00:00:30.630 --> 00:00:34.510
+para a fronteira de decisão; às vezes, até mais complicadas do que você deseja.
+
+00:00:34.510 --> 00:00:37.380
+Então, vamos conversar com Sebastian de novo.
+
+00:00:37.380 --> 00:00:40.380
+Ele tem algumas percepções muito interessantes
+
+00:00:40.380 --> 00:00:43.050
+que comprovam que isso vem de um classificador.
+
+00:00:43.050 --> 00:00:48.370
+Lembre-se de que a SVM é um classificador criado para nos fornecer separação linear;
+
+00:00:48.370 --> 00:00:52.830
+então, como ela poderia nos fornecer uma fronteira de decisão não linear como esta?
+
+00:00:52.830 --> 00:00:55.330
+Bem, é isso que o Sebastian explicará para você agora.
+

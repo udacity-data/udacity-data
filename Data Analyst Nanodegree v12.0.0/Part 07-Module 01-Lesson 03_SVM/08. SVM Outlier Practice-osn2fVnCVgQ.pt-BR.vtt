@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.500 --> 00:00:02.580
+Eu argumentaria que é este aqui.
+
+00:00:02.580 --> 00:00:06.370
+Porque este realmente maximiza a margem para estes pontos
+
+00:00:06.370 --> 00:00:08.100
+ignorando o outlier.
+
+00:00:08.100 --> 00:00:12.210
+Enquanto que este aqui tem uma margem menor para estes pontos.
+
+00:00:12.210 --> 00:00:15.210
+Portanto, esta seria a resposta correta aqui.
+
+00:00:16.390 --> 00:00:20.740
+Mas a coisa a ser aprendida é que o SVM é realmente algo robusto para outliers.
+
+00:00:20.740 --> 00:00:26.340
+E de alguma forma, ele media a tentativa de encontrar o separador máximo da margem e
+
+00:00:26.340 --> 00:00:27.730
+a habilidade de ignorar outliers.
+
+00:00:27.730 --> 00:00:32.195
+Obviamente, como um tradeoff, e os parâmetros do SVM, como veremos,
+
+00:00:32.195 --> 00:00:35.618
+determinam sua vontade de adquirir novos outliers.
+

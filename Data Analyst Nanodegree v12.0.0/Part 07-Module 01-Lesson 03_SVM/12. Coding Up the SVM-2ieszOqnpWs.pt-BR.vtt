@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.540 --> 00:00:01.230
+Bem-vindo de volta.
+
+00:00:01.230 --> 00:00:04.990
+Espero que você tenha conseguido realizar seu trabalho de classificador de vetor de suporte, mas,
+
+00:00:04.990 --> 00:00:07.840
+caso precise de uma pequena ajuda, deixe-me mostrar o que eu fiz.
+
+00:00:07.840 --> 00:00:08.990
+Começando pelo código base,
+
+00:00:08.990 --> 00:00:11.150
+existem apenas duas linhas de código que preciso adicionar.
+
+00:00:11.150 --> 00:00:14.390
+A primeira é porque tenho que ajustar meu classificador, e
+
+00:00:14.390 --> 00:00:15.990
+preciso ajustá-lo na tabela de treinamento.
+
+00:00:15.990 --> 00:00:18.400
+A primeira é porque tenho que ajustar meu classificador, e
+
+00:00:18.400 --> 00:00:20.430
+preciso ajustá-lo nos dados de treinamento. Portanto,
+
+00:00:20.430 --> 00:00:24.920
+isso significa passar features_train e labels_train para minha função fit.
+
+00:00:24.920 --> 00:00:28.040
+Em seguida, a segunda coisa é fazer uma lista de previsões.
+
+00:00:28.040 --> 00:00:31.050
+Então, armazeno em uma lista chamada pred; essa é
+
+00:00:31.050 --> 00:00:35.390
+a familiar função predict que vimos com o classificador Naive Bayes.
+
+00:00:35.390 --> 00:00:37.190
+Lembre-se de que, quando estiver fazendo previsões,
+
+00:00:37.190 --> 00:00:40.850
+você estará passando apenas um conjunto de informações; neste caso, features.
+
+00:00:40.850 --> 00:00:43.740
+Porque os rótulos são o que você está tentando prever.
+
+00:00:43.740 --> 00:00:44.610
+Além disso, é claro,
+
+00:00:44.610 --> 00:00:47.480
+você quer fazer isso no conjunto de dados test, e não no conjunto de dados training.
+
+00:00:47.480 --> 00:00:50.890
+Assim, com duas linhas como estas, você deve conseguir colocar seu SCM em funcionamento.
+

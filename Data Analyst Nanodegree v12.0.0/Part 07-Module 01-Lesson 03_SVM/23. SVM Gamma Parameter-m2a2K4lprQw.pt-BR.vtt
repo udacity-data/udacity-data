@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.240 --> 00:00:04.030
+Então, o que o parâmetro gama de SVM faz, na verdade?
+
+00:00:04.030 --> 00:00:06.760
+Bem, na documentação do SKLearn, está descrito
+
+00:00:06.760 --> 00:00:12.280
+que gama define até que ponto a influência de um simples exemplo de treinamento atinge.
+
+00:00:12.280 --> 00:00:17.230
+Se gama tiver um valor baixo, isso significa que todos os pontos terão um longo alcance.
+
+00:00:17.230 --> 00:00:20.930
+Em contrapartida, um valor alto significa que cada exemplo de treinamento
+
+00:00:20.930 --> 00:00:22.590
+tem um alcance curto.
+
+00:00:22.590 --> 00:00:27.600
+Então, o que na verdade isso significa quando estamos ajustando nossa máquina de vetor de suporte?
+
+00:00:27.600 --> 00:00:29.492
+Bem, suponhamos que meus dados tenham essa aparência.
+
+00:00:29.492 --> 00:00:32.070
+Muito bem, eu acho que todos concordamos que a fronteira de decisão
+
+00:00:32.070 --> 00:00:34.200
+atravessará os dados mais ou menos assim.
+
+00:00:34.200 --> 00:00:37.736
+A dúvida é apenas qual será exatamente a aparência dessa fronteira?
+
+00:00:37.736 --> 00:00:39.392
+Se eu tiver um alto valor de gama,
+
+00:00:39.392 --> 00:00:42.883
+os detalhes exatos da fronteira de decisão
+
+00:00:42.883 --> 00:00:46.628
+dependerão apenas dos pontos que estiverem mais perto dele.
+
+00:00:46.628 --> 00:00:48.724
+Então, os pontos que estão muito próximos,
+
+00:00:48.724 --> 00:00:52.854
+o que praticamente faz com que ele ignore alguns desses pontos que ficam
+
+00:00:52.854 --> 00:00:57.670
+um pouco mais distantes da fronteira de decisão.
+
+00:00:57.670 --> 00:01:00.690
+Por outro lado, se esta é a minha fronteira de decisão e
+
+00:01:00.690 --> 00:01:06.070
+eu tenho um baixo valor de gama, até mesmo os pontos distantes são levados em
+
+00:01:06.070 --> 00:01:09.240
+consideração quando estou decidindo onde desenhar a fronteira.
+
+00:01:10.290 --> 00:01:13.340
+Isso é importante porque, como você viu, especialmente para
+
+00:01:13.340 --> 00:01:18.640
+altos valores de gama, você pode acabar com uma fronteira de decisão bem sinuosa.
+
+00:01:18.640 --> 00:01:20.610
+Então, lembre-se de que, quando tínhamos um valor alto de gama,
+
+00:01:20.610 --> 00:01:24.940
+tínhamos uma fronteira de decisão que poderia ter esta aparência, porque, por
+
+00:01:24.940 --> 00:01:28.160
+exemplo, este ponto em particular estará muito próximo da fronteira.
+
+00:01:28.160 --> 00:01:30.550
+E, portanto, ele tem muito peso.
+
+00:01:30.550 --> 00:01:33.240
+Ele pode puxar a fronteira de decisão por todo o espaço para
+
+00:01:33.240 --> 00:01:35.410
+que termine no lado correto.
+
+00:01:35.410 --> 00:01:37.780
+Por outro lado, se temos um baixo valor de gama,
+
+00:01:37.780 --> 00:01:41.810
+esses pontos que estão próximos à fronteira de decisão têm um
+
+00:01:41.810 --> 00:01:45.780
+peso relativamente baixo, considerando todos esses
+
+00:01:45.780 --> 00:01:49.600
+outros pontos distantes que também influenciam a fronteira de decisão.
+
+00:01:49.600 --> 00:01:53.510
+Então, como vimos neste exemplo, isso acaba tornando a fronteira de decisão
+
+00:01:53.510 --> 00:01:58.480
+um pouco mais linear, um pouco mais suave e um pouco menos irregular.
+

@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.470 --> 00:00:04.470
+Esta é a unidade sobre máquinas de vetor de suporte ou SVMs.
+
+00:00:04.470 --> 00:00:07.440
+&gt;&gt; As máquinas de vetor de suporte são um algoritmo bem popular.
+
+00:00:07.440 --> 00:00:09.800
+Elas têm várias funções.
+
+00:00:09.800 --> 00:00:13.190
+&gt;&gt; Na realidade, é tão recente que eu mesmo estava por perto
+
+00:00:13.190 --> 00:00:15.790
+quando Vladimir Vapnik inventou a máquina de vetor de suporte.
+
+00:00:15.790 --> 00:00:19.097
+Foi uma grande surpresa para a comunidade que alguém pudesse
+
+00:00:19.097 --> 00:00:20.210
+encontrar um algoritmo que fosse incrivelmente bom.
+
+00:00:20.210 --> 00:00:21.950
+É, de fato, um ótimo algoritmo.
+
+00:00:21.950 --> 00:00:22.740
+&gt;&gt; Então, vamos começar.
+

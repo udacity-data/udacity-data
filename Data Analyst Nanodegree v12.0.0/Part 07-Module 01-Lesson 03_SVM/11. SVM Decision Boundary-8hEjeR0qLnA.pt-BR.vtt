@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.350 --> 00:00:05.370
+Agora posso desenhar a fronteira de decisão, desta vez, no sklearn. Vamos lá!
+
+00:00:05.370 --> 00:00:06.780
+Esta é a aparência.
+
+00:00:06.780 --> 00:00:10.082
+Você pode ver que tínhamos uma linha um pouco curva
+
+00:00:10.082 --> 00:00:14.220
+aqui, onde antes era Naive Bayes.
+
+00:00:14.220 --> 00:00:17.040
+Nossa fronteira de decisão de SVM agora é uma linha reta.
+
+00:00:17.040 --> 00:00:20.420
+É essa linha que nos dará a margem máxima
+
+00:00:20.420 --> 00:00:24.070
+entre a fronteira de decisão e os pontos classificados incorretamente, ou seja,
+
+00:00:24.070 --> 00:00:25.790
+os pontos em um dos lados.
+
+00:00:25.790 --> 00:00:29.730
+Para ilustrar bem o exemplo em questão,
+
+00:00:29.730 --> 00:00:31.550
+podemos dizer que isso
+
+00:00:31.550 --> 00:00:34.450
+maximizará todas essas distâncias aqui.
+
+00:00:34.450 --> 00:00:38.040
+Os pontos que estão próximos à fronteira de decisão. Tentaremos encontrar
+
+00:00:38.040 --> 00:00:42.000
+uma fronteira de decisão em que todas essas pequenas linhas em laranja
+
+00:00:42.000 --> 00:00:42.570
+tenham o tamanho desejado.
+
+00:00:42.570 --> 00:00:46.140
+Isso significa que há um máximo de separação possível entre as duas classes.
+

@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.390 --> 00:00:03.719
+Vamos falar sobre um algoritmo chamado SVM,
+
+00:00:03.719 --> 00:00:09.750
+a sigla em inglês para máquina de vetor de suporte.
+
+00:00:09.750 --> 00:00:13.180
+Não sei por que chamaram um algoritmo de máquina,
+
+00:00:13.180 --> 00:00:16.820
+mas ele é muito conhecido e foi inventado por um russo.
+
+00:00:17.870 --> 00:00:23.700
+Numa primeira abordagem, o que as máquinas de vetor de suporte fazem é encontrar uma linha
+
+00:00:23.700 --> 00:00:29.730
+de separação, mais comumente chamada de hiperplano, entre dados de duas classes.
+
+00:00:29.730 --> 00:00:33.850
+Suponha que tenhamos dados de duas classes diferentes.
+
+00:00:33.850 --> 00:00:38.522
+A máquina de vetor de suporte é um algoritmo que pega esses dados e
+
+00:00:38.522 --> 00:00:42.250
+produz uma linha que separa essas classes, se possível.
+
+00:00:42.250 --> 00:00:44.620
+Eu vou dar a você três linhas.
+
+00:00:44.620 --> 00:00:46.580
+Em cada linha, há uma marca de seleção.
+
+00:00:46.580 --> 00:00:49.100
+Qual linha você acha que separa os dados?
+

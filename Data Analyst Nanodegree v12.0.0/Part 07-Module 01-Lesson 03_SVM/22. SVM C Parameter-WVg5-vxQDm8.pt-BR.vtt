@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.270 --> 00:00:03.520
+O que você encontrará quando começar a vasculhar o código ou
+
+00:00:03.520 --> 00:00:06.100
+a documentação, é que um valor grande de
+
+00:00:06.100 --> 00:00:09.400
+C significa que você vai obter mais pontos de treinamento. Correto?
+
+00:00:09.400 --> 00:00:12.290
+Na prática, isso significa que você obtém as fronteiras de decisão mais
+
+00:00:12.290 --> 00:00:14.850
+intricadas com os maiores valores de C, onde ele
+
+00:00:14.850 --> 00:00:18.580
+pode oscilar entre pontos de dados individuais para tentar obter tudo corretamente.
+
+00:00:18.580 --> 00:00:20.200
+Mas a custo de algo
+
+00:00:20.200 --> 00:00:22.820
+que poderia ser um pouco mais complexo do que você gostaria.
+
+00:00:22.820 --> 00:00:27.340
+Descobrir exatamente quanto você deseja uma decisão correta...
+
+00:00:27.340 --> 00:00:31.050
+Descobrir o quanto você deseja ter uma fronteira de decisão suave versus uma
+
+00:00:31.050 --> 00:00:34.720
+que obtenha as coisas corretas, é claro, faz parte do talento artístico do aprendizado de máquina.
+

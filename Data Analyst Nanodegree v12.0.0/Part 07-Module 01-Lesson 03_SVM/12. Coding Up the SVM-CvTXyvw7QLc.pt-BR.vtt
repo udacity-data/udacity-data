@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.310 --> 00:00:02.840
+OK. Aposto que você sabe o que vou lhe pedir agora.
+
+00:00:02.840 --> 00:00:05.130
+Vou pedir para você codificar isso sozinho.
+
+00:00:05.130 --> 00:00:07.110
+Se você adivinhou isso, acertou.
+
+00:00:07.110 --> 00:00:09.730
+Então, deixe eu mostrar o que eu fiz
+
+00:00:09.730 --> 00:00:13.600
+e depois você poderá criar um SVM, assim como eu fiz.
+
+00:00:13.600 --> 00:00:17.220
+O que eu sugiro é que você volte para o Google, assim como eu fiz,
+
+00:00:17.220 --> 00:00:23.330
+encontre esta página na documentação das máquinas de vetor de suporte do scikit-learn.
+
+00:00:23.330 --> 00:00:25.380
+Lembre-se de que se você rolar um pouco para baixo,
+
+00:00:25.380 --> 00:00:29.350
+vai encontrar esta seção de classificação.
+
+00:00:29.350 --> 00:00:35.480
+E aqui está o código de exemplo que usei para executar meu código.
+
+00:00:35.480 --> 00:00:38.800
+Agora vem uma pegadinha.
+
+00:00:39.820 --> 00:00:43.740
+Em exatamente como criamos o classificador, bem aqui.
+
+00:00:43.740 --> 00:00:47.060
+Então, o que vou fazer na verdade é apresentar para você esta
+
+00:00:47.060 --> 00:00:49.340
+linha e esta linha.
+
+00:00:49.340 --> 00:00:51.680
+E você verá que há uma pequena diferença na forma
+
+00:00:51.680 --> 00:00:52.300
+que escrevi meu código.
+
+00:00:52.300 --> 00:00:55.827
+Vamos falar muito sobre isso nos próximos vídeos.
+
+00:00:55.827 --> 00:01:01.468
+Mas agora é seu trabalho encaixar e fazer as previsões usando seu classificador.
+
+00:01:01.468 --> 00:01:05.319
+Depois, a última coisa que quero que você faça é imprimir a precisão de
+
+00:01:05.319 --> 00:01:08.430
+seu classificador, como fizemos no Naive Bayes.
+
+00:01:08.430 --> 00:01:12.532
+Lembre-se, no Naive Bayes, o número a superar era cerca de 88,4%.
+
+00:01:12.532 --> 00:01:15.594
+Então, aí vai uma pergunta interessante.
+
+00:01:15.594 --> 00:01:16.353
+Um SVM ou
+
+00:01:16.353 --> 00:01:20.770
+Naive Bayes está funcionando melhor na classificação de seu território neste exemplo?
+

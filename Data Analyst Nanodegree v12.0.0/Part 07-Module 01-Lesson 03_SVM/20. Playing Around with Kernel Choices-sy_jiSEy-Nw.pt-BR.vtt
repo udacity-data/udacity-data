@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.120 --> 00:00:04.700
+E a resposta correta é todas acima e mais.
+
+00:00:04.700 --> 00:00:06.689
+E o local que encontrei estava aqui mesmo.
+
+00:00:06.689 --> 00:00:09.350
+Então leio rapidamente a página de documentação e
+
+00:00:09.350 --> 00:00:12.130
+vejo que o kernel é um dos parâmetros.
+
+00:00:12.130 --> 00:00:17.030
+Depois leio esta pequena instrução que diz que ele pode ser linear, polinominal, rbf,
+
+00:00:17.030 --> 00:00:20.430
+sigmoidal, pré-calculado ou chamável.
+
+00:00:20.430 --> 00:00:23.120
+Então todas essas respostas estão corretas.
+
+00:00:23.120 --> 00:00:24.740
+A única que nos deu uma linha reta
+
+00:00:24.740 --> 00:00:27.290
+no primeiro exemplo foi o kernel linear.
+
+00:00:27.290 --> 00:00:29.080
+E, em geral, é isso que os kernels lineares vão fazer.
+
+00:00:29.080 --> 00:00:31.090
+Vão desenhar uma linha reta.
+
+00:00:31.090 --> 00:00:34.200
+A que nos deu esta fronteira de decisão confusa,
+
+00:00:34.200 --> 00:00:35.700
+que estava usando um kernel rbf.
+

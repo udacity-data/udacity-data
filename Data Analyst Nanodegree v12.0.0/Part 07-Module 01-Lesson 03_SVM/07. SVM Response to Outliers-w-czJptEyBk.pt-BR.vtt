@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.370 --> 00:00:01.190
+Algumas vezes, em
+
+00:00:01.190 --> 00:00:05.570
+máquinas de vetor de suporte, parece impossível fazer o trabalho direito.
+
+00:00:05.570 --> 00:00:08.108
+Por exemplo, você pode ter um conjunto de dados exatamente como este,
+
+00:00:08.108 --> 00:00:15.060
+no qual não existe claramente nenhuma superfície de decisão que separe as duas classes.
+
+00:00:15.060 --> 00:00:18.370
+Você pode pensar no ponto aqui em baixo como um outlier.
+
+00:00:18.370 --> 00:00:21.850
+Portanto, minha pergunta é, o que você quer que as máquinas de vetor de suporte façam?
+
+00:00:23.340 --> 00:00:27.110
+Elas devem desistir, se não existir nenhuma superfície de decisão a ser encontrada?
+
+00:00:27.110 --> 00:00:32.490
+Elas devem fornecer um resultado aleatório ou fazer o melhor que puderem?
+
+00:00:33.496 --> 00:00:36.630
+Bem, não está claro o que o melhor significa, mas tente localizar a superfície de decisão que
+
+00:00:36.630 --> 00:00:40.870
+melhor descreva os dados apesar de você não poder separá-los de maneira linear.
+

@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.230 --> 00:00:00.930
+Enganei você,
+
+00:00:00.930 --> 00:00:04.260
+na verdade, é esta linha aqui e talvez você tenha acertado.
+
+00:00:04.260 --> 00:00:08.780
+Isso maximiza a margem, de certa forma, para todos os pontos de dados.
+
+00:00:08.780 --> 00:00:11.080
+Mas cria uma erro de classificação.
+
+00:00:11.080 --> 00:00:14.510
+O x vermelho está do lado errado da linha verde.
+
+00:00:14.510 --> 00:00:17.830
+Enquanto que neste caso aqui, todos os pontos estão classificados corretamente.
+
+00:00:19.160 --> 00:00:21.620
+A máquina de vetor de suporte coloca em primeiro lugar
+
+00:00:21.620 --> 00:00:25.040
+a classificação correta dos rótulos e depois maximiza a margem.
+
+00:00:25.040 --> 00:00:27.990
+Se não ligássemos para a classificação correta,
+
+00:00:27.990 --> 00:00:32.350
+esta linha aqui atrás tem uma margem ainda maior do que todos os exemplos de treinamento.
+
+00:00:32.350 --> 00:00:34.280
+Mas obviamente é a linha errada.
+
+00:00:34.280 --> 00:00:38.930
+Então, em máquinas de vetor de suporte, você tenta classificar corretamente
+
+00:00:38.930 --> 00:00:42.020
+e, em função dessa restrição, você maximiza a margem.
+

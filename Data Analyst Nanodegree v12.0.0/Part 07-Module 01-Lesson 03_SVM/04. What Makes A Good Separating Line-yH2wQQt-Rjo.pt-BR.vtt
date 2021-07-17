@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.360 --> 00:00:02.570
+Eu diria que outra coisa
+está acontecendo aqui.
+
+00:00:02.570 --> 00:00:05.410
+O que esta linha faz que
+as outras não fazem é
+
+00:00:05.410 --> 00:00:09.710
+maximizar a distância
+até o ponto mais próximo.
+
+00:00:09.710 --> 00:00:12.290
+Isso é relativo às duas classes.
+
+00:00:12.290 --> 00:00:15.970
+Esta linha maximiza a distância até
+o ponto mais próximo em qualquer classe.
+
+00:00:15.970 --> 00:00:19.020
+Essa distância é normalmente chamada de margem.
+
+00:00:19.020 --> 00:00:21.312
+Se você for a uma festa
+de aprendizado de
+
+00:00:21.312 --> 00:00:24.880
+máquina e todos falarem de mecanismos
+de vetor de suporte, será bom
+
+00:00:24.880 --> 00:00:29.490
+saber a margem da palavra,
+porque é o que está sendo maximizado.
+
+00:00:29.490 --> 00:00:32.360
+A margem é a distância
+entre a linha e
+
+00:00:32.360 --> 00:00:35.480
+o ponto mais próximo de
+uma das duas classes.
+

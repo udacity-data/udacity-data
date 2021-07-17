@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:02.790
+E logo antes está a do meio.
+
+00:00:02.790 --> 00:00:06.390
+Há uma margem bem grande para o conjunto de dados azul, mas
+
+00:00:06.390 --> 00:00:09.270
+uma margem pequena para o x aqui.
+
+00:00:09.270 --> 00:00:12.740
+Então, isso não maximiza a margem para os dois conjuntos de dados, apenas esse aqui.
+
+00:00:12.740 --> 00:00:16.129
+E o mesmo é verdadeiro para a linha no lado direito.
+
+00:00:16.129 --> 00:00:19.080
+A razão para escolhermos a do meio é que
+
+00:00:19.080 --> 00:00:22.320
+parece ser mais robusta para erros de classificação.
+
+00:00:22.320 --> 00:00:26.450
+Se você tivesse escolhido uma linha próxima demais de dados existentes, uma pequena quantidade de
+
+00:00:26.450 --> 00:00:31.180
+ruído faria o rótulo aqui virar e não seria mais muito robusto.
+
+00:00:31.180 --> 00:00:33.330
+O interior da máquina de vetor de suporte
+
+00:00:34.970 --> 00:00:37.855
+é maximizar a robustez de seu resultado.
+
+00:00:37.855 --> 00:00:41.210
+[SOUND] Isso os torna ótimos, então vamos praticar.
+
