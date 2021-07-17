@@ -1,0 +1,196 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.670 --> 00:00:01.710
+Olá! Meu nome é Sebastian Thrun.
+
+00:00:01.710 --> 00:00:03.120
+&gt;&gt; Meu nome é Katie Malone.
+
+00:00:03.120 --> 00:00:05.770
+&gt;&gt; Esta é a aula de aprendizado de máquina da Udacity para
+
+00:00:05.770 --> 00:00:07.050
+que todos aprendam sobre o tópico.
+
+00:00:07.050 --> 00:00:09.320
+Sou professor pesquisador na Stanford.
+
+00:00:09.320 --> 00:00:10.660
+Sou fundador da Udacity e
+
+00:00:10.660 --> 00:00:15.290
+também trabalhei com Google Self-Driving Car, DARPA Self-Driving Car,
+
+00:00:15.290 --> 00:00:20.300
+Challenge Ways, Google Street View, Google Glass, Google X.
+
+00:00:20.300 --> 00:00:23.760
+O segredo do meu trabalho é que tudo se resume a aprendizado de máquina.
+
+00:00:23.760 --> 00:00:27.000
+Aprendizado de máquina é a essência do que faço e possibilita que eu
+
+00:00:27.000 --> 00:00:29.390
+desenvolva produtos e experiências do usuário incríveis.
+
+00:00:29.390 --> 00:00:32.720
+&gt;&gt; Sou física por formação, portanto, tenho uma experiência um pouco diferente.
+
+00:00:32.720 --> 00:00:34.721
+Mas, na física, também usamos aprendizado de máquina sempre.
+
+00:00:34.721 --> 00:00:37.852
+O que fazemos é começar com conjuntos de dados gigantes de
+
+00:00:37.852 --> 00:00:40.400
+muitas partículas criadas no nosso detector.
+
+00:00:40.400 --> 00:00:43.313
+Usamos o aprendizado de máquina para vasculhar esses grandes conjuntos de
+
+00:00:43.313 --> 00:00:44.571
+dados e encontrar um evento.
+
+00:00:44.571 --> 00:00:47.019
+Ou dez eventos entre milhões e
+
+00:00:47.019 --> 00:00:49.480
+bilhões que nos ajudaram a ganhar prêmios Nobel.
+
+00:00:49.480 --> 00:00:52.120
+&gt;&gt; Ter um bom aprendizado de máquina é como produzir um bom vinho.
+
+00:00:52.120 --> 00:00:53.800
+Tenho aqui uma garrafa de vinho da Itália.
+
+00:00:55.230 --> 00:00:56.800
+A analogia é a seguinte.
+
+00:00:56.800 --> 00:01:00.170
+Para produzir um ótimo vinho você precisa cultivar ótimas uvas.
+
+00:01:00.170 --> 00:01:02.220
+Se suas uvas não forem boas, seu vinho não será bom.
+
+00:01:02.220 --> 00:01:03.500
+O mesmo se aplica ao aprendizado de máquina.
+
+00:01:03.500 --> 00:01:04.000
+Você precisa de bons dados.
+
+00:01:04.000 --> 00:01:06.540
+Você precisa entender seus dados muito bem.
+
+00:01:06.540 --> 00:01:08.980
+E há também uma técnica para produzir um ótimo vinho, que
+
+00:01:08.980 --> 00:01:10.590
+é muito difícil de aprender.
+
+00:01:10.590 --> 00:01:13.220
+O mesmo se aplica ao aprendizado de máquina. Há uma técnica para analisar
+
+00:01:13.220 --> 00:01:15.560
+e entender dados para conseguir aplicar os algoritmos.
+
+00:01:15.560 --> 00:01:17.500
+Se você não dominar a técnica, jamais será
+
+00:01:17.500 --> 00:01:19.090
+um bom profissional de aprendizado de máquina.
+
+00:01:19.090 --> 00:01:21.940
+&gt;&gt; Nesta aula de aprendizado de máquina, começaremos com
+
+00:01:21.940 --> 00:01:23.940
+alguns algoritmos de aprendizado de máquina.
+
+00:01:23.940 --> 00:01:26.530
+Mas também analisaremos alguns conjuntos de dados bem interessantes.
+
+00:01:26.530 --> 00:01:30.120
+E faremos algumas perguntas interessantes e difíceis.
+
+00:01:30.120 --> 00:01:32.690
+Perguntas que acreditamos que serão legais de serem respondidas.
+
+00:01:32.690 --> 00:01:35.340
+Começaremos com dados brutos e mostraremos
+
+00:01:35.340 --> 00:01:38.398
+um processo de aprendizado de máquina do começo ao fim.
+
+00:01:38.398 --> 00:01:41.240
+Assim, você pode começar com seu próprio conjunto de dados.
+
+00:01:41.240 --> 00:01:43.080
+E saberá como tratá-lo usando o aprendizado de máquina.
+
+00:01:43.080 --> 00:01:44.740
+Estamos no Vale do Silício.
+
+00:01:44.740 --> 00:01:47.590
+No Vale do Silício, aprendizado de máquina é algo importante.
+
+00:01:47.590 --> 00:01:50.120
+Empresas como Netflix, Amazon, Google e
+
+00:01:50.120 --> 00:01:54.760
+várias outras usam dados diariamente para otimizar a experiência do produto.
+
+00:01:54.760 --> 00:01:58.230
+Posso afirmar: se você for proficiente em big data e entender a ciência
+
+00:01:58.230 --> 00:02:02.480
+de dados muito bem, encontrará um trabalho no Vale do Silício.
+
+00:02:02.480 --> 00:02:04.930
+Os salários iniciais são incrivelmente altos.
+
+00:02:04.930 --> 00:02:07.369
+Eles normalmente variam de 150 a 200 mil dólares.
+
+00:02:07.369 --> 00:02:10.054
+&gt;&gt; Mesmo se você não estiver procurando um emprego em ciência de dados agora,
+
+00:02:10.054 --> 00:02:13.022
+há muitas outras formas de você usar o aprendizado de máquina
+
+00:02:13.022 --> 00:02:14.050
+no seu dia a dia.
+
+00:02:14.050 --> 00:02:15.710
+Quando assisto ao Netflix à noite,
+
+00:02:15.710 --> 00:02:17.650
+ao escolher o filme que vou assistir, o
+
+00:02:17.650 --> 00:02:20.250
+Netflix faz sugestões usando o aprendizado de máquina.
+
+00:02:20.250 --> 00:02:22.900
+Quando uso o cartão de crédito para fazer uma conta,
+
+00:02:22.900 --> 00:02:25.680
+ele tem proteção contra fraudes. Isso também é aprendizado de máquina.
+
+00:02:25.680 --> 00:02:28.830
+Você terá informações sobre como todos os tipos de ferramentas
+
+00:02:28.830 --> 00:02:31.740
+que usamos no dia a dia funcionam e são desenvolvidas com aprendizado de máquina.
+
+00:02:31.740 --> 00:02:32.930
+&gt;&gt; Esta é uma aula muito legal.
+
+00:02:32.930 --> 00:02:33.540
+&gt;&gt; Você aprende fazendo.
+
+00:02:33.540 --> 00:02:35.770
+Nos vemos na aula.
+
+00:02:35.770 --> 00:02:36.790
+&gt;&gt; Nos vemos na aula.
+
