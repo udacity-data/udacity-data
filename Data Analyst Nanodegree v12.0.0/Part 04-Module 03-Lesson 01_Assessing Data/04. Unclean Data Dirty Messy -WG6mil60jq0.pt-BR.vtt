@@ -1,0 +1,152 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.067 --> 00:00:01.600
+Vamos definir explicitamente
+
+00:00:01.633 --> 00:00:04.700
+o que são dados sujos
+e dados bagunçados.
+
+00:00:04.733 --> 00:00:08.067
+Para ajudar, pense em dados
+como se fossem o seu quarto.
+
+00:00:08.100 --> 00:00:09.500
+Todos gostam de dados limpos.
+
+00:00:09.533 --> 00:00:12.533
+Todos, ou pelo menos a sua mãe,
+querem um quarto limpo.
+
+00:00:12.566 --> 00:00:15.100
+Este quarto
+certamente não está limpo.
+
+00:00:15.133 --> 00:00:17.933
+Está sujo e bagunçado.
+
+00:00:17.966 --> 00:00:21.133
+Um quarto sujo pode ter
+pratos e talheres sujos.
+
+00:00:21.166 --> 00:00:24.133
+Lixo, como papéis de doce
+e cascas de banana.
+
+00:00:24.166 --> 00:00:27.333
+Talvez até sujeira aparente
+trazida de fora de casa.
+
+00:00:27.366 --> 00:00:29.533
+Essas coisas não pertencem
+ao seu quarto.
+
+00:00:29.566 --> 00:00:31.933
+Já a parte bagunçada
+é diferente.
+
+00:00:31.966 --> 00:00:35.500
+A bagunça é estrutural,
+um problema de organização.
+
+00:00:35.533 --> 00:00:37.133
+Pense nas roupas no chão.
+
+00:00:37.166 --> 00:00:39.933
+As roupas pertencem ao quarto,
+mas não ao chão.
+
+00:00:39.966 --> 00:00:41.200
+A cama desarrumada.
+
+00:00:41.233 --> 00:00:44.400
+Você deve arrumar a cama.
+Que bagunça...
+
+00:00:44.433 --> 00:00:46.933
+Dados podem ser pensados
+da mesma forma.
+
+00:00:46.966 --> 00:00:49.333
+Dados sujos,
+com problemas de conteúdo,
+
+00:00:49.366 --> 00:00:51.667
+costumam ser chamados
+de dados de baixa qualidade
+
+00:00:51.700 --> 00:00:54.400
+e podem incluir coisas
+como dados imprecisos...
+
+00:00:55.900 --> 00:00:57.067
+dados corrompidos
+
+00:00:57.933 --> 00:00:59.333
+e dados duplicados.
+
+00:01:00.200 --> 00:01:02.900
+Dados bagunçados, por outro lado,
+têm problemas de estrutura.
+
+00:01:02.933 --> 00:01:05.567
+Costumam ser chamados
+de desordenados.
+
+00:01:05.600 --> 00:01:08.700
+Dados organizados significam
+que cada variável forma uma coluna,
+
+00:01:08.733 --> 00:01:10.867
+cada observação
+forma uma linha
+
+00:01:10.900 --> 00:01:14.200
+e cada tipo de unidade observacional
+forma uma tabela.
+
+00:01:14.233 --> 00:01:16.333
+Qualquer outra organização
+é desordenada,
+
+00:01:16.366 --> 00:01:18.333
+como descreve Hadley Wickham,
+
+00:01:18.366 --> 00:01:22.333
+inventor do formato Tidy Data,
+em seu artigo "Untidy Data".
+
+00:01:22.366 --> 00:01:25.867
+Novamente, é assim
+que ficam os dados organizados.
+
+00:01:25.900 --> 00:01:27.300
+Assim como você
+limpa o quarto,
+
+00:01:27.333 --> 00:01:30.600
+pode limpar seus dados.
+Isso exige tempo e habilidade.
+
+00:01:30.633 --> 00:01:34.300
+Felizmente, programas como Python
+e suas bibliotecas podem ajudar,
+
+00:01:34.333 --> 00:01:36.500
+assim como um aspirador
+ajuda com a sujeira
+
+00:01:36.533 --> 00:01:39.100
+e uma cômoda ajuda
+com as roupas jogadas.
+
+00:01:39.133 --> 00:01:41.200
+Nosso objetivo
+é ter dados imaculados,
+
+00:01:41.233 --> 00:01:43.333
+e é uma maravilha
+quando conseguimos.
+

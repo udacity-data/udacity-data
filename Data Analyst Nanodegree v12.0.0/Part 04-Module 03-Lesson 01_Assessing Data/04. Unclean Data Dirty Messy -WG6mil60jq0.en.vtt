@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.495
+Let's explicitly define the terms dirty data and messy data.
+
+00:00:04.495 --> 00:00:08.310
+To help with this, think of your data like your bedroom.
+
+00:00:08.310 --> 00:00:10.259
+Everyone wants clean data like everyone,
+
+00:00:10.259 --> 00:00:15.359
+or at least your mother wants a clean bedroom and this bedroom clearly isn't clean.
+
+00:00:15.359 --> 00:00:17.250
+It's both dirty and messy.
+
+00:00:17.250 --> 00:00:21.149
+A dirty bedroom might have dirty plates and cutlery,
+
+00:00:21.149 --> 00:00:24.029
+garbage like candy wrappers or banana peels,
+
+00:00:24.030 --> 00:00:27.560
+maybe even physical dirt tracked in from outside.
+
+00:00:27.559 --> 00:00:29.799
+These don't belong in your bedroom.
+
+00:00:29.800 --> 00:00:32.100
+The messy part of the bedroom are different.
+
+00:00:32.100 --> 00:00:35.670
+Messiness is structural or organizational issues.
+
+00:00:35.670 --> 00:00:37.155
+Think clothes in the ground,
+
+00:00:37.155 --> 00:00:39.840
+clothes belong in your bedroom but not in the ground.
+
+00:00:39.840 --> 00:00:44.250
+Or unmade bed, your bed should probably be made, that's messy.
+
+00:00:44.250 --> 00:00:47.159
+And data can be thought of in the same way.
+
+00:00:47.159 --> 00:00:50.519
+Dirty data which has issues with its content is often called
+
+00:00:50.520 --> 00:00:55.095
+low quality data and can include things like inaccurate data,
+
+00:00:55.094 --> 00:00:59.850
+corrupted data and duplicate data.
+
+00:00:59.850 --> 00:01:03.130
+Messy data on the other hand had issues with its structure.
+
+00:01:03.130 --> 00:01:05.490
+It is often referred to as untidy.
+
+00:01:05.489 --> 00:01:08.729
+Tidy data means each variable forms a column,
+
+00:01:08.730 --> 00:01:14.390
+each observation forms a row and each type of observational unit forms a table.
+
+00:01:14.390 --> 00:01:18.525
+Any other arrangement is messy which is the exact term that Hadley Wickham,
+
+00:01:18.525 --> 00:01:22.535
+the inventor of the tidy data format uses in his tidy data paper.
+
+00:01:22.534 --> 00:01:25.974
+And again, here's what tidy looks like in comparison.
+
+00:01:25.974 --> 00:01:27.554
+Just like you can clean your bedroom,
+
+00:01:27.555 --> 00:01:30.685
+you can clean your data and it takes time and skill.
+
+00:01:30.685 --> 00:01:34.325
+Fortunately, programming tools like Python and its libraries can help us,
+
+00:01:34.325 --> 00:01:36.530
+like a vacuum might help you vacuum up dirt,
+
+00:01:36.530 --> 00:01:39.034
+or a dresser might help you organize your clothes.
+
+00:01:39.034 --> 00:01:44.000
+Immaculately clean data is the goal and it's a beautiful thing once you have it.
+

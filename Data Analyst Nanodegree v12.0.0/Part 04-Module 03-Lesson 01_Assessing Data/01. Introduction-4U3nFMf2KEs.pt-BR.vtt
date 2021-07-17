@@ -1,0 +1,107 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.100 --> 00:00:02.936
+INTRODUÇÃO
+
+00:00:04.037 --> 00:00:05.839
+Agora que você sabe
+coletar dados,
+
+00:00:05.872 --> 00:00:08.108
+é hora de aprender a avaliá-los.
+
+00:00:08.141 --> 00:00:11.745
+Avaliar seus dados é o segundo passo
+no processo de preparação de dados.
+
+00:00:11.778 --> 00:00:14.414
+Quando está avaliando,
+você é como um detetive
+
+00:00:14.448 --> 00:00:16.650
+que inspeciona duas coisas:
+
+00:00:16.683 --> 00:00:19.853
+problemas de qualidade
+e falta de ordem.
+
+00:00:19.887 --> 00:00:22.990
+Dados com problemas de qualidade
+têm problemas de conteúdo,
+
+00:00:23.023 --> 00:00:26.193
+como dados ausentes,
+duplicados ou incorretos.
+
+00:00:26.226 --> 00:00:28.495
+Chamamos isso
+de "dados sujos".
+
+00:00:28.528 --> 00:00:32.799
+Dados desorganizados
+têm problemas estruturais.
+
+00:00:32.832 --> 00:00:35.936
+Esses problemas te atrasam
+na limpeza, análise,
+
+00:00:35.969 --> 00:00:38.906
+visualização ou modelagem
+dos seus dados.
+
+00:00:38.939 --> 00:00:41.208
+Você pode procurar
+problemas de duas formas:
+
+00:00:41.241 --> 00:00:42.843
+visualmente, rolando a página,
+
+00:00:42.876 --> 00:00:44.845
+e programaticamente,
+usando código.
+
+00:00:44.878 --> 00:00:46.346
+Ao detectar um problema,
+
+00:00:46.379 --> 00:00:49.149
+você o documenta
+para facilitar a limpeza.
+
+00:00:49.182 --> 00:00:50.250
+Nesta aula,
+
+00:00:50.284 --> 00:00:53.086
+você avaliará um conjunto de dados
+cheio de problemas
+
+00:00:53.119 --> 00:00:55.255
+e encontrará todos eles.
+
+00:00:55.289 --> 00:00:57.157
+Alguns visualmente,
+outros usando funções
+
+00:00:57.191 --> 00:00:59.593
+da biblioteca Pandas
+para Python.
+
+00:00:59.626 --> 00:01:03.463
+Ao fim da aula, teremos um vislumbre
+das fases de análise e visualização,
+
+00:01:03.497 --> 00:01:06.266
+e você verá a importância
+da sua avaliação.
+
+00:01:06.300 --> 00:01:07.601
+Você vai terminar esta aula
+
+00:01:07.634 --> 00:01:09.336
+com um olhar apurado
+para dados sujos,
+
+00:01:09.369 --> 00:01:11.438
+e há muitos deles no mundo.
+

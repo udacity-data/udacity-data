@@ -1,0 +1,475 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.120
+Okay, so the first programmatic assessment was .value_counts on
+
+00:00:03.120 --> 00:00:06.265
+the surname and address column at the patient's table.
+
+00:00:06.264 --> 00:00:08.744
+Value counts is like a histogramming function
+
+00:00:08.744 --> 00:00:11.969
+that returns the count of each unique value in that column.
+
+00:00:11.970 --> 00:00:17.995
+And there are six last names of Doe as well as six addresses of 123 Main Street.
+
+00:00:17.995 --> 00:00:22.365
+I've got a hunch that these are duplicates which we can check using .duplicated.
+
+00:00:22.364 --> 00:00:26.864
+This returns a boolean series which we then index patients with.
+
+00:00:26.864 --> 00:00:31.799
+And, yeah, there are several John Doe's that live at 123 Main Street New York,
+
+00:00:31.800 --> 00:00:34.215
+New York, ZIP Code 12345.
+
+00:00:34.215 --> 00:00:36.180
+And there's more, johndoe@email.com.
+
+00:00:36.179 --> 00:00:39.009
+This reeks of duplicate default data.
+
+00:00:39.009 --> 00:00:40.504
+So how could this have happened.
+
+00:00:40.505 --> 00:00:43.170
+This is probably because of some system conversion.
+
+00:00:43.170 --> 00:00:46.440
+For example, say if the company that has
+
+00:00:46.439 --> 00:00:51.479
+this database switched from one software provider to another for their patient records.
+
+00:00:51.479 --> 00:00:53.339
+When converting from one system to another,
+
+00:00:53.340 --> 00:00:59.250
+you can often lose data and it becomes this default John Doe data or even corrupted data.
+
+00:00:59.250 --> 00:01:01.185
+This is a pretty common issue in health care data,
+
+00:01:01.185 --> 00:01:03.539
+especially because healthcare is known as not
+
+00:01:03.539 --> 00:01:06.185
+being the most up-to-date in terms of technology.
+
+00:01:06.185 --> 00:01:09.295
+So what's the appropriate data quality dimension for this one.
+
+00:01:09.295 --> 00:01:11.159
+This is a validity issue.
+
+00:01:11.159 --> 00:01:13.170
+Recall that validity means not conforming to
+
+00:01:13.170 --> 00:01:17.435
+a defined schema and this schema is the real world schema this time.
+
+00:01:17.435 --> 00:01:19.799
+It's very, very, very unlikely,
+
+00:01:19.799 --> 00:01:22.358
+I'd say impossible that there are six
+
+00:01:22.358 --> 00:01:26.339
+John Doe's that all live at 123 Main Street in New York,
+
+00:01:26.340 --> 00:01:27.784
+New York with the same email.
+
+00:01:27.784 --> 00:01:29.790
+It's just not, this isn't happening.
+
+00:01:29.790 --> 00:01:33.135
+So while this table or the database accepts these records,
+
+00:01:33.135 --> 00:01:35.890
+it's not valid in terms of the real world schema.
+
+00:01:35.890 --> 00:01:40.013
+John Doe might not even exist and realistically he probably doesn't.
+
+00:01:40.013 --> 00:01:43.324
+So let's document that.
+
+00:01:43.325 --> 00:01:49.540
+It'll be important to clean this because we don't want garbage data in our data set.
+
+00:01:49.540 --> 00:01:53.035
+This might mean removing these records or finding records that were lost,
+
+00:01:53.034 --> 00:01:54.399
+but we'll deal with that later.
+
+00:01:54.400 --> 00:01:57.835
+Right now we're just assessing and writing down our observations.
+
+00:01:57.834 --> 00:01:59.890
+There's actually another data quality issue revealed by
+
+00:01:59.890 --> 00:02:04.525
+this duplicated method here and one offending record is this Jake Jacobson record.
+
+00:02:04.525 --> 00:02:07.120
+You'll see that this duplicate actually has
+
+00:02:07.120 --> 00:02:09.969
+address being duplicated as opposed to this record here,
+
+00:02:09.969 --> 00:02:12.724
+or these two down here having NaN entries.
+
+00:02:12.724 --> 00:02:16.060
+This means that two people in this patient's table have the same address,
+
+00:02:16.060 --> 00:02:18.180
+648 Old Dear Lane.
+
+00:02:18.180 --> 00:02:19.775
+I actually recall seeing
+
+00:02:19.775 --> 00:02:23.145
+a Jacobson earlier in our visual assessment. Let's scroll back up.
+
+00:02:23.145 --> 00:02:25.505
+Okay, here it is, Jacob Jacobson,
+
+00:02:25.504 --> 00:02:28.884
+648 Old Dear Lane and also a Jake Jacobson,
+
+00:02:28.884 --> 00:02:31.679
+which is a record we saw in the duplicated results below.
+
+00:02:31.680 --> 00:02:34.905
+So this seems like there's two records for one person.
+
+00:02:34.905 --> 00:02:39.235
+This extra record and extra patient ID was created because this nickname was used.
+
+00:02:39.235 --> 00:02:43.000
+Basically Jake Jacobson came back twice and the person that was in charge of creating
+
+00:02:43.000 --> 00:02:45.430
+these patient records accidentally put Jake in again
+
+00:02:45.430 --> 00:02:48.140
+because they didn't recognize that he was already in the database.
+
+00:02:48.139 --> 00:02:52.000
+This use of nicknames creating duplicates is a very famous issue in
+
+00:02:52.000 --> 00:02:54.189
+healthcare data and it's an issue that costs
+
+00:02:54.189 --> 00:02:57.645
+healthcare companies and hospitals tons of money every year.
+
+00:02:57.645 --> 00:02:59.230
+There's a handy link illustrating this in the notes below
+
+00:02:59.229 --> 00:03:01.280
+this video if you'd like to read more.
+
+00:03:01.280 --> 00:03:04.245
+So this is actually a validity issue currently.
+
+00:03:04.245 --> 00:03:07.205
+Though it's pretty easy to confuse as a consistency issue.
+
+00:03:07.205 --> 00:03:09.985
+Consistency being two ways of referring to the same thing,
+
+00:03:09.985 --> 00:03:11.705
+Jake and Jacob Jacobson.
+
+00:03:11.705 --> 00:03:14.485
+So while this is valid in terms of the specific table schema,
+
+00:03:14.485 --> 00:03:16.750
+there's no duplicate patient ID i.e.
+
+00:03:16.750 --> 00:03:18.409
+Jake Jacobson has 30,
+
+00:03:18.409 --> 00:03:20.949
+Jacob has 25 for patient ID.
+
+00:03:20.949 --> 00:03:24.329
+But this is invalid in terms of the real world schema.
+
+00:03:24.330 --> 00:03:27.435
+This isn't two people, it's one person.
+
+00:03:27.435 --> 00:03:30.620
+There are two records in the patients table while there should be one.
+
+00:03:30.620 --> 00:03:32.557
+When deleting one of the duplicates,
+
+00:03:32.557 --> 00:03:33.789
+if we delete the wrong one,
+
+00:03:33.789 --> 00:03:37.500
+then we'll create a consistency issue between multiple tables.
+
+00:03:37.500 --> 00:03:41.020
+For example, if Jacob Jacobson is in the treatments table as well while
+
+00:03:41.020 --> 00:03:45.130
+this Jake Jacobson is only in patients and we delete the Jacob Jacobson record,
+
+00:03:45.129 --> 00:03:48.519
+that would be a inconsistent representation across tables,
+
+00:03:48.520 --> 00:03:51.850
+while still having only one record per one person,
+
+00:03:51.849 --> 00:03:53.569
+so it's valid but inconsistent.
+
+00:03:53.569 --> 00:03:55.319
+That's not what we have right now though.
+
+00:03:55.319 --> 00:03:57.459
+Right now we have two ways of referring to
+
+00:03:57.460 --> 00:04:00.349
+two records when there should only be one record.
+
+00:04:00.349 --> 00:04:02.344
+That last part is the invalid part.
+
+00:04:02.344 --> 00:04:05.465
+There are actually a few more of these nickname duplicated patients.
+
+00:04:05.465 --> 00:04:07.150
+Sandy Taylor and Sandra Taylor,
+
+00:04:07.150 --> 00:04:09.594
+living at 2476 Fulton Street.
+
+00:04:09.594 --> 00:04:14.283
+Then also Pat and Patrick Gersten that lives at 2778 North Avenue.
+
+00:04:14.283 --> 00:04:18.029
+And as always we document this.
+
+00:04:20.160 --> 00:04:24.355
+Okay, so let's move on to the next programmatic assessment
+
+00:04:24.355 --> 00:04:27.009
+on the weight column in the patient's table.
+
+00:04:27.009 --> 00:04:30.089
+And the minimum value is 48.8 pounds.
+
+00:04:30.089 --> 00:04:33.304
+This seems not possible for a living human,
+
+00:04:33.305 --> 00:04:37.199
+so this is definitely at least inaccurate, maybe invalid.
+
+00:04:37.199 --> 00:04:39.459
+But actually if we think a bit deeper,
+
+00:04:39.459 --> 00:04:41.774
+we'll see that it's actually neither of those.
+
+00:04:41.774 --> 00:04:44.544
+This is actually a consistency issue in disguise.
+
+00:04:44.545 --> 00:04:47.035
+48.8 is actually kilograms instead of pounds,
+
+00:04:47.035 --> 00:04:49.510
+which we can check by corroborating the height and
+
+00:04:49.509 --> 00:04:53.324
+BMI entries for this patient who has the last name Zaitseva.
+
+00:04:53.324 --> 00:04:58.435
+So 2.20462 is the conversion factor between kilograms and pounds
+
+00:04:58.435 --> 00:05:04.524
+and 703 times weight in pounds divided by height squared is the BMI calculation formula.
+
+00:05:04.524 --> 00:05:07.524
+And with 48.8 kilograms converted to pounds,
+
+00:05:07.524 --> 00:05:10.060
+this yields about 19.1 BMI,
+
+00:05:10.060 --> 00:05:12.939
+which if we checked the actual BMI in the data set is
+
+00:05:12.939 --> 00:05:16.175
+exactly the same or close to it before rounding.
+
+00:05:16.175 --> 00:05:19.220
+So here the 48.8 is actually right,
+
+00:05:19.220 --> 00:05:21.215
+it's just off in units.
+
+00:05:21.214 --> 00:05:23.560
+So this is actually a consistency issue.
+
+00:05:23.560 --> 00:05:25.899
+This was caused by a simple misunderstanding or
+
+00:05:25.899 --> 00:05:28.894
+just a simple oversight by whoever was entering this data.
+
+00:05:28.894 --> 00:05:31.914
+Again, this is important to clean because we need to report the average metrics,
+
+00:05:31.915 --> 00:05:33.580
+like weight, height, and more,
+
+00:05:33.579 --> 00:05:35.969
+in terms of each treatment arm of the clinical trial.
+
+00:05:35.970 --> 00:05:40.095
+Auralin and Novodra and there's some documentation for this.
+
+00:05:40.095 --> 00:05:43.515
+And Okay now the last programmatic assessments,
+
+00:05:43.514 --> 00:05:48.680
+the .isnull methods on the Auralin and Novodra columns in the treatment's table.
+
+00:05:48.680 --> 00:05:50.824
+This bit of code within the sum parentheses.
+
+00:05:50.824 --> 00:05:53.750
+This returns a Boolean series which is
+
+00:05:53.750 --> 00:05:57.000
+true or false based on whether or not each entry is null or not.
+
+00:05:57.000 --> 00:05:59.670
+And Boolean series can be summed as a whole.
+
+00:05:59.670 --> 00:06:01.530
+True being one, false being zero.
+
+00:06:01.529 --> 00:06:03.469
+So this output suggests that there are
+
+00:06:03.470 --> 00:06:07.285
+zero null entries for both the Auralin and Novodra columns.
+
+00:06:07.285 --> 00:06:09.185
+But that shouldn't be the case, right?
+
+00:06:09.185 --> 00:06:11.449
+If we scroll up to our treatment's visual assessment,
+
+00:06:11.449 --> 00:06:15.769
+these entries with the dashes should be null or at least represented as such.
+
+00:06:15.769 --> 00:06:18.555
+This reveals a common error in multiple data sets,
+
+00:06:18.555 --> 00:06:20.095
+not just healthcare data sets.
+
+00:06:20.095 --> 00:06:22.385
+Misrepresenting missing values is something else,
+
+00:06:22.384 --> 00:06:25.250
+like a dash or a slash or NaN
+
+00:06:25.250 --> 00:06:27.670
+or none for example, the text None.
+
+00:06:27.670 --> 00:06:30.335
+And if you scroll down to our info programmatic assessment,
+
+00:06:30.334 --> 00:06:33.649
+the Auralin and Novodra columns are objects or strings.
+
+00:06:33.649 --> 00:06:37.669
+These dashes aren't picked up as null or non-values.
+
+00:06:37.670 --> 00:06:40.475
+Why is this important to document and later clean?
+
+00:06:40.475 --> 00:06:43.879
+Calculations in Pandas and spreadsheet applications even behave
+
+00:06:43.879 --> 00:06:48.259
+a certain way based on how these null values are represented.
+
+00:06:48.259 --> 00:06:49.579
+In Pandas for example,
+
+00:06:49.579 --> 00:06:52.664
+since each column or series can only have one data type,
+
+00:06:52.665 --> 00:06:55.010
+we wouldn't be able to convert these dosage columns to
+
+00:06:55.009 --> 00:06:58.805
+a numerical data type to perform mean and standard deviation calculations,
+
+00:06:58.805 --> 00:07:01.790
+which we'll need to report in the clinical trial findings.
+
+00:07:01.790 --> 00:07:03.160
+But also nulls are important.
+
+00:07:03.160 --> 00:07:06.275
+Again, if you're working in something like Google Sheets or a spreadsheet application.
+
+00:07:06.274 --> 00:07:09.799
+So spreadsheet applications allow multiple data types in one column,
+
+00:07:09.800 --> 00:07:14.090
+like this is allowed 40-50 dash dash dash 60.
+
+00:07:14.089 --> 00:07:18.349
+With this cell this cell and this cell 40-50-60 still being treated as
+
+00:07:18.350 --> 00:07:23.360
+integers while these dash dash dash cells are treated as text variables.
+
+00:07:23.360 --> 00:07:24.830
+This is important because say if you wanted to
+
+00:07:24.829 --> 00:07:26.779
+calculate standard deviation for this column,
+
+00:07:26.779 --> 00:07:30.419
+this example column, the function STDEVA.
+
+00:07:30.420 --> 00:07:33.319
+This calculates standard deviation but sets the text
+
+00:07:33.319 --> 00:07:36.526
+values aka the dash dash dash to zero.
+
+00:07:36.526 --> 00:07:39.639
+If these were missing values you'd get a different calculation,
+
+00:07:39.639 --> 00:07:42.627
+which I'll show you right here actually.
+
+00:07:42.627 --> 00:07:45.779
+So the correct representation of nulls is important.
+
+00:07:45.779 --> 00:07:51.042
+So let's document that.
+
+00:07:51.043 --> 00:07:58.519
+This is a validity issue because nulls should be nulls, not text
+

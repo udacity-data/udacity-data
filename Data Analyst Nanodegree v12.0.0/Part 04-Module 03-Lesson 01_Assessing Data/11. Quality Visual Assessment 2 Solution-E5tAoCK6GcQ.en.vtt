@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.790
+So the first one here is this glaring typo in the given name column for David Gustafsson.
+
+00:00:04.790 --> 00:00:10.699
+David spelled D s v i d. As you can see in the contact column here his email has David,
+
+00:00:10.699 --> 00:00:12.559
+so this is definitely a typo.
+
+00:00:12.560 --> 00:00:13.710
+So how could this have happened?
+
+00:00:13.710 --> 00:00:15.820
+This is probably just another data entry error.
+
+00:00:15.820 --> 00:00:17.507
+And, why is it important to fix this?
+
+00:00:17.507 --> 00:00:20.040
+Well, if you want to email or send mail to this person,
+
+00:00:20.039 --> 00:00:24.174
+if you misspelled their name that's not very nice for David here.
+
+00:00:24.175 --> 00:00:25.679
+Again, that's if you're just sending email in
+
+00:00:25.679 --> 00:00:29.370
+an automated fashion by picking at this name from this patient's table.
+
+00:00:29.370 --> 00:00:31.109
+So, time to document it.
+
+00:00:31.109 --> 00:00:33.839
+These treatments and patients table are starting to pile up here.
+
+00:00:33.840 --> 00:00:36.000
+So, let's separate these into sub-headers again.
+
+00:00:36.000 --> 00:00:39.015
+This data wrangling template can be adjusted as you see fit here.
+
+00:00:39.015 --> 00:00:40.771
+It's not a rigid document.
+
+00:00:40.771 --> 00:00:50.849
+Tweak it to your own personal preferences.
+
+00:00:50.850 --> 00:00:54.875
+So, the next issue is in the treatment table here.
+
+00:00:54.875 --> 00:00:57.890
+Specifically, the auralin and novodra columns.
+
+00:00:57.890 --> 00:01:01.475
+There are a few issues with this column but let's dial in on one right now.
+
+00:01:01.475 --> 00:01:06.439
+The fact that these dosages are documented in digit, digit, u form.
+
+00:01:06.439 --> 00:01:08.209
+So, for the first patient in this table,
+
+00:01:08.209 --> 00:01:13.004
+the starting dose of auralin was 41 units and the ending dose was 48 units.
+
+00:01:13.004 --> 00:01:16.369
+These should actually be in separate columns but we'll handle that later.
+
+00:01:16.370 --> 00:01:19.910
+The fact that there's the letter u here attached to the end means that
+
+00:01:19.909 --> 00:01:24.137
+Pandas would not be able to interpret this variable as a float or an integer,
+
+00:01:24.138 --> 00:01:26.120
+which is required for calculations.
+
+00:01:26.120 --> 00:01:30.829
+Because the letter u is there Pandas would force it to the data type object.
+
+00:01:30.829 --> 00:01:32.704
+Which is basically a string in Pandas.
+
+00:01:32.704 --> 00:01:34.189
+That means we can't perform calculations
+
+00:01:34.189 --> 00:01:36.495
+using the starting and ending doses for each drug.
+
+00:01:36.495 --> 00:01:39.840
+That's a big deal. So, how could this issue have happened?
+
+00:01:39.840 --> 00:01:43.475
+Sometimes it's just poor planning on behalf of whoever's recording this information,
+
+00:01:43.474 --> 00:01:45.394
+this clinical trial result data.
+
+00:01:45.394 --> 00:01:46.759
+Say if the person who was recording
+
+00:01:46.760 --> 00:01:48.965
+this information was writing it down in a piece of paper.
+
+00:01:48.965 --> 00:01:51.740
+Maybe they weren't aware that the data would be transferred from paper
+
+00:01:51.739 --> 00:01:55.054
+to computer using something like optical character recognition,
+
+00:01:55.055 --> 00:01:58.233
+which would pick up these Us and dashes here,
+
+00:01:58.233 --> 00:02:00.950
+rather than simply the integer that we want.
+
+00:02:00.950 --> 00:02:05.659
+So, let's document this now. This is a big one to fix.
+
+00:02:07.879 --> 00:02:12.710
+And here's how the observation could be written.
+
+00:02:12.710 --> 00:02:15.935
+All right, so backup to the treatment's table.
+
+00:02:15.935 --> 00:02:17.949
+One other issue is that these given names and
+
+00:02:17.949 --> 00:02:20.824
+surnames in the treatment's table are all lowercase.
+
+00:02:20.824 --> 00:02:23.264
+Actually same goes for the adverse_reactions table.
+
+00:02:23.264 --> 00:02:26.994
+This is an issue because the patients table is not lowercase.
+
+00:02:26.995 --> 00:02:29.860
+This becomes an issue if you want to join these tables later.
+
+00:02:29.860 --> 00:02:32.695
+Which I hint for later, I think we want to.
+
+00:02:32.694 --> 00:02:36.264
+This is probably a data recording or data entry error issue,
+
+00:02:36.264 --> 00:02:38.491
+and we'll document this with observations.
+
+00:02:38.491 --> 00:02:42.879
+One for the treatment's table and one for the adverse_table.
+
+00:02:46.270 --> 00:02:51.284
+And, for the final one let's scroll to the bottom of the treatment's table.
+
+00:02:51.283 --> 00:02:53.504
+There are 280 rows,
+
+00:02:53.504 --> 00:02:57.840
+with last index being 279 because there's zero index to this data frame.
+
+00:02:57.840 --> 00:03:03.164
+So, if you recall the size of each treatment arm was actually 175 patients in each.
+
+00:03:03.164 --> 00:03:08.400
+175 for the auralin arm and 175 for the novodra arm.
+
+00:03:08.400 --> 00:03:10.349
+So, it looks like we're missing some data here.
+
+00:03:10.349 --> 00:03:12.889
+Finding where that data lives is a separate issue.
+
+00:03:12.889 --> 00:03:14.309
+But we'll deal with that later.
+
+00:03:14.310 --> 00:03:22.097
+And for now we'll just document this with an observation.
+
+00:03:22.097 --> 00:03:24.700
+We should have 350 total.
+
+00:03:24.699 --> 00:03:26.229
+175 times-
+

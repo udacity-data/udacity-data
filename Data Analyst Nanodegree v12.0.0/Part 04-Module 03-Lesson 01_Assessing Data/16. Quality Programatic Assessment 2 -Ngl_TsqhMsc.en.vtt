@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.009
+And it's your turn now. I'm going to
+
+00:00:02.009 --> 00:00:04.424
+provide you with some programmatic assessments to execute.
+
+00:00:04.424 --> 00:00:07.049
+And it's your job to determine which part of the results of
+
+00:00:07.049 --> 00:00:10.314
+these assessments reveal data quality issues.
+
+00:00:10.314 --> 00:00:18.780
+So the first one, series.value_counts on the patient's surname and address.
+
+00:00:18.780 --> 00:00:22.105
+So I think this is a bit curious. Let's expand on that.
+
+00:00:22.105 --> 00:00:28.362
+.duplicated reveals the duplicates in the address column.
+
+00:00:28.362 --> 00:00:31.309
+So I definitely see something here. I hope you do, too.
+
+00:00:31.309 --> 00:00:33.509
+If you don't that's okay, you'll see shortly.
+
+00:00:33.509 --> 00:00:35.265
+And here's another programmatic assessment.
+
+00:00:35.265 --> 00:00:39.689
+sort_values on the weight column to the patients table.
+
+00:00:39.689 --> 00:00:44.019
+And one more, using the.isnull method on
+
+00:00:44.020 --> 00:00:47.915
+the Auralin and Novadra columns in conjunction with sum.
+
+00:00:47.914 --> 00:00:50.439
+Okay, so please try to detect the data quality issues
+
+00:00:50.439 --> 00:00:53.289
+in the following snapshots in the following quizzes.
+

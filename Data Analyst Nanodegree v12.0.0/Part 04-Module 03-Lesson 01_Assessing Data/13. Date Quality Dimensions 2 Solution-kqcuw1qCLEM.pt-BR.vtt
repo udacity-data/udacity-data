@@ -1,0 +1,149 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.067 --> 00:00:03.267
+O primeiro:
+o erro de digitação em "David".
+
+00:00:03.300 --> 00:00:06.733
+Está escrito "Dsvid"
+em vez de "David" aqui.
+
+00:00:06.766 --> 00:00:08.500
+É um problema de precisão.
+
+00:00:08.533 --> 00:00:11.700
+Não é proibido
+se chamar "Dsvid",
+
+00:00:11.733 --> 00:00:14.900
+então não é inválido,
+só impreciso.
+
+00:00:14.933 --> 00:00:16.333
+Na sequência,
+
+00:00:16.366 --> 00:00:20.067
+a letra "U" na informação de dosagem
+do Auralin e do Novodra.
+
+00:00:20.100 --> 00:00:22.733
+Novamente, o problema
+é só a presença do "U".
+
+00:00:22.766 --> 00:00:27.267
+É uma questão de validade.
+"23u" não é uma dose válida.
+
+00:00:27.300 --> 00:00:28.800
+A dose válida é 23.
+
+00:00:28.833 --> 00:00:32.533
+O "U" significa "unidade",
+ou "unidade de insulina".
+
+00:00:32.566 --> 00:00:35.267
+Não podemos fazer cálculos
+com "23u".
+
+00:00:35.300 --> 00:00:38.000
+Isso anda lado a lado
+com o problema de tipo de dado,
+
+00:00:38.033 --> 00:00:41.933
+mas teremos que remover o "u"
+em vez de mudar o tipo de dado.
+
+00:00:41.966 --> 00:00:45.200
+O Pandas não aceitaria algo com "u"
+como um inteiro ou um float.
+
+00:00:45.233 --> 00:00:47.067
+O dado será reconhecido
+como objeto,
+
+00:00:47.100 --> 00:00:49.400
+que é como strings
+são representadas no Pandas.
+
+00:00:49.433 --> 00:00:51.400
+Então isto aqui é invalidade.
+
+00:00:51.433 --> 00:00:55.067
+"23u" está certo,
+mas está representado errado,
+
+00:00:55.100 --> 00:00:58.400
+sem respeitar
+o esquema da tabela.
+
+00:00:58.433 --> 00:01:00.933
+Na sequência,
+os nomes em letra minúscula
+
+00:01:00.966 --> 00:01:03.700
+nas tabelas "tratamentos"
+e "reações adversas".
+
+00:01:03.733 --> 00:01:06.500
+"Tratamentos" aqui,
+"reações adversas" aqui.
+
+00:01:06.533 --> 00:01:08.133
+Vamos expandir a exibição.
+
+00:01:08.166 --> 00:01:11.000
+Eu diria que é um problema
+de consistência.
+
+00:01:11.033 --> 00:01:15.533
+Não tem problema
+os nomes estarem em minúsculas,
+
+00:01:15.566 --> 00:01:17.467
+então não é questão
+de imprecisão.
+
+00:01:17.500 --> 00:01:21.267
+Acontece que a tabela "pacientes"
+utiliza iniciais maiúsculas.
+
+00:01:21.300 --> 00:01:25.133
+Você teria problemas juntando
+as tabelas em função de nome.
+
+00:01:25.166 --> 00:01:27.667
+É uma representação inconsistente
+dos nomes
+
+00:01:27.700 --> 00:01:29.800
+em tabelas diferentes
+do mesmo conjunto.
+
+00:01:29.833 --> 00:01:32.267
+O Pandas não reconhece
+strings em minúsculas
+
+00:01:32.300 --> 00:01:35.267
+como idênticas
+ao mesmo texto com maiúsculas.
+
+00:01:35.300 --> 00:01:37.333
+É daí que vem o problema.
+
+00:01:37.366 --> 00:01:39.867
+Por último, dados faltantes
+na tabela "tratamentos".
+
+00:01:39.900 --> 00:01:41.800
+São 280 em vez de 350.
+
+00:01:41.833 --> 00:01:45.000
+Essa é bem óbvia.
+Um problema de integralidade.
+
+00:01:45.033 --> 00:01:47.267
+Não temos todos os registros
+de que precisamos.
+

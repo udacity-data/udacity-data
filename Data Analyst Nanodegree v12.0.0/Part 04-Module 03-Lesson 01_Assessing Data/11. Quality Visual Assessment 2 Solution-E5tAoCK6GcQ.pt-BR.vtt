@@ -1,0 +1,272 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.067 --> 00:00:01.733
+Para começar,
+erro de digitação
+
+00:00:01.766 --> 00:00:04.867
+no nome de David Gustafsson.
+
+00:00:04.900 --> 00:00:07.067
+David está escrito "Dsvid".
+
+00:00:07.100 --> 00:00:10.533
+Como se vê na coluna "contato",
+o e-mail dele começa com "david",
+
+00:00:10.566 --> 00:00:12.333
+então foi erro de digitação.
+
+00:00:12.366 --> 00:00:15.700
+Como pode ter acontecido?
+Deve ser erro de inserção.
+
+00:00:15.733 --> 00:00:17.400
+E por que é importante
+corrigir isto?
+
+00:00:17.433 --> 00:00:21.300
+Se você for entrar em contato
+com a pessoa e errar o nome dela,
+
+00:00:21.333 --> 00:00:23.933
+não será muito legal
+para o David.
+
+00:00:23.966 --> 00:00:26.467
+Isso se você escolher
+e-mails automatizados
+
+00:00:26.500 --> 00:00:29.300
+e copiar o nome
+direto da tabela.
+
+00:00:29.333 --> 00:00:31.067
+Vamos documentar.
+
+00:00:31.100 --> 00:00:33.700
+Essas tabelas "tratamentos"
+e "pacientes" estão crescendo.
+
+00:00:33.733 --> 00:00:35.933
+Vamos criar dois subcabeçalhos.
+
+00:00:35.966 --> 00:00:38.867
+Este modelo de preparação
+pode ser feito ao seu gosto.
+
+00:00:38.900 --> 00:00:40.733
+Não é um documento rígido.
+
+00:00:40.766 --> 00:00:42.700
+Ajuste-o conforme
+sua preferência.
+
+00:00:51.933 --> 00:00:54.900
+O problema seguinte
+é na tabela "tratamentos",
+
+00:00:54.933 --> 00:00:57.700
+mais especificamente nas colunas
+"Auralin" e "Novodra".
+
+00:00:57.733 --> 00:00:59.300
+Existem diversos problemas,
+
+00:00:59.333 --> 00:01:01.300
+mas vamos nos concentrar
+neste por enquanto.
+
+00:01:01.333 --> 00:01:04.100
+O fato de as dosagens
+estarem notadas
+
+00:01:04.133 --> 00:01:06.267
+na forma "dígito-dígito-u".
+
+00:01:06.300 --> 00:01:08.133
+Para a primeira pessoa
+da tabela,
+
+00:01:08.166 --> 00:01:10.600
+a dose inicial de Auralin
+foi de 41 unidades
+
+00:01:10.633 --> 00:01:12.700
+e a final, 48 unidades.
+
+00:01:12.733 --> 00:01:14.600
+Isso deveria estar
+em colunas diferentes,
+
+00:01:14.633 --> 00:01:16.133
+mas resolvemos depois.
+
+00:01:16.166 --> 00:01:19.333
+O fato de ter uma letra "U"
+grudada no final
+
+00:01:19.366 --> 00:01:21.900
+significa que o Pandas
+não interpretaria a variável
+
+00:01:21.933 --> 00:01:24.133
+como um float ou um inteiro,
+
+00:01:24.166 --> 00:01:26.200
+o que é necessário
+para cálculos.
+
+00:01:26.233 --> 00:01:27.500
+Como tem a letra "U",
+
+00:01:27.533 --> 00:01:30.700
+o Pandas leria o dado
+como um objeto,
+
+00:01:30.733 --> 00:01:32.500
+basicamente uma string Pandas.
+
+00:01:32.533 --> 00:01:34.133
+Não poderíamos
+fazer cálculos
+
+00:01:34.166 --> 00:01:36.333
+usando as doses inicial
+e final de cada droga.
+
+00:01:36.366 --> 00:01:39.700
+É um problemão.
+Como pode ter acontecido?
+
+00:01:39.733 --> 00:01:41.333
+Às vezes,
+é só falta de planejamento
+
+00:01:41.366 --> 00:01:43.267
+da pessoa que registra
+as informações
+
+00:01:43.300 --> 00:01:45.300
+do resultado do teste clínico.
+
+00:01:45.333 --> 00:01:47.133
+E se o responsável
+pelo registro
+
+00:01:47.166 --> 00:01:48.900
+tiver usado
+uma folha de papel?
+
+00:01:48.933 --> 00:01:52.400
+Talvez não soubesse
+que os dados seriam digitalizados
+
+00:01:52.433 --> 00:01:54.900
+usando algo como OCR,
+
+00:01:54.933 --> 00:01:58.200
+que identificaria o "U"
+e esses traços
+
+00:01:58.233 --> 00:02:00.700
+em vez dos números inteiros,
+como desejávamos.
+
+00:02:00.733 --> 00:02:03.700
+Vamos documentar isso.
+É uma correção importante.
+
+00:02:09.800 --> 00:02:11.800
+Esta é uma observação possível.
+
+00:02:13.400 --> 00:02:15.900
+Certo, voltando
+à tabela "tratamentos".
+
+00:02:15.933 --> 00:02:18.267
+Outro problema
+é que nome e sobrenome
+
+00:02:18.300 --> 00:02:20.533
+na tabela "tratamentos"
+estão em caixa-baixa.
+
+00:02:20.566 --> 00:02:23.000
+O mesmo serve para a tabela
+"reações adversas".
+
+00:02:23.033 --> 00:02:25.100
+Isso é um problema
+porque a tabela "pacientes"
+
+00:02:25.133 --> 00:02:27.667
+não está em caixa-baixa.
+Você terá dificuldades
+
+00:02:27.700 --> 00:02:29.800
+se quiser juntar
+as tabelas mais tarde,
+
+00:02:29.833 --> 00:02:32.533
+o que, já adianto,
+provavelmente faremos.
+
+00:02:32.566 --> 00:02:36.200
+É outro erro de gravação
+ou preenchimento.
+
+00:02:36.233 --> 00:02:38.200
+Vou documentar
+com observações,
+
+00:02:38.233 --> 00:02:40.800
+uma para cada tabela.
+
+00:02:48.000 --> 00:02:49.067
+Para o último problema,
+
+00:02:49.100 --> 00:02:51.467
+vamos para o fim da tabela
+"tratamentos".
+
+00:02:51.500 --> 00:02:55.333
+Há 280 linhas.
+A última com dados é a 279,
+
+00:02:55.366 --> 00:02:57.700
+pois é um frame de dados
+com índice zero.
+
+00:02:57.733 --> 00:02:59.267
+Se formos lembrar,
+
+00:02:59.300 --> 00:03:03.100
+cada braço do tratamento
+continha 175 pacientes.
+
+00:03:03.133 --> 00:03:08.267
+Eram 175 do Auralin
+e 175 do Novodra.
+
+00:03:08.300 --> 00:03:10.400
+Então parecem estar
+faltando dados aqui.
+
+00:03:10.433 --> 00:03:12.867
+Saber onde estão
+é outra história.
+
+00:03:12.900 --> 00:03:14.267
+Faremos isso depois.
+
+00:03:14.300 --> 00:03:16.700
+Por ora, vamos documentar tudo
+com uma observação.
+
+00:03:22.900 --> 00:03:26.267
+Deveríamos ter 350 no total.
+Dois grupos de 175.
+

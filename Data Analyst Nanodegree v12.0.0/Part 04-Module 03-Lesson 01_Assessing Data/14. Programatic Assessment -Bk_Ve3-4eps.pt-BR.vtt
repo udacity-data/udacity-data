@@ -1,0 +1,140 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.156 --> 00:00:01.810
+Vimos a avaliação visual,
+
+00:00:01.843 --> 00:00:04.243
+agora veremos
+a avaliação programática.
+
+00:00:04.276 --> 00:00:06.193
+Utilizaremos códigos
+para fazer tudo
+
+00:00:06.226 --> 00:00:08.553
+menos procurar nos dados
+na totalidade,
+
+00:00:08.586 --> 00:00:10.674
+sendo que totalidade
+é a palavra-chave.
+
+00:00:10.707 --> 00:00:12.538
+Mais tecnicamente,
+nos Pandas,
+
+00:00:12.571 --> 00:00:14.387
+utilizamos funções e métodos
+
+00:00:14.420 --> 00:00:17.745
+para revelar algo sobre a qualidade
+e a arrumação dos dados.
+
+00:00:17.778 --> 00:00:20.986
+Muitas funções e métodos
+do Pandas podem ser úteis.
+
+00:00:21.019 --> 00:00:22.810
+Por exemplo, .info,
+
+00:00:22.843 --> 00:00:25.369
+que pode criar gráficos,
+às vezes.
+
+00:00:25.402 --> 00:00:28.170
+Como a avaliação programática
+é mais bem utilizada?
+
+00:00:28.203 --> 00:00:31.715
+Às vezes a avaliação é motivada
+pelo problema que se quer resolver.
+
+00:00:31.748 --> 00:00:33.934
+Conferimos os valores
+nas colunas e linhas
+
+00:00:33.967 --> 00:00:35.547
+que planejamos utilizar,
+
+00:00:35.580 --> 00:00:39.362
+como em hbA1c_change na tabela
+de tratamentos, por exemplo.
+
+00:00:39.395 --> 00:00:42.375
+Esta é a métrica chave
+para determinar se a insulina oral
+
+00:00:42.408 --> 00:00:43.878
+Oralin é eficaz.
+
+00:00:43.911 --> 00:00:49.027
+Utilizando .info vemos
+as entradas em hbA1c_change.
+
+00:00:49.060 --> 00:00:52.465
+As outras linhas possuem 280,
+enquanto esta tem 171.
+
+00:00:52.498 --> 00:00:55.143
+A avaliação orientada
+por problemas pode ser eficaz
+
+00:00:55.176 --> 00:00:56.924
+visualmente
+e programaticamente.
+
+00:00:56.957 --> 00:01:00.011
+Avaliações programáticas
+não dirigidas podem ser úteis.
+
+00:01:00.044 --> 00:01:02.545
+Digitamos avaliação
+programática aleatoriamente,
+
+00:01:02.578 --> 00:01:07.222
+sem nenhum objetivo,
+como em hbA1c_change.
+
+00:01:07.255 --> 00:01:10.894
+Um método útil no Pandas
+é o sample em estrutura de dados.
+
+00:01:10.927 --> 00:01:14.709
+Ele exibe uma amostra aleatória,
+aqui igual a uma,
+
+00:01:14.742 --> 00:01:16.633
+mas podemos obter
+qualquer quantia,
+
+00:01:16.666 --> 00:01:17.896
+como estas cinco aqui.
+
+00:01:17.929 --> 00:01:19.530
+A avaliação programática
+
+00:01:19.563 --> 00:01:22.072
+nos dá uma ideia
+sobre o que precisamos limpar.
+
+00:01:22.105 --> 00:01:25.682
+Após ter a ideia, podemos utilizar
+mas avaliações dirigidas,
+
+00:01:25.715 --> 00:01:27.310
+sejam visuais
+ou programáticas.
+
+00:01:27.343 --> 00:01:29.594
+Estas são algumas
+avaliações programáticas,
+
+00:01:29.627 --> 00:01:32.647
+e muitas funções e métodos
+do Pandas podem ser úteis.
+
+00:01:32.680 --> 00:01:34.696
+Abaixo estão os mais comuns.
+

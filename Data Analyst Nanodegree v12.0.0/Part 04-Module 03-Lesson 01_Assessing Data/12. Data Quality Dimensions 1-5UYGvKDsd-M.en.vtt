@@ -1,0 +1,277 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.765
+Every dirty dataset is dirty in its own unique way.
+
+00:00:03.765 --> 00:00:09.675
+Trying to list every specific quality issue here in this lesson is, therefore futile.
+
+00:00:09.675 --> 00:00:11.460
+But we can categorize them.
+
+00:00:11.460 --> 00:00:15.795
+These categories of data quality are called data quality dimensions.
+
+00:00:15.795 --> 00:00:20.895
+But there's little agreement among researchers as to what these dimensions actually are,
+
+00:00:20.895 --> 00:00:23.285
+or even if they should be called dimensions.
+
+00:00:23.285 --> 00:00:25.920
+For example, this source has six dimensions.
+
+00:00:25.920 --> 00:00:27.870
+This source calls them data validity
+
+00:00:27.870 --> 00:00:31.620
+rules and actually has some different terms compared to the first source.
+
+00:00:31.620 --> 00:00:35.375
+This source calls them data quality aspects and lists eight.
+
+00:00:35.375 --> 00:00:38.645
+And this source says there are seven dimensions.
+
+00:00:38.645 --> 00:00:41.990
+So some sources list more, others less.
+
+00:00:41.990 --> 00:00:43.250
+Some call them aspects,
+
+00:00:43.250 --> 00:00:46.190
+metrics, rules, measures, dimensions.
+
+00:00:46.190 --> 00:00:48.345
+There's no real solid standard.
+
+00:00:48.345 --> 00:00:51.910
+Everyone does seem to agree on these next four though.
+
+00:00:51.910 --> 00:00:55.205
+And the vast majority of data quality issues that I've come across,
+
+00:00:55.205 --> 00:00:58.760
+can be sorted into these four buckets: completeness,
+
+00:00:58.760 --> 00:01:01.520
+validity, accuracy, and consistency.
+
+00:01:01.520 --> 00:01:05.120
+These dimensions can help guide your thoughts when assessing your data.
+
+00:01:05.120 --> 00:01:09.619
+These are listed in decreasing order of severity which will make sense shortly.
+
+00:01:09.619 --> 00:01:11.075
+So completeness.
+
+00:01:11.075 --> 00:01:13.605
+Do we have all of the records that we should?
+
+00:01:13.605 --> 00:01:15.350
+Do we have missing records or not?
+
+00:01:15.350 --> 00:01:16.460
+Are there specific rows,
+
+00:01:16.460 --> 00:01:18.455
+columns, or cells missing?
+
+00:01:18.455 --> 00:01:23.840
+An example of this in our dataset for this lesson is the missing hba1c change variable,
+
+00:01:23.840 --> 00:01:25.670
+represented by NaN's here.
+
+00:01:25.670 --> 00:01:27.880
+Next, validity.
+
+00:01:27.880 --> 00:01:30.720
+We have the records but they are not valid.
+
+00:01:30.720 --> 00:01:34.980
+More technically, it doesn't conform to a defined schema.
+
+00:01:34.980 --> 00:01:38.705
+First of all, a schema is basically a defined set of rules for data.
+
+00:01:38.705 --> 00:01:42.024
+This schema can be enforced by real world constraints,
+
+00:01:42.024 --> 00:01:44.010
+like you can't have negative height.
+
+00:01:44.010 --> 00:01:47.270
+You can't be negative 66 inches tall for example.
+
+00:01:47.270 --> 00:01:49.730
+These individuals aren't in this dataset, but just imagine.
+
+00:01:49.730 --> 00:01:54.735
+But this schema can also be a specific schema just for your table or database.
+
+00:01:54.735 --> 00:01:57.575
+A good example of this is a primary key in a database,
+
+00:01:57.575 --> 00:01:59.703
+or unique key constraints in tables.
+
+00:01:59.703 --> 00:02:03.925
+In this dataset, that means there can't be duplicate patient IDs.
+
+00:02:03.925 --> 00:02:06.560
+If systems are good, they aren't always though,
+
+00:02:06.560 --> 00:02:09.120
+invalid record creation will be denied.
+
+00:02:09.120 --> 00:02:10.480
+For example, in this dataset,
+
+00:02:10.480 --> 00:02:13.640
+if you try to create another patient with the patient ID of one,
+
+00:02:13.640 --> 00:02:16.025
+you'd be denied, ideally at least.
+
+00:02:16.025 --> 00:02:20.689
+Another example in this dataset of invalid data is our zip code data here.
+
+00:02:20.689 --> 00:02:24.890
+This is invalidated because zip codes must be five digits in an integer.
+
+00:02:24.890 --> 00:02:29.440
+Whereas this one is actually a float and sometimes four digits.
+
+00:02:29.440 --> 00:02:30.965
+Now, accuracy.
+
+00:02:30.965 --> 00:02:34.940
+Inaccurate data is wrong data that is valid.
+
+00:02:34.940 --> 00:02:38.825
+It adheres to the defined schema, but it's still incorrect.
+
+00:02:38.825 --> 00:02:42.110
+This data doesn't conform to a gold standard, if you will.
+
+00:02:42.110 --> 00:02:44.855
+For example, looking at weight in this table.
+
+00:02:44.855 --> 00:02:48.440
+Imagine at the scale that each patient was measured on was slightly
+
+00:02:48.440 --> 00:02:52.610
+faulty and overestimated each patient's weight by five pounds.
+
+00:02:52.610 --> 00:02:55.595
+The weight's slightly off, but still valid.
+
+00:02:55.595 --> 00:02:58.160
+Inaccuracy issue that we already identified was
+
+00:02:58.160 --> 00:03:01.745
+the height entry for this patient being 27 inches.
+
+00:03:01.745 --> 00:03:04.640
+27 inches is technically still valid.
+
+00:03:04.640 --> 00:03:08.090
+It's possible for an adult human to be 27 inches tall.
+
+00:03:08.090 --> 00:03:11.660
+The shortest adult ever measured 21 inches approximately.
+
+00:03:11.660 --> 00:03:13.370
+And since the inclusion criteria for
+
+00:03:13.370 --> 00:03:16.745
+this clinical trial required patients to be at least 18 years old,
+
+00:03:16.745 --> 00:03:19.969
+we can ignore the possibility of this being a child's height.
+
+00:03:19.969 --> 00:03:22.805
+So again, 27 inches is possible, but it's unlikely.
+
+00:03:22.805 --> 00:03:24.890
+And we already know that the correct height is actually
+
+00:03:24.890 --> 00:03:27.620
+72 inches and that these digits were switched around.
+
+00:03:27.620 --> 00:03:29.620
+So this is an accurate data.
+
+00:03:29.620 --> 00:03:31.820
+And finally, consistency.
+
+00:03:31.820 --> 00:03:35.265
+Inconsistent data is both valid and accurate.
+
+00:03:35.265 --> 00:03:38.465
+But there are multiple correct ways of referring to the same thing.
+
+00:03:38.465 --> 00:03:40.880
+We want consistency in fields that represent
+
+00:03:40.880 --> 00:03:44.270
+the same data across tables or within tables.
+
+00:03:44.270 --> 00:03:47.100
+We're looking for a standard format basically.
+
+00:03:47.100 --> 00:03:50.945
+In this dataset, we've identified inconsistent representations of state,
+
+00:03:50.945 --> 00:03:53.440
+full state name versus abbreviation.
+
+00:03:53.440 --> 00:03:56.345
+For example, California and CA,
+
+00:03:56.345 --> 00:03:58.550
+or New York and NY.
+
+00:03:58.550 --> 00:04:00.195
+That's inconsistent.
+
+00:04:00.195 --> 00:04:04.175
+This inconsistency means we can't analyze our dataset based on state.
+
+00:04:04.175 --> 00:04:06.230
+At least until we clean this issue.
+
+00:04:06.230 --> 00:04:09.285
+So those are the four main dimensions of data quality.
+
+00:04:09.285 --> 00:04:12.605
+Again, the order of these here is in decreasing order of severity.
+
+00:04:12.605 --> 00:04:15.440
+Completeness issues means we don't have the data.
+
+00:04:15.440 --> 00:04:16.580
+Valid data exist but,
+
+00:04:16.580 --> 00:04:18.095
+it doesn't adhere to a schema.
+
+00:04:18.095 --> 00:04:21.178
+Inaccurate data is present invalid but incorrect.
+
+00:04:21.178 --> 00:04:23.855
+And inconsistent data is present valid and accurate,
+
+00:04:23.855 --> 00:04:26.030
+but it has multiple representations.
+
+00:04:26.030 --> 00:04:27.860
+Again, you can use these dimensions to help
+
+00:04:27.860 --> 00:04:31.230
+guide your thought process when assessing your data.
+

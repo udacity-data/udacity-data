@@ -1,0 +1,634 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.125 --> 00:00:03.434
+Utilizaremos avaliação programática
+para questões de qualidade.
+
+00:00:03.467 --> 00:00:06.192
+Após entender os dados
+por meio da avaliação visual,
+
+00:00:06.225 --> 00:00:11.061
+gosto de utilizar o método .info
+em toda estrutura de dados,
+
+00:00:11.094 --> 00:00:13.718
+a menos que eu busque
+algo específico.
+
+00:00:13.751 --> 00:00:18.958
+Então .info na tabela de pacientes,
+tratamentos e reações adversas.
+
+00:00:19.743 --> 00:00:22.509
+Aqui está a página
+para o método .info.
+
+00:00:22.542 --> 00:00:25.228
+Ele retorna um sumário
+de cada estrutura de dados.
+
+00:00:25.261 --> 00:00:28.014
+Temos a quantidade
+de entradas e colunas,
+
+00:00:28.047 --> 00:00:30.324
+503 e 14 respectivamente.
+
+00:00:30.357 --> 00:00:32.710
+Também temos os tipos
+de dados de cada coluna
+
+00:00:32.743 --> 00:00:35.443
+e a memória utilizada
+para a estrutura de dados.
+
+00:00:35.476 --> 00:00:38.102
+Duas questões de qualidade
+são reveladas
+
+00:00:38.135 --> 00:00:40.219
+ao observar
+o sumário do paciente.
+
+00:00:40.252 --> 00:00:43.547
+Cada coluna, exceto a de endereço,
+na coluna de contato,
+
+00:00:43.580 --> 00:00:45.651
+tem 503 entradas,
+
+00:00:45.684 --> 00:00:49.580
+enquanto endereço, cidade,
+estado, CEP, país e contato
+
+00:00:49.613 --> 00:00:51.266
+tem 491.
+
+00:00:51.299 --> 00:00:53.915
+Isso sugere a falta
+de dados,
+
+00:00:53.948 --> 00:00:56.819
+que podemos aprimorar
+com este código.
+
+00:00:56.852 --> 00:01:00.518
+O ['address'].isnull do paciente
+retorna uma array booleana
+
+00:01:00.551 --> 00:01:03.678
+do mesmo tamanho
+da estrutura de dados, 503,
+
+00:01:03.711 --> 00:01:06.730
+informando verdadeiro ou falso
+se a linha for nula
+
+00:01:06.763 --> 00:01:09.002
+na coluna de endereço.
+
+00:01:09.035 --> 00:01:12.361
+Por meio da indexação booleana,
+isso retorna toda linha nula
+
+00:01:12.394 --> 00:01:14.465
+dessas colunas.
+
+00:01:14.498 --> 00:01:18.616
+Os NaNs ficam evidentes aqui,
+ou seja, os valores que faltam.
+
+00:01:18.649 --> 00:01:20.761
+Isso é uma questão
+de completude.
+
+00:01:20.794 --> 00:01:24.239
+Como isso pode ter acontecido?
+Pode ter sido um erro de entrada,
+
+00:01:24.272 --> 00:01:27.144
+e a pessoa que deveria
+preencher as informações
+
+00:01:27.177 --> 00:01:31.135
+se esqueceu das informações
+demográficas dos pacientes.
+
+00:01:31.168 --> 00:01:34.927
+Ou pode ter sido um erro corrompido
+do banco de dados,
+
+00:01:34.960 --> 00:01:37.362
+algum tipo de erro
+de transferência de arquivo
+
+00:01:37.395 --> 00:01:40.431
+que renderizou as entradas
+como nulas.
+
+00:01:40.464 --> 00:01:42.539
+Isso pode acontecer
+por vários motivos,
+
+00:01:42.572 --> 00:01:45.690
+mas o importante é que não temos
+as informações necessárias,
+
+00:01:45.723 --> 00:01:47.961
+especialmente para
+contatar os pacientes
+
+00:01:47.994 --> 00:01:51.074
+com boas ou más notícias.
+
+00:01:51.107 --> 00:01:54.562
+Precisamos limpar isso.
+Não sei se isso é possível agora,
+
+00:01:54.595 --> 00:01:56.874
+mas falaremos sobre isso
+na quarta aula.
+
+00:01:56.907 --> 00:01:58.898
+Mas vamos documentar isso.
+
+00:01:59.628 --> 00:02:03.186
+Existe outra questão de qualidade
+evidenciada pelo método .info,
+
+00:02:03.219 --> 00:02:05.298
+e ela está ligada
+aos tipos de dados.
+
+00:02:05.331 --> 00:02:08.738
+Vejamos os tipos de dados
+para ver se são apropriados.
+
+00:02:08.771 --> 00:02:11.522
+O ID do paciente
+é um número inteiro. Apropriado.
+
+00:02:11.555 --> 00:02:14.714
+As próximas seis colunas
+são do tipo objeto.
+
+00:02:14.747 --> 00:02:18.700
+É assim que o Pandas representa
+as strings, em forma de texto.
+
+00:02:18.733 --> 00:02:22.050
+O gênero atribuído aos dados
+é como masculino ou feminino.
+
+00:02:22.083 --> 00:02:25.810
+Isso é mais bem representado
+como tipo categórico.
+
+00:02:25.843 --> 00:02:29.308
+Ele se chama category
+no Pandas.
+
+00:02:29.341 --> 00:02:34.254
+O nome, o sobrenome, o endereço
+e a cidade são objetos,
+
+00:02:34.287 --> 00:02:37.614
+mas o estado é, na verdade,
+um tipo categórico.
+
+00:02:37.647 --> 00:02:42.574
+Vamos para a coluna do CEP,
+identificada como problemática.
+
+00:02:42.607 --> 00:02:45.531
+Ela é um decimal no momento.
+Isso é um membro inválido,
+
+00:02:45.564 --> 00:02:49.937
+pois CEPs devem ser strings,
+e não decimais ou inteiros,
+
+00:02:49.970 --> 00:02:52.683
+pois não realizaremos cálculos
+com os CEPs,
+
+00:02:52.716 --> 00:02:54.594
+não os multiplicaremos,
+por exemplo.
+
+00:02:54.627 --> 00:02:58.629
+Podemos deixar o país como objeto,
+e o contato também,
+
+00:02:58.662 --> 00:03:01.036
+mas a coluna de contato
+está com problemas,
+
+00:03:01.069 --> 00:03:03.584
+com duas variáveis na coluna,
+telefone e e-mail,
+
+00:03:03.617 --> 00:03:06.393
+mas eles são
+variáveis de objeto,
+
+00:03:06.426 --> 00:03:08.437
+e esse tipo
+de dado funciona.
+
+00:03:08.470 --> 00:03:10.490
+A data de aniversário
+está como objeto.
+
+00:03:10.523 --> 00:03:13.293
+e deveria ser do tipo
+de dada e tempo.
+
+00:03:13.326 --> 00:03:16.340
+Podemos ter o peso como decimal
+e a altura com inteiro.
+
+00:03:16.373 --> 00:03:19.116
+A altura pode se aproximar
+do inteiro mais próximo,
+
+00:03:19.149 --> 00:03:21.660
+e podemos ter o IMC
+como decimal também.
+
+00:03:21.693 --> 00:03:24.269
+Existem quatro tipos de dados
+errôneos aqui:
+
+00:03:24.302 --> 00:03:27.812
+gênero, estado, CEP
+e data de nascimento.
+
+00:03:27.845 --> 00:03:30.341
+Por que é importante
+alterar o tipo de dados?
+
+00:03:30.374 --> 00:03:34.019
+O motivo principal, no Pandas,
+é porque há cálculos especiais
+
+00:03:34.052 --> 00:03:36.997
+e sumários com esses tipos
+de dados categóricos,
+
+00:03:37.030 --> 00:03:39.949
+numéricos e até
+de data e tempo.
+
+00:03:39.982 --> 00:03:43.526
+Se a categorização for errada,
+não haverá cálculo nem sumário.
+
+00:03:43.559 --> 00:03:47.647
+Por exemplo, a data de aniversário
+precisa ser do tipo data e tempo.
+
+00:03:47.680 --> 00:03:50.250
+Se ela for objeto
+em vez de data e tempo,
+
+00:03:50.283 --> 00:03:54.195
+não utilizaremos as funcionalidades
+de data e tempo do Pandas.
+
+00:03:54.228 --> 00:03:57.776
+Existem muitas, mas as mais simples
+seriam para calcular
+
+00:03:57.809 --> 00:04:00.680
+a idade a partir
+de uma data, por exemplo.
+
+00:04:00.713 --> 00:04:03.768
+Esses erros de tipo de dados
+são problemas de validação,
+
+00:04:03.801 --> 00:04:07.736
+eles não estão em conformidade
+com o esquema definido da tabela.
+
+00:04:07.769 --> 00:04:10.464
+Existem mais dois
+na tabela de tratamentos.
+
+00:04:10.497 --> 00:04:14.640
+As colunas Auralin e Novadra
+informam as doses iniciais e finais,
+
+00:04:14.673 --> 00:04:17.344
+então elas precisam ser
+números inteiros,
+
+00:04:17.377 --> 00:04:20.404
+mas falaremos disso depois.
+Vamos documentar as questões.
+
+00:04:28.445 --> 00:04:31.235
+Se formos até a avaliação visual
+que realizamos,
+
+00:04:31.268 --> 00:04:34.099
+vemos claramente algumas questões
+de tipos de dados,
+
+00:04:34.132 --> 00:04:35.763
+como o do CEP, por exemplo,
+
+00:04:35.796 --> 00:04:38.052
+que é um decimal,
+e deveria ser uma string,
+
+00:04:38.085 --> 00:04:39.932
+mas os outros
+não são tão claros.
+
+00:04:39.965 --> 00:04:43.203
+Não está claro que isso não é
+um tipo de data e tempo.
+
+00:04:43.236 --> 00:04:46.535
+O mesmo ocorre com o gênero,
+em termos de ser categórico.
+
+00:04:46.568 --> 00:04:49.651
+Esta é uma área na qual
+a avaliação programática é vital.
+
+00:04:49.684 --> 00:04:52.244
+Como esses tipos de dados errôneos
+acontecem?
+
+00:04:52.277 --> 00:04:55.572
+Basicamente, o programa
+não reconhece bem os tipos de dados.
+
+00:04:55.605 --> 00:05:00.603
+Se os dados do conjunto de dados
+foram gravados em uma planilha
+
+00:05:00.636 --> 00:05:04.343
+e exportados do aplicativo
+e importados no Pandas,
+
+00:05:04.376 --> 00:05:06.638
+é aí que alguns erros
+podem surgir.
+
+00:05:06.671 --> 00:05:09.055
+Esta é a tabela de pacientes
+no Google Sheets.
+
+00:05:09.088 --> 00:05:13.614
+A coluna de CEP funciona bem aqui,
+em termos de decimais ou inteiros.
+
+00:05:13.647 --> 00:05:15.214
+Não há decimais aqui.
+
+00:05:15.247 --> 00:05:17.986
+Mas o Pandas captou isso
+como um decimal.
+
+00:05:18.019 --> 00:05:21.354
+Ao importar dados no Pandas,
+atente para os tipos de dados,
+
+00:05:21.387 --> 00:05:23.567
+eles geralmente
+não estão corretos.
+
+00:05:23.600 --> 00:05:26.958
+Outra avaliação programática
+útil é o .describe,
+
+00:05:26.991 --> 00:05:29.678
+que geralmente faço
+logo após o método .info.
+
+00:05:29.711 --> 00:05:34.071
+Ele gera a estatística descritiva
+para os tipos de dados numéricos.
+
+00:05:34.104 --> 00:05:36.809
+Temos alguns deles
+na de pacientes e de tratamentos.
+
+00:05:36.842 --> 00:05:40.239
+Temos a contagem, a média,
+o desvio padrão, o mínimo,
+
+00:05:40.272 --> 00:05:44.646
+as porções, 25%, 50% e 75%
+e o valor máximo.
+
+00:05:44.679 --> 00:05:48.361
+Essas estatísticas são úteis
+para o paciente e para o CEP.
+
+00:05:48.394 --> 00:05:51.465
+O CEP não deveria
+ser um tipo de dado numérico.
+
+00:05:51.498 --> 00:05:54.678
+E o ID do paciente
+deveria ser uma string
+
+00:05:54.711 --> 00:05:57.386
+em vez de um número inteiro,
+mas isso é discutível.
+
+00:05:57.419 --> 00:05:59.593
+Isso é útil para peso,
+altura e IMC.
+
+00:05:59.626 --> 00:06:02.697
+Vejamos a descrição da saída
+para a tabela de tratamentos,
+
+00:06:02.730 --> 00:06:07.112
+hba1c_start, hba1c_end
+e hba1c_chance.
+
+00:06:07.145 --> 00:06:10.520
+Essa métrica determina
+a eficácia da insulina,
+
+00:06:10.553 --> 00:06:12.488
+no controle
+do açúcar no sangue,
+
+00:06:12.521 --> 00:06:14.408
+no hba1c_change
+especificamente,
+
+00:06:14.441 --> 00:06:16.760
+sendo que o sucesso
+se aproximaria do 0,4.
+
+00:06:16.793 --> 00:06:22.056
+Temos 0,9. Isso requer conhecimento
+de domínio, mas 0,9 é muita coisa.
+
+00:06:22.089 --> 00:06:25.067
+Essa é uma grande mudança
+e, de alguma forma, improvável,
+
+00:06:25.100 --> 00:06:29.049
+especialmente porque os 75%
+estariam em 0,92.
+
+00:06:29.082 --> 00:06:31.242
+Isso sugere uma inclinação
+muito grande.
+
+00:06:31.275 --> 00:06:34.915
+A diferença entre 25 e 50
+é de somente 0,04,
+
+00:06:34.948 --> 00:06:39.178
+enquanto é de quase 0,6
+entre 50 e 75.
+
+00:06:39.211 --> 00:06:41.858
+Se acessarmos a avaliação visual
+da tabela,
+
+00:06:41.891 --> 00:06:44.586
+veremos que o hba1c_change,
+
+00:06:44.619 --> 00:06:47.170
+para a entrada 0,97
+de Elliot Richardson,
+
+00:06:47.203 --> 00:06:49.402
+foi simplesmente
+calculado errado.
+
+00:06:49.435 --> 00:06:53.170
+7,56 menos 7,09
+não é igual a 0,97.
+
+00:06:53.203 --> 00:06:55.107
+Na verdade é 0,47.
+
+00:06:55.140 --> 00:06:57.162
+Esse é um problema
+de imprecisão.
+
+00:06:57.195 --> 00:07:02.339
+Como isso pode ter acontecido?
+Acredito que o profissional
+
+00:07:02.372 --> 00:07:05.542
+que registrou o hba1c_change
+
+00:07:05.575 --> 00:07:08.518
+trocou o número quatro
+pelo nove.
+
+00:07:08.551 --> 00:07:12.015
+Médicos costumam
+ter uma caligrafia ruim.
+
+00:07:12.048 --> 00:07:15.285
+Esse é um problema bobo,
+mas acontece às vezes,
+
+00:07:15.318 --> 00:07:18.351
+especialmente se usaram programas
+de reconhecimento óptico
+
+00:07:18.384 --> 00:07:21.464
+para transferir os registros
+em papéis para os eletrônicos.
+
+00:07:21.497 --> 00:07:24.399
+Essa limpeza é muito importante,
+porque hba1c_change
+
+00:07:24.432 --> 00:07:27.463
+é a métrica chave
+para o ensaio clínico.
+
+00:07:27.496 --> 00:07:30.447
+O sucesso ou fracasso
+da insulina oral
+
+00:07:30.480 --> 00:07:32.647
+depende dessa variável.
+
+00:07:32.680 --> 00:07:35.032
+Vamos documentar isso.
+
+00:07:43.598 --> 00:07:46.915
+Vejamos outra questão de qualidade
+com a avaliação programática.
+
+00:07:46.948 --> 00:07:50.114
+Um método que gosto de utilizar
+é o .sample.
+
+00:07:50.147 --> 00:07:54.354
+Ele retorna uma amostra aleatória
+de cinco registros da tabela.
+
+00:07:54.387 --> 00:07:57.609
+Se inspecionarmos a coluna
+de contatos bagunçada,
+
+00:07:57.642 --> 00:07:59.457
+com número de telefone
+e e-mail,
+
+00:07:59.490 --> 00:08:02.306
+há múltiplas representações
+para o número de telefone.
+
+00:08:02.339 --> 00:08:04.418
+Este tem três dígitos,
+o código de área,
+
+00:08:04.451 --> 00:08:07.426
+um traço, três dígitos,
+outro traço, mais quatro dígitos.
+
+00:08:07.459 --> 00:08:11.966
+Já este tem o código do país,
+um espaço, o código de área,
+
+00:08:11.999 --> 00:08:15.485
+outro espaço, três dígitos,
+outro espaço e quatro dígitos.
+
+00:08:15.518 --> 00:08:17.770
+Esse erro de entrada
+é quase que garantido,
+
+00:08:17.803 --> 00:08:19.623
+e não é tão importante
+limpá-lo,
+
+00:08:19.656 --> 00:08:22.223
+mas alguém pode pesquisar
+neste conjunto de dados
+
+00:08:22.256 --> 00:08:26.344
+sem conhecer o código do país,
+e isso economizará na busca.
+
+00:08:26.377 --> 00:08:30.999
+Vamos limpar isso, e facilitaremos
+as coisas documentando.
+
+00:08:31.032 --> 00:08:33.273
+Essa é também
+uma questão de consistência.
+

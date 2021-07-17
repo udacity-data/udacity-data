@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:03.604
+Há dois tipos ou estilos
+de avaliação de dados.
+
+00:00:03.637 --> 00:00:07.441
+Você pode avaliar visualmente
+ou com a ajuda de programas.
+
+00:00:07.474 --> 00:00:09.309
+Avaliação visual
+é abrir os dados
+
+00:00:09.343 --> 00:00:11.445
+e olhá-los de cabo a rabo.
+
+00:00:11.478 --> 00:00:15.215
+No Pandas, em um editor de textos
+ou em um programa de planilhas.
+
+00:00:15.249 --> 00:00:19.086
+É assim que é no Pandas
+ao abrir o arquivo "animals.csv",
+
+00:00:19.119 --> 00:00:20.554
+que tem três colunas:
+
+00:00:20.587 --> 00:00:24.057
+animal, massa corporal em quilos
+e massa cerebral em gramas.
+
+00:00:24.091 --> 00:00:25.659
+Esse conjunto é pequeno,
+
+00:00:25.692 --> 00:00:29.463
+mas, para conjuntos maiores,
+o Pandas oculta linhas e colunas.
+
+00:00:29.496 --> 00:00:31.798
+Nesses casos, é melhor fazer
+avaliação visual
+
+00:00:31.831 --> 00:00:34.101
+em algo como o Google Sheets.
+
+00:00:34.935 --> 00:00:37.504
+A avaliação programática,
+como sugere o nome,
+
+00:00:37.538 --> 00:00:38.906
+é tudo que usa código
+
+00:00:38.939 --> 00:00:41.408
+para ver partes específicas
+dos dados,
+
+00:00:41.441 --> 00:00:44.511
+como usar funções ou métodos
+para resumir os dados.
+
+00:00:44.545 --> 00:00:46.813
+Este método ".info",
+por exemplo.
+
+00:00:46.847 --> 00:00:48.415
+Dá até para projetar gráficos,
+
+00:00:48.448 --> 00:00:51.351
+mas não se costuma fazê-lo
+durante a preparação.
+
+00:00:51.385 --> 00:00:54.655
+Isso é mais comum
+na fase de análise exploratória,
+
+00:00:54.688 --> 00:00:56.056
+de que falaremos adiante.
+
+00:00:56.089 --> 00:00:58.392
+Seja qual for o tipo
+de avaliação escolhido,
+
+00:00:58.425 --> 00:01:01.295
+o processo pode ser dividido
+em duas etapas:
+
+00:01:01.328 --> 00:01:04.298
+detecção de problema
+e documentação de problema.
+
+00:01:04.331 --> 00:01:06.900
+Esse processo se aplica
+tanto na avaliação visual
+
+00:01:06.934 --> 00:01:10.204
+quanto na programática,
+nos dois tipos de avaliação.
+
+00:01:10.237 --> 00:01:14.107
+Por exemplo: ao avaliar visualmente
+estes dados todos no Pandas,
+
+00:01:14.141 --> 00:01:17.044
+nós notamos que "gray wolf"
+está escrito errado.
+
+00:01:17.077 --> 00:01:18.445
+"Gray woof".
+
+00:01:18.478 --> 00:01:21.014
+Nós documentamos o problema
+em lista.
+
+00:01:21.048 --> 00:01:24.184
+Gosto de separar os problemas
+entre qualidade e ordem.
+
+00:01:24.217 --> 00:01:27.888
+"'Gray wolf' está escrito errado."
+Esta é a nossa documentação.
+
+00:01:27.921 --> 00:01:31.158
+Isso é o que vemos
+na observação.
+
+00:01:31.191 --> 00:01:32.893
+Não precisa anotar
+como corrigir.
+
+00:01:32.926 --> 00:01:36.463
+Isso fica para a fase de limpeza
+do processo de preparação.
+
+00:01:36.496 --> 00:01:40.234
+Uma observação poderia ser:
+"'Gray wolf' está escrito errado."
+
+00:01:40.267 --> 00:01:42.035
+E não algo como:
+
+00:01:42.068 --> 00:01:44.037
+"Mudar 'Gray woof'
+para 'Gray wolf'."
+
+00:01:44.070 --> 00:01:47.140
+Essa seria mais uma instrução
+do que uma observação.
+

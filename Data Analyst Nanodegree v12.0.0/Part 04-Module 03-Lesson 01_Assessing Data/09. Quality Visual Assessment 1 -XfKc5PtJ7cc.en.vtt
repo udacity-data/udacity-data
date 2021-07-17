@@ -1,0 +1,292 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.629
+So let's find a few data quality issues through visual assessment.
+
+00:00:03.629 --> 00:00:06.455
+Again, data quality issues are issues with content.
+
+00:00:06.455 --> 00:00:09.210
+And reminder, we've got the patients treatments and
+
+00:00:09.210 --> 00:00:13.790
+adverse reactions tables displayed here in our Jupyter Notebook in Pandas' data frames.
+
+00:00:13.789 --> 00:00:18.125
+So assessment is often guided by what you need to analyze.
+
+00:00:18.125 --> 00:00:19.614
+And for this clinical trial data,
+
+00:00:19.614 --> 00:00:23.274
+our key metric is change in hba1c,
+
+00:00:23.274 --> 00:00:26.724
+or hba1c change in this treatments table.
+
+00:00:26.725 --> 00:00:31.090
+For this new oral insulin called Auralin to be deemed effective,
+
+00:00:31.089 --> 00:00:33.829
+we need a certain level and mean hba1c change
+
+00:00:33.829 --> 00:00:37.604
+compared to the incumbent injectable insulin Novodra.
+
+00:00:37.604 --> 00:00:40.899
+So this column definitely has to be clean and it looks like some of
+
+00:00:40.899 --> 00:00:45.034
+these entries are empty, NaN, missing values.
+
+00:00:45.034 --> 00:00:48.459
+Whoever was recording these hba1c start and end levels,
+
+00:00:48.460 --> 00:00:51.195
+might have just forgot to record the change here.
+
+00:00:51.195 --> 00:00:53.460
+And it's clearly evident in lots of entries.
+
+00:00:53.460 --> 00:00:56.710
+So that's one issue we detected already. Let's document it.
+
+00:00:56.710 --> 00:00:59.079
+I like to separate the issues by quality and tidiness.
+
+00:00:59.079 --> 00:01:02.134
+We'll put this one under quality because it's a content issue.
+
+00:01:02.134 --> 00:01:04.164
+So the observation would be something like,
+
+00:01:04.165 --> 00:01:08.240
+treatments table missing hba1c changes.
+
+00:01:08.239 --> 00:01:10.474
+And let's go back to the patients table.
+
+00:01:10.474 --> 00:01:13.234
+One quick thing you might notice here is the zip code column.
+
+00:01:13.234 --> 00:01:16.554
+All of the entries here have decimals, point zero.
+
+00:01:16.555 --> 00:01:18.520
+In some zip codes of five digits before
+
+00:01:18.519 --> 00:01:21.015
+the decimal and others have four before the decimal.
+
+00:01:21.015 --> 00:01:23.284
+So there are actually two issues here.
+
+00:01:23.284 --> 00:01:24.549
+One is data type.
+
+00:01:24.549 --> 00:01:26.125
+Zip codes should actually be strings,
+
+00:01:26.125 --> 00:01:28.069
+not floats, or even integers.
+
+00:01:28.069 --> 00:01:32.354
+And the other is that the string should be a length of five characters, rather than four.
+
+00:01:32.355 --> 00:01:35.799
+So this seems like a pretty obvious mistake that no human would really make.
+
+00:01:35.799 --> 00:01:37.679
+So how could this have happened?
+
+00:01:37.680 --> 00:01:40.645
+I think the blame for this one lands on software.
+
+00:01:40.644 --> 00:01:42.519
+I'm pretty sure that this data was entered
+
+00:01:42.519 --> 00:01:45.064
+initially in a spreadsheet program like Google Sheets,
+
+00:01:45.064 --> 00:01:49.890
+or Excel, which probably recognize this column as a number.
+
+00:01:49.890 --> 00:01:53.605
+And these programs usually chop off the leading zeros. Like here.
+
+00:01:53.605 --> 00:01:56.245
+It should be 07095.
+
+00:01:56.245 --> 00:01:59.730
+See, if I type zero and it still won't change to 07095.
+
+00:01:59.730 --> 00:02:04.075
+So this column isn't as vital to clean as the hba1c change column,
+
+00:02:04.075 --> 00:02:06.564
+but it still could have accurate demographic information,
+
+00:02:06.564 --> 00:02:08.469
+especially if the organizer of this clinical trial
+
+00:02:08.469 --> 00:02:10.689
+want to send mail to each patient for example,
+
+00:02:10.689 --> 00:02:12.754
+and do it in an automated fashion.
+
+00:02:12.754 --> 00:02:14.335
+So let's document it now.
+
+00:02:14.335 --> 00:02:16.719
+And again, we've got the quality and tidiness separations
+
+00:02:16.719 --> 00:02:19.060
+here and I usually like to put these assessments directly
+
+00:02:19.060 --> 00:02:21.490
+above the clean header because they're easier
+
+00:02:21.490 --> 00:02:24.534
+to see when you're actually cleaning and coding down here,
+
+00:02:24.534 --> 00:02:26.935
+rather than scrolling up past all of these tables and
+
+00:02:26.935 --> 00:02:29.270
+looking at the documentation if it was here,
+
+00:02:29.270 --> 00:02:38.716
+right below the SS header for example.
+
+00:02:38.716 --> 00:02:41.275
+So, back to the patients table.
+
+00:02:41.275 --> 00:02:42.670
+Let's find another issue.
+
+00:02:42.669 --> 00:02:44.414
+Let's look at this height variable here.
+
+00:02:44.414 --> 00:02:47.900
+If you scroll a bit, you'll see that there is this entry here for Tim Neudorf.
+
+00:02:47.900 --> 00:02:50.390
+His recorded height is 27 inches,
+
+00:02:50.389 --> 00:02:52.569
+that's two feet and three inches tall.
+
+00:02:52.569 --> 00:02:56.764
+Given that the inclusion criteria of this clinical trial is 18 years old,
+
+00:02:56.764 --> 00:02:59.399
+this doesn't seem like a plausible adult height.
+
+00:02:59.400 --> 00:03:03.650
+And yes, the shortest adult ever was about 22 inches tall.
+
+00:03:03.650 --> 00:03:07.460
+You can also just check with the weight and the body mass index of this person.
+
+00:03:07.460 --> 00:03:09.290
+Being 27 inches tall and
+
+00:03:09.289 --> 00:03:13.919
+192 pounds is probably not physically possible for a living human.
+
+00:03:13.919 --> 00:03:17.614
+And the body mass index here at 26.1 BMI.
+
+00:03:17.615 --> 00:03:20.700
+BMI can be calculated by multiplying 703,
+
+00:03:20.699 --> 00:03:22.310
+which is a conversion factor,
+
+00:03:22.310 --> 00:03:24.485
+by an individual's weight in pounds,
+
+00:03:24.485 --> 00:03:27.320
+divided by that individual's squared height in inches.
+
+00:03:27.319 --> 00:03:30.409
+And a BMI of 185 is just ridiculous.
+
+00:03:30.409 --> 00:03:32.090
+That human would not be alive.
+
+00:03:32.090 --> 00:03:35.509
+So maybe whoever entered this data switched the digits around by accident,
+
+00:03:35.509 --> 00:03:37.919
+like put 27 instead of 72.
+
+00:03:37.919 --> 00:03:39.634
+And yes, that makes sense.
+
+00:03:39.634 --> 00:03:44.200
+This BMI corroborates this BMI on the table here, roughly 26.1.
+
+00:03:44.200 --> 00:03:48.242
+So again, we'll document that.
+
+00:03:48.242 --> 00:03:53.599
+This is important in terms of the clinical trial because reporting average metrics,
+
+00:03:53.599 --> 00:03:56.224
+like average height, average weight of each patient,
+
+00:03:56.224 --> 00:04:00.935
+especially as divided within the two treatment groups Auralin and Novodra.
+
+00:04:00.935 --> 00:04:04.430
+Ideally, these metrics should be roughly the same so you can compare
+
+00:04:04.430 --> 00:04:08.865
+the effectiveness of each drug without being concerned about biases in these variables.
+
+00:04:08.865 --> 00:04:10.810
+So back to the patients table.
+
+00:04:10.810 --> 00:04:12.229
+Let's do some more scrolling.
+
+00:04:12.229 --> 00:04:13.875
+Some more visual assessment.
+
+00:04:13.875 --> 00:04:17.000
+Keep an eye on the state column.
+
+00:04:17.000 --> 00:04:22.290
+This issue here, there's New York and NY.
+
+00:04:22.290 --> 00:04:24.765
+There are two representations of state,
+
+00:04:24.764 --> 00:04:27.269
+the full state name and the abbreviation.
+
+00:04:27.269 --> 00:04:31.289
+This is probably a data entry error by whoever was entering this data into the computer.
+
+00:04:31.290 --> 00:04:33.194
+This isn't that big a deal to clean,
+
+00:04:33.194 --> 00:04:34.644
+but let's do it anyways.
+
+00:04:34.644 --> 00:04:36.454
+It's great to have consistent data.
+
+00:04:36.454 --> 00:04:40.509
+And here's what the observation could look like.
+
+00:04:45.100 --> 00:04:48.780
+So that's five data quality issues we've
+
+00:04:48.779 --> 00:04:51.000
+already identified through visual assessment alone.
+

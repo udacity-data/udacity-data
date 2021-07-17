@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.860
+So, that was visual assessment.
+
+00:00:01.860 --> 00:00:04.320
+Now, let's move on to programmatic assessment.
+
+00:00:04.320 --> 00:00:08.445
+This means using code to do anything other than look through the data in its entirety.
+
+00:00:08.445 --> 00:00:10.515
+Entirety being the key word.
+
+00:00:10.515 --> 00:00:12.548
+More technically, in Pandas,
+
+00:00:12.548 --> 00:00:14.849
+this means using functions and methods to reveal
+
+00:00:14.849 --> 00:00:17.769
+something about your data's quality and tidiness to you.
+
+00:00:17.769 --> 00:00:21.134
+This means that lots of Pandas' functions and methods can be useful.
+
+00:00:21.135 --> 00:00:25.380
+For example, dot_info, this can also mean plotting sometimes.
+
+00:00:25.379 --> 00:00:28.279
+Now, how are programmatic assessments best to use?
+
+00:00:28.280 --> 00:00:31.570
+Again, a lot of the time assessing is driven by the problem you want to solve.
+
+00:00:31.570 --> 00:00:33.479
+You need to check the values in the columns and
+
+00:00:33.479 --> 00:00:35.489
+rows that you plan on using in your analysis.
+
+00:00:35.490 --> 00:00:39.594
+Like, change in hbA1c for the treatments table, for example.
+
+00:00:39.594 --> 00:00:43.799
+This is the key metric in determining whether or not oral insulin, Oralin, is effective.
+
+00:00:43.799 --> 00:00:46.717
+Using dot_info, you can see the previously identified,
+
+00:00:46.718 --> 00:00:48.900
+missing hbA1c change entries.
+
+00:00:48.899 --> 00:00:50.490
+Every other row has 280,
+
+00:00:50.490 --> 00:00:52.800
+while this one has 171.
+
+00:00:52.799 --> 00:00:56.924
+This problem driven assessment can be effective in both visual and programmatic though.
+
+00:00:56.924 --> 00:01:00.269
+Non-directed programmatic assessment can also be useful.
+
+00:01:00.270 --> 00:01:04.658
+This is randomly typing in programmatic assessments without any directed goal in mind,
+
+00:01:04.658 --> 00:01:07.019
+like the hbA1c change, for example.
+
+00:01:07.019 --> 00:01:11.185
+A handy method for this in Pandas is the sample method on data frames.
+
+00:01:11.185 --> 00:01:14.150
+This displays a random sample, here,
+
+00:01:14.150 --> 00:01:17.805
+one, but you can also get any number of samples like five here.
+
+00:01:17.805 --> 00:01:19.620
+Using programmatic assessments this way,
+
+00:01:19.620 --> 00:01:21.950
+can give you a clue about what you might need to clean.
+
+00:01:21.950 --> 00:01:23.280
+And once you find that clue,
+
+00:01:23.280 --> 00:01:25.769
+you can dial in using more pinpointed assessments,
+
+00:01:25.769 --> 00:01:27.390
+whether visual or programmatic.
+
+00:01:27.390 --> 00:01:29.700
+So, those are just a few programmatic assessments.
+
+00:01:29.700 --> 00:01:32.844
+And again, lots of Pandas' functions and methods can be useful.
+
+00:01:32.844 --> 00:01:35.000
+Below you'll try the most common ones.
+

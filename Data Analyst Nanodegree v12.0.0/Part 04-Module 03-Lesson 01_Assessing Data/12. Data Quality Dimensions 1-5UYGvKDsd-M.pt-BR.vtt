@@ -1,0 +1,378 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:03.804
+Todo conjunto de dados "sujo"
+é sujo à sua maneira.
+
+00:00:03.837 --> 00:00:07.341
+Tentar listar todos os problemas
+de qualidade nesta aula
+
+00:00:07.374 --> 00:00:09.543
+seria um exercício fútil.
+
+00:00:09.576 --> 00:00:11.612
+Mas podemos categorizá-los.
+
+00:00:11.645 --> 00:00:13.347
+Essas categorias
+de qualidade de dados
+
+00:00:13.380 --> 00:00:15.849
+são chamadas
+de "dimensões de qualidade".
+
+00:00:15.882 --> 00:00:18.151
+Mas há pouco consenso
+entre os pesquisadores
+
+00:00:18.185 --> 00:00:20.687
+a respeito de quais são
+essas dimensões
+
+00:00:20.720 --> 00:00:23.056
+e se "dimensão"
+seria de fato o nome apropriado.
+
+00:00:23.090 --> 00:00:25.792
+Esta fonte, por exemplo,
+cita seis dimensões.
+
+00:00:25.825 --> 00:00:28.562
+Esta chama-as
+de "regras de validade de dados"
+
+00:00:28.595 --> 00:00:31.365
+e traz termos distintos
+da primeira fonte.
+
+00:00:31.398 --> 00:00:33.433
+Esta fonte chama-as
+de "aspectos de qualidade"
+
+00:00:33.466 --> 00:00:35.302
+e lista oito.
+
+00:00:35.335 --> 00:00:37.604
+Esta fonte diz
+que são sete as dimensões.
+
+00:00:38.539 --> 00:00:41.842
+Então alguns citam mais,
+outros menos.
+
+00:00:41.875 --> 00:00:46.013
+Chamam de aspecto, indicador,
+regra, medição, dimensão...
+
+00:00:46.046 --> 00:00:48.148
+Não existe
+padrão estabelecido.
+
+00:00:48.181 --> 00:00:51.752
+Mas todos parecem concordar
+a respeito dos quatro seguintes.
+
+00:00:51.785 --> 00:00:54.988
+A vasta maioria dos problemas
+de qualidade de dados que já vi
+
+00:00:55.021 --> 00:00:57.658
+se encaixam
+nestes quatro tipos.
+
+00:00:57.691 --> 00:01:01.361
+Integralidade, validade,
+precisão e consistência.
+
+00:01:01.395 --> 00:01:03.397
+Essas dimensões podem
+guiar seu raciocínio
+
+00:01:03.430 --> 00:01:04.898
+na hora de avaliar dados.
+
+00:01:04.931 --> 00:01:07.334
+Estão listadas
+em ordem decrescente de severidade,
+
+00:01:07.367 --> 00:01:09.436
+o que você entenderá logo.
+
+00:01:09.469 --> 00:01:11.205
+Integralidade.
+
+00:01:11.238 --> 00:01:13.507
+Temos todos os registros
+que esperávamos?
+
+00:01:13.540 --> 00:01:15.142
+Algo está faltando?
+
+00:01:15.175 --> 00:01:18.345
+Temos linhas, colunas
+ou células em branco?
+
+00:01:18.378 --> 00:01:20.447
+Um exemplo disso
+no nosso conjunto desta aula
+
+00:01:20.480 --> 00:01:25.786
+é a variável HbA1c faltante,
+representada por este "NaN".
+
+00:01:25.819 --> 00:01:27.754
+Depois, validade.
+
+00:01:27.788 --> 00:01:30.557
+Temos os registros,
+mas não são válidos.
+
+00:01:30.591 --> 00:01:34.795
+Mais tecnicamente, não se encaixam
+em um esquema definido.
+
+00:01:34.828 --> 00:01:38.599
+Primeiramente, um esquema é
+um corpo normativo para dados.
+
+00:01:38.632 --> 00:01:42.102
+Esse esquema pode ser imposto
+pela força da natureza.
+
+00:01:42.135 --> 00:01:47.107
+Não existe altura negativa.
+Ninguém tem -1,67m de altura.
+
+00:01:47.140 --> 00:01:50.010
+Esses indivíduos não estão
+neste conjunto, mas imagine.
+
+00:01:50.043 --> 00:01:52.212
+Só que este esquema
+pode ser específico
+
+00:01:52.246 --> 00:01:54.515
+à sua tabela
+ou banco de dados.
+
+00:01:54.548 --> 00:01:57.484
+Um bom exemplo é a chave primária
+de um banco de dados
+
+00:01:57.517 --> 00:02:00.053
+ou a restrição de unicidade
+em tabelas.
+
+00:02:00.087 --> 00:02:01.088
+Neste conjunto,
+
+00:02:01.121 --> 00:02:03.857
+não pode haver
+"patient_IDs" repetidos.
+
+00:02:03.891 --> 00:02:06.493
+Se o sistema for bom,
+mas nem sempre é,
+
+00:02:06.526 --> 00:02:08.896
+a criação de registros inválidos
+será negada.
+
+00:02:08.929 --> 00:02:10.297
+Por exemplo: neste conjunto,
+
+00:02:10.330 --> 00:02:13.500
+se você tentar criar
+outro paciente com ID 1,
+
+00:02:13.534 --> 00:02:16.103
+será recusado. Ou deveria.
+
+00:02:16.136 --> 00:02:18.405
+Outro exemplo de dados inválidos
+neste conjunto
+
+00:02:18.438 --> 00:02:20.407
+é o dado do CEP.
+
+00:02:20.440 --> 00:02:23.544
+É inválido porque o CEP
+deveria ter 5 dígitos,
+
+00:02:23.577 --> 00:02:25.012
+ser um inteiro.
+
+00:02:25.045 --> 00:02:29.216
+Este aqui é um float,
+e às vezes tem 4 dígitos.
+
+00:02:29.249 --> 00:02:31.084
+Certo, agora precisão.
+
+00:02:31.117 --> 00:02:34.755
+Dados imprecisos
+são dados válidos mas errados.
+
+00:02:34.788 --> 00:02:38.592
+Eles se encaixam no esquema,
+mas continuam incorretos.
+
+00:02:38.625 --> 00:02:41.094
+Estes dados não se encaixam
+em nenhum padrão de ouro,
+
+00:02:41.127 --> 00:02:42.162
+por assim dizer.
+
+00:02:42.196 --> 00:02:44.798
+Por exemplo: veja os números
+indicados na coluna "peso".
+
+00:02:44.831 --> 00:02:47.234
+Imagine que a balança
+em que cada paciente se pesou
+
+00:02:47.267 --> 00:02:48.902
+estava ligeiramente
+desajustada,
+
+00:02:48.936 --> 00:02:52.639
+e indicou que cada paciente
+tinha 2 quilos a mais.
+
+00:02:52.672 --> 00:02:55.609
+A massa está imprecisa,
+mas ainda é válida.
+
+00:02:55.642 --> 00:02:57.711
+Um problema de precisão
+que já identificamos
+
+00:02:57.744 --> 00:03:01.715
+foi a altura deste paciente:
+27 polegadas.
+
+00:03:01.748 --> 00:03:04.351
+Tecnicamente,
+é uma altura válida.
+
+00:03:04.384 --> 00:03:08.155
+É possível que um adulto
+tenha 68cm de altura.
+
+00:03:08.188 --> 00:03:11.458
+O homem mais baixo da história
+tinha aproximadamente 55cm.
+
+00:03:11.491 --> 00:03:14.361
+Mas, como o critério
+de inclusão do teste
+
+00:03:14.394 --> 00:03:16.663
+exigia idade mínima
+de 18 anos,
+
+00:03:16.697 --> 00:03:19.700
+não podemos atribuir pouca altura
+a pouca idade.
+
+00:03:19.733 --> 00:03:22.636
+Repito: é possível,
+mas bem improvável.
+
+00:03:22.669 --> 00:03:25.606
+E já sabemos que o certo
+era 72 polegadas
+
+00:03:25.639 --> 00:03:27.508
+e que os dígitos estavam
+na ordem errada.
+
+00:03:27.541 --> 00:03:31.845
+Isso é imprecisão.
+Por fim, consistência.
+
+00:03:31.878 --> 00:03:35.215
+Dados inconsistentes
+são tanto válidos quanto precisos,
+
+00:03:35.249 --> 00:03:38.285
+mas há diversas formas
+de se referir a eles.
+
+00:03:38.318 --> 00:03:41.455
+Nós queremos consistência em campos
+que representam o mesmo dado
+
+00:03:41.488 --> 00:03:44.091
+em tabelas diferentes.
+E em uma mesma tabela.
+
+00:03:44.124 --> 00:03:46.760
+Estamos procurando
+um formato padrão, basicamente.
+
+00:03:46.793 --> 00:03:47.794
+Neste conjunto,
+
+00:03:47.827 --> 00:03:50.898
+encontramos inconsistência
+na representação de estados.
+
+00:03:50.931 --> 00:03:53.300
+Nome completo e sigla.
+
+00:03:53.333 --> 00:03:56.303
+Por exemplo,
+"California" e "CA".
+
+00:03:56.336 --> 00:03:59.940
+Ou "New York" e "NY".
+Isso é inconsistência.
+
+00:03:59.973 --> 00:04:02.943
+Essa inconsistência significa
+que não podemos analisar o conjunto
+
+00:04:02.976 --> 00:04:06.046
+com base em estado
+enquanto não corrigirmos o problema.
+
+00:04:06.079 --> 00:04:09.116
+Essas são as quatro principais
+dimensões da qualidade de dados.
+
+00:04:09.149 --> 00:04:12.553
+Repito, as dimensões estão
+em ordem decrescente de severidade.
+
+00:04:12.586 --> 00:04:15.189
+Problema de integralidade
+é ausência de dado.
+
+00:04:15.222 --> 00:04:17.891
+Dados válidos existem,
+mas não se encaixam em um esquema.
+
+00:04:17.924 --> 00:04:20.961
+Dados imprecisos existem
+e são válidos, mas incorretos.
+
+00:04:20.994 --> 00:04:23.797
+E dados inconsistentes existem,
+são válidos e precisos,
+
+00:04:23.830 --> 00:04:25.799
+mas apresentam-se
+de várias formas.
+
+00:04:25.832 --> 00:04:27.334
+Você pode usar essas dimensões
+
+00:04:27.367 --> 00:04:30.437
+para auxiliar seu raciocínio
+durante a avaliação de dados.
+

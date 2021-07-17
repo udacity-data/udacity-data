@@ -1,0 +1,624 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.995
+A primeira avaliação programática
+foi a .value_counts
+
+00:00:03.028 --> 00:00:04.986
+na coluna de sobrenome
+e de endereço
+
+00:00:05.019 --> 00:00:06.386
+na tabela de pacientes.
+
+00:00:06.419 --> 00:00:08.754
+O .value_count
+é uma função histograma
+
+00:00:08.787 --> 00:00:11.842
+que retorna a contagem
+de cada valor da coluna.
+
+00:00:11.875 --> 00:00:14.162
+Existem seis sobrenomes Doe
+
+00:00:14.195 --> 00:00:17.889
+e seis endereços
+Main Street, 123.
+
+00:00:17.922 --> 00:00:20.372
+Acredito que as informações
+estejam duplicadas,
+
+00:00:20.405 --> 00:00:22.602
+e podemos conferir
+utilizando .duplicated.
+
+00:00:22.635 --> 00:00:26.627
+Isso retorna séries booleanas
+com as quais indexamos os pacientes.
+
+00:00:26.660 --> 00:00:29.143
+Existem vários John Doe
+
+00:00:29.176 --> 00:00:32.150
+que moram na Main Street, 123,
+em Nova York,
+
+00:00:32.183 --> 00:00:34.182
+código postal 12345.
+
+00:00:34.215 --> 00:00:38.902
+Tem mais, johndoe@email.com.
+Esse é um dado padrão duplicado.
+
+00:00:38.935 --> 00:00:40.445
+Como isso aconteceu?
+
+00:00:40.478 --> 00:00:43.031
+Pela conversão
+de algum sistema.
+
+00:00:43.064 --> 00:00:47.816
+Por exemplo, uma empresa
+que mudou o banco de dados
+
+00:00:47.849 --> 00:00:51.553
+de um provedor para outro
+com os registros dos pacientes.
+
+00:00:51.586 --> 00:00:54.913
+Ao converter de um sistema
+para outro, perdemos dados
+
+00:00:54.946 --> 00:00:59.168
+e eles se tornam esse John Doe
+ou um dado corrompido.
+
+00:00:59.201 --> 00:01:01.292
+Isso é comum
+nos dados da área da saúde,
+
+00:01:01.325 --> 00:01:06.178
+porque ela não é a mais atualizada
+em termos tecnológicos.
+
+00:01:06.211 --> 00:01:09.322
+Qual é a dimensão apropriada
+da qualidade de dados?
+
+00:01:09.355 --> 00:01:13.170
+Essa é uma questão de validação,
+que não está em conformidade
+
+00:01:13.203 --> 00:01:17.442
+com o esquema, que, neste caso,
+é o do mundo real.
+
+00:01:17.475 --> 00:01:20.778
+É muito improvável,
+eu diria impossível,
+
+00:01:20.811 --> 00:01:26.767
+que exista seis John Doe
+morando no mesmo endereço
+
+00:01:26.800 --> 00:01:29.560
+e mesmo e-mail.
+Isso não é possível.
+
+00:01:29.593 --> 00:01:33.153
+Embora a tabela e o banco
+de dados aceite os registros,
+
+00:01:33.186 --> 00:01:35.833
+ele não é válido
+no esquema do mundo real.
+
+00:01:35.866 --> 00:01:39.853
+Esse John Doe pode nem existir.
+Na verdade, acho que não mesmo.
+
+00:01:39.886 --> 00:01:41.629
+Vamos documentar isso.
+
+00:01:45.381 --> 00:01:49.477
+Será importante limpar isso,
+pois não queremos dados sujos.
+
+00:01:49.510 --> 00:01:53.061
+Será melhor remover os registros
+ou encontrar os registros perdidos,
+
+00:01:53.094 --> 00:01:54.412
+mas veremos isso depois.
+
+00:01:54.445 --> 00:01:57.549
+No momento estamos analisando
+e anotando as observações.
+
+00:01:57.582 --> 00:02:01.716
+Há outra questão de qualidade
+revelada pelo método .duplicated,
+
+00:02:01.749 --> 00:02:04.596
+e um registro é esse
+do Jake Jacobson.
+
+00:02:04.629 --> 00:02:08.525
+Vemos que o endereço
+foi duplicado,
+
+00:02:08.558 --> 00:02:10.436
+mas não este registro aqui,
+
+00:02:10.469 --> 00:02:12.757
+ou estes dois
+com entradas NaN.
+
+00:02:12.790 --> 00:02:14.920
+Isso significa que duas pessoas
+na tabela
+
+00:02:14.953 --> 00:02:18.111
+têm o mesmo endereço,
+Old Dear Lane, 648.
+
+00:02:18.144 --> 00:02:20.830
+Me lembro de ter visto
+um Jacobson
+
+00:02:20.863 --> 00:02:23.023
+na análise visual.
+Vamos voltar.
+
+00:02:23.056 --> 00:02:25.638
+Aqui está o Jacob Jacobson,
+
+00:02:25.671 --> 00:02:27.390
+Old Dear Lane, 648,
+
+00:02:27.423 --> 00:02:28.919
+e o Jake Jacobson,
+
+00:02:28.952 --> 00:02:31.727
+que é o registro duplicado
+do resultado abaixo.
+
+00:02:31.760 --> 00:02:34.797
+Parece haver dois registros
+para uma pessoa.
+
+00:02:34.830 --> 00:02:37.035
+Este ID e registro extra
+
+00:02:37.068 --> 00:02:39.267
+foi criado porque o apelido
+foi utilizado.
+
+00:02:39.300 --> 00:02:41.460
+Jake Jacobson
+apareceu duas vezes,
+
+00:02:41.493 --> 00:02:43.797
+e a pessoa que criou
+os registros
+
+00:02:43.830 --> 00:02:45.428
+o adicionou novamente,
+
+00:02:45.461 --> 00:02:48.085
+pois não reconheceu
+que ele já estava lá.
+
+00:02:48.118 --> 00:02:51.516
+Essa repetição por apelido
+é uma questão bem famosa
+
+00:02:51.549 --> 00:02:53.044
+nos dados da área da saúde,
+
+00:02:53.077 --> 00:02:56.245
+e isso custa para as empresas
+de saúde e para os hospitais
+
+00:02:56.278 --> 00:02:57.653
+muito dinheiro por ano.
+
+00:02:57.686 --> 00:03:01.028
+Existe um link ilustrando isso
+nas anotações abaixo.
+
+00:03:01.061 --> 00:03:04.152
+Esta é uma questão
+de validação.
+
+00:03:04.185 --> 00:03:07.384
+É fácil de confundi-la
+como sendo de consistência,
+
+00:03:07.417 --> 00:03:10.016
+pois são duas formas
+de se referir à mesma coisa,
+
+00:03:10.049 --> 00:03:11.560
+Jake e Jacob Jacobson.
+
+00:03:11.593 --> 00:03:14.783
+Embora isso seja válido
+em termos do esquema da tabela,
+
+00:03:14.816 --> 00:03:16.698
+não existe nenhuma
+duplicação do ID,
+
+00:03:16.731 --> 00:03:19.873
+Jake Jacobson tem 30 anos
+e Jacob tem 25
+
+00:03:19.906 --> 00:03:21.168
+no ID do paciente.
+
+00:03:21.201 --> 00:03:24.208
+Mas isso é inválido
+no esquema do mundo real.
+
+00:03:24.241 --> 00:03:27.280
+Não são duas pessoas,
+é uma só.
+
+00:03:27.313 --> 00:03:30.552
+Existem dois registros na tabela,
+mas deveria haver um.
+
+00:03:30.585 --> 00:03:33.809
+Ao deletarmos uma das repetições,
+se deletarmos a errada,
+
+00:03:33.842 --> 00:03:35.971
+criaremos uma questão
+de inconsistência
+
+00:03:36.004 --> 00:03:37.346
+entre várias tabelas.
+
+00:03:37.379 --> 00:03:40.490
+Se Jacob Jacobson também
+estiver na tabela de tratamentos
+
+00:03:40.523 --> 00:03:43.194
+e o Jake Jacobson
+só estiver na de pacientes
+
+00:03:43.227 --> 00:03:45.189
+e deletarmos
+o Jacob Jacobson,
+
+00:03:45.222 --> 00:03:48.541
+isso seria uma representação
+inconsistente entre tabelas,
+
+00:03:48.574 --> 00:03:51.812
+embora haja apenas um registro
+para cada pessoa,
+
+00:03:51.845 --> 00:03:55.022
+isso é válido, mas inconsistente.
+Não é isso que temos agora.
+
+00:03:55.055 --> 00:03:58.517
+No momento existem duas maneiras
+para se referir a dois registros,
+
+00:03:58.550 --> 00:04:00.322
+quando deveria haver
+somente uma.
+
+00:04:00.355 --> 00:04:02.250
+A última parte é a inválida.
+
+00:04:02.283 --> 00:04:05.322
+Existem outras repetições
+de pacientes por apelido,
+
+00:04:05.355 --> 00:04:07.163
+Sandy Taylor
+e Sandra Taylor,
+
+00:04:07.196 --> 00:04:09.435
+que mora na rua Fulton, 2476,
+
+00:04:09.468 --> 00:04:14.426
+e Pat e Patrick Gersten,
+que mora na av. North, 2778.
+
+00:04:14.459 --> 00:04:16.316
+Como sempre,
+documentamos isso.
+
+00:04:21.987 --> 00:04:24.220
+Vamos para a próxima
+avaliação programática
+
+00:04:24.253 --> 00:04:27.115
+na coluna de peso
+da tabela de pacientes.
+
+00:04:27.148 --> 00:04:30.011
+O valor mínimo
+é de 48,8 libras.
+
+00:04:30.044 --> 00:04:33.146
+Isso parece algo
+impossível para o ser humano,
+
+00:04:33.179 --> 00:04:37.221
+então este valor não está preciso
+ou pode ser inválido.
+
+00:04:37.254 --> 00:04:39.451
+Mas se pensarmos
+um pouco mais,
+
+00:04:39.484 --> 00:04:41.603
+vemos que não é nada disso.
+
+00:04:41.636 --> 00:04:44.596
+Isso é uma questão
+de consistência disfarçada.
+
+00:04:44.629 --> 00:04:46.982
+48,8 libras, é quilogramas
+em vez de libras,
+
+00:04:47.015 --> 00:04:49.222
+que podemos conferir
+corroborando a altura
+
+00:04:49.255 --> 00:04:53.094
+e as entradas do IMC do paciente,
+cujo sobrenome é Zaitseva.
+
+00:04:53.127 --> 00:04:58.453
+Então 2,20462 é o fator de conversão
+entre quilogramas e libras,
+
+00:04:58.486 --> 00:05:02.414
+e 703 vezes o peso em libras
+dividido pela altura ao quadrado
+
+00:05:02.447 --> 00:05:04.686
+é a fórmula do IMC.
+
+00:05:04.719 --> 00:05:07.469
+Ao converter os 48,8kg
+em libras,
+
+00:05:07.502 --> 00:05:10.334
+o IMC fica igual a 19,1.
+
+00:05:10.367 --> 00:05:13.734
+O IMC no conjunto de dados
+é exatamente igual
+
+00:05:13.767 --> 00:05:16.005
+ou próximo disso
+antes do arredondamento.
+
+00:05:16.038 --> 00:05:19.149
+48,8, na verdade,
+está correto,
+
+00:05:19.182 --> 00:05:21.134
+só que a unidade
+está errada.
+
+00:05:21.167 --> 00:05:23.510
+Esta é uma questão
+de consistência
+
+00:05:23.543 --> 00:05:25.694
+causada por um mal entendido
+simples
+
+00:05:25.727 --> 00:05:28.813
+ou por um engano
+de quem digitou a informação.
+
+00:05:28.846 --> 00:05:31.806
+Precisamos limpar isso
+para reportar a métrica média
+
+00:05:31.839 --> 00:05:33.621
+do peso, da altura
+e muito mais
+
+00:05:33.654 --> 00:05:35.997
+em cada braço de tratamento
+do ensaio clínico
+
+00:05:36.030 --> 00:05:37.502
+de Auralin e Novodra,
+
+00:05:37.535 --> 00:05:39.519
+e há uma documentação
+para isso.
+
+00:05:41.007 --> 00:05:43.501
+Agora as últimas
+avaliações programáticas,
+
+00:05:43.534 --> 00:05:46.861
+os métodos .isnull nas colunas
+do Auralin e do Novodra,
+
+00:05:46.894 --> 00:05:48.541
+na tabela de tratamentos.
+
+00:05:48.574 --> 00:05:53.245
+Este código entre parênteses
+retorna as séries booleanas,
+
+00:05:53.278 --> 00:05:57.069
+verdadeiras ou falsas, dependendo
+se a entrada for nula ou não.
+
+00:05:57.102 --> 00:05:59.329
+As séries booleanas
+podem ser somadas.
+
+00:05:59.362 --> 00:06:01.493
+Verdadeiro sendo um
+e falso sendo zero.
+
+00:06:01.526 --> 00:06:04.655
+Esse resultado sugere
+que não há entradas nulas,
+
+00:06:04.688 --> 00:06:07.242
+tanto para a coluna do Auralin
+quanto do Novodra.
+
+00:06:07.275 --> 00:06:09.130
+Mas isso não deve ser
+o caso, certo?
+
+00:06:09.163 --> 00:06:11.298
+Se formos
+até a avaliação visual,
+
+00:06:11.331 --> 00:06:15.546
+estes traços devem ser nulos
+ou representados dessa forma.
+
+00:06:15.579 --> 00:06:18.562
+Isso revela um erro comum
+em vários conjuntos de dados
+
+00:06:18.595 --> 00:06:20.145
+e não só
+nos da área da saúde,
+
+00:06:20.178 --> 00:06:22.276
+representar valores faltantes
+
+00:06:22.309 --> 00:06:25.169
+como um traço,
+uma barra, um NaN
+
+00:06:25.202 --> 00:06:27.544
+ou nada, por exemplo,
+com o texto None.
+
+00:06:27.577 --> 00:06:30.224
+Se formos ao informativo
+da avaliação programática,
+
+00:06:30.257 --> 00:06:33.532
+as colunas Auralin e Novodra
+são objetos ou strings.
+
+00:06:33.565 --> 00:06:37.563
+Os traços não são reconhecidos
+como nulos ou como não-valores.
+
+00:06:37.596 --> 00:06:40.459
+Por que é importante documentar
+e limpar isso?
+
+00:06:40.492 --> 00:06:43.260
+Os cálculos no Pandas
+e nos aplicativos de planilhas
+
+00:06:43.293 --> 00:06:44.860
+se comportam de certa forma
+
+00:06:44.893 --> 00:06:48.164
+a partir de como os valores nulos
+são representados.
+
+00:06:48.197 --> 00:06:50.955
+No Pandas, por exemplo,
+como cada coluna ou série
+
+00:06:50.988 --> 00:06:52.476
+só pode ter
+um tipo de dado,
+
+00:06:52.509 --> 00:06:54.739
+não poderíamos converter
+a dosagem
+
+00:06:54.772 --> 00:06:57.231
+para um tipo
+de dado numéricos para calcular
+
+00:06:57.264 --> 00:06:58.770
+a média e o desvio padrão,
+
+00:06:58.803 --> 00:07:01.885
+que precisaremos relatar
+nas descobertas do ensaio clínico.
+
+00:07:01.918 --> 00:07:04.953
+Os nulos são importantes.
+Ao trabalhar com o Google Sheets
+
+00:07:04.986 --> 00:07:08.609
+ou em um aplicativo de planilhas,
+eles permitem vários tipos de dados
+
+00:07:08.642 --> 00:07:09.778
+em uma coluna.
+
+00:07:09.811 --> 00:07:14.019
+Isto é permitido: 40, 50,
+traço, traço, traço, 60.
+
+00:07:14.052 --> 00:07:19.206
+Estas células, 40, 50 e 60,
+são tratadas como números inteiros,
+
+00:07:19.239 --> 00:07:23.114
+enquanto as células com traços
+são vistas como variáveis de texto.
+
+00:07:23.147 --> 00:07:26.567
+Isso é importante, por exemplo,
+para calcular o desvio padrão
+
+00:07:26.600 --> 00:07:30.506
+desta coluna
+com a função STDEVA,
+
+00:07:30.539 --> 00:07:33.871
+que calcula o desvio padrão
+e configura os valores de texto,
+
+00:07:33.904 --> 00:07:36.310
+ou seja, os traços,
+como sendo zero.
+
+00:07:36.343 --> 00:07:40.095
+Se esses fossem valores faltantes,
+obteríamos cálculos diferentes,
+
+00:07:40.128 --> 00:07:41.808
+que eu mostrarei aqui.
+
+00:07:42.664 --> 00:07:45.415
+A representação correta
+dos nulos é importante.
+
+00:07:45.448 --> 00:07:47.400
+Vamos documentar isso.
+
+00:07:53.899 --> 00:07:57.616
+Esta é uma questão de validação,
+porque os nulos devem ser nulos
+
+00:07:57.649 --> 00:07:58.797
+e não textos.
+

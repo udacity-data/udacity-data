@@ -1,0 +1,162 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.173 --> 00:00:04.924
+As colunas do Auralin e Novadra
+violam a 1a regra de arrumação,
+
+00:00:04.957 --> 00:00:07.260
+cada variável forma
+uma coluna.
+
+00:00:07.293 --> 00:00:11.773
+Existem três variáveis aqui:
+tratamento, Auralin ou Novadra,
+
+00:00:11.806 --> 00:00:14.620
+dose inicial, por exemplo
+41 unidades,
+
+00:00:14.653 --> 00:00:17.924
+e dose final,
+por exemplo, 48 unidades.
+
+00:00:17.957 --> 00:00:20.989
+Como há três variáveis,
+deve haver três colunas,
+
+00:00:21.022 --> 00:00:24.844
+mas atualmente há duas
+contendo duas variáveis.
+
+00:00:24.877 --> 00:00:28.813
+A coluna Auralin contém a dose
+inicial e final dos pacientes,
+
+00:00:28.846 --> 00:00:33.876
+e a coluna Novodra, a dose inicial
+e final dos pacientes.
+
+00:00:33.909 --> 00:00:36.756
+Se as duas colunas contêm
+duas variáveis,
+
+00:00:36.789 --> 00:00:38.340
+dose inicial e final,
+
+00:00:38.373 --> 00:00:40.556
+onde está
+a terceira variável?
+
+00:00:40.589 --> 00:00:42.374
+Dissemos que havia
+três variáveis.
+
+00:00:42.407 --> 00:00:46.254
+A terceira variável, tratamento,
+está no cabeçalho da coluna.
+
+00:00:46.287 --> 00:00:49.147
+Essa é a questão de arrumação
+mais comum
+
+00:00:49.180 --> 00:00:50.844
+identificada
+por Hadley Wickham.
+
+00:00:50.877 --> 00:00:54.016
+Os cabeçalhos das colunas
+são valores e não nomes variáveis.
+
+00:00:54.049 --> 00:00:57.763
+Então Auralin e Novodra são valores
+da variável de tratamento.
+
+00:00:57.796 --> 00:01:01.372
+Quem estruturou o conjunto
+de dados assim, não planejou bem
+
+00:01:01.405 --> 00:01:04.773
+e não tinha consciência
+das vantagens dos dados arrumados.
+
+00:01:04.806 --> 00:01:07.173
+O produto final
+deve ser assim.
+
+00:01:08.149 --> 00:01:09.669
+Vamos observar isso.
+
+00:01:09.702 --> 00:01:11.809
+O primeiro paciente,
+Veronika Jindrova,
+
+00:01:11.842 --> 00:01:14.158
+foi tratado
+com a insulina Auralin,
+
+00:01:14.191 --> 00:01:17.692
+dose inicial igual a 41 unidades,
+e dose final igual a 48 unidades.
+
+00:01:17.725 --> 00:01:19.432
+Auralin, 41, 48.
+
+00:01:19.465 --> 00:01:22.264
+Elliot Richardson
+foi tratado com Novodra.
+
+00:01:22.297 --> 00:01:25.846
+Dose inicial igual a 40 unidades,
+e dose final igual a 45 unidades.
+
+00:01:25.879 --> 00:01:28.238
+Novodra, 40, 45.
+
+00:01:28.271 --> 00:01:32.275
+Três variáveis separadas
+em três colunas distintas.
+
+00:01:32.308 --> 00:01:34.670
+Tratamento, dose inicial
+e dose final.
+
+00:01:34.703 --> 00:01:37.161
+Veremos como converter
+duas colunas à esquerda
+
+00:01:37.194 --> 00:01:38.906
+em três colunas à direita
+
+00:01:38.939 --> 00:01:40.746
+programaticamente
+com a função melt
+
+00:01:40.779 --> 00:01:43.146
+e o método split
+do Pandas, a seguir.
+
+00:01:43.179 --> 00:01:46.098
+A função melt, especificamente,
+é muito útil,
+
+00:01:46.131 --> 00:01:47.535
+mas pode ser confusa,
+
+00:01:47.568 --> 00:01:49.530
+especialmente
+para quem não a conhece.
+
+00:01:49.563 --> 00:01:51.292
+Mas veremos isso
+na próxima aula.
+
+00:01:51.325 --> 00:01:53.812
+Vamos documentar a segunda
+questão de arrumação.
+
+00:01:59.228 --> 00:02:01.083
+Pronto.
+Aqui está nossa observação.
+

@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.605
+So the first one,
+
+00:00:01.605 --> 00:00:03.405
+the typo in David.
+
+00:00:03.404 --> 00:00:06.904
+D_s_v_i_d versus D_a_v_i_d, and it's displayed here.
+
+00:00:06.905 --> 00:00:08.630
+This is an accuracy issue.
+
+00:00:08.630 --> 00:00:11.775
+There's nothing illegal about having the name D_s_v_i_d,
+
+00:00:11.775 --> 00:00:15.050
+so it's not invalid, it's just inaccurate.
+
+00:00:15.050 --> 00:00:16.560
+And the next one.
+
+00:00:16.559 --> 00:00:20.269
+The letter U in the dosage information for Auralin and Novodra.
+
+00:00:20.269 --> 00:00:22.945
+Once again, this is just the fact that the U is present.
+
+00:00:22.945 --> 00:00:24.859
+This is a validity issue.
+
+00:00:24.859 --> 00:00:27.269
+23u is not a valid dose.
+
+00:00:27.269 --> 00:00:28.980
+The valid dose is 23,
+
+00:00:28.980 --> 00:00:30.750
+and the unit of measurement is U,
+
+00:00:30.750 --> 00:00:32.729
+or units, insulin units.
+
+00:00:32.729 --> 00:00:35.464
+We can't perform calculations with 23u.
+
+00:00:35.465 --> 00:00:38.175
+This goes hand-in-hand with the wrong data type validity issue.
+
+00:00:38.174 --> 00:00:40.140
+But we'll physically have to remove the U,
+
+00:00:40.140 --> 00:00:42.075
+instead of just changing the data type.
+
+00:00:42.075 --> 00:00:45.405
+Pandas won't accept something with the letter U in it as an integer or float.
+
+00:00:45.405 --> 00:00:47.265
+It will force it to the data type object,
+
+00:00:47.265 --> 00:00:49.649
+which is how strings are represented in Pandas.
+
+00:00:49.649 --> 00:00:51.524
+So again, this is invalid.
+
+00:00:51.524 --> 00:00:55.234
+23u is right, it's just the wrong representation.
+
+00:00:55.234 --> 00:00:58.380
+It's not according to the defined schema of this table.
+
+00:00:58.380 --> 00:01:00.660
+The next one, the lowercase given names and
+
+00:01:00.659 --> 00:01:03.750
+surnames and treatments and adverse reactions.
+
+00:01:03.750 --> 00:01:06.689
+Treatments, adverse reactions.
+
+00:01:06.689 --> 00:01:08.325
+Let's zoom out a bit here.
+
+00:01:08.325 --> 00:01:10.990
+So I'd argue that this is a consistency issue.
+
+00:01:10.989 --> 00:01:15.604
+It's not necessarily a big deal that the given names and surnames are in lowercase.
+
+00:01:15.605 --> 00:01:17.670
+So that removes the inaccurate part.
+
+00:01:17.670 --> 00:01:19.484
+It's just that in the patients table,
+
+00:01:19.484 --> 00:01:21.515
+the names are capitalized.
+
+00:01:21.515 --> 00:01:25.405
+So you'd run into issues when joining these tables based on name.
+
+00:01:25.405 --> 00:01:29.655
+This is an inconsistent representation of name across tables in this dataset.
+
+00:01:29.655 --> 00:01:31.769
+Pandas in Python doesn't recognize
+
+00:01:31.769 --> 00:01:35.549
+lowercase strings as the exact same as capitalized strings.
+
+00:01:35.549 --> 00:01:37.629
+So that's where the issue stems from.
+
+00:01:37.629 --> 00:01:40.019
+And the final one: missing records in the treatments table,
+
+00:01:40.019 --> 00:01:42.060
+280 instead of 350.
+
+00:01:42.060 --> 00:01:43.170
+This is pretty straightforward,
+
+00:01:43.170 --> 00:01:45.204
+this is a completeness issue.
+
+00:01:45.204 --> 00:01:47.120
+We don't have all the records that we need.
+

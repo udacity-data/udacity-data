@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.120 --> 00:00:05.935
+Now that you know how to gather data,
+
+00:00:05.934 --> 00:00:08.035
+you're going to master assessing it.
+
+00:00:08.035 --> 00:00:11.685
+Assessing your data is the second step in the data wrangling process.
+
+00:00:11.685 --> 00:00:14.410
+When assessing, you're like a detective at work.
+
+00:00:14.410 --> 00:00:19.765
+Inspecting your data set for two things: Data quality issues and lack of tidiness.
+
+00:00:19.765 --> 00:00:24.070
+Data that has quality issues has issues with content like missing,
+
+00:00:24.070 --> 00:00:26.469
+duplicate or incorrect data.
+
+00:00:26.469 --> 00:00:28.479
+This is called dirty data.
+
+00:00:28.480 --> 00:00:32.685
+An untidy or messy data has specific structural issues.
+
+00:00:32.685 --> 00:00:36.070
+These structural issues slow you down when cleaning and analyzing,
+
+00:00:36.070 --> 00:00:38.924
+visualizing or modeling your data later.
+
+00:00:38.924 --> 00:00:41.919
+You can search for these issues in two ways: Visually,
+
+00:00:41.920 --> 00:00:45.000
+with a simple scroll and programmatically using code.
+
+00:00:45.000 --> 00:00:46.469
+And when you detect an issue,
+
+00:00:46.469 --> 00:00:49.394
+you document it to make cleaning easier.
+
+00:00:49.395 --> 00:00:51.979
+In this lesson, you will assess a pre-gathered data
+
+00:00:51.978 --> 00:00:55.174
+set that's full of issues and you're going to find all of them.
+
+00:00:55.174 --> 00:00:59.664
+Some visually and others using the functions in Python's Pandas library.
+
+00:00:59.664 --> 00:01:02.695
+At the end of the lesson, we'll flash forward to analysis
+
+00:01:02.695 --> 00:01:06.150
+and visualization where you'll see how your assessments were vital.
+
+00:01:06.150 --> 00:01:08.710
+You're going to leave this lesson with an eagle eye for
+
+00:01:08.709 --> 00:01:12.000
+unclean data and there's a lot of it in the world.
+

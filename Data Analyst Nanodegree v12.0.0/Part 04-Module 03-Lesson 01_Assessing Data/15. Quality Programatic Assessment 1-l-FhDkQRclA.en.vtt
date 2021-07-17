@@ -1,0 +1,520 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.509
+Let's use programmatic assessment to find some more quality issues.
+
+00:00:03.509 --> 00:00:06.134
+After getting a feel for the data via a visual assessment,
+
+00:00:06.134 --> 00:00:07.859
+right away I usually like to use
+
+00:00:07.860 --> 00:00:11.250
+the dot_info method on every data frame that's in my notebook,
+
+00:00:11.250 --> 00:00:13.789
+unless I'm looking for something specific.
+
+00:00:13.789 --> 00:00:16.214
+So dot_info on the patients,
+
+00:00:16.214 --> 00:00:19.804
+treatments and adverse reactions data frames.
+
+00:00:19.804 --> 00:00:22.660
+Here's the doc page for the dot_info method.
+
+00:00:22.660 --> 00:00:25.210
+It returns a concise summary of each data frame.
+
+00:00:25.210 --> 00:00:27.940
+So we've got number of entries and number of columns,
+
+00:00:27.940 --> 00:00:30.420
+503 and 14, respectively.
+
+00:00:30.420 --> 00:00:32.645
+Also the data types of each column,
+
+00:00:32.645 --> 00:00:35.260
+in the memory usage for the entire data frame.
+
+00:00:35.259 --> 00:00:38.109
+And two data quality issues are already revealed,
+
+00:00:38.109 --> 00:00:40.075
+just by looking at this patient summary.
+
+00:00:40.075 --> 00:00:43.480
+Every column, except for the address through contact columns,
+
+00:00:43.479 --> 00:00:47.140
+have 503 entries, while address, city,
+
+00:00:47.140 --> 00:00:51.240
+state, zip code, country and contact have 491.
+
+00:00:51.240 --> 00:00:53.770
+That suggests there is some missing data here,
+
+00:00:53.770 --> 00:00:56.745
+which we can hone in on with this code here.
+
+00:00:56.744 --> 00:00:59.439
+This patients ['address'].isnull returns
+
+00:00:59.439 --> 00:01:03.625
+a boolean array of the same size of our data frame 503,
+
+00:01:03.625 --> 00:01:08.935
+with true or false whether or not that row is null for the address column.
+
+00:01:08.935 --> 00:01:10.390
+And through boolean indexing,
+
+00:01:10.390 --> 00:01:14.689
+this returns every row that is null for those few columns here,
+
+00:01:14.689 --> 00:01:16.730
+and all these NaNs are evident here.
+
+00:01:16.730 --> 00:01:18.570
+NaN's missing values.
+
+00:01:18.569 --> 00:01:20.719
+So this is a completeness issue.
+
+00:01:20.719 --> 00:01:22.135
+How could this have happened?
+
+00:01:22.135 --> 00:01:24.280
+Maybe it was a simple data entry error again
+
+00:01:24.280 --> 00:01:26.349
+and the person who was in charge of writing down
+
+00:01:26.349 --> 00:01:28.155
+this patient information just forgot to write
+
+00:01:28.155 --> 00:01:31.435
+the demographic information for these patients.
+
+00:01:31.435 --> 00:01:34.795
+Or maybe it was a database corruption error,
+
+00:01:34.795 --> 00:01:40.147
+some sort of file transfer error that rendered these entries null.
+
+00:01:40.147 --> 00:01:42.310
+There could be a variety of ways this could have happened,
+
+00:01:42.310 --> 00:01:45.835
+but the bottom line is we don't have demographic information and we want it,
+
+00:01:45.834 --> 00:01:48.250
+especially if we want to contact these patients later with
+
+00:01:48.250 --> 00:01:51.159
+good news about the trial or bad news, potentially.
+
+00:01:51.159 --> 00:01:52.329
+The point is we want to clean this.
+
+00:01:52.329 --> 00:01:54.640
+So, I'm not sure if that's possible right now.
+
+00:01:54.640 --> 00:01:56.680
+We'll deal with that later in lesson four.
+
+00:01:56.680 --> 00:01:59.035
+But let's document this for now.
+
+00:01:59.034 --> 00:02:03.069
+There's another data quality issue evident through this .info method,
+
+00:02:03.069 --> 00:02:05.324
+and it has to do with the data types here.
+
+00:02:05.325 --> 00:02:08.689
+So let's go through each column's data type and see whether it's appropriate or not.
+
+00:02:08.689 --> 00:02:11.544
+So patient ID, integer. That's appropriate.
+
+00:02:11.544 --> 00:02:14.754
+So the next six columns are of object data type.
+
+00:02:14.754 --> 00:02:18.534
+This is how Pandas represent strings. So think text.
+
+00:02:18.534 --> 00:02:22.104
+Assign sex as per this dataset is male or female.
+
+00:02:22.104 --> 00:02:26.939
+So this is more appropriately represented as the categorical data type, which exists.
+
+00:02:26.939 --> 00:02:29.520
+It's called category in Pandas.
+
+00:02:29.520 --> 00:02:30.945
+So given name, surname,
+
+00:02:30.944 --> 00:02:34.129
+address and city are fine as objects,
+
+00:02:34.129 --> 00:02:37.590
+but I'd argue that state is actually a categorical data type as well.
+
+00:02:37.590 --> 00:02:39.990
+So now we've run into the zip code column,
+
+00:02:39.990 --> 00:02:44.055
+which was previously identified as problematic. It's a float right now.
+
+00:02:44.055 --> 00:02:48.135
+This is invalid remember because zip codes must be strings,
+
+00:02:48.134 --> 00:02:52.530
+and not floats or integers because you won't be performing calculations on zip codes,
+
+00:02:52.530 --> 00:02:54.599
+like multiplying zip codes, for example.
+
+00:02:54.599 --> 00:02:56.685
+So country as an object is fine,
+
+00:02:56.685 --> 00:02:58.719
+contact as an object is fine,
+
+00:02:58.719 --> 00:03:02.462
+even though the contact column has zone problems with two variables in that column,
+
+00:03:02.462 --> 00:03:06.354
+phone number, e-mail, but both those are object variables in themselves.
+
+00:03:06.354 --> 00:03:08.174
+So that's fine in terms of data types.
+
+00:03:08.175 --> 00:03:10.210
+Birth date being an object.
+
+00:03:10.210 --> 00:03:13.344
+Birth date should actually be of data type, date time.
+
+00:03:13.344 --> 00:03:16.354
+Then weight as a float and height as an integer is fine.
+
+00:03:16.354 --> 00:03:19.004
+It's fine that height's rounded off to the nearest integer,
+
+00:03:19.004 --> 00:03:21.715
+and then BMI as a float's fine as well.
+
+00:03:21.715 --> 00:03:25.425
+So there are four erroneous data types here: assigned sex,
+
+00:03:25.425 --> 00:03:27.870
+state, zip code and birth date.
+
+00:03:27.870 --> 00:03:30.599
+So why are data types important to change?
+
+00:03:30.599 --> 00:03:33.090
+The main reason in Pandas is because there are
+
+00:03:33.090 --> 00:03:37.080
+special calculations you can do and also summaries of these categorical,
+
+00:03:37.080 --> 00:03:40.050
+numerical, and even date time data types.
+
+00:03:40.050 --> 00:03:43.540
+If they're miscategorized, you can't do those calculations or summaries.
+
+00:03:43.539 --> 00:03:47.439
+So for example the birth date that needs to be a date time data type.
+
+00:03:47.439 --> 00:03:50.329
+If birth date's kept as object instead of date time,
+
+00:03:50.330 --> 00:03:54.150
+we can take advantage of Pandas' time series or date time functionalities,
+
+00:03:54.150 --> 00:03:56.805
+of which they are plenty but simple ones would be
+
+00:03:56.805 --> 00:04:00.810
+calculating age from a certain birth date, for example.
+
+00:04:00.810 --> 00:04:03.735
+So all of these erroneous date types are validity issues.
+
+00:04:03.735 --> 00:04:07.860
+These don't conform to the defined schema of what this table should be.
+
+00:04:07.860 --> 00:04:10.450
+There's actually two more in the treatments table as well.
+
+00:04:10.449 --> 00:04:14.744
+These Auralin and Novodra columns are starting dose and ending doses, remember.
+
+00:04:14.745 --> 00:04:17.105
+So those should actually be integers eventually,
+
+00:04:17.105 --> 00:04:18.430
+but we'll deal with that later.
+
+00:04:18.430 --> 00:04:22.030
+But let's document these issues for now.
+
+00:04:26.540 --> 00:04:31.135
+So if we scroll up to the visual assessments that we did,
+
+00:04:31.134 --> 00:04:33.969
+we can see some of these data type issues pretty clearly.
+
+00:04:33.970 --> 00:04:35.635
+Like the zip code one, for example.
+
+00:04:35.634 --> 00:04:37.860
+That's clearly a float when it should be a string.
+
+00:04:37.860 --> 00:04:40.210
+But the other ones aren't as clear, like birth date.
+
+00:04:40.209 --> 00:04:43.089
+It's not clear that this isn't a date time datatype.
+
+00:04:43.089 --> 00:04:46.514
+Same goes for assigned sex in terms of being categorical for this dataset.
+
+00:04:46.514 --> 00:04:49.569
+This is one area where programmatic assessment is vital.
+
+00:04:49.569 --> 00:04:52.175
+So how could all of these erroneous data types have happened?
+
+00:04:52.175 --> 00:04:55.615
+Basically, software isn't perfect at recognizing data types.
+
+00:04:55.615 --> 00:04:58.060
+If the data in this dataset was originally recorded
+
+00:04:58.060 --> 00:05:00.685
+in a spreadsheet application as per my hunch,
+
+00:05:00.685 --> 00:05:04.495
+and then exported from that spreadsheet application and imported into Pandas later,
+
+00:05:04.495 --> 00:05:06.730
+that's where some of the errors could have stemmed from.
+
+00:05:06.730 --> 00:05:09.110
+So here's the patients table in Google sheets.
+
+00:05:09.110 --> 00:05:13.735
+This zip code column's actually fine in sheets in terms of float versus integer.
+
+00:05:13.735 --> 00:05:15.465
+There's no decimals here.
+
+00:05:15.464 --> 00:05:18.134
+But Pandas imperfectly picks this up as a float.
+
+00:05:18.134 --> 00:05:19.795
+Whenever you're importing data into Pandas,
+
+00:05:19.795 --> 00:05:21.425
+always be careful about your data types.
+
+00:05:21.425 --> 00:05:23.699
+It's usually not right in the first time.
+
+00:05:23.699 --> 00:05:26.949
+Another programmatic assessment that's handy is .describe,
+
+00:05:26.949 --> 00:05:29.584
+which I usually like to do right after the info method.
+
+00:05:29.584 --> 00:05:34.180
+Described generates descriptive stats for the numerical data types in your data frames.
+
+00:05:34.180 --> 00:05:36.625
+And we have some in patients and treatments.
+
+00:05:36.625 --> 00:05:40.314
+So we get count, mean, standard deviation, minimum,
+
+00:05:40.314 --> 00:05:41.800
+then the quantiles, 25,
+
+00:05:41.800 --> 00:05:44.725
+50 and 75 percent and the maximum value.
+
+00:05:44.725 --> 00:05:48.350
+These stats aren't that useful for a patient and zip code.
+
+00:05:48.350 --> 00:05:51.325
+Recall that zip code shouldn't actually be a numerical data type.
+
+00:05:51.324 --> 00:05:55.834
+And it's arguable that the patient ID should actually be a string instead of integer.
+
+00:05:55.834 --> 00:05:57.370
+But that's debatable.
+
+00:05:57.370 --> 00:05:59.660
+These are useful for weight, height and BMI.
+
+00:05:59.660 --> 00:06:03.206
+Let's take a look at the describe output for the treatments table.
+
+00:06:03.206 --> 00:06:07.235
+hba1c_start, hba1c_end, and hba1c_change.
+
+00:06:07.235 --> 00:06:10.525
+Recall that this metric determines the effectiveness of our insulin.
+
+00:06:10.524 --> 00:06:12.879
+In terms of controlling blood sugar,
+
+00:06:12.879 --> 00:06:16.930
+hba1c_change specifically with around 0.4 being a success.
+
+00:06:16.930 --> 00:06:22.209
+So 0.9, this requires some domain knowledge but 0.9 is massive.
+
+00:06:22.209 --> 00:06:25.164
+That's a really big change, and somewhat implausible,
+
+00:06:25.165 --> 00:06:28.590
+especially given that the 75 percentile is at 0.92.
+
+00:06:28.589 --> 00:06:31.164
+That suggests a massive skew.
+
+00:06:31.165 --> 00:06:34.975
+The gap between 25 and 50 is only 0.04,
+
+00:06:34.975 --> 00:06:39.285
+while it's nearly 0.6 between 50 and 75.
+
+00:06:39.285 --> 00:06:41.950
+If we scroll up to our visual assessment of the treatments table,
+
+00:06:41.949 --> 00:06:44.675
+we'll see right away that this hba1c_change
+
+00:06:44.675 --> 00:06:47.316
+for this 0.97 entry for Elliot Richardson,
+
+00:06:47.315 --> 00:06:49.519
+it's simply calculated wrong.
+
+00:06:49.519 --> 00:06:53.299
+7.56, subtract 7.09 is not 0.97.
+
+00:06:53.300 --> 00:06:55.254
+It's actually 0.47.
+
+00:06:55.254 --> 00:06:57.490
+This is an accuracy issue.
+
+00:06:57.490 --> 00:06:59.254
+So how could this have happened?
+
+00:06:59.254 --> 00:07:02.350
+I have a hunch that whatever health care professional,
+
+00:07:02.350 --> 00:07:05.620
+maybe a doctor that recorded this hba1c_change,
+
+00:07:05.620 --> 00:07:08.735
+had their fours mistaken as nines.
+
+00:07:08.735 --> 00:07:12.040
+Doctors are notorious for their bad penmanship.
+
+00:07:12.040 --> 00:07:15.310
+And this is a silly issue but this sometimes happens,
+
+00:07:15.310 --> 00:07:18.339
+especially if optical character recognition software was used for
+
+00:07:18.339 --> 00:07:21.489
+transferring paper records to electronic records.
+
+00:07:21.490 --> 00:07:23.189
+This is massively important to clean because
+
+00:07:23.189 --> 00:07:27.660
+hba1c_change is the key metric for our whole clinical trial.
+
+00:07:27.660 --> 00:07:30.430
+The deemed success or failure of this oral insulin,
+
+00:07:30.430 --> 00:07:32.915
+hinges on this variable.
+
+00:07:32.915 --> 00:07:40.720
+So let's definitely document that one.
+
+00:07:40.720 --> 00:07:46.900
+So let's do one more quality issue using programmatic assessment.
+
+00:07:46.899 --> 00:07:50.239
+A kind of neat method that I like to use, is .sample.
+
+00:07:50.240 --> 00:07:54.699
+This returns a random sample of five records from the table in this case.
+
+00:07:54.699 --> 00:07:57.594
+And if you inspect this crazy messy contact column,
+
+00:07:57.595 --> 00:07:59.320
+which has phone number and email,
+
+00:07:59.319 --> 00:08:02.589
+you'll see that there are multiple representations for phone number.
+
+00:08:02.589 --> 00:08:04.314
+This one has three digits, the area code,
+
+00:08:04.314 --> 00:08:05.769
+then dash, then three,
+
+00:08:05.769 --> 00:08:07.174
+then dash, then four.
+
+00:08:07.175 --> 00:08:10.960
+Whereas this one down here has the country code one, then a space,
+
+00:08:10.959 --> 00:08:12.639
+then the area code, then a space,
+
+00:08:12.639 --> 00:08:15.550
+then three digits, then a space, then four digits.
+
+00:08:15.550 --> 00:08:17.560
+This is almost assuredly a data entry error,
+
+00:08:17.560 --> 00:08:19.569
+and it's not that important to clean.
+
+00:08:19.569 --> 00:08:22.689
+But maybe someone that's looking at this dataset later doesn't
+
+00:08:22.689 --> 00:08:26.410
+know a country code and you saved them a few minutes looking it up later.
+
+00:08:26.410 --> 00:08:27.580
+Let's clean this anyway,
+
+00:08:27.579 --> 00:08:30.719
+and we'll make that cleaning process easier by documenting this better.
+
+00:08:30.720 --> 00:08:34.120
+That's a consistency issue again.
+

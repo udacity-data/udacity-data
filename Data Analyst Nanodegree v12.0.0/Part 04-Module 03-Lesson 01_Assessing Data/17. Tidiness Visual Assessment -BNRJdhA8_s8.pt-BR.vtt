@@ -1,0 +1,188 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.235 --> 00:00:02.538
+Vamos falar das questões
+de arrumação,
+
+00:00:02.571 --> 00:00:04.773
+pois faremos isso
+neste conjunto de dados.
+
+00:00:04.806 --> 00:00:07.907
+Esta é a outra forma
+de limpar os dados.
+
+00:00:07.940 --> 00:00:10.416
+Os dados podem ser
+de baixa qualidade ou sujos,
+
+00:00:10.449 --> 00:00:13.193
+e podem estar desarrumados
+ou bagunçados.
+
+00:00:13.226 --> 00:00:15.069
+A qualidade
+que vimos nesta aula
+
+00:00:15.102 --> 00:00:18.252
+estava ligada às questões
+do conteúdo de dados que buscamos,
+
+00:00:18.285 --> 00:00:20.994
+agora, com a arrumação,
+as questões são estruturais.
+
+00:00:21.027 --> 00:00:24.799
+Ter dados arrumados
+facilita a análise dos dados,
+
+00:00:24.832 --> 00:00:27.254
+e facilita a limpeza
+
+00:00:27.287 --> 00:00:29.944
+como dito nos dois documentos
+do Hadley Wickham,
+
+00:00:29.977 --> 00:00:32.182
+o criador do formato
+de dados arrumados.
+
+00:00:32.215 --> 00:00:34.354
+Quanto a facilitar
+a limpeza,
+
+00:00:34.387 --> 00:00:37.898
+veremos isso na próxima aula,
+que é sobre limpeza,
+
+00:00:37.931 --> 00:00:40.156
+o terceiro passo
+da preparação de dados.
+
+00:00:40.189 --> 00:00:42.973
+Vejamos o que são
+dados arrumados.
+
+00:00:43.006 --> 00:00:44.997
+Existem três exigências
+de arrumação.
+
+00:00:45.030 --> 00:00:48.268
+Cada variável forma uma coluna,
+cada observação, uma linha,
+
+00:00:48.301 --> 00:00:51.669
+e cada tipo de unidade observacional
+forma uma tabela.
+
+00:00:51.702 --> 00:00:55.151
+Vamos começar a arrumar
+acessando visualmente
+
+00:00:55.184 --> 00:00:56.776
+diretamente no Pandas.
+
+00:00:56.809 --> 00:00:59.344
+Temos a tabela de pacientes,
+de tratamentos
+
+00:00:59.377 --> 00:01:00.984
+e de reações adversas
+
+00:01:01.017 --> 00:01:02.703
+nos dados do ensaio clínico.
+
+00:01:02.736 --> 00:01:05.083
+Na tabela de pacientes,
+na coluna de contato,
+
+00:01:05.116 --> 00:01:07.631
+há mais problema de arrumação,
+em minha opinião.
+
+00:01:07.664 --> 00:01:09.960
+Existem duas variáveis
+em uma coluna,
+
+00:01:09.993 --> 00:01:13.751
+violando a exigência
+de cada variável formar uma coluna,
+
+00:01:13.784 --> 00:01:17.808
+o número de telefone
+e o endereço de e-mail.
+
+00:01:17.841 --> 00:01:20.816
+Isso deveria ser dividido
+em duas colunas.
+
+00:01:20.849 --> 00:01:22.136
+Desta forma.
+
+00:01:22.169 --> 00:01:25.271
+É assim que o registro
+de Zoe Wellish deve ser preenchido.
+
+00:01:25.304 --> 00:01:26.941
+Limpamos isso manualmente,
+
+00:01:26.974 --> 00:01:29.372
+mas só fazemos isso
+se for uma ocorrência,
+
+00:01:29.405 --> 00:01:32.017
+e nesta coluna,
+esse não é o caso.
+
+00:01:32.050 --> 00:01:34.406
+Compomos um código
+para automatizar a limpeza
+
+00:01:34.439 --> 00:01:38.242
+com a ferramenta de limpeza
+Expressão Regular da próxima lição.
+
+00:01:38.275 --> 00:01:40.364
+É uma ferramenta maravilhosa
+e flexível.
+
+00:01:40.397 --> 00:01:43.156
+Vamos documentar
+a questão.
+
+00:01:43.189 --> 00:01:46.829
+Eu quero separar as questões
+por qualidade de arrumação.
+
+00:01:46.862 --> 00:01:49.038
+Colocarei esta na arrumação.
+
+00:01:57.179 --> 00:01:58.803
+Vamos em frente.
+
+00:01:58.836 --> 00:02:02.137
+Vejamos a análise visual
+no bloco de anotações Jupyter.
+
+00:02:02.170 --> 00:02:04.706
+A tabela de tratamentos
+também está desarrumada,
+
+00:02:04.739 --> 00:02:08.154
+e as colunas de Auralin e Novodra
+são o problema.
+
+00:02:08.187 --> 00:02:12.219
+Temos informações de dosagem
+em cada entrada de cada coluna.
+
+00:02:12.252 --> 00:02:16.313
+Qual regra ou regras de arrumação
+estas colunas quebram?
+
+00:02:16.346 --> 00:02:20.145
+E como as duas colunas
+deveriam ser representadas?
+

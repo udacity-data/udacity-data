@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.910 --> 00:00:07.935
+There is a subtle difference between assessing your data and exploring your data.
+
+00:00:07.934 --> 00:00:10.669
+Assessing is part of the data wrangling process,
+
+00:00:10.669 --> 00:00:15.675
+while exploring is part of Exploratory Data Analysis or EDA.
+
+00:00:15.675 --> 00:00:18.885
+Data wrangling is about gathering the right pieces of data,
+
+00:00:18.885 --> 00:00:21.015
+assessing your data's quality and structure,
+
+00:00:21.015 --> 00:00:23.490
+then modifying your data to make it clean.
+
+00:00:23.489 --> 00:00:26.594
+But the assessments you make and convert to cleaning operations,
+
+00:00:26.594 --> 00:00:28.140
+won't make your analysis,
+
+00:00:28.140 --> 00:00:30.359
+VIS, or model better though.
+
+00:00:30.359 --> 00:00:32.259
+The goal is just to make them work.
+
+00:00:32.259 --> 00:00:35.984
+EDA is about exploring your data to later augment it,
+
+00:00:35.984 --> 00:00:40.289
+to maximize the potential of your analyses, visualizations and models.
+
+00:00:40.289 --> 00:00:42.570
+When exploring, simple visualizations are
+
+00:00:42.570 --> 00:00:46.155
+often used to summarize your data's main characteristics.
+
+00:00:46.155 --> 00:00:49.140
+From there, you can do things like remove outliers and
+
+00:00:49.140 --> 00:00:52.109
+create new and more descriptive features from existing data,
+
+00:00:52.109 --> 00:00:54.820
+also known as feature engineering.
+
+00:00:54.820 --> 00:00:58.274
+In practice, wrangling and EDA can occur together,
+
+00:00:58.274 --> 00:01:01.859
+but we're going to separate them for teaching purposes.
+

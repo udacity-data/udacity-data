@@ -1,0 +1,87 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.122 --> 00:00:03.250
+Usaremos a avaliação programática
+para detectar e documentar
+
+00:00:03.283 --> 00:00:05.819
+as questões de arrumação
+do conjunto de dados.
+
+00:00:05.852 --> 00:00:10.018
+A avaliação pode ser útil para
+a terceira exigência de arrumação,
+
+00:00:10.051 --> 00:00:14.122
+na qual cada tipo de unidade
+de observação forma uma tabela.
+
+00:00:14.155 --> 00:00:16.814
+Isso concentra-se
+nas colunas do conjunto de dados
+
+00:00:16.847 --> 00:00:19.014
+entre todas as tabelas,
+se houver várias,
+
+00:00:19.047 --> 00:00:21.126
+e torna a análise
+especialmente útil
+
+00:00:21.159 --> 00:00:23.244
+se houver muitas colunas
+no conjunto
+
+00:00:23.277 --> 00:00:25.019
+e/ou muitas tabelas.
+
+00:00:25.052 --> 00:00:26.874
+Isso dificulta
+a análise visual,
+
+00:00:26.907 --> 00:00:29.876
+porque redimensionar janelas,
+trocar de abas em planilhas
+
+00:00:29.909 --> 00:00:33.099
+e rolar pela estrutura de dados
+do Pandas é meio irritante.
+
+00:00:33.132 --> 00:00:35.244
+Com avaliações
+como o método .info
+
+00:00:35.277 --> 00:00:37.525
+podemos ver os nomes
+de todas as colunas
+
+00:00:37.558 --> 00:00:38.757
+entre todas as tabelas
+
+00:00:38.790 --> 00:00:40.828
+e os tipos de dados delas.
+
+00:00:40.861 --> 00:00:45.365
+Reutilizaremos as células .info
+para pacientes, tratamentos
+
+00:00:45.398 --> 00:00:47.061
+e reações adversas.
+
+00:00:47.094 --> 00:00:49.485
+Dê uma olhada
+nos cabeçalhos destas colunas
+
+00:00:49.518 --> 00:00:52.926
+e descubra quais
+devem ser de qual tabela.
+
+00:01:01.948 --> 00:01:03.411
+Quantas tabelas precisamos
+
+00:01:03.444 --> 00:01:06.467
+para arrumar o conjunto de dados
+do ensaio clínico?
+

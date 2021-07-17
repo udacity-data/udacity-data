@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.870
+These auralin and novodra columns violate the first rule of tidiness only,
+
+00:00:03.870 --> 00:00:07.599
+that each variable forms a column.
+
+00:00:07.599 --> 00:00:11.751
+There are three variables here: treatment, auralin or novodra,
+
+00:00:11.752 --> 00:00:14.655
+start dose, for example 41 units here,
+
+00:00:14.654 --> 00:00:15.989
+and then end dose,
+
+00:00:15.990 --> 00:00:18.030
+for example 48 units here.
+
+00:00:18.030 --> 00:00:20.970
+So since there are three variables here there should be three columns
+
+00:00:20.969 --> 00:00:25.035
+and there are currently two and both contain two variables.
+
+00:00:25.035 --> 00:00:29.190
+The auralin column contains the start and end dose for auralin patients and
+
+00:00:29.190 --> 00:00:31.109
+the novodra column contains the start
+
+00:00:31.109 --> 00:00:34.109
+and end dose for patients that were treated with novodra.
+
+00:00:34.109 --> 00:00:36.734
+If these two columns both contain two variables,
+
+00:00:36.734 --> 00:00:38.280
+start and end dose each,
+
+00:00:38.280 --> 00:00:40.560
+where is that missing third variable?
+
+00:00:40.560 --> 00:00:42.335
+We said there were three variables here, right?
+
+00:00:42.335 --> 00:00:43.770
+Well, the third variable,
+
+00:00:43.770 --> 00:00:46.565
+treatment, is hidden in the column headers here.
+
+00:00:46.564 --> 00:00:50.834
+This is actually one of the most common tidiness issues as per Hadley Wickham.
+
+00:00:50.835 --> 00:00:53.939
+Column headers are values not variable names.
+
+00:00:53.939 --> 00:00:57.924
+So auralin and novodra are our values for the treatment variable.
+
+00:00:57.924 --> 00:01:01.019
+Whoever structured the data set like this didn't plan very
+
+00:01:01.020 --> 00:01:05.010
+well and wasn't aware of the advantages of tidy data.
+
+00:01:05.010 --> 00:01:07.710
+The final product should look like this.
+
+00:01:07.709 --> 00:01:09.559
+Let's zoom in here a bit.
+
+00:01:09.560 --> 00:01:13.079
+So, for the first patient, Veronika Jindrova, she was treated with auralin,
+
+00:01:13.079 --> 00:01:17.390
+the auralin insulin, with the starting dose of 41 units and an ending dose of 48 units.
+
+00:01:17.390 --> 00:01:19.515
+Auralin, 41, 48.
+
+00:01:19.515 --> 00:01:22.245
+Then for Elliot Richardson he was treated with novodra.
+
+00:01:22.245 --> 00:01:23.820
+Starting dose of 40 units,
+
+00:01:23.819 --> 00:01:28.289
+ending dose of 45 units and novodra, 40, 45.
+
+00:01:28.290 --> 00:01:32.550
+Three separate variables in three separate columns.
+
+00:01:32.549 --> 00:01:34.739
+Treatment, start dose, end dose.
+
+00:01:34.739 --> 00:01:36.629
+You'll learn how to convert the two columns on
+
+00:01:36.629 --> 00:01:38.804
+the left to the three columns on the right,
+
+00:01:38.805 --> 00:01:43.210
+programmatically using the melt function and split method in Pandas next lesson.
+
+00:01:43.209 --> 00:01:45.509
+The melt function specifically is really
+
+00:01:45.510 --> 00:01:49.550
+handy but it can be confusing especially if you never seen it before.
+
+00:01:49.549 --> 00:01:51.189
+Next lesson you'll conquer that.
+
+00:01:51.189 --> 00:01:55.299
+So let's document this second tidiness issue.
+
+00:01:57.319 --> 00:02:01.000
+And there we go. Here's our observation.
+

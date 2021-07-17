@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.629
+There are two types or styles of assessing your data.
+
+00:00:03.629 --> 00:00:07.484
+You can assess it visually and you can assess it programmatically.
+
+00:00:07.485 --> 00:00:11.733
+Visual assessment is just opening it and looking through the data in its entirety,
+
+00:00:11.733 --> 00:00:15.339
+in Pandas, a text editor or a spreadsheet application for example.
+
+00:00:15.339 --> 00:00:19.125
+This is what it looks like in Pandas for this animals.csv file,
+
+00:00:19.125 --> 00:00:21.134
+which has three columns; animal,
+
+00:00:21.135 --> 00:00:24.235
+body weight in kilograms then brain weight in grams.
+
+00:00:24.234 --> 00:00:25.814
+This data set's pretty small,
+
+00:00:25.815 --> 00:00:29.655
+but for larger data sets Pandas will collapse rows and columns.
+
+00:00:29.655 --> 00:00:31.740
+So in those cases, visual assessment is best
+
+00:00:31.739 --> 00:00:34.445
+done in something like Google Sheets for example.
+
+00:00:34.445 --> 00:00:37.619
+Programmatic assessment like its name suggests,
+
+00:00:37.619 --> 00:00:41.369
+is anything that uses code to view specific parts of the data,
+
+00:00:41.369 --> 00:00:44.579
+like using functions or methods to summarize the data.
+
+00:00:44.579 --> 00:00:47.030
+Like this dot info method for example.
+
+00:00:47.030 --> 00:00:48.535
+You can even plot the data,
+
+00:00:48.534 --> 00:00:51.529
+but plotting isn't done very often when wrangling.
+
+00:00:51.530 --> 00:00:54.715
+This is more for exploring during exploratory data analysis,
+
+00:00:54.715 --> 00:00:56.170
+which we'll get into later.
+
+00:00:56.170 --> 00:00:58.545
+Regardless of the type of assessment you're using,
+
+00:00:58.545 --> 00:01:01.554
+assessing data can be broken down into two steps;
+
+00:01:01.554 --> 00:01:04.420
+detecting an issue and documenting that issue.
+
+00:01:04.420 --> 00:01:08.295
+This process applies whether you're assessing your data visually or programmatically,
+
+00:01:08.295 --> 00:01:10.344
+which are the two types of assessment again.
+
+00:01:10.344 --> 00:01:13.349
+For example, we will visually assess the entirety of this data set in
+
+00:01:13.349 --> 00:01:18.179
+Pandas and we detect that Gray wolf is spelt wrong, Gray woof.
+
+00:01:18.180 --> 00:01:21.035
+Then we document that issue with a bullet point.
+
+00:01:21.034 --> 00:01:24.224
+I'd like to separate the issues by quality and tidiness.
+
+00:01:24.224 --> 00:01:28.155
+So Gray wolf is spelled wrong, that's our documentation.
+
+00:01:28.155 --> 00:01:31.409
+This is simply what we see on observation.
+
+00:01:31.409 --> 00:01:33.750
+You don't have to write how to fix it which is part of
+
+00:01:33.750 --> 00:01:36.674
+the cleaning step in this data wrangling framework.
+
+00:01:36.674 --> 00:01:38.554
+So an observation would be,
+
+00:01:38.555 --> 00:01:42.765
+Gray wolf is spelled wrong as opposed to something like change
+
+00:01:42.765 --> 00:01:47.000
+Gray woof to Gray wolf which would be more of an action item rather than an observation.
+

@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.660 --> 00:00:07.450
+Congratulations, you've completed our lesson on assessing data,
+
+00:00:07.450 --> 00:00:09.884
+the second step of the data wrangling process.
+
+00:00:09.884 --> 00:00:13.859
+You visually and programmatically assessed a data set full of data quality and
+
+00:00:13.859 --> 00:00:17.744
+tidiness issues and you caught and categorized every issue,
+
+00:00:17.745 --> 00:00:20.070
+despite never having seen the data.
+
+00:00:20.070 --> 00:00:24.195
+Like a true detective thrown onto the case. That takes talent.
+
+00:00:24.195 --> 00:00:26.265
+Every dirty messy data set,
+
+00:00:26.265 --> 00:00:28.214
+and there are lots of them that exist in the world,
+
+00:00:28.214 --> 00:00:31.859
+is dirty and messy in its own unique way and the
+
+00:00:31.859 --> 00:00:36.750
+assessment strategies that you acquired in this lesson are transferable to all of them.
+
+00:00:36.750 --> 00:00:40.659
+This is a big deal. Now it's time to put these assessments into action.
+
+00:00:40.659 --> 00:00:42.824
+In the next lesson you're going to clean
+
+00:00:42.825 --> 00:00:46.275
+the same dataset and fix all of these issues using code.
+
+00:00:46.274 --> 00:00:48.000
+Here's where the magic happens.
+

@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.565
+Let's tackle the tidiness issues now,
+
+00:00:02.565 --> 00:00:04.730
+and there are a few in this dataset.
+
+00:00:04.730 --> 00:00:07.980
+Recall that this is the other way that data can be unclean.
+
+00:00:07.980 --> 00:00:13.350
+Data can be low quality or dirty and it can be untidy or messy.
+
+00:00:13.349 --> 00:00:15.169
+So with quality previously in this lesson,
+
+00:00:15.169 --> 00:00:18.239
+it was issues with our data's content that we were looking for.
+
+00:00:18.239 --> 00:00:20.774
+And now with tidiness it's structural issues.
+
+00:00:20.774 --> 00:00:25.019
+Having tidy data makes our data easier to analyze in most cases.
+
+00:00:25.019 --> 00:00:29.899
+And it also makes cleaning easier as per both of these documents by Hadley Wickham,
+
+00:00:29.899 --> 00:00:32.100
+the creator of the tidy data format.
+
+00:00:32.100 --> 00:00:34.579
+Regarding making data cleaning easier,
+
+00:00:34.579 --> 00:00:38.009
+you'll see how this is true in the next lesson in this course which is on cleaning,
+
+00:00:38.009 --> 00:00:40.184
+the third step in the data wrangling process.
+
+00:00:40.185 --> 00:00:43.015
+Let's go over what tidy data actually is again.
+
+00:00:43.015 --> 00:00:45.230
+There are three requirements for tidiness.
+
+00:00:45.229 --> 00:00:46.724
+Each variable forms a column,
+
+00:00:46.725 --> 00:00:48.503
+each observation forms a row,
+
+00:00:48.503 --> 00:00:51.799
+and each type of observational unit forms a table.
+
+00:00:51.799 --> 00:00:57.059
+So let's start by assessing for tidiness by assessing visually directly in Pandas here.
+
+00:00:57.060 --> 00:00:59.475
+So we've got a patients table, a treatment table,
+
+00:00:59.475 --> 00:01:02.939
+and an adverse reactions table in this clinical trial data set.
+
+00:01:02.939 --> 00:01:05.094
+In this patients table this contact column
+
+00:01:05.094 --> 00:01:07.765
+is the most glaring tidiness issue in my opinion.
+
+00:01:07.765 --> 00:01:10.200
+There are two variables in one column which
+
+00:01:10.200 --> 00:01:13.784
+violates the "each variable forms a column" requirement.
+
+00:01:13.784 --> 00:01:17.879
+There is phone number and also e-mail address in this contact column.
+
+00:01:17.879 --> 00:01:21.329
+These should be split into two separate columns just
+
+00:01:21.329 --> 00:01:25.400
+like this and that's how the record for Zoe Wellish would be filled out.
+
+00:01:25.400 --> 00:01:27.180
+That was done using manual cleaning which
+
+00:01:27.180 --> 00:01:29.425
+again we shouldn't use unless it's one-off occurrences.
+
+00:01:29.424 --> 00:01:32.295
+And in this column it's definitely not one-off occurrences.
+
+00:01:32.295 --> 00:01:34.590
+You'll write code to automate this cleaning
+
+00:01:34.590 --> 00:01:38.049
+leveraging a cleaning tool called regular expressions in the next lesson.
+
+00:01:38.049 --> 00:01:40.545
+It's a pretty amazing tool that's really flexible.
+
+00:01:40.545 --> 00:01:43.120
+Okay so that's one, let's document that issue right now.
+
+00:01:43.120 --> 00:01:46.924
+And once again I'd like to separate the issues by quality and tidiness when documenting.
+
+00:01:46.924 --> 00:01:47.640
+So we'll put this one
+
+00:01:47.640 --> 00:01:57.605
+under tidiness.
+
+00:01:57.605 --> 00:01:58.329
+Let's move on now.
+
+00:01:58.329 --> 00:02:02.265
+Back to the visual assessment part of our Jupyter Notebook.
+
+00:02:02.265 --> 00:02:04.765
+So this treatment's table is untidy too.
+
+00:02:04.765 --> 00:02:08.469
+And these Auralin and Novodra columns are the offenders.
+
+00:02:08.469 --> 00:02:12.215
+Again these have dosage information in each entry in each column.
+
+00:02:12.215 --> 00:02:15.370
+What tidy data rule or rules do these columns
+
+00:02:15.370 --> 00:02:20.310
+break and how should these two columns be re-represented in a tidy format?
+

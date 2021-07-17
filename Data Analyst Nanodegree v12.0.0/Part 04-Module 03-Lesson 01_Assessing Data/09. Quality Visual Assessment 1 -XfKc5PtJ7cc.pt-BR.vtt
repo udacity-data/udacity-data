@@ -1,0 +1,374 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.133 --> 00:00:03.467
+Vamos achar problemas na qualidade
+usando a avaliação visual.
+
+00:00:03.500 --> 00:00:06.333
+Problemas na qualidade
+referem-se ao conteúdo.
+
+00:00:06.366 --> 00:00:10.267
+Lembre-se: as tabelas de tratamentos
+e reações adversas dos pacientes
+
+00:00:10.300 --> 00:00:14.100
+estão exibidas em DataFrames Pandas
+no Jupyter Notebook.
+
+00:00:14.133 --> 00:00:15.733
+A avaliação, frequentemente,
+
+00:00:15.766 --> 00:00:17.933
+é orientada
+pelo que você quer analisar.
+
+00:00:17.966 --> 00:00:19.400
+Nestes dados de pesquisa,
+
+00:00:19.433 --> 00:00:23.100
+nosso indicador-chave
+é a variação de HbA1c,
+
+00:00:23.133 --> 00:00:26.733
+ou "hba1c_change",
+conforme o cabeçalho da tabela.
+
+00:00:26.766 --> 00:00:30.900
+Para essa nova insulina oral,
+Auralin, ser considerada efetiva,
+
+00:00:30.933 --> 00:00:33.600
+precisamos de certo nível e média
+de "hba1c_change"
+
+00:00:33.633 --> 00:00:37.500
+comparado à atual
+insulina injetável, Novodra.
+
+00:00:37.533 --> 00:00:39.733
+Então esta coluna
+precisa estar limpa.
+
+00:00:39.766 --> 00:00:42.533
+E parece que há entradas vazias.
+
+00:00:42.566 --> 00:00:44.933
+"NaN", dado ausente.
+
+00:00:44.966 --> 00:00:48.200
+Quem gravou esses níveis iniciais
+e finais de HbA1c
+
+00:00:48.233 --> 00:00:50.933
+pode ter esquecido
+de gravar a mudança.
+
+00:00:50.966 --> 00:00:53.267
+Isso fica claro
+em muitas entradas.
+
+00:00:53.300 --> 00:00:56.500
+Já detectamos um problema.
+Vamos documentá-lo.
+
+00:00:56.533 --> 00:00:58.733
+Gosto de separar os problemas
+por tipo,
+
+00:00:58.766 --> 00:01:01.900
+então esse ficará sob "qualidade",
+pois é um problema na qualidade.
+
+00:01:01.933 --> 00:01:04.100
+A observação seria algo como:
+
+00:01:04.133 --> 00:01:07.000
+"Tabela de tratamentos,
+faltando 'hba1c_changes'."
+
+00:01:08.133 --> 00:01:10.333
+Vamos voltar
+à tabela de pacientes.
+
+00:01:10.366 --> 00:01:13.200
+Talvez você note aqui
+a coluna "zip_code".
+
+00:01:13.233 --> 00:01:16.533
+Todas as entradas têm decimais:
+vírgula e zero.
+
+00:01:16.566 --> 00:01:18.733
+Em alguns, há 5 dígitos
+antes do decimal,
+
+00:01:18.766 --> 00:01:20.800
+em outras, 4.
+
+00:01:20.833 --> 00:01:24.400
+Então temos dois problemas.
+O primeiro é o tipo de dado.
+
+00:01:24.433 --> 00:01:28.000
+CEPs deveriam ser strings,
+não floats nem mesmo inteiros.
+
+00:01:28.033 --> 00:01:30.900
+E o segundo é que a string
+deveria ter 5 caracteres,
+
+00:01:30.933 --> 00:01:32.267
+não 4.
+
+00:01:32.300 --> 00:01:35.600
+Parece um erro bobo
+que nenhuma pessoa cometeria.
+
+00:01:35.633 --> 00:01:37.467
+Então como aconteceu?
+
+00:01:37.500 --> 00:01:40.667
+Acho que a culpa deste
+é de software.
+
+00:01:40.700 --> 00:01:42.900
+Os dados devem ter sido
+originalmente preenchidos
+
+00:01:42.933 --> 00:01:45.900
+em um programa de planilhas
+como Google Sheets ou Excel,
+
+00:01:45.933 --> 00:01:49.700
+que reconheceu essa coluna
+com um número.
+
+00:01:49.733 --> 00:01:52.667
+Esses programas costumam descartar
+o zeo à esquerda.
+
+00:01:52.700 --> 00:01:56.067
+Como aqui. Deveria ser 07095.
+
+00:01:56.100 --> 00:01:59.700
+Mesmo digitando de novo,
+não muda para 07095.
+
+00:01:59.733 --> 00:02:01.533
+Esta coluna não é
+tão importante de limpar
+
+00:02:01.566 --> 00:02:04.000
+quanto a coluna
+"hba1c_change",
+
+00:02:04.033 --> 00:02:06.333
+mas é útil ter informações
+demográficas precisas,
+
+00:02:06.366 --> 00:02:08.633
+principalmente se o organizador
+da pesquisa quiser
+
+00:02:08.666 --> 00:02:10.633
+mandar e-mails aos pacientes,
+por exemplo,
+
+00:02:10.666 --> 00:02:12.633
+e for fazê-lo
+de maneira automatizada.
+
+00:02:12.666 --> 00:02:14.267
+Então vamos documentar.
+
+00:02:14.300 --> 00:02:17.100
+Novamente, temos a separação
+entre "qualidade" e "organização".
+
+00:02:17.133 --> 00:02:20.533
+Eu escrevo as observações
+acima do cabeçalho "Clean",
+
+00:02:20.566 --> 00:02:22.100
+assim fica mais fácil vê-las
+
+00:02:22.133 --> 00:02:24.533
+quando você está
+aqui embaixo limpando.
+
+00:02:24.566 --> 00:02:28.500
+Em vez de subir tudo
+e olhar a documentação
+
+00:02:28.533 --> 00:02:30.933
+aqui em cima,
+se ela estivesse sob "Assess".
+
+00:02:39.467 --> 00:02:42.533
+Voltando à tabela dos pacientes.
+Vamos encontrar outro problema.
+
+00:02:42.566 --> 00:02:44.300
+Vejamos a variável "altura".
+
+00:02:44.333 --> 00:02:47.867
+Se você descer um pouco,
+verá a entrada "Tim Neudorf".
+
+00:02:47.900 --> 00:02:50.333
+A altura registrada dele
+é 27 polegadas.
+
+00:02:50.366 --> 00:02:52.300
+Isso corresponde
+a 68,5cm de altura.
+
+00:02:52.333 --> 00:02:55.100
+Visto que o critério de inclusão
+no teste clínico
+
+00:02:55.133 --> 00:02:56.733
+é 18 anos de idade,
+
+00:02:56.766 --> 00:02:59.200
+essa não parece
+uma altura de adulto.
+
+00:02:59.233 --> 00:03:03.467
+O adulto mais baixo da história
+tinha 56cm de altura.
+
+00:03:03.500 --> 00:03:07.400
+Mas podemos verificar a massa,
+o IMC da pessoa.
+
+00:03:07.433 --> 00:03:10.400
+Ter 68cm e 87kg
+
+00:03:10.433 --> 00:03:13.800
+provavelmente não é possível
+para nenhum humano.
+
+00:03:13.833 --> 00:03:17.733
+O IMC dele é 26,1.
+
+00:03:17.766 --> 00:03:20.500
+O IMC pode ser obtido
+multiplicando 703,
+
+00:03:20.533 --> 00:03:24.400
+um fator de conversão,
+pelo peso da pessoa em libras
+
+00:03:24.433 --> 00:03:27.333
+e dividido pela altura em polegadas
+elevada ao quadrado.
+
+00:03:27.366 --> 00:03:32.067
+Um IMC de 185 é absurdo.
+Essa pessoa não estaria viva.
+
+00:03:32.100 --> 00:03:35.400
+Quem sabe a pessoa que digitou
+tenha errado por acidente,
+
+00:03:35.433 --> 00:03:37.867
+escrevendo 27 em vez de 72,
+por exemplo.
+
+00:03:37.900 --> 00:03:39.467
+Aí, sim, faria sentido.
+
+00:03:39.500 --> 00:03:42.333
+Esse IMC bateria
+com o indicado na tabela,
+
+00:03:42.366 --> 00:03:44.267
+cerca de 26,1.
+
+00:03:44.300 --> 00:03:46.067
+Então vamos documentar.
+
+00:03:49.933 --> 00:03:51.700
+Isso é importante
+para o teste clínico
+
+00:03:51.733 --> 00:03:53.333
+porque reportar
+indicadores médios,
+
+00:03:53.366 --> 00:03:56.200
+por exemplo,
+altura e peso médio dos pacientes,
+
+00:03:56.233 --> 00:03:59.300
+principalmente havendo
+dois grupos distintos,
+
+00:03:59.333 --> 00:04:01.067
+Auralin e Novodra...
+
+00:04:01.100 --> 00:04:03.400
+O ideal é que os indicadores
+sejam muito próximos
+
+00:04:03.433 --> 00:04:05.500
+para que se possa comparar
+o efeito das drogas
+
+00:04:05.533 --> 00:04:08.267
+sem preocupação
+com variáveis enviesadas.
+
+00:04:09.200 --> 00:04:12.067
+De volta à tabela dos pacientes,
+vamos buscar mais,
+
+00:04:12.100 --> 00:04:13.667
+seguir avaliando.
+
+00:04:13.700 --> 00:04:15.400
+Concentre-se
+na coluna "estado".
+
+00:04:18.667 --> 00:04:22.133
+Há um problema aqui.
+Tem "Nova York" e "NY".
+
+00:04:22.166 --> 00:04:24.867
+Duas representações do estado:
+
+00:04:24.900 --> 00:04:27.000
+uma por extenso
+e uma abreviação.
+
+00:04:27.033 --> 00:04:28.533
+Deve ser um erro
+de preenchimento
+
+00:04:28.566 --> 00:04:31.033
+da pessoa encarregada
+por digitar os dados.
+
+00:04:31.066 --> 00:04:33.133
+Não é tão importante limpar,
+
+00:04:33.166 --> 00:04:36.400
+mas vamos nessa.
+É bom ter dados consistentes.
+
+00:04:36.433 --> 00:04:38.500
+E aqui vai um exemplo
+da observação.
+
+00:04:46.900 --> 00:04:49.333
+São cinco exemplos
+de problema na qualidade
+
+00:04:49.366 --> 00:04:51.067
+que identificamos
+via avaliação visual.
+

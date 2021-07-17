@@ -1,0 +1,68 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.031 --> 00:00:01.454
+Agora é a sua vez.
+
+00:00:01.487 --> 00:00:04.382
+Você deve realizar
+algumas avaliações programáticas
+
+00:00:04.415 --> 00:00:07.631
+e precisa determinar
+qual parte dos resultados
+
+00:00:07.664 --> 00:00:09.969
+revela questões
+de qualidade de dados.
+
+00:00:10.002 --> 00:00:13.096
+O primeiro,
+series.value_counts
+
+00:00:13.129 --> 00:00:15.449
+no sobrenome e endereço
+do paciente.
+
+00:00:18.713 --> 00:00:20.432
+Acho isso um pouco curioso.
+
+00:00:20.465 --> 00:00:22.215
+Vamos expandir isso.
+
+00:00:22.248 --> 00:00:26.634
+.duplicated revela as repetições
+na coluna de endereço.
+
+00:00:28.653 --> 00:00:31.417
+Estou vendo algo aqui.
+Espero que você também esteja.
+
+00:00:31.450 --> 00:00:33.399
+Caso contrário, espere.
+
+00:00:33.432 --> 00:00:35.392
+Este é outra avaliação
+programática.
+
+00:00:35.425 --> 00:00:38.345
+Sort_values na coluna de peso
+da tabela de pacientes.
+
+00:00:41.329 --> 00:00:43.771
+Mais uma, utilizando
+o método .isnull
+
+00:00:43.804 --> 00:00:47.797
+nas colunas Auralin e Novadra,
+em conjunto com a soma.
+
+00:00:47.830 --> 00:00:50.493
+Tente detectar as questões
+de qualidade dos dados
+
+00:00:50.526 --> 00:00:53.333
+nas telas seguintes
+e nos próximos questionários.
+
