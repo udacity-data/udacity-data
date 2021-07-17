@@ -1,0 +1,16 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.805
+You may have noticed that although the data was appended,
+
+00:00:02.805 --> 00:00:06.830
+something strange happened with the total_ sulfur_dioxide column.
+
+00:00:06.830 --> 00:00:08.919
+Why do you think these columns failed to merge,
+
+00:00:08.919 --> 00:00:10.259
+when the data frames were appended?
+
