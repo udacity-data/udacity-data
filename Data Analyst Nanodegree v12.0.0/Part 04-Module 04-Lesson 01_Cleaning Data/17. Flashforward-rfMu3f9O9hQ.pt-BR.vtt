@@ -1,0 +1,560 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.361 --> 00:00:03.607
+Você avaliou e limpou o conjunto
+de dados do estudo clínico.
+
+00:00:03.640 --> 00:00:05.966
+Vamos para o ponto-chave aqui.
+
+00:00:05.999 --> 00:00:09.727
+Auralin, a nova insulina oral
+proposta, é eficaz?
+
+00:00:10.177 --> 00:00:13.701
+Mais uma vez, é uma comparação
+com a insulina injetável Novodra.
+
+00:00:13.985 --> 00:00:16.383
+E aqui temos as principais métricas
+dos estudos clínicos.
+
+00:00:16.697 --> 00:00:18.579
+A primeira aqui:
+Reações adversas.
+
+00:00:18.878 --> 00:00:21.358
+Para Auralin passar
+para a Fase II do estudo clínico,
+
+00:00:21.391 --> 00:00:22.826
+deve ser considerada segura,
+
+00:00:22.859 --> 00:00:25.009
+e as reações adversas
+a isso são encorajadoras.
+
+00:00:25.042 --> 00:00:27.674
+Essas reações adversas estavam
+isoladas anteriormente,
+
+00:00:27.707 --> 00:00:29.463
+mas você as uniu
+a essa tabela de tratamentos
+
+00:00:29.496 --> 00:00:31.003
+para permitir essa análise.
+
+00:00:31.245 --> 00:00:33.135
+E aqui temos
+como a coluna "adverse reaction"
+
+00:00:33.168 --> 00:00:35.545
+anexada à tabela "treatments"
+parecia.
+
+00:00:37.129 --> 00:00:39.156
+Aqui temos o grupamento por objeto
+do Pandas.
+
+00:00:39.189 --> 00:00:42.399
+Algumas das reações adversas comuns
+são tosse, dor de cabeça, náuseas,
+
+00:00:42.432 --> 00:00:43.896
+a maior sendo hipoglicemia,
+
+00:00:43.929 --> 00:00:45.291
+que é baixo nível de açúcar
+no sangue,
+
+00:00:45.324 --> 00:00:47.787
+causada por uma overdose
+de insulina, geralmente o mínimo.
+
+00:00:48.123 --> 00:00:50.227
+Entre os dois medicamentos,
+Auralin e Novodra,
+
+00:00:50.566 --> 00:00:52.165
+a contagem de pares
+de cada reação adversa
+
+00:00:52.198 --> 00:00:53.287
+é bem semelhante.
+
+00:00:53.320 --> 00:00:56.978
+Com exceção da irritação da garganta
+para Auralin, a insulina oral,
+
+00:00:57.011 --> 00:00:59.881
+o que pode ser esperado
+porque esta pílula é por via oral
+
+00:00:59.914 --> 00:01:02.169
+e passa pela garganta
+antes de chegar ao estômago.
+
+00:01:02.202 --> 00:01:04.755
+E então desconforto
+no local da injeção para Novodra,
+
+00:01:04.788 --> 00:01:06.238
+que é a insulina injetável.
+
+00:01:06.271 --> 00:01:07.825
+E, novamente,
+isso é de se esperar
+
+00:01:07.858 --> 00:01:11.244
+porque é uma reação adversa comum
+conhecida para a insulina injetável,
+
+00:01:11.277 --> 00:01:12.603
+por causa das agulhas.
+
+00:01:12.636 --> 00:01:13.950
+Na verdade,
+é uma das maiores razões
+
+00:01:13.983 --> 00:01:16.158
+porque queremos insulina oral,
+em primeiro lugar.
+
+00:01:16.191 --> 00:01:19.256
+E estas contagens são mais claras
+nos gráficos de barras horizontais.
+
+00:01:19.289 --> 00:01:20.694
+Este para Auralin
+
+00:01:23.581 --> 00:01:25.339
+e este para Novodra.
+
+00:01:27.524 --> 00:01:29.920
+E vamos diminuir o zoom
+para essa comparação.
+
+00:01:37.316 --> 00:01:38.617
+A próxima métrica principal,
+
+00:01:38.650 --> 00:01:41.798
+Alteração da Dose Média de Insulina
+Pré-Estudo e Pós-Estudo.
+
+00:01:42.133 --> 00:01:44.299
+Isso é importante
+porque se a nova insulina oral
+
+00:01:44.332 --> 00:01:46.902
+requer uma dose mais alta
+para ser eficaz,
+
+00:01:47.280 --> 00:01:49.680
+o fabricante pode não trazê-la
+para o mercado.
+
+00:01:49.713 --> 00:01:52.815
+A necessidade de doses maciças
+torna financeiramente inviável
+
+00:01:52.848 --> 00:01:55.556
+e basicamente um problema econômico
+para o fabricante.
+
+00:01:55.589 --> 00:01:57.888
+Mesmo que fosse eficaz
+e pudesse melhorar vidas,
+
+00:01:57.921 --> 00:02:00.077
+a indústria farmacêutica
+é um negócio
+
+00:02:00.110 --> 00:02:02.031
+e é uma realidade infeliz,
+às vezes.
+
+00:02:02.064 --> 00:02:04.127
+Então, você pode lembrar
+que a informação de dosagem
+
+00:02:04.160 --> 00:02:06.728
+foi escondida em duas colunas
+nesta tabela de tratamentos,
+
+00:02:06.761 --> 00:02:08.282
+Auralin e Novodra,
+
+00:02:08.315 --> 00:02:10.739
+com dose inicial e dose final
+escondidas em cada coluna,
+
+00:02:10.772 --> 00:02:14.150
+bem como o valor do tratamento foi
+escondido em cada título de coluna.
+
+00:02:14.183 --> 00:02:16.908
+Você separou as doses iniciais
+e as doses finais
+
+00:02:16.941 --> 00:02:18.878
+além de converter isso
+de um formato bagunçado
+
+00:02:18.911 --> 00:02:20.027
+para um organizado,
+
+00:02:20.060 --> 00:02:22.810
+ao fundir a variável de tratamento
+em sua própria coluna.
+
+00:02:23.127 --> 00:02:25.079
+E o produto final ficou assim:
+
+00:02:25.494 --> 00:02:27.380
+dose inicial e dose final
+do tratamento,
+
+00:02:27.413 --> 00:02:30.085
+o que permitiu essa análise
+da mudança da dose média.
+
+00:02:30.527 --> 00:02:33.041
+E de novo, os resultados aqui
+são bons para Auralin
+
+00:02:33.074 --> 00:02:35.085
+ou, ao menos, não são ruins.
+
+00:02:35.362 --> 00:02:36.972
+Este oito negativo
+é um pouco confuso,
+
+00:02:37.005 --> 00:02:38.876
+mas é apenas como os números
+foram configurados.
+
+00:02:38.909 --> 00:02:40.838
+Significa que os pacientes
+tratados com Auralin
+
+00:02:40.871 --> 00:02:44.009
+precisaram em média,
+de mais oito unidades de insulina
+
+00:02:44.042 --> 00:02:47.098
+para estabelecer um nível seguro
+e constante de açúcar no sangue.
+
+00:02:47.131 --> 00:02:49.637
+Isso é, comparado aos pacientes
+com Novodra que, em média,
+
+00:02:49.670 --> 00:02:51.952
+precisaram de 0,4 unidades
+a menos de insulina,
+
+00:02:51.985 --> 00:02:53.834
+comparando a dose inicial
+e a dose final,
+
+00:02:53.867 --> 00:02:55.299
+pré-estudo e pós-estudo.
+
+00:02:55.332 --> 00:02:59.107
+Não é terrível o fato de Auralin
+precisar de mais oito unidades.
+
+00:02:59.140 --> 00:03:02.164
+É esperado
+porque sabíamos que a insulina oral
+
+00:03:02.197 --> 00:03:04.095
+iria demorar
+para chegar à corrente sanguínea
+
+00:03:04.128 --> 00:03:05.274
+pelo estômago,
+
+00:03:05.307 --> 00:03:07.406
+e oito unidades a mais
+não são muita coisa.
+
+00:03:07.439 --> 00:03:09.212
+E esta diferença
+na mudança da dose média
+
+00:03:09.245 --> 00:03:11.064
+é mais evidente
+neste gráfico de barras aqui.
+
+00:03:11.097 --> 00:03:14.003
+E de novo,
+é a dose inicial menos a dose final.
+
+00:03:14.036 --> 00:03:18.087
+Agora a métrica principal:
+alteração da HbA1c.
+
+00:03:18.693 --> 00:03:20.676
+Lembre-se
+que a alteração da HbA1c
+
+00:03:20.709 --> 00:03:23.376
+é o nosso indicador-chave
+para o controle da diabetes.
+
+00:03:23.409 --> 00:03:26.782
+A maioria dos pacientes neste estudo
+começa em torno de 7,9%.
+
+00:03:26.815 --> 00:03:30.097
+E se podemos estabelecer que Auralin
+causa uma redução na HbA1c
+
+00:03:30.130 --> 00:03:33.008
+que é semelhante ao atual padrão
+da insulina injetável,
+
+00:03:33.447 --> 00:03:34.564
+isso é um sucesso.
+
+00:03:34.597 --> 00:03:37.052
+E vai ser mensurada
+por um intervalo de confiança,
+
+00:03:37.085 --> 00:03:38.548
+que você verá em breve.
+
+00:03:38.581 --> 00:03:39.734
+Mas a primeira etapa para obter
+esse intervalo
+
+00:03:39.767 --> 00:03:41.887
+é estabelecer a diferença
+nas médias.
+
+00:03:41.920 --> 00:03:44.257
+A diferença na média
+das alterações de HbA1c, isto é,
+
+00:03:44.616 --> 00:03:46.135
+entre Auralin e Novodra.
+
+00:03:46.168 --> 00:03:50.345
+Temos aqui como as reduções médias
+de HbA1c eram antes de limpar.
+
+00:03:50.647 --> 00:03:52.655
+Lembre que os dois grandes objetivos
+da limpeza
+
+00:03:52.688 --> 00:03:56.381
+para a coluna "HbA1c change"
+era preencher os valores ausentes,
+
+00:03:56.414 --> 00:03:59.240
+esses "NaNs" aqui,
+ou seja, recalcular essa diferença.
+
+00:03:59.446 --> 00:04:01.668
+HbA1c inicial menos HbA1c final,
+
+00:04:02.065 --> 00:04:04.691
+que também abordam
+as alterações imprecisas de HbA1c,
+
+00:04:04.724 --> 00:04:06.626
+aquelas que começaram
+com 0,9.
+
+00:04:06.659 --> 00:04:08.868
+Mais uma vez, registro errado
+por quem escreveu.
+
+00:04:08.901 --> 00:04:10.965
+Esses 0,9 são na verdade 0,4.
+
+00:04:10.998 --> 00:04:13.425
+Antes da limpeza,
+Novodra tinha uma vantagem enorme
+
+00:04:13.458 --> 00:04:14.984
+na redução da HbA1C,
+
+00:04:15.017 --> 00:04:18.146
+0,71 contra 0,35 do Auralin.
+
+00:04:18.179 --> 00:04:19.627
+É uma grande diferença.
+
+00:04:19.660 --> 00:04:22.104
+E aqui temos o que parece ser
+um gráfico de barras.
+
+00:04:22.137 --> 00:04:25.763
+Uma grande vantagem para Novodra,
+mas isso era antes da limpeza.
+
+00:04:25.796 --> 00:04:27.152
+Não desanime ainda.
+
+00:04:27.185 --> 00:04:29.502
+E aqui está o que parece
+depois da limpeza,
+
+00:04:29.535 --> 00:04:33.215
+0,40 para Novodra comparado
+a 0,39 para Auralin.
+
+00:04:33.248 --> 00:04:34.609
+Isso é muito melhor.
+
+00:04:34.642 --> 00:04:38.346
+Essa pequena diferença nas médias
+é muito clara no gráfico de barras.
+
+00:04:38.379 --> 00:04:40.084
+Portanto,
+esses resultados são encorajadores,
+
+00:04:40.117 --> 00:04:41.433
+mas os resultados
+dos estudos clínicos
+
+00:04:41.466 --> 00:04:44.811
+exigem análises estatísticas
+mais rigorosas para confirmar isso.
+
+00:04:44.844 --> 00:04:47.217
+E, especificamente,
+a estatística que procuramos
+
+00:04:47.250 --> 00:04:49.377
+era o limite superior
+do intervalo de confiança
+
+00:04:49.410 --> 00:04:52.262
+entre as diferenças
+nas médias inferiores a 0,4.
+
+00:04:52.608 --> 00:04:55.069
+Antes de limpar
+era 0,71 versus 0,35;
+
+00:04:55.102 --> 00:04:57.210
+a diferença limpa
+no gráfico de barras.
+
+00:04:57.243 --> 00:05:00.312
+E a métrica de não inferioridade
+não passou.
+
+00:05:00.345 --> 00:05:03.258
+O limite superior
+do intervalo de confiança é de 0,43.
+
+00:05:03.527 --> 00:05:05.668
+Sem avaliar e limpar os dados
+dos estudos clínicos,
+
+00:05:05.701 --> 00:05:08.543
+Auralin não teria passado
+para a Fase II do estudo clínico.
+
+00:05:08.893 --> 00:05:12.004
+Após a limpeza, a redução da HbA1C
+é bastante semelhante
+
+00:05:12.741 --> 00:05:15.102
+e isso é confirmado
+no intervalo de confiança,
+
+00:05:15.538 --> 00:05:19.340
+o limite superior de 0,03
+é ligeiramente inferior a 0,4;
+
+00:05:19.750 --> 00:05:20.831
+então é ótimo.
+
+00:05:20.864 --> 00:05:23.853
+A insulina oral é igualmente eficaz
+à insulina injetável
+
+00:05:23.886 --> 00:05:25.453
+de acordo
+com este estudo clínico.
+
+00:05:25.726 --> 00:05:27.158
+O que isso significa?
+
+00:05:27.574 --> 00:05:31.471
+Significa que a insulina oral passou
+para a Fase II dos estudos clínicos.
+
+00:05:32.003 --> 00:05:33.700
+Historicamente,
+a Fase II dos estudos
+
+00:05:33.733 --> 00:05:35.467
+é a mais difícil de passar.
+
+00:05:35.500 --> 00:05:37.173
+Isso é muito importante.
+
+00:05:37.206 --> 00:05:38.943
+Historicamente,
+a probabilidade de sucesso
+
+00:05:38.976 --> 00:05:41.359
+para a Fase II
+dos estudos é de 31%.
+
+00:05:41.392 --> 00:05:43.560
+Passar para a Fase II significa
+que temos uma boa chance
+
+00:05:43.593 --> 00:05:45.078
+de passar para a Fase III,
+
+00:05:45.111 --> 00:05:46.933
+assim como no processo
+de revisão regulatória
+
+00:05:46.966 --> 00:05:49.170
+e ter uma boa chance
+de lançar no mercado.
+
+00:05:49.203 --> 00:05:52.228
+Se acontecer, a insulina oral
+seria um enorme avanço
+
+00:05:52.261 --> 00:05:55.186
+no tratamento de pacientes
+com diabetes Tipo I e Tipo II,
+
+00:05:55.219 --> 00:05:57.904
+com a libertação dos pacientes
+das injeções diárias,
+
+00:05:57.937 --> 00:06:00.047
+ajuda na redução
+das doses esquecidas e, portanto,
+
+00:06:00.080 --> 00:06:01.333
+redução
+das complicações prejudiciais
+
+00:06:01.366 --> 00:06:03.658
+e, por vezes,
+graves da diabetes.
+
+00:06:03.691 --> 00:06:06.022
+Bom trabalho avaliando
+e limpando esses dados.
+
+00:06:06.055 --> 00:06:07.664
+Ambos eram vitais.
+

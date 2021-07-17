@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.359 --> 00:00:05.355
+You completed our lesson on cleaning data,
+
+00:00:05.355 --> 00:00:07.725
+the third step in the data wrangling process.
+
+00:00:07.724 --> 00:00:11.640
+That also means you've reached the end of our data wrangling course.
+
+00:00:11.640 --> 00:00:14.013
+Congratulations. In this lesson,
+
+00:00:14.012 --> 00:00:17.190
+you converted your assessments from the previous lesson and defined,
+
+00:00:17.190 --> 00:00:19.525
+coded, and tested cleaning operations for them.
+
+00:00:19.524 --> 00:00:23.853
+You cleaned to improve quality and you did it efficiently using things like loops,
+
+00:00:23.853 --> 00:00:26.039
+functions, and regular expressions.
+
+00:00:26.039 --> 00:00:31.559
+You also cleaned to tidy the data set using pandas's tidying functions, like melt.
+
+00:00:31.559 --> 00:00:35.384
+That was a lot of cleaning and the code required wasn't a piece of cake.
+
+00:00:35.384 --> 00:00:37.454
+You should be proud of yourself and excited,
+
+00:00:37.454 --> 00:00:39.719
+because everything you cleaned represents
+
+00:00:39.719 --> 00:00:42.759
+the vast majority of issues you'll encounter in the future.
+
+00:00:42.759 --> 00:00:45.835
+And congrats on completing the course once again.
+
+00:00:45.835 --> 00:00:49.024
+You're a certified data gatherer, assessor and cleaner.
+
+00:00:49.024 --> 00:00:50.905
+Since so much of the world's data comes
+
+00:00:50.905 --> 00:00:55.410
+dirty and messy and so much new data is being produced every day,
+
+00:00:55.409 --> 00:01:00.000
+you'll have plenty of opportunities to apply your new wrangling skills.
+

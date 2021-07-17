@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.322
+After addressing missing data first,
+
+00:00:02.322 --> 00:00:05.745
+cleaning for tidiness is usually the next logical step.
+
+00:00:05.745 --> 00:00:08.615
+Since Hadley Wickham is the pioneer of tidy data,
+
+00:00:08.615 --> 00:00:12.400
+let's start this bit with a quote from his paper on the subject.
+
+00:00:12.400 --> 00:00:16.199
+A huge amount of effort is spent cleaning data to get it ready for analysis,
+
+00:00:16.199 --> 00:00:18.254
+but there has been little research on how to make data
+
+00:00:18.254 --> 00:00:20.879
+cleaning as easy and effective as possible.
+
+00:00:20.879 --> 00:00:22.439
+This paper tackles a small,
+
+00:00:22.440 --> 00:00:26.105
+but important, component of data cleaning: data tidying.
+
+00:00:26.105 --> 00:00:29.560
+The key take away is that Tidy datasets are easy to manipulate.
+
+00:00:29.559 --> 00:00:31.424
+And in the context of data wrangling,
+
+00:00:31.425 --> 00:00:34.469
+tidy datasets with data quality issues are almost always
+
+00:00:34.469 --> 00:00:38.539
+easier to clean than non-tidy as they have data quality issues.
+
+00:00:38.539 --> 00:00:42.024
+That means, it's generally best to clean the tidiness issues first,
+
+00:00:42.024 --> 00:00:43.424
+which are our structural issues,
+
+00:00:43.424 --> 00:00:45.195
+then clean the quality issues,
+
+00:00:45.195 --> 00:00:46.844
+which are the content issues.
+
+00:00:46.844 --> 00:00:50.414
+For our example in this oral insulin clinical trial dataset,
+
+00:00:50.414 --> 00:00:54.174
+we detected and documented four sections of the dataset that weren't tidy.
+
+00:00:54.174 --> 00:00:55.604
+The first in the patients table,
+
+00:00:55.604 --> 00:00:57.592
+the two variables in one column,
+
+00:00:57.593 --> 00:00:59.010
+the contact column here,
+
+00:00:59.009 --> 00:01:01.649
+phone number and email are in this one column.
+
+00:01:01.649 --> 00:01:02.850
+Then in the treatment's table,
+
+00:01:02.850 --> 00:01:05.579
+there are three variables in two columns.
+
+00:01:05.579 --> 00:01:09.959
+Treatment and start dose and end dose in the auralin and novodra columns.
+
+00:01:09.959 --> 00:01:12.449
+Start dose here, end dose here and
+
+00:01:12.450 --> 00:01:16.504
+the third treatment variable in the column headers auralin novodra.
+
+00:01:16.504 --> 00:01:19.364
+The third is that the adverse_reactions table shouldn't exist.
+
+00:01:19.364 --> 00:01:23.644
+And that the adverse reaction column should be part of the treatments table i.e.
+
+00:01:23.644 --> 00:01:27.359
+this adverse_reaction column here should be joined with this treatments table here.
+
+00:01:27.359 --> 00:01:31.469
+And the fourth, is that the given_name and surname columns are duplicated in
+
+00:01:31.469 --> 00:01:36.349
+the treatments in adverse_reactions table when it should only be in the patients table.
+
+00:01:36.349 --> 00:01:41.369
+And here the given_name and surname is displayed in the patients.info results.
+
+00:01:41.370 --> 00:01:45.210
+Same goes for treatments.info and adverse_reactions.info.
+
+00:01:45.209 --> 00:01:50.929
+So only a small set of tools are needed to deal with a wide range of untidy datasets.
+
+00:01:50.930 --> 00:01:55.000
+You'll cover the most common ones in Pandas to fix these above four issues next.
+

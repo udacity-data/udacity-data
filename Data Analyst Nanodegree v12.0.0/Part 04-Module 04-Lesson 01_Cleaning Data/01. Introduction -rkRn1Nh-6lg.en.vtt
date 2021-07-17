@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.530 --> 00:00:05.910
+Now that you know how to gather and assess data you're going to master cleaning it.
+
+00:00:05.910 --> 00:00:10.425
+Cleaning your data is the third and final step in the data wrangling process.
+
+00:00:10.425 --> 00:00:12.540
+This is where the quality and tidiness issues you
+
+00:00:12.539 --> 00:00:15.239
+identified in the Assess step are remedied.
+
+00:00:15.240 --> 00:00:18.405
+It can be done manually in spreadsheet programs or text editors,
+
+00:00:18.405 --> 00:00:23.010
+but data cleaning is often best done using code and in three steps.
+
+00:00:23.010 --> 00:00:26.250
+First you define how you're going to clean issue in words,
+
+00:00:26.250 --> 00:00:28.829
+then you convert these words to code,
+
+00:00:28.829 --> 00:00:33.144
+and finally test your data to make sure if that code worked.
+
+00:00:33.145 --> 00:00:37.080
+Watching your data transform to clean feels like magic sometimes.
+
+00:00:37.079 --> 00:00:40.409
+In this lesson you'll take your assessments from the last lesson and
+
+00:00:40.409 --> 00:00:44.114
+define, code and test cleaning operations for each.
+
+00:00:44.115 --> 00:00:46.289
+You'll also become intimately familiar with
+
+00:00:46.289 --> 00:00:49.935
+the cleaning and testing functions in Python and the pandas library.
+
+00:00:49.935 --> 00:00:52.859
+At the end the lesson we'll flash forward to analysis and
+
+00:00:52.859 --> 00:00:57.359
+visualization and you'll see how cleaning was absolutely necessary.
+
+00:00:57.359 --> 00:00:59.594
+You're going to leave with the tools required to clean
+
+00:00:59.594 --> 00:01:02.609
+pretty much everything you come across in the future.
+
+00:01:02.609 --> 00:01:04.334
+And since it's the last lesson of the course,
+
+00:01:04.334 --> 00:01:07.049
+you're also going to leave an expert data wrangler.
+

@@ -1,0 +1,108 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.001 --> 00:00:01.410
+INTRODUÇÃO
+
+00:00:01.441 --> 00:00:03.956
+Agora que você sabe
+como reunir e avaliar os dados,
+
+00:00:03.989 --> 00:00:05.768
+vai dominar a limpeza.
+
+00:00:06.126 --> 00:00:08.415
+A limpeza dos dados
+é a terceira e última etapa
+
+00:00:08.448 --> 00:00:10.167
+no processo
+de preparação de dados.
+
+00:00:10.412 --> 00:00:12.465
+Aqui é onde os problemas
+de qualidade e organização
+
+00:00:12.498 --> 00:00:15.155
+identificados na etapa de Avaliação
+são corrigidos.
+
+00:00:15.188 --> 00:00:17.376
+Isso pode ser feito manualmente
+em programas de planilhas
+
+00:00:17.409 --> 00:00:18.518
+ou editores de texto,
+
+00:00:18.551 --> 00:00:20.462
+mas a limpeza de dados
+geralmente é melhor feita
+
+00:00:20.495 --> 00:00:22.711
+usando o código
+e em três etapas.
+
+00:00:23.023 --> 00:00:25.968
+Primeiro, você define como vai
+limpar o problema em palavras,
+
+00:00:26.517 --> 00:00:28.764
+então converte essas palavras
+em código,
+
+00:00:28.797 --> 00:00:30.538
+e, por fim, testa os dados
+
+00:00:30.571 --> 00:00:32.463
+para garantir
+que o código funcionou.
+
+00:00:33.027 --> 00:00:36.615
+Observar os dados ficarem limpos
+parece mágica, às vezes.
+
+00:00:37.243 --> 00:00:40.181
+Nesta lição, você fará as avaliações
+a partir da última lição
+
+00:00:40.214 --> 00:00:42.056
+e vai definir, codificar
+e testar
+
+00:00:42.089 --> 00:00:44.032
+as operações de limpeza
+para cada uma delas.
+
+00:00:44.065 --> 00:00:45.959
+Você também vai
+se familiarizar
+
+00:00:45.992 --> 00:00:49.526
+com as funções de limpeza e teste
+no Python e na biblioteca do Pandas.
+
+00:00:49.839 --> 00:00:53.533
+No final da lição, iremos
+para a análise e visualização
+
+00:00:53.566 --> 00:00:56.522
+e você verá como a limpeza
+era absolutamente necessária.
+
+00:00:57.113 --> 00:00:59.070
+Você vai sair
+com as ferramentas necessárias
+
+00:00:59.103 --> 00:01:02.036
+para limpar praticamente tudo
+o que encontrar no futuro.
+
+00:01:02.571 --> 00:01:04.388
+E já que é a última lição
+do curso,
+
+00:01:04.421 --> 00:01:07.077
+você também vai sair um especialista
+em preparação de dados.
+

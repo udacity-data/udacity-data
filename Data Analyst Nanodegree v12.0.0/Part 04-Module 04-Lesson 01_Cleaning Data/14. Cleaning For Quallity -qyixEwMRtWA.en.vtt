@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.089
+Once the missing data and tidiness issues are cleaned,
+
+00:00:03.089 --> 00:00:05.615
+cleaning the remaining data quality issues, i.e.
+
+00:00:05.615 --> 00:00:09.469
+the ones outside of the completeness issues is all that remains.
+
+00:00:09.470 --> 00:00:12.585
+And there were a lot of data quality issues in this dataset.
+
+00:00:12.585 --> 00:00:17.515
+19 in total and 16 outside of the missing data issues to be exact.
+
+00:00:17.515 --> 00:00:21.745
+Next you'll use a variety of common pandas functions to clean them all.
+
+00:00:21.745 --> 00:00:23.914
+This is a hefty task but you can do it.
+
+00:00:23.914 --> 00:00:27.660
+We're on the home-stretch here and we're so close to clean data that we can use to
+
+00:00:27.660 --> 00:00:32.549
+analyze and hopefully recommend oral insulin as a viable insulin treatment for dia.
+

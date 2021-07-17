@@ -1,0 +1,56 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.282 --> 00:00:03.222
+Quando problemas de dados ausentes
+e de organização são limpos,
+
+00:00:03.255 --> 00:00:05.960
+limpar os problemas de qualidade
+dos dados restantes, ou seja,
+
+00:00:05.993 --> 00:00:08.107
+aqueles que estão fora
+dos problemas de integralidade
+
+00:00:08.140 --> 00:00:09.571
+é tudo o que resta.
+
+00:00:09.604 --> 00:00:12.637
+E teve muitos problemas de qualidade
+de dados neste conjunto.
+
+00:00:12.862 --> 00:00:17.047
+19 no total e 16 fora dos problemas
+de dados ausentes, para ser exato.
+
+00:00:17.616 --> 00:00:20.265
+Depois, você usará
+várias funções comuns do Pandas
+
+00:00:20.298 --> 00:00:21.705
+para limpar todos.
+
+00:00:21.738 --> 00:00:23.873
+É uma tarefa cansativa,
+mas você pode fazer.
+
+00:00:23.906 --> 00:00:25.550
+Estamos na reta final aqui
+
+00:00:25.583 --> 00:00:27.120
+e estamos tão perto de limpar
+os dados
+
+00:00:27.153 --> 00:00:28.345
+que podemos usar para analisar
+
+00:00:28.378 --> 00:00:30.230
+e espero recomendar
+a insulina oral
+
+00:00:30.263 --> 00:00:32.686
+como um tratamento viável
+de insulina para diabéticos.
+

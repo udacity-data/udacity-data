@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.089 --> 00:00:07.769
+You can fix quality and tidiness issues manually in spreadsheet programs or text editors,
+
+00:00:07.769 --> 00:00:11.399
+for example, doing things like retyping incorrect data,
+
+00:00:11.400 --> 00:00:14.160
+or copying and pasting columns in rows.
+
+00:00:14.160 --> 00:00:16.214
+But manual cleaning is inefficient,
+
+00:00:16.214 --> 00:00:18.795
+error prone and also demoralizing.
+
+00:00:18.795 --> 00:00:20.670
+You should never clean manually,
+
+00:00:20.670 --> 00:00:23.650
+unless the issues are one-off occurrences.
+
+00:00:23.649 --> 00:00:26.129
+Data cleaning is best done programmatically.
+
+00:00:26.129 --> 00:00:27.869
+This means using code to automate
+
+00:00:27.870 --> 00:00:31.620
+cleaning tasks and minimize repetition, which saves you time.
+
+00:00:31.620 --> 00:00:35.630
+Data wrangling takes up a huge chunk of your time as a data professional already.
+
+00:00:35.630 --> 00:00:38.969
+So saving time wherever possible, is great.
+

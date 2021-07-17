@@ -1,0 +1,156 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.195 --> 00:00:02.388
+No geral, é melhor encontrar
+os dados ausentes primeiro,
+
+00:00:02.421 --> 00:00:03.516
+se puder.
+
+00:00:03.549 --> 00:00:05.429
+Em outras palavras,
+problemas de integralidade,
+
+00:00:05.462 --> 00:00:07.059
+que são uma parte
+da qualidade dos dados.
+
+00:00:07.092 --> 00:00:09.089
+Às vezes, você não pode
+e está tudo bem.
+
+00:00:09.122 --> 00:00:10.912
+Mas se conseguir encontrar
+esses dados ausentes,
+
+00:00:10.945 --> 00:00:13.228
+use "concatenate", "join",
+"impute", o que for.
+
+00:00:13.261 --> 00:00:14.643
+Tenha tudo íntegro ali,
+
+00:00:14.676 --> 00:00:16.580
+assim operações de limpeza
+executadas depois
+
+00:00:16.613 --> 00:00:19.574
+nessas colunas ou linhas
+não precisarão ser refeitas,
+
+00:00:19.607 --> 00:00:21.884
+ou seja, sem preenchimento
+de dados ausentes,
+
+00:00:21.917 --> 00:00:24.598
+então limpar algumas linhas
+e colunas com dados ausentes,
+
+00:00:24.631 --> 00:00:28.299
+depois juntar esses dados
+e refazer as operações de limpeza.
+
+00:00:28.630 --> 00:00:30.466
+Para o conjunto de dados
+de estudos clínicos aqui,
+
+00:00:30.499 --> 00:00:32.759
+identificamos
+três problemas de integralidade.
+
+00:00:32.792 --> 00:00:34.210
+Dois na tabela de tratamentos,
+
+00:00:34.243 --> 00:00:36.448
+a ausência das alterações
+de HbA1c
+
+00:00:36.481 --> 00:00:39.613
+e os registros ausentes
+com 280 em vez de 350,
+
+00:00:40.257 --> 00:00:42.166
+exibidos aqui
+na avaliação visual.
+
+00:00:43.445 --> 00:00:45.827
+E um problema de dados ausentes
+na tabela de pacientes,
+
+00:00:45.860 --> 00:00:48.856
+a informação demográfica ausente
+é exibida aqui
+
+00:00:48.889 --> 00:00:52.058
+através do método ".isnull "
+na coluna de endereço do paciente.
+
+00:00:52.091 --> 00:00:55.112
+Endereço, cidade, estado,
+CEP, país e contato.
+
+00:00:55.145 --> 00:00:57.662
+O contato sendo
+o número de telefone e o e-mail.
+
+00:00:58.458 --> 00:01:00.649
+Entretanto, não podemos abordar
+este terceiro problema,
+
+00:01:00.682 --> 00:01:02.508
+a informação demográfica
+ausente.
+
+00:01:02.972 --> 00:01:05.308
+Às vezes, você simplesmente
+não pode, fica preso.
+
+00:01:05.516 --> 00:01:09.000
+Realmente não temos como obter
+essas informações dessas pessoas.
+
+00:01:09.308 --> 00:01:10.800
+Porque não sabemos
+onde elas moram,
+
+00:01:10.833 --> 00:01:12.419
+o número de telefone
+ou o e-mail.
+
+00:01:12.452 --> 00:01:13.804
+Não podemos contatá-las.
+
+00:01:13.837 --> 00:01:16.056
+Podemos olhar a lista telefônica
+ou a internet
+
+00:01:16.089 --> 00:01:17.417
+para as informações
+de contato,
+
+00:01:17.450 --> 00:01:19.932
+mas provavelmente é mais eficiente
+esperar que elas voltem
+
+00:01:19.965 --> 00:01:22.995
+ao nosso escritório ou ao hospital,
+por exemplo.
+
+00:01:23.301 --> 00:01:25.302
+Podemos limpar
+os outros dois problemas,
+
+00:01:25.335 --> 00:01:27.198
+os dois da tabela
+de tratamentos.
+
+00:01:27.231 --> 00:01:30.068
+As alterações da ausência de HbA1c
+e os registros ausentes,
+
+00:01:30.101 --> 00:01:33.589
+280 em vez de 350.
+Vamos fazer isso agora.
+

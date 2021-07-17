@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.160
+Here's a concrete example of the data cleaning process: defining, coding, and testing.
+
+00:00:05.160 --> 00:00:06.690
+So gathering was completed,
+
+00:00:06.690 --> 00:00:11.550
+imported the Pandas library and read this animals.csv file into a data frame called DF.
+
+00:00:11.550 --> 00:00:16.185
+Then visual assessment was done in Pandas and two quality issues were noted.
+
+00:00:16.184 --> 00:00:19.239
+The letters bb before every animal name and
+
+00:00:19.239 --> 00:00:23.579
+an exclamation mark instead of a period for the decimal in body weight and brain weight.
+
+00:00:23.579 --> 00:00:26.664
+Notice that these assessments are observations.
+
+00:00:26.664 --> 00:00:29.574
+So let's get cleaning. The first step, defining.
+
+00:00:29.574 --> 00:00:31.619
+Rather than a strict observation like in
+
+00:00:31.620 --> 00:00:35.704
+our assessment documentation, defining uses verbs.
+
+00:00:35.704 --> 00:00:38.554
+It's a call to action to fix the issue we observed.
+
+00:00:38.554 --> 00:00:40.229
+For example, this works.
+
+00:00:40.229 --> 00:00:42.629
+Remove bb before every animal name.
+
+00:00:42.630 --> 00:00:45.005
+The verb or action word being removed.
+
+00:00:45.005 --> 00:00:46.800
+You can get as detail as you like.
+
+00:00:46.799 --> 00:00:49.759
+Whatever you find helps you best when coding next.
+
+00:00:49.759 --> 00:00:51.179
+So this could very well be,
+
+00:00:51.179 --> 00:00:54.524
+remove bb for every animal name using string slicing,
+
+00:00:54.524 --> 00:00:57.479
+specifying the tool or function method etc.
+
+00:00:57.479 --> 00:01:00.500
+that you'll use to actually fix this issue using code.
+
+00:01:00.500 --> 00:01:03.210
+A second example for the exclamation mark issue.
+
+00:01:03.210 --> 00:01:07.680
+Replace exclamation mark with period in body weight and brain weight columns.
+
+00:01:07.680 --> 00:01:10.620
+Those are defined cleaning operations.
+
+00:01:10.620 --> 00:01:12.329
+Okay, so step two, coding.
+
+00:01:12.329 --> 00:01:15.280
+This is actually doing the thing you mentioned in your definition.
+
+00:01:15.280 --> 00:01:20.000
+And for us in this course, we're going to leverage the Pandas's library.
+
+00:01:29.439 --> 00:01:34.634
+To fix the first issue, we'll use string slicing and to fix the second one,
+
+00:01:34.635 --> 00:01:38.844
+we'll use Pandas's string.replace method each operating on their own column.
+
+00:01:38.844 --> 00:01:43.131
+Animal, body weight, brain weight.
+
+00:01:43.131 --> 00:01:45.114
+So now it's testing time.
+
+00:01:45.114 --> 00:01:47.214
+The third step in the data cleaning process.
+
+00:01:47.215 --> 00:01:49.560
+This is making sure our code worked.
+
+00:01:49.560 --> 00:01:53.430
+The simplest way of doing so is just visually assessing your data set again which we'll
+
+00:01:53.430 --> 00:01:57.515
+do for this data set because it's pretty small and everything looks good here.
+
+00:01:57.515 --> 00:02:01.004
+Visual assessment works here but we can also use programmatic assessments,
+
+00:02:01.004 --> 00:02:05.489
+search statements, Pandas's built in testing methods and functions for example.
+

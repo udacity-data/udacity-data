@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.490 --> 00:00:06.504
+Say it with me. Data wrangling can be iterative.
+
+00:00:06.503 --> 00:00:08.904
+Hopefully that's drilled into your head now.
+
+00:00:08.904 --> 00:00:10.645
+So you just finished defining,
+
+00:00:10.646 --> 00:00:12.735
+coding, and testing the cleaning operations.
+
+00:00:12.734 --> 00:00:15.669
+After cleaning, we always reassess our data.
+
+00:00:15.669 --> 00:00:17.864
+Then if necessary, gather more data.
+
+00:00:17.864 --> 00:00:21.929
+Or make additional assessments and address them through another iteration of cleaning.
+
+00:00:21.929 --> 00:00:24.949
+You might proceed to analysis or visualization at this point.
+
+00:00:24.949 --> 00:00:29.384
+But it's also completely okay to revisit any wrangling step later too,
+
+00:00:29.385 --> 00:00:31.120
+if you realize it's necessary.
+

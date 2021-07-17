@@ -1,0 +1,355 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.345
+So you assessed and cleaned this entire clinical trial data set.
+
+00:00:03.345 --> 00:00:06.120
+Let's flash forward to the key point here.
+
+00:00:06.120 --> 00:00:09.900
+Is Auralin, the proposed new oral insulin, effective?
+
+00:00:09.900 --> 00:00:13.905
+Again, that's a comparison to the injectable insulin Novodra.
+
+00:00:13.904 --> 00:00:16.559
+And here are the clinical trials key metrics.
+
+00:00:16.559 --> 00:00:18.554
+The first one here: Adverse reactions.
+
+00:00:18.554 --> 00:00:22.634
+For Auralin to pass this Phase II clinical trial it must be deemed safe,
+
+00:00:22.635 --> 00:00:25.025
+and the adverse reactions to it is encouraging.
+
+00:00:25.024 --> 00:00:27.504
+These adverse reactions were actually previously standalone,
+
+00:00:27.504 --> 00:00:31.199
+but you join this to the treatments table to allow for this analysis.
+
+00:00:31.199 --> 00:00:32.609
+And here's what that adverse reaction column
+
+00:00:32.609 --> 00:00:35.924
+attached to the treatments table looked like.
+
+00:00:35.924 --> 00:00:38.984
+Here are the pandas grouped by object.
+
+00:00:38.984 --> 00:00:42.329
+Some of the common adverse reactions are cough, headache nausea,
+
+00:00:42.329 --> 00:00:45.239
+a big one is hypoglycemia which is low blood sugar caused by
+
+00:00:45.240 --> 00:00:48.068
+an insulin overdose, usually at least.
+
+00:00:48.067 --> 00:00:50.184
+Between the two drugs, Auralin and Novodra,
+
+00:00:50.185 --> 00:00:53.155
+the peer counts of each adverse reaction are pretty similar.
+
+00:00:53.155 --> 00:00:57.000
+With the exception of throat irritation for Auralin, the oral insulin,
+
+00:00:57.000 --> 00:00:59.009
+which can be expected because this pill is taken
+
+00:00:59.009 --> 00:01:01.929
+orally and passes by the throat before it gets to the stomach.
+
+00:01:01.929 --> 00:01:06.230
+And then injection site discomfort for Novodra which is the injectable insulin.
+
+00:01:06.230 --> 00:01:08.189
+And again, that's to be expected because that's
+
+00:01:08.189 --> 00:01:12.509
+a common known adverse reaction for injectable insulin because of needles.
+
+00:01:12.510 --> 00:01:15.880
+This is actually one of the big reasons why we want oral insulin in the first place.
+
+00:01:15.879 --> 00:01:18.994
+And these counts are more clear in these horizontal bar charts.
+
+00:01:18.995 --> 00:01:26.040
+This one for Auralin and this one for Novodra.
+
+00:01:26.040 --> 00:01:35.537
+And let's zoom out for that comparison.
+
+00:01:35.537 --> 00:01:38.588
+Now the next key metric,
+
+00:01:38.587 --> 00:01:41.944
+Pre-trial Post-trial Mean Insulin Dose Change.
+
+00:01:41.944 --> 00:01:44.399
+This is important because if the new oral insulin
+
+00:01:44.400 --> 00:01:47.093
+requires a way higher dosage to be effective,
+
+00:01:47.093 --> 00:01:49.358
+the manufacturer might not bring this to market.
+
+00:01:49.358 --> 00:01:52.090
+Requiring massive doses makes things financially
+
+00:01:52.090 --> 00:01:55.370
+infeasible and essentially an economic problem for the manufacturer.
+
+00:01:55.370 --> 00:01:57.975
+Even if this was effective and could improve lives,
+
+00:01:57.974 --> 00:02:01.994
+the drug industry is a business and it's an unfortunate reality sometimes.
+
+00:02:01.995 --> 00:02:04.079
+So you might recall that this dosage information was
+
+00:02:04.079 --> 00:02:06.614
+actually hidden in two columns in this treatments table,
+
+00:02:06.614 --> 00:02:10.634
+Auralin and Novodra, with start dose and end dose hidden in each column,
+
+00:02:10.634 --> 00:02:14.049
+as well as the treatment value hidden in each column header.
+
+00:02:14.050 --> 00:02:16.800
+You separated out these start doses and end doses as
+
+00:02:16.800 --> 00:02:19.560
+well as converting this from a messy to a tidy format,
+
+00:02:19.560 --> 00:02:22.890
+by melting the treatment variable down to its own column.
+
+00:02:22.889 --> 00:02:26.309
+And the final product looking like this: treatment start dose,
+
+00:02:26.310 --> 00:02:30.289
+end dose, which allowed for this mean dose change analysis.
+
+00:02:30.289 --> 00:02:34.889
+And again, the results here are good for Auralin or at least they're not bad.
+
+00:02:34.889 --> 00:02:38.669
+This negative eight's a bit misleading but it's just the way the numbers were set up.
+
+00:02:38.669 --> 00:02:42.444
+This means that patients that were treated with Auralin required on average,
+
+00:02:42.444 --> 00:02:45.150
+eight more units of insulin to establish a safe,
+
+00:02:45.150 --> 00:02:46.754
+steady blood sugar level.
+
+00:02:46.754 --> 00:02:51.569
+That's compared to Novodra patients who on average required 0.4 units less of insulin,
+
+00:02:51.569 --> 00:02:55.219
+comparing their start dose and end dose, pre-trial and post-trial.
+
+00:02:55.219 --> 00:02:59.055
+This isn't terrible, the fact that Auralin required eight more units,
+
+00:02:59.055 --> 00:03:01.305
+this is kind of expected because we knew that
+
+00:03:01.305 --> 00:03:04.800
+oral insulin had a tougher time in getting to the bloodstream through the stomach lining,
+
+00:03:04.800 --> 00:03:07.390
+and eight units more isn't that big a deal.
+
+00:03:07.389 --> 00:03:10.984
+And this difference in mean dose change is more evident in this bar plot here.
+
+00:03:10.985 --> 00:03:13.835
+And again that's start dose minus end dose.
+
+00:03:13.835 --> 00:03:18.173
+Okay, so now the key metric HbA1c change.
+
+00:03:18.173 --> 00:03:23.145
+Recall that HbA1c change is our key indicator for diabetes control.
+
+00:03:23.145 --> 00:03:26.675
+Most of our patients in this trial are starting around 7.9 percent.
+
+00:03:26.675 --> 00:03:30.300
+And if we can establish that Auralin causes a reduction in HbA1c that's
+
+00:03:30.300 --> 00:03:34.415
+similar to the current injectable insulin standard, that's a success.
+
+00:03:34.414 --> 00:03:35.909
+And the way that's going to be measured is through
+
+00:03:35.909 --> 00:03:38.164
+a confidence interval, which you'll see shortly.
+
+00:03:38.164 --> 00:03:41.549
+But the first step in getting that interval is establishing the difference in means.
+
+00:03:41.550 --> 00:03:44.310
+The difference in mean HbA1c changes that is,
+
+00:03:44.310 --> 00:03:45.640
+between Auralin and Novodra.
+
+00:03:45.639 --> 00:03:50.300
+And here's what the mean HbA1c reductions looked like before you cleaned.
+
+00:03:50.300 --> 00:03:52.739
+Recall that the big two aims of cleaning for
+
+00:03:52.740 --> 00:03:56.213
+this HbA1c change column was filling in missing values,
+
+00:03:56.213 --> 00:03:57.745
+these NaNs here i.e.
+
+00:03:57.745 --> 00:03:59.670
+recalculating this difference.
+
+00:03:59.669 --> 00:04:01.739
+HbA1c start minus HbA1c minus end,
+
+00:04:01.740 --> 00:04:04.741
+which also address these inaccurate HbA1c changes,
+
+00:04:04.741 --> 00:04:06.420
+the ones that started with 0.9.
+
+00:04:06.419 --> 00:04:08.789
+Again, these were misrecorded by whoever wrote these down.
+
+00:04:08.789 --> 00:04:10.169
+These 0.9s are actually 0.4s.
+
+00:04:10.169 --> 00:04:15.094
+Before that cleaning, Novadra had a massive advantage in HbA1C reduction,
+
+00:04:15.094 --> 00:04:18.129
+0.71 compared to 0.35 for Auralin.
+
+00:04:18.129 --> 00:04:22.000
+That's a big difference. And here's what that looks like in bar plot form.
+
+00:04:22.000 --> 00:04:23.673
+A big advantage for Novadra,
+
+00:04:23.673 --> 00:04:25.665
+but again that's before cleaning.
+
+00:04:25.665 --> 00:04:27.100
+So don't be discouraged yet.
+
+00:04:27.100 --> 00:04:29.230
+And here's what it looks like after cleaning,
+
+00:04:29.230 --> 00:04:34.605
+0.40 for Novadra compared to 0.39 for Auralin. That's much better.
+
+00:04:34.605 --> 00:04:38.365
+And again, that smaller difference in means is much clear in this bar plot.
+
+00:04:38.365 --> 00:04:41.250
+So these results are encouraging but clinical trial results
+
+00:04:41.250 --> 00:04:44.685
+require more rigorous statistical analysis to confirm these.
+
+00:04:44.685 --> 00:04:48.180
+And specifically the stat we were looking for was this upper limit of
+
+00:04:48.180 --> 00:04:52.079
+the confidence interval between the differences in means being less than 0.4.
+
+00:04:52.079 --> 00:04:55.064
+Before cleaning 0.71 versus 0.35,
+
+00:04:55.064 --> 00:04:57.105
+clear difference in this bar plot.
+
+00:04:57.105 --> 00:05:00.150
+And it didn't pass our non-inferiority metric.
+
+00:05:00.149 --> 00:05:03.044
+The upper limit of the confidence interval is 0.43.
+
+00:05:03.045 --> 00:05:05.564
+Without assessing and cleaning this clinical trial data,
+
+00:05:05.564 --> 00:05:08.649
+Auralin would not have passed the Phase II clinical trial.
+
+00:05:08.649 --> 00:05:11.459
+After cleaning though, HbA1C reduction is pretty
+
+00:05:11.459 --> 00:05:15.449
+similar and that's confirmed in the confidence interval,
+
+00:05:15.449 --> 00:05:20.534
+the upper limit of 0.03 roughly is way less than 0.4, so that's great.
+
+00:05:20.535 --> 00:05:22.710
+Oral insulin is similarly effective to
+
+00:05:22.709 --> 00:05:25.669
+injectable insulin according to this clinical trial.
+
+00:05:25.670 --> 00:05:27.400
+So what does this mean?
+
+00:05:27.399 --> 00:05:31.635
+This means our oral insulin passed Phase II clinical trials.
+
+00:05:31.636 --> 00:05:35.367
+Phase II trials are the hardest to pass historically.
+
+00:05:35.367 --> 00:05:37.125
+This is a big deal.
+
+00:05:37.125 --> 00:05:40.925
+Historically the probability of success for Phase II trials was 31 percent.
+
+00:05:40.925 --> 00:05:44.716
+Past Phase II this means we have a good chance of making it past Phase III
+
+00:05:44.716 --> 00:05:49.004
+as well as the regulatory review process and having a good chance of making it to market.
+
+00:05:49.004 --> 00:05:52.089
+If it does, this oral insulin would be an enormous breakthrough
+
+00:05:52.089 --> 00:05:55.307
+in treating Type I and Type II diabetes patients,
+
+00:05:55.307 --> 00:05:57.909
+as freedom from daily injections would liberate patients,
+
+00:05:57.910 --> 00:06:00.265
+help reduce missed doses and therefore reduce
+
+00:06:00.264 --> 00:06:03.514
+irritating and sometimes serious complications from diabetes.
+
+00:06:03.514 --> 00:06:06.139
+Great job assessing and cleaning this data,
+
+00:06:06.139 --> 00:06:07.269
+they were both vital.
+

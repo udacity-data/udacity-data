@@ -1,0 +1,189 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.396 --> 00:00:02.341
+Depois de primeiro abordar
+os dados ausentes,
+
+00:00:02.374 --> 00:00:05.593
+a limpeza para a organização
+geralmente é próxima etapa lógica.
+
+00:00:05.992 --> 00:00:08.690
+Como Hadley Wickham é pioneiro
+em dados organizados,
+
+00:00:08.723 --> 00:00:11.840
+vamos começar com uma citação
+do seu artigo sobre o assunto.
+
+00:00:12.638 --> 00:00:14.711
+"Um esforço enorme é gasto
+com limpeza de dados
+
+00:00:14.744 --> 00:00:16.453
+para prepará-los para análise,
+
+00:00:16.486 --> 00:00:18.349
+mas há pouca pesquisa
+sobre como tornar
+
+00:00:18.382 --> 00:00:20.734
+a limpeza de dados mais fácil
+e eficaz quanto possível.
+
+00:00:21.073 --> 00:00:23.239
+Este artigo aborda um pequeno,
+mas importante,
+
+00:00:23.272 --> 00:00:25.984
+componente de limpeza de dados:
+organização dos dados."
+
+00:00:26.291 --> 00:00:28.481
+A conclusão
+é que conjuntos de dados organizados
+
+00:00:28.514 --> 00:00:29.777
+são fáceis de manipular.
+
+00:00:29.810 --> 00:00:31.538
+E no contexto
+da preparação de dados,
+
+00:00:31.571 --> 00:00:33.725
+conjuntos de dados organizados
+com problemas de qualidade
+
+00:00:33.758 --> 00:00:36.922
+são quase sempre mais fáceis
+de limpar do que os bagunçados,
+
+00:00:36.955 --> 00:00:38.455
+com problemas de qualidade
+de dados.
+
+00:00:38.488 --> 00:00:40.902
+Isso significa que geralmente
+é melhor limpar primeiro
+
+00:00:40.935 --> 00:00:43.719
+os problemas de organização,
+que são problemas estruturais,
+
+00:00:43.752 --> 00:00:47.158
+então limpar problemas de qualidade,
+que são problemas de conteúdo.
+
+00:00:47.191 --> 00:00:49.089
+Para o exemplo
+neste conjunto de dados
+
+00:00:49.122 --> 00:00:50.776
+de estudos clínicos
+de insulina oral,
+
+00:00:50.809 --> 00:00:53.186
+detectamos e documentamos
+quatro seções do conjunto de dados
+
+00:00:53.219 --> 00:00:54.411
+que não estavam organizadas.
+
+00:00:54.444 --> 00:00:57.441
+A primeira na tabela "Patients",
+as duas variáveis em uma coluna,
+
+00:00:57.474 --> 00:00:59.182
+a coluna "contact" aqui,
+
+00:00:59.215 --> 00:01:01.728
+telefone e e-mail que estão
+nesta coluna.
+
+00:01:01.761 --> 00:01:05.275
+E na tabela "treatments", existem
+três variáveis em duas colunas.
+
+00:01:05.698 --> 00:01:07.746
+"Treatment", "star dose"
+e "end dose"
+
+00:01:07.779 --> 00:01:09.569
+nas colunas Auralin e Novodra.
+
+00:01:10.020 --> 00:01:12.127
+"Start dose" aqui,
+"end dose" aqui
+
+00:01:12.160 --> 00:01:13.846
+e a terceira variável,
+"treatment"
+
+00:01:13.879 --> 00:01:16.324
+nos títulos
+das colunas Auralin e Novodra.
+
+00:01:16.740 --> 00:01:18.429
+O terceiro que é a tabela
+"adverse reactions"
+
+00:01:18.462 --> 00:01:19.698
+não deve existir.
+
+00:01:19.731 --> 00:01:21.273
+E a coluna "adverse reactions"
+
+00:01:21.306 --> 00:01:23.058
+deve ser parte
+da tabela de tratamento,
+
+00:01:23.527 --> 00:01:25.405
+ou seja, esta coluna
+"adverse reactions" aqui
+
+00:01:25.438 --> 00:01:27.473
+deve ser unida
+com a tabela "treatments" aqui.
+
+00:01:27.771 --> 00:01:31.322
+E a quarta, são as colunas
+"given name" e "surname" duplicadas
+
+00:01:31.355 --> 00:01:34.061
+em "treatments"
+na tabela "adverse reactions"
+
+00:01:34.094 --> 00:01:36.338
+quando deve estar
+apenas na tabela "patients".
+
+00:01:36.646 --> 00:01:38.323
+E aqui "given_name"
+e "surname"
+
+00:01:38.356 --> 00:01:41.142
+são exibidos
+nos resultados "patients.info".
+
+00:01:41.508 --> 00:01:44.940
+O mesmo para "treatments.info"
+e "adverse_reactions.info".
+
+00:01:45.544 --> 00:01:48.198
+Assim só um pequeno conjunto
+de ferramentas é necessário
+
+00:01:48.231 --> 00:01:50.968
+para lidar com muitos
+conjuntos de dados desorganizados.
+
+00:01:51.001 --> 00:01:53.132
+Você irá tratar
+os mais comuns no Pandas
+
+00:01:53.165 --> 00:01:55.280
+para corrigir
+os quatro problemas acima.
+

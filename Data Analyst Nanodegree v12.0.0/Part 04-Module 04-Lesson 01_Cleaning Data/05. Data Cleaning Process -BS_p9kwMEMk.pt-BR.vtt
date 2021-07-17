@@ -1,0 +1,68 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.160 --> 00:00:02.600
+PROCESSO DE LIMPEZA DE DADOS
+
+00:00:03.264 --> 00:00:05.176
+Pense na limpeza programática
+dos dados
+
+00:00:05.209 --> 00:00:08.144
+como seu próprio processo separado
+dentro da preparação de dados.
+
+00:00:08.177 --> 00:00:12.521
+Também tem três etapas:
+definição, codificação e teste.
+
+00:00:12.554 --> 00:00:15.852
+Primeiro, você definirá um plano
+de limpeza de dados por escrito.
+
+00:00:16.145 --> 00:00:18.485
+Você converte suas avaliações
+em tarefas de limpeza
+
+00:00:18.518 --> 00:00:20.818
+escrevendo
+pequenos guias de procedimento.
+
+00:00:20.851 --> 00:00:22.995
+Pense nisso como pseudocódigo.
+
+00:00:23.266 --> 00:00:26.120
+No futuro, este plano também serve
+como documentação
+
+00:00:26.153 --> 00:00:30.385
+para que outros ou você possam olhar
+para o trabalho e reproduzi-lo.
+
+00:00:30.659 --> 00:00:32.817
+Em segundo, você irá traduzir
+essas palavras
+
+00:00:32.850 --> 00:00:34.823
+para codificar e executá-las.
+
+00:00:35.024 --> 00:00:36.821
+E, por fim, testará
+o conjunto de dados,
+
+00:00:36.854 --> 00:00:38.285
+muitas vezes usando o código
+
+00:00:38.318 --> 00:00:40.474
+para garantir
+que o código de limpeza funcionou.
+
+00:00:40.793 --> 00:00:43.250
+Isso é como uma revisão
+da etapa de avaliação.
+
+00:00:43.527 --> 00:00:45.547
+Funções semelhantes
+também são usadas.
+

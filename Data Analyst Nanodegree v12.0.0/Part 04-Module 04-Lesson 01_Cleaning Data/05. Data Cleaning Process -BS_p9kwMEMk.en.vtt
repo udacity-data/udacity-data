@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.399 --> 00:00:07.929
+Think of programmatic data cleaning as its own separate process within data wrangling.
+
+00:00:07.929 --> 00:00:12.739
+It also has three steps: defining, coding, and testing.
+
+00:00:12.740 --> 00:00:16.050
+First, you'll define a data cleaning plan in writing.
+
+00:00:16.050 --> 00:00:20.890
+You convert your assessments into cleaning tasks by writing little how-to guides.
+
+00:00:20.890 --> 00:00:22.795
+Think of this like pseudo code.
+
+00:00:22.795 --> 00:00:26.320
+In the future this plan also serves as documentation so
+
+00:00:26.320 --> 00:00:30.670
+others or yourself in the future can look at your work and reproduce it.
+
+00:00:30.670 --> 00:00:35.025
+Second, you'll translate these words to code and actually run it.
+
+00:00:35.024 --> 00:00:37.420
+And finally, you'll test your dataset often
+
+00:00:37.420 --> 00:00:40.690
+using code to make sure your cleaning code worked.
+
+00:00:40.689 --> 00:00:43.449
+This is kind of like a revisit of the assess step.
+
+00:00:43.450 --> 00:00:45.859
+Similar functions are used too.
+

@@ -1,0 +1,191 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.240 --> 00:00:02.863
+Aqui temos um exemplo concreto
+do processo de limpeza de dados:
+
+00:00:02.896 --> 00:00:04.697
+definição, codificação e teste.
+
+00:00:05.108 --> 00:00:06.595
+A coleta foi concluída,
+
+00:00:06.628 --> 00:00:08.136
+a biblioteca do Pandas
+importada
+
+00:00:08.169 --> 00:00:11.407
+e o arquivo "animals.csv" lido
+em um Data Frame chamado "DF".
+
+00:00:11.440 --> 00:00:13.804
+Em seguida, a avaliação visual
+foi feita no Pandas
+
+00:00:14.193 --> 00:00:16.318
+e dois problemas de qualidade
+foram observados.
+
+00:00:16.351 --> 00:00:18.632
+As letras "bb" antes
+de cada nome de animal
+
+00:00:18.948 --> 00:00:20.821
+e uma exclamação
+em vez de um ponto final
+
+00:00:20.854 --> 00:00:23.379
+para o decimal no peso corporal
+e peso cerebral.
+
+00:00:23.412 --> 00:00:26.032
+Perceba que essas avaliações
+são observações.
+
+00:00:26.606 --> 00:00:29.513
+Então vamos limpar.
+Primeira etapa, definição.
+
+00:00:29.546 --> 00:00:33.294
+Em vez de uma observação rigorosa,
+como na documentação de avaliação,
+
+00:00:33.602 --> 00:00:35.353
+a definição usa verbos.
+
+00:00:35.717 --> 00:00:38.582
+É uma chamada à ação para resolver
+o problema que observamos.
+
+00:00:38.615 --> 00:00:40.342
+Por exemplo, isso funciona.
+
+00:00:40.375 --> 00:00:42.608
+"Remover bb"
+antes de cada nome de animal.
+
+00:00:42.641 --> 00:00:44.885
+O verbo ou a palavra de ação
+sendo "remover".
+
+00:00:44.918 --> 00:00:46.618
+Você pode detalhar
+o quanto quiser.
+
+00:00:46.651 --> 00:00:48.353
+Tudo o que você encontrar
+ajuda a melhorar
+
+00:00:48.386 --> 00:00:49.730
+quando codificar o próximo.
+
+00:00:49.763 --> 00:00:51.169
+Então, isso poderia
+muito bem ser,
+
+00:00:51.202 --> 00:00:54.326
+remover "bb" para cada nome
+de animal usando divisão de strings,
+
+00:00:54.673 --> 00:00:57.633
+especificando a ferramenta
+ou método de função, etc.
+
+00:00:57.666 --> 00:01:00.323
+que você usará para corrigir
+esse problema usando o código.
+
+00:01:00.356 --> 00:01:03.057
+Um segundo exemplo para o problema
+do ponto de exclamação.
+
+00:01:03.090 --> 00:01:05.330
+Substituir ponto de exclamação
+com o ponto final
+
+00:01:05.363 --> 00:01:07.599
+nas colunas de peso corporal
+e peso cerebral.
+
+00:01:07.632 --> 00:01:10.061
+São operações de limpeza
+definidas.
+
+00:01:10.505 --> 00:01:12.375
+Certo, etapa dois,
+codificação.
+
+00:01:12.408 --> 00:01:15.267
+Isso vai fazer o que você mencionou
+na definição.
+
+00:01:15.300 --> 00:01:16.399
+E para nós, neste curso,
+
+00:01:16.432 --> 00:01:18.347
+vamos aproveitar a biblioteca
+do Pandas.
+
+00:01:31.247 --> 00:01:33.571
+Para corrigir o primeiro problema,
+usaremos a divisão de string
+
+00:01:33.604 --> 00:01:34.703
+e para o segundo,
+
+00:01:34.736 --> 00:01:37.037
+usaremos o método "string.replace"
+do Pandas,
+
+00:01:37.070 --> 00:01:38.967
+cada um deles operando
+em sua própria coluna.
+
+00:01:39.000 --> 00:01:40.825
+Animal, peso corporal,
+peso cerebral.
+
+00:01:43.696 --> 00:01:45.030
+Agora é hora de testar.
+
+00:01:45.063 --> 00:01:47.381
+A terceira etapa
+no processo de limpeza de dados.
+
+00:01:47.414 --> 00:01:49.640
+Isso é para garantir
+que o código funcionou.
+
+00:01:49.673 --> 00:01:50.961
+O jeito mais simples
+de fazer isso
+
+00:01:50.994 --> 00:01:53.170
+é novamente avaliar visualmente
+o conjunto de dados,
+
+00:01:53.203 --> 00:01:55.289
+o que faremos
+para este conjunto de dados
+
+00:01:55.322 --> 00:01:57.511
+porque ele é bem pequeno
+e tudo parece estar bem aqui.
+
+00:01:57.544 --> 00:01:58.852
+A avaliação visual funciona
+aqui,
+
+00:01:58.885 --> 00:02:00.891
+mas também podemos usar
+avaliações programáticas,
+
+00:02:00.924 --> 00:02:02.031
+instruções de pesquisa,
+
+00:02:02.064 --> 00:02:05.419
+métodos e funções de teste
+integrados do Pandas, por exemplo.
+
