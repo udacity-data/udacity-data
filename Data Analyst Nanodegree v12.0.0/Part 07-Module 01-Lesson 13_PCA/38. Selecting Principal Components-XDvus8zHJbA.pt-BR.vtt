@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.370 --> 00:00:03.140
+Deixarei você explorar sozinho o código que acabamos de analisar
+
+00:00:03.140 --> 00:00:05.340
+durante a parte de projeto desta lição.
+
+00:00:05.340 --> 00:00:07.990
+Há só mais uma coisa que eu quero abordar
+
+00:00:07.990 --> 00:00:08.870
+antes de liberar você.
+
+00:00:08.870 --> 00:00:12.550
+É sobre como definir a quantidade da seleção de componentes principais
+
+00:00:12.550 --> 00:00:13.440
+que deve analisar.
+
+00:00:13.440 --> 00:00:14.760
+No último exemplo,
+
+00:00:14.760 --> 00:00:20.900
+eles foram de 1.850 recursos na entrada para 150 componentes principais.
+
+00:00:20.900 --> 00:00:22.040
+A pergunta que deve estar se fazendo é:
+
+00:00:22.040 --> 00:00:23.640
+como chegaram a esse número?
+
+00:00:23.640 --> 00:00:26.400
+É um pouco difícil de responder a isso porque não há uma resposta
+
+00:00:26.400 --> 00:00:29.190
+direta para a quantidade de componentes principais que você deve usar.
+
+00:00:29.190 --> 00:00:30.810
+De certo modo, você tem de descobrir isso.
+
+00:00:30.810 --> 00:00:33.550
+Qual destas opções você acha que parece ser uma boa maneira de descobrir quantos
+
+00:00:33.550 --> 00:00:35.890
+componentes principais devem ser usados?
+
+00:00:35.890 --> 00:00:36.970
+Aqui estão as opções.
+
+00:00:36.970 --> 00:00:40.300
+A primeira é sempre usar os 10% principais como regra básica.
+
+00:00:40.300 --> 00:00:42.730
+Na segunda opção, você pode treinar um número diferente de
+
+00:00:42.730 --> 00:00:46.320
+componentes principais e verificar qual é a resposta de precisão
+
+00:00:46.320 --> 00:00:49.420
+para cada uma das possíveis quantidades de componentes principais.
+
+00:00:49.420 --> 00:00:52.580
+E depois de fazer isso várias vezes, ficará claro que existe um ponto de
+
+00:00:52.580 --> 00:00:56.090
+rendimento decrescente em que você adiciona outros componentes principais,
+
+00:00:56.090 --> 00:00:58.690
+mas não obtém muito mais em termos de distinção.
+
+00:00:58.690 --> 00:01:01.320
+E que você deve parar quando começar a estabilizar.
+
+00:01:01.320 --> 00:01:05.209
+A terceira opção é que você pode executar a seleção nos recursos de entrada
+
+00:01:05.209 --> 00:01:09.500
+antes de colocá-los na PCA e, depois, usar todos os componentes
+
+00:01:09.500 --> 00:01:13.560
+principais que houver dos recursos de entrada após ter feito essa seleção.
+

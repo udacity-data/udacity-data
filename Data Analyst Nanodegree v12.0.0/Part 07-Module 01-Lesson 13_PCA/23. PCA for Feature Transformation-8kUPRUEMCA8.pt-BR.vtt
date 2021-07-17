@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.260 --> 00:00:03.000
+Agora eu acho que você tem uma boa noção do que o PCA geralmente faz.
+
+00:00:03.000 --> 00:00:04.730
+Quero dar um passo atrás e
+
+00:00:04.730 --> 00:00:08.150
+falar sobre isso como um algoritmo geral para transformação de característica.
+
+00:00:08.150 --> 00:00:11.040
+Então, lembremos que nós começamos com quatro características, que
+
+00:00:11.040 --> 00:00:13.660
+dividimos manualmente em duas categorias.
+
+00:00:13.660 --> 00:00:16.572
+Nós dissemos que os termos "metragem quadrada" e "número de salas" estão relacionados a tamanho, e
+
+00:00:16.572 --> 00:00:19.420
+"segurança" e "escolas" estão relacionados a vizinhança.
+
+00:00:19.420 --> 00:00:22.255
+Em seguida, aplicamos o PCA a cada um deles independentemente e
+
+00:00:22.255 --> 00:00:24.430
+obtivemos uma única característica.
+
+00:00:24.430 --> 00:00:26.350
+Depois, podemos colocar essas características, digamos,
+
+00:00:26.350 --> 00:00:29.360
+em uma regressão e obter o preço da casa.
+
+00:00:29.360 --> 00:00:31.560
+Você também poderia imaginar que essas seriam boas entradas para
+
+00:00:31.560 --> 00:00:34.680
+um classificador, se você estivesse tentando responder a algumas perguntas um pouco diferentes.
+
+00:00:34.680 --> 00:00:38.180
+Mas existe um pequeno problema aqui que talvez esteja incomodando você.
+
+00:00:38.180 --> 00:00:42.670
+É esta etapa aqui, em que escolhemos manualmente nossas características de entrada e
+
+00:00:42.670 --> 00:00:45.910
+usamos nossa intuição humana para determinar como devemos agrupá-las.
+
+00:00:45.910 --> 00:00:50.250
+E o problema é que esse processo manual não é escalável.
+
+00:00:50.250 --> 00:00:52.342
+Vamos supor que estejamos tentando usar o PCA para
+
+00:00:52.342 --> 00:00:55.948
+algo como o reconhecimento facial, em que as entradas poderiam ser milhares ou
+
+00:00:55.948 --> 00:00:59.000
+até mesmo milhões de pixels em uma foto.
+
+00:00:59.000 --> 00:01:02.260
+Não há como inspecionar todos os pixels manualmente e
+
+00:01:02.260 --> 00:01:06.120
+tentar dividi-los de acordo com o que achamos que podem ser as combinações que
+
+00:01:06.120 --> 00:01:09.770
+fazem mais sentido e, depois, aplicar o PCA a cada um deles individualmente.
+
+00:01:09.770 --> 00:01:11.580
+Mas essa é a mágica por trás do PCA.
+
+00:01:11.580 --> 00:01:14.120
+Eu posso usar uma segunda estratégia com ele.
+
+00:01:14.120 --> 00:01:18.570
+O que eu posso fazer é colocar as quatros características juntas no PCA, que,
+
+00:01:18.570 --> 00:01:21.850
+por sua vez, pode combiná-las automaticamente em características novas e
+
+00:01:21.850 --> 00:01:24.380
+classificar as forças relativas dessas novas características.
+
+00:01:24.380 --> 00:01:27.330
+Então, se nós tivermos duas características latentes que
+
+00:01:27.330 --> 00:01:31.030
+estejam exercendo a maior parte da variação nos dados, o PCA as escolherá e
+
+00:01:31.030 --> 00:01:34.080
+as chamará de primeiro e segundo componentes principais.
+
+00:01:34.080 --> 00:01:35.290
+Em que o primeiro componente de princípio,
+
+00:01:35.290 --> 00:01:38.780
+aquele que tem o maior efeito, pode ser, por exemplo, vizinhança, e
+
+00:01:38.780 --> 00:01:41.520
+o segundo componente de princípio pode ser, por exemplo, tamanho.
+
+00:01:41.520 --> 00:01:44.960
+É um pouco mais difícil fazer essas interpretações agora, porque o que pode e
+
+00:01:44.960 --> 00:01:49.070
+acaba acontecendo é que o primeiro componente principal será, potencialmente, uma mistura com
+
+00:01:49.070 --> 00:01:53.130
+traços e partes de todas as características.
+
+00:01:53.130 --> 00:01:57.520
+Mas isso é uma técnica de aprendizagem não supervisionada muito poderosa, que você pode usar para
+
+00:01:57.520 --> 00:02:01.070
+compreender fundamentalmente as características latentes em seus dados.
+
+00:02:01.070 --> 00:02:03.440
+Se você não soubesse nada sobre os preços de habitação,
+
+00:02:03.440 --> 00:02:07.220
+ainda assim, o PCA poderia lhe dar uma noção de que há duas características que
+
+00:02:07.220 --> 00:02:09.389
+parecem determinar os preços em geral.
+
+00:02:09.389 --> 00:02:11.930
+Ainda seria sua responsabilidade determinar que essas características são vizinhança e
+
+00:02:11.930 --> 00:02:15.650
+tamanho, mas, agora, além de fazer a redução de dimensionalidade,
+
+00:02:15.650 --> 00:02:19.060
+você também está aprendendo algo fundamentalmente importante sobre os padrões
+
+00:02:19.060 --> 00:02:20.550
+da variação nos seus dados.
+

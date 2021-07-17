@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.340 --> 00:00:02.670
+Este é um exemplo de acompanhamento concreto.
+
+00:00:02.670 --> 00:00:06.222
+Suponha que você tenha um conjunto de dados com 100 pontos de treinamento e
+
+00:00:06.222 --> 00:00:07.590
+4 recursos para cada ponto.
+
+00:00:07.590 --> 00:00:10.860
+Qual é o número máximo de componentes principais que serão permitidos
+
+00:00:10.860 --> 00:00:15.300
+pelo sklearn e que você pode encontrar usando outra implementação da PCA?
+

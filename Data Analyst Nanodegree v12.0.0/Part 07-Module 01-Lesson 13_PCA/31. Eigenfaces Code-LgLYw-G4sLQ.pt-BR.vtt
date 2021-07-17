@@ -1,0 +1,220 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.080 --> 00:00:03.450
+Nos próximos vídeos, mostrarei um exemplo codificado
+
+00:00:03.450 --> 00:00:06.620
+da PCA aplicada ao reconhecimento facial.
+
+00:00:06.620 --> 00:00:10.507
+Isso foi usado e adaptado de um exemplo na documentação do scikit-learn; portanto,
+
+00:00:10.507 --> 00:00:14.219
+incluirei um link para o código original para que você possa acessá-lo e examiná-lo,
+
+00:00:14.219 --> 00:00:17.253
+mas quero explicar algumas partes mais importantes.
+
+00:00:17.253 --> 00:00:19.376
+A primeira coisa que o código faz é
+
+00:00:19.376 --> 00:00:23.930
+importar um conjunto de fotografias de líderes famosos do mundo de cerca de 10 a 15 anos atrás.
+
+00:00:23.930 --> 00:00:27.530
+A próxima coisa que ele faz é dividi-lo em um conjunto de treinamento e testes.
+
+00:00:27.530 --> 00:00:31.280
+Muito bom! Mas este bloco aqui é o lugar onde a PCA realmente acontece.
+
+00:00:31.280 --> 00:00:34.380
+Você verá neste exemplo e, algumas vezes, na literatura, que a PCA também é
+
+00:00:34.380 --> 00:00:37.880
+chamada de eigenfaces quando aplicada ao reconhecimento facial.
+
+00:00:37.880 --> 00:00:41.230
+Portanto, nesta linha aqui, nós vemos a PCA sendo criada;
+
+00:00:41.230 --> 00:00:44.020
+ela é chamada de RandomizedPCA no scikit-learn.
+
+00:00:44.020 --> 00:00:46.700
+Ela também está sendo ajustada aos dados de treinamento.
+
+00:00:46.700 --> 00:00:49.850
+Em seguida, esta linha aqui solicita as eigenfaces.
+
+00:00:49.850 --> 00:00:53.320
+As eigenfaces são basicamente os componentes de princípio dos dados da face.
+
+00:00:53.320 --> 00:00:56.220
+Portanto, ela usa os pca.components e os reformata
+
+00:00:56.220 --> 00:00:58.340
+porque, neste momento, eles são apenas strings de números, e
+
+00:00:58.340 --> 00:01:03.250
+ela quer transformá-los de volta em quadrados para que se assemelhem a fotografias.
+
+00:01:03.250 --> 00:01:07.168
+Você também pode ver que o número de componentes principais que estão sendo usados
+
+00:01:07.168 --> 00:01:08.443
+neste exemplo é 150.
+
+00:01:08.443 --> 00:01:12.348
+Se você examinar o código de exemplo na página da documentação do scikit-learn,
+
+00:01:12.348 --> 00:01:16.692
+verá que a dimensionalidade original dessas fotografias é superior a 1.800.
+
+00:01:16.692 --> 00:01:19.716
+Portanto, diminuímos as características de 1.800 para 150,
+
+00:01:19.716 --> 00:01:21.800
+um fator de compressão maior que 10.
+
+00:01:21.800 --> 00:01:25.410
+Em seguida, a última coisa que faço com a PCA é transformar meus dados.
+
+00:01:25.410 --> 00:01:26.870
+Quando executo o comando fit,
+
+00:01:26.870 --> 00:01:29.435
+estou apenas determinando quais são os componentes de princípio.
+
+00:01:29.435 --> 00:01:32.640
+São nesses comandos de transformação que eu uso meus dados e
+
+00:01:32.640 --> 00:01:35.110
+os transformo na representação dos componentes de princípio.
+
+00:01:35.110 --> 00:01:37.830
+O restante deste código está criando uma SVM.
+
+00:01:37.830 --> 00:01:40.270
+Lembre-se de que SVC é como ele é chamado no scikit-learn,
+
+00:01:40.270 --> 00:01:41.970
+um classificador de vetor de suporte.
+
+00:01:41.970 --> 00:01:45.080
+Eles fazem uma manobra especial aqui para descobrir exatamente quais
+
+00:01:45.080 --> 00:01:49.140
+parâmetros da máquina de vetor de suporte eles querem usar.
+
+00:01:49.140 --> 00:01:51.480
+Depois, usando componentes de princípio como as características,
+
+00:01:51.480 --> 00:01:55.770
+eles tentam identificar, nos testes, quem aparece em uma foto específica.
+
+00:01:55.770 --> 00:01:58.240
+Agora, eu vou mostrar qual é a aparência desse código após sua execução.
+
+00:01:58.240 --> 00:01:59.990
+A primeira coisa que ele faz é exibir uma string da documentação,
+
+00:01:59.990 --> 00:02:01.460
+informando o que está acontecendo.
+
+00:02:01.460 --> 00:02:02.530
+E, em seguida, algumas informações sobre o conjunto de dados.
+
+00:02:02.530 --> 00:02:04.420
+Eu tenho 1.288 exemplos,
+
+00:02:04.420 --> 00:02:09.060
+com 1.850 características disponíveis no espaço de característica de entrada.
+
+00:02:09.060 --> 00:02:10.740
+Sete pessoas diferentes estão aparecendo e,
+
+00:02:10.740 --> 00:02:14.940
+em seguida, usamos 150 eigenfaces das 966 faces do nosso conjunto de treinamento.
+
+00:02:14.940 --> 00:02:18.320
+A próxima coisa que aparece é uma lista das pessoas do nosso conjunto de dados e
+
+00:02:18.320 --> 00:02:19.780
+a frequência em que elas aparecem corretamente.
+
+00:02:19.780 --> 00:02:23.130
+Precision, recall, f1-score e support são itens que estão, de certa maneira,
+
+00:02:23.130 --> 00:02:25.680
+relacionados à precisão da matriz de avaliação.
+
+00:02:25.680 --> 00:02:28.170
+Falaremos muito sobre isso em uma próxima lição.
+
+00:02:28.170 --> 00:02:31.670
+De qualquer maneira, você pode ver que, em geral, os dados retornados estão corretos.
+
+00:02:31.670 --> 00:02:33.880
+Aproximadamente, em 60 a quase 90% dos casos.
+
+00:02:33.880 --> 00:02:38.350
+Embora tenhamos reduzido a dimensionalidade por um fator de dez,
+
+00:02:38.350 --> 00:02:40.370
+ainda estamos com um desempenho muito bom.
+
+00:02:40.370 --> 00:02:43.100
+Outra coisa que é realmente interessante e que eu adoro neste exemplo é que eles
+
+00:02:43.100 --> 00:02:45.460
+realmente mostram as eigenfaces.
+
+00:02:45.460 --> 00:02:47.580
+Este é o primeiro componente de princípio dos nossos dados,
+
+00:02:47.580 --> 00:02:50.180
+este é o segundo componente de princípio, o terceiro.
+
+00:02:50.180 --> 00:02:53.670
+Esta imagem aqui representa a variação máxima que ele
+
+00:02:53.670 --> 00:02:55.800
+encontra em todos os dados.
+
+00:02:55.800 --> 00:02:58.830
+É um pouco difícil entender exatamente o que isso significa neste exemplo.
+
+00:02:58.830 --> 00:03:01.020
+Seria melhor se ele dissesse algo como
+
+00:03:01.020 --> 00:03:05.920
+qual é a distância entre os olhos ou se a pessoa usa óculos ou não.
+
+00:03:05.920 --> 00:03:08.990
+Em vez disso, obtemos esses tipos de imagens fantasma.
+
+00:03:08.990 --> 00:03:13.838
+Mas, o uso destas imagens compostas em conjunto como características em uma SVM
+
+00:03:13.838 --> 00:03:17.832
+pode ser muito eficaz na previsão da face de quem estamos vendo.
+
+00:03:17.832 --> 00:03:18.380
+E finalmente, mas não menos
+
+00:03:18.380 --> 00:03:22.130
+importante, há uma pequena tela que exibe 12 rostos representativos e
+
+00:03:22.130 --> 00:03:25.010
+o melhor palpite dos algoritmos sobre quem é a pessoa e a resposta real.
+
+00:03:25.010 --> 00:03:27.100
+Você pode notar que nem sempre ele interpreta corretamente.
+
+00:03:27.100 --> 00:03:30.900
+Este à direita aqui, acho que é o Tony Blair, mas, na verdade, é o George W Bush.
+
+00:03:30.900 --> 00:03:33.010
+Mas, a maioria delas ele interpreta corretamente. Muito interessante.
+

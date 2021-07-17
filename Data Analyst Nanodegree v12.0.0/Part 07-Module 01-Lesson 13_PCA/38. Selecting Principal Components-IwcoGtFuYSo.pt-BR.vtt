@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:03.700
+Este é um tipo de pergunta complicada, portanto, se você adivinhou, eu não culpo você.
+
+00:00:03.700 --> 00:00:07.110
+A resposta correta é a número dois, que o que você deseja fazer é ser
+
+00:00:07.110 --> 00:00:10.830
+aberto para um número diferente de componentes principais que são relevantes para você.
+
+00:00:10.830 --> 00:00:12.550
+E a maneira como você descobre
+
+00:00:12.550 --> 00:00:15.110
+qual é a tendência, de certa forma, é tentando números diferentes.
+
+00:00:15.110 --> 00:00:18.450
+Você diz, basta eu ter o primeiro componente principal, o primeiro mais o segundo,
+
+00:00:18.450 --> 00:00:21.720
+o primeiro mais o segundo mais o terceiro, e você verá como a precisão
+
+00:00:21.720 --> 00:00:24.520
+responde a estes números cada vez maiores de componentes principais.
+
+00:00:24.520 --> 00:00:28.240
+Você também pode fazer isso na antiga seleção de recursos simples.
+
+00:00:28.240 --> 00:00:31.090
+Você diz, dê-me todos os recursos na ordem de sua importância, e
+
+00:00:31.090 --> 00:00:33.800
+eu simplesmente tentarei adicioná-los um de cada vez e
+
+00:00:33.800 --> 00:00:38.010
+ver como a precisão responde e cortar quando parecer que ela está estabilizando.
+
+00:00:38.010 --> 00:00:41.851
+No entanto, uma coisa que você não quer fazer é executar a seleção de recursos antes de
+
+00:00:41.851 --> 00:00:42.489
+ir para a PCA.
+
+00:00:42.489 --> 00:00:46.562
+Portanto, lembre-se de que a PCA encontrará uma maneira de combinar informações de
+
+00:00:46.562 --> 00:00:50.610
+muitos recursos de entrada potencialmente diferentes em conjunto.
+
+00:00:50.610 --> 00:00:54.190
+Se você estiver jogando fora recursos de entrada antes de executar a PCA, você estará jogando
+
+00:00:54.190 --> 00:00:58.510
+informações que a PCA pode ser capaz de resgatar de certa forma.
+
+00:00:58.510 --> 00:01:01.680
+Está certo executar a seleção de recursos nos componentes principais depois que você os criou,
+
+00:01:01.680 --> 00:01:05.780
+mas você precisa ter muito cuidado ao jogar fora informações antes de
+
+00:01:05.780 --> 00:01:06.910
+executar a PCA.
+
+00:01:06.910 --> 00:01:11.000
+Tendo dito isso, a PCA pode ser bastante cara em termos de computação.
+
+00:01:11.000 --> 00:01:13.370
+Portanto, se você tiver um espaço muito grande de recursos de entrada e
+
+00:01:13.370 --> 00:01:17.380
+souber que, potencialmente, muitos deles são totalmente irrelevantes,
+
+00:01:17.380 --> 00:01:20.050
+vá em frente e jogue-os fora, mas tenha cuidado.
+

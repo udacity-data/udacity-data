@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.240 --> 00:00:02.660
+Bem, está um pouco além do escopo da aula que eu
+
+00:00:02.660 --> 00:00:06.300
+realmente mostre a você como encontrar a direção de variação máxima.
+
+00:00:06.300 --> 00:00:09.140
+Ela envolve um pouco de álgebra linear, que não é muito difícil, mas
+
+00:00:09.140 --> 00:00:10.400
+não vamos entrar nesse assunto aqui.
+
+00:00:10.400 --> 00:00:12.870
+Mas se você acreditar em mim quando digo que o componente de princípio,
+
+00:00:12.870 --> 00:00:15.290
+a direção da variação máxima, pode ser encontrada,
+
+00:00:15.290 --> 00:00:17.000
+eu poderei justificar a você que
+
+00:00:17.000 --> 00:00:20.170
+essa é a direção que irá minimizar a perda de informações.
+
+00:00:20.170 --> 00:00:23.360
+Agora, vejamos as informações da vizinhança para nossos dados de habitação.
+
+00:00:23.360 --> 00:00:25.670
+Estes são os dados que estão disponíveis para mim.
+
+00:00:25.670 --> 00:00:28.910
+Em um eixo estão vários problemas de segurança em uma determinada vizinhança.
+
+00:00:28.910 --> 00:00:32.390
+No outro eixo está a classificação das escolas dessa vizinhança.
+
+00:00:32.390 --> 00:00:35.910
+E usarei a PCA para combinar esses dois recursos em um único
+
+00:00:35.910 --> 00:00:39.840
+recurso que, aproximadamente, avalia a qualidade da vizinhança.
+
+00:00:39.840 --> 00:00:42.550
+Então, apenas inspecionando visualmente os dados, podemos ver que algo como esta
+
+00:00:42.550 --> 00:00:45.380
+linha vermelha será o componente principal.
+
+00:00:45.380 --> 00:00:48.155
+Em seguida, quando projeto os pontos bidimensionais nesta
+
+00:00:48.155 --> 00:00:51.080
+linha unidimensional, eu perco informações.
+
+00:00:51.080 --> 00:00:54.780
+E a quantidade de informações que perco é igual à
+
+00:00:54.780 --> 00:00:59.360
+distância entre um determinado ponto, conforme sua existência neste tipo de espaço 2D, e
+
+00:00:59.360 --> 00:01:00.970
+seu novo ponto na linha.
+
+00:01:00.970 --> 00:01:03.770
+Portanto, para este ponto azul, uma quantidade de informações que é, praticamente, igual
+
+00:01:03.770 --> 00:01:08.390
+ao comprimento desta linha amarela, é a quantidade de informações que eu perco.
+
+00:01:08.390 --> 00:01:10.700
+Então, este é um pequeno teste para ter certeza de que você compreendeu.
+
+00:01:10.700 --> 00:01:12.870
+Estou circulando um ponto em verde aqui.
+
+00:01:12.870 --> 00:01:13.760
+E esse ponto será
+
+00:01:13.760 --> 00:01:16.360
+projetado no componente principal também.
+
+00:01:16.360 --> 00:01:18.730
+Assim como todos os outros pontos neste conjunto de dados, eventualmente.
+
+00:01:18.730 --> 00:01:21.440
+Portanto, minha pergunta para você é: qual a quantidade de informações
+
+00:01:21.440 --> 00:01:24.610
+que será perdida quando fizermos a projeção deste ponto?
+
+00:01:24.610 --> 00:01:28.910
+Será maior, menor ou igual à quantidade de informações
+
+00:01:28.910 --> 00:01:32.010
+perdida em nosso ponto original? Neste exemplo que acabei de mostrar a você?
+

@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.110 --> 00:00:02.590
+A análise de componentes principais que eu estou fazendo fica nessa
+
+00:00:02.590 --> 00:00:03.880
+função chamada doPCA.
+
+00:00:03.880 --> 00:00:07.090
+E ela se parece bastante com muitas outras que nós já fizemos
+
+00:00:07.090 --> 00:00:08.540
+anteriormente no scikit-learn.
+
+00:00:08.540 --> 00:00:09.770
+Você tem uma declaração import, na qual você,
+
+00:00:09.770 --> 00:00:12.630
+na verdade, retira o módulo que possui o código desejado.
+
+00:00:12.630 --> 00:00:15.910
+Você cria, nesse caso, a análise de componentes principais.
+
+00:00:15.910 --> 00:00:16.820
+Você a ajusta.
+
+00:00:16.820 --> 00:00:18.350
+E, então, você a retorna como um objeto.
+
+00:00:18.350 --> 00:00:23.490
+E aí o que faço é: uso minha análise de componentes principais desse modo.
+
+00:00:23.490 --> 00:00:25.060
+E posso fazer algumas perguntas
+
+00:00:25.060 --> 00:00:28.750
+muito interessantes, muito importantes sobre isso acessando os atributos.
+
+00:00:28.750 --> 00:00:30.540
+Então, vamos explicar estas três linhas.
+
+00:00:30.540 --> 00:00:34.420
+É assim que obtenho realmente as informações do meu objeto PCA.
+
+00:00:34.420 --> 00:00:38.910
+A primeira, explained_variance_ratio, é onde estão realmente os autovalores.
+
+00:00:38.910 --> 00:00:41.220
+Então, imprimindo isso, essa linha aqui,
+
+00:00:41.220 --> 00:00:44.230
+é como sei que o primeiro componente de princípio tem aproximadamente 90,
+
+00:00:44.230 --> 00:00:48.100
+91 por cento da variação nos dados, e o segundo tem cerca de 9 ou
+
+00:00:48.100 --> 00:00:49.200
+10 por cento.
+
+00:00:49.200 --> 00:00:50.720
+Esses números resultam desta instrução.
+
+00:00:50.720 --> 00:00:54.190
+Depois, a segunda coisa que faço é verificar o primeiro e
+
+00:00:54.190 --> 00:00:56.040
+o segundo componentes de princípio.
+
+00:00:56.040 --> 00:00:59.770
+Eu faço isso através do atributo components do meu objeto PCA.
+
+00:00:59.770 --> 00:01:02.290
+O components consiste em uma lista,
+
+00:01:02.290 --> 00:01:05.870
+uma lista Python, que possui tantos componentes de princípio
+
+00:01:05.870 --> 00:01:08.850
+quantos eu solicitar como um parâmetro.
+
+00:01:08.850 --> 00:01:11.930
+Neste caso, tenho dois componentes principais.
+
+00:01:11.930 --> 00:01:13.320
+Eu os nomeio como first_pc e second_pc.
+
+00:01:13.320 --> 00:01:15.390
+Em testes anteriores, em que conversamos sobre
+
+00:01:15.390 --> 00:01:21.020
+a direção de x' no espaço de característica original xy,
+
+00:01:21.020 --> 00:01:25.290
+descobrimos dois números que estavam, de certa forma, empacotados juntos em um vetor.
+
+00:01:25.290 --> 00:01:29.210
+Você pode acessar essa informação direcional por meio desses componentes.
+
+00:01:29.210 --> 00:01:32.260
+Depois de ajustar minha análise de componentes de princípio,
+
+00:01:32.260 --> 00:01:36.150
+para poder fazer alguma coisa, tenho que fazer uma espécie de transformação dos dados.
+
+00:01:36.150 --> 00:01:39.990
+E este código eu darei a você no código base para o teste.
+
+00:01:39.990 --> 00:01:42.600
+Aqui eu estou apenas visualizando-o.
+
+00:01:42.600 --> 00:01:44.010
+A primeira linha está em vermelho.
+
+00:01:44.010 --> 00:01:47.050
+Plotarei o primeiro componente de princípio,
+
+00:01:47.050 --> 00:01:50.450
+a localização de todos os pontos ao longo desse componente.
+
+00:01:50.450 --> 00:01:53.650
+Bem como a direção dos componentes de princípio.
+
+00:01:53.650 --> 00:01:58.940
+Estou acessando essa informação por meio dos elementos do vetor first_pc.
+
+00:01:58.940 --> 00:02:02.370
+Depois, em ciano, ou azul-petróleo, acessarei o segundo
+
+00:02:02.370 --> 00:02:05.670
+componente de princípio e, em azul, eu tenho os dados originais.
+
+00:02:05.670 --> 00:02:06.760
+Mostrarei a você a aparência disso,
+
+00:02:06.760 --> 00:02:08.830
+e depois você tentará sozinho no teste.
+
+00:02:08.830 --> 00:02:13.130
+A primeira coisa que você tem é a exibição dos autovalores.
+
+00:02:13.130 --> 00:02:15.770
+Lembre-se de que essa é a informação de explained_variance_ratio.
+
+00:02:15.770 --> 00:02:18.180
+Depois, você vê um gráfico de dispersão.
+
+00:02:18.180 --> 00:02:20.250
+Ele terá mais ou menos essa aparência.
+
+00:02:20.250 --> 00:02:24.130
+Lembre-se de que a linha vermelha era a direção do nosso primeiro componente de princípio.
+
+00:02:24.130 --> 00:02:27.040
+E ela está exatamente onde você achou que estaria.
+
+00:02:27.040 --> 00:02:29.600
+Intuitivamente, ela já aparenta estar no lugar certo.
+
+00:02:29.600 --> 00:02:32.220
+A linha em ciano é perpendicular a ela.
+
+00:02:32.220 --> 00:02:34.360
+E, em azul, estão os pontos de dados originais.
+
+00:02:34.360 --> 00:02:37.300
+Uma coisa que eu gostaria de acrescentar é que as linhas vermelha e
+
+00:02:37.300 --> 00:02:39.750
+ciana não parecem perfeitamente ortogonais.
+
+00:02:39.750 --> 00:02:42.470
+Parece que elas não formam um perfeito ângulo de 90 graus.
+
+00:02:42.470 --> 00:02:44.870
+Mas lembre-se de que nossos eixos têm escalas diferentes.
+
+00:02:44.870 --> 00:02:46.850
+Este aqui vai até dez milhões,
+
+00:02:46.850 --> 00:02:50.650
+e o eixo y chega a menos da metade disso, por volta de quatro milhões.
+
+00:02:50.650 --> 00:02:54.010
+Na verdade, se fôssemos plotar tudo de modo proporcional,
+
+00:02:54.010 --> 00:02:57.050
+a largura deste gráfico deveria ser equivalente ao dobro da sua altura.
+
+00:02:57.050 --> 00:03:00.430
+E se fôssemos visualizá-lo exatamente dessa maneira, ele seria ortogonal.
+

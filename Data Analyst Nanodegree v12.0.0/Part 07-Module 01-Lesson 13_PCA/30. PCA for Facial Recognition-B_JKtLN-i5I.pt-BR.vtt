@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.310 --> 00:00:02.320
+Toda essa discussão é um pouco abstrata.
+
+00:00:02.320 --> 00:00:05.420
+Agora quero mostrar um dos meus usos favoritos do PCA de forma geral.
+
+00:00:05.420 --> 00:00:07.470
+E é o reconhecimento facial.
+
+00:00:07.470 --> 00:00:11.125
+Primeiro vamos analisar o que faz o reconhecimento facial em fotos, uma
+
+00:00:11.125 --> 00:00:13.210
+boa utilização do PCA.
+
+00:00:13.210 --> 00:00:16.480
+O motivo deste problema e a solução bem adaptados um para o outro.
+
+00:00:16.480 --> 00:00:20.070
+Aqui há algumas opções e a resposta pode ser uma ou mais das opções a seguir.
+
+00:00:20.070 --> 00:00:22.810
+A primeira opção é que as fotos de rostos geralmente têm
+
+00:00:22.810 --> 00:00:24.470
+uma alta dimensionalidade de entrada.
+
+00:00:24.470 --> 00:00:28.010
+Em outras palavras, há muitos pixels em uma foto de um rosto.
+
+00:00:28.010 --> 00:00:30.710
+E provavelmente qualquer um desses pixels pode ser muito importante para
+
+00:00:30.710 --> 00:00:32.640
+se descobrir quem é a pessoa.
+
+00:00:32.640 --> 00:00:36.650
+A segunda possibilidade é que os rostos têm padrões gerais que podem ser
+
+00:00:36.650 --> 00:00:38.940
+capturados em um número menor de dimensões.
+
+00:00:38.940 --> 00:00:42.380
+Há sempre o padrão geral que a pessoa tem dois olhos
+
+00:00:42.380 --> 00:00:44.080
+na parte de cima do rosto.
+
+00:00:44.080 --> 00:00:47.810
+Há uma boca e um queixo que fica embaixo etc.
+
+00:00:47.810 --> 00:00:51.160
+E a terceira possibilidade é que o reconhecimento facial é simples,
+
+00:00:51.160 --> 00:00:52.510
+depois que você usar o aprendizado de máquina.
+
+00:00:52.510 --> 00:00:55.830
+Se os seres humanos podem fazer isso facilmente, um computador também faz isso facilmente.
+

@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.190 --> 00:00:03.670
+Veja um exemplo simples que ajudará você a ter uma ideia do
+
+00:00:03.670 --> 00:00:06.010
+que estará fazendo quando usar o PCA.
+
+00:00:06.010 --> 00:00:09.930
+Suponha que eu tenha a seguinte pergunta: levando em conta os recursos que uma casa tem,
+
+00:00:09.930 --> 00:00:12.460
+a que preço eu poderia vendê-la?
+
+00:00:12.460 --> 00:00:15.900
+Qual dos algoritmos a seguir você usaria para responder a esta pergunta?
+
+00:00:15.900 --> 00:00:21.630
+Você usaria um classificador de árvore de decisão, um SVC ou classificador de vetor de suporte,
+
+00:00:21.630 --> 00:00:23.860
+ou isso lhe soaria como uma pergunta sobre regressão linear?
+

@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.450 --> 00:00:01.670
+E havia uma pergunta desafiadora.
+
+00:00:01.670 --> 00:00:02.850
+Neste caso, eu diria que sim.
+
+00:00:02.850 --> 00:00:05.200
+Uma vez que você tem a dispersão capturada nesta direção,
+
+00:00:05.200 --> 00:00:07.460
+não sobra muito na direção ortonormal.
+
+00:00:07.460 --> 00:00:11.572
+O domínio também está claro aqui, em que o eixo principal captura tudo isto
+
+00:00:11.572 --> 00:00:14.396
+e não sobra realmente nada no eixo secundário.
+
+00:00:14.396 --> 00:00:17.420
+Mas aqui não está tão claro, mesmo que você desenhasse o eixo principal
+
+00:00:17.420 --> 00:00:22.210
+aqui, o eixo secundário ainda estaria tão disperso quanto o principal.
+
+00:00:22.210 --> 00:00:26.000
+Na verdade, neste caso, eu diria que os valores Eiger são da
+
+00:00:26.000 --> 00:00:30.260
+mesma grandeza, e realmente não ganhamos muito executando PCA.
+
+00:00:30.260 --> 00:00:31.620
+Claramente, aqui é não.
+

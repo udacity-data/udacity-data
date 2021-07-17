@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.070 --> 00:00:02.690
+Portanto, agora sabemos que temos um número grande de
+
+00:00:02.690 --> 00:00:05.590
+recursos mensuráveis, mas talvez um número pequeno de
+
+00:00:05.590 --> 00:00:08.840
+recursos subjacentes latentes, que contêm a maioria das informações.
+
+00:00:08.840 --> 00:00:11.490
+Minha pergunta é o que vamos explorar nesta lição.
+
+00:00:11.490 --> 00:00:15.290
+Qual é o melhor jeito de condensar nossos quatro recursos em dois?
+
+00:00:15.290 --> 00:00:17.250
+Para realmente chegarem ao ponto principal das informações.
+
+00:00:17.250 --> 00:00:19.600
+Estamos investigando o tamanho e a vizinhança.
+
+00:00:19.600 --> 00:00:22.130
+Uma maneira de conseguir isso é com uma seleção de recursos simples,
+
+00:00:22.130 --> 00:00:23.610
+como o da última lição.
+
+00:00:23.610 --> 00:00:27.230
+Se você colocar esses 4 recursos em uma ferramenta de seleção de recursos,
+
+00:00:27.230 --> 00:00:32.000
+talvez a metragem quadrada seja mantida e o número de salas ignorado.
+
+00:00:32.000 --> 00:00:35.760
+Talvez seja mantida a segurança e ignorada a classificação de escolas.
+
+00:00:35.760 --> 00:00:37.530
+Aqui está um pequeno teste prático.
+
+00:00:37.530 --> 00:00:40.380
+Quais dessas ferramentas de seleção de recursos você acha que é mais
+
+00:00:40.380 --> 00:00:41.260
+adequada para isso?
+
+00:00:41.260 --> 00:00:44.410
+Há dois exemplos que estão disponíveis no SK learn.
+
+00:00:44.410 --> 00:00:46.670
+Selecionar percentil que você já está familiarizado,
+
+00:00:46.670 --> 00:00:49.690
+ela seleciona o percentual X principal no qual você pode
+
+00:00:49.690 --> 00:00:52.520
+especificar a porcentagem de recursos que quer manter.
+
+00:00:52.520 --> 00:00:55.770
+Outra opção é selecionar kBest e esta é muito óbvia.
+
+00:00:55.770 --> 00:00:59.470
+O que você faz com um dos argumentos que especifica o que K significa.
+
+00:00:59.470 --> 00:01:01.750
+Este é o número de recursos que você deseja manter.
+
+00:01:01.750 --> 00:01:05.489
+Se você colocar 10 para k, ele vai usar os dez melhores recursos.
+
+00:01:05.489 --> 00:01:08.650
+E só para fazer você pensar um pouco mais sobre isso, deixe-me livrar
+
+00:01:08.650 --> 00:01:11.660
+do conhecimento que já temos dos recursos.
+
+00:01:11.660 --> 00:01:13.840
+Vamos supor que o número de recursos que você tem disponível
+
+00:01:13.840 --> 00:01:16.320
+não é algo que você conhece muito bem.
+
+00:01:16.320 --> 00:01:18.630
+Digamos que é a primeira vez que você está verificando este conjunto de dados.
+
+00:01:18.630 --> 00:01:20.610
+Mas você sabe que o tamanho e
+
+00:01:20.610 --> 00:01:24.450
+a vizinhança vão ser as variáveis latentes subjacentes, que são tipos de
+
+00:01:24.450 --> 00:01:27.940
+direcionamento de tendências, em todos os recursos disponíveis.
+
+00:01:27.940 --> 00:01:31.490
+A pergunta é: se você quer ter dois recursos de saída,
+
+00:01:31.490 --> 00:01:35.240
+qual é a ferramenta de seleção de recurso mais adequada para usar neste cenário?
+
+00:01:35.240 --> 00:01:37.770
+Você usa select kBest ou select percentile?
+

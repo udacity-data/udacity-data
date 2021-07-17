@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.070 --> 00:00:03.060
+O exemplo que acabamos de fazer era sobre a combinação do número de
+
+00:00:03.060 --> 00:00:05.530
+cômodos e da metragem quadrada em um recurso de tamanho.
+
+00:00:05.530 --> 00:00:07.950
+Eu pedi que você apenas acreditasse que,
+
+00:00:07.950 --> 00:00:12.480
+por um momento, aquele componente de princípio existia e era o que eu dizia ser.
+
+00:00:12.480 --> 00:00:15.560
+Agora, usarei o exemplo da vizinhança para mostrar a você como
+
+00:00:15.560 --> 00:00:17.410
+determinar o componente de princípio.
+
+00:00:17.410 --> 00:00:19.450
+Primeiro, quero começar com um pouco de vocabulário.
+
+00:00:19.450 --> 00:00:22.430
+A palavra é variação, o que é um pouco confuso porque, na verdade, você
+
+00:00:22.430 --> 00:00:24.660
+já sabe a definição de variação.
+
+00:00:24.660 --> 00:00:25.890
+É uma definição muito importante.
+
+00:00:25.890 --> 00:00:28.650
+É a vontade ou a flexibilidade do algoritmo para aprender.
+
+00:00:28.650 --> 00:00:30.880
+Mas vamos usar um significado um pouco diferente.
+
+00:00:30.880 --> 00:00:33.610
+Variação também é um termo técnico em estatística
+
+00:00:33.610 --> 00:00:37.095
+que significa, aproximadamente, a abrangência de uma distribuição de dados.
+
+00:00:37.095 --> 00:00:38.090
+É algo bastante semelhante ao
+
+00:00:38.090 --> 00:00:40.860
+desvio padrão, se isso é algo com que você está familiarizado.
+
+00:00:40.860 --> 00:00:44.270
+Portanto, um futuro com grande variação tem instâncias que
+
+00:00:44.270 --> 00:00:47.860
+abrangem um intervalo numérico muito grande de valores que podem ser usados.
+
+00:00:47.860 --> 00:00:51.170
+Ao passo que algo com uma pequena variação significa que os recursos tendem
+
+00:00:51.170 --> 00:00:52.650
+a ser agrupados mais firmemente.
+
+00:00:52.650 --> 00:00:56.070
+Este é um exemplo usando um conjunto de dados ainda não nomeado.
+
+00:00:56.070 --> 00:00:57.920
+Então, suponha que estes são meus dados.
+
+00:00:57.920 --> 00:01:02.100
+O que eu posso fazer é desenhar uma forma oval em torno dele, contendo a
+
+00:01:02.100 --> 00:01:02.790
+maioria dos dados.
+
+00:01:02.790 --> 00:01:05.379
+Talvez, 95% dos dados estejam nesse contorno.
+
+00:01:05.379 --> 00:01:08.300
+Agora, esse contorno pode ser parametrizado usando dois números.
+
+00:01:08.300 --> 00:01:10.930
+Um deles é a distância entre os pontos mais estreitos.
+
+00:01:10.930 --> 00:01:13.590
+O outro é a distância entre os pontos mais longos.
+
+00:01:13.590 --> 00:01:15.450
+Agora, esta é a pergunta crítica.
+
+00:01:15.450 --> 00:01:18.720
+Qual dessas duas linhas apontam ao longo da direção da
+
+00:01:18.720 --> 00:01:21.060
+variação máxima dos dados?
+
+00:01:21.060 --> 00:01:24.370
+Ou seja, em que direção os dados estão mais espalhados?
+
+00:01:24.370 --> 00:01:26.059
+Marque a caixa que você acredita ter a melhor resposta.
+

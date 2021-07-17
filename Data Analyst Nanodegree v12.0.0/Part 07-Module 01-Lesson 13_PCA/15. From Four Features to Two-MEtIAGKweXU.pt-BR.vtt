@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.040 --> 00:00:03.000
+Quando estiver fazendo sua regressão para determinar o preço de uma casa,
+
+00:00:03.000 --> 00:00:05.880
+haverá vários recursos de entrada que talvez interessem
+
+00:00:05.880 --> 00:00:06.790
+a você.
+
+00:00:06.790 --> 00:00:09.570
+Coisas como a metragem, o número de cômodos na casa e,
+
+00:00:09.570 --> 00:00:12.150
+também, coisas sobre a vizinhança ou a localização,
+
+00:00:12.150 --> 00:00:16.090
+como a classificação das escolas e a segurança da vizinhança.
+
+00:00:16.090 --> 00:00:18.490
+E todas essas coisas você pode medir de modo bastante direto.
+
+00:00:18.490 --> 00:00:21.160
+Você pode pesquisar a classificação da escola na Internet.
+
+00:00:21.160 --> 00:00:24.180
+Pode medir a quantidade de pés quadrados com uma fita métrica.
+
+00:00:24.180 --> 00:00:26.320
+Mas eu diria que, quando está fazendo essas medições,
+
+00:00:26.320 --> 00:00:30.030
+você está apenas investigando duas coisas, embora tenhamos quatro recursos aqui.
+
+00:00:30.030 --> 00:00:32.134
+Você está investigando o tamanho da casa e
+
+00:00:32.134 --> 00:00:34.150
+fazendo perguntas sobre a vizinhança.
+
+00:00:34.150 --> 00:00:36.610
+E esses são dois exemplos de variáveis latentes.
+
+00:00:36.610 --> 00:00:39.910
+Essas são variáveis que você não pode medir diretamente, mas
+
+00:00:39.910 --> 00:00:44.200
+que, de certo modo, direcionam o fenômeno que ocorre nos bastidores da medição.
+
+00:00:44.200 --> 00:00:45.700
+Então, aqui vai uma pergunta.
+
+00:00:45.700 --> 00:00:49.350
+Suponha que a variável latente que estou tentando investigar seja o tamanho
+
+00:00:49.350 --> 00:00:50.920
+da cada em que estou interessada.
+
+00:00:50.920 --> 00:00:53.890
+Coloque uma marca ao lado dos recursos que você acredita serem, basicamente,
+
+00:00:53.890 --> 00:00:56.330
+medidas que estão investigando o tamanho da casa.
+

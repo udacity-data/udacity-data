@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.142 --> 00:00:03.250
+A resposta certa aqui provavelmente é SelectkBest
+
+00:00:03.250 --> 00:00:05.600
+porque você sabe exatamente o resultado esperado.
+
+00:00:05.600 --> 00:00:08.039
+Você espera obter exatamente dois.
+
+00:00:08.039 --> 00:00:11.940
+Todos os recursos serão descartados, exceto os dois mais poderosos.
+
+00:00:11.940 --> 00:00:14.448
+Select Percentile não é uma boa escolha para este cenário,
+
+00:00:14.448 --> 00:00:17.570
+pois você não sabe ao certo quantos recursos tem.
+
+00:00:17.570 --> 00:00:20.160
+Mas, no exemplo de aquecimento anterior,
+
+00:00:20.160 --> 00:00:23.290
+onde há exatamente quatro recursos e você sabe que deseja dois, você também
+
+00:00:23.290 --> 00:00:27.760
+pode executar Select Percentile com 50%, e obterá dois recursos.
+

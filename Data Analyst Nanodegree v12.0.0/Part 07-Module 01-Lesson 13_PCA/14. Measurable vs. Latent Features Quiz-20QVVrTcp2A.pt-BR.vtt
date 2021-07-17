@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.120 --> 00:00:02.240
+E espero que você tenha dito que isto parece ser uma pergunta de regressão.
+
+00:00:02.240 --> 00:00:06.370
+Este é um tipo clássico de exercício de regressão porque a saída que
+
+00:00:06.370 --> 00:00:08.560
+esperamos obter será contínua.
+
+00:00:08.560 --> 00:00:10.310
+Portanto, não é apropriado usar um classificador.
+
+00:00:10.310 --> 00:00:13.140
+Queremos usar alguma coisa como uma regressão que possa nos fornecer
+
+00:00:13.140 --> 00:00:16.120
+um número como uma saída, e esse número será o preço da casa.
+

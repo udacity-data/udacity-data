@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.080 --> 00:00:03.752
+Então, agora você sabe o que determina o componente de princípio de um conjunto de dados.
+
+00:00:03.752 --> 00:00:06.130
+É a direção que tem a maior variância nos dados.
+
+00:00:06.130 --> 00:00:09.180
+Em nosso exemplo, seria esta linha vermelha densa aqui.
+
+00:00:09.180 --> 00:00:11.360
+Dá para ver que é muito diferente de uma regressão,
+
+00:00:11.360 --> 00:00:14.210
+mas sei que, às vezes, parece a mesma coisa.
+
+00:00:14.210 --> 00:00:16.430
+Mas, aqui, o que estamos tentando fazer é encontrar a direção da
+
+00:00:16.430 --> 00:00:18.480
+variância máxima, e não fazer uma previsão.
+
+00:00:18.480 --> 00:00:20.010
+Aí vai uma pergunta para você.
+
+00:00:20.010 --> 00:00:23.680
+Essa é difícil, então pense um pouco e me diga a resposta.
+
+00:00:23.680 --> 00:00:26.400
+Por que definimos o componente principal desta forma?
+
+00:00:26.400 --> 00:00:30.530
+Qual é a vantagem de procurar a direção que tem a maior variância?
+
+00:00:30.530 --> 00:00:34.090
+Em outras palavras, quando fazemos a projeção
+
+00:00:34.090 --> 00:00:37.610
+deste espaço de recurso bidimensional para unidimensional, por que projetamos
+
+00:00:37.610 --> 00:00:41.290
+todos os pontos de dados nesta linha vermelha densa em vez de projetá-los
+
+00:00:41.290 --> 00:00:45.120
+nesta linha menor, como exemplo de se fazer de uma forma diferente?
+
+00:00:45.120 --> 00:00:48.820
+Queremos usar esta direção porque é a direção mais fácil de
+
+00:00:48.820 --> 00:00:49.850
+se calcular?
+
+00:00:49.850 --> 00:00:54.100
+Você acha que é a melhor porque reterá a quantidade máxima de
+
+00:00:54.100 --> 00:00:56.000
+informações dos dados originais
+
+00:00:56.000 --> 00:00:59.800
+e quando fazemos esta compressão bidimensional para unidimensional
+
+00:00:59.800 --> 00:01:02.470
+mantemos o máximo de informações possível com esta formulação?
+
+00:01:02.470 --> 00:01:05.870
+Ou você acha que é apenas uma convenção e que não há motivo real?
+

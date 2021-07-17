@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.130 --> 00:00:02.480
+Aqui estão os dois ingredientes essenciais.
+
+00:00:02.480 --> 00:00:07.000
+Tenho muitos recursos disponíveis, mas formulo uma hipótese de que há
+
+00:00:07.000 --> 00:00:10.320
+um número menor de recursos que estão realmente controlando os padrões nos dados.
+
+00:00:10.320 --> 00:00:13.810
+E, então, o que eu faço é usar esse conhecimento e tentar fazer um recurso
+
+00:00:13.810 --> 00:00:17.080
+composto que sonde o fenômeno subjacente mais diretamente.
+
+00:00:17.080 --> 00:00:20.190
+Esses recursos compostos são o que abordaremos nesta lição.
+
+00:00:20.190 --> 00:00:22.050
+Eles são chamados componentes de princípio.
+
+00:00:22.050 --> 00:00:24.030
+E são um algoritmo extremamente poderoso.
+
+00:00:24.030 --> 00:00:24.610
+Nesta lição,
+
+00:00:24.610 --> 00:00:27.970
+falaremos mais sobre isso no contexto da redução da dimensionalidade e
+
+00:00:27.970 --> 00:00:30.560
+como podemos usar a análise de componente de princípio.
+
+00:00:30.560 --> 00:00:33.710
+Ou PCA, para reduzir a dimensionalidade de seus recursos para
+
+00:00:33.710 --> 00:00:35.930
+transformar uma grande quantidade de recursos em apenas alguns.
+
+00:00:35.930 --> 00:00:39.230
+Esse também é um método independente muito poderoso em seu direito próprio para
+
+00:00:39.230 --> 00:00:41.930
+aprendizagem não supervisionada, e darei a você alguns de meus exemplos favoritos
+
+00:00:41.930 --> 00:00:43.590
+a respeito na segunda metade desta lição.
+
+00:00:43.590 --> 00:00:44.750
+Vai ser muito legal.
+
+00:00:44.750 --> 00:00:46.860
+Este é um exemplo do que é a PCA,
+
+00:00:46.860 --> 00:00:49.990
+transformando pés quadrados mais número de cômodos em uma única
+
+00:00:49.990 --> 00:00:53.140
+variável que rastreia aproximadamente o tamanho de uma casa.
+
+00:00:53.140 --> 00:00:55.150
+&gt;&gt; Vamos supor que estes são meus dados de treinamento,
+
+00:00:55.150 --> 00:00:59.840
+eu tenho os pés quadrados no eixo x e o número de cômodos no eixo y.
+
+00:00:59.840 --> 00:01:03.650
+O que vou fazer agora é desenhar o componente de princípio.
+
+00:01:03.650 --> 00:01:05.230
+Isso vai ficar parecido com isto.
+
+00:01:05.230 --> 00:01:09.390
+Eu sei que isso parece uma regressão neste ponto, mas não é, e aqui está o por que.
+
+00:01:09.390 --> 00:01:11.700
+Com a regressão, o que você tenta fazer é
+
+00:01:11.700 --> 00:01:15.990
+prever uma variável de saída em relação ao valor de uma variável de entrada.
+
+00:01:15.990 --> 00:01:18.100
+Aqui, não estamos realmente tentado prever nada.
+
+00:01:18.100 --> 00:01:22.140
+Estamos tentando sugerir uma direção nos dados, que podemos projetar sobre nossos
+
+00:01:22.140 --> 00:01:25.780
+dados e, ao mesmo tempo, perder o mínimo de informações.
+
+00:01:25.780 --> 00:01:27.550
+Portanto, é isto que isso significa.
+
+00:01:27.550 --> 00:01:31.800
+Depois que eu localizei meu componente principal, depois que eu tenho a direção deste...
+
+00:01:31.800 --> 00:01:35.450
+deste vetor, desta linha... e apenas me acompanhe por enquanto, que ela existe.
+
+00:01:35.450 --> 00:01:37.480
+Retornaremos a como descobrimos isso daqui a pouco.
+
+00:01:37.480 --> 00:01:40.710
+Em seguida, o que vou fazer é usar todos os meus pontos de dados.
+
+00:01:40.710 --> 00:01:43.470
+E passar por um processo que é chamado de projeção.
+
+00:01:43.470 --> 00:01:46.810
+E, o que uma projeção significa - ela é quase um termo físico.
+
+00:01:46.810 --> 00:01:49.600
+Imagine que eu tenho uma luz e que a luz está
+
+00:01:49.600 --> 00:01:53.550
+iluminando para baixo perpendicularmente à superfície deste componente de princípio.
+
+00:01:53.550 --> 00:01:55.640
+Então, você pode imaginar que todos esses pontos de dados irão
+
+00:01:55.640 --> 00:01:59.320
+fazer sombra para baixo sobre um pedaço de papel, se eu o colocar lá.
+
+00:01:59.320 --> 00:02:01.530
+Agora, meu componente de princípio é parecido com isto.
+
+00:02:01.530 --> 00:02:03.598
+Portanto, eu inicio com dois dados dimensionais.
+
+00:02:03.598 --> 00:02:06.690
+Mas, depois que eu projetei isso para baixo sobre o componente de princípio,
+
+00:02:06.690 --> 00:02:09.560
+ele está em uma dimensão e vai ficar parecido com isto.
+
+00:02:09.560 --> 00:02:14.150
+Agora, em vez de serem círculos azuis, meus dados serão xs pretos.
+
+00:02:14.150 --> 00:02:16.130
+Transformei-os em uma distribuição de uma dimensão.
+
+00:02:16.130 --> 00:02:21.070
+Utilize o recurso que criei neste diagrama e o transformei de forma
+
+00:02:21.070 --> 00:02:22.260
+que ele está plano.
+
+00:02:22.260 --> 00:02:23.219
+Qual vai ser a aparência disso?
+

@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:04.780
+Agora você já deve ter uma boa noção do que é o PCA e como usá-lo.
+
+00:00:04.780 --> 00:00:07.600
+O último exemplo que darei daqui a pouco
+
+00:00:07.600 --> 00:00:11.830
+é um dos exemplos mais interessantes de onde o PCA é amplamente usado.
+
+00:00:11.830 --> 00:00:14.260
+Mas, antes de entrarmos nesse assunto,
+
+00:00:14.260 --> 00:00:15.990
+falarei sobre quando você precisará usar o PCA.
+
+00:00:16.990 --> 00:00:19.330
+Quando ele é uma abordagem apropriada?
+
+00:00:19.330 --> 00:00:23.460
+Em primeiro lugar, quando você quiser acessar características latentes que podem
+
+00:00:23.460 --> 00:00:25.540
+ser mostradas nos padrões de seus dados.
+
+00:00:25.540 --> 00:00:28.370
+Talvez tudo que você esteja tentando fazer é descobrir se
+
+00:00:28.370 --> 00:00:30.010
+há uma característica latente.
+
+00:00:30.010 --> 00:00:33.480
+Em outras palavras, você apenas quer saber o tamanho do primeiro componente principal.
+
+00:00:33.480 --> 00:00:35.270
+Por exemplo,
+
+00:00:35.270 --> 00:00:38.240
+você pode avaliar quem são as pessoas importantes na Enron.
+
+00:00:38.240 --> 00:00:41.240
+Em segundo lugar, é claro, quando você quiser reduzir a dimensionalidade.
+
+00:00:41.240 --> 00:00:44.570
+Há várias coisas que o PCA pode fazer para ajudá-lo nisso.
+
+00:00:44.570 --> 00:00:48.300
+Primeiramente, ele pode ajudá-lo a visualizar dados de alta dimensionalidade.
+
+00:00:48.300 --> 00:00:51.914
+Quando você estiver desenhando um gráfico de dispersão, terá apenas duas dimensões
+
+00:00:51.914 --> 00:00:55.598
+disponíveis, mas, geralmente, terá mais de dois recursos.
+
+00:00:55.598 --> 00:00:58.997
+Existe uma certa dificuldade para representar três, quatro ou mais
+
+00:00:58.997 --> 00:01:03.200
+números sobre um ponto de dados, se você tiver somente duas dimensões nas quais desenhar.
+
+00:01:04.290 --> 00:01:07.157
+O que você pode fazer é projetá-lo para os dois primeiros
+
+00:01:07.157 --> 00:01:11.070
+componentes principais, traçar isso e desenhar esse ponto de dispersão.
+
+00:01:11.070 --> 00:01:14.270
+Assim, técnicas como o agrupamento k-means podem ser muito mais fáceis
+
+00:01:14.270 --> 00:01:15.620
+de visualizar.
+
+00:01:15.620 --> 00:01:18.410
+Você ainda está capturando a maioria das informações dos dados, mas
+
+00:01:18.410 --> 00:01:21.280
+agora pode desenhá-las com essas duas dimensões.
+
+00:01:21.280 --> 00:01:22.870
+O PCA também poderá ajudar se você
+
+00:01:22.870 --> 00:01:24.940
+suspeitar que há ruído em seus dados.
+
+00:01:24.940 --> 00:01:27.380
+Em quase todos os dados haverá ruído.
+
+00:01:27.380 --> 00:01:30.900
+A esperança é que o primeiro ou o segundo, seus componentes principais mais fortes,
+
+00:01:30.900 --> 00:01:32.830
+estejam capturando os padrões reais dos dados.
+
+00:01:32.830 --> 00:01:36.010
+E que os componentes de princípio menores estejam apenas representando
+
+00:01:36.010 --> 00:01:38.380
+variações de ruído sobre esses padrões.
+
+00:01:38.380 --> 00:01:41.460
+Deixando de lado os componentes de princípio menos importantes,
+
+00:01:41.460 --> 00:01:42.399
+você estará eliminando esse ruído.
+
+00:01:43.440 --> 00:01:47.020
+O último, e o que usaremos como exemplo no restante desta lição,
+
+00:01:47.020 --> 00:01:50.920
+é usar o PCA como pré-processamento antes de usar outro algoritmo, como
+
+00:01:50.920 --> 00:01:53.160
+uma regressão ou uma tarefa de classificação.
+
+00:01:53.160 --> 00:01:55.940
+Se você tiver uma dimensionalidade muito alta e
+
+00:01:55.940 --> 00:01:59.710
+um algoritmo de classificação complexo,
+
+00:01:59.710 --> 00:02:01.760
+o algoritmo poderá ter uma variância muito alta,
+
+00:02:01.760 --> 00:02:04.360
+poderá terminar ajustando-se ao ruído dos dados.
+
+00:02:04.360 --> 00:02:05.800
+Poderá ficar com uma execução muito lenta.
+
+00:02:05.800 --> 00:02:08.740
+Muitas coisas podem acontecer quando você tem uma dimensionalidade
+
+00:02:08.740 --> 00:02:10.639
+de entrada muito alta com alguns desses algoritmos.
+
+00:02:10.639 --> 00:02:13.660
+Mas, obviamente, o algoritmo pode funcionar muito bem com o problema.
+
+00:02:13.660 --> 00:02:17.470
+Uma das coisas que você pode fazer é usar o PCA para reduzir a dimensionalidade das
+
+00:02:17.470 --> 00:02:18.840
+características de entrada.
+
+00:02:18.840 --> 00:02:21.830
+Dessa forma, seu algoritmo de classificação funcionará melhor.
+
+00:02:22.960 --> 00:02:25.030
+Esse é o exemplo que faremos em seguida.
+
+00:02:25.030 --> 00:02:27.320
+É algo chamado eigenfaces.
+
+00:02:27.320 --> 00:02:30.790
+É um método de aplicação de PCA a fotos de pessoas.
+
+00:02:30.790 --> 00:02:34.930
+Esse é um espaço de dimensionalidade muito alta, há
+
+00:02:34.930 --> 00:02:36.610
+muitos pixels na foto.
+
+00:02:36.610 --> 00:02:39.890
+Mas, digamos que você queira identificar quem está na imagem.
+
+00:02:39.890 --> 00:02:43.700
+Que você esteja executando algum tipo de identificação facial ou o que quer que seja.
+
+00:02:43.700 --> 00:02:47.550
+Com o PCA, você pode reduzir a dimensionalidade de entrada muito alta
+
+00:02:47.550 --> 00:02:50.190
+para algo que talvez seja um fator de dez inferior.
+
+00:02:50.190 --> 00:02:53.930
+E alimentar isso em uma SVM, que poderá então fazer a classificação real,
+
+00:02:53.930 --> 00:02:55.670
+tentando descobrir quem está na foto.
+
+00:02:55.670 --> 00:02:57.870
+Agora, as entradas, em vez de serem os pixels originais ou
+
+00:02:57.870 --> 00:03:00.840
+as imagens, são os componentes principais.
+
+00:03:00.840 --> 00:03:02.850
+Mostrarei este exemplo e você verá o que quero dizer.
+

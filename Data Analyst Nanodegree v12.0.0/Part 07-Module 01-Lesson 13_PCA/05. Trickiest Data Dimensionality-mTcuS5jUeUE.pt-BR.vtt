@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.220 --> 00:00:03.100
+Talvez você discorde.
+
+00:00:03.100 --> 00:00:06.950
+Em razão da análise de componente de princípio,
+
+00:00:06.950 --> 00:00:07.510
+na realidade isso será bidimensional.
+
+00:00:07.510 --> 00:00:11.330
+Mesmo que claramente haja uma estrutura unidimencional
+
+00:00:11.330 --> 00:00:12.930
+por baixo desses dados que possa ser desenhada.
+
+00:00:14.160 --> 00:00:17.135
+Parece claro que o que quer que você faça ao sistema de coordenadas,
+
+00:00:17.135 --> 00:00:20.640
+ele as traça de uma forma não linear.
+
+00:00:20.640 --> 00:00:25.040
+E a PCA, particularmente, especializa-se apenas
+
+00:00:25.040 --> 00:00:27.090
+em deslocamentos e rotações para o sistema de coordenadas.
+
+00:00:27.090 --> 00:00:30.860
+E não é possível produzir um sistema de coordenadas que apenas é deslocado ou rotacionado
+
+00:00:30.860 --> 00:00:34.590
+a partir do original para obter a unidimensionalidade.
+
+00:00:34.590 --> 00:00:38.430
+Portanto, como resultado, dois é a resposta que eu quero. É uma questão complicada.
+
+00:00:38.430 --> 00:00:40.170
+E de certa forma um pouco injusta.
+
+00:00:40.170 --> 00:00:43.820
+Porque o melhor que você pode fazer é colocar um sistema de coordenadas assim
+
+00:00:43.820 --> 00:00:50.090
+e assim, onde ainda existe variação significativa nas medições vitais
+
+00:00:50.090 --> 00:00:51.270
+nos pontos de dados.
+
+00:00:51.270 --> 00:00:55.029
+Para o meu gosto, ela é demasiada para ser chamada de unidimensional.
+

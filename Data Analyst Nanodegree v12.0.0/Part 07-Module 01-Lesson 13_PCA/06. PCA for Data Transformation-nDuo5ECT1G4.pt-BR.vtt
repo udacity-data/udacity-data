@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.080 --> 00:00:02.680
+Com todos esses testes equivocados que lhe dei,
+
+00:00:02.680 --> 00:00:07.510
+você está na posição perfeita para compreender a análise de componente principal.
+
+00:00:07.510 --> 00:00:11.200
+Eu explicarei em 20 segundos, e você não esquecerá disso pelo
+
+00:00:11.200 --> 00:00:12.730
+resto de sua vida.
+
+00:00:12.730 --> 00:00:16.070
+Se você receber dados de qualquer formato,
+
+00:00:16.070 --> 00:00:19.960
+como esta plotagem de ponto de dados aqui, a PCA encontrará um novo sistema de coordenadas
+
+00:00:19.960 --> 00:00:23.820
+a partir do antigo sistema apenas por translação e rotação.
+
+00:00:23.820 --> 00:00:27.200
+Ela move o centro do sistema de coordenadas junto com o centro dos dados,
+
+00:00:27.200 --> 00:00:28.000
+bem aqui.
+
+00:00:29.170 --> 00:00:33.200
+Ela move o eixo x para o eixo principal de variação, no qual você
+
+00:00:33.200 --> 00:00:37.600
+vê a maior variação relativa a todos os pontos de dados, e move[INAUDIBLE]
+
+00:00:37.600 --> 00:00:43.880
+o eixo y para uma [INAUDIBLE]direção ortogonal de variação menos importante.
+
+00:00:43.880 --> 00:00:45.750
+Analise os dados originais aqui.
+
+00:00:45.750 --> 00:00:50.654
+Eu argumentaria que os dados estão realmente mais nesta linha aqui.
+
+00:00:50.654 --> 00:00:55.800
+E, em segundo lugar, na sua linha ortogonal aqui. A análise de componente principal encontra
+
+00:00:55.800 --> 00:01:02.120
+para você estes eixos e também diz o grau de importância deles.
+
+00:01:02.120 --> 00:01:03.220
+Vamos praticar isso.
+

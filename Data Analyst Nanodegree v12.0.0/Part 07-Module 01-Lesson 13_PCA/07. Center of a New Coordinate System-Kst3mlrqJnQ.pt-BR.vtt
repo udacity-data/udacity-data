@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.090 --> 00:00:03.740
+Agora que você tem uma noção sobre o que faz a PCA, vamos fazer uma PCA manualmente,
+
+00:00:03.740 --> 00:00:06.370
+e eu criarei um exemplo
+
+00:00:06.370 --> 00:00:10.560
+aqui que, espero, faça sentido para você quando o fizer.
+
+00:00:10.560 --> 00:00:15.874
+Então, nós criamos dados que estão entre as coordenadas 1,2,
+
+00:00:15.874 --> 00:00:20.570
+em certo lugar uniforme, e 3,4, ao longo desta linha de prolongamento.
+
+00:00:21.830 --> 00:00:26.750
+Sabemos que a PCA encontra um sistema de coordenadas que a centraliza nos dados
+
+00:00:26.750 --> 00:00:31.100
+e alinha o eixo x com o principal eixo de variação.
+
+00:00:31.100 --> 00:00:34.460
+Onde você acha, em relação ao antigo sistema de coordenadas x e
+
+00:00:34.460 --> 00:00:38.710
+y, que é o centro da origem deste novo sistema de coordenadas?
+
+00:00:38.710 --> 00:00:41.390
+Trunque no inteiro mais próximo.
+

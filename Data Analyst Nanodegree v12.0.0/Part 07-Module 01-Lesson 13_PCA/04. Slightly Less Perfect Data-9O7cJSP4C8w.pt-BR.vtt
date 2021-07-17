@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.540 --> 00:00:03.500
+Nesse caso, minha resposta é unidimensional.
+
+00:00:03.500 --> 00:00:06.190
+Talvez você discorde, mas, em princípio,
+
+00:00:06.190 --> 00:00:10.100
+os dados realmente se encontram nesta linha, que é uma linha unidimensional.
+
+00:00:10.100 --> 00:00:13.660
+Podemos criar um novo sistema de coordenadas, com os eixos x e y.
+
+00:00:14.660 --> 00:00:17.040
+Na verdade, a linha não é exatamente unidimensional.
+
+00:00:17.040 --> 00:00:19.760
+Há alguns desvios em alguns pontos.
+
+00:00:19.760 --> 00:00:23.540
+Mas, para melhor compreensão dos dados, prefiro tratar esses desvios
+
+00:00:23.540 --> 00:00:28.620
+como ruído e o conjunto de dados como unidimensional.
+

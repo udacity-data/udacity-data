@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.460 --> 00:00:05.070
+Ok. Katie me pediu para apresentar a você a Análise do componente de princípio,
+
+00:00:05.070 --> 00:00:06.900
+normalmente chamada de PCA.
+
+00:00:06.900 --> 00:00:10.990
+A PCA é uma dessas coisas que têm sido usada detalhadamente em todos os tipos de
+
+00:00:10.990 --> 00:00:14.860
+análise de dados incluindo compressão de conjuntos de recursos.
+
+00:00:14.860 --> 00:00:17.770
+E é muito bom obter um entendimento básico do que ela é para que
+
+00:00:17.770 --> 00:00:20.610
+você possa usá-la todas as vezes que quiser visualizar dados.
+
+00:00:20.610 --> 00:00:23.200
+Vamos começar com um teste de exemplo.
+
+00:00:23.200 --> 00:00:25.240
+Você tem um espaço de dados bidimensionais.
+
+00:00:25.240 --> 00:00:26.210
+E aqui estão seus dados.
+
+00:00:26.210 --> 00:00:27.250
+E, por enquanto,
+
+00:00:27.250 --> 00:00:30.270
+vou usar apenas uma única classe. Podemos alterar isso mais tarde.
+
+00:00:30.270 --> 00:00:32.499
+A pergunta que farei a você parece trivial, mas
+
+00:00:32.499 --> 00:00:35.970
+eu desejo saber qual é a dimensionalidade dos dados.
+
+00:00:35.970 --> 00:00:39.660
+E darei a você duas opções, unidimensional ou bidimensional.
+
+00:00:39.660 --> 00:00:41.230
+Ao examinar estes dados, o que você acha?
+

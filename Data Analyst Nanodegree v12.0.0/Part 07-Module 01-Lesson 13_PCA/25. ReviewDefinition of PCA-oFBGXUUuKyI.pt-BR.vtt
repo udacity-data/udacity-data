@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.320 --> 00:00:03.120
+Se você ainda estiver me acompanhando neste ponto, ótimo!
+
+00:00:03.120 --> 00:00:06.930
+Acho que a PCA é um dos tópicos mais complexos no aprendizado de máquina, portanto,
+
+00:00:06.930 --> 00:00:10.180
+se você ainda estiver quebrando a cabeça para destrinchar isso, não se preocupe.
+
+00:00:10.180 --> 00:00:10.980
+É normal.
+
+00:00:10.980 --> 00:00:15.010
+Vou aproveitar esta oportunidade para analisar a PCA rapidamente
+
+00:00:15.010 --> 00:00:18.870
+e fornecer uma espécie de definição de trabalho que você poderá usar no futuro.
+
+00:00:18.870 --> 00:00:22.695
+A PCA é um modo sistematizado de transformar as características de entrada em
+
+00:00:22.695 --> 00:00:23.968
+componentes principais.
+
+00:00:23.968 --> 00:00:26.630
+Esses componentes principais ficam disponíveis para você
+
+00:00:26.630 --> 00:00:29.730
+usar no lugar das características de entrada originais.
+
+00:00:29.730 --> 00:00:33.990
+Portanto, você os usa como novas características na tarefa de regressão ou de classificação.
+
+00:00:33.990 --> 00:00:38.450
+Os componentes principais são definidos como as direções dos dados que maximizam
+
+00:00:38.450 --> 00:00:41.860
+a variância, o que tem o efeito de minimizar a perda de informações quando você
+
+00:00:41.860 --> 00:00:46.070
+executa uma projeção ou uma compressão nesses componentes principais.
+
+00:00:46.070 --> 00:00:48.570
+Você também pode classificar a ordem dos componentes principais.
+
+00:00:48.570 --> 00:00:52.060
+Quanto mais variância você tem nos dados ao longo de um componente principal,
+
+00:00:52.060 --> 00:00:54.390
+mais alta será a classificação desse componente.
+
+00:00:54.390 --> 00:00:57.820
+Portanto, aquele que tiver a maior variância será o primeiro componente principal,
+
+00:00:57.820 --> 00:01:00.150
+o segundo será o segundo componente principal e assim por diante.
+
+00:01:00.150 --> 00:01:03.800
+Outra coisa que devemos ressaltar é que os componentes principais são todos,
+
+00:01:03.800 --> 00:01:05.770
+de certa forma, perpendiculares entre si; portanto,
+
+00:01:05.770 --> 00:01:09.470
+é matematicamente garantido que o segundo componente principal não se sobreporá
+
+00:01:09.470 --> 00:01:11.120
+ao primeiro.
+
+00:01:11.120 --> 00:01:14.690
+E que o terceiro não se sobreporá ao primeiro através do segundo e assim por diante.
+
+00:01:14.690 --> 00:01:17.860
+Portanto, de certa forma, você pode tratá-los como características independentes.
+
+00:01:17.860 --> 00:01:21.640
+E finalmente, há um número máximo de componentes principais que você pode encontrar.
+
+00:01:21.640 --> 00:01:24.980
+Ele equivale ao número de características de entrada que havia no seu conjunto de dados.
+
+00:01:24.980 --> 00:01:28.600
+Normalmente, você usa apenas o primeiro punhado de componentes principais, mas
+
+00:01:28.600 --> 00:01:31.140
+poderá usar o número máximo.
+
+00:01:31.140 --> 00:01:33.120
+Embora, nesse caso, você não esteja ganhando nada.
+
+00:01:33.120 --> 00:01:35.780
+Você estará apenas representando suas características de modo diferente.
+
+00:01:35.780 --> 00:01:38.720
+A PCA não lhe dá a resposta incorreta, mas não oferece nenhuma
+
+00:01:38.720 --> 00:01:42.710
+vantagem sobre o uso das características de entrada originais, caso você esteja usando todos os
+
+00:01:42.710 --> 00:01:46.230
+componentes principais em uma tarefa de regressão ou de classificação.
+

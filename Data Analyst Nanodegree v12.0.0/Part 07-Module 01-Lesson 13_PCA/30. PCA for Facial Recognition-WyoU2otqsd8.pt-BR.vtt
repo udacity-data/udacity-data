@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.170 --> 00:00:03.150
+Eu argumentaria que as duas primeiras respostas são as mais precisas.
+
+00:00:03.150 --> 00:00:05.520
+A imagem de faces certamente tem muitos pixels.
+
+00:00:05.520 --> 00:00:08.645
+Uma câmera de um megapixel teria um milhão de recursos de entrada se
+
+00:00:08.645 --> 00:00:10.780
+você a estiver usando no espaço de entrada bruto.
+
+00:00:10.780 --> 00:00:14.395
+Portanto, isso é realmente primário para obter alguma redução de alguma maneira.
+
+00:00:14.395 --> 00:00:18.340
+Porque um milhão de recursos seriam realmente difíceis para, digamos, um SVM manipular.
+
+00:00:18.340 --> 00:00:21.330
+A segunda coisa que é verdadeira é que existem alguns padrões subjacentes nas
+
+00:00:21.330 --> 00:00:24.700
+faces que são realmente adequados para a PCA.
+
+00:00:24.700 --> 00:00:28.540
+Portanto, como acreditamos que há apenas algumas variáveis latentes subjacentes,
+
+00:00:28.540 --> 00:00:30.900
+no exemplo de uma imagem de um megapixel,
+
+00:00:30.900 --> 00:00:34.770
+eu não diria que há um milhão de pontos de diferença entre duas faces.
+
+00:00:34.770 --> 00:00:38.190
+Que haverá apenas alguns pontos de diferenças gerais e
+
+00:00:38.190 --> 00:00:43.860
+que talvez a PCA possa... possa trazê-los à tona e usá-los na sua habilidade máxima.
+
+00:00:43.860 --> 00:00:47.190
+E a terceira coisa que eu não diria que é verdadeira é que o reconhecimento facial é
+
+00:00:47.190 --> 00:00:49.010
+simples usando o aprendizado de máquina.
+
+00:00:49.010 --> 00:00:52.181
+Por exemplo, uma árvore de decisão tem muita dificuldade ao tentar fazer
+
+00:00:52.181 --> 00:00:53.220
+reconhecimento facial.
+
+00:00:53.220 --> 00:00:57.322
+Como veremos no código de exemplo a seguir usando a PCA e, digamos,
+
+00:00:57.322 --> 00:01:00.230
+um SVM junto, você pode obter muito poder.
+
+00:01:00.230 --> 00:01:03.070
+Mas, em geral, mesmo sendo algo que os seres humanos fazem muito facilmente.
+
+00:01:03.070 --> 00:01:07.060
+Temos cérebros que são particularmente bem otimizados para reconhecermos um ao outro.
+
+00:01:07.060 --> 00:01:09.110
+O que é uma vantagem evolucionária.
+
+00:01:09.110 --> 00:01:12.920
+E, a priori, os computadores não necessariamente têm essa habilidade.
+
+00:01:12.920 --> 00:01:15.050
+Portanto, fazer reconhecimento facial com aprendizado de máquina,
+
+00:01:15.050 --> 00:01:18.590
+embora seja um problema bem-compreendido neste ponto, é algo que é
+
+00:01:18.590 --> 00:01:21.340
+um pouco mais complicado do que você possa imaginar ingenuamente.
+

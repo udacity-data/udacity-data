@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.420 --> 00:00:04.730
+Não sei se você concorda comigo, mas acho o exemplo de eigenfaces para PCA
+
+00:00:04.730 --> 00:00:08.320
+fantástico. Gosto tanto dele que será a base
+
+00:00:08.320 --> 00:00:11.880
+dos nossos exercícios de codificação incluídos neste miniprojeto da lição do PCA.
+
+00:00:11.880 --> 00:00:15.320
+Sua tarefa será trabalhar com o código eigenfaces,
+
+00:00:15.320 --> 00:00:17.860
+focando nos pontos que eu indicarei,
+
+00:00:17.860 --> 00:00:21.620
+ou seja, nos componentes de princípio que estão sendo usados.
+
+00:00:21.620 --> 00:00:23.730
+Ou tentar descobrir os autovalores
+
+00:00:23.730 --> 00:00:25.270
+dos diversos componentes de princípio.
+
+00:00:25.270 --> 00:00:29.140
+Ao final desta minilição, você estará familiarizado com o código PCA.
+
+00:00:29.140 --> 00:00:30.880
+E conseguirá agir rápido e
+
+00:00:30.880 --> 00:00:33.150
+identificar onde estão as partes variáveis importantes.
+

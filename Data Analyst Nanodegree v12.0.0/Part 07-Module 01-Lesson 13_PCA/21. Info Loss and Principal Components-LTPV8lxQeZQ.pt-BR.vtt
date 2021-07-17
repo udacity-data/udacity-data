@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.210 --> 00:00:02.990
+Se essa linha vermelha é nosso componente de princípio,
+
+00:00:02.990 --> 00:00:06.390
+a perda de informações será o somatório de todas
+
+00:00:06.390 --> 00:00:08.480
+essas distâncias que estou desenhando aqui.
+
+00:00:08.480 --> 00:00:10.530
+A distância entre os pontos e
+
+00:00:10.530 --> 00:00:14.820
+seus novos locais projetados na nova característica da linha.
+
+00:00:14.820 --> 00:00:17.560
+Podemos somar tudo isso em relação a todos os pontos, e obteremos alguns números.
+
+00:00:17.560 --> 00:00:18.890
+Esta são as principais percepções.
+
+00:00:18.890 --> 00:00:22.690
+Vou desenhar outro componente de princípio que poderíamos ter usado hipoteticamente como
+
+00:00:22.690 --> 00:00:25.460
+o primeiro componente de princípio, como aquele que queríamos usar.
+
+00:00:25.460 --> 00:00:27.130
+Vamos supor que, em vez da linha vermelha,
+
+00:00:27.130 --> 00:00:29.680
+estejamos analisando esta linha roxa.
+
+00:00:29.680 --> 00:00:32.049
+Poderemos fazer a mesma pergunta para a linha roxa:
+
+00:00:32.049 --> 00:00:35.120
+qual é a perda de informações quando projetamos todos os pontos nela?
+
+00:00:35.120 --> 00:00:37.270
+E começaremos a ter algo que parece com isto.
+
+00:00:37.270 --> 00:00:38.790
+Sei que está um pouco bagunçado, mas
+
+00:00:38.790 --> 00:00:41.710
+espero que você consiga ver que, em média, essas linhas roxas são todas
+
+00:00:41.710 --> 00:00:45.950
+significativamente maiores que as linhas vermelhas.
+
+00:00:45.950 --> 00:00:48.380
+Considerando qualquer ponto específico, isso pode não ser verdade, mas, considerando
+
+00:00:48.380 --> 00:00:50.620
+os pontos em conjunto, isso se aplicará.
+
+00:00:50.620 --> 00:00:54.330
+Quando maximizamos a variação, estamos minimizando a distância
+
+00:00:54.330 --> 00:00:57.110
+entre os pontos e seu novo lugar na linha.
+
+00:00:57.110 --> 00:01:01.450
+Em outras palavras, é um fato matemático que, quando fazemos essa projeção para
+
+00:01:01.450 --> 00:01:05.680
+a direção de variação máxima, e apenas para essa direção, estamos
+
+00:01:05.680 --> 00:01:10.550
+minimizando a distância entre o ponto antigo e o novo ponto transformado.
+
+00:01:10.550 --> 00:01:14.123
+E isso é necessariamente minimizar a perda de informações.
+

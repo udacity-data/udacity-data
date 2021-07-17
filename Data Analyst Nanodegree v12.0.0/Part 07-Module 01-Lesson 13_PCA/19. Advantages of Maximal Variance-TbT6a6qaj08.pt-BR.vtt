@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.110 --> 00:00:04.510
+A resposta correta é que fazemos isso dessa maneira porque quando projetamos ao longo
+
+00:00:04.510 --> 00:00:08.470
+da dimensão de maior variação, isso retém a quantidade máxima de
+
+00:00:08.470 --> 00:00:10.640
+informações nos dados originais.
+
+00:00:10.640 --> 00:00:14.950
+Portanto, se precisarmos fazer uma compressão queremos escolher um algoritmo de compressão, por
+
+00:00:14.950 --> 00:00:18.770
+assim dizer, que retenha a quantidade máxima de informações dos dados originais.
+
+00:00:18.770 --> 00:00:19.900
+E, como se vê,
+
+00:00:19.900 --> 00:00:23.260
+isso significa projetá-la na direção da maior variação.
+
