@@ -1,0 +1,1243 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:05.594 --> 00:00:08.841
+INVESTIGAR
+UM CONJUNTO DE DADOS
+
+00:00:08.883 --> 00:00:13.272
+Olá, bem-vindos ao projeto
+de análise de um conjunto de dados.
+
+00:00:13.314 --> 00:00:16.821
+Eu realizarei o projeto com vocês,
+assim verão o meu processo.
+
+00:00:16.863 --> 00:00:19.126
+O projeto
+será mais aberto,
+
+00:00:19.168 --> 00:00:22.181
+pois escolhemos o conjunto de dados
+a ser analisado.
+
+00:00:22.223 --> 00:00:26.078
+Precisaremos instalar o Pandas,
+o NumPy e o Matplotlib.
+
+00:00:26.120 --> 00:00:31.093
+Não será preciso instalar o CSV,
+pois podemos ler do Pandas.
+
+00:00:31.135 --> 00:00:35.013
+Podemos instalar usando
+as aulas sobre Anaconda.
+
+00:00:35.983 --> 00:00:38.478
+Primeiro escolheremos
+o conjunto de dados,
+
+00:00:38.520 --> 00:00:43.084
+e usaremos este link para ler sobre
+as opções de conjuntos de dados
+
+00:00:43.126 --> 00:00:46.874
+e ver algumas perguntas
+que podemos fazer na análise.
+
+00:00:46.916 --> 00:00:49.522
+Eu observarei
+o conjunto de dados Titanic,
+
+00:00:49.564 --> 00:00:52.617
+que não é uma das opções
+para este projeto,
+
+00:00:52.659 --> 00:00:56.954
+mas seguirei o mesmo processo
+e as mesmas instruções.
+
+00:00:56.996 --> 00:01:00.162
+O que entregaremos neste projeto
+será um relatório
+
+00:01:00.204 --> 00:01:02.593
+e um código Python
+da análise.
+
+00:01:02.635 --> 00:01:05.338
+Se estiver usando
+o notebook Jupyter,
+
+00:01:05.380 --> 00:01:07.883
+você poderá incluir estes dois
+no mesmo arquivo
+
+00:01:07.925 --> 00:01:11.794
+desde que utilize células
+de marcação e comentários
+
+00:01:11.836 --> 00:01:15.379
+para expressar claramente
+suas descobertas e seu processo.
+
+00:01:15.421 --> 00:01:19.987
+Ignore estas abas,
+pois elas não aparecerão para você.
+
+00:01:20.667 --> 00:01:23.500
+Este é o template
+que usaremos
+
+00:01:24.443 --> 00:01:27.139
+ou que poderemos usar
+para este projeto.
+
+00:01:27.181 --> 00:01:29.846
+Ele está disponível
+para ser baixado
+
+00:01:29.888 --> 00:01:33.655
+ao pressionar File e Download as
+se preferir fazer isso localmente
+
+00:01:33.697 --> 00:01:37.512
+e também poderá obtê-lo
+daqui.
+
+00:01:37.554 --> 00:01:38.893
+No projeto final,
+
+00:01:39.525 --> 00:01:43.180
+precisaremos especificar
+o conjunto de dados que analisamos,
+
+00:01:43.222 --> 00:01:45.581
+as perguntas
+que foram feitas,
+
+00:01:45.623 --> 00:01:49.940
+uma descrição do que você fez
+para investigar as perguntas,
+
+00:01:49.982 --> 00:01:52.740
+a documentação de qualquer
+disputa de dados
+
+00:01:52.782 --> 00:01:56.074
+e as estatísticas e diagramas
+dos resultados finais.
+
+00:01:56.116 --> 00:01:58.132
+Você deverá entregar
+em PDF ou em HTML,
+
+00:01:58.174 --> 00:02:01.626
+mas se utiliza
+o notebook Python,
+
+00:02:01.668 --> 00:02:06.707
+basta baixar como arquivo HTML
+do notebook Jupyter.
+
+00:02:06.749 --> 00:02:09.173
+Eu já baixei
+o conjunto de dados,
+
+00:02:09.215 --> 00:02:11.965
+então seguirei
+para o notebook
+
+00:02:12.007 --> 00:02:15.822
+para carregar
+o conjunto de dados obtido.
+
+00:02:16.533 --> 00:02:19.124
+Podemos fazer isso
+localmente.
+
+00:02:19.166 --> 00:02:22.958
+Você poderá baixar
+como arquivo HTML desta forma -
+
+00:02:23.694 --> 00:02:27.230
+entrando aqui ou localmente -
+para entregar o arquivo.
+
+00:02:27.272 --> 00:02:29.371
+Vejamos este notebook.
+
+00:02:29.413 --> 00:02:31.236
+Existem algumas dicas
+
+00:02:31.278 --> 00:02:34.566
+que dão conselhos
+sobre como organizar o relatório
+
+00:02:36.141 --> 00:02:38.522
+além de aconselhar
+sobre a análise.
+
+00:02:38.564 --> 00:02:41.291
+Eu substituirei o nome
+
+00:02:42.011 --> 00:02:45.673
+por algo mais específico
+do meu projeto.
+
+00:02:45.715 --> 00:02:48.216
+Usarei "Análise de dados
+do Titanic".
+
+00:02:48.258 --> 00:02:51.105
+Manterei a tabela de conteúdos,
+pois ela é boa.
+
+00:02:51.147 --> 00:02:57.023
+Aqui apresentamos
+o conjunto de dados do projeto.
+
+00:02:57.065 --> 00:03:00.320
+Eu direi algo como: "Neste projeto
+analisaremos os dados
+
+00:03:00.362 --> 00:03:04.537
+associados ao trágico evento
+do naufrágio do Titanic.
+
+00:03:04.579 --> 00:03:09.360
+Em especial, buscaremos tendências
+entre os que sobreviveram
+
+00:03:09.402 --> 00:03:12.640
+e como eles se diferenciavam
+dos que não sobreviveram."
+
+00:03:12.682 --> 00:03:17.312
+Para começar, importaremos
+os pacotes necessários para análise.
+
+00:03:17.354 --> 00:03:20.704
+NumPy, Pandas,
+
+00:03:21.873 --> 00:03:23.610
+Matplotlib,
+
+00:03:24.575 --> 00:03:27.175
+Seaborn -
+
+00:03:27.217 --> 00:03:30.608
+embora ele não seja necessário,
+poderá aprimorar a visualização -
+
+00:03:30.650 --> 00:03:33.817
+e Matplotlib in line,
+
+00:03:35.472 --> 00:03:38.934
+para garantir que as exibições
+apareçam no notebook do Jupyter.
+
+00:03:38.976 --> 00:03:40.901
+Depois vemos
+a disputa de dados,
+
+00:03:40.943 --> 00:03:46.615
+que é onde inspecionamos os dados
+para entender a estrutura deles
+
+00:03:46.657 --> 00:03:48.555
+e para ver
+as alterações necessárias.
+
+00:03:48.597 --> 00:03:51.459
+É aqui que fazemos as alterações
+para limpá-las.
+
+00:03:51.501 --> 00:03:53.774
+Vejamos
+nosso conjunto de dados.
+
+00:03:56.302 --> 00:03:58.206
+Eu preciso ler
+no conjunto de dados.
+
+00:03:59.294 --> 00:04:03.005
+Há o ID do passageiro -
+há um passageiro por linha,
+
+00:04:03.047 --> 00:04:07.021
+e esse é um identificador único -,
+se ele sobreviveu ou não -
+
+00:04:07.063 --> 00:04:09.404
+temos uns e zeros -,
+a classe em que estavam,
+
+00:04:09.446 --> 00:04:11.253
+o nome, o gênero, a idade,
+
+00:04:11.295 --> 00:04:13.453
+a quantidade de irmãos
+e cônjuges,
+
+00:04:13.495 --> 00:04:16.029
+a quantidade de pais e crianças,
+a passagem,
+
+00:04:16.071 --> 00:04:18.802
+a tarifa,
+a cabine e o embarque.
+
+00:04:18.835 --> 00:04:21.949
+Aqui é o que pagaram
+e de onde embarcaram.
+
+00:04:21.991 --> 00:04:27.182
+Acho que há três - C, S e Q -,
+de acordo com o Kaggle.
+
+00:04:27.224 --> 00:04:31.167
+No relatório, é melhor incluir
+uma descrição das colunas.
+
+00:04:31.209 --> 00:04:35.734
+Aqui está dizendo para usar
+muitas células.
+
+00:04:35.776 --> 00:04:38.982
+Pressionamos B para criar
+novas células e X para deletá-las.
+
+00:04:39.024 --> 00:04:41.666
+Se quisermos mudá-las
+para remarcação, pressione M.
+
+00:04:41.708 --> 00:04:44.054
+Se não souber por que
+não pode usar isso
+
+00:04:44.096 --> 00:04:46.711
+enquanto edita,
+é porque você está editando.
+
+00:04:46.753 --> 00:04:50.902
+É preciso sair
+para usar os atalhos.
+
+00:04:50.944 --> 00:04:54.356
+A próxima coisa
+
+00:04:54.398 --> 00:04:56.405
+será observar o perfil.
+
+00:04:56.447 --> 00:05:00.116
+Há 891 passageiros
+e 12 colunas.
+
+00:05:01.533 --> 00:05:04.500
+Temos aqui
+algumas estatísticas sumárias.
+
+00:05:04.542 --> 00:05:07.812
+Só estamos tentando entender
+melhor os dados,
+
+00:05:07.854 --> 00:05:10.916
+e identificar as alterações
+que serão necessárias.
+
+00:05:10.958 --> 00:05:13.284
+Embora estes dados
+pareçam claros,
+
+00:05:13.326 --> 00:05:17.092
+nós não analisaremos
+o ID ou o nome dos passageiros,
+
+00:05:17.134 --> 00:05:19.525
+pois são muito específicos
+de cada passageiro.
+
+00:05:19.567 --> 00:05:23.602
+Creio que a passagem e a cabine
+não serão muito úteis
+
+00:05:23.644 --> 00:05:26.173
+para encontrar tendências
+entre os sobreviventes.
+
+00:05:26.215 --> 00:05:29.910
+Podemos mudar tudo isso,
+
+00:05:29.952 --> 00:05:33.406
+mas nossas decisões
+precisam ser explicadas
+
+00:05:33.448 --> 00:05:35.109
+de forma elaborada
+
+00:05:35.151 --> 00:05:37.399
+com células de marcação
+e comentários,
+
+00:05:37.441 --> 00:05:39.895
+assim o leitor saberá
+o que você está fazendo.
+
+00:05:39.937 --> 00:05:42.222
+A partir
+das estatísticas sumárias,
+
+00:05:42.264 --> 00:05:46.710
+vemos que 38% dos passageiros
+sobreviveram,
+
+00:05:47.213 --> 00:05:49.403
+que havia três classes -
+um, dois e três -
+
+00:05:49.445 --> 00:05:52.263
+e que mais de 50%
+ou pelo menos 50%
+
+00:05:52.305 --> 00:05:56.254
+estavam na terceira classe,
+que devia ser a mais barata.
+
+00:05:56.296 --> 00:06:01.267
+Havia bebês
+e alguém com 80 anos,
+
+00:06:01.309 --> 00:06:05.509
+mas a maioria estava
+entre os 20 e 40 anos.
+
+00:06:05.551 --> 00:06:08.677
+A maioria estava sem irmãos
+ou esposas,
+
+00:06:08.719 --> 00:06:10.486
+sem pais nem filhos.
+
+00:06:10.528 --> 00:06:13.734
+Embora alguns tinham
+até oito ou seis.
+
+00:06:13.776 --> 00:06:17.974
+As passagens custavam
+entre 7 e 30, 8 e 30,
+
+00:06:18.016 --> 00:06:20.260
+embora alguns
+tenham pagado 512,
+
+00:06:20.302 --> 00:06:22.782
+creio que isso tenha sido
+para a primeira classe
+
+00:06:22.824 --> 00:06:24.805
+e isto para a terceira.
+
+00:06:24.847 --> 00:06:28.173
+Podemos conferir depois,
+mas creio que essa seja a relação.
+
+00:06:28.215 --> 00:06:33.205
+Podemos ver aqui que existem
+valores faltando para a idade.
+
+00:06:33.247 --> 00:06:38.598
+Há valores faltando na idade,
+na cabine e no embarque.
+
+00:06:38.640 --> 00:06:41.099
+Provavelmente
+não analisaremos a cabine.
+
+00:06:41.141 --> 00:06:45.516
+Antes de abandonarmos
+alguma coisa -
+
+00:06:45.558 --> 00:06:48.965
+as linhas e não valores -,
+
+00:06:49.845 --> 00:06:52.940
+vamos abandonar as colunas
+que não usaremos.
+
+00:06:52.982 --> 00:06:58.909
+Vamos abandonar
+o ID do passageiro,
+
+00:06:58.951 --> 00:07:02.365
+o nome, a passagem
+e a cabine.
+
+00:07:02.407 --> 00:07:04.516
+Na hora de limpar os dados,
+
+00:07:04.558 --> 00:07:08.197
+também podemos mudar tudo
+para letra minúscula.
+
+00:07:08.239 --> 00:07:09.766
+Faço isso pela consistência,
+
+00:07:09.808 --> 00:07:13.581
+assim não precisarei me lembrar
+o que está em letra maiúscula.
+
+00:07:13.623 --> 00:07:17.824
+Uso axis=1 para informar à função
+que usamos os nomes das colunas
+
+00:07:17.866 --> 00:07:23.598
+ou as colunas e inplace=True,
+para manter as alterações.
+
+00:07:23.640 --> 00:07:26.728
+Temos os sobreviventes,
+a classe, o gênero, a idade,
+
+00:07:26.770 --> 00:07:30.263
+a família, a tarifa
+e o embarque.
+
+00:07:30.305 --> 00:07:34.526
+Agora precisarmos preencher
+a idade e o embarque.
+
+00:07:34.568 --> 00:07:35.957
+Vamos lidar com eles.
+
+00:07:35.990 --> 00:07:39.279
+Para a idade,
+existem muitos espaços faltando,
+
+00:07:39.321 --> 00:07:44.279
+então, às vezes, eu observo
+como são as linhas,
+
+00:07:44.321 --> 00:07:48.207
+pois se houver uma característica
+será bom entendê-la,
+
+00:07:48.249 --> 00:07:50.879
+pois, em alguns projetos,
+
+00:07:50.921 --> 00:07:54.697
+os valores nulos pertencem
+ao mesmo grupo.
+
+00:07:54.739 --> 00:07:59.193
+Quero ter certeza de que não estou
+deixando de notar nada.
+
+00:07:59.235 --> 00:08:04.847
+Observarei a estrutura dos dados
+nos quais a idade é nula
+
+00:08:04.889 --> 00:08:06.954
+para ver
+um histograma disso.
+
+00:08:09.152 --> 00:08:12.214
+Eu não vi o histograma
+da estrutura dos dados.
+
+00:08:12.256 --> 00:08:14.072
+Farei isso antes.
+
+00:08:15.615 --> 00:08:17.982
+Esta é a estrutura
+de todos os dados.
+
+00:08:18.024 --> 00:08:21.200
+Isso concorda com o que vimos
+nas estatísticas sumárias.
+
+00:08:21.242 --> 00:08:24.071
+A maioria não pagou muito,
+
+00:08:24.113 --> 00:08:26.056
+pois está
+muito para a direita,
+
+00:08:27.351 --> 00:08:29.479
+a maioria estava
+na terceira classe,
+
+00:08:29.521 --> 00:08:32.512
+a maioria não sobreviveu
+
+00:08:33.800 --> 00:08:37.816
+e a maioria não veio com pais,
+filhos, irmãos ou cônjuges.
+
+00:08:39.288 --> 00:08:43.439
+A idade também está à direita,
+a maioria tinha entre 20 e 40 anos.
+
+00:08:44.296 --> 00:08:46.718
+Eu fiz isso
+pois queria conferir
+
+00:08:46.760 --> 00:08:50.792
+se não estava
+muito fora do geral,
+
+00:08:50.834 --> 00:08:52.301
+do resto dos dados.
+
+00:08:52.343 --> 00:08:57.888
+A tarifa também está à direita,
+a maioria estava na terceira classe.
+
+00:08:57.930 --> 00:09:01.545
+A maioria do nulo está...
+
+00:09:01.587 --> 00:09:05.111
+A maioria destas linhas
+está na terceira classe.
+
+00:09:05.153 --> 00:09:09.360
+A minoria sobreviveu,
+não havia muitas famílias
+
+00:09:09.402 --> 00:09:11.338
+e a idade é obviamente nula.
+
+00:09:12.183 --> 00:09:17.855
+Eu vou preencher os valores nulo
+com a média.
+
+00:09:17.897 --> 00:09:22.875
+Existem outras maneiras
+de fazer isso, mas simplificaremos.
+
+00:09:22.917 --> 00:09:26.533
+Me esqueci do inplace,
+não se esqueçam disso.
+
+00:09:27.366 --> 00:09:30.308
+As idades foram
+preenchidas com as médias,
+
+00:09:30.350 --> 00:09:34.674
+mas o embarque
+não é um dado numérico,
+
+00:09:34.716 --> 00:09:36.883
+então não existe uma média,
+apenas letras.
+
+00:09:36.925 --> 00:09:40.155
+Parece que só há dois espaços
+em branco.
+
+00:09:40.197 --> 00:09:44.140
+São estas duas linhas.
+
+00:09:45.173 --> 00:09:48.219
+Creio que não haverá problema
+se os abandonarmos.
+
+00:09:48.261 --> 00:09:53.445
+Agora temos 889 linhas
+em vez de 891.
+
+00:09:55.373 --> 00:09:57.396
+Acho que só precisaremos
+limpar isso,
+
+00:09:57.438 --> 00:10:00.317
+pois o conjunto de dados
+está bem limpo.
+
+00:10:00.359 --> 00:10:03.787
+O próximo passo será o da análise
+exploratória de dados.
+
+00:10:03.829 --> 00:10:07.707
+Usarei este template
+para vermos o que devemos fazer,
+
+00:10:07.749 --> 00:10:11.046
+pois este cabeçalho
+deveria conter
+
+00:10:11.088 --> 00:10:15.558
+nomes de seções
+mais específicos,
+
+00:10:15.600 --> 00:10:18.566
+mas existem dicas
+úteis aqui.
+
+00:10:18.608 --> 00:10:21.757
+A análise deve ser dirigida
+pelas perguntas,
+
+00:10:21.799 --> 00:10:25.054
+então a sobrevivência
+é minha variável dependente
+
+00:10:25.096 --> 00:10:27.642
+e estas são
+minhas variáveis independentes.
+
+00:10:27.684 --> 00:10:30.381
+Eu vou explorar
+as associações entre elas.
+
+00:10:30.423 --> 00:10:32.550
+A primeira pergunta
+a ser feita
+
+00:10:32.592 --> 00:10:35.509
+é se a tarifa está associada
+à sobrevivência,
+
+00:10:35.551 --> 00:10:41.491
+pois espero que as pessoas
+das classes mais altas
+
+00:10:41.533 --> 00:10:43.730
+e com as tarifas mais altas
+
+00:10:44.538 --> 00:10:47.561
+tenham mais chance
+de sobreviver.
+
+00:10:47.603 --> 00:10:51.026
+Para facilitar a obtenção das linhas
+no futuro,
+
+00:10:51.068 --> 00:10:54.020
+eu criarei máscaras
+para as linhas
+
+00:10:54.062 --> 00:10:57.508
+nas quais o passageiro sobreviveu
+e para as quais não sobreviveu.
+
+00:10:57.550 --> 00:11:01.099
+Se eu quiser ver as tarifas
+
+00:11:01.723 --> 00:11:06.083
+nas quais as pessoas sobreviveram,
+eu posso fazer algo assim.
+
+00:11:06.125 --> 00:11:07.996
+Vejamos o significado disso.
+
+00:11:10.108 --> 00:11:12.539
+Vejamos as pessoas
+que não sobreviveram.
+
+00:11:13.266 --> 00:11:19.048
+Parece que os sobreviventes
+pagaram bem mais
+
+00:11:19.090 --> 00:11:22.064
+do que aqueles
+que não sobreviveram,
+
+00:11:22.106 --> 00:11:23.943
+mas veremos isso
+mais claramente
+
+00:11:23.985 --> 00:11:26.114
+se observarmos a distribuição
+das tarifas
+
+00:11:26.156 --> 00:11:28.610
+e as compararmos
+de forma visual.
+
+00:11:30.218 --> 00:11:31.728
+Vamos fazer isso.
+
+00:11:31.770 --> 00:11:35.513
+Inserimos ponto e vírgula no último,
+assim o output não aparecerá.
+
+00:11:35.555 --> 00:11:41.360
+Também incluiremos um rótulo
+para mostrar o que cada um é
+
+00:11:41.402 --> 00:11:44.033
+e torná-lo
+mais transparente,
+
+00:11:45.130 --> 00:11:49.369
+assim veremos mais claramente
+onde eles se sobrepõem.
+
+00:11:49.411 --> 00:11:52.392
+Parece mesmo que as pessoas
+que sobreviveram
+
+00:11:52.434 --> 00:11:56.120
+pagaram mais do que as pessoas
+que não sobreviveram.
+
+00:11:56.162 --> 00:12:00.312
+Especialmente na classe mais baixa,
+bem mais pessoas morreram.
+
+00:12:00.354 --> 00:12:04.744
+Podemos configurar
+a quantidade de bins ou de colunas
+
+00:12:04.786 --> 00:12:07.807
+para torná-lo mais generalizado
+ou não.
+
+00:12:07.849 --> 00:12:10.504
+Se usarmos 20, por exemplo,
+
+00:12:11.386 --> 00:12:16.193
+veremos informações
+mais específicas de bins.
+
+00:12:17.179 --> 00:12:21.105
+Mas a tarifa também está
+relacionada com a classe,
+
+00:12:21.147 --> 00:12:24.000
+então vejamos isso também.
+
+00:12:24.042 --> 00:12:27.649
+Se agruparmos pela classe,
+
+00:12:27.691 --> 00:12:30.817
+e observarmos
+a coluna dos sobreviventes,
+
+00:12:30.859 --> 00:12:33.505
+parece que quanto mais alta
+for a classe,
+
+00:12:33.547 --> 00:12:35.874
+maior será a chance
+de sobreviver.
+
+00:12:35.916 --> 00:12:39.069
+Se quisermos usar
+uma análise visual,
+
+00:12:39.111 --> 00:12:41.965
+poderemos transformar isso
+em um gráfico de barra.
+
+00:12:42.829 --> 00:12:45.635
+Use ponto e vírgula
+se não quiser o output.
+
+00:12:45.677 --> 00:12:48.668
+Definitivamente
+há uma correlação.
+
+00:12:48.710 --> 00:12:52.530
+Na mesma forma, quero comparar
+a distribuição das idades
+
+00:12:52.572 --> 00:12:55.803
+dos passageiros que sobreviveram
+com os que não sobreviveram.
+
+00:12:55.845 --> 00:12:58.596
+Copiamos e colamos isto
+
+00:12:58.638 --> 00:13:01.012
+e substituímos esta parte
+pela idade,
+
+00:13:01.054 --> 00:13:04.130
+pois são bem parecidos.
+
+00:13:04.172 --> 00:13:05.325
+A partir do gráfico,
+
+00:13:05.367 --> 00:13:08.205
+vemos que as crianças
+
+00:13:08.247 --> 00:13:11.829
+tiveram mais chance
+de sobreviver,
+
+00:13:11.871 --> 00:13:15.724
+mas, além disso,
+não parece haver muita relação.
+
+00:13:15.766 --> 00:13:18.758
+A seguir,
+podemos observar o gênero.
+
+00:13:18.800 --> 00:13:22.534
+Lembre-se de ser descritivo
+e detalhista
+
+00:13:22.576 --> 00:13:25.732
+nas células de marcação
+para descrever a análise
+
+00:13:25.774 --> 00:13:28.067
+se estiver fazendo isto
+no notebook Jupyter.
+
+00:13:28.109 --> 00:13:32.848
+Se quisermos observar o gênero,
+podemos agrupar novamente -
+
+00:13:33.463 --> 00:13:34.830
+agrupar por sexo -
+
+00:13:34.872 --> 00:13:37.455
+e observar a coluna
+dos sobreviventes
+
+00:13:37.497 --> 00:13:41.487
+e transformar isto
+em um gráfico de barra.
+
+00:13:42.167 --> 00:13:47.917
+Parece que há mais mulheres
+sobreviventes do que homens,
+
+00:13:47.959 --> 00:13:49.486
+mas, para garantir,
+
+00:13:49.528 --> 00:13:53.191
+quero ver se não há
+nenhum motivo esquisito,
+
+00:13:53.233 --> 00:13:57.030
+como mais mulheres
+na primeira classe.
+
+00:13:57.072 --> 00:13:59.615
+Vamos conferir.
+
+00:13:59.657 --> 00:14:02.392
+Havia mais homens
+do que mulheres.
+
+00:14:03.159 --> 00:14:07.078
+Vamos dizer isto.
+
+00:14:07.120 --> 00:14:09.951
+Se agruparmos por gênero
+
+00:14:09.993 --> 00:14:11.816
+e observarmos a classe...
+
+00:14:12.680 --> 00:14:15.095
+Talvez seja melhor
+observarmos a tarifa,
+
+00:14:15.137 --> 00:14:16.871
+então podemos fazer
+algo como...
+
+00:14:17.663 --> 00:14:21.591
+Podemos observar a tarifa média
+de cada gênero.
+
+00:14:22.256 --> 00:14:27.390
+Parece que as mulheres
+foram mais caras,
+
+00:14:27.432 --> 00:14:29.366
+gastaram mais.
+
+00:14:29.408 --> 00:14:31.805
+Provavelmente havia mais
+na primeira classe,
+
+00:14:31.847 --> 00:14:34.400
+mas vejamos isso
+visualmente.
+
+00:14:35.711 --> 00:14:37.487
+Eu usarei Matplotlib
+
+00:14:37.529 --> 00:14:40.001
+para criar o histograma,
+
+00:14:40.043 --> 00:14:42.830
+mas quero mostrar
+a minha análise.
+
+00:14:42.872 --> 00:14:45.885
+Mesmo se separarmos
+por classe,
+
+00:14:45.927 --> 00:14:49.000
+fica claro que as mulheres
+sobreviveram mais.
+
+00:14:49.042 --> 00:14:52.648
+Parece haver
+uma forte associação
+
+00:14:52.690 --> 00:14:55.896
+entre gênero
+e sobrevivência.
+
+00:14:55.938 --> 00:14:57.711
+Outra coisa
+que podemos analisar
+
+00:14:57.753 --> 00:15:01.560
+é como o fato de ter família a bordo
+está associado com a sobrevivência.
+
+00:15:01.602 --> 00:15:05.352
+Podemos analisar isso usando
+as colunas de irmãos e esposas,
+
+00:15:05.394 --> 00:15:07.626
+além das de pais e filhos.
+
+00:15:08.258 --> 00:15:11.929
+Imagino usar
+outro gráfico de barra.
+
+00:15:11.971 --> 00:15:15.936
+Tentarei fazer algo
+melhor do que isto,
+
+00:15:15.978 --> 00:15:19.139
+mas ainda usarei o Pandas.
+
+00:15:19.181 --> 00:15:25.152
+Eu analisarei
+as colunas de irmãos e esposas
+
+00:15:25.194 --> 00:15:28.868
+e usarei a mesma máscara
+para ver os que sobreviveram
+
+00:15:28.910 --> 00:15:33.363
+e obter os valores,
+pois queremos um gráfico de barra.
+
+00:15:33.405 --> 00:15:38.293
+Eu farei o mesmo
+para os que não sobreviveram.
+
+00:15:39.125 --> 00:15:42.228
+Eles estarão
+um em cima do outro,
+
+00:15:43.838 --> 00:15:45.549
+mas com cores diferentes.
+
+00:15:46.397 --> 00:15:48.716
+Eu usarei o Matplotlib,
+
+00:15:48.758 --> 00:15:51.341
+mas farei isto
+
+00:15:52.789 --> 00:15:55.940
+para mostrar
+a minha análise.
+
+00:15:57.013 --> 00:15:58.781
+Vemos que...
+
+00:16:01.004 --> 00:16:03.028
+Precisamos esclarecer
+os rótulos.
+
+00:16:03.070 --> 00:16:07.876
+Vamos inserir um rótulo aqui,
+assim entenderemos as cores.
+
+00:16:07.918 --> 00:16:10.901
+Coloco ponto e vírgula
+para me livrar do output.
+
+00:16:14.988 --> 00:16:18.925
+As pessoas com muitos familiares
+parecem que não sobreviveram.
+
+00:16:21.021 --> 00:16:25.044
+As pessoas com um familiar
+sobreviveram mais,
+
+00:16:25.086 --> 00:16:29.029
+mas a maioria dos que estavam
+sozinhos não sobreviveu.
+
+00:16:30.565 --> 00:16:35.078
+Imagino que a maioria
+esteja nesta categoria,
+
+00:16:35.748 --> 00:16:38.323
+e a maioria das pessoas
+não sobreviveu.
+
+00:16:38.365 --> 00:16:39.875
+Podemos fazer o mesmo
+
+00:16:39.917 --> 00:16:44.370
+com a coluna
+de pais e filhos.
+
+00:16:44.412 --> 00:16:47.493
+Vemos uma tendência aqui,
+pois os que tinham família grande
+
+00:16:47.535 --> 00:16:48.971
+não sobreviveram,
+
+00:16:49.013 --> 00:16:52.211
+e o mesmo vale
+para quem estava sozinho.
+
+00:16:52.253 --> 00:16:55.620
+Talvez haja uma relação
+com a primeira e segunda classes.
+
+00:16:55.662 --> 00:16:59.005
+Isso pode ser explorado.
+
+00:16:59.047 --> 00:17:01.371
+Por fim, outra coluna
+que podemos explorar
+
+00:17:01.413 --> 00:17:05.717
+é a relação entre o embarque
+e a sobrevivência.
+
+00:17:07.773 --> 00:17:11.724
+Também podemos fazer
+algo parecido com isto.
+
+00:17:11.766 --> 00:17:15.308
+Ao entregar o relatório,
+rotule tudo.
+
+00:17:15.350 --> 00:17:18.275
+Adicione o título,
+os rótulos dos eixos,
+
+00:17:18.317 --> 00:17:23.340
+uma legenda
+e rótulos como estes.
+
+00:17:25.461 --> 00:17:27.260
+Use o Matplotlib.
+
+00:17:28.333 --> 00:17:30.459
+As pessoas na categoria S
+
+00:17:30.501 --> 00:17:33.603
+não tiveram tanta sorte.
+
+00:17:33.645 --> 00:17:36.212
+A C está um pouco melhor
+e a Q não está tão bom.
+
+00:17:36.254 --> 00:17:39.251
+Parece que o embarque
+tem alguma associação.
+
+00:17:39.293 --> 00:17:42.823
+Eu fiz uma rápida
+demonstração
+
+00:17:42.865 --> 00:17:45.775
+de como explorar associações
+entre as variáveis -
+
+00:17:45.817 --> 00:17:47.655
+independentes e dependentes.
+
+00:17:47.697 --> 00:17:49.303
+De acordo com a rubrica,
+
+00:17:49.345 --> 00:17:52.487
+é preciso que haja pelo menos
+três variáveis independentes
+
+00:17:52.529 --> 00:17:54.712
+e uma dependente na análise.
+
+00:17:55.944 --> 00:17:57.550
+Aqui embaixo,
+
+00:17:57.592 --> 00:18:01.113
+você deverá resumir
+suas descobertas
+
+00:18:01.155 --> 00:18:03.384
+e discutir as limitações
+da sua análise.
+
+00:18:03.426 --> 00:18:04.777
+Por exemplo,
+
+00:18:04.819 --> 00:18:08.608
+quando eu preenchi
+os valores nulos das idades,
+
+00:18:08.650 --> 00:18:10.073
+eu usei a média,
+
+00:18:10.115 --> 00:18:11.918
+mas pode haver
+outra solução.
+
+00:18:11.960 --> 00:18:16.340
+Poderíamos levar em conta
+os outros valores das linhas
+
+00:18:16.382 --> 00:18:19.332
+nas quais a idade era nula -
+regressão ou algo do tipo -
+
+00:18:19.374 --> 00:18:22.175
+para tornar mais precisa
+a previsão da idade.
+
+00:18:22.217 --> 00:18:26.595
+São lugares
+que poderíamos explorar mais.
+
+00:18:26.637 --> 00:18:32.125
+Organize seu relatório, use
+cabeçalhos e células de marcação.
+
+00:18:32.167 --> 00:18:34.894
+Isso também vale
+para o relatório.
+
+00:18:35.574 --> 00:18:37.190
+Limpe as exibições
+
+00:18:37.942 --> 00:18:39.875
+e seja minucioso
+nas descrições.
+
+00:18:39.917 --> 00:18:43.218
+Neste vídeo,
+eu narrei muita coisa,
+
+00:18:43.260 --> 00:18:46.890
+mas, no relatório,
+você deverá descrever tudo
+
+00:18:46.932 --> 00:18:49.762
+e escrever.
+
+00:18:49.804 --> 00:18:51.426
+Espero ter ajudado.
+
+00:18:51.468 --> 00:18:54.179
+Boa sorte com sua análise.
+
