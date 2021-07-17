@@ -1,0 +1,251 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Why Study a New Algorithm Solo?
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Choose Your Own Algorithm
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Choose Your own Algorithm.html">
+       01. Choose Your own Algorithm
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Why Study a New Algorithm Solo.html">
+       02. Why Study a New Algorithm Solo?
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Choose Your Own Adventure.html">
+       03. Choose Your Own Adventure
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Algorithm Options.html">
+       04. Algorithm Options
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Investigation Process.html">
+       05. Investigation Process
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Choose-Your-Own Algorithm Checklist.html">
+       06. Choose-Your-Own Algorithm Checklist
+      </a>
+     </li>
+     <li class="">
+      <a href="07. How Does Your Algorithm Compare.html">
+       07. How Does Your Algorithm Compare
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Can You Beat Our High Score.html">
+       08. Can You Beat Our High Score?
+      </a>
+     </li>
+     <li class="">
+      <a href="09. L4_Mini Project.html">
+       09. L4_Mini Project
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Welcome to the end of the lesson.html">
+       10. Welcome to the end of the lesson
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. Why Study a New Algorithm Solo?
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Why Study a New Algorithm Solo?
+         </p>
+        </h3>
+        <div>
+         <p>
+          A critical skill for any data analyst is the ability to figure out new things about machine learning, which is the goal for this lesson.  The whole lesson is a mini-project.  The goal is to do terrain classification with an algorithm of your choice, researching and deploying it on your own.
+         </p>
+         <p>
+          Your algorithm choices are the following:
+          <br/>
+          <li>
+           k nearest neighbors
+           <br/>
+           <li>
+            random forest
+            <br/>
+            <li>
+             adaboost (sometimes also called boosted decision tree)
+            </li>
+           </li>
+          </li>
+         </p>
+         <p>
+          We can’t check your results, because there are too many combinations of algorithms and parameters to check everything that you could try, but you have seen the accuracy that our previous algorithms (Naive Bayes, SVM, decision tree) achieved and can self-assess whether the new algorithm does better.
+         </p>
+         <p>
+          In the
+          <i>
+           choose_your_own/your_algorithm.py
+          </i>
+          file, you’ll find some starter code to get the data all set up for you.   The following videos also give a little more background on the algorithms and process you should follow, but you’re mostly finding your own way here.  Good luck!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. Choose Your Own Adventure.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. Why Study a New Algorithm Solo?')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

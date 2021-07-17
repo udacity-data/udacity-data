@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.210 --> 00:00:03.120
+Você aprendeu com êxito sobre três diferentes algoritmos de
+
+00:00:03.120 --> 00:00:04.780
+aprendizado supervisionado, agora, está na hora do quarto.
+
+00:00:04.780 --> 00:00:07.510
+Mas, desta vez, não iremos prescrever um para você.
+
+00:00:07.510 --> 00:00:09.720
+&gt;&gt; Está certo. Vamos dar a você uma opção de três e,
+
+00:00:09.720 --> 00:00:12.270
+você decide qual delas você deseja seguir por sua conta.
+
+00:00:12.270 --> 00:00:13.270
+&gt;&gt; E quais são as opções?
+
+00:00:13.270 --> 00:00:15.170
+&gt;&gt; As opções são, os vizinhos mais próximos de k.
+
+00:00:15.170 --> 00:00:18.330
+Um algoritmo muito simples e direto que vale a pena conhecer.
+
+00:00:18.330 --> 00:00:19.035
+Eta-boost.
+
+00:00:19.035 --> 00:00:21.420
+&gt;&gt; Hum, hum. &gt;&gt; Uma floresta muito poderosa e aleatória.
+
+00:00:21.420 --> 00:00:23.990
+Esses... esses últimos dois são normalmente usados com árvores de decisão,
+
+00:00:23.990 --> 00:00:25.020
+sobre o que você sabe tudo agora.
+
+00:00:25.020 --> 00:00:26.570
+&gt;&gt; Você tem um favorito?
+
+00:00:26.570 --> 00:00:27.350
+&gt;&gt; Eu gosto do Eta-boost.
+
+00:00:27.350 --> 00:00:27.920
+&gt;&gt; Eta-boost, garota.
+
+00:00:27.920 --> 00:00:28.870
+&gt;&gt; Eu amo o Eta-boost, sim.
+
+00:00:28.870 --> 00:00:30.470
+&gt;&gt; Portanto, você vai sair e
+
+00:00:30.470 --> 00:00:34.410
+verificar a documentação, escolher um algoritmo, executá-lo, relatar os resultados
+
+00:00:34.410 --> 00:00:37.340
+e verificar se ele pode superar qualquer um dos algoritmos aqui até agora.
+
+00:00:37.340 --> 00:00:38.640
+&gt;&gt; Está certo, vamos começar.
+

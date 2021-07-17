@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.230 --> 00:00:03.030
+Eu irei sugerir três algoritmos diferentes para você.
+
+00:00:03.030 --> 00:00:06.850
+Estes são todos exemplos de algoritmos de classificação supervisionada e
+
+00:00:06.850 --> 00:00:08.360
+você deve escolher um.
+
+00:00:08.360 --> 00:00:15.970
+Suas opções são k nearest neighbors, AdaBoost e random forest.
+
+00:00:15.970 --> 00:00:17.640
+Você não sabe o que eles são por hora,
+
+00:00:17.640 --> 00:00:19.349
+claro, mas esse é o ponto.
+
+00:00:20.740 --> 00:00:23.660
+Aqui vão algumas informações de cada um para, talvez, ajudá-lo
+
+00:00:23.660 --> 00:00:24.730
+a começar a tomar uma decisão.
+
+00:00:25.830 --> 00:00:29.130
+Se você é novo na área de aprendizado de máquina, nunca fez isso antes ou
+
+00:00:29.130 --> 00:00:32.270
+ainda é um desafio para você entender os algoritmos
+
+00:00:32.270 --> 00:00:35.800
+sobre os quais conversamos até agora, gostaria de sugerir o k nearest neighbors.
+
+00:00:35.800 --> 00:00:37.680
+Este é um algoritmo clássico.
+
+00:00:37.680 --> 00:00:40.900
+É bem simples e fácil de entender, o que é uma grande vantagem em um
+
+00:00:40.900 --> 00:00:44.060
+algoritmo de aprendizado de máquina, que você conhece.
+
+00:00:44.060 --> 00:00:46.090
+Se você já entendeu tudo o que fizemos até agora e
+
+00:00:46.090 --> 00:00:50.330
+está pronto para um desafio verdadeiramente interessante, eu sugeriria AdaBoost ou
+
+00:00:50.330 --> 00:00:53.730
+random forest, que são ambos exemplos do que chamamos de métodos de conjunto.
+
+00:00:54.800 --> 00:00:58.000
+O nome métodos de conjunto dá uma pequena dica do que esses dois
+
+00:00:58.000 --> 00:00:59.270
+podem fazer.
+
+00:00:59.270 --> 00:01:03.610
+Eles são classificadores meta que são criados de, geralmente, muitas árvores de decisão, para que
+
+00:01:03.610 --> 00:01:05.120
+você tenha muitos classificadores e
+
+00:01:05.120 --> 00:01:09.140
+tenha todos eles trabalhando juntos para gerar uma única decisão.
+
+00:01:09.140 --> 00:01:12.480
+É um pouco semelhante a como escolhemos o presidente por votação.
+
+00:01:12.480 --> 00:01:16.220
+Há uma única decisão de quem será o presidente, e há muitas
+
+00:01:16.220 --> 00:01:19.780
+pessoas diferentes que têm diferentes opiniões sobre qual poderia ser essa resposta.
+
+00:01:19.780 --> 00:01:22.620
+E o que você deve fazer é levantar a dúvida das diversas pessoas e
+
+00:01:22.620 --> 00:01:25.140
+todos juntos gerar uma única resposta.
+
+00:01:25.140 --> 00:01:27.240
+É um pouco semelhante ao que esses dois algoritmos fazem, mas
+
+00:01:27.240 --> 00:01:29.630
+eles o fazem de formas levemente diferentes.
+
+00:01:29.630 --> 00:01:32.480
+Entretanto, qualquer um desses algoritmos que você escolher deve ser
+
+00:01:32.480 --> 00:01:36.500
+compatível no SK Learn, para que você possa confiar que o SK Learn tenha algo que você possa
+
+00:01:36.500 --> 00:01:37.710
+usar diretamente fora de contexto.
+

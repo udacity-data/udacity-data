@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.540 --> 00:00:02.860
+Este é o processo que quero que você siga.
+
+00:00:02.860 --> 00:00:03.910
+Ele inclui várias etapas.
+
+00:00:05.080 --> 00:00:07.080
+A primeira é utilizar o nome de seu algoritmo e
+
+00:00:07.080 --> 00:00:09.060
+ir para o Google para fazer uma pesquisa.
+
+00:00:09.060 --> 00:00:12.100
+Obter uma compreensão geral do que o algoritmo faz.
+
+00:00:12.100 --> 00:00:15.930
+Se você puder explicar o algoritmo a um amigo, por exemplo, você
+
+00:00:15.930 --> 00:00:18.810
+provavelmente o entende bem o suficiente e está pronto para mudar para a próxima etapa.
+
+00:00:19.900 --> 00:00:22.980
+Em seguida, o que sugiro que você faça é localizar a documentação do sklearn
+
+00:00:22.980 --> 00:00:27.790
+desse algoritmo, exatamente como temos feito durante todo este curso.
+
+00:00:27.790 --> 00:00:31.580
+Lembre-se de que normalmente a documentação do sklearn também contém exemplos.
+
+00:00:31.580 --> 00:00:32.750
+Isso seria uma grande ajuda para
+
+00:00:32.750 --> 00:00:36.970
+você na próxima etapa, a etapa número três, que é implantar o algoritmo.
+
+00:00:36.970 --> 00:00:37.980
+Arregace as mangas.
+
+00:00:37.980 --> 00:00:40.070
+Tente pelos menos fazer com que ele seja executado.
+
+00:00:40.070 --> 00:00:43.696
+Essa é, naturalmente, a primeira coisa de que você precisa antes de poder continuar para
+
+00:00:43.696 --> 00:00:47.748
+a etapa número quatro que o está usando para fazer algumas previsões sobre o conjunto de testes.
+
+00:00:47.748 --> 00:00:50.580
+E, em seguida, é claro, você usa essas previsões para avaliá-lo.
+
+00:00:50.580 --> 00:00:52.890
+Qual é a precisão do conjunto de testes?
+
+00:00:52.890 --> 00:00:55.480
+Forneci a você um conjunto de código base que tem todos os dados
+
+00:00:55.480 --> 00:00:57.280
+de treinamento e de testes prontos para começar.
+
+00:00:57.280 --> 00:01:01.130
+Também há uma função lá que permite plotá-lo, portanto
+
+00:01:01.130 --> 00:01:02.840
+você pode visualizar a fronteira de decisão,
+
+00:01:02.840 --> 00:01:05.080
+que sempre é algo realmente bom de se fazer.
+
+00:01:05.080 --> 00:01:08.350
+Quando você concluir esse processo, você será um expert real em aprendizado
+
+00:01:08.350 --> 00:01:12.440
+de máquina, embora talvez você ainda não saiba tudo.
+
+00:01:12.440 --> 00:01:15.130
+Os muito poucos experts em aprendizado de máquina diriam que eles sabem tudo.
+
+00:01:16.170 --> 00:01:18.270
+O que distingue os bons dos grandes
+
+00:01:19.500 --> 00:01:22.270
+é que eles podem sair e aprender algo novo, e
+
+00:01:22.270 --> 00:01:23.880
+esta é sua chance de fazer isso.
+
