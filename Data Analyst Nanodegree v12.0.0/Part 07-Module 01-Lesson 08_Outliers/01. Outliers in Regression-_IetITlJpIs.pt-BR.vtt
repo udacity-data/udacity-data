@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.100 --> 00:00:03.460
+A linha aqui descreveria os dados ignorando o outlier.
+
+00:00:03.460 --> 00:00:06.400
+Mas ela nos dá um enorme erro ao quadrado mínimo aqui,
+
+00:00:06.400 --> 00:00:09.110
+que tem um efeito muito grande na linha.
+
+00:00:09.110 --> 00:00:10.550
+Este aqui parece não fazer sentido
+
+00:00:10.550 --> 00:00:13.160
+porque, embora ele puxe um pouco para a direita,
+
+00:00:13.160 --> 00:00:17.460
+ele puxou para a esquerda para baixo e nos dá um enorme erro ao quadrado mínimo aqui.
+
+00:00:17.460 --> 00:00:20.630
+Portanto, isso nos deixa esta aqui como a linha mais plausível.
+
+00:00:20.630 --> 00:00:23.610
+E, na realidade, você pode obter alguma coisa exatamente como esta.
+
+00:00:23.610 --> 00:00:26.440
+O quadrado mínimo total aqui é equilibrado com muitos
+
+00:00:26.440 --> 00:00:28.640
+erros ao quadrado deste lado aqui.
+

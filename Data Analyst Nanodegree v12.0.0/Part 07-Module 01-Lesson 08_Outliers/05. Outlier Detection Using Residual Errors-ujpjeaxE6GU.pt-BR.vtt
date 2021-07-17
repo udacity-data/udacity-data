@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.150 --> 00:00:03.050
+Aqui está outro conjunto de dados que tem outliers.
+
+00:00:03.050 --> 00:00:08.310
+E quero que você imagine ajustar uma regressão linear para estes dados,
+
+00:00:08.310 --> 00:00:09.980
+todos os pontos de dados, e
+
+00:00:09.980 --> 00:00:13.580
+examine o erro resultante de cada ponto de dados, com frequência chamado de erro residual,
+
+00:00:13.580 --> 00:00:18.250
+um erro que o ponto de dados receber depois que você ajusta a melhor linha possível.
+
+00:00:18.250 --> 00:00:20.190
+E vou focalizar três pontos de dados aqui.
+
+00:00:20.190 --> 00:00:26.260
+Este, chamado A, B e C, e quero que você
+
+00:00:26.260 --> 00:00:31.350
+verifique qual dos três pontos você acredita ter o erro mais alto, o erro residual
+
+00:00:31.350 --> 00:00:36.220
+mais alto depois do treinamento, depois que você ajustar uma regressão linear para isso.
+

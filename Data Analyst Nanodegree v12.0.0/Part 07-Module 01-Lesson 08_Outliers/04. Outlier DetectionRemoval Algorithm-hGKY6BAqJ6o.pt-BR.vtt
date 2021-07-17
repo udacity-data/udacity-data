@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.220 --> 00:00:03.500
+Então, mostrarei a você uma maneira prática de detectar exceções que
+
+00:00:03.500 --> 00:00:05.540
+funcionam com praticamente todos os algoritmos de máquina.
+
+00:00:05.540 --> 00:00:08.460
+Ela é bastante direta e muito, muito bonita.
+
+00:00:08.460 --> 00:00:12.440
+Suponha que temos este belo conjunto de dados aqui, com uma exceção.
+
+00:00:12.440 --> 00:00:13.750
+Obviamente, você não sabe qual é a exceção,
+
+00:00:13.750 --> 00:00:17.310
+pois ainda não descobriu a estrutura do conjunto linear.
+
+00:00:17.310 --> 00:00:18.680
+O algoritmo é muito simples.
+
+00:00:18.680 --> 00:00:20.490
+Primeira etapa: treinar com todos os dados.
+
+00:00:20.490 --> 00:00:22.790
+Em nosso caso, seria a regressão linear.
+
+00:00:22.790 --> 00:00:24.030
+Segunda etapa, remover.
+
+00:00:24.030 --> 00:00:27.390
+Depois de treinar, localizar os pontos em seu conjunto de treinamento com o maior erro
+
+00:00:27.390 --> 00:00:33.360
+de visitante e removê-los; talvez, remover 10% de seus pontos de dados.
+
+00:00:33.360 --> 00:00:37.420
+E a terceira etapa é treinar novamente, usando agora o conjunto de dados reduzido.
+
+00:00:37.420 --> 00:00:40.680
+E, na verdade, você pode repetir isso se quiser, e fazer isso várias vezes.
+
+00:00:40.680 --> 00:00:43.780
+Mas, agora, em nosso exemplo aqui, o que ele significa é que, na primeira vez
+
+00:00:43.780 --> 00:00:48.050
+que executamos a regressão, obtemos algo que se parece, mais ou menos, com isso.
+
+00:00:48.050 --> 00:00:52.943
+E, apesar de isso não ser uma boa regressão, ela é boa o suficiente para reconhecer que, se
+
+00:00:52.943 --> 00:00:56.010
+você olhar para todos os erros visíveis dos pontos de dados,
+
+00:00:56.010 --> 00:00:58.535
+este aqui possui o maior.
+
+00:00:58.535 --> 00:01:03.200
+Isso deve ter 10 pontos; portanto, 10% de remoção deve remover exatamente um ponto.
+
+00:01:03.200 --> 00:01:05.430
+Então, se tirarmos este ponto daqui,
+
+00:01:05.430 --> 00:01:08.450
+nossa linha de regressão seria muito semelhante a isto,
+
+00:01:08.450 --> 00:01:09.200
+que é o que você deseja.
+

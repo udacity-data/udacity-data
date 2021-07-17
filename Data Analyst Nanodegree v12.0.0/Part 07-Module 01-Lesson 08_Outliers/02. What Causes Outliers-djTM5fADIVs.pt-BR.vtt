@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.220 --> 00:00:02.400
+Nesta pergunta não há melhor resposta.
+
+00:00:02.400 --> 00:00:05.980
+Eu diria que uma bem comum é falha no sensor.
+
+00:00:05.980 --> 00:00:08.750
+Então se você tiver um sensor com falha, é atribuído 0.
+
+00:00:08.750 --> 00:00:10.630
+Esses 0s normalmente são exceções.
+
+00:00:10.630 --> 00:00:12.530
+Temos muito isso em robótica.
+
+00:00:12.530 --> 00:00:15.630
+Erros na entrada de dados são comuns em alguns setores.
+
+00:00:15.630 --> 00:00:17.930
+Eu não diria que aliens sejam causas comuns de exceções.
+
+00:00:17.930 --> 00:00:20.840
+Você pode não acreditar nele, mas eu não vou verificar. Sinto muito.
+
+00:00:20.840 --> 00:00:25.440
+Sobre eventos anormais, podemos ter uma situação bem improvável.
+
+00:00:25.440 --> 00:00:27.660
+Mas essa combinação causou um ponto de dados extremo.
+
+00:00:27.660 --> 00:00:29.670
+Essas são exceções que precisam de atenção.
+
+00:00:29.670 --> 00:00:32.494
+Estas aqui você pode ignorar e nestas aqui
+
+00:00:32.494 --> 00:00:34.212
+você pode prestar atenção.
+
+00:00:34.212 --> 00:00:36.930
+Na maior parte da linguagem de máquinas, tente
+
+00:00:36.930 --> 00:00:41.340
+ignorar as exceções, porque elas normalmente são causadas por falha no sensor.
+
+00:00:41.340 --> 00:00:44.140
+Quando você as ajusta demais, obtém resultados ruins.
+
+00:00:44.140 --> 00:00:48.370
+Mas há campos nos quais as pessoas prestam atenção nas exceções.
+
+00:00:48.370 --> 00:00:50.860
+Um comum é a detecção de fraudes,
+
+00:00:50.860 --> 00:00:52.900
+que é um tipo especial de detecção de anomalias.
+
+00:00:52.900 --> 00:00:56.100
+As pessoas se preocupam com fatos nos dados
+
+00:00:56.100 --> 00:01:00.430
+que tornam o relatório diferente.
+
+00:01:00.430 --> 00:01:03.840
+Portanto, dependendo da sua aplicação, você pode odiar exceções.
+
+00:01:03.840 --> 00:01:04.940
+Ou amá-las.
+

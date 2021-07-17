@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.340 --> 00:00:03.480
+Vamos falar agora sobre algo chamado exceções.
+
+00:00:03.480 --> 00:00:05.730
+Gostaria de desenhar um pequeno exemplo aqui,
+
+00:00:05.730 --> 00:00:07.640
+para ilustrar o que uma exceção pode ser.
+
+00:00:07.640 --> 00:00:09.280
+Digamos que você está medindo algum fenômeno.
+
+00:00:09.280 --> 00:00:11.680
+E você está obtendo estes dados incríveis.
+
+00:00:11.680 --> 00:00:15.510
+Parece quase como uma linha, e há este um ponto de dados.
+
+00:00:15.510 --> 00:00:18.640
+Agora, em alguns casos, isso é muito importante.
+
+00:00:18.640 --> 00:00:22.340
+Em outros casos, pode ser apenas o resultado de um pequeno erro de medição.
+
+00:00:22.340 --> 00:00:25.650
+Seja quem for que tenha digitado os dados na planilha, digitou errado e
+
+00:00:25.650 --> 00:00:27.430
+em vez de colocar 20, colocou 200.
+
+00:00:27.430 --> 00:00:32.040
+É uma coisa muito comum quando você obtém dados, quando algum fenômeno, que é muito
+
+00:00:32.040 --> 00:00:35.020
+raro, corrompe os pontos de dados individuais.
+
+00:00:35.020 --> 00:00:37.380
+De qualquer forma, isso é chamado de exceção,
+
+00:00:37.380 --> 00:00:39.245
+porque se apresenta fora dos outros dados.
+
+00:00:39.245 --> 00:00:41.040
+Vamos para um pequeno teste agora.
+
+00:00:41.040 --> 00:00:44.680
+Se você fizer uma regressão linear, e eu te der três hipóteses para
+
+00:00:44.680 --> 00:00:46.690
+qual é a melhor regressão linear,
+
+00:00:46.690 --> 00:00:49.350
+qual destas você acha que é a melhor das três?
+
+00:00:49.350 --> 00:00:50.120
+Esta aqui?
+
+00:00:50.120 --> 00:00:51.100
+Esta aqui?
+
+00:00:51.100 --> 00:00:51.890
+Ou esta aqui?
+
+00:00:51.890 --> 00:00:53.630
+Verifique a linha apropriada,
+
+00:00:53.630 --> 00:00:56.710
+se você levar em consideração a exceção.
+
+00:00:56.710 --> 00:01:00.260
+E supondo que a regressão linear minimizou o erro ao quadrado menor.
+
+00:01:00.260 --> 00:01:02.740
+diga, qual você acha que é a melhor para descrever os dados?
+
+00:01:02.740 --> 00:01:03.460
+Nenhuma delas é perfeita.
+

@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.130 --> 00:00:03.610
+Aprendemos muito sobre exceções e rejeição de exceção.
+
+00:00:03.610 --> 00:00:06.760
+Rejeição é o que iremos fazer para limpar o ajuste, mas
+
+00:00:06.760 --> 00:00:11.030
+se você estiver sob detecção de anomalia ou de fraude,
+
+00:00:11.030 --> 00:00:14.110
+rejeite os bons pontos de dados e olhe as exceções.
+
+00:00:14.110 --> 00:00:17.140
+De qualquer forma, um algoritmo muito bom que pode ser executado em loop em
+
+00:00:17.140 --> 00:00:19.740
+qualquer algoritmo de máquina é primeiro testado,
+
+00:00:19.740 --> 00:00:24.780
+depois remove-se os pontos com o erro maior, geralmente chamado de erro residual.
+
+00:00:24.780 --> 00:00:27.410
+E para os pontos restantes, você testa novamente.
+
+00:00:27.410 --> 00:00:31.029
+E se você desejar, pode repetir esse procedimento de remoção e teste novamente.
+
+00:00:31.029 --> 00:00:33.480
+Mas você normalmente converge para uma solução
+
+00:00:33.480 --> 00:00:38.120
+bem melhor do que todos os dados originais.
+
+00:00:38.120 --> 00:00:42.980
+E como eu disse antes, a fração de dados que você remove, com frequência, é algo na
+
+00:00:42.980 --> 00:00:46.720
+ordem de 10%, mas pode variar de aplicativo para aplicativo.
+
+00:00:46.720 --> 00:00:48.980
+A rejeição de exceções
+
+00:00:48.980 --> 00:00:53.160
+é uma ferramenta realmente importante no arsenal de algoritmos de aprendizado de máquina.
+
