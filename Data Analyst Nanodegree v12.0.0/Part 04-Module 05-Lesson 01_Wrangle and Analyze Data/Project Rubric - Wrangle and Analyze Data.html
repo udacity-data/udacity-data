@@ -1,0 +1,554 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Wrangle and Analyze Data
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Wrangle and Analyze Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Project Overview.html">
+       01. Project Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Project Motivation.html">
+       02. Project Motivation
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Project Details.html">
+       03. Project Details
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Twitter API.html">
+       04. Twitter API
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Project Workspace Complete and Submit Project.html">
+       05. Project Workspace: Complete and Submit Project
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Description - Wrangle and Analyze Data.html">
+       Project Description - Wrangle and Analyze Data
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Rubric - Wrangle and Analyze Data.html">
+       Project Rubric - Wrangle and Analyze Data
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          Wrangle and Analyze Data
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div>
+        <h2>
+         <p>
+          Code Functionality and Readability
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             The student’s code is functional.
+            </p>
+           </td>
+           <td>
+            <p>
+             All project code is contained in a Jupyter Notebook named wrangle_act.ipynb and runs without errors.
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             The student’s code is readable, i.e., uses good coding practices.
+            </p>
+           </td>
+           <td>
+            <p>
+             The Jupyter Notebook has an intuitive, easy-to-follow logical structure. The code uses comments effectively and is interspersed with Jupyter Notebook Markdown cells. The steps of the data wrangling process (i.e. gather, assess, and clean) are clearly identified with comments or Markdown cells, as well.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Gathering Data
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             The student is able to gather data from a variety of sources and file formats.
+            </p>
+           </td>
+           <td>
+            <p>
+             Data is successfully gathered:
+            </p>
+            <ul>
+             <li>
+              From at least the three (3) different sources on the Project Details page.
+             </li>
+             <li>
+              In at least the three (3) different file formats on the Project Details page.
+             </li>
+            </ul>
+            <p>
+             Each piece of data is imported into a separate pandas DataFrame at first.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Assessing Data
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             The student is able to assess data visually and programmatically for quality and tidiness.
+            </p>
+           </td>
+           <td>
+            <p>
+             Two types of assessment are used:
+            </p>
+            <ul>
+             <li>
+              Visual assessment: each piece of gathered data is displayed in the Jupyter Notebook for visual assessment purposes. Once displayed, data can additionally be assessed in an external application (e.g. Excel, text editor).
+             </li>
+             <li>
+              Programmatic assessment: pandas' functions and/or methods are used to assess the data.
+             </li>
+            </ul>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             The student is able to thoroughly assess a dataset.
+            </p>
+           </td>
+           <td>
+            <p>
+             At least eight (8) data quality issues and two (2) tidiness issues are detected, and include the issues to clean to satisfy the Project Motivation. Each issue is documented in one to a few sentences each.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Cleaning Data
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             The student uses the steps in the data cleaning process to guide their cleaning efforts.
+            </p>
+           </td>
+           <td>
+            <p>
+             The define, code, and test steps of the cleaning process are clearly documented.
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             The student is able to thoroughly clean a dataset programmatically.
+            </p>
+           </td>
+           <td>
+            <p>
+             Copies of the original pieces of data are made prior to cleaning.
+            </p>
+            <p>
+             All issues identified in the assess phase are successfully cleaned (if possible) using Python and pandas, and include the cleaning tasks required to satisfy the Project Motivation.
+            </p>
+            <p>
+             A tidy master dataset (or datasets, if appropriate) with all pieces of gathered data is created.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Storing and Acting on Wrangled Data
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             The student is able to store a gathered, assessed, and cleaned dataset.
+            </p>
+           </td>
+           <td>
+            <p>
+             Students will save their gathered, assessed, and cleaned master dataset(s) to a CSV file or a SQLite database.
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             The student is able to act on their wrangled data to produce insights (e.g. analyses, visualizations, and/or models).
+            </p>
+           </td>
+           <td>
+            <p>
+             The master dataset is analyzed using pandas or SQL in the Jupyter Notebook and at least three (3) separate insights are produced.
+            </p>
+            <p>
+             At least one (1) labeled visualization is produced in the Jupyter Notebook using Python’s plotting libraries or in Tableau.
+            </p>
+            <p>
+             Students must make it clear in their wrangling work that they assessed and cleaned (if necessary) the data upon which the analyses and visualizations are based.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Report
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             The student is able to reflect upon and describe their data wrangling efforts.
+            </p>
+           </td>
+           <td>
+            <p>
+             The student’s wrangling efforts are briefly described. This document (wrangle_report.pdf or wrangle_report.html) is concise and approximately 300-600 words in length.
+            </p>
+           </td>
+          </tr>
+          <tr scope="row">
+           <td>
+            <p>
+             The student is able to describe some insights found in their wrangled dataset.
+            </p>
+           </td>
+           <td>
+            <p>
+             The three (3) or more insights the student found are communicated. At least one (1) visualization is included.
+            </p>
+            <p>
+             This document (act_report.pdf or act_report.html) is at least 250 words in length.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div>
+        <h2>
+         <p>
+          Project Files
+         </p>
+        </h2>
+        <table class="table table-bordered table-hover">
+         <thead>
+          <tr class="thead-dark">
+           <th>
+            Criteria
+           </th>
+           <th>
+            Meet Specification
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr scope="row">
+           <td>
+            <p>
+             Are all required files included in the student's submission?
+            </p>
+           </td>
+           <td>
+            <p>
+             The following files (with identical filenames) are included:
+            </p>
+            <ul>
+             <li>
+              wrangle_act.ipynb
+             </li>
+             <li>
+              wrangle_report.pdf or wrangle_report.html
+             </li>
+             <li>
+              act_report.pdf or act_report.html
+             </li>
+            </ul>
+            <p>
+             All dataset files are included, including the stored master dataset(s), with filenames and extensions as specified on the Project Submission page.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="jumbotron">
+        <h3>
+         Tips to make your project standout:
+        </h3>
+        <p>
+         <ul>
+          <li>
+           Assess and clean more than the required issues (eight and two, respectively, for quality and tidiness).
+          </li>
+          <li>
+           In act_report.pdf (or act_report.html), additional images beyond any visualizations are encouraged to make this report more engaging. Make this report as detailed as you’d like!
+          </li>
+          <li>
+           Gather additional data beyond the required pieces.
+          </li>
+          <li>
+           Create a model that can make predictions based on your wrangled data.
+          </li>
+         </ul>
+        </p>
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('Wrangle and Analyze Data')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

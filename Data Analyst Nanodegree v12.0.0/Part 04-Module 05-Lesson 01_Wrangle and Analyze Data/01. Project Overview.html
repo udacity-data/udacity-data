@@ -1,0 +1,314 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Project Overview
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Wrangle and Analyze Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Project Overview.html">
+       01. Project Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Project Motivation.html">
+       02. Project Motivation
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Project Details.html">
+       03. Project Details
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Twitter API.html">
+       04. Twitter API
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Project Workspace Complete and Submit Project.html">
+       05. Project Workspace: Complete and Submit Project
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Description - Wrangle and Analyze Data.html">
+       Project Description - Wrangle and Analyze Data
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Rubric - Wrangle and Analyze Data.html">
+       Project Rubric - Wrangle and Analyze Data
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          01. Project Overview
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="introduction">
+          Introduction
+         </h2>
+         <p>
+          Real-world data rarely comes clean. Using Python and its libraries, you will gather data from a variety of sources and in a variety of formats, assess its quality and tidiness, then clean it. This is called data wrangling. You will document your wrangling efforts in a Jupyter Notebook, plus showcase them through analyses and visualizations using Python (and its libraries) and/or SQL.
+         </p>
+         <p>
+          The dataset that you will be wrangling (and analyzing and visualizing) is the tweet archive of Twitter user
+          <a href="https://twitter.com/dog_rates" rel="noopener noreferrer" target="_blank">
+           @dog_rates
+          </a>
+          , also known as
+          <a href="https://en.wikipedia.org/wiki/WeRateDogs" rel="noopener noreferrer" target="_blank">
+           WeRateDogs
+          </a>
+          . WeRateDogs is a Twitter account that rates people's dogs with a humorous comment about the dog. These ratings almost always have a denominator of 10. The numerators, though? Almost always greater than 10. 11/10, 12/10, 13/10, etc. Why? Because "
+          <a href="http://knowyourmeme.com/memes/theyre-good-dogs-brent" rel="noopener noreferrer" target="_blank">
+           they're good dogs Brent
+          </a>
+          ." WeRateDogs has over 4 million followers and has received international media coverage.
+         </p>
+         <p>
+          WeRateDogs
+          <a href="https://support.twitter.com/articles/20170160" rel="noopener noreferrer" target="_blank">
+           downloaded their Twitter archive
+          </a>
+          and sent it to Udacity via email exclusively for you to use in this project. This archive contains basic tweet data (tweet ID, timestamp, text, etc.) for all 5000+ of their tweets as they stood on August 1, 2017. More on this soon.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="*Image via [Boston Magazine](http://www.bostonmagazine.com/arts-entertainment/blog/2017/04/18/dog-rates-mit/)*" class="img img-fluid" src="img/dog-rates-social.jpg"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Image via
+             <a href="http://www.bostonmagazine.com/arts-entertainment/blog/2017/04/18/dog-rates-mit/" rel="noopener noreferrer" target="_blank">
+              Boston Magazine
+             </a>
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="what-software-do-i-need">
+          What Software Do I Need?
+         </h2>
+         <p>
+          The entirety of this project can be completed inside the Udacity classroom on the
+          <strong>
+           Project Workspace: Complete and Submit Project
+          </strong>
+          page using the Jupyter Notebook provided there. (Note: This Project Workspace may not be available in all versions of this project, in which case you should follow the directions below.)
+         </p>
+         <p>
+          If you want to work outside of the Udacity classroom, the following software requirements apply:
+         </p>
+         <ul>
+          <li>
+           You need to be able to work in a Jupyter Notebook on your computer. Please revisit our Jupyter Notebook and Anaconda tutorials earlier in the Nanodegree program for installation instructions.
+          </li>
+          <li>
+           The following packages (libraries) need to be installed. You can install these packages via conda or pip. Please revisit our Anaconda tutorial earlier in the Nanodegree program for package installation instructions.
+           <ul>
+            <li>
+             pandas
+            </li>
+            <li>
+             NumPy
+            </li>
+            <li>
+             requests
+            </li>
+            <li>
+             tweepy
+            </li>
+            <li>
+             json
+            </li>
+           </ul>
+          </li>
+          <li>
+           You need to be able to create written documents that contain images and you need to be able to export these documents as PDF files. This task can be done in a Jupyter Notebook, but you might prefer to use a word processor like
+           <a href="https://www.google.com/docs/about/" rel="noopener noreferrer" target="_blank">
+            Google Docs
+           </a>
+           , which is free, or Microsoft Word.
+          </li>
+          <li>
+           A text editor, like
+           <a href="https://www.sublimetext.com/" rel="noopener noreferrer" target="_blank">
+            Sublime
+           </a>
+           , which is free, will be useful but is not required.
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="02. Project Motivation.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('01. Project Overview')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

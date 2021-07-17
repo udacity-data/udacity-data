@@ -1,0 +1,415 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Twitter API
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Wrangle and Analyze Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Project Overview.html">
+       01. Project Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Project Motivation.html">
+       02. Project Motivation
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Project Details.html">
+       03. Project Details
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Twitter API.html">
+       04. Twitter API
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Project Workspace Complete and Submit Project.html">
+       05. Project Workspace: Complete and Submit Project
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Description - Wrangle and Analyze Data.html">
+       Project Description - Wrangle and Analyze Data
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Rubric - Wrangle and Analyze Data.html">
+       Project Rubric - Wrangle and Analyze Data
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Twitter API
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="how-to-query-twitter-data">
+          How to Query Twitter Data
+         </h2>
+         <p>
+          In this project, you'll be using
+          <a href="http://www.tweepy.org/" rel="noopener noreferrer" target="_blank">
+           Tweepy
+          </a>
+          to query Twitter's API for additional data beyond the data included in the WeRateDogs Twitter archive. This additional data will include retweet count and favorite count.
+         </p>
+         <p>
+          Some APIs are completely open, like MediaWiki (accessed via the
+          <a href="https://github.com/siznax/wptools/wiki" rel="noopener noreferrer" target="_blank">
+           wptools
+          </a>
+          library) in Lesson 2. Others require authentication. The Twitter API is one that requires users to be authorized to use it. This means that before you can run your API querying code, you need to set up your own Twitter application. Here are the steps to do that on the Twitter site:
+         </p>
+         <ul>
+          <li>
+           First, if you do not already have one, you need to
+           <a href="https://help.twitter.com/en/create-twitter-account" rel="noopener noreferrer" target="_blank">
+            sign up for a Twitter account
+           </a>
+           .
+          </li>
+          <li>
+           Next, to set up a developer account, follow the directions on
+           <a href="https://developer.twitter.com/en/docs/basics/developer-portal/overview" rel="noopener noreferrer" target="_blank">
+            Twitter’s Developer Portal, in the “How to Apply” section
+           </a>
+           .
+          </li>
+          <li>
+           You will be guided through the steps, and asked to describe in your own words what you are building. Here is some suggested language you can use: "As a Udacity student, I need to access the Twitter API in order to complete a Data Wrangling student project. In this project, I'll be using Tweepy to query Twitter's API for data included in the WeRateDogs Twitter archive. This data will include retweet count and favorite count. Before I can run my API querying code, I need to set up my own Twitter application. Once I have this set up, I will develop some code to create an API object that I'll use to gather Twitter data. After querying each tweet ID, I will write its JSON data to a tweet_json.txt file with each tweet's JSON data on its own line. I will then read this file, line by line, to create a pandas DataFrame that I will assess and clean. I may post this completed project on my GitHub account, where it will get viewers. Otherwise there will be no other readers or users of my Twitter data or project analysis beyond the Udacity instructors and reviewers."
+          </li>
+          <li>
+           Once you submit your application, you should soon receive an email from Twitter letting you know they have approved your new Twitter developer account. Follow the link in the email from Twitter to a page of directions to get started creating your app.
+          </li>
+          <li>
+           If you are asked for an app name, it can be anything appropriate, and if you’re asked for a Website URL, it can be anything in a standard URL format. You can do the same with other requested URLs, or perhaps leave them blank.
+          </li>
+          <li>
+           If you’re asked to explain how your app will be used, you could say something like "I'm creating this for a student Data Wrangling project with Udacity, where we need to query and analyze Twitter data from WeRateDogs."
+          </li>
+          <li>
+           You should then be given a Success message, and a new developer page displayed to you where you can manage your app.
+          </li>
+          <li>
+           You can then go to the Keys and Tokens tab on this page to find or generate the Consumer API keys, and the Access Token and Access Token Secret that you will need.
+          </li>
+         </ul>
+         <p>
+          <strong>
+           Note
+          </strong>
+          : If you have any trouble creating this Twitter account or accessing the data, please see the section at the bottom of this page "Accessing Project Data Without a Twitter Account."
+         </p>
+         <p>
+          Once you have your Twitter account and Twitter app set up, the following code, which is provided in the
+          <a href="https://media.readthedocs.org/pdf/tweepy/latest/tweepy.pdf" rel="noopener noreferrer" target="_blank">
+           Getting started
+          </a>
+          portion of the Tweepy documentation, will create an API object that you can use to gather Twitter data.
+         </p>
+         <pre><code class="python language-python">import tweepy
+
+consumer_key = 'YOUR CONSUMER KEY'
+consumer_secret = 'YOUR CONSUMER SECRET'
+access_token = 'YOUR ACCESS TOKEN'
+access_secret = 'YOUR ACCESS SECRET'
+
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_secret)
+
+api = tweepy.API(auth)</code></pre>
+         <p>
+          Tweet data is stored in JSON format by Twitter. Getting tweet JSON data via tweet ID using Tweepy is described well in this
+          <a href="https://stackoverflow.com/questions/28384588/twitter-api-get-tweets-with-specific-id" rel="noopener noreferrer" target="_blank">
+           StackOverflow answer
+          </a>
+          . Note that setting the
+          <code>
+           tweet_mode
+          </code>
+          parameter to
+          <code>
+           'extended'
+          </code>
+          in the
+          <code>
+           get_status
+          </code>
+          call, i.e.,
+          <code>
+           api.get_status(tweet_id, tweet_mode='extended')
+          </code>
+          , can be useful.
+         </p>
+         <p>
+          Also, note that the tweets corresponding to a few tweet IDs in the archive may have been deleted.
+          <a href="https://wiki.python.org/moin/HandlingExceptions" rel="noopener noreferrer" target="_blank">
+           Try-except blocks
+          </a>
+          may come in handy here.
+         </p>
+         <h2 id="do-not-include-your-api-keys-secrets-and-tokens-in-your-submission">
+          Do Not Include Your API Keys, Secrets, and Tokens in Your Submission
+         </h2>
+         <p>
+          Do
+          <strong>
+           not
+          </strong>
+          include your API keys, secrets, and tokens in your project submission. This is standard practice for APIs and public code.
+         </p>
+         <h2 id="twitters-rate-limit">
+          Twitter's Rate Limit
+         </h2>
+         <p>
+          Twitter's API has a rate limit. Rate limiting is used to control the rate of traffic sent or received by a server. As per
+          <a href="https://developer.twitter.com/en/docs/basics/rate-limiting" rel="noopener noreferrer" target="_blank">
+           Twitter's rate limiting info page
+          </a>
+          :
+         </p>
+         <blockquote>
+          <p>
+           Rate limits are divided into 15 minute intervals
+          </p>
+         </blockquote>
+         <p>
+          To query all of the tweet IDs in the WeRateDogs Twitter archive, 20-30 minutes of running time can be expected. Printing out each tweet ID after it was queried and
+          <a href="https://stackoverflow.com/questions/7370801/measure-time-elapsed-in-python" rel="noopener noreferrer" target="_blank">
+           using a code timer
+          </a>
+          were both helpful for sanity reasons. Setting the
+          <code>
+           wait_on_rate_limit
+          </code>
+          and
+          <code>
+           wait_on_rate_limit_notify
+          </code>
+          parameters to
+          <code>
+           True
+          </code>
+          in the
+          <a href="http://docs.tweepy.org/en/v3.2.0/api.html#API" rel="noopener noreferrer" target="_blank">
+           <code>
+            tweepy.api
+           </code>
+           class
+          </a>
+          is useful as well.
+         </p>
+         <h2 id="writing-and-reading-twitter-json">
+          Writing and Reading Twitter JSON
+         </h2>
+         <p>
+          After querying each tweet ID, you will write its JSON data to the required
+          <code>
+           tweet_json.txt
+          </code>
+          file with each tweet's JSON data on its own line. You will then read this file, line by line, to create a pandas DataFrame that you will soon assess and clean. This
+          <a href="http://stackabuse.com/reading-and-writing-json-to-a-file-in-python/" rel="noopener noreferrer" target="_blank">
+           Reading and Writing JSON to a File in Python
+          </a>
+          article from Stack Abuse, will be useful.
+         </p>
+         <h2 id="accessing-project-data-without-a-twitter-account">
+          Accessing Project Data Without a Twitter Account
+         </h2>
+         <p>
+          If you can't set up a Twitter developer account using the steps above, or you prefer not to create a Twitter account for some reason, you may instead follow the directions below to access the data necessary for the project.
+          <strong>
+           Note
+          </strong>
+          : We recommend that you follow the steps above to access the data using a Twitter developer account, because with the shortcut detailed below, you will miss practicing the valuable skill of gathering this data on your own. However, Twitter's updated process may not work for everyone, and we realize there are legitimate reasons that some students may prefer this approach, so we provide it to you here.
+          <strong>
+           You choose the approach to access the data that works best for you. This shortcut approach will certainly work for you to pass the project equally well.
+          </strong>
+         </p>
+         <h4 id="directions-for-accessing-the-twitter-data-without-actually-creating-a-twitter-account">
+          Directions for accessing the Twitter data without actually creating a Twitter account:
+         </h4>
+         <p>
+          At the bottom of this page you can find two files you can download:
+         </p>
+         <ul>
+          <li>
+           twitter_api.py: This is the Twitter API code to gather some of the required data for the project. Read the code and comments, understand how the code works, then copy and paste it into your notebook.
+          </li>
+          <li>
+           tweet_json.txt: This is the resulting data from twitter_api.py. You can proceed with the following part of "Gathering Data for this Project" on the Project Details page: "Then read this tweet_json.txt file line by line into a pandas DataFrame with (at minimum) tweet ID, retweet count, and favorite count."
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/twitter-logo-whiteonblue.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. Project Workspace Complete and Submit Project.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Twitter API')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

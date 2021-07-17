@@ -1,0 +1,427 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Project Details
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Wrangle and Analyze Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Project Overview.html">
+       01. Project Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Project Motivation.html">
+       02. Project Motivation
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Project Details.html">
+       03. Project Details
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Twitter API.html">
+       04. Twitter API
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Project Workspace Complete and Submit Project.html">
+       05. Project Workspace: Complete and Submit Project
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Description - Wrangle and Analyze Data.html">
+       Project Description - Wrangle and Analyze Data
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Rubric - Wrangle and Analyze Data.html">
+       Project Rubric - Wrangle and Analyze Data
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. Project Details
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="project-details">
+          Project Details
+         </h2>
+         <p>
+          Your tasks in this project are as follows:
+         </p>
+         <ul>
+          <li>
+           Data wrangling, which consists of:
+           <ul>
+            <li>
+             Gathering data (downloadable file in the Resources tab in the left most panel of your classroom and linked in step 1 below).
+            </li>
+            <li>
+             Assessing data
+            </li>
+            <li>
+             Cleaning data
+            </li>
+           </ul>
+          </li>
+          <li>
+           Storing, analyzing, and visualizing your wrangled data
+          </li>
+          <li>
+           Reporting on 1) your data wrangling efforts and 2) your data analyses and visualizations
+          </li>
+         </ul>
+         <h3 id="gathering-data-for-this-project">
+          Gathering Data for this Project
+         </h3>
+         <p>
+          Gather each of the three pieces of data as described below in a Jupyter Notebook titled
+          <code>
+           wrangle_act.ipynb
+          </code>
+          :
+         </p>
+         <ol>
+          <li>
+           <p>
+            The WeRateDogs Twitter archive. I am giving this file to you, so imagine it as a file on hand. Download this file manually by clicking the following link:
+            <a href="https://d17h27t6h515a5.cloudfront.net/topher/2017/August/59a4e958_twitter-archive-enhanced/twitter-archive-enhanced.csv" rel="noopener noreferrer" target="_blank">
+             <code>
+              twitter_archive_enhanced.csv
+             </code>
+            </a>
+           </p>
+          </li>
+          <li>
+           <p>
+            The tweet image predictions, i.e., what breed of dog (or other object, animal, etc.) is present in each tweet according to a neural network. This file (
+            <code>
+             image_predictions.tsv
+            </code>
+            ) is hosted on Udacity's servers and should be downloaded programmatically using the
+            <a href="https://pypi.org/project/requests/" rel="noopener noreferrer" target="_blank">
+             Requests
+            </a>
+            library and the following URL:
+            <a href="https://d17h27t6h515a5.cloudfront.net/topher/2017/August/599fd2ad_image-predictions/image-predictions.tsv" rel="noopener noreferrer" target="_blank">
+             https://d17h27t6h515a5.cloudfront.net/topher/2017/August/599fd2ad_image-predictions/image-predictions.tsv
+            </a>
+           </p>
+          </li>
+          <li>
+           <p>
+            Each tweet's retweet count and favorite ("like") count at minimum, and any additional data you find interesting. Using the tweet IDs in the WeRateDogs Twitter archive, query the Twitter API for each tweet's JSON data using Python's
+            <a href="http://www.tweepy.org/" rel="noopener noreferrer" target="_blank">
+             Tweepy
+            </a>
+            library and store each tweet's entire set of JSON data in a file called
+            <code>
+             tweet_json.txt
+            </code>
+            file. Each tweet's JSON data should be written to its own line. Then read this .txt file line by line into a pandas DataFrame with (at minimum) tweet ID, retweet count, and favorite count.
+            <em>
+             Note: do not include your Twitter API keys, secrets, and tokens in your project submission.
+            </em>
+           </p>
+          </li>
+         </ol>
+         <p>
+          If you decide to complete your project in the Project Workspace, note that you can upload files to the Jupyter Notebook Workspace by clicking the "Upload" button in the top righthand corner of the dashboard.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt='*Jupyter Notebook dashboard with arrow pointing to the "Upload" button*' class="img img-fluid" src="img/screenshot-2017-10-28-00.14.26.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Jupyter Notebook dashboard with arrow pointing to the "Upload" button
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="assessing-data-for-this-project">
+          Assessing Data for this Project
+         </h3>
+         <p>
+          After gathering each of the above pieces of data, assess them visually and programmatically for quality and tidiness issues. Detect and document at least
+          <strong>
+           eight (8) quality issues
+          </strong>
+          and
+          <strong>
+           two (2) tidiness issues
+          </strong>
+          in your
+          <code>
+           wrangle_act.ipynb
+          </code>
+          Jupyter Notebook. To meet specifications, the issues that satisfy the Project Motivation (see the
+          <em>
+           Key Points
+          </em>
+          header on the previous page) must be assessed.
+         </p>
+         <h3 id="cleaning-data-for-this-project">
+          Cleaning Data for this Project
+         </h3>
+         <p>
+          Clean each of the issues you documented while assessing. Perform this cleaning in
+          <code>
+           wrangle_act.ipynb
+          </code>
+          as well. The result should be a high quality and tidy master pandas DataFrame (or DataFrames, if appropriate). Again, the issues that satisfy the Project Motivation must be cleaned.
+         </p>
+         <h3 id="storing-analyzing-and-visualizing-data-for-this-project">
+          Storing, Analyzing, and Visualizing Data for this Project
+         </h3>
+         <p>
+          Store the clean DataFrame(s) in a CSV file with the main one named
+          <code>
+           twitter_archive_master.csv
+          </code>
+          . If additional files exist because multiple tables are required for tidiness, name these files appropriately. Additionally, you may store the cleaned data in a SQLite database (which is to be submitted as well if you do).
+         </p>
+         <p>
+          Analyze and visualize your wrangled data in your
+          <code>
+           wrangle_act.ipynb
+          </code>
+          Jupyter Notebook. At least
+          <strong>
+           three (3) insights and one (1) visualization
+          </strong>
+          must be produced.
+         </p>
+         <h3 id="reporting-for-this-project">
+          Reporting for this Project
+         </h3>
+         <p>
+          Create a
+          <strong>
+           300-600 word written report
+          </strong>
+          called
+          <code>
+           wrangle_report.pdf
+          </code>
+          or
+          <code>
+           wrangle_report.html
+          </code>
+          that briefly describes your wrangling efforts. This is to be framed as an internal document.
+         </p>
+         <p>
+          Create a
+          <strong>
+           250-word-minimum written report
+          </strong>
+          called
+          <code>
+           act_report.pdf
+          </code>
+          or
+          <code>
+           act_report.html
+          </code>
+          that communicates the insights and displays the visualization(s) produced from your wrangled data. This is to be framed as an external document, like a blog post or magazine article, for example.
+         </p>
+         <p>
+          Both of these documents can be created in separate Jupyter Notebooks using the
+          <a href="http://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html" rel="noopener noreferrer" target="_blank">
+           Markdown functionality
+          </a>
+          of Jupyter Notebooks, then downloading those notebooks as PDF files or HTML files (see image below). You might prefer to use a word processor like Google Docs or Microsoft Word, however.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="*Download Jupyter Notebook in PDF form*" class="img img-fluid" src="img/screenshot-2017-10-28-00.29.25.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Download Jupyter Notebook in PDF form
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. Twitter API.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Project Details')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

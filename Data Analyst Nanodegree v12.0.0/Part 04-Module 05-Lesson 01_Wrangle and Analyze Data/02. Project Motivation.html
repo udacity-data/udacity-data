@@ -1,0 +1,473 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Project Motivation
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Wrangle and Analyze Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Project Overview.html">
+       01. Project Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Project Motivation.html">
+       02. Project Motivation
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Project Details.html">
+       03. Project Details
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Twitter API.html">
+       04. Twitter API
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Project Workspace Complete and Submit Project.html">
+       05. Project Workspace: Complete and Submit Project
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Description - Wrangle and Analyze Data.html">
+       Project Description - Wrangle and Analyze Data
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Rubric - Wrangle and Analyze Data.html">
+       Project Rubric - Wrangle and Analyze Data
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. Project Motivation
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="project-motivation">
+          Project Motivation
+         </h2>
+         <h3 id="context">
+          Context
+         </h3>
+         <p>
+          Your goal: wrangle WeRateDogs Twitter data to create interesting and trustworthy analyses and visualizations. The Twitter archive is great, but it only contains very basic tweet information. Additional gathering, then assessing and cleaning is required for "
+          <em>
+           Wow!
+          </em>
+          "-worthy analyses and visualizations.
+         </p>
+         <h3 id="the-data">
+          The Data
+         </h3>
+         <p>
+          <strong>
+           Enhanced Twitter Archive
+          </strong>
+         </p>
+         <p>
+          The WeRateDogs Twitter archive contains basic tweet data for all 5000+ of their tweets, but not everything. One column the archive does contain though: each tweet's text, which I used to extract rating, dog name, and dog "stage" (i.e. doggo, floofer, pupper, and puppo) to make this Twitter archive "enhanced." Of the 5000+ tweets, I have filtered for tweets with ratings only (there are 2356).
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="*The extracted data from each tweet's text*" class="img img-fluid" src="img/screenshot-2017-10-10-18.19.36.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The extracted data from each tweet's text
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          I extracted this data programmatically, but I didn't do a very good job. The ratings probably aren't all correct. Same goes for the dog names and probably dog stages (see below for more information on these) too. You'll need to assess and clean these columns if you want to use them for analysis and visualization.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="*The Dogtionary explains the various stages of dog: doggo, pupper, puppo, and floof(er) (via the [#WeRateDogs book](https://www.amazon.com/WeRateDogs-Most-Hilarious-Adorable-Youve/dp/1510717145) on Amazon)*" class="img img-fluid" src="img/dogtionary-combined.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Dogtionary explains the various stages of dog: doggo, pupper, puppo, and floof(er) (via the
+             <a href="https://www.amazon.com/WeRateDogs-Most-Hilarious-Adorable-Youve/dp/1510717145" rel="noopener noreferrer" target="_blank">
+              #WeRateDogs book
+             </a>
+             on Amazon)
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           Additional Data via the Twitter API
+          </strong>
+         </p>
+         <p>
+          Back to the basic-ness of Twitter archives: retweet count and favorite count are two of the notable column omissions. Fortunately, this additional data can be gathered by anyone from Twitter's API. Well, "anyone" who has access to data for the 3000 most recent tweets, at least. But you, because you have the WeRateDogs Twitter archive and specifically the tweet IDs within it, can gather this data for all 5000+. And guess what? You're going to query Twitter's API to gather this valuable data.
+         </p>
+         <p>
+          <strong>
+           Image Predictions File
+          </strong>
+         </p>
+         <p>
+          One more cool thing: I ran every image in the WeRateDogs Twitter archive through a
+          <a href="https://www.youtube.com/watch?v=2-Ol7ZB0MmU" rel="noopener noreferrer" target="_blank">
+           neural network
+          </a>
+          that can classify breeds of dogs*. The results: a table full of image predictions (the top three only) alongside each tweet ID, image URL, and the image number that corresponded to the most confident prediction (numbered 1 to 4 since tweets can have up to four images).
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="*Tweet image prediction data*" class="img img-fluid" src="img/screenshot-2017-10-10-18.43.41.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Tweet image prediction data
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          So for the last row in that table:
+         </p>
+         <ul>
+          <li>
+           tweet_id is the last part of the tweet URL after "
+           <em>
+            status/
+           </em>
+           " →
+           <a href="https://twitter.com/dog_rates/status/889531135344209921" rel="noopener noreferrer" target="_blank">
+            https://twitter.com/dog_rates/status/889531135344209921
+           </a>
+          </li>
+          <li>
+           p1 is the algorithm's #1 prediction for the image in the tweet →
+           <strong>
+            golden retriever
+           </strong>
+          </li>
+          <li>
+           p1_conf is how confident the algorithm is in its #1 prediction →
+           <strong>
+            95%
+           </strong>
+          </li>
+          <li>
+           p1_dog is whether or not the #1 prediction is a breed of dog →
+           <strong>
+            TRUE
+           </strong>
+          </li>
+          <li>
+           p2 is the algorithm's second most likely prediction →
+           <strong>
+            Labrador retriever
+           </strong>
+          </li>
+          <li>
+           p2_conf is how confident the algorithm is in its #2 prediction →
+           <strong>
+            1%
+           </strong>
+          </li>
+          <li>
+           p2_dog is whether or not the #2 prediction is a breed of dog →
+           <strong>
+            TRUE
+           </strong>
+          </li>
+          <li>
+           etc.
+          </li>
+         </ul>
+         <p>
+          And the #1 prediction for the image in that tweet was spot on:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="*A golden retriever named Stuart*" class="img img-fluid" src="img/dog-pred.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             A golden retriever named Stuart
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          So that's all fun and good. But all of this additional data will need to be gathered, assessed, and cleaned. This is where you come in.
+         </p>
+         <h3 id="key-points">
+          Key Points
+         </h3>
+         <p>
+          Key points to keep in mind when data wrangling for this project:
+         </p>
+         <ul>
+          <li>
+           You only want original ratings (no retweets) that have images. Though there are 5000+ tweets in the dataset, not all are dog ratings and some are retweets.
+          </li>
+          <li>
+           Assessing and cleaning the entire dataset completely would require a lot of time, and is not necessary to practice and demonstrate your skills in data wrangling. Therefore, the requirements of this project are only to assess and clean at least 8 quality issues and at least 2 tidiness issues in this dataset.
+          </li>
+          <li>
+           Cleaning includes merging individual pieces of data according to the rules of
+           <a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html" rel="noopener noreferrer" target="_blank">
+            tidy data
+           </a>
+           .
+          </li>
+          <li>
+           The fact that the rating numerators are greater than the denominators does not need to be cleaned. This
+           <a href="http://knowyourmeme.com/memes/theyre-good-dogs-brent" rel="noopener noreferrer" target="_blank">
+            unique rating system
+           </a>
+           is a big part of the popularity of WeRateDogs.
+          </li>
+          <li>
+           You do
+           <em>
+            not
+           </em>
+           need to gather the tweets beyond August 1st, 2017. You can, but note that you won't be able to gather the image predictions for these tweets since you don't have access to the algorithm used.
+          </li>
+         </ul>
+         <p>
+          *
+          <em>
+           Fun fact: creating this neural network is one of the projects in Udacity's
+           <a href="https://www.udacity.com/course/data-scientist-nanodegree--nd025" rel="noopener noreferrer" target="_blank">
+            Data Scientist Nanodegree
+           </a>
+           ,
+           <a href="https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009" rel="noopener noreferrer" target="_blank">
+            Machine Learning Engineer Nanodegree
+           </a>
+           and
+           <a href="https://www.udacity.com/course/artificial-intelligence-nanodegree--nd889" rel="noopener noreferrer" target="_blank">
+            Artificial Intelligence Nanodegree programs
+           </a>
+           .
+          </em>
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. Project Details.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. Project Motivation')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
