@@ -1,0 +1,966 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Git Commit
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Add Commits To A Repo
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Git Add.html">
+       02. Git Add
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Git Commit.html">
+       03. Git Commit
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Commit Messages.html">
+       04. Commit Messages
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Git Diff.html">
+       05. Git Diff
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Having Git Ignore Files.html">
+       06. Having Git Ignore Files
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Outro.html">
+       07. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. Git Commit
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Quick Check In
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Task Description:
+          </h4>
+          <p>
+           We're just about to make our first commit, so let's verify that our projects are set up the same way:
+          </p>
+         </div>
+         <form>
+          <fieldset>
+           <legend>
+            Task List:
+           </legend>
+           <div>
+            <input id="636f709d-2359-4938-a881-cbe7b214845e--0" type="checkbox"/>
+            <label for="636f709d-2359-4938-a881-cbe7b214845e--0">
+             <p>
+              the
+              <code>
+               index.html
+              </code>
+              file exists and has starter code in it
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="636f709d-2359-4938-a881-cbe7b214845e--1" type="checkbox"/>
+            <label for="636f709d-2359-4938-a881-cbe7b214845e--1">
+             <p>
+              the
+              <code>
+               app.css
+              </code>
+              file exists in the
+              <code>
+               css
+              </code>
+              folder
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="636f709d-2359-4938-a881-cbe7b214845e--2" type="checkbox"/>
+            <label for="636f709d-2359-4938-a881-cbe7b214845e--2">
+             <p>
+              the
+              <code>
+               app.js
+              </code>
+              file exists in the
+              <code>
+               js
+              </code>
+              folder
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="636f709d-2359-4938-a881-cbe7b214845e--3" type="checkbox"/>
+            <label for="636f709d-2359-4938-a881-cbe7b214845e--3">
+             <p>
+              all three files have been staged
+             </p>
+            </label>
+           </div>
+          </fieldset>
+         </form>
+         <div>
+          <h4>
+           Task Feedback:
+          </h4>
+          <p>
+           That's perfect!
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="one-last-git-status-check">
+          One Last Git Status Check
+         </h2>
+         <p>
+          If you haven't added any new files to the Working Directory or modified any of the existing files, nothing will have changed, but to make sure, let's run a quick
+          <code>
+           git status
+          </code>
+          again right before we make the commit just to make
+          <em>
+           absolutely sure
+          </em>
+          the project is how we left it.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application shows that the index.html, css/app.css, and js/app.js have been staged and are ready to be committed._" class="img img-fluid" src="img/ud123-l4-git-status-all-files.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application shows that the index.html, css/app.css, and js/app.js have been staged and are ready to be committed.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="make-a-commit">
+          Make A Commit
+         </h2>
+         <p>
+          Ok, let's do it!
+         </p>
+         <p>
+          To make a commit in Git you use the
+          <code>
+           git commit
+          </code>
+          command, but don't run it just yet. Running this command will open the code editor that you configured way back in the first lesson. If you haven't run this command yet:
+         </p>
+         <pre><code class="bash language-bash">$ git config --global core.editor &lt;your-editor's-config-went-here&gt;</code></pre>
+         <p>
+          …go back to the Git configuration step and configure Git to use your chosen editor.
+         </p>
+         <p>
+          If you didn't do this step and you
+          <em>
+           already
+          </em>
+          ran
+          <code>
+           git commit
+          </code>
+          , then Git
+          <em>
+           probably
+          </em>
+          defaulted to using the "Vim" editor. Vim is a popular editor for people who have been using Unix or Linux systems forever, but it's not the friendliest for new users. It's definitely not in the scope of this course. Check out
+          <a href="https://stackoverflow.com/questions/11828270/how-to-exit-the-vim-editor" rel="noopener noreferrer" target="_blank">
+           this Stack Overflow post on how to get out of Vim
+          </a>
+          and return to the regular command prompt.
+         </p>
+         <p>
+          If you
+          <em>
+           did
+          </em>
+          configure your editor, then go ahead and make a commit using the
+          <code>
+           git commit
+          </code>
+          command:
+         </p>
+         <pre><code class="bash language-bash">$ git commit</code></pre>
+         <p>
+          Remember, your editor should pop open and you should see something like this:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_Code editor displaying the default commit edit message content and is waiting for a commit message to be supplied._" class="img img-fluid" src="img/ud123-l4-git-commit-editor.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Code editor displaying the default commit edit message content and is waiting for a commit message to be supplied.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="terminal-hangs">
+          Terminal Hangs
+         </h2>
+         <p>
+          If you switch back to the Terminal for a quick second, you'll see that the Terminal is chillin' out just waiting for you to finish with the code editor that popped up. You don't need to worry about this, though. Once we add the necessary content to the code editor and finally
+          <em>
+           close the code editor window
+          </em>
+          , the Terminal will unfreeze and return to normal.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing `git commit` but it appears to be hanging and waiting for something._" class="img img-fluid" src="img/ud123-l4-git-commit-terminal-hangs.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing
+             <code>
+              git commit
+             </code>
+             but it appears to be hanging and waiting for something.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="code-editor-commit-message-explanation">
+          Code Editor Commit Message Explanation
+         </h2>
+         <p>
+          Ok, switch back to the code editor. Here's what's showing in my editor:
+         </p>
+         <pre><code class="bash language-bash"># Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#    new file:   css/app.css
+#    new file:   index.html
+#    new file:   js/app.js
+#</code></pre>
+         <p>
+          The first paragraph is telling us exactly what we need to do - we need to supply a message for this commit. Also, any line that begins with the
+          <code>
+           #
+          </code>
+          character will be ignored. Farther down it says that this will be the initial commit. Lastly, it's giving us a list of the files that will be committed.
+         </p>
+         <p>
+          Since this is the very first commit of the repository, we'll use the commit message "Initial commit". The text "Initial commit" isn't special, but it's the de facto commit message for the
+          <em>
+           very first
+          </em>
+          commit. If you want to use something else, feel free!
+         </p>
+         <p>
+          Type out your commit message on the first line of the code editor:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_Code editor with the commit message entered on the first line._" class="img img-fluid" src="img/ud123-l4-git-commit-initial-commit.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Code editor with the commit message entered on the first line.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="finish-committing">
+          Finish Committing
+         </h2>
+         <p>
+          Now save the file and close the editor window (closing just the pane/tab isn't enough, you need to close the code editor window that the
+          <code>
+           git commit
+          </code>
+          command opened).
+         </p>
+         <p>
+          Awesome, now switch back to the Terminal and you should see something like the following:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application after closing the code editor. It displays the SHA for the new commit as well as information about the commit like the files that were added and how many lines of code were added._" class="img img-fluid" src="img/ud123-l4-git-commit-finished.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application after closing the code editor. It displays the SHA for the new commit as well as information about the commit like the files that were added and how many lines of code were added.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="first-commit-congrats">
+          First Commit, Congrats!
+         </h2>
+         <p>
+          You just made your first commit - woohoo! 🙌🏼  How does it feel? Was it more towards the awe-inspiring side or the anticlimactic? Honestly, when I made my first commit, I was a bit like:
+         </p>
+         <blockquote>
+          <p>
+           "Wait…is that it? You just add the files you want to have committed to the Staging Area, and then you run 'git commit'?"
+          </p>
+         </blockquote>
+         <p>
+          …and the answer to my questions are "Yes" and "Yes". That's all there is to it. At first, version control seems like this overwhelming obstacle that one must overcome to become a true programmer/developer/designer/etc. But once you get a handle on the terminology (which
+          <em>
+           I
+          </em>
+          think is the most challenging part), then actually using version control isn't all that challenging.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <blockquote>
+          <h2 id="bypass-the-editor-with-the--m-flag">
+           Bypass The Editor With The
+           <code>
+            -m
+           </code>
+           Flag
+          </h2>
+         </blockquote>
+         <blockquote>
+          <p>
+           TIP: If the commit message you're writing is short and you don't want to wait for your code editor to open up to type it out, you can pass your message directly on the command line with the
+           <code>
+            -m
+           </code>
+           flag:
+          </p>
+         </blockquote>
+         <blockquote>
+          <pre><code class="bash language-bash">$ git commit -m "Initial commit"</code></pre>
+         </blockquote>
+         <blockquote>
+          <p>
+           In the example above, the text
+           <code>
+            "Initial commit"
+           </code>
+           is used as the commit message. Be aware that you can't provide a description for the commit, only the message part.
+          </p>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="2nd-commit---add-changes">
+          2nd Commit - Add Changes
+         </h2>
+         <p>
+          We've had a short breather, so let's make a second commit! Here, add this just inside the
+          <code>
+           body
+          </code>
+          tag in
+          <code>
+           index.html
+          </code>
+          :
+         </p>
+         <pre><code class="html language-html">&lt;header&gt;
+    &lt;h1&gt;Expedition&lt;/h1&gt;
+&lt;/header&gt;</code></pre>
+         <p>
+          Ok, now what do you do next? That's right, it's our good old friend
+          <code>
+           git status
+          </code>
+          !
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt='_The Terminal application showing the result of the `git status` command. It displays a "Changes not staged for commit" section that includes the modified "index.html" file._' class="img img-fluid" src="img/ud123-l4-git-status-modified-files.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the result of the
+             <code>
+              git status
+             </code>
+             command. It displays a "Changes not staged for commit" section that includes the modified "index.html" file.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <blockquote>
+          <p>
+           TIP: If you run
+           <code>
+            git status
+           </code>
+           but don't see that
+           <code>
+            index.html
+           </code>
+           has changed, make sure to save the file. I modify a file and then forget to save it -
+           <em>
+            all
+           </em>
+           -
+           <em>
+            the
+           </em>
+           -
+           <em>
+            time
+           </em>
+           ! I like to think that forgetting to save a file after editing it is the mark of a true professional.
+          </p>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="multipurpose-git-add">
+          Multipurpose Git Add
+         </h2>
+         <p>
+          So we've modified our file. Git sees that it's been modified. So we're doing well so far. Now remember, to make a commit, the file or files we want committed need to be on the Staging Index. What command do we use to move files from the Working Directory to the Staging Index? You got it -
+          <code>
+           git add
+          </code>
+          !
+         </p>
+         <p>
+          Even though we used
+          <code>
+           git add
+          </code>
+          to add
+          <em>
+           newly created files
+          </em>
+          to the Staging Index, we use the same command to move
+          <em>
+           modified files
+          </em>
+          to the Staging Index.
+         </p>
+         <p>
+          Use the
+          <code>
+           git add
+          </code>
+          command to move the file over to the Staging Index, now. Verify that it's there with
+          <code>
+           git status
+          </code>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="second-commit">
+          Second Commit
+         </h2>
+         <p>
+          Now that we have a file with changes we can commit, let's make our second commit! Use the
+          <code>
+           git commit
+          </code>
+          command to make a commit. Use the commit message
+          <code>
+           Add header to blog
+          </code>
+          .
+         </p>
+         <p>
+          Now you might be asking yourself, "Why did Richard pick that as the commit message to use?" or "What makes a good commit message?". These are fantastic questions that we'll be looking at in the next concept!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Will The File Be Committed?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Let's say you have a personal blog and want to change the color of the article headings. You
+            </p>
+            <ul>
+             <li>
+              edit the HTML files to give each heading a class
+             </li>
+             <li>
+              edit the CSS file to add the new class and give it a color
+             </li>
+             <li>
+              you save all files
+             </li>
+             <li>
+              you run
+              <code>
+               git commit
+              </code>
+              on the terminal
+             </li>
+            </ul>
+            <p>
+             Will your code editor open up to let you type out the commit message?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487113380630" name="264970" type="radio" value="a1487113380630"/>
+           <label for="a1487113380630">
+            <p>
+             Yes
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487113398908" name="264970" type="radio" value="a1487113398908"/>
+           <label for="a1487113398908">
+            <p>
+             No
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          No
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="what-to-include-in-a-commit">
+          What To Include In A Commit
+         </h2>
+         <p>
+          I've been telling you what files to create, giving you the content to include, and telling you when you should make commits. But when you're on your own, how do you know what you should include in a commit and when/how often you should make commits?
+         </p>
+         <p>
+          <strong>
+           The goal is that each commit has a single focus.
+          </strong>
+          Each commit should record a single-unit change. Now this can be a bit subjective (which is totally fine), but each commit should make a change to just one aspect of the project.
+         </p>
+         <p>
+          Now this isn't limiting the number of lines of code that are added/removed or the number of files that are added/removed/modified. Let's say you want to change your sidebar to add a new image. You'll probably:
+         </p>
+         <ul>
+          <li>
+           add a new image to the project files
+          </li>
+          <li>
+           alter the HTML
+          </li>
+          <li>
+           add/modify CSS to incorporate the new image
+          </li>
+         </ul>
+         <p>
+          A commit that records all of these changes would be totally fine!
+         </p>
+         <p>
+          Conversely, a commit shouldn't include unrelated changes - changes to the sidebar
+          <em>
+           and
+          </em>
+          rewording content in the footer. These two aren't related to each other and shouldn't be included in the same commit. Work on one change first, commit that, and then change the second one. That way, if it turns out that one change had a bug and you have to undo it, you don't have to undo the other change too.
+         </p>
+         <p>
+          The best way that I've found to think about what should be in a commit is to think, "What if all changes introduced in this commit were erased?". If a commit were erased, it should only remove one thing.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <blockquote>
+          <p>
+           Don't worry, commits don't get randomly erased.
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           In a later lesson, we'll look at using Git to undo changes made in commits and how to manually, carefully remove the last commit that was made.
+          </p>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-commit-recap">
+          Git Commit Recap
+         </h2>
+         <p>
+          The
+          <code>
+           git commit
+          </code>
+          command takes files from the Staging Index and saves them in the repository.
+         </p>
+         <pre><code class="bash language-bash">$ git commit</code></pre>
+         <p>
+          This command:
+         </p>
+         <ul>
+          <li>
+           will open the code editor that is specified in your configuration
+           <ul>
+            <li>
+             (check out the Git configuration step from the first lesson to configure your editor)
+            </li>
+           </ul>
+          </li>
+         </ul>
+         <p>
+          Inside the code editor:
+         </p>
+         <ul>
+          <li>
+           a commit message must be supplied
+          </li>
+          <li>
+           lines that start with a
+           <code>
+            #
+           </code>
+           are comments and will not be recorded
+          </li>
+          <li>
+           save the file after adding a commit message
+          </li>
+          <li>
+           close the editor to make the commit
+          </li>
+         </ul>
+         <p>
+          Then, use
+          <code>
+           git log
+          </code>
+          to review the commit you just made!
+         </p>
+         <h3 id="further-research">
+          Further Research
+         </h3>
+         <ul>
+          <li>
+           <a href="https://help.github.com/articles/associating-text-editors-with-git/" rel="noopener noreferrer" target="_blank">
+            Associating text editors with Git
+           </a>
+           from GitHub Help Docs
+          </li>
+          <li>
+           <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup" rel="noopener noreferrer" target="_blank">
+            Getting Started - First-Time Git Setup
+           </a>
+           from Git book
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. Commit Messages.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Git Commit')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

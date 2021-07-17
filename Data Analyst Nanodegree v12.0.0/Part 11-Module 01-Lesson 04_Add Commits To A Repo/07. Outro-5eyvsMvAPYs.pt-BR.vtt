@@ -1,0 +1,77 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.274 --> 00:00:03.209
+Vimos muitas coisas
+nesta aula.
+
+00:00:03.251 --> 00:00:06.201
+Usamos git add
+para preparar o conteúdo,
+
+00:00:06.243 --> 00:00:10.016
+o git commit para enviar
+alterações para o repositório,
+
+00:00:10.058 --> 00:00:13.258
+também vimos como criar
+uma boa mensagem commit.
+
+00:00:13.300 --> 00:00:16.089
+Depois aprendemos
+como o git diff pode ser útil
+
+00:00:16.131 --> 00:00:19.090
+na hora de lembrar alterações
+que não viraram um commit.
+
+00:00:19.132 --> 00:00:21.453
+Por fim,
+vimos o git ignore file,
+
+00:00:21.495 --> 00:00:24.196
+que informa quais arquivos
+não devem ser rastreados.
+
+00:00:24.238 --> 00:00:27.025
+Você já sabe como criar
+ou clonar um repositório,
+
+00:00:27.067 --> 00:00:28.521
+como criar commits
+
+00:00:28.563 --> 00:00:30.841
+com mensagens commit
+descritivas claras
+
+00:00:30.883 --> 00:00:33.377
+e como revisar
+commits existentes.
+
+00:00:33.419 --> 00:00:35.872
+Com esse conhecimento,
+você já pode trabalhar
+
+00:00:35.914 --> 00:00:38.257
+em qualquer repositório Git.
+
+00:00:38.299 --> 00:00:40.580
+Algo importante
+que veremos na próxima aula
+
+00:00:40.622 --> 00:00:43.476
+é o branching, que permite
+trabalhar em um projeto
+
+00:00:43.518 --> 00:00:45.318
+em diferentes
+estados múltiplos
+
+00:00:45.360 --> 00:00:48.110
+e levará sua habilidade Git
+ao próximo nível.
+
+00:00:48.152 --> 00:00:49.313
+Vamos conferir.
+

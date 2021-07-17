@@ -1,0 +1,1048 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Git Add
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Add Commits To A Repo
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Git Add.html">
+       02. Git Add
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Git Commit.html">
+       03. Git Commit
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Commit Messages.html">
+       04. Commit Messages
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Git Diff.html">
+       05. Git Diff
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Having Git Ignore Files.html">
+       06. Having Git Ignore Files
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Outro.html">
+       07. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. Git Add
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="move-to-correct-project">
+          Move To Correct Project
+         </h2>
+         <p>
+          If you've been following along, you should have two different directories with Git projects on your computer:
+         </p>
+         <ul>
+          <li>
+           new-git-project - an empty directory that you converted to a Git repository using
+           <code>
+            git init
+           </code>
+          </li>
+          <li>
+           course-git-blog-project - an existing blog project you retrieved using
+           <code>
+            git clone
+           </code>
+          </li>
+         </ul>
+         <p>
+          To avoid any confusion with existing commits, we'll be making our commits to the new-git-project Git repository.
+         </p>
+         <p>
+          On the Terminal, make sure you
+          <code>
+           cd
+          </code>
+          into the
+          <code>
+           new-git-project
+          </code>
+          directory. If you don't have a
+          <code>
+           new-git-project
+          </code>
+          directory, create it now. Once you're inside the directory, run the
+          <code>
+           git init
+          </code>
+          command. If you've already run
+          <code>
+           git init
+          </code>
+          before it's ok – running
+          <code>
+           git init
+          </code>
+          multiple times doesn't cause any problems since it just re-initializes the Git directory.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Proper Setup
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Task Description:
+          </h4>
+          <p>
+           Time to make sure we both have the same setup:
+          </p>
+         </div>
+         <form>
+          <fieldset>
+           <legend>
+            Task List:
+           </legend>
+           <div>
+            <input id="cdcbff85-6406-4030-9c2c-3aa7f7d1dc9b--0" type="checkbox"/>
+            <label for="cdcbff85-6406-4030-9c2c-3aa7f7d1dc9b--0">
+             <p>
+              I've
+              <code>
+               cd
+              </code>
+              ed into the
+              <code>
+               new-git-project
+              </code>
+              directory on the Terminal
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="cdcbff85-6406-4030-9c2c-3aa7f7d1dc9b--1" type="checkbox"/>
+            <label for="cdcbff85-6406-4030-9c2c-3aa7f7d1dc9b--1">
+             <p>
+              I've run
+              <code>
+               git init
+              </code>
+              to create a new Git repository
+             </p>
+            </label>
+           </div>
+          </fieldset>
+         </form>
+         <div>
+          <h4>
+           Task Feedback:
+          </h4>
+          <p>
+           Perfect!
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Your Terminal should look like this:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application in the new-git-project directory._" class="img img-fluid" src="img/ud123-l4-new-git-project.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application in the new-git-project directory.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="status-status-status">
+          Status Status Status
+         </h2>
+         <p>
+          I've said it a number of times already, but the
+          <code>
+           git status
+          </code>
+          command will be
+          <em>
+           extremely helpful
+          </em>
+          in this lesson. You should have it as your goal to run the
+          <code>
+           git status
+          </code>
+          command both
+          <em>
+           before
+          </em>
+          and
+          <em>
+           after
+          </em>
+          any other Git command.
+         </p>
+         <p>
+          Let's run it right now!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the output of the `git status` command._" class="img img-fluid" src="img/ud123-l4-git-status.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of the
+             <code>
+              git status
+             </code>
+             command.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-status-output-review">
+          Git Status Output Review
+         </h2>
+         <p>
+          This is the output:
+         </p>
+         <pre><code class="bash language-bash">On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <blockquote>
+          <h3 id="💡-changes-in-git-v214--💡">
+           💡 Changes in Git v2.14  💡
+          </h3>
+         </blockquote>
+         <blockquote>
+          <p>
+           Remember that in Git version 2.14, the
+           <code>
+            git status
+           </code>
+           command changed the wording from "Inital commit" to the much clearer "No commits yet". So the output would be:
+          </p>
+         </blockquote>
+         <blockquote>
+          <pre><code class="bash language-bash">On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)</code></pre>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Notice that last line –
+          <code>
+           nothing to commit (create/copy files and use "git add" to track)
+          </code>
+          . See how it's recommending the
+          <code>
+           git add
+          </code>
+          command? that's super helpful! The
+          <code>
+           git status
+          </code>
+          output will give you advice or hints as to what you should do next.
+         </p>
+         <p>
+          Let's do what the feedback says and create some files.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="create-an-html-file">
+          Create An HTML File
+         </h2>
+         <p>
+          First, create a file named
+          <code>
+           index.html
+          </code>
+          , and fill it with some starter code:
+         </p>
+         <pre><code class="html language-html">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Blog Project&lt;/title&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;meta name="description" content=""&gt;
+    &lt;link rel="stylesheet" href="css/app.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;script src="js/app.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+         <p>
+          Things to note, the code references a CSS file and a JavaScript file.
+         </p>
+         <p>
+          Now create the CSS and JavaScript files. You can leave both of these files empty. We'll add content to them in a bit.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Verifying Project Setup
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Task Description:
+          </h4>
+          <p>
+           Before we proceed, let's make sure we have the same setup. Check off each of the following as you complete them:
+          </p>
+         </div>
+         <form>
+          <fieldset>
+           <legend>
+            Task List:
+           </legend>
+           <div>
+            <input id="c83b76a7-f7a7-4434-a463-e62c7ff3840c--0" type="checkbox"/>
+            <label for="c83b76a7-f7a7-4434-a463-e62c7ff3840c--0">
+             <p>
+              I have created
+              <code>
+               index.html
+              </code>
+              and filled it with the starter code above (
+              <em>
+               and saved the file
+              </em>
+              )
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="c83b76a7-f7a7-4434-a463-e62c7ff3840c--1" type="checkbox"/>
+            <label for="c83b76a7-f7a7-4434-a463-e62c7ff3840c--1">
+             <p>
+              I have created a
+              <code>
+               css
+              </code>
+              folder and created
+              <code>
+               app.css
+              </code>
+              inside of it
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="c83b76a7-f7a7-4434-a463-e62c7ff3840c--2" type="checkbox"/>
+            <label for="c83b76a7-f7a7-4434-a463-e62c7ff3840c--2">
+             <p>
+              I have created a
+              <code>
+               js
+              </code>
+              folder and created
+              <code>
+               app.js
+              </code>
+              inside of it
+             </p>
+            </label>
+           </div>
+          </fieldset>
+         </form>
+         <div>
+          <h4>
+           Task Feedback:
+          </h4>
+          <p>
+           Awesome, great work!
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="quick-git-status-check">
+          Quick Git Status Check
+         </h2>
+         <p>
+          We just made a number of changes to the repository by adding files and content. It's time to do a quick check-in with Git:
+         </p>
+         <pre><code class="bash language-bash">$ git status</code></pre>
+         <p>
+          Here's what my Terminal displays:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt='_The Terminal application displays the index.html file, and the css and js folders in the new "Untracked files" section._' class="img img-fluid" src="img/ud123-l4-git-status-with-untracked.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application displays the index.html file, and the css and js folders in the new "Untracked files" section.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="big-picture-review">
+          Big Picture Review
+         </h2>
+         <p>
+          That's really cool, isn't it! We haven't done anything specific with Git just yet, but it's watching this directory (since it's a Git project), and it knows that we've created a couple of new files. What's also pretty neat about the output of the
+          <code>
+           git status
+          </code>
+          command is that it's telling us that the files are untracked by Git.
+         </p>
+         <p>
+          Let's do a quick review of what's going on and what we're about to do:
+         </p>
+         <ul>
+          <li>
+           we have some new files that we want Git to start tracking
+          </li>
+          <li>
+           for Git to track a file, it needs to be committed to the repository
+          </li>
+          <li>
+           for a file to be committed, it needs to be in the Staging Index
+          </li>
+          <li>
+           the
+           <code>
+            git add
+           </code>
+           command is used to move files from the Working Directory to the Staging Index
+          </li>
+          <li>
+           there are currently three, untracked files in the Working Directory
+           <ul>
+            <li>
+             <code>
+              index.html
+             </code>
+            </li>
+            <li>
+             <code>
+              app.css
+             </code>
+             in the
+             <code>
+              css
+             </code>
+             directory
+            </li>
+            <li>
+             <code>
+              app.js
+             </code>
+             in the
+             <code>
+              js
+             </code>
+             directory
+            </li>
+           </ul>
+          </li>
+         </ul>
+         <p>
+          So the first step to getting any files committed to the repository is to add them from the Working Directory to the Staging Index. We will be using the
+          <code>
+           git add
+          </code>
+          command to move all three of these files to the Staging Index.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The untracked HTML, CSS, and JavaScript files add from the Working Directory to the Staging Index._" class="img img-fluid" src="img/ud123-l4-git-add-to-staging-recap.gif"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The untracked HTML, CSS, and JavaScript files add from the Working Directory to the Staging Index.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="staging-files">
+          Staging Files
+         </h2>
+         <p>
+          Alrighty, it's go time! Run the following command on the Terminal which uses
+          <code>
+           git add
+          </code>
+          to add
+          <code>
+           index.html
+          </code>
+          to the Staging Index:
+         </p>
+         <pre><code class="bash language-bash">$ git add index.html</code></pre>
+         <p>
+          Note - we are
+          <em>
+           only
+          </em>
+          adding the
+          <code>
+           index.html
+          </code>
+          file. We'll add the CSS and JavaScript files in just a second.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt='_The Terminal application. The command "git add index.html" is being typed out to add the file to the Staging Index._' class="img img-fluid" src="img/ud123-l4-git-add.gif"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application. The command "git add index.html" is being typed out to add the file to the Staging Index.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Running the
+          <code>
+           git add
+          </code>
+          command produces no output (as long as there wasn't an error). So how do we have Git tell us what it did and has happened to the
+          <code>
+           index.html
+          </code>
+          file that was added? That's what
+          <code>
+           git status
+          </code>
+          does. You're probably sick of me stressing the importance of the
+          <code>
+           git status
+          </code>
+          command, but it's an extremely helpful command, especially if you're new to version control and/or the command line.
+         </p>
+         <p>
+          Let's check out the status of the project:
+         </p>
+         <pre><code class="bash language-bash">$ git status</code></pre>
+         <p>
+          This is the output I get:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt='_The Terminal application showing the result of running the `git status` command. It shows that index.html is now in the "Changes to be committed" category._' class="img img-fluid" src="img/ud123-l4-git-status-after-git-add.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the result of running the
+             <code>
+              git status
+             </code>
+             command. It shows that index.html is now in the "Changes to be committed" category.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="changes-to-be-committed">
+          Changes To Be Committed
+         </h2>
+         <p>
+          There's now a new section in the output of
+          <code>
+           git status
+          </code>
+          - the "Changes to be committed" area! This new "Changes to be committed" section displays files that are in the Staging Area! Right now it only displays the
+          <code>
+           index.html
+          </code>
+          file, so this file is the only item on the Staging Index. To continue this train of thought, if we made a commit right now,
+          <em>
+           only the index.html file would be committed
+          </em>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <blockquote>
+          <p>
+           TIP: Did you also notice the helpful text that's located just beneath "Changes to be committed"? It says
+           <code>
+            (use "git rm --cached &lt;file&gt;..." to unstage)
+           </code>
+           This is a hint of what you should do if you accidentally ran
+           <code>
+            git add
+           </code>
+           and gave it the wrong file.
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           As a side note,
+           <code>
+            git rm --cached
+           </code>
+           is not like the shell's
+           <code>
+            rm
+           </code>
+           command.
+           <code>
+            git rm --cached
+           </code>
+           will not destroy any of your work; it just removes it from the Staging Index.
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Also, this used the word "unstage". The act of moving a file from the Working Directory to the Staging Index is called "staging". If a file has been moved, then it has been "staged". Moving a file from the Staging Index
+           <em>
+            back
+           </em>
+           to the Working Directory will unstage the file. If you read documentation that says "stage the following files" that means you should use the
+           <code>
+            git add
+           </code>
+           command.
+          </p>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="stage-remaining-files">
+          Stage Remaining Files
+         </h2>
+         <p>
+          The
+          <code>
+           index.html
+          </code>
+          file has been staged. Let's stage the other two files. Now we
+          <em>
+           could
+          </em>
+          run the following:
+         </p>
+         <pre><code class="bash language-bash">$ git add css/app.css js/app.js</code></pre>
+         <p>
+          …but that's a lot of extra typing. We could use a special command line character to help:
+         </p>
+         <h3 id="the-period-">
+          The Period
+          <code>
+           .
+          </code>
+         </h3>
+         <p>
+          The period refers to the current directory and can be used as a shortcut to refer to all files and directories (including all nested files and directories!).
+         </p>
+         <pre><code class="bash language-bash">$ git add css/app.css js/app.js
+# would become
+$ git add .</code></pre>
+         <p>
+          The only thing to be careful of is that you might accidentally include more files than you meant to. Right now we
+          <em>
+           want
+          </em>
+          both
+          <code>
+           css/app.css
+          </code>
+          and
+          <code>
+           js/app.js
+          </code>
+          to be staged, so running this command is fine right now. But let's say you added some images to an
+          <code>
+           img
+          </code>
+          directory but didn't want to stage them just yet. Running
+          <code>
+           git add .
+          </code>
+          <em>
+           will
+          </em>
+          stage them. If you do stage files that you didn't mean to, remember that
+          <code>
+           git status
+          </code>
+          will tell you the command to use to "unstage" files.
+         </p>
+         <h2 id="stage-the-remaining-files">
+          Stage The Remaining Files
+         </h2>
+         <p>
+          Let's use the shortcut to stage the remaining files:
+         </p>
+         <pre><code class="bash language-bash">$ git add .</code></pre>
+         <p>
+          And then a quick
+          <code>
+           git status
+          </code>
+          :
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the index.html, css/app.css, and js/app.js have been staged._" class="img img-fluid" src="img/ud123-l4-git-status-all-files.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the index.html, css/app.css, and js/app.js have been staged.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-add-recap">
+          Git Add Recap
+         </h2>
+         <p>
+          The
+          <code>
+           git add
+          </code>
+          command is used to move files from the Working Directory to the Staging Index.
+         </p>
+         <pre><code class="bash language-bash">$ git add &lt;file1&gt; &lt;file2&gt; … &lt;fileN&gt;</code></pre>
+         <p>
+          This command:
+         </p>
+         <ul>
+          <li>
+           takes a space-separated list of file names
+          </li>
+          <li>
+           alternatively, the period
+           <code>
+            .
+           </code>
+           can be used in place of a list of files to tell Git to add the current directory (and all nested files)
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. Git Commit.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. Git Add')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

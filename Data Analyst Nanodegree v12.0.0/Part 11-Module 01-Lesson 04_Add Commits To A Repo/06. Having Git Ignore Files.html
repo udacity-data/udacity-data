@@ -1,0 +1,681 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Having Git Ignore Files
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Add Commits To A Repo
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Git Add.html">
+       02. Git Add
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Git Commit.html">
+       03. Git Commit
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Commit Messages.html">
+       04. Commit Messages
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Git Diff.html">
+       05. Git Diff
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Having Git Ignore Files.html">
+       06. Having Git Ignore Files
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Outro.html">
+       07. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. Having Git Ignore Files
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="why-should-files-be-ignored">
+          Why Should Files Be Ignored
+         </h2>
+         <p>
+          Remember a couple sections back when we were learning about
+          <code>
+           git add
+          </code>
+          ? Instead of adding the files one by one, there was a special character that we could use to indicate the current directory and all subdirectories. Do you remember what that character is?
+         </p>
+         <p>
+          That's right, the period (
+          <code>
+           .
+          </code>
+          )!
+         </p>
+         <h3 id="the-problem">
+          The Problem
+         </h3>
+         <p>
+          Let's say you add a file like a Word document to the directory where your project is stored
+          <em>
+           but don't want it added to the repository
+          </em>
+          . (You can simulate adding a Word document by running
+          <code>
+           touch project.docx
+          </code>
+          ) Git will see this new file, so if you run
+          <code>
+           git status
+          </code>
+          it'll show up in the list of files.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the output of the `git status` command. The output shows a new Word document that is in Git's &quot;Untracked files&quot; section._" class="img img-fluid" src="img/ud123-l4-git-ignore-word-doc.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of the
+             <code>
+              git status
+             </code>
+             command. The output shows a new Word document that is in Git's "Untracked files" section.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The potential problem with having this file in your project is that, because
+          <code>
+           git add .
+          </code>
+          adds
+          <em>
+           all
+          </em>
+          files, the Word document might get accidentally committed to the repository.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-ignore">
+          Git Ignore
+         </h2>
+         <p>
+          If you want to keep a file in your project's directory structure but make sure it isn't accidentally committed to the project, you can use the specially named file,
+          <code>
+           .gitignore
+          </code>
+          (note the dot at the front, it's important!). Add this file to your project in the same directory that the hidden
+          <code>
+           .git
+          </code>
+          directory is located. All you have to do is list the
+          <em>
+           names
+          </em>
+          of files that you want Git to ignore (not track) and it will ignore them.
+         </p>
+         <p>
+          Let's try it with the "project.docx" file. Add the following line inside the
+          <code>
+           .gitignore
+          </code>
+          file:
+         </p>
+         <pre><code class="bash language-bash">project.docx</code></pre>
+         <p>
+          Now run
+          <code>
+           git status
+          </code>
+          and check its output:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt='_The Terminal application showing the output of `git status`. The Word document is no longer listed as an untracked file. The new ".gitignore" file is listed, though._' class="img img-fluid" src="img/ud123-l4-git-gitignore.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of
+             <code>
+              git status
+             </code>
+             . The Word document is no longer listed as an untracked file. The new ".gitignore" file is listed, though.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Git knows to look at the contents of a file with the name
+          <code>
+           .gitignore
+          </code>
+          . Since it saw "project.docx" in it, it ignored that file and doesn't show it in the output of
+          <code>
+           git status
+          </code>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="globbing-crash-course">
+          Globbing Crash Course
+         </h2>
+         <p>
+          Let's say that you add 50 images to your project, but want Git to ignore all of them. Does this mean you have to list each and every filename in the
+          <code>
+           .gitignore
+          </code>
+          file? Oh gosh no, that would be crazy! Instead, you can use a concept called
+          <a href="https://en.wikipedia.org/wiki/Glob_(programming" rel="noopener noreferrer" target="_blank">
+           globbing
+          </a>
+          .
+         </p>
+         <p>
+          Globbing lets you use special characters to match patterns/characters. In the
+          <code>
+           .gitignore
+          </code>
+          file, you can use the following:
+         </p>
+         <ul>
+          <li>
+           blank lines can be used for spacing
+          </li>
+          <li>
+           <code>
+            #
+           </code>
+           - marks line as a comment
+          </li>
+          <li>
+           <code>
+            *
+           </code>
+           - matches 0 or more characters
+          </li>
+          <li>
+           <code>
+            ?
+           </code>
+           - matches 1 character
+          </li>
+          <li>
+           <code>
+            [abc]
+           </code>
+           - matches a, b,
+           <em>
+            or
+           </em>
+           c
+          </li>
+          <li>
+           <code>
+            **
+           </code>
+           - matches nested directories -
+           <code>
+            a/**/z
+           </code>
+           matches
+           <ul>
+            <li>
+             a/z
+            </li>
+            <li>
+             a/b/z
+            </li>
+            <li>
+             a/b/c/z
+            </li>
+           </ul>
+          </li>
+         </ul>
+         <p>
+          So if all of the 50 images are JPEG images in the "samples" folder, we could add the following line to
+          <code>
+           .gitignore
+          </code>
+          to have Git ignore all 50 images.
+         </p>
+         <pre><code class="bash language-bash">samples/*.jpg</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          What File Will Be Ignored?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Which of the following files will be ignored if
+             <code>
+              *.png
+             </code>
+             is entered into the
+             <code>
+              .gitignore
+             </code>
+             file?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487114697919" name="265000" type="checkbox" value="a1487114697919"/>
+           <label for="a1487114697919">
+            <p>
+             ocean.jpg
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487114706389" name="265000" type="checkbox" value="a1487114706389"/>
+           <label for="a1487114706389">
+            <p>
+             trees.png
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487114706928" name="265000" type="checkbox" value="a1487114706928"/>
+           <label for="a1487114706928">
+            <p>
+             png-format.pdf
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487114707413" name="265000" type="checkbox" value="a1487114707413"/>
+           <label for="a1487114707413">
+            <p>
+             not-a-png.jpeg
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487114733254" name="265000" type="checkbox" value="a1487114733254"/>
+           <label for="a1487114733254">
+            <p>
+             bg-pattern.png
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487114733827" name="265000" type="checkbox" value="a1487114733827"/>
+           <label for="a1487114733827">
+            <p>
+             logo.gif
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487114747731" name="265000" type="checkbox" value="a1487114747731"/>
+           <label for="a1487114747731">
+            <p>
+             LOUDFILE.PNG
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            trees.png
+           </li>
+           <li>
+            bg-pattern.png
+           </li>
+           <li>
+            LOUDFILE.PNG
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          What's That Character?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             If you ask Git to ignore "be?rs", which of the following filenames will be ignored?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487114875523" name="265001" type="checkbox" value="a1487114875523"/>
+           <label for="a1487114875523">
+            <p>
+             bears
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487114901980" name="265001" type="checkbox" value="a1487114901980"/>
+           <label for="a1487114901980">
+            <p>
+             beavers
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487114902578" name="265001" type="checkbox" value="a1487114902578"/>
+           <label for="a1487114902578">
+            <p>
+             BeArS
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487114903061" name="265001" type="checkbox" value="a1487114903061"/>
+           <label for="a1487114903061">
+            <p>
+             beers
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487114918576" name="265001" type="checkbox" value="a1487114918576"/>
+           <label for="a1487114918576">
+            <p>
+             boars
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            bears
+           </li>
+           <li>
+            beers
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-ignore-recap">
+          Git Ignore Recap
+         </h2>
+         <p>
+          To recap, the
+          <code>
+           .gitignore
+          </code>
+          file is used to tell Git about the files that Git should not track. This file should be placed in the same directory that the
+          <code>
+           .git
+          </code>
+          directory is in.
+         </p>
+         <h3 id="further-research">
+          Further Research
+         </h3>
+         <ul>
+          <li>
+           <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files" rel="noopener noreferrer" target="_blank">
+            Ignoring files
+           </a>
+           from the Git Book
+          </li>
+          <li>
+           <a href="https://git-scm.com/docs/gitignore#_pattern_format" rel="noopener noreferrer" target="_blank">
+            gitignore
+           </a>
+           from the Git Docs
+          </li>
+          <li>
+           <a href="https://help.github.com/articles/ignoring-files/" rel="noopener noreferrer" target="_blank">
+            Ignoring files
+           </a>
+           from the GitHub Docs
+          </li>
+          <li>
+           <a href="https://www.gitignore.io/" rel="noopener noreferrer" target="_blank">
+            gitignore.io
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. Outro.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. Having Git Ignore Files')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

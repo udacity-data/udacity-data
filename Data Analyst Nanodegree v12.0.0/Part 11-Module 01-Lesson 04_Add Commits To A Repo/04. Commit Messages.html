@@ -1,0 +1,583 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Commit Messages
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Add Commits To A Repo
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Git Add.html">
+       02. Git Add
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Git Commit.html">
+       03. Git Commit
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Commit Messages.html">
+       04. Commit Messages
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Git Diff.html">
+       05. Git Diff
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Having Git Ignore Files.html">
+       06. Having Git Ignore Files
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Outro.html">
+       07. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Commit Messages
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="good-commit-messages">
+          Good Commit Messages
+         </h2>
+         <p>
+          Let's take a quick stroll down Stickler Lane and ask the question:
+         </p>
+         <blockquote>
+          <p>
+           How do I write a
+           <em>
+            good
+           </em>
+           commit message? And why should I care?
+          </p>
+         </blockquote>
+         <p>
+          These are
+          <em>
+           fantastic
+          </em>
+          questions! I can't stress enough how important it is to spend some time writing a
+          <em>
+           good
+          </em>
+          commit message.
+         </p>
+         <p>
+          Now, what makes a "good" commit message? That's a great question and has been
+          <a href="https://chris.beams.io/posts/git-commit/" rel="noopener noreferrer" target="_blank">
+           written about
+          </a>
+          <a href="https://medium.com/@preslavrachev/what-s-with-the-50-72-rule-8a906f61f09c#.jwprsco0n" rel="noopener noreferrer" target="_blank">
+           a number
+          </a>
+          <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" rel="noopener noreferrer" target="_blank">
+           of times
+          </a>
+          . Here are some important things to think about when crafting a good commit message:
+         </p>
+         <p>
+          <strong>
+           Do
+          </strong>
+         </p>
+         <ul>
+          <li>
+           do keep the message short (less than 60-ish characters)
+          </li>
+          <li>
+           do explain
+           <em>
+            what
+           </em>
+           the commit does (not
+           <em>
+            how
+           </em>
+           or
+           <em>
+            why
+           </em>
+           !)
+          </li>
+         </ul>
+         <p>
+          <strong>
+           Do not
+          </strong>
+         </p>
+         <ul>
+          <li>
+           do not explain
+           <em>
+            why
+           </em>
+           the changes are made (more on this below)
+          </li>
+          <li>
+           do not explain
+           <em>
+            how
+           </em>
+           the changes are made (that's what
+           <code>
+            git log -p
+           </code>
+           is for!)
+          </li>
+          <li>
+           do not use the word "and"
+           <ul>
+            <li>
+             if you have to use "and", your commit message is probably doing too many changes - break the changes into separate commits
+            </li>
+            <li>
+             e.g. "make the background color pink
+             <em>
+              and
+             </em>
+             increase the size of the sidebar"
+            </li>
+           </ul>
+          </li>
+         </ul>
+         <p>
+          The best way that I've found to come up with a commit message is to finish this phrase, "This commit will…". However, you finish that phrase, use
+          <em>
+           that
+          </em>
+          as your commit message.
+         </p>
+         <p>
+          Above all,
+          <em>
+           <strong>
+            be consistent
+           </strong>
+          </em>
+          in how you write your commit messages!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Is This A Good Commit Message?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Reviewing the guidelines on what makes a good commit message, is the following commit message good?
+            </p>
+            <p>
+             "Update the footer to copyright information"
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487113793808" name="264982" type="radio" value="a1487113793808"/>
+           <label for="a1487113793808">
+            <p>
+             Yes
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487113803413" name="264982" type="radio" value="a1487113803413"/>
+           <label for="a1487113803413">
+            <p>
+             No
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          Yes
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Is This A Good Commit Message? 2
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Is the following a good commit message?
+            </p>
+            <p>
+             "Add a
+             <p>
+              tag to the body"
+             </p>
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487113839649" name="264983" type="radio" value="a1487113839649"/>
+           <label for="a1487113839649">
+            <p>
+             Yes
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487113848784" name="264983" type="radio" value="a1487113848784"/>
+           <label for="a1487113848784">
+            <p>
+             No
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          No
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Is This A Good Commit Message? 3
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Is the following a good commit message?
+            </p>
+            <p>
+             "Add changes to app.js"
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487113935491" name="264984" type="radio" value="a1487113935491"/>
+           <label for="a1487113935491">
+            <p>
+             Yes
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487113941609" name="264984" type="radio" value="a1487113941609"/>
+           <label for="a1487113941609">
+            <p>
+             No
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          No
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="explain-the-_why_">
+          Explain the
+          <em>
+           Why
+          </em>
+         </h2>
+         <p>
+          If you need to explain
+          <em>
+           why
+          </em>
+          a commit needs to be made, you can!
+         </p>
+         <p>
+          When you're writing the commit message, the first line is the message itself. After the message, leave a blank line, and then type out the body or explanation including details about why the commit is needed (e.g. URL links).
+         </p>
+         <p>
+          Here's what a commit message edit screen might look like:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_Code editor showing the commit message edit window. A message has been typed, followed by a blank line, followed by the body of the commit._" class="img img-fluid" src="img/ud123-l4-git-commit-details-section.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Code editor showing the commit message edit window. A message has been typed, followed by a blank line, followed by the body of the commit.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          This details section of a commit message
+          <em>
+           is
+          </em>
+          included in the
+          <code>
+           git log
+          </code>
+          . To see a commit message with a body, check out the Blog project repo and look at commit
+          <code>
+           8a11b3f
+          </code>
+          .
+         </p>
+         <p>
+          Only the message (the first line) is included in
+          <code>
+           git log --oneline
+          </code>
+          , though!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="udacitys-commit-style-requirements">
+          Udacity's Commit Style Requirements
+         </h2>
+         <p>
+          As I've mentioned, there are a number of ways to write commit messages. If you're working on a team, they might already have a predetermined way of writing commit messages. Here at Udacity, we have our own standard for commit messages. You can check it out on our
+          <a href="https://udacity.github.io/git-styleguide/" rel="noopener noreferrer" target="_blank">
+           Git Commit Message Style Guide
+          </a>
+          .
+         </p>
+         <p>
+          If you haven't chosen a commit message style, feel free to use ours. But if you're working on an existing project, use their existing style; it's much more important to be consistent with your actual team than to be consistent with us!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-diff-up-next">
+          Git Diff Up Next!
+         </h2>
+         <p>
+          In the next section, we'll look at a new tool (with a familiar output!). This tool will tell us what changes we've made to files
+          <em>
+           before
+          </em>
+          the files have been committed!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. Git Diff.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Commit Messages')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

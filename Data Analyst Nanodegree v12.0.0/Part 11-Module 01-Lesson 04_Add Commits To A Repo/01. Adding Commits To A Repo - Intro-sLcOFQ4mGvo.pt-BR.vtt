@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.349 --> 00:00:04.236
+Nesta aula aprenderemos
+a criar nossos commits.
+
+00:00:04.278 --> 00:00:06.478
+Está animado? Eu estou.
+
+00:00:06.520 --> 00:00:11.152
+Vimos a base do comando git init
+para criar um novo repositório,
+
+00:00:11.194 --> 00:00:14.385
+do comando git clone,
+para copiar um repositório,
+
+00:00:14.427 --> 00:00:17.112
+do comand git log,
+para revisar commits existentes,
+
+00:00:17.154 --> 00:00:21.528
+e do importante comando git status,
+que observa o status do repositório.
+
+00:00:21.570 --> 00:00:26.303
+Lembre-se de baixar a planilha
+com os termos usados nesta aula,
+
+00:00:26.345 --> 00:00:29.472
+pois usaremos
+quase todos os que estão lá.
+
+00:00:29.514 --> 00:00:31.360
+Estes são a base,
+
+00:00:31.402 --> 00:00:34.841
+e construiremos em cima deles
+nesta aula com git add,
+
+00:00:34.883 --> 00:00:37.281
+git commit e git diff.
+
+00:00:37.323 --> 00:00:40.209
+O git add adiciona arquivos
+do diretório de trabalho
+
+00:00:40.251 --> 00:00:42.115
+na área temporária.
+
+00:00:42.157 --> 00:00:44.765
+O git commit pega arquivos
+da área temporária
+
+00:00:44.807 --> 00:00:48.217
+e os salva no repositório,
+que é o que cria um commit.
+
+00:00:48.259 --> 00:00:51.765
+O comando git diff é legal
+e soará bem familiar,
+
+00:00:51.807 --> 00:00:54.661
+pois já vimos
+o output dele antes.
+
+00:00:54.703 --> 00:00:58.597
+O git diff exibe a diferença
+entre duas versões de um arquivo.
+
+00:00:58.639 --> 00:01:02.200
+O output é igual
+ao do comando git log -p
+
+00:01:02.242 --> 00:01:04.302
+usado na aula anterior.
+
+00:01:04.344 --> 00:01:07.870
+Vimos comandos novos
+e um será muito familiar.
+
+00:01:07.912 --> 00:01:10.597
+Antes de usarmos
+os comandos commit e diff
+
+00:01:10.639 --> 00:01:14.207
+veremos como usar o git add.
+Vamos começar.
+
