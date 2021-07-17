@@ -1,0 +1,217 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.241 --> 00:00:03.774
+Vou fazer uma pergunta.
+O que você fez ontem?
+
+00:00:03.807 --> 00:00:06.696
+Foi à praia?
+Deu uma volta pelo bairro?
+
+00:00:06.729 --> 00:00:10.158
+Cozinhou um frango agridoce,
+porque é delicioso?
+
+00:00:10.191 --> 00:00:12.597
+E anteontem?
+
+00:00:12.630 --> 00:00:14.994
+E duas semanas atrás?
+
+00:00:15.027 --> 00:00:16.177
+Quando eu era pequeno,
+
+00:00:16.210 --> 00:00:18.413
+meus pais queriam
+que eu tivesse um diário
+
+00:00:18.446 --> 00:00:20.888
+para eu poder reler
+um dia no futuro
+
+00:00:20.921 --> 00:00:22.604
+e me lembrar
+dos lugares que fui
+
+00:00:22.637 --> 00:00:25.113
+e das experiências
+pelas quais passei.
+
+00:00:25.146 --> 00:00:28.348
+Infelizmente,
+escrevia nele uma vez por ano,
+
+00:00:28.381 --> 00:00:29.484
+o que é horrível,
+
+00:00:29.517 --> 00:00:31.586
+porque as anotações
+não eram detalhadas,
+
+00:00:31.619 --> 00:00:34.152
+e eu só citava
+eventos muito importantes.
+
+00:00:34.185 --> 00:00:36.933
+Uma boa anotação de diário
+deve ter uma data,
+
+00:00:36.966 --> 00:00:38.552
+para sabermos
+quando ela ocorreu,
+
+00:00:38.585 --> 00:00:41.645
+um título com uma pequena
+descrição da anotação
+
+00:00:41.678 --> 00:00:45.026
+e anotação em si
+com todas as informações.
+
+00:00:45.059 --> 00:00:47.284
+Sempre que uma nova anotação
+é feita no diário,
+
+00:00:47.317 --> 00:00:49.709
+é como fazer um commit
+no repositório.
+
+00:00:49.742 --> 00:00:51.620
+Assim como
+as anotações no diário,
+
+00:00:51.653 --> 00:00:54.953
+você quer que seus commits sejam
+frequentes e descritivos
+
+00:00:54.986 --> 00:00:58.366
+para que você veja o progresso
+do seu projeto ao longo do tempo.
+
+00:00:58.399 --> 00:01:01.176
+O Git grava automaticamente a data
+e as mudanças de conteúdo
+
+00:01:01.209 --> 00:01:03.449
+que foram feitas
+quando o commit é criado,
+
+00:01:03.482 --> 00:01:06.058
+então você só precisa
+fornecer um título descritivo
+
+00:01:06.091 --> 00:01:08.791
+ou uma mensagem para o commit.
+
+00:01:08.824 --> 00:01:10.669
+Você quer anotações frequentes
+
+00:01:10.702 --> 00:01:13.566
+para ver os altos e baixos da vida
+ao longo do tempo.
+
+00:01:13.599 --> 00:01:14.704
+De forma parecida,
+
+00:01:14.737 --> 00:01:18.042
+você quer fazer commits frequentes
+com mensagens descritivas.
+
+00:01:18.075 --> 00:01:19.890
+Isto facilita
+olhar para trás no projeto
+
+00:01:19.923 --> 00:01:21.971
+e ver como ele evoluiu.
+
+00:01:22.343 --> 00:01:24.210
+Ainda não vamos fazer commits,
+
+00:01:24.243 --> 00:01:27.316
+mas se acostume com a ideia
+de fazer commits frequentes
+
+00:01:27.349 --> 00:01:29.454
+com mensagens de commit
+descritivas.
+
+00:01:29.487 --> 00:01:33.782
+Mas o que é ser frequente
+e o que seria um bom commit?
+
+00:01:33.815 --> 00:01:37.146
+Quantos arquivos ou linhas de código
+devem ser incluídos no commit?
+
+00:01:37.179 --> 00:01:39.782
+Uma forma de saber
+como seria um bom commit
+
+00:01:39.815 --> 00:01:41.818
+é olhar commits existentes.
+
+00:01:41.851 --> 00:01:44.672
+As ferramentas para revisar
+o histórico de um repositório
+
+00:01:44.705 --> 00:01:47.537
+são git log e git show.
+
+00:01:47.570 --> 00:01:49.817
+Com git log, você poderá
+apresentar informações
+
+00:01:49.850 --> 00:01:51.323
+de commits existentes.
+
+00:01:51.356 --> 00:01:54.930
+O git log é muito poderoso,
+e você vai usá-lo o tempo todo.
+
+00:01:54.963 --> 00:01:56.260
+O comando git show
+
+00:01:56.293 --> 00:01:58.743
+apresenta informações
+sobre o commit em questão.
+
+00:01:58.776 --> 00:02:01.555
+Com este comando,
+você fornece o ID do commit,
+
+00:02:01.588 --> 00:02:02.980
+conhecido também
+como "SHA",
+
+00:02:03.013 --> 00:02:06.168
+e o comando apresenta informações
+apenas desse commit.
+
+00:02:06.201 --> 00:02:09.007
+Apenas dois comandos,
+git log e git show.
+
+00:02:09.040 --> 00:02:10.355
+Parece pouco, certo?
+
+00:02:10.388 --> 00:02:14.034
+Mas essa deve ser a aula
+mais importante do curso.
+
+00:02:14.067 --> 00:02:16.576
+Aprender a apresentar
+o histórico de um repositório
+
+00:02:16.609 --> 00:02:20.671
+e revisar commits específicos
+é útil para muitas coisas.
+
+00:02:20.704 --> 00:02:22.955
+Está pronto? Focado?
+
+00:02:22.988 --> 00:02:25.703
+Vamos dar uma olhada
+no todo poderoso git log.
+

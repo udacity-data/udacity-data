@@ -1,0 +1,56 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.165 --> 00:00:04.043
+A opção --stat não muda
+o output tão drasticamente
+
+00:00:04.076 --> 00:00:06.593
+quanto a --oneline.
+
+00:00:06.626 --> 00:00:09.846
+Ela só adiciona uma nova seção
+no final de cada commit.
+
+00:00:09.879 --> 00:00:13.079
+Isto nos dá uma visão mais detalhada
+do que foi mudado no commit.
+
+00:00:13.112 --> 00:00:16.174
+Esta seção aqui embaixo nos mostra
+o resumo de mudanças.
+
+00:00:16.207 --> 00:00:20.000
+Neste commit, 1 arquivo foi mudado,
+e 5 linhas foram adicionadas.
+
+00:00:20.033 --> 00:00:22.099
+Mas que arquivo foi mudado?
+
+00:00:22.132 --> 00:00:24.460
+Ele lista os arquivos
+modificados acima.
+
+00:00:24.493 --> 00:00:26.689
+O arquivo CSS foi mudado.
+
+00:00:26.722 --> 00:00:29.256
+Este commit modificou
+2 arquivos
+
+00:00:29.289 --> 00:00:33.618
+com o total de 91 inserções
+e 58 exclusões.
+
+00:00:33.651 --> 00:00:36.797
+31 das linhas foram adicionadas
+ao arquivo CSS,
+
+00:00:36.830 --> 00:00:39.419
+enquanto 118 linhas
+também foram adicionadas
+
+00:00:39.452 --> 00:00:42.060
+ou excluídas em index.html.
+

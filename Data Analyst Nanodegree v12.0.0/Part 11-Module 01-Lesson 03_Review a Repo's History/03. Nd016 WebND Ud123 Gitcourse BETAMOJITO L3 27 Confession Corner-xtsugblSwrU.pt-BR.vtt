@@ -1,0 +1,89 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.145 --> 00:00:01.894
+Preciso fazer uma confissão.
+
+00:00:01.927 --> 00:00:04.200
+Quando aprendi
+sobre a opção oneline
+
+00:00:04.233 --> 00:00:05.472
+para o registro do Git,
+
+00:00:05.505 --> 00:00:06.968
+eu fiquei muito empolgado.
+
+00:00:07.001 --> 00:00:10.877
+Eu não precisava mais rolar e rolar
+para ler todas mensagens de commit.
+
+00:00:10.910 --> 00:00:14.924
+Funcionou algumas vezes
+até que eu recebi isso.
+
+00:00:15.187 --> 00:00:16.907
+Por que não está mais
+funcionando?
+
+00:00:16.940 --> 00:00:18.534
+Tentei reiniciar o terminal.
+
+00:00:18.567 --> 00:00:20.222
+Não aconteceu nada.
+
+00:00:20.255 --> 00:00:23.544
+Reiniciei o computador
+e não funcionou.
+
+00:00:23.577 --> 00:00:27.597
+Finalmente, li a mensagem de erro
+do Git com atenção.
+
+00:00:27.630 --> 00:00:31.359
+Eu tinha digitado "online"
+em vez de oneline.
+
+00:00:31.392 --> 00:00:35.091
+Está dizendo: "fatal:
+argumento desconhecido: --online".
+
+00:00:35.124 --> 00:00:38.728
+Online não foi reconhecido,
+ou seja, o Git não o conhece.
+
+00:00:38.761 --> 00:00:41.413
+Esta mensagem de erro,
+ou coisa parecida,
+
+00:00:41.446 --> 00:00:43.370
+é comum aparecer
+na programação.
+
+00:00:43.403 --> 00:00:44.985
+Fique de olho nisso.
+
+00:00:45.018 --> 00:00:47.276
+Argumentos não encontrados
+ou não reconhecidos
+
+00:00:47.309 --> 00:00:49.772
+frequentemente
+são erros de ortografia.
+
+00:00:49.805 --> 00:00:53.300
+Moral da história,
+ortografia é importante.
+
+00:00:53.333 --> 00:00:55.805
+Fique atento para escrever
+as coisas corretamente.
+
+00:00:55.838 --> 00:00:58.795
+E também o Git sempre tenta
+dar feedbacks úteis.
+
+00:00:58.828 --> 00:01:00.294
+Sempre os leia com atenção.
+

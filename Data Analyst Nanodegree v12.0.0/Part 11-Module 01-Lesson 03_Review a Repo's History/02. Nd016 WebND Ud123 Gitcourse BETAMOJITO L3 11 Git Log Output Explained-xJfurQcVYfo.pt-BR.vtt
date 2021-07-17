@@ -1,0 +1,95 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.169 --> 00:00:02.250
+Estamos olhando
+para o registro de commits
+
+00:00:02.283 --> 00:00:04.515
+que foram feitos
+neste repositório.
+
+00:00:04.548 --> 00:00:07.885
+Este é um commit,
+este é outro.
+
+00:00:07.918 --> 00:00:11.039
+Veja quanta informação
+este registro está apresentando.
+
+00:00:11.072 --> 00:00:13.100
+Ele apresenta o SHA do commit,
+
+00:00:13.133 --> 00:00:16.567
+a pessoa que fez o commit,
+a data em que o commit foi feito
+
+00:00:16.600 --> 00:00:18.725
+e a mensagem do commit.
+
+00:00:18.758 --> 00:00:22.810
+Esta é só uma pequena descrição
+das mudanças feitas neste commit.
+
+00:00:22.843 --> 00:00:26.782
+Estes são apenas os três primeiros
+commits que cabem na tela.
+
+00:00:26.815 --> 00:00:29.522
+Há muito mais. Como sei disso?
+
+00:00:29.555 --> 00:00:33.737
+Os dois pontos mostram
+que há mais linhas de output.
+
+00:00:33.770 --> 00:00:35.624
+Se você já conhece
+a linha de comando,
+
+00:00:35.657 --> 00:00:38.773
+o Git usa o programa less
+como pager.
+
+00:00:38.806 --> 00:00:40.642
+Se você não conhece
+o less ou pagers,
+
+00:00:40.675 --> 00:00:41.765
+não tem problema.
+
+00:00:41.798 --> 00:00:44.563
+Um pager é usado
+para "paginar" conteúdo.
+
+00:00:44.596 --> 00:00:47.804
+É o jeito da linha de comando fazer
+o rolamento de página.
+
+00:00:47.837 --> 00:00:50.366
+Pressione a tecla J
+ou a seta para baixo
+
+00:00:50.399 --> 00:00:52.779
+para rolar para baixo
+uma linha de cada vez.
+
+00:00:52.812 --> 00:00:53.908
+Para rolar para cima,
+
+00:00:53.941 --> 00:00:56.385
+pressione a tecla K
+ou a seta para cima.
+
+00:00:56.418 --> 00:00:58.313
+Você sabe que chegou
+no último commit
+
+00:00:58.346 --> 00:01:01.283
+quando os dois pontos
+mudam para a palavra END.
+
+00:01:01.316 --> 00:01:04.396
+Para sair do pager,
+pressione a tecla Q.
+

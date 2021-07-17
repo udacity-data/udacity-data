@@ -1,0 +1,66 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.143 --> 00:00:02.033
+Tenho dois terminais abertos,
+
+00:00:02.066 --> 00:00:04.974
+e os dois estão localizados
+no projeto do blog.
+
+00:00:05.007 --> 00:00:07.199
+Vamos rodar git log neste aqui
+
+00:00:07.232 --> 00:00:10.752
+e git log --oneline aqui.
+
+00:00:10.785 --> 00:00:13.591
+A linha guarda as informações
+de apenas um commit.
+
+00:00:13.624 --> 00:00:15.694
+São os sete primeiros
+caracteres do SHA
+
+00:00:15.727 --> 00:00:18.001
+e a mensagem do commit.
+
+00:00:18.384 --> 00:00:20.757
+Aqui está o SHA
+do commit mais recente.
+
+00:00:20.790 --> 00:00:23.682
+E aqui está o mesmo commit
+com o SHA completo.
+
+00:00:23.715 --> 00:00:26.531
+Viu como os seis primeiros
+caracteres são iguais?
+
+00:00:26.564 --> 00:00:28.752
+Este commit é este aqui.
+
+00:00:28.785 --> 00:00:30.546
+E aqui está o segundo commit.
+
+00:00:30.579 --> 00:00:32.217
+E aqui está ele.
+
+00:00:32.250 --> 00:00:34.146
+Nada mudou no repo.
+
+00:00:34.179 --> 00:00:35.572
+A opção de --oneline
+
+00:00:35.605 --> 00:00:38.597
+apenas altera a forma
+que a informação é apresentada.
+
+00:00:38.630 --> 00:00:39.951
+É um comando bem útil
+
+00:00:39.984 --> 00:00:42.896
+para revisar rapidamente
+os commits de um repositório.
+

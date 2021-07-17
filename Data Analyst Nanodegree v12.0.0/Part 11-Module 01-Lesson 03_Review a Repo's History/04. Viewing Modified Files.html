@@ -1,0 +1,622 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Viewing Modified Files
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Review a Repo's History
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Displaying A Repository's Commits.html">
+       02. Displaying A Repository's Commits
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Changing How Git Log Displays Information.html">
+       03. Changing How Git Log Displays Information
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Viewing Modified Files.html">
+       04. Viewing Modified Files
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Viewing File Changes.html">
+       05. Viewing File Changes
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Viewing A Specific Commit.html">
+       06. Viewing A Specific Commit
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Outro.html">
+       07. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Viewing Modified Files
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          We just looked at the
+          <code>
+           --oneline
+          </code>
+          flag to show one commit per line. That's great for getting an overview of the repository. But what if we want to dig in a little to see what file or files were changed by a commit?
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          What file or files are modified?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             If you look in the repository at commit
+             <code>
+              a3dc99a
+             </code>
+             , it has the message "Center content on page".
+            </p>
+            <p>
+             What file or files were changed in this commit?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487108530016" name="264869" type="radio" value="a1487108530016"/>
+           <label for="a1487108530016">
+            <p>
+             An HTML file
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487108538219" name="264869" type="radio" value="a1487108538219"/>
+           <label for="a1487108538219">
+            <p>
+             A CSS file
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487108539480" name="264869" type="radio" value="a1487108539480"/>
+           <label for="a1487108539480">
+            <p>
+             A JavaScript file
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487108540121" name="264869" type="radio" value="a1487108540121"/>
+           <label for="a1487108540121">
+            <p>
+             An HTML and CSS file
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487108553870" name="264869" type="radio" value="a1487108553870"/>
+           <label for="a1487108553870">
+            <p>
+             An HTML and JS file
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487108557818" name="264869" type="radio" value="a1487108557818"/>
+           <label for="a1487108557818">
+            <p>
+             There's no way to know for sure
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          There's no way to know for sure
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-log---stat-intro">
+          <code>
+           git log --stat
+          </code>
+          Intro
+         </h2>
+         <p>
+          The
+          <code>
+           git log
+          </code>
+          command has a flag that can be used to display the files that have been changed in the commit, as well as the number of lines that have been added or deleted. The flag is
+          <code>
+           --stat
+          </code>
+          ("stat" is short for "statistics"):
+         </p>
+         <pre><code class="bash language-bash">$ git log --stat</code></pre>
+         <p>
+          Run this command and check out what it displays.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_Two Terminal applications side-by-side. The left one shows the result of the `git log` command with all of the information while the right one shows the result of the `git log --stat` command which lists the files that were changed as well as the number of added/removed lines._" class="img img-fluid" src="img/ud123-l3-git-log-vs-git-log-stat.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Two Terminal applications side-by-side. The left one shows the result of the
+             <code>
+              git log
+             </code>
+             command with all of the information while the right one shows the result of the
+             <code>
+              git log --stat
+             </code>
+             command which lists the files that were changed as well as the number of added/removed lines.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 33 Git Log Vs Git Log --Stat Walkthru
+         </p>
+        </h3>
+        <video controls="">
+         <source src="04. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 33 Git Log Vs Git Log --Stat Walkthru-aOICKP_9xiY.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="04. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 33 Git Log Vs Git Log --Stat Walkthru-aOICKP_9xiY.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="04. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 33 Git Log Vs Git Log --Stat Walkthru-aOICKP_9xiY.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="04. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 33 Git Log Vs Git Log --Stat Walkthru-aOICKP_9xiY.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="04. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 33 Git Log Vs Git Log --Stat Walkthru-aOICKP_9xiY.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          How Many Files Were Modified?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Using what you've learned so far about
+             <code>
+              git log
+             </code>
+             and its flags, how many files were modified in the commit with the SHA
+             <code>
+              6f04ddd
+             </code>
+             ?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487109181976" name="264873" type="radio" value="a1487109181976"/>
+           <label for="a1487109181976">
+            <p>
+             1 file
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487109223453" name="264873" type="radio" value="a1487109223453"/>
+           <label for="a1487109223453">
+            <p>
+             2 files
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487109224094" name="264873" type="radio" value="a1487109224094"/>
+           <label for="a1487109224094">
+            <p>
+             9 files
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487109224679" name="264873" type="radio" value="a1487109224679"/>
+           <label for="a1487109224679">
+            <p>
+             10 files
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          2 files
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          How Many Files Were Modified 2?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             You did so well with the first one, so here's another! How many files were modified in the commit with the SHA
+             <code>
+              8d3ea36
+             </code>
+             ?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487109281528" name="264874" type="radio" value="a1487109281528"/>
+           <label for="a1487109281528">
+            <p>
+             1 file
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487109308820" name="264874" type="radio" value="a1487109308820"/>
+           <label for="a1487109308820">
+            <p>
+             2 files
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487109309404" name="264874" type="radio" value="a1487109309404"/>
+           <label for="a1487109309404">
+            <p>
+             3 files
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487109309921" name="264874" type="radio" value="a1487109309921"/>
+           <label for="a1487109309921">
+            <p>
+             5 files
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          2 files
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          How Many Lines Were Modified?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Now it's time to look at the other info the
+             <code>
+              --stat
+             </code>
+             flag displays. How many lines of code were
+             <em>
+              deleted
+             </em>
+             in
+             <code>
+              index.html
+             </code>
+             in the commit with the SHA
+             <code>
+              8d3ea36
+             </code>
+             ?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487109347932" name="264876" type="radio" value="a1487109347932"/>
+           <label for="a1487109347932">
+            <p>
+             2 lines
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487109411994" name="264876" type="radio" value="a1487109411994"/>
+           <label for="a1487109411994">
+            <p>
+             4 lines
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487109412646" name="264876" type="radio" value="a1487109412646"/>
+           <label for="a1487109412646">
+            <p>
+             9 lines
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487109413141" name="264876" type="radio" value="a1487109413141"/>
+           <label for="a1487109413141">
+            <p>
+             13 lines
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487109414638" name="264876" type="radio" value="a1487109414638"/>
+           <label for="a1487109414638">
+            <p>
+             28 lines
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          4 lines
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-log---stat-recap">
+          <code>
+           git log --stat
+          </code>
+          Recap
+         </h2>
+         <p>
+          To recap, the
+          <code>
+           --stat
+          </code>
+          flag is used to alter how
+          <code>
+           git log
+          </code>
+          displays information:
+         </p>
+         <pre><code class="bash language-bash">$ git log --stat</code></pre>
+         <p>
+          This command:
+         </p>
+         <ul>
+          <li>
+           displays the file(s) that have been modified
+          </li>
+          <li>
+           displays the number of lines that have been added/removed
+          </li>
+          <li>
+           displays a summary line with the total number of modified files and lines that have been added/removed
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. Viewing File Changes.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Viewing Modified Files')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

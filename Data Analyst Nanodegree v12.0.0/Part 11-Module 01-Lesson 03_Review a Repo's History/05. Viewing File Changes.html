@@ -1,0 +1,804 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Viewing File Changes
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Review a Repo's History
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Displaying A Repository's Commits.html">
+       02. Displaying A Repository's Commits
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Changing How Git Log Displays Information.html">
+       03. Changing How Git Log Displays Information
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Viewing Modified Files.html">
+       04. Viewing Modified Files
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Viewing File Changes.html">
+       05. Viewing File Changes
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Viewing A Specific Commit.html">
+       06. Viewing A Specific Commit
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Outro.html">
+       07. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          05. Viewing File Changes
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="viewing-changes">
+          Viewing Changes
+         </h2>
+         <p>
+          We know that
+          <code>
+           git log
+          </code>
+          will show us the commits in a repository, and if we add the
+          <code>
+           --stat
+          </code>
+          flag, we can see what files were modified and how many lines of code were added or removed. Wouldn't it be awesome if we could see exactly
+          <em>
+           what those changes were
+          </em>
+          ?
+         </p>
+         <p>
+          If this isn't the best part of a version control system, I don't know what is! Being able to see the exact changes that were made to a file is incredibly important! Being able to say, "oh, ok, so this commit adds 5 pixels of border-radius to the button!".
+         </p>
+         <p>
+          For example, in the blog project, the commit
+          <code>
+           a3dc99a
+          </code>
+          has the message "center content on page" and modifies the CSS file by adding 5 lines. What are those five lines that were added? How can we figure out what those 5 lines are?
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application. The command `git log --stat` is run. It displays commits and zooms in on the first commit's stats showing the CSS file with 5 lines added._" class="img img-fluid" src="img/ud123-l3-git-log-stat.gif"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application. The command
+             <code>
+              git log --stat
+             </code>
+             is run. It displays commits and zooms in on the first commit's stats showing the CSS file with 5 lines added.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-log--p">
+          <code>
+           git log -p
+          </code>
+         </h2>
+         <p>
+          The
+          <code>
+           git log
+          </code>
+          command has a flag that can be used to display the actual changes made to a file. The flag is
+          <code>
+           --patch
+          </code>
+          which can be shortened to just
+          <code>
+           -p
+          </code>
+          :
+         </p>
+         <pre><code class="bash language-bash">$ git log -p</code></pre>
+         <p>
+          Run this command and check out what it displays.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the output of the `git log -p` command. Note - the colors in your terminal might differ._" class="img img-fluid" src="img/ud123-l3-git-log-p.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of the
+             <code>
+              git log -p
+             </code>
+             command. Note - the colors in your terminal might differ.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 42 Git Log -P Output Walkthru
+         </p>
+        </h3>
+        <video controls="">
+         <source src="05. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 42 Git Log -P Output Walkthru-A8Kwocr-K8c.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="05. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 42 Git Log -P Output Walkthru-A8Kwocr-K8c.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="05. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 42 Git Log -P Output Walkthru-A8Kwocr-K8c.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="05. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 42 Git Log -P Output Walkthru-A8Kwocr-K8c.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="05. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 42 Git Log -P Output Walkthru-A8Kwocr-K8c.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the output of the `git log -p` command. Check below for a detailed description of the output._" class="img img-fluid" src="img/ud123-l3-git-log-p-lines-removed-annotated.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of the
+             <code>
+              git log -p
+             </code>
+             command. Check below for a detailed description of the output.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="annotated-git-log--p-output">
+          Annotated
+          <code>
+           git log -p
+          </code>
+          Output
+         </h2>
+         <p>
+          Using the image above, let's do a quick recap of the
+          <code>
+           git log -p
+          </code>
+          output:
+         </p>
+         <ul>
+          <li>
+           🔵  - the file that is being displayed
+          </li>
+          <li>
+           🔶  - the hash of the first version of the file and the hash of the second version of the file
+           <ul>
+            <li>
+             not usually important, so it's safe to ignore
+            </li>
+           </ul>
+          </li>
+          <li>
+           ❤️  - the old version and current version of the file
+          </li>
+          <li>
+           🔍  - the lines where the file is added and how many lines there are
+           <ul>
+            <li>
+             <code>
+              -15,83
+             </code>
+             indicates that the old version (represented by the
+             <code>
+              -
+             </code>
+             ) started at line 15 and that the file had 83 lines
+            </li>
+            <li>
+             <code>
+              +15,85
+             </code>
+             indicates that the current version (represented by the
+             <code>
+              +
+             </code>
+             ) starts at line 15 and that there are now 85 lines…these 85 lines are shown in the patch below
+            </li>
+           </ul>
+          </li>
+          <li>
+           ✏️  - the actual changes made in the commit
+           <ul>
+            <li>
+             lines that are red and start with a minus (
+             <code>
+              -
+             </code>
+             ) were in the original version of the file but have been removed by the commit
+            </li>
+            <li>
+             lines that are green and start with a plus (
+             <code>
+              +
+             </code>
+             ) are new lines that have been added in the commit
+            </li>
+           </ul>
+          </li>
+         </ul>
+         <h2 id="further-research">
+          Further Research
+         </h2>
+         <ul>
+          <li>
+           <a href="https://git-scm.com/docs/git-diff#_generating_patches_with_p" rel="noopener noreferrer" target="_blank">
+            Generating patches with -p
+           </a>
+           from the Git docs
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Edits Start Where?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Using what you've learned so far about
+             <code>
+              git log
+             </code>
+             's
+             <code>
+              -p
+             </code>
+             flag, look at the commit with the SHA
+             <code>
+              50d835d
+             </code>
+             . What line number in
+             <code>
+              app.css
+             </code>
+             should you start looking at to see what has been changed?
+            </p>
+            <p>
+             Tip - don't forget that while looking at the
+             <code>
+              git log
+             </code>
+             output, the
+             <code>
+              d
+             </code>
+             key will scroll
+             <em>
+              down
+             </em>
+             by half a page while the
+             <code>
+              u
+             </code>
+             key will scroll
+             <em>
+              up
+             </em>
+             half a page.
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487110111347" name="264886" type="radio" value="a1487110111347"/>
+           <label for="a1487110111347">
+            <p>
+             line 63
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110189938" name="264886" type="radio" value="a1487110189938"/>
+           <label for="a1487110189938">
+            <p>
+             line 89
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110190411" name="264886" type="radio" value="a1487110190411"/>
+           <label for="a1487110190411">
+            <p>
+             line 127
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110190940" name="264886" type="radio" value="a1487110190940"/>
+           <label for="a1487110190940">
+            <p>
+             line 155
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          line 127
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          What Was Added?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Using
+             <code>
+              git log
+             </code>
+             and any of its flags, what code was added in by commit
+             <code>
+              4a60beb
+             </code>
+             ?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487110238309" name="264892" type="radio" value="a1487110238309"/>
+           <label for="a1487110238309">
+            <p>
+             color: #352d2d;
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110269522" name="264892" type="radio" value="a1487110269522"/>
+           <label for="a1487110269522">
+            <p>
+             color: #250808;
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110270006" name="264892" type="radio" value="a1487110270006"/>
+           <label for="a1487110270006">
+            <p>
+             color: #333333;
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110270558" name="264892" type="radio" value="a1487110270558"/>
+           <label for="a1487110270558">
+            <p>
+             color: #2e3d49;
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          color: #2e3d49;
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Combine Flags?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             <code>
+              git log --stat
+             </code>
+             and
+             <code>
+              git log -p
+             </code>
+             are both really helpful commands. Wouldn't it be great if we could have both of their output at the same time? Hmmm…
+            </p>
+            <p>
+             What happens when
+             <code>
+              git log -p --stat
+             </code>
+             is run?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487110311845" name="264895" type="radio" value="a1487110311845"/>
+           <label for="a1487110311845">
+            <p>
+             it displays only the patch information
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110335977" name="264895" type="radio" value="a1487110335977"/>
+           <label for="a1487110335977">
+            <p>
+             it displays only the stats
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110336517" name="264895" type="radio" value="a1487110336517"/>
+           <label for="a1487110336517">
+            <p>
+             it displays both with the patch info above the stats info
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110338181" name="264895" type="radio" value="a1487110338181"/>
+           <label for="a1487110338181">
+            <p>
+             it displays both with the stats info above the patch info
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          it displays both with the stats info above the patch info
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          In the video above, we looked at a commit that indents a lot of code. The patch output shows all of those lines as having been removed and then added again at their new level of indentation. Showing all of the indent changes makes it hard to tell what was actually added, though.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Whitespace Changes?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             What does the
+             <code>
+              -w
+             </code>
+             flag do to the patch information? For help, check
+             <a href="https://git-scm.com/docs/git-diff" rel="noopener noreferrer" target="_blank">
+              this Git docs page
+             </a>
+             .
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487110387340" name="264896" type="radio" value="a1487110387340"/>
+           <label for="a1487110387340">
+            <p>
+             it displays non-whitespace characters in blinking text
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110448546" name="264896" type="radio" value="a1487110448546"/>
+           <label for="a1487110448546">
+            <p>
+             it displays non-whitespace changes in bold
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110449199" name="264896" type="radio" value="a1487110449199"/>
+           <label for="a1487110449199">
+            <p>
+             it ignores whitespace changes
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487110449773" name="264896" type="radio" value="a1487110449773"/>
+           <label for="a1487110449773">
+            <p>
+             it shows a separate patch area with just new/removed content
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          it ignores whitespace changes
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-log--p-recap">
+          <code>
+           git log -p
+          </code>
+          Recap
+         </h2>
+         <p>
+          To recap, the
+          <code>
+           -p
+          </code>
+          flag (which is the same as the
+          <code>
+           --patch
+          </code>
+          flag)  is used to alter how
+          <code>
+           git log
+          </code>
+          displays information:
+         </p>
+         <pre><code class="bash language-bash">$ git log -p</code></pre>
+         <p>
+          This command adds the following to the default output:
+         </p>
+         <ul>
+          <li>
+           displays the files that have been modified
+          </li>
+          <li>
+           displays the location of the lines that have been added/removed
+          </li>
+          <li>
+           displays the actual changes that have been made
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="06. Viewing A Specific Commit.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. Viewing File Changes')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

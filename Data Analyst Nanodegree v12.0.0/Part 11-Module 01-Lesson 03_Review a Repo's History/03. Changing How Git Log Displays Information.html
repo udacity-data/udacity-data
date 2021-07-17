@@ -1,0 +1,575 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Changing How Git Log Displays Information
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Review a Repo's History
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Displaying A Repository's Commits.html">
+       02. Displaying A Repository's Commits
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Changing How Git Log Displays Information.html">
+       03. Changing How Git Log Displays Information
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Viewing Modified Files.html">
+       04. Viewing Modified Files
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Viewing File Changes.html">
+       05. Viewing File Changes
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Viewing A Specific Commit.html">
+       06. Viewing A Specific Commit
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Outro.html">
+       07. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. Changing How Git Log Displays Information
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          You made it all this way - congrats on getting this far! Seriously! Learning Git is a challenging undertaking. I applaud you on your perseverance.
+         </p>
+         <p>
+          Take a look at this output from running
+          <code>
+           git log
+          </code>
+          :
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the output from running `git log`._" class="img img-fluid" src="img/ud123-l3-git-log-output.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output from running
+             <code>
+              git log
+             </code>
+             .
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          We've been looking closely at all the detailed information that
+          <code>
+           git log
+          </code>
+          displays. But now, take a step back and look at all of the information as a whole.
+         </p>
+         <p>
+          Let's think about some of these questions:
+         </p>
+         <ul>
+          <li>
+           <strong>
+            the SHA
+           </strong>
+           -
+           <code>
+            git log
+           </code>
+           will display the complete SHA for every single commit. Each SHA is unique, so we don't really need to see the
+           <em>
+            entire
+           </em>
+           SHA. We could get by perfectly fine with knowing just the first 6-8 characters. Wouldn't it be great if we could save some space and show just the first 5 or so characters of the SHA?
+          </li>
+          <li>
+           <strong>
+            the author
+           </strong>
+           - the
+           <code>
+            git log
+           </code>
+           output displays the commit author for
+           <em>
+            every single commit
+           </em>
+           ! It could be different for other repositories that have multiple people collaborating together, but for this one, there's only one person making all of the commits, so the commit author will be identical for all of them. Do we need to see the author for each one? What if we wanted to hide that information?
+          </li>
+          <li>
+           <strong>
+            the date
+           </strong>
+           - By default,
+           <code>
+            git log
+           </code>
+           will display the date for each commit. But do we really care about the commit's date? Knowing the date might be important occasionally, but typically knowing the date isn't vitally important and can be ignored in a lot of cases. Is there a way we could hide that to save space?
+          </li>
+          <li>
+           <strong>
+            the commit message
+           </strong>
+           - this is one of the most important parts of a commit message…we usually always want to see this
+          </li>
+         </ul>
+         <p>
+          What could we do here to not waste a lot of space and make the output smaller? We can use a
+          <strong>
+           flag
+          </strong>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <blockquote>
+          <p>
+           TIP: This isn't a course on the command line, but a flag is used to alter how a program functions. For example, the
+           <code>
+            ls
+           </code>
+           command will list all of the files in the current directory. The
+           <code>
+            ls
+           </code>
+           command has a
+           <code>
+            -l
+           </code>
+           flag (i.e.
+           <code>
+            ls -l
+           </code>
+           ) that runs the same
+           <code>
+            ls
+           </code>
+           command but alters how it works; it now displays the information in the
+           <em>
+            long
+           </em>
+           format (the
+           <code>
+            -l
+           </code>
+           for
+           <em>
+            long
+           </em>
+           ).
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           Flags can be used to alter how a program functions and/or what is displayed. To learn more about command line programs and flags, check out our course
+           <a href="https://www.udacity.com/course/linux-command-line-basics--ud595" rel="noopener noreferrer" target="_blank">
+            Linux Command Line Basics
+           </a>
+           .
+          </p>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-log---oneline">
+          git log --oneline
+         </h2>
+         <p>
+          The
+          <code>
+           git log
+          </code>
+          command has a flag that can be used to alter how it displays the repository's information. That flag is
+          <code>
+           --oneline
+          </code>
+          :
+         </p>
+         <pre><code class="bash language-bash">$ git log --oneline</code></pre>
+         <p>
+          Check out how different the output is!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_Two Terminal applications side-by-side. The left one shows the result of the `git log` command with all of the information while the right one shows the result of the `git log --oneline` command with just the short SHA and the commit message._" class="img img-fluid" src="img/ud123-l3-git-log-vs-git-log-oneline.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Two Terminal applications side-by-side. The left one shows the result of the
+             <code>
+              git log
+             </code>
+             command with all of the information while the right one shows the result of the
+             <code>
+              git log --oneline
+             </code>
+             command with just the short SHA and the commit message.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 25 Git Log Vs Git Log --Oneline Walkthru
+         </p>
+        </h3>
+        <video controls="">
+         <source src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 25 Git Log Vs Git Log --Oneline Walkthru-rn6v_QgYFnU.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 25 Git Log Vs Git Log --Oneline Walkthru-rn6v_QgYFnU.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 25 Git Log Vs Git Log --Oneline Walkthru-rn6v_QgYFnU.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 25 Git Log Vs Git Log --Oneline Walkthru-rn6v_QgYFnU.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 25 Git Log Vs Git Log --Oneline Walkthru-rn6v_QgYFnU.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Quitting git log --oneline
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             You're deep in the weeds of the
+             <code>
+              git log --oneline
+             </code>
+             command and want to get out of the
+             <code>
+              git log --oneline
+             </code>
+             output and return to the regular command prompt. What do you press on the keyboard to return to the regular command prompt?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1486771373266" name="264432" type="radio" value="a1486771373266"/>
+           <label for="a1486771373266">
+            <p>
+             the
+             <code>
+              esc
+             </code>
+             key
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1486771380667" name="264432" type="radio" value="a1486771380667"/>
+           <label for="a1486771380667">
+            <p>
+             the
+             <code>
+              q
+             </code>
+             key
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1486771381172" name="264432" type="radio" value="a1486771381172"/>
+           <label for="a1486771381172">
+            <p>
+             the
+             <code>
+              ctrl
+             </code>
+             +
+             <code>
+              c
+             </code>
+             keys
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1486771381724" name="264432" type="radio" value="a1486771381724"/>
+           <label for="a1486771381724">
+            <p>
+             the
+             <code>
+              ctrl
+             </code>
+             +
+             <code>
+              d
+             </code>
+             keys
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          the `q` key
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 27 Confession Corner
+         </p>
+        </h3>
+        <video controls="">
+         <source src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 27 Confession Corner-xtsugblSwrU.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 27 Confession Corner-xtsugblSwrU.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 27 Confession Corner-xtsugblSwrU.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 27 Confession Corner-xtsugblSwrU.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L3 27 Confession Corner-xtsugblSwrU.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-log---oneline-recap">
+          git log --oneline Recap
+         </h2>
+         <p>
+          To recap, the
+          <code>
+           --oneline
+          </code>
+          flag is used to alter how
+          <code>
+           git log
+          </code>
+          displays information:
+         </p>
+         <pre><code class="bash language-bash">$ git log --oneline</code></pre>
+         <p>
+          This command:
+         </p>
+         <ul>
+          <li>
+           lists one commit per line
+          </li>
+          <li>
+           shows the first 7 characters of the commit's SHA
+          </li>
+          <li>
+           shows the commit's message
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. Viewing Modified Files.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Changing How Git Log Displays Information')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
