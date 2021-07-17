@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.590 --> 00:00:05.169
+In the last video you saw some output that had
+
+00:00:05.169 --> 00:00:09.309
+the following information regarding the coefficients and our logistic regression model.
+
+00:00:09.310 --> 00:00:11.350
+Similar to in the regression case,
+
+00:00:11.349 --> 00:00:14.500
+we might use the p values here to help us understand if
+
+00:00:14.500 --> 00:00:15.879
+a particular variable was
+
+00:00:15.880 --> 00:00:19.810
+significant in helping us predict if a transaction was fraud or not.
+
+00:00:19.809 --> 00:00:21.879
+Furthermore, we can interpret
+
+00:00:21.879 --> 00:00:26.349
+these coefficients but not exactly in the way that you've seen before.
+
+00:00:26.350 --> 00:00:29.995
+First, we need to exponentiation each of the coefficients.
+
+00:00:29.995 --> 00:00:33.325
+Then, with quantitative variables we would say,
+
+00:00:33.325 --> 00:00:36.295
+for a one unit increase in your explanatory variable,
+
+00:00:36.295 --> 00:00:39.670
+we expect a multiplicative change in the odds of
+
+00:00:39.670 --> 00:00:43.810
+being in the one category to be the exponential of your coefficient,
+
+00:00:43.810 --> 00:00:46.164
+holding all other variables constant.
+
+00:00:46.164 --> 00:00:48.490
+The way you encode dummy variables in
+
+00:00:48.490 --> 00:00:52.960
+logistic regression is exactly the same as in multiple linear regression.
+
+00:00:52.960 --> 00:00:56.380
+So interpreting the dummy variable coefficients is only
+
+00:00:56.380 --> 00:01:00.300
+changed again by exponentiating the coefficient.
+
+00:01:00.299 --> 00:01:03.309
+You can then interpret the exponentiated coefficient
+
+00:01:03.310 --> 00:01:07.420
+attached to your dummy variable in a similar way as before.
+
+00:01:07.420 --> 00:01:10.075
+In this category as compared to the baseline,
+
+00:01:10.075 --> 00:01:15.655
+we expect a multiplicative change in the odds of being in the one category of this value,
+
+00:01:15.655 --> 00:01:18.450
+holding all other variables constant.
+
+00:01:18.450 --> 00:01:23.000
+This might seem confusing now but let's try it out and you'll see that it isn't so bad.
+

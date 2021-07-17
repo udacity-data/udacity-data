@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.240 --> 00:00:05.700
+When determining how well your logistic regression model
+
+00:00:05.700 --> 00:00:07.980
+is doing at predicting the correct labels,
+
+00:00:07.980 --> 00:00:11.144
+the most common measure to use is called, accuracy.
+
+00:00:11.144 --> 00:00:13.439
+Accuracy is the proportion of
+
+00:00:13.439 --> 00:00:18.265
+correctly labeled rows divided by the total number of rows in the data set.
+
+00:00:18.265 --> 00:00:21.390
+There are some cases where accuracy won't work well,
+
+00:00:21.390 --> 00:00:25.585
+particularly when you have large class imbalances in your data set.
+
+00:00:25.585 --> 00:00:29.670
+With that in mind, Sebastian will be going through some of the other metrics that are
+
+00:00:29.670 --> 00:00:31.980
+commonly used and how to understand
+
+00:00:31.980 --> 00:00:34.829
+whether your model is performing well with these metrics.
+
+00:00:34.829 --> 00:00:39.000
+Some of the references made in these videos are not true for this class as
+
+00:00:39.000 --> 00:00:40.289
+this information is part of
+
+00:00:40.289 --> 00:00:44.435
+the full free machine learning course linked in the instructor notes below.
+
+00:00:44.435 --> 00:00:46.530
+Once Sebastian has shown you these metrics,
+
+00:00:46.530 --> 00:00:49.009
+we'll be working together to implement them in Python.
+

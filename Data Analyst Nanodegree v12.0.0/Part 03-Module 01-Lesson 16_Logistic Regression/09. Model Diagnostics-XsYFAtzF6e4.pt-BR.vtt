@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:02.200
+DIAGNÓSTICO DE MODELO
+
+00:00:03.100 --> 00:00:05.500
+Ao determinar como seu modelo
+de regressão logística
+
+00:00:05.533 --> 00:00:07.700
+está se saindo
+na previsão de rótulos,
+
+00:00:07.733 --> 00:00:11.150
+a medida mais usada
+é a acurácia.
+
+00:00:11.183 --> 00:00:14.900
+"Acurácia" é a proporção
+entre linhas corretamente rotuladas
+
+00:00:14.933 --> 00:00:18.050
+e número total de linhas
+no conjunto de dados.
+
+00:00:18.083 --> 00:00:21.450
+Há alguns casos em que a acurácia
+não funciona bem,
+
+00:00:21.483 --> 00:00:24.050
+principalmente quando há
+grandes desequilíbrios de classe
+
+00:00:24.083 --> 00:00:26.600
+no seu conjunto de dados.
+Com isso em mente,
+
+00:00:26.633 --> 00:00:29.250
+Sebastian abordará
+outras métricas
+
+00:00:29.283 --> 00:00:30.700
+comumente usadas
+
+00:00:30.733 --> 00:00:34.650
+e como entender se seu modelo está
+se portando bem com essas métricas.
+
+00:00:34.683 --> 00:00:36.800
+Algumas das referências
+feitas nestes vídeos
+
+00:00:36.833 --> 00:00:40.050
+não procedem para esta classe,
+já que esta informação faz parte
+
+00:00:40.083 --> 00:00:44.250
+do curso gratuito de aprendizado
+de máquina, nas notas abaixo.
+
+00:00:44.283 --> 00:00:46.500
+Quando Sebastian te mostrar
+essas métricas,
+
+00:00:46.533 --> 00:00:49.300
+trabalharemos juntos
+para implementá-las no Python.
+

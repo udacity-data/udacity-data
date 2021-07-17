@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.725
+From the last video and quiz,
+
+00:00:01.725 --> 00:00:04.259
+you now have a logistic regression model.
+
+00:00:04.259 --> 00:00:06.779
+In this video, we will take a look at these coefficients and
+
+00:00:06.780 --> 00:00:09.553
+the output to see how we can interpret each of them.
+
+00:00:09.553 --> 00:00:12.295
+So we're going to pay attention to these coefficients here.
+
+00:00:12.294 --> 00:00:14.730
+And in most cases we don't care about the intercept,
+
+00:00:14.730 --> 00:00:18.149
+we only care about the ones that are attached to our explanatory variables.
+
+00:00:18.149 --> 00:00:20.890
+If you need to look at how this was set up, essentially,
+
+00:00:20.890 --> 00:00:22.972
+we just did what we did in the previous video,
+
+00:00:22.972 --> 00:00:25.559
+b ut I did the same thing with the weekday and weekend.
+
+00:00:25.559 --> 00:00:29.089
+We added the intercept and then we fit a model for all of this.
+
+00:00:29.089 --> 00:00:30.589
+So in order to interpret these,
+
+00:00:30.589 --> 00:00:33.130
+we first need to exponentiate each.
+
+00:00:33.130 --> 00:00:35.760
+We will exponentiate.
+
+00:00:35.759 --> 00:00:40.839
+Now each of these resulting values is the multiplicative change in the odds.
+
+00:00:40.840 --> 00:00:46.250
+Specifically, for the weekday dummy variable we would say, on weekdays,
+
+00:00:46.250 --> 00:00:50.829
+fraud is 12.76 times as likely as on weekends,
+
+00:00:50.829 --> 00:00:53.004
+holding all other variables constant.
+
+00:00:53.005 --> 00:00:56.325
+Which in this case would mean that the duration doesn't change.
+
+00:00:56.325 --> 00:00:59.455
+We can also interpret the coefficient on duration as
+
+00:00:59.454 --> 00:01:02.902
+for each one unit increase in the duration on the page,
+
+00:01:02.902 --> 00:01:05.875
+fraud is 0.23 times as likely,
+
+00:01:05.875 --> 00:01:08.644
+holding all other variables constant.
+
+00:01:08.644 --> 00:01:11.245
+When you receive multiplicative changes less than one,
+
+00:01:11.245 --> 00:01:13.228
+like we did here with the ration,
+
+00:01:13.227 --> 00:01:16.444
+it's often useful to compute the reciprocal.
+
+00:01:16.444 --> 00:01:19.000
+This changes the direction for the unit increase,
+
+00:01:19.000 --> 00:01:20.935
+to a unit decrease.
+
+00:01:20.935 --> 00:01:25.525
+So we could say, for every one unit decrease in the duration on the page,
+
+00:01:25.525 --> 00:01:28.399
+fraud is 4.32 times as likely,
+
+00:01:28.399 --> 00:01:30.159
+if all else is held constant.
+
+00:01:30.159 --> 00:01:34.140
+In this case, that would be whether or not it's a weekday or a weekend.
+
+00:01:34.140 --> 00:01:37.599
+This flip often helps an audience better relate to the-
+

@@ -1,0 +1,734 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Notebook + Quiz: Model Diagnostics
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Logistic Regression
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Video Introduction.html">
+       01. Video: Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Video Fitting Logistic Regression.html">
+       02. Video: Fitting Logistic Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Quiz Logistic Regression Quick Check.html">
+       03. Quiz: Logistic Regression Quick Check
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Video Fitting Logistic Regression in Python.html">
+       04. Video: Fitting Logistic Regression in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Notebook + Quiz Fitting Logistic Regression in Python.html">
+       05. Notebook + Quiz: Fitting Logistic Regression in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Video Interpreting Results - Part I.html">
+       06. Video: Interpreting Results - Part I
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Video (ScreenCast) Interpret Results - Part II.html">
+       07. Video (ScreenCast): Interpret Results - Part II
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Notebook + Quiz Interpret Results.html">
+       08. Notebook + Quiz: Interpret Results
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Video Model Diagnostics + Performance Metrics.html">
+       09. Video: Model Diagnostics + Performance Metrics
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Confusion Matrices.html">
+       10. Confusion Matrices
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Confusion Matrix Practice 1.html">
+       11. Confusion Matrix Practice 1
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Confusion Matrix Practice 2.html">
+       12. Confusion Matrix Practice 2
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Filling in a Confusion Matrix.html">
+       13. Filling in a Confusion Matrix
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Confusion Matrix False Alarms.html">
+       14. Confusion Matrix: False Alarms
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Confusion Matrix for Eigenfaces.html">
+       15. Confusion Matrix for Eigenfaces
+      </a>
+     </li>
+     <li class="">
+      <a href="16. How Many Schroeders.html">
+       16. How Many Schroeders
+      </a>
+     </li>
+     <li class="">
+      <a href="17. How Many Schroeder Predictions.html">
+       17. How Many Schroeder Predictions
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Classifying Chavez Correctly 1.html">
+       18. Classifying Chavez Correctly 1
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Classifying Chavez Correctly 2.html">
+       19. Classifying Chavez Correctly 2
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Precision and Recall.html">
+       20. Precision and Recall
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Powell Precision and Recall.html">
+       21. Powell Precision and Recall
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Bush Precision and Recall.html">
+       22. Bush Precision and Recall
+      </a>
+     </li>
+     <li class="">
+      <a href="23. True Positives in Eigenfaces.html">
+       23. True Positives in Eigenfaces
+      </a>
+     </li>
+     <li class="">
+      <a href="24. False Positives in Eigenfaces.html">
+       24. False Positives in Eigenfaces
+      </a>
+     </li>
+     <li class="">
+      <a href="25. False Negatives in Eigenfaces.html">
+       25. False Negatives in Eigenfaces
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Practicing TP, FP, FN with Rumsfeld.html">
+       26. Practicing TP, FP, FN with Rumsfeld
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Equation for Precision.html">
+       27. Equation for Precision
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Equation for Recall.html">
+       28. Equation for Recall
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Screencast Model Diagnostics in Python - Part I.html">
+       29. Screencast: Model Diagnostics in Python - Part I
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Notebook + Quiz Model Diagnostics.html">
+       30. Notebook + Quiz: Model Diagnostics
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Video Final Thoughts On Shifting to Machine Learning.html">
+       31. Video: Final Thoughts On Shifting to Machine Learning
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Text Recap.html">
+       32. Text: Recap
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Video Congratulations.html">
+       33. Video: Congratulations
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          30. Notebook + Quiz: Model Diagnostics
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Using the results of your confusion matrix, provide the value next to the description of the value.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           The number of non-admits correctly identified as non-admits
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           The number of admits correctly identified as admits.
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           The number of admits incorrectly identified as non-admits.
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           The number of non-admits incorrectly identified as admits.
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Description
+            </p>
+           </th>
+           <th>
+            <p>
+             Value
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             22
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             56
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Description
+             </p>
+            </th>
+            <th>
+             <p>
+              Value
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The number of non-admits incorrectly identified as admits.
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              22
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The number of admits incorrectly identified as non-admits.
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The number of admits correctly identified as admits.
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              56
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               The number of non-admits correctly identified as non-admits
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Match each answer to the question it answers.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           If we really care about correctly identifying the accepted students as accepted, which metric do we care about the most?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           If we only care obtaining the most correctly identified cases whether accepted or non-accepted, which metric do we care about the most?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What was the recall for the test data?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What was the precision for the test data?
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Question
+            </p>
+           </th>
+           <th>
+            <p>
+             Answer
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Recall
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             1.0
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.725
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0.083
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Precision
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Accuracy
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Question
+             </p>
+            </th>
+            <th>
+             <p>
+              Answer
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Recall
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               If we really care about correctly identifying the accepted students as accepted, which metric do we care about the most?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              1.0
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What was the precision for the test data?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0.083
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What was the recall for the test data?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Accuracy
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               If we only care obtaining the most correctly identified cases whether accepted or non-accepted, which metric do we care about the most?
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="31. Video Final Thoughts On Shifting to Machine Learning.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('30. Notebook + Quiz: Model Diagnostics')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,117 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.500 --> 00:00:02.350
+INTERPRETANDO RESULTADOS
+PARTE 1
+
+00:00:02.383 --> 00:00:04.700
+No vídeo anterior,
+você viu uma saída
+
+00:00:04.733 --> 00:00:07.400
+que continha a seguinte informação
+sobre os coeficientes
+
+00:00:07.433 --> 00:00:09.450
+no nosso modelo
+de regressão logística.
+
+00:00:09.483 --> 00:00:13.150
+Similarmente ao caso de regressão,
+podemos usar valores P aqui
+
+00:00:13.183 --> 00:00:16.700
+para entendemos
+se uma dada variável foi relevante
+
+00:00:16.733 --> 00:00:19.950
+na previsão de fraude ou não
+de uma transação.
+
+00:00:19.983 --> 00:00:22.950
+Além disso, podemos interpretar
+esses coeficientes.
+
+00:00:22.983 --> 00:00:26.100
+Mas não da forma
+que você viu antes.
+
+00:00:26.133 --> 00:00:30.050
+Primeiro, temos que exponenciar
+cada um dos coeficientes.
+
+00:00:30.083 --> 00:00:32.200
+Depois,
+com variáveis quantitativas,
+
+00:00:32.233 --> 00:00:34.500
+diríamos que,
+para um incremento de uma unidade
+
+00:00:34.533 --> 00:00:36.150
+na sua variável explicativa,
+
+00:00:36.183 --> 00:00:39.250
+esperamos uma mudança multiplicativa
+na probabilidade
+
+00:00:39.283 --> 00:00:41.300
+de estar na categoria
+
+00:00:41.333 --> 00:00:43.850
+para ser exponencial
+do seu coeficiente,
+
+00:00:43.883 --> 00:00:46.150
+mantendo todas
+as demais variáveis constantes.
+
+00:00:46.183 --> 00:00:49.500
+A forma de codificar variáveis
+fictícias em regressão logística
+
+00:00:49.533 --> 00:00:52.950
+é idêntica à forma
+da regressão linear múltipla.
+
+00:00:52.983 --> 00:00:55.500
+Interpretar os coeficientes
+da variável fictícia
+
+00:00:55.533 --> 00:01:00.150
+só muda potencializando
+o coeficiente.
+
+00:01:00.183 --> 00:01:03.250
+Depois você pode interpretar
+o coeficiente potencializado
+
+00:01:03.283 --> 00:01:07.150
+anexado à sua variável fictícia
+de forma semelhante à anterior.
+
+00:01:07.183 --> 00:01:10.000
+Nesta categoria,
+ao contrário da linha base,
+
+00:01:10.033 --> 00:01:12.450
+esperamos uma mudança multiplicativa
+na probabilidade
+
+00:01:12.483 --> 00:01:15.600
+de estar na categoria
+deste valor
+
+00:01:15.633 --> 00:01:18.250
+que mantenha todas as demais
+variáveis constantes.
+
+00:01:18.283 --> 00:01:20.000
+Pode parecer confuso agora,
+
+00:01:20.033 --> 00:01:23.050
+mas vamos tentar.
+Você verá que não é tão ruim.
+

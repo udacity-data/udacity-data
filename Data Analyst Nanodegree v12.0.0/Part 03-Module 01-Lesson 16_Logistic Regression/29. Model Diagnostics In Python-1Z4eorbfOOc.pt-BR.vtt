@@ -1,0 +1,337 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.050 --> 00:00:02.250
+Como no fim da aula anterior,
+
+00:00:02.283 --> 00:00:05.900
+usaremos Scikit-learn
+para diagnosticar nosso modelo.
+
+00:00:05.933 --> 00:00:10.050
+Usaremos os dados de admissão
+do seu quiz prévio no Python.
+
+00:00:10.083 --> 00:00:11.200
+No próximo conceito,
+
+00:00:11.233 --> 00:00:14.800
+você realizará essas operações
+por conta própria.
+
+00:00:14.833 --> 00:00:17.100
+Veja aqui que carregamos
+nossas bibliotecas
+
+00:00:17.133 --> 00:00:19.150
+e os conjuntos de dados
+necessários.
+
+00:00:19.183 --> 00:00:21.650
+Aqui está o conjunto
+de dados "admissions".
+
+00:00:21.683 --> 00:00:25.650
+Veja que as métricas
+que usaremos são essas.
+
+00:00:25.683 --> 00:00:28.050
+Teremos regressão logística
+como nosso modelo,
+
+00:00:28.083 --> 00:00:29.900
+que importei do Scikit-learn,
+
+00:00:29.933 --> 00:00:31.950
+e importamos "train_test_split",
+
+00:00:31.983 --> 00:00:34.450
+como você fez
+no fim da última aula.
+
+00:00:34.483 --> 00:00:36.300
+Primeiro vamos dividir
+nosso conjunto
+
+00:00:36.333 --> 00:00:38.300
+em dados de treinamento
+e teste.
+
+00:00:38.333 --> 00:00:42.850
+Quero puxar
+os componentes X e Y.
+
+00:00:42.883 --> 00:00:44.050
+Se...
+
+00:00:44.950 --> 00:00:49.100
+Queremos que Y represente
+se são admitidos ou não,
+
+00:00:49.133 --> 00:00:53.400
+e X representa as outras partes.
+
+00:00:53.433 --> 00:00:55.900
+Podemos criar "prestige"
+como uma variável fictícia.
+
+00:00:55.933 --> 00:00:58.500
+Pode ver
+que eu criei quatro níveis,
+
+00:00:58.533 --> 00:01:01.200
+passei o trecho de "prestige"
+
+00:01:01.233 --> 00:01:04.900
+e de 1 a 4 serão codificados
+como suas próprias colunas.
+
+00:01:04.933 --> 00:01:07.750
+E vou deixar uma delas de fora
+
+00:01:07.783 --> 00:01:10.600
+para termos uma matriz
+de posto completo.
+
+00:01:10.633 --> 00:01:13.350
+Aqui você pode especificar
+"random_state"
+
+00:01:13.383 --> 00:01:16.150
+para obter o mesmo resultado
+sempre que executar isso.
+
+00:01:16.183 --> 00:01:19.100
+Veja que recebemos
+essas quatro partes de volta.
+
+00:01:19.133 --> 00:01:22.400
+Agora vamos executar operações
+sobre o conjunto de treinamento.
+
+00:01:22.433 --> 00:01:23.850
+Como na aula anterior,
+
+00:01:23.883 --> 00:01:26.450
+você pode transformar seus dados
+de várias formas
+
+00:01:26.483 --> 00:01:28.450
+para prever melhor a resposta.
+
+00:01:28.483 --> 00:01:30.200
+Mas o propósito deste vídeo
+
+00:01:30.233 --> 00:01:34.150
+é ver as métricas disponíveis
+no Scikit-learn.
+
+00:01:34.183 --> 00:01:36.400
+Vamos ajustar um modelo
+aos dados de treinamento
+
+00:01:36.433 --> 00:01:39.200
+e depois nós vemos como ele se sai
+nos dados de teste.
+
+00:01:39.233 --> 00:01:41.000
+O primeiro passo
+para ajustar um modelo
+
+00:01:41.033 --> 00:01:43.350
+é instanciá-lo.
+
+00:01:43.383 --> 00:01:46.900
+Aqui vou especificar
+o uso dos parâmetros padrão,
+
+00:01:46.933 --> 00:01:48.950
+que podemos dar uma olhada.
+
+00:01:48.983 --> 00:01:52.450
+Veja que há um monte de coisas
+que se pode especificar,
+
+00:01:52.483 --> 00:01:54.500
+e nós queremos...
+
+00:01:55.450 --> 00:01:58.150
+usar o padrão para todos,
+no nosso caso.
+
+00:01:58.183 --> 00:02:00.600
+Mas há formas de garantir
+
+00:02:00.633 --> 00:02:03.500
+que você escolha a melhor opção
+para cada um.
+
+00:02:03.533 --> 00:02:09.100
+Depois queremos ajustar o modelo
+usando os dados de treinamento.
+
+00:02:09.133 --> 00:02:12.400
+Especificamos "X_train"...
+
+00:02:14.150 --> 00:02:17.600
+Vejamos o "fit".
+
+00:02:17.633 --> 00:02:20.400
+Olhando aqui,
+
+00:02:20.433 --> 00:02:23.200
+"fit" pede primeiro o X,
+depois o Y.
+
+00:02:23.233 --> 00:02:26.850
+Primeiro "X_train",
+depois "y_train".
+
+00:02:26.883 --> 00:02:31.650
+Nós ajustamos o modelo
+e depois queremos prever.
+
+00:02:32.550 --> 00:02:36.500
+Usamos "y_prods".
+
+00:02:37.250 --> 00:02:38.600
+Vamos prever...
+
+00:02:39.450 --> 00:02:42.100
+sobre os dados de teste
+
+00:02:42.133 --> 00:02:46.350
+e usaremos os dados "X_test"
+para tanto.
+
+00:02:46.383 --> 00:02:49.450
+Podemos usar
+qualquer métrica destas
+
+00:02:49.483 --> 00:02:51.700
+para ver como nosso modelo
+está se saindo.
+
+00:02:51.733 --> 00:02:53.300
+Olhando coisas assim,
+
+00:02:53.333 --> 00:02:55.850
+como o conceito de precisão
+ou de recall,
+
+00:02:55.883 --> 00:02:59.050
+veja que o primeiro argumento
+é o verdadeiro valor de resposta
+
+00:02:59.083 --> 00:03:01.750
+e o segundo
+é o valor previsto.
+
+00:03:01.783 --> 00:03:03.800
+Depois você recebe,
+neste caso,
+
+00:03:03.833 --> 00:03:05.700
+o valor de precisão
+
+00:03:05.733 --> 00:03:09.600
+para como "y_true" e "y_pred"
+se comparam
+
+00:03:09.633 --> 00:03:13.300
+usando exatamente o que Sebastian
+mostrou nos vídeos anteriores.
+
+00:03:13.333 --> 00:03:16.350
+Podemos obter o conceito
+de precisão, de recall,
+
+00:03:16.383 --> 00:03:20.050
+de acurácia
+e a matriz de confusão.
+
+00:03:20.800 --> 00:03:26.250
+"Accuracy" e, por fim,
+"confusion_matrix".
+
+00:03:27.200 --> 00:03:30.200
+Legal. Veja que temos
+uma precisão
+
+00:03:30.233 --> 00:03:32.600
+de aproximadamente 67%.
+
+00:03:32.633 --> 00:03:36.300
+Nosso recall é de cerca de 12,5%,
+não é muito bom.
+
+00:03:36.333 --> 00:03:38.700
+A acurácia é de 63%
+
+00:03:38.733 --> 00:03:40.050
+e a matriz de confusão...
+
+00:03:40.083 --> 00:03:42.950
+Este "23" quer dizer que,
+dos "0",
+
+00:03:42.983 --> 00:03:46.300
+você previu que 23 deles
+seriam "0".
+
+00:03:46.333 --> 00:03:49.700
+E este aqui diz que,
+dos "1" que você previu,
+
+00:03:49.733 --> 00:03:51.850
+dois eram de fato "1".
+
+00:03:51.883 --> 00:03:56.050
+E basicamente...
+Isto aqui é a previsão
+
+00:03:56.083 --> 00:03:57.850
+e isto é a verdade.
+
+00:03:57.883 --> 00:04:00.400
+Acho que é isso. Vamos checar.
+
+00:04:00.433 --> 00:04:03.650
+Certo. O previsto é este eixo,
+
+00:04:03.683 --> 00:04:05.450
+e o verdadeiro está aqui.
+
+00:04:05.483 --> 00:04:11.250
+Então aqui o previsto é 0, 1
+
+00:04:11.283 --> 00:04:12.600
+e a verdade é 0, 1.
+
+00:04:12.633 --> 00:04:15.200
+Estes são os "0" de fato,
+
+00:04:15.233 --> 00:04:19.550
+e aqui estão os 23
+que previmos.
+
+00:04:19.583 --> 00:04:22.450
+Estes são os "0"
+que previmos como "1",
+
+00:04:22.483 --> 00:04:25.300
+estes são os "1"
+que previmos como "0"
+
+00:04:25.333 --> 00:04:27.950
+e estes são os "1"
+que previmos corretamente.
+
+00:04:27.983 --> 00:04:29.350
+Feito isto,
+
+00:04:29.383 --> 00:04:31.700
+você está pronto
+para encarar a próxima parte.
+

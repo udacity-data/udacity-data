@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.145
+Fitting logistic regression models is
+
+00:00:02.145 --> 00:00:05.140
+actually very similar to what you were doing in the last lesson,
+
+00:00:05.139 --> 00:00:07.094
+fitting linear regression models.
+
+00:00:07.094 --> 00:00:11.734
+We can again use stats models to perform logistic regression on our dataset.
+
+00:00:11.734 --> 00:00:15.855
+First, let's load our necessary libraries and the data as you see here.
+
+00:00:15.855 --> 00:00:17.414
+Similar to linear regression,
+
+00:00:17.414 --> 00:00:18.989
+any variables that are categorical,
+
+00:00:18.989 --> 00:00:21.164
+we will want to change dummy variables.
+
+00:00:21.164 --> 00:00:24.125
+So, in this dataset that will be the day,
+
+00:00:24.125 --> 00:00:25.980
+which you can see is labeled as weekend,
+
+00:00:25.980 --> 00:00:29.565
+or weekday, and fraud which is either false or true.
+
+00:00:29.565 --> 00:00:32.414
+So, we want to change those both the dummy variables,
+
+00:00:32.414 --> 00:00:36.420
+and then we could fill in missing values and things like that.
+
+00:00:36.420 --> 00:00:39.780
+Although, I don't think there are any in this dataset.
+
+00:00:39.780 --> 00:00:43.240
+As you can see there is no missing values here,
+
+00:00:43.240 --> 00:00:49.285
+and so we should create our dummy variables.
+
+00:00:49.284 --> 00:00:53.549
+And for now I'm just going to dummy the fraud variable,
+
+00:00:53.549 --> 00:00:57.269
+and we'll use duration to predict fraud,
+
+00:00:57.270 --> 00:00:59.415
+and we will also add an intercept.
+
+00:00:59.414 --> 00:01:03.174
+So, here you can see we created those dummy variables,
+
+00:01:03.174 --> 00:01:08.099
+and I just created it with a zero for false up here,
+
+00:01:08.099 --> 00:01:10.909
+and then a one if it is true in this column.
+
+00:01:10.909 --> 00:01:14.950
+And so I actually don't need that last one, we could drop it.
+
+00:01:14.950 --> 00:01:23.085
+And, so that will be my data frame and let's go ahead and use stats models now.
+
+00:01:23.084 --> 00:01:25.659
+And for logistic regression,
+
+00:01:25.659 --> 00:01:28.109
+instead of using the OLS,
+
+00:01:28.109 --> 00:01:30.200
+we're going to use what's called the Logit.
+
+00:01:30.200 --> 00:01:34.019
+And the first argument that we need to pass is the response,
+
+00:01:34.019 --> 00:01:36.920
+so we are going to pass.
+
+00:01:36.921 --> 00:01:45.320
+So, I am just going to pass this fraud and we should create our intercept.
+
+00:01:45.319 --> 00:01:48.179
+So then similar to what you did in the last lesson,
+
+00:01:48.180 --> 00:01:50.520
+we will pass the intercept.
+
+00:01:50.519 --> 00:01:53.823
+I do not know why my color highlighting is not working anymore.
+
+00:01:53.823 --> 00:01:57.045
+And let's say we want to use duration,
+
+00:01:57.045 --> 00:01:59.335
+so we can create our model that way.
+
+00:01:59.334 --> 00:02:06.349
+And then again we can get a summary.
+
+00:02:06.349 --> 00:02:10.944
+We need to fit it and then store that, cool.
+
+00:02:10.944 --> 00:02:14.139
+So, did the optimization and you can see we
+
+00:02:14.139 --> 00:02:17.000
+get similar output to what you saw in the previous lesson.
+

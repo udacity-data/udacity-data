@@ -1,0 +1,77 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.450 --> 00:00:02.550
+CONSIDERAÇÕES FINAIS
+PRÉ-APRENDIZADO DE MÁQUINA
+
+00:00:03.350 --> 00:00:06.300
+Se você voltar aos modelos
+que vimos usando Scikit-learn,
+
+00:00:06.350 --> 00:00:08.550
+notará que não obtivemos
+muitas informações
+
+00:00:08.600 --> 00:00:11.500
+sobre coeficientes
+em termos dos valores P.
+
+00:00:11.550 --> 00:00:13.600
+Por mais
+que você puxasse os coeficientes,
+
+00:00:13.650 --> 00:00:17.350
+eles não corresponderiam o obtido
+usando a biblioteca StatsModels.
+
+00:00:17.400 --> 00:00:19.900
+Na guinada da estatística
+para o aprendizado de máquina,
+
+00:00:19.950 --> 00:00:23.500
+nos importamos menos com a relação
+entre entrada e saída
+
+00:00:23.550 --> 00:00:26.850
+e mais com a previsão correta
+da saída
+
+00:00:26.900 --> 00:00:28.800
+independentemente da entrada.
+
+00:00:28.850 --> 00:00:31.400
+A biblioteca Scikit-learn
+é uma das mais populares
+
+00:00:31.450 --> 00:00:32.900
+de aprendizado de máquina,
+
+00:00:32.950 --> 00:00:37.400
+portanto, as ferramentas dela
+são focadas no segundo ponto.
+
+00:00:37.450 --> 00:00:39.550
+O último conteúdo
+do diagnóstico de modelos
+
+00:00:39.600 --> 00:00:42.000
+usando validação cruzada
+e Scikit-learn
+
+00:00:42.050 --> 00:00:43.300
+não faz parte da rotina
+
+00:00:43.350 --> 00:00:45.200
+da maior parte
+dos analistas de dados.
+
+00:00:45.250 --> 00:00:49.050
+Contudo, você pode se interessar
+no começo da carreira
+
+00:00:49.100 --> 00:00:51.750
+pelo aprendizado de máquina
+e pela ciência de dados.
+

@@ -1,0 +1,102 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.350 --> 00:00:03.250
+ENGENHARIA
+E SELEÇÃO DE RECURSOS
+
+00:00:03.300 --> 00:00:04.600
+Na aula anterior,
+
+00:00:04.650 --> 00:00:07.100
+você viu como podemos usar
+regressão linear múltipla
+
+00:00:07.150 --> 00:00:09.700
+para pegar diversas
+variáveis explanatórias,
+
+00:00:09.750 --> 00:00:12.000
+tanto quantitativas
+quanto categóricas,
+
+00:00:12.050 --> 00:00:13.550
+e usá-las ao mesmo tempo
+
+00:00:13.600 --> 00:00:15.950
+para prever uma variável
+de resposta quantitativa.
+
+00:00:16.000 --> 00:00:18.950
+Nesta aula,
+faremos algo similar,
+
+00:00:19.000 --> 00:00:22.250
+contudo, em vez de prever
+uma resposta quantitativa,
+
+00:00:22.300 --> 00:00:25.600
+aqui preveremos
+uma resposta categórica.
+
+00:00:25.650 --> 00:00:27.500
+Uma das técnicas
+mais populares
+
+00:00:27.550 --> 00:00:30.000
+para fazer isso
+é a regressão logística,
+
+00:00:30.050 --> 00:00:32.600
+sobre a qual você aprenderá
+nesta aula.
+
+00:00:32.650 --> 00:00:35.150
+Regressão logística
+é uma abordagem de regressão
+
+00:00:35.200 --> 00:00:38.050
+usada para prever
+dois resultados possíveis.
+
+00:00:38.100 --> 00:00:39.750
+Seja para prever
+se uma transação
+
+00:00:39.800 --> 00:00:42.150
+de cartão de crédito
+foi fraudulenta ou não,
+
+00:00:42.200 --> 00:00:44.900
+para saber se um indivíduo
+clicou no nosso site ou não,
+
+00:00:44.950 --> 00:00:47.700
+para saber se um indivíduo
+inadimplirá um empréstimo ou não
+
+00:00:47.750 --> 00:00:52.100
+ou seja lá o que você queira prever
+com apenas dois resultados.
+
+00:00:52.150 --> 00:00:54.800
+Usando regressão linear,
+nós otimizávamos
+
+00:00:54.850 --> 00:00:58.150
+para prever bem
+uma variável contínua e numérica.
+
+00:00:58.200 --> 00:01:02.900
+Aqui, queremos prever corretamente
+um resultado de dois possíveis.
+
+00:01:02.950 --> 00:01:05.850
+Começaremos vendo
+como isso muda a matemática
+
+00:01:05.900 --> 00:01:08.000
+na configuração
+do nosso modelo de regressão.
+

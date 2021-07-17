@@ -1,0 +1,138 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.150 --> 00:00:01.550
+Depois do último vídeo e do quiz,
+
+00:00:01.583 --> 00:00:04.050
+agora você já ajustou
+um modelo de regressão logística.
+
+00:00:04.083 --> 00:00:07.350
+Neste vídeo, veremos
+estes coeficientes e a saída
+
+00:00:07.383 --> 00:00:09.550
+para saber como interpretar
+cada um deles.
+
+00:00:09.583 --> 00:00:12.300
+Vamos prestar atenção
+a estes coeficientes aqui.
+
+00:00:12.333 --> 00:00:14.500
+Geralmente, os interceptos
+não nos interessam,
+
+00:00:14.533 --> 00:00:18.400
+só aqueles que estão anexados
+às nossas variáveis explicativas.
+
+00:00:18.433 --> 00:00:20.100
+Se quer saber
+como configuramos isso,
+
+00:00:20.133 --> 00:00:22.750
+nós fizemos basicamente
+aquilo do último vídeo,
+
+00:00:22.783 --> 00:00:25.300
+mas eu fiz o mesmo
+com dias úteis e fins de semana,
+
+00:00:25.333 --> 00:00:26.500
+adicionamos o intercepto
+
+00:00:26.533 --> 00:00:28.900
+e ajustamos um modelo
+para tudo isso.
+
+00:00:28.933 --> 00:00:30.450
+Para interpretar isso,
+
+00:00:30.483 --> 00:00:32.950
+primeiro temos
+que potencializar cada um.
+
+00:00:32.983 --> 00:00:35.150
+Vamos usar "exp".
+
+00:00:36.300 --> 00:00:38.300
+Cada um
+desses valores resultantes
+
+00:00:38.333 --> 00:00:41.050
+é a mudança multiplicativa
+nas probabilidades.
+
+00:00:41.083 --> 00:00:44.000
+Especificamente
+para a variável dummy de dias úteis,
+
+00:00:44.033 --> 00:00:46.150
+nós diríamos: "Em dias úteis,
+
+00:00:46.183 --> 00:00:50.750
+'fraude' é 12,76 vezes mais provável
+do que em finais de semana,
+
+00:00:50.783 --> 00:00:52.950
+mantendo as demais variáveis
+constantes."
+
+00:00:52.983 --> 00:00:56.100
+O que, neste caso,
+significaria manter a duração.
+
+00:00:56.133 --> 00:00:59.400
+Também podemos interpretar
+o coeficiente da duração como:
+
+00:00:59.433 --> 00:01:02.850
+"A cada incremento de uma unidade
+na duração da página,
+
+00:01:02.883 --> 00:01:05.800
+'fraude' é 0,23 vezes
+mais provável,
+
+00:01:05.833 --> 00:01:08.350
+mantendo as demais variáveis
+constantes."
+
+00:01:08.383 --> 00:01:11.100
+Ao receber mudanças multiplicativas
+menores do que 1,
+
+00:01:11.133 --> 00:01:13.200
+como fizemos aqui
+com a duração,
+
+00:01:13.233 --> 00:01:16.200
+é útil computar o inverso.
+
+00:01:16.233 --> 00:01:18.850
+Isso muda a direção
+de incremento de uma unidade
+
+00:01:18.883 --> 00:01:22.250
+para decremento.
+Poderíamos dizer:
+
+00:01:22.283 --> 00:01:25.450
+"Para cada decremento
+na duração da página,
+
+00:01:25.483 --> 00:01:30.100
+'fraude' é 4,32 vezes mais provável
+se tudo mais for mantido constante."
+
+00:01:30.133 --> 00:01:34.050
+Aqui seria caso seja dia útil
+ou fim de semana.
+
+00:01:34.083 --> 00:01:37.650
+Isto ajuda o público
+a se identificar com o resultado.
+

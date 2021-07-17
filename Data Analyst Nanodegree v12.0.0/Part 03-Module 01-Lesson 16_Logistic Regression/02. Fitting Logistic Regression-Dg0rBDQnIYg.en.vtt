@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.549 --> 00:00:06.160
+You might not have noticed but in the previous lesson on
+
+00:00:06.160 --> 00:00:10.570
+linear regression your predicted response variable was not constrained at all.
+
+00:00:10.570 --> 00:00:14.760
+That means, that with the right inputs it was possible to predict the house that
+
+00:00:14.759 --> 00:00:19.464
+has a negative price or that the height of an individual is 80 feet.
+
+00:00:19.464 --> 00:00:22.765
+Using logistic regression as opposed to linear regression,
+
+00:00:22.765 --> 00:00:26.335
+bounds our response to a probability between zero and one,
+
+00:00:26.335 --> 00:00:29.964
+rather than any possible value like you saw with linear regression.
+
+00:00:29.964 --> 00:00:32.835
+Mathematically, to perform logistic regression,
+
+00:00:32.835 --> 00:00:35.350
+we need to change the labels of fraud or not,
+
+00:00:35.350 --> 00:00:40.730
+success or failure and the other variables to only a one and zero outcome.
+
+00:00:40.729 --> 00:00:42.789
+So, in the credit card transaction example,
+
+00:00:42.789 --> 00:00:45.039
+you could call all the fraud cases one,
+
+00:00:45.039 --> 00:00:48.174
+while all the non-fraud cases would be zero values.
+
+00:00:48.174 --> 00:00:51.584
+Then, logistic regression is set up in a way where
+
+00:00:51.585 --> 00:00:56.505
+our linear model will predict the log odds instead of predicting the response itself.
+
+00:00:56.505 --> 00:00:59.950
+Here, P is the probability of a one value occurring.
+
+00:00:59.950 --> 00:01:02.800
+So, this is a ratio of a probability of an event
+
+00:01:02.799 --> 00:01:06.579
+occurring as compared to the probability of the event not occurring.
+
+00:01:06.579 --> 00:01:09.549
+This is called the odds ratio and by taking
+
+00:01:09.549 --> 00:01:12.759
+the log and equating this to our linear regression line,
+
+00:01:12.760 --> 00:01:17.484
+we control our predictions to be between zero and one for the probability of a success.
+
+00:01:17.484 --> 00:01:19.090
+With a bit of algebra,
+
+00:01:19.090 --> 00:01:22.000
+you can change the equation using the log odds to look
+
+00:01:22.000 --> 00:01:25.719
+like this and this solves for probability directly.
+
+00:01:25.719 --> 00:01:27.965
+This function here is called the sigmoid.
+
+00:01:27.965 --> 00:01:30.640
+The sigmoid function takes the value from
+
+00:01:30.640 --> 00:01:35.560
+your linear regression line and maps it between zero and one as a probability.
+
+00:01:35.560 --> 00:01:37.689
+Both of these equations are commonly
+
+00:01:37.689 --> 00:01:40.799
+used to understand the setup for logistic regression.
+
+00:01:40.799 --> 00:01:42.250
+Let us get some practice with this.
+

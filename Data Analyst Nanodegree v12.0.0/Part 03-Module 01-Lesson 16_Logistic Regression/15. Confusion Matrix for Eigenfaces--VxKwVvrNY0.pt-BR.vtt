@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.130 --> 00:00:03.040
+Portanto, ao falar sobre matrizes de confusão em contexto diferente, você pode
+
+00:00:03.040 --> 00:00:08.109
+se lembrar do trabalho que Katie mostrou sobre a análise de componente de princípio, sobre a PCA.
+
+00:00:08.109 --> 00:00:12.800
+Onde examinamos sete diferentes... imagino políticos brancos do sexo masculino, de
+
+00:00:12.800 --> 00:00:17.100
+George Bush a Gerhard Schroeder, e executamos uma análise eigenface
+
+00:00:17.100 --> 00:00:21.585
+extraindo os componentes de princípio deste conjunto de dados e, em seguida, reutilizando
+
+00:00:21.585 --> 00:00:28.040
+os eigenfaces para remapear novas faces para nomes para identificar pessoas.
+
+00:00:28.040 --> 00:00:30.910
+O que vou fazer agora é, não vou arrastar você
+
+00:00:30.910 --> 00:00:34.490
+pelo mesmo exemplo de PCA novamente, portanto, vamos abolir estas faces.
+
+00:00:34.490 --> 00:00:38.410
+Mas, em vez disso, o que vou fazer é dar a você uma saída típica e
+
+00:00:38.410 --> 00:00:42.110
+vamos estudar a saída usando matrizes de confusão.
+
+00:00:42.110 --> 00:00:48.750
+Katie foi tão legal ao executar uma PCA nas faces destes políticos e
+
+00:00:48.750 --> 00:00:52.530
+ao utilizar os recursos resultantes, colocá-los em uma máquina de vetor de suporte e
+
+00:00:52.530 --> 00:00:54.440
+então explicar os dados e
+
+00:00:54.440 --> 00:00:59.980
+contar quantas destas pessoas foram previstas corretamente ou classificadas incorretamente.
+
+00:00:59.980 --> 00:01:02.530
+E só para confundir todo mundo, neste exemplo,
+
+00:01:02.530 --> 00:01:06.120
+seguimos a convenção de colocar nomes verdadeiros, os rótulos de classes verdadeiros
+
+00:01:06.120 --> 00:01:08.180
+à esquerda e os previstos na parte superior.
+
+00:01:08.180 --> 00:01:12.990
+Por exemplo, este número um aqui era realmente Donald Rumsfeld, mas
+
+00:01:12.990 --> 00:01:15.320
+foi identificado incorretamente como Colin Powell.
+
+00:01:15.320 --> 00:01:19.130
+E sei que é Colin Powell porque os mesmos nomes aqui,
+
+00:01:19.130 --> 00:01:22.980
+de Ariel Sharon a Tony Blair, se aplicam às colunas aqui.
+
+00:01:22.980 --> 00:01:26.030
+Ariel Sharon está à esquerda e Tony Blair está à direita.
+
+00:01:26.030 --> 00:01:27.760
+Portanto, fazemos algumas perguntas a você agora.
+
+00:01:27.760 --> 00:01:29.250
+Primeiro, uma simples.
+
+00:01:29.250 --> 00:01:33.390
+Qual destes sete políticos esteve mais frequentemente em nosso conjunto de dados?
+

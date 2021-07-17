@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.250 --> 00:00:03.120
+Imagine que estejamos analisando uma imagem de Hugo Chavez.
+
+00:00:03.120 --> 00:00:07.290
+Qual é a probabilidade de Hugo ser classificado corretamente por nosso
+
+00:00:07.290 --> 00:00:08.130
+logaritmo de aprendizado?
+
+00:00:08.130 --> 00:00:10.640
+Ela será um número entre zero e um,
+
+00:00:10.640 --> 00:00:14.620
+no qual um significa certeza absoluta e zero, nunca.
+
+00:00:14.620 --> 00:00:17.830
+Você pode calcular a possibilidade com base nesta tabela.
+

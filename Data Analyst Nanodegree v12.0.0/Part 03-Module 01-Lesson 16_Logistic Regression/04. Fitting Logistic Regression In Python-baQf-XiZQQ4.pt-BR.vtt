@@ -1,0 +1,164 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.050 --> 00:00:01.750
+Ajustar modelos
+de regressão logística
+
+00:00:01.783 --> 00:00:05.050
+é parecido com o que você fez
+na aula anterior,
+
+00:00:05.083 --> 00:00:07.050
+ajustar modelos
+de regressão linear.
+
+00:00:07.083 --> 00:00:08.700
+Podemos usar StatsModels
+
+00:00:08.733 --> 00:00:11.550
+para realizar regressão logística
+no nosso conjunto de dados.
+
+00:00:11.583 --> 00:00:14.000
+Primeiro vamos carregar
+as bibliotecas necessárias
+
+00:00:14.033 --> 00:00:15.850
+e os dados, como vê-se aqui.
+
+00:00:15.883 --> 00:00:18.750
+Como na regressão linear,
+toda variável categórica
+
+00:00:18.783 --> 00:00:21.100
+precisa ser transformada
+em variável fictícia.
+
+00:00:21.133 --> 00:00:24.100
+Neste conjunto de dados,
+serão os dias,
+
+00:00:24.133 --> 00:00:26.900
+que estão rotulados
+como "fim de semana" ou "dia útil",
+
+00:00:26.933 --> 00:00:29.400
+e fraude,
+que é verdadeiro ou falso.
+
+00:00:29.433 --> 00:00:32.750
+Queremos mudar ambos
+para variáveis fictícias.
+
+00:00:32.783 --> 00:00:36.400
+Depois podemos preencher
+dados ausentes e tal,
+
+00:00:36.433 --> 00:00:39.800
+embora eu não ache
+que não há nenhum neste conjunto.
+
+00:00:40.550 --> 00:00:43.550
+Pois é. Veja que não há
+dados ausentes aqui.
+
+00:00:43.583 --> 00:00:44.800
+E...
+
+00:00:45.850 --> 00:00:48.500
+Agora criamos
+nossas variáveis fictícias.
+
+00:00:50.100 --> 00:00:52.800
+Por ora, vou tornar fictícia
+a variável "fraude".
+
+00:00:54.200 --> 00:00:57.100
+Usaremos "duração"
+para prever "fraude"
+
+00:00:57.133 --> 00:00:58.850
+e adicionaremos
+um intercepto.
+
+00:01:00.100 --> 00:01:03.100
+Perceba que aqui criamos
+as variáveis fictícias,
+
+00:01:03.133 --> 00:01:08.100
+e eu criei com 0 para falso
+
+00:01:08.133 --> 00:01:10.750
+e 1 para verdadeiro
+nesta coluna.
+
+00:01:10.783 --> 00:01:14.500
+Eu não preciso do último,
+podemos apagar.
+
+00:01:15.450 --> 00:01:18.650
+Este será meu dataframe.
+
+00:01:18.683 --> 00:01:23.200
+Vamos usar StatsModels.
+
+00:01:23.233 --> 00:01:25.600
+E, para regressão logística,
+
+00:01:25.633 --> 00:01:28.000
+em vez de usar OLS,
+
+00:01:28.033 --> 00:01:30.950
+usaremos "Logit".
+
+00:01:30.983 --> 00:01:34.000
+O primeiro argumento
+a ser passado é a resposta.
+
+00:01:34.750 --> 00:01:36.300
+Vou passar...
+
+00:01:37.350 --> 00:01:41.850
+Vou passar "fraude"...
+
+00:01:41.883 --> 00:01:45.550
+E devemos criar
+nosso intercepto.
+
+00:01:45.583 --> 00:01:48.350
+Como você fez na aula passada,
+
+00:01:48.383 --> 00:01:50.550
+passaremos o intercepto.
+
+00:01:50.583 --> 00:01:53.350
+Não sei por que meu realce
+de cor não está funcionando.
+
+00:01:54.150 --> 00:01:56.600
+Digamos que queiramos
+usar "duração".
+
+00:01:57.450 --> 00:01:59.300
+Podemos criar
+nosso modelo assim
+
+00:01:59.333 --> 00:02:01.850
+e, novamente,
+
+00:02:01.883 --> 00:02:03.500
+podemos obter um sumário.
+
+00:02:05.550 --> 00:02:10.550
+Temos que ajustá-lo.
+Depois armazenamos...
+
+00:02:11.400 --> 00:02:13.300
+Pronto. Fizemos a otimização
+
+00:02:13.333 --> 00:02:17.450
+e recebemos uma saída
+similar à da aula anterior.
+

@@ -1,0 +1,268 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.310
+Similar to the end of the last lesson,
+
+00:00:02.310 --> 00:00:06.089
+we'll be using Scikit-learn to performer our model diagnostics.
+
+00:00:06.089 --> 00:00:09.750
+We will be using the admittance data from the previous quiz you did in Python.
+
+00:00:09.750 --> 00:00:11.324
+In the next concept,
+
+00:00:11.324 --> 00:00:14.994
+you'll perform these operations to make sure you can do this on your own.
+
+00:00:14.994 --> 00:00:19.079
+Here, you can see we've loaded our libraries and the necessary data set.
+
+00:00:19.079 --> 00:00:21.659
+So, here's the admissions data set here,
+
+00:00:21.660 --> 00:00:25.545
+and then you'll see that our metrics that we're using are any of these.
+
+00:00:25.545 --> 00:00:28.230
+And then we have logistic regression as our model,
+
+00:00:28.230 --> 00:00:29.894
+that I imported from Scikit-learn,
+
+00:00:29.894 --> 00:00:32.159
+and we imported the train test split,
+
+00:00:32.159 --> 00:00:34.674
+like you did at the end of the last lesson.
+
+00:00:34.674 --> 00:00:38.304
+First, let's split our data set into training and testing data.
+
+00:00:38.304 --> 00:00:44.994
+And I also want to just pull off the X and Y components to do this.
+
+00:00:44.994 --> 00:00:48.959
+We want Y to be whether or not they're admitted,
+
+00:00:48.960 --> 00:00:53.250
+and we're going to have X just be the other parts.
+
+00:00:53.250 --> 00:00:56.094
+So, we can create prestige as a dummy variable here.
+
+00:00:56.094 --> 00:00:58.589
+So, basically you can see I added four levels,
+
+00:00:58.590 --> 00:01:02.810
+and then I'm passing the prestige portion and basically with the one through four,
+
+00:01:02.810 --> 00:01:04.890
+will get coded as their own columns here,
+
+00:01:04.890 --> 00:01:08.250
+and then I'll leave one of those columns out just
+
+00:01:08.250 --> 00:01:11.665
+so we have a four ring matrix, through one and two.
+
+00:01:11.665 --> 00:01:13.780
+And here you can specify the random state so
+
+00:01:13.780 --> 00:01:16.165
+that you get the same results every time you run this,
+
+00:01:16.165 --> 00:01:19.350
+and you'll see we'll get these four parts back.
+
+00:01:19.349 --> 00:01:22.459
+Now, we want to perform our operations on the training set.
+
+00:01:22.459 --> 00:01:23.989
+Similar to the last lesson,
+
+00:01:23.989 --> 00:01:28.669
+you might decide to transform your data in lots of ways to predict the response better.
+
+00:01:28.670 --> 00:01:31.129
+However, the purpose of this video is simply to look
+
+00:01:31.129 --> 00:01:34.049
+at the matrix available for us in Scikit-learn.
+
+00:01:34.049 --> 00:01:36.394
+Let's go and fit a model to our training data,
+
+00:01:36.394 --> 00:01:39.420
+and then we'll see how well it performs on the test data.
+
+00:01:39.420 --> 00:01:41.150
+So the first step to fitting our model,
+
+00:01:41.150 --> 00:01:43.150
+is to instantiate our model.
+
+00:01:43.150 --> 00:01:47.135
+Here, I'm going to just specify using the default parameters.
+
+00:01:47.135 --> 00:01:48.829
+If we actually go in and look,
+
+00:01:48.829 --> 00:01:52.459
+you'll see that there are a whole bunch of things that they could specify,
+
+00:01:52.459 --> 00:01:58.309
+and we want to just use the default for all of these in our particular case.
+
+00:01:58.310 --> 00:02:00.650
+However, there are ways that you can make
+
+00:02:00.650 --> 00:02:03.395
+sure that you choose the best one of each of these things.
+
+00:02:03.394 --> 00:02:09.019
+And then, we want to fit this model using the training data,
+
+00:02:09.020 --> 00:02:13.015
+so you specify X train.
+
+00:02:13.014 --> 00:02:18.954
+Let's see, if we look at the fit.
+
+00:02:18.955 --> 00:02:22.630
+It asks for the X first and then the Y.
+
+00:02:22.629 --> 00:02:26.805
+So, X train and then Y train.
+
+00:02:26.805 --> 00:02:28.540
+So, we'll fit the model,
+
+00:02:28.539 --> 00:02:31.599
+and then we want to predict.
+
+00:02:31.599 --> 00:02:34.719
+So, we're going to get Y, protocol Y preds.
+
+00:02:34.719 --> 00:02:40.405
+So we're going to predict on
+
+00:02:40.405 --> 00:02:46.375
+the test data and we're going to use the X test data to do that.
+
+00:02:46.375 --> 00:02:48.400
+And then basically, we could use any one of
+
+00:02:48.400 --> 00:02:51.901
+these matrix to see how well our model is performing.
+
+00:02:51.901 --> 00:02:53.500
+So if you look at things like this,
+
+00:02:53.500 --> 00:02:56.004
+the precision score or the recall score,
+
+00:02:56.004 --> 00:02:59.229
+you'll see the first argument they take is the true response value,
+
+00:02:59.229 --> 00:03:01.750
+and the second value they take is the predicted value.
+
+00:03:01.750 --> 00:03:04.060
+And then you can get back, so in this case,
+
+00:03:04.060 --> 00:03:06.640
+you'll get back the precision value for
+
+00:03:06.639 --> 00:03:09.699
+how the Y true and Y predicted compare to one another,
+
+00:03:09.699 --> 00:03:13.104
+using exactly what Sebastian showed in those earlier videos.
+
+00:03:13.104 --> 00:03:16.539
+So, we could do things like get the precision score, get the recall score,
+
+00:03:16.539 --> 00:03:17.754
+get the accuracy score,
+
+00:03:17.754 --> 00:03:20.514
+and we can also get the confusion matrix.
+
+00:03:20.514 --> 00:03:26.309
+Accuracy, and finally, let's just get a confusion matrix.
+
+00:03:26.310 --> 00:03:27.580
+Cool.
+
+00:03:27.580 --> 00:03:32.634
+So, here you can see we have a precision of approximately 67 percent,
+
+00:03:32.634 --> 00:03:36.324
+our recall is about 12.5 percent, so not great there.
+
+00:03:36.324 --> 00:03:38.879
+Our accuracy is around 63 percent,
+
+00:03:38.879 --> 00:03:40.210
+and then the confusion matrix,
+
+00:03:40.210 --> 00:03:43.064
+this 23 here says, of the zeros,
+
+00:03:43.064 --> 00:03:46.300
+you predicted 23 of them to actually be zeros.
+
+00:03:46.300 --> 00:03:48.020
+And then this one down here says,
+
+00:03:48.020 --> 00:03:49.730
+of the ones you predicted,
+
+00:03:49.729 --> 00:03:51.834
+two of them to actually be ones,
+
+00:03:51.835 --> 00:03:56.200
+and then basically, this is prediction down this part,
+
+00:03:56.199 --> 00:03:57.994
+and this is truth up here.
+
+00:03:57.995 --> 00:04:00.284
+Pretty sure that's true. We can verify.
+
+00:04:00.284 --> 00:04:03.835
+So, the predicted is down this axis,
+
+00:04:03.835 --> 00:04:05.495
+and the actual is up here.
+
+00:04:05.495 --> 00:04:09.759
+So, here the predicted is zero,
+
+00:04:09.759 --> 00:04:12.819
+one, and then the truth is zero, one.
+
+00:04:12.819 --> 00:04:15.264
+So these are truly zeros,
+
+00:04:15.264 --> 00:04:19.810
+and appear the 23 are the zeros that we actually predicted to be zeros.
+
+00:04:19.810 --> 00:04:22.509
+These are zeros that we predicted to be ones,
+
+00:04:22.509 --> 00:04:25.435
+these are ones that we predicted to be zeros,
+
+00:04:25.435 --> 00:04:27.814
+and these are ones that we predicted to be ones.
+
+00:04:27.814 --> 00:04:29.500
+Great. So with this,
+
+00:04:29.500 --> 00:04:31.290
+you're ready to take on the next part yourself.
+

@@ -1,0 +1,149 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.500 --> 00:00:02.500
+AJUSTANDO
+A REGRESSÃO LOGÍSTICA
+
+00:00:03.500 --> 00:00:04.700
+Você pode não ter notado,
+
+00:00:04.733 --> 00:00:07.050
+mas, na aula passada
+sobre regressão linear,
+
+00:00:07.083 --> 00:00:10.350
+sua variável de resposta prevista
+não tinha restrição alguma.
+
+00:00:10.383 --> 00:00:12.650
+Ou seja:
+com a entrada correta,
+
+00:00:12.683 --> 00:00:16.000
+era possível prever uma casa
+de preço negativo,
+
+00:00:16.033 --> 00:00:19.600
+ou um indivíduo
+de 20 metros de altura.
+
+00:00:19.633 --> 00:00:22.750
+Usar regressão logística,
+em vez de regressão linear,
+
+00:00:22.783 --> 00:00:26.350
+limita nossa resposta
+a uma probabilidade entre 0 e 1,
+
+00:00:26.383 --> 00:00:29.900
+em vez de qualquer valor,
+como na regressão linear.
+
+00:00:29.933 --> 00:00:32.650
+Matematicamente,
+para realizar regressão logística,
+
+00:00:32.683 --> 00:00:35.200
+precisamos mudar os rótulos
+de "fraude" ou "não fraude",
+
+00:00:35.233 --> 00:00:38.150
+"sucesso" ou "fracasso"
+e outras variáveis
+
+00:00:38.183 --> 00:00:40.550
+simplesmente
+para os resultados "1" e "0".
+
+00:00:40.583 --> 00:00:42.750
+Na transação
+de cartão de crédito,
+
+00:00:42.783 --> 00:00:45.000
+você chamaria
+todas as fraudes de "1"
+
+00:00:45.033 --> 00:00:48.150
+e todas as não fraudes de "0".
+
+00:00:48.183 --> 00:00:51.150
+Então a regressão logística
+é configurada de forma
+
+00:00:51.183 --> 00:00:54.100
+que um modelo linear preverá
+as probabilidades logarítmicas
+
+00:00:54.133 --> 00:00:56.500
+em vez de a resposta em si.
+
+00:00:56.533 --> 00:00:59.900
+Aqui, P é a probabilidade
+de um valor ocorrer.
+
+00:00:59.933 --> 00:01:03.300
+Esta é a razão entre a probabilidade
+de ocorrência de um evento
+
+00:01:03.333 --> 00:01:06.350
+e a probabilidade
+de não ocorrência.
+
+00:01:06.383 --> 00:01:08.650
+Isso se chama
+razão de possibilidade.
+
+00:01:08.683 --> 00:01:12.700
+E, ao igualar o logaritmo
+à nossa linha de regressão linear,
+
+00:01:12.733 --> 00:01:15.450
+limitamos nossas previsões
+a um intervalo entre 0 e 1
+
+00:01:15.483 --> 00:01:17.550
+para a probabilidade
+de sucesso.
+
+00:01:17.583 --> 00:01:18.850
+Com um pouco de álgebra,
+
+00:01:18.883 --> 00:01:21.500
+mudamos a equação,
+usando probabilidade logarítmica,
+
+00:01:21.533 --> 00:01:22.850
+para algo assim.
+
+00:01:22.883 --> 00:01:25.450
+Isso resolve diretamente
+a probabilidade.
+
+00:01:25.483 --> 00:01:28.050
+Essa função aqui
+se chama sigmoide.
+
+00:01:28.083 --> 00:01:29.450
+A função sigmoide
+
+00:01:29.483 --> 00:01:32.100
+pega o valor
+da sua linha de regressão linear
+
+00:01:32.133 --> 00:01:35.300
+e a mapeia como uma probabilidade
+entre 0 e 1.
+
+00:01:35.333 --> 00:01:37.850
+Ambas equações
+são comumente usadas
+
+00:01:37.883 --> 00:01:40.550
+para entender a configuração
+da regressão logística.
+
+00:01:40.583 --> 00:01:42.300
+Vamos praticar um pouco.
+

@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.490 --> 00:00:04.710
+In the previous lesson,
+
+00:00:04.710 --> 00:00:07.634
+you saw how we can use multiple linear regression to take
+
+00:00:07.634 --> 00:00:12.120
+multiple explanatory variables both quantitative and categorical,
+
+00:00:12.119 --> 00:00:16.050
+and use them all at the same time to predict a quantitative response variable.
+
+00:00:16.050 --> 00:00:19.019
+In this lesson, we'll be doing something similar.
+
+00:00:19.019 --> 00:00:22.344
+However, instead of predicting a quantitative response,
+
+00:00:22.344 --> 00:00:25.789
+in this lesson we'll be predicting a categorical response.
+
+00:00:25.789 --> 00:00:30.049
+One of the most popular techniques for doing this is logistic regression,
+
+00:00:30.050 --> 00:00:32.545
+which you'll learn about in this lesson.
+
+00:00:32.545 --> 00:00:38.295
+Logistic regression is a regression approach used to predict only two possible outcomes.
+
+00:00:38.295 --> 00:00:42.270
+This can be predicting whether a particular credit card transaction is fraud or not,
+
+00:00:42.270 --> 00:00:44.984
+whether an individual will click to our website or not,
+
+00:00:44.984 --> 00:00:47.894
+whether an individual will default on a loan or not,
+
+00:00:47.895 --> 00:00:52.140
+or anything else you might like to predict with only two outcomes.
+
+00:00:52.140 --> 00:00:55.109
+Using linear regression, we were optimizing to
+
+00:00:55.109 --> 00:00:58.200
+best predict a continuous numeric variable,
+
+00:00:58.200 --> 00:01:02.875
+but here we want to correctly predict one of two possible outcomes.
+
+00:01:02.875 --> 00:01:08.000
+We'll start by looking at how this changes the math and setting up our regression model.
+

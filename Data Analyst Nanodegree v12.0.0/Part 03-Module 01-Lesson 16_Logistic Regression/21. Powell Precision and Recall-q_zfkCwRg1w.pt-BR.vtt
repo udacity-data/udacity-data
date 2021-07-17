@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.160 --> 00:00:02.290
+A resposta da revocação é 0,87.
+
+00:00:02.290 --> 00:00:05.939
+Sabemos que há 63 instâncias de Colin Powell, mas,
+
+00:00:05.939 --> 00:00:08.660
+no final, apenas 55 delas estão certas.
+
+00:00:08.660 --> 00:00:09.550
+Essa é nossa revocação.
+
+00:00:09.550 --> 00:00:12.790
+Nesse caso, a precisão é ainda menor.
+
+00:00:12.790 --> 00:00:13.630
+É de apenas 0,82.
+
+00:00:13.630 --> 00:00:17.480
+Observamos o número de casos em que identificamos Colin Powell.
+
+00:00:17.480 --> 00:00:19.810
+Temos um total de 67 aqui.
+
+00:00:19.810 --> 00:00:24.050
+Descobrimos que apenas 55 em 67 estão classificados corretamente.
+
+00:00:24.050 --> 00:00:26.869
+A precisão é de 0,82.
+
