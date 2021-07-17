@@ -1,0 +1,632 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: Practice Debugging
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Scripting
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Python Installation.html">
+       02. Python Installation
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Install Python Using Anaconda.html">
+       03. Install Python Using Anaconda
+      </a>
+     </li>
+     <li class="">
+      <a href="04. [For Windows] Configuring Git Bash to Run Python.html">
+       04. [For Windows] Configuring Git Bash to Run Python
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Running a Python Script.html">
+       05. Running a Python Script
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Programming Environment Setup.html">
+       06. Programming Environment Setup
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Editing a Python Script.html">
+       07. Editing a Python Script
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Scripting with Raw Input.html">
+       08. Scripting with Raw Input
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz Scripting with Raw Input.html">
+       09. Quiz: Scripting with Raw Input
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Solution Scripting with Raw Input.html">
+       10. Solution: Scripting with Raw Input
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Errors and Exceptions.html">
+       11. Errors and Exceptions
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Errors and Exceptions.html">
+       12. Errors and Exceptions
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Handling Errors.html">
+       13. Handling Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Practice Handling Input Errors.html">
+       14. Practice: Handling Input Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Solution Handling Input Errors.html">
+       15. Solution: Handling Input Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Accessing Error Messages.html">
+       16. Accessing Error Messages
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Reading and Writing Files.html">
+       17. Reading and Writing Files
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Quiz Reading and Writing Files.html">
+       18. Quiz: Reading and Writing Files
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Solution Reading and Writing Files.html">
+       19. Solution: Reading and Writing Files
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Quiz Practice Debugging.html">
+       20. Quiz: Practice Debugging
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Solutions for Quiz Practice Debugging.html">
+       21. Solutions for Quiz: Practice Debugging
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Importing Local Scripts.html">
+       22. Importing Local Scripts
+      </a>
+     </li>
+     <li class="">
+      <a href="23. The Standard Library.html">
+       23. The Standard Library
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Quiz The Standard Library.html">
+       24. Quiz: The Standard Library
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Solution The Standard Library.html">
+       25. Solution: The Standard Library
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Techniques for Importing Modules.html">
+       26. Techniques for Importing Modules
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Quiz Techniques for Importing Modules.html">
+       27. Quiz: Techniques for Importing Modules
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Third-Party Libraries.html">
+       28. Third-Party Libraries
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Experimenting with an Interpreter.html">
+       29. Experimenting with an Interpreter
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Online Resources.html">
+       30. Online Resources
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Practice Question.html">
+       31. Practice Question
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Solution for Practice Question.html">
+       32. Solution for Practice Question
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Conclusion.html">
+       33. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          20. Quiz: Practice Debugging
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The following quiz questions focus on handling common errors or exceptions that you may encounter while executing your program.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           The following are some common exceptions. Again, "exceptions" are errors detected during execution. See if you can recall and match each error with its meaning and the steps you will take to handle the exception. If you need help, feel free to do some research online to learn more about the exception.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           NameError: name 'abc_dict' is not defined
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           UnboundLocalError
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           ValueError: too many values to unpack (expected 2)
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           TypeError: unsupported operand type(s) for +: 'int' and 'str'
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Example Exception
+            </p>
+           </th>
+           <th>
+            <p>
+             How would you try to handle the exception?
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Identifier is not found in the local or global namespace. Make sure the reference to the identifier is correctly added to the code.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             You are trying to access a local variable before it is defined. Make sure local scope of variable in function is defined or value assigned to it.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             An operation or function is applied to an object of inappropriate type - e.g., trying to concatenate a string and integer.  Change the datatype for one of the values (e.g change int to str)
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Assignation error. Inconsistency in how many values being unpacked and how many variables the values should be assigned to.
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Example Exception
+             </p>
+            </th>
+            <th>
+             <p>
+              How would you try to handle the exception?
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Identifier is not found in the local or global namespace. Make sure the reference to the identifier is correctly added to the code.
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               NameError: name 'abc_dict' is not defined
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              You are trying to access a local variable before it is defined. Make sure local scope of variable in function is defined or value assigned to it.
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               UnboundLocalError
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              An operation or function is applied to an object of inappropriate type - e.g., trying to concatenate a string and integer.  Change the datatype for one of the values (e.g change int to str)
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               TypeError: unsupported operand type(s) for +: 'int' and 'str'
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Assignation error. Inconsistency in how many values being unpacked and how many variables the values should be assigned to.
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               ValueError: too many values to unpack (expected 2)
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-practice-debugging">
+          Quiz: Practice Debugging
+         </h1>
+         <p>
+          In the workspace at the bottom of the page, there is a piece of code in the ** user_input_numlist.py** Python file. The code prompts the user to enter 10 two-digit numbers. It should then find and print the sum of all of the even numbers among those that were entered.
+         </p>
+         <p>
+          But there is a bug in the code! When I input a number, I get the following
+          <code>
+           TypeError
+          </code>
+          . Use the programming environment provided below with a Terminal and code editor to debug the code.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/quiz-debugging-error.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          ** Using the workspace:**
+         </p>
+         <p>
+          Here are a few tips orienting you to this kind of workspace.
+         </p>
+         <p>
+          In the top panel is a code editor where you can edit the Python file ** user_input_numlist.py**. Scroll up and down in this panel to see all the code. You can also expand or shrink this panel by clicking and dragging its bottom border.
+         </p>
+         <p>
+          In the bottom panel, you can execute your Python file by clicking on New Terminal and entering ** python user_input_numlist.py** on the command line.
+         </p>
+         <p>
+          The solutions have been provided on the next page, but I encourage you to try figuring out where the bug is in the code, and fixing it yourself.
+         </p>
+         <p>
+          ** Sample Output:**
+          <br>
+           This is what the output should look like.
+          </br>
+         </p>
+         <pre><code>&gt;&gt;&gt; user_list: [23, 24, 25, 26, 27, 28, 29, 30, 31, 22]
+&gt;&gt;&gt; The sum of the even numbers in user_list is: 130.</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           generic
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+          <li>
+           <strong>
+            userCode:
+           </strong>
+           <br/>
+           <code>
+            <p>
+             python user_input_numlist.py
+            </p>
+           </code>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="21. Solutions for Quiz Practice Debugging.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('20. Quiz: Practice Debugging')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
