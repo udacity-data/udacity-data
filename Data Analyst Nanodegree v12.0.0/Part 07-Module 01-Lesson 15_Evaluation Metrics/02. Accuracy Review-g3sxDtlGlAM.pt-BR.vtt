@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:03.835
+Até agora neste curso, usamos uma métrica bem simples e direta
+
+00:00:03.835 --> 00:00:07.857
+para dizer se nossos algoritmos de classificação estão funcionando bem ou não.
+
+00:00:07.857 --> 00:00:09.782
+Estamos usando a precisão.
+
+00:00:09.782 --> 00:00:14.110
+Lembre-se que, precisão é o número de itens ou pontos de dados em uma classe que
+
+00:00:14.110 --> 00:00:18.106
+são rotulados corretamente, que identificamos corretamente como sendo um membro
+
+00:00:18.106 --> 00:00:22.390
+de dada classe, dividido por todos os números de itens ou pontos de dados na classe.
+

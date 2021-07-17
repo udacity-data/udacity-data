@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:03.410
+Na última lição, você criou sua primeira pessoa de
+
+00:00:03.410 --> 00:00:06.670
+algoritmo identificador de interesse e configurou um framework
+
+00:00:06.670 --> 00:00:10.020
+de teste e treinamento para acessar a precisão desse modelo.
+
+00:00:10.020 --> 00:00:12.654
+Agora que você sabe muito mais sobre métricas de avaliação,
+
+00:00:12.654 --> 00:00:15.517
+implementaremos essas métricas de avaliação no
+
+00:00:15.517 --> 00:00:18.107
+framework configurado na última lição.
+
+00:00:18.107 --> 00:00:21.128
+Quando você chegar ao fim do projeto, a principal coisa na qual você
+
+00:00:21.128 --> 00:00:24.149
+terá que pensar será os recursos que deseja usar,
+
+00:00:24.149 --> 00:00:27.260
+o algoritmo que deseja usar e os ajustes de parâmetro.
+
+00:00:27.260 --> 00:00:28.490
+Você já terá o treinamento,
+
+00:00:28.490 --> 00:00:30.840
+teste e matriz de avaliação configurados.
+

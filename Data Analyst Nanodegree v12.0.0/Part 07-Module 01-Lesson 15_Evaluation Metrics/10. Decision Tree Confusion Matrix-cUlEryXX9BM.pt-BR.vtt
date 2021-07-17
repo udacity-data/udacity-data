@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.298 --> 00:00:03.880
+Aqui, estou desenhando o que poderia ser o resultado do aprendizado da árvore de decisão.
+
+00:00:03.880 --> 00:00:08.610
+Onde, de novo, vermelho é minha classe positiva e verde é minha classe negativa e,
+
+00:00:08.610 --> 00:00:10.800
+depois, forneço a você uma série de pontos de dados.
+
+00:00:10.800 --> 00:00:16.660
+E no exercício de contagem simples, quero que você apenas preencha a matriz de [uuu].
+
+00:00:16.660 --> 00:00:20.500
+Novamente, temos uma classe real e uma previsão de classe.
+
+00:00:20.500 --> 00:00:21.570
+A real está na parte superior.
+
+00:00:21.570 --> 00:00:22.310
+A previsão à esquerda.
+
+00:00:23.360 --> 00:00:26.610
+Temos, de novo, os quatro casos diferentes.
+
+00:00:26.610 --> 00:00:29.480
+Então, observe o lado direito e faça suas contagens.
+
