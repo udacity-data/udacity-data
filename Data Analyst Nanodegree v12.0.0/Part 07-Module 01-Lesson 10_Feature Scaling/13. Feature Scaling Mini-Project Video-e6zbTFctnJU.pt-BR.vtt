@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.350 --> 00:00:02.495
+Bem-vindo ao miniprojeto sobre dimensionamento de recursos.
+
+00:00:02.495 --> 00:00:06.890
+No miniprojeto sobre o agrupamento K-means, você agrupou os pontos de dados.
+
+00:00:06.890 --> 00:00:10.130
+No final, apontamos para o dimensionamento de recursos como
+
+00:00:10.130 --> 00:00:12.778
+algo que pode mudar a saída desse algoritmo de agrupamento.
+
+00:00:12.778 --> 00:00:17.050
+Neste miniprojeto, você mesmo implantará o dimensionamento de recursos.
+
+00:00:17.050 --> 00:00:19.700
+Você adicionará o código do algoritmo de agrupamento K-means
+
+00:00:19.700 --> 00:00:21.640
+no dimensionamento de recursos.
+
+00:00:21.640 --> 00:00:22.590
+Ao fazer isso,
+
+00:00:22.590 --> 00:00:25.370
+você recriará as etapas que seguimos para criar esses novos grupos.
+

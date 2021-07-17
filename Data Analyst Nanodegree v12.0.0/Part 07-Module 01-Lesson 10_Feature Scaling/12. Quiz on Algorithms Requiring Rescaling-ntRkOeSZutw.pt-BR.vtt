@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.670 --> 00:00:05.390
+Certo, Katie, você fez um trabalho fantástico hoje acompanhando o redimensionamento de recurso.
+
+00:00:05.390 --> 00:00:07.620
+E agora vamos testar nosso conhecimento,
+
+00:00:07.620 --> 00:00:11.430
+para ver qual algoritmo você acredita que seja suscetível e
+
+00:00:11.430 --> 00:00:15.350
+afetado pelos recursos de redimensionamento, e quais não são afetados.
+
+00:00:15.350 --> 00:00:17.180
+Aqui está um conjunto de algoritmos.
+
+00:00:17.180 --> 00:00:20.010
+Qual algoritmo seria afetado pelo redimensionamento de recurso?
+
+00:00:20.010 --> 00:00:22.110
+Aqui temos um conjunto de recursos.
+
+00:00:22.110 --> 00:00:24.050
+Que você conhece muito bem.
+
+00:00:24.050 --> 00:00:30.720
+Árvores de decisão, máquinas de vetor de suporte, com um kernel RBF.
+
+00:00:30.720 --> 00:00:32.740
+Talvez você se lembre da regressão linear.
+
+00:00:32.740 --> 00:00:36.550
+E vou acrescentar agrupamento k-means.
+
+00:00:36.550 --> 00:00:38.440
+Não é uma pergunta muito comum.
+
+00:00:38.440 --> 00:00:42.580
+Alguns deles fornecerão o mesmo resultado, mesmo que você redimensione os recursos,
+
+00:00:42.580 --> 00:00:45.460
+e outros terão resultados significativamente diferentes.
+
+00:00:45.460 --> 00:00:47.570
+Marque aqueles que seriam afetados.
+
+00:00:48.790 --> 00:00:52.241
+Onde os resultados realmente dependem do redimensionamento de recurso.
+

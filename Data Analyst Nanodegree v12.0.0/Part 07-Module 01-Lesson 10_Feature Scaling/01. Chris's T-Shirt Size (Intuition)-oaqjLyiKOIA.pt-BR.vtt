@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.170 --> 00:00:02.360
+Bem-vindo à lição sobre dimensionamento de recurso.
+
+00:00:02.360 --> 00:00:06.380
+O dimensionamento de recurso é uma etapa importante do pré-processamento de seus recursos para
+
+00:00:06.380 --> 00:00:08.790
+alguns tipos de algoritmos de aprendizado de máquina.
+
+00:00:08.790 --> 00:00:12.350
+Vamos falar um pouco mais adiante nesta lição exatamente onde você deve usá-lo.
+
+00:00:12.350 --> 00:00:16.170
+Deixe-me começar dando a você uma ideia do que ele faz e
+
+00:00:16.170 --> 00:00:18.540
+o que pode dar errado quando você não executa o dimensionamento de recurso.
+
+00:00:18.540 --> 00:00:20.760
+Vamos supor que eu tenha um colega Chris e
+
+00:00:20.760 --> 00:00:23.630
+ele queira saber qual tamanho de camiseta ele deve usar.
+
+00:00:23.630 --> 00:00:26.530
+Por algum motivo, ele não sabe o tamanho de suas camisetas, mas tem dois bons
+
+00:00:26.530 --> 00:00:31.210
+amigos, Cameron e Sarah, e cada um deles sabe o tamanho de suas camisetas.
+
+00:00:31.210 --> 00:00:33.230
+Chris pode, então, obter alguns dados de Cameron e
+
+00:00:33.230 --> 00:00:37.500
+Sarah sobre a altura e o peso deles.
+
+00:00:37.500 --> 00:00:40.560
+E, de acordo com essas informações, Chris pode dizer qual tamanho de camiseta
+
+00:00:40.560 --> 00:00:44.060
+deve usar com base em ele estar mais próximo do tamanho de Cameron ou de Sarah.
+
+00:00:44.060 --> 00:00:46.250
+Então, aqui estão alguns números para deixar isso mais concreto.
+
+00:00:46.250 --> 00:00:48.260
+Chris é alto e muito magro.
+
+00:00:48.260 --> 00:00:51.140
+Ele pesa 140 libras e tem 6,1 pés de altura.
+
+00:00:51.140 --> 00:00:54.680
+Cameron também é bastante alto, mas não é tão magro.
+
+00:00:54.680 --> 00:00:58.351
+Ele pesa 175 libras e tem 5,9 pés de altura.
+
+00:00:58.351 --> 00:01:00.940
+E Sarah é bem pequena.
+
+00:01:00.940 --> 00:01:04.209
+Ela pesa 115 libras e tem 5,2 pés de altura.
+
+00:01:04.209 --> 00:01:08.270
+Cameron, é claro, usa um tamanho de camiseta grande e Sarah usa um tamanho pequeno; e
+
+00:01:08.270 --> 00:01:09.110
+vamos pressupor que,
+
+00:01:09.110 --> 00:01:12.960
+para fins de discussão, não existe um tamanho médio neste exemplo.
+
+00:01:12.960 --> 00:01:15.860
+Portanto, minha primeira pergunta é apenas intuitiva.
+
+00:01:15.860 --> 00:01:18.530
+Chris deve usar uma camiseta grande, como Cameron, ou
+
+00:01:18.530 --> 00:01:21.500
+pequena, como Sarah, com base em sua altura e seu peso?
+
