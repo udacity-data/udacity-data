@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.420 --> 00:00:03.910
+Como acontece quando dividimos com base no limite de velocidade, obtemos a
+
+00:00:03.910 --> 00:00:07.540
+pureza perfeita dos branches que criamos como resultado.
+
+00:00:07.540 --> 00:00:10.510
+Então, nosso ganho de informações será igual a 1.
+
+00:00:10.510 --> 00:00:13.290
+Começamos com uma entropia de 1.
+
+00:00:13.290 --> 00:00:14.970
+No final, tivemos uma entropia de 0.
+
+00:00:14.970 --> 00:00:16.800
+Então, o ganho de informações será 1.
+
+00:00:16.800 --> 00:00:19.380
+Esse é o melhor ganho de informações que podemos ter,
+
+00:00:19.380 --> 00:00:21.070
+definitivamente é onde queremos fazer uma divisão.
+
+00:00:22.120 --> 00:00:25.500
+E só para esboçar a árvore de decisão, a aparência poderia ser algo como isto.
+
+00:00:25.500 --> 00:00:28.910
+Quando vemos as amostras onde o limite de velocidade está em vigor,
+
+00:00:28.910 --> 00:00:31.660
+então, estas duas primeiras linhas onde a resposta para o
+
+00:00:31.660 --> 00:00:35.940
+limite de velocidade é sim, depois temos todos os exemplos de lento aqui.
+
+00:00:35.940 --> 00:00:41.130
+No outro lado onde não há limite de velocidade, tudo será rápido.
+
+00:00:41.130 --> 00:00:44.540
+Então, este foi um cálculo muito simples.
+
+00:00:44.540 --> 00:00:46.570
+Demorou um pouco para resolver tudo isso, mas
+
+00:00:46.570 --> 00:00:48.440
+espero que você tenha uma noção um pouco melhor do
+
+00:00:48.440 --> 00:00:52.480
+que é ganho de informações em árvores de decisão e por que é tão importante.
+
+00:00:52.480 --> 00:00:56.540
+Então, são cálculos como este que a árvore de decisão resolver quando
+
+00:00:56.540 --> 00:00:57.200
+faz o treinamento.
+
+00:00:57.200 --> 00:01:00.400
+Ela confere todos os exemplos de treinamento, todos os recursos diferentes que
+
+00:01:00.400 --> 00:01:03.710
+estão disponíveis para ela e usa esse
+
+00:01:03.710 --> 00:01:08.370
+critério de ganho de informações para decidir quais variáveis dividir e como fazer as divisões.
+

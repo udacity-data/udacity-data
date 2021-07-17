@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.820 --> 00:00:04.820
+Você conseguiu de novo. Parabéns por sua terceira árvore de decisão do algoritmo de máquina,
+
+00:00:04.820 --> 00:00:06.230
+você chegou ao final.
+
+00:00:06.230 --> 00:00:07.810
+&gt;&gt; Aprendemos muito sobre as árvores de decisão.
+
+00:00:07.810 --> 00:00:11.180
+Vamos adicionar um pouco desse novo conhecimento à nossa lista de itens a serem
+
+00:00:11.180 --> 00:00:13.190
+considerados durante a escolha de um classificador.
+
+00:00:13.190 --> 00:00:16.055
+&gt;&gt; Então, elas são muito fáceis de usar e bonitas para cultivar.
+
+00:00:16.055 --> 00:00:18.155
+Elas têm um formato gráfico e, de certo modo,
+
+00:00:18.155 --> 00:00:20.111
+permitem que você interprete os dados muito bem.
+
+00:00:20.111 --> 00:00:23.563
+Você pode entendê-los muito melhor do que o resultado de uma máquina de vetor de suporte.
+
+00:00:23.563 --> 00:00:24.821
+Mas elas também têm limitações.
+
+00:00:24.821 --> 00:00:25.750
+&gt;&gt; É mesmo.
+
+00:00:25.750 --> 00:00:27.585
+Uma das coisas que é verdadeira sobre árvores de decisão é que
+
+00:00:27.585 --> 00:00:29.090
+elas tendem a sobreajustar.
+
+00:00:29.090 --> 00:00:31.880
+Principalmente, se você tiver dados que têm uma grande quantidade de características e
+
+00:00:31.880 --> 00:00:34.580
+uma árvore de decisão complicada, os dados poderão ser sobreajustados.
+
+00:00:34.580 --> 00:00:37.600
+Portanto, você precisa ter cuidado com os ajustes de parâmetro que escolhe ao
+
+00:00:37.600 --> 00:00:39.320
+usar a árvore de decisão para impedir que isso aconteça.
+
+00:00:39.320 --> 00:00:41.300
+&gt;&gt; Sim. O resultado pode parecer insano se seu nó tiver feito
+
+00:00:41.300 --> 00:00:42.950
+apenas um único ponto de dados.
+
+00:00:42.950 --> 00:00:44.360
+Você quase sempre sobreajusta.
+
+00:00:44.360 --> 00:00:47.150
+Por isso, é muito importante você avaliar como está se saindo
+
+00:00:47.150 --> 00:00:50.300
+e parar o crescimento da árvore no momento adequado.
+
+00:00:50.300 --> 00:00:52.420
+&gt;&gt; Contudo, uma das coisas que também é muito interessante sobre
+
+00:00:52.420 --> 00:00:55.180
+as árvores de decisão é que você pode criar classificadores maiores a partir de
+
+00:00:55.180 --> 00:00:58.360
+árvores de decisão nos chamados métodos de conjunto.
+
+00:00:58.360 --> 00:00:59.060
+Na próxima lição,
+
+00:00:59.060 --> 00:01:02.310
+você terá a oportunidade de explorar um algoritmo sozinho.
+
+00:01:02.310 --> 00:01:05.600
+E alguns algoritmos que forneceremos a você como opções são exemplos de
+
+00:01:05.600 --> 00:01:06.280
+métodos de conjunto.
+
+00:01:06.280 --> 00:01:07.550
+Se isso lhe parece interessante,
+
+00:01:07.550 --> 00:01:11.413
+criar um classificador a partir de um classificador, fique ligado na próxima lição.
+
+00:01:11.413 --> 00:01:15.820
+&gt;&gt; Sim. Vai ser incrível. Então, fique ligado.
+
+00:01:15.820 --> 00:01:16.540
+&gt;&gt; Vamos começar.
+

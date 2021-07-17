@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.600 --> 00:00:01.940
+Agora vamos criar um exemplo.
+
+00:00:01.940 --> 00:00:06.740
+Este é o lembrete da fórmula. E suponha que estes sejam meus dados.
+
+00:00:06.740 --> 00:00:11.040
+Tenho quatro pontos de dados e para cada ponto de dados eu tenho três recursos,
+
+00:00:11.040 --> 00:00:17.570
+o nível do terreno, a irregularidade, se há um limite de velocidade e
+
+00:00:17.570 --> 00:00:20.709
+a velocidade em que o carro anda.
+
+00:00:21.950 --> 00:00:23.440
+E estou apenas inventando alguns dados aqui.
+
+00:00:23.440 --> 00:00:26.890
+Vamos começar no topo da árvore de decisão aqui.
+
+00:00:26.890 --> 00:00:31.960
+Eu tenho dois exemplos lentos e dois exemplos rápidos.
+
+00:00:31.960 --> 00:00:36.200
+Lento, lento, rápido, rápido.
+
+00:00:36.200 --> 00:00:39.199
+A primeira pergunta é, qual é a entropia deste nó?
+
+00:00:40.470 --> 00:00:42.590
+Vamos fazer isso parte por parte.
+
+00:00:42.590 --> 00:00:46.880
+Quantos dos exemplos neste nó são lentos?
+
+00:00:46.880 --> 00:00:47.810
+Escreva sua resposta aqui.
+

@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.940 --> 00:00:05.320
+Como deve supor, este aqui terá mais pureza.
+
+00:00:05.320 --> 00:00:08.590
+Note que tudo contido neste conjunto de exemplos
+
+00:00:08.590 --> 00:00:10.850
+precisa ser realizado lentamente.
+
+00:00:10.850 --> 00:00:15.630
+Já deste outro lado, existe uma certa contaminação de alguns pontos rápidos.
+
+00:00:15.630 --> 00:00:20.170
+Agora você tem uma idea do que é entropia e do que é impureza.
+
+00:00:20.170 --> 00:00:22.420
+Ao criar uma árvore de decisão, você tenta
+
+00:00:22.420 --> 00:00:26.690
+encontrar variáveis e dividir pontos nessas variáveis
+
+00:00:26.690 --> 00:00:31.540
+que criarão subconjuntos com a maior pureza possível.
+
+00:00:31.540 --> 00:00:33.890
+E, ao repetir esse processo recursivamente,
+
+00:00:33.890 --> 00:00:36.610
+a árvore de decisão realmente toma suas decisões
+

@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: es-MX
+
+00:00:00.320 --> 00:00:03.930
+Bienvenido a la mini proyecto sobre árboles de decisión .
+
+00:00:03.930 --> 00:00:06.820
+En este proyecto vamos a estar abordando el mismo proyecto que hemos hecho con nuestro
+
+00:00:06.820 --> 00:00:09.240
+dos últimos algoritmos de clasificación supervisada
+
+00:00:09.240 --> 00:00:12.670
+Estamos tratando de entender quién escribió un correo electrónico basado en la palabra
+
+00:00:12.670 --> 00:00:14.200
+contenido de ese correo electrónico.
+
+00:00:14.200 --> 00:00:16.730
+Esta vez vamos a estar utilizando un árbol de decisión .
+
+00:00:16.730 --> 00:00:20.285
+También vamos a cavar en las características que utilizamos un poco más .
+
+00:00:20.285 --> 00:00:22.790
+Este va a ser un tema dedicado en la última parte de la clase.
+
+00:00:22.790 --> 00:00:24.720
+¿Qué características le dan la más eficaz ,
+
+00:00:24.720 --> 00:00:27.380
+el algoritmo de clasificación supervisada más preciso ?
+
+00:00:27.380 --> 00:00:31.020
+Pero usted conseguirá un pequeño pedazo del chivato de esto en la segunda parte de la lección .
+
+00:00:31.020 --> 00:00:31.830
+Así que prepárate para codificar .
+

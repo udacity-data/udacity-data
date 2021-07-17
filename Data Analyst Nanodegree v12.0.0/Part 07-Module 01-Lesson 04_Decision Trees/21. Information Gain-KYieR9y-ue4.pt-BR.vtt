@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.360 --> 00:00:03.440
+Embora eu tenha certeza de que você está empolgado com a entropia,
+
+00:00:03.440 --> 00:00:05.820
+vamos voltar às árvores de decisão e
+
+00:00:05.820 --> 00:00:09.250
+ver como a entropia afeta a maneira como uma árvore de decisão desenha suas fronteiras.
+
+00:00:10.680 --> 00:00:15.100
+Isso envolve um novo vocabulário: ganho de informações.
+
+00:00:16.290 --> 00:00:18.920
+O ganho de informações é definido como a entropia do pai
+
+00:00:20.130 --> 00:00:23.110
+menos a média ponderada da entropia do filho, que
+
+00:00:23.110 --> 00:00:24.980
+seria resultante se você dividisse esse pai.
+
+00:00:24.980 --> 00:00:30.300
+O algoritmo de árvore de decisão maximizará o ganho de informações.
+
+00:00:31.830 --> 00:00:35.130
+É assim que ele escolherá a característica que sofrerá divisão.
+
+00:00:35.130 --> 00:00:37.760
+E, nos casos em que a característica tem muitos valores diferentes que podem ser obtidos,
+
+00:00:37.760 --> 00:00:40.340
+isso ajudará a determinar onde fazer a divisão.
+
+00:00:40.340 --> 00:00:43.640
+Ele tentará maximizar o ganho de informações.
+
+00:00:43.640 --> 00:00:44.480
+Vejamos um exemplo.
+

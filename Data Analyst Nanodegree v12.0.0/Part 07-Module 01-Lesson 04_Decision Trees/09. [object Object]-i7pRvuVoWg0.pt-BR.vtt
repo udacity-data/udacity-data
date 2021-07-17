@@ -1,0 +1,16 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.450 --> 00:00:05.230
+E agora, nosso próximo teste, algo que sempre queremos perguntar de nossos classificadores.
+
+00:00:05.230 --> 00:00:06.840
+Qual é a precisão?
+
+00:00:06.840 --> 00:00:10.920
+Portanto, no prompt, escreva algumas linhas de código que retornarão a precisão para que
+
+00:00:10.920 --> 00:00:13.390
+possamos compará-la com outros classificadores que examinamos.
+

@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.210 --> 00:00:02.040
+Agora que já analisamos o cálculo,
+
+00:00:02.040 --> 00:00:04.355
+vou fazer uma pequena ressalva.
+
+00:00:04.355 --> 00:00:07.560
+Voltarei à documentação do scikit-learn; será muito rápido.
+
+00:00:09.070 --> 00:00:12.900
+Passei pela documentação do DecisionTreeClassifier aqui.
+
+00:00:12.900 --> 00:00:15.250
+E percebi que o critério de divisão que usei é
+
+00:00:15.250 --> 00:00:18.900
+um parâmetro ajustável do scikit-learn.
+
+00:00:18.900 --> 00:00:22.320
+Na verdade, o padrão é uma métrica chamada
+
+00:00:22.320 --> 00:00:26.740
+índice de Gini, que é outra métrica semelhante de impureza.
+
+00:00:26.740 --> 00:00:31.170
+Você pode ver que ela também dá suporte à entropia ou ao ganho de informações, mas
+
+00:00:31.170 --> 00:00:33.660
+isso é algo que você precisa inserir manualmente.
+
+00:00:33.660 --> 00:00:36.890
+Qualquer uma delas provavelmente funcionará de modo adequado.
+
+00:00:36.890 --> 00:00:40.040
+Mas eu preciso dizer que, no scikit-learn, o padrão
+
+00:00:40.040 --> 00:00:42.260
+não será exatamente a entropia.
+
+00:00:42.260 --> 00:00:45.120
+Mas ambos fornecerão resultados razoavelmente bons.
+
+00:00:45.120 --> 00:00:47.410
+Isso também é algo que pode ser interessante trabalharmos.
+
+00:00:47.410 --> 00:00:48.830
+Então, vamos conversar com Sebastian agora.
+
+00:00:48.830 --> 00:00:51.680
+Ele falará sobre inferência e variação.
+
+00:00:51.680 --> 00:00:54.340
+E o que elas têm a ver com árvores de decisão e
+
+00:00:54.340 --> 00:00:56.450
+todos os tipos de classificadores supervisionados.
+

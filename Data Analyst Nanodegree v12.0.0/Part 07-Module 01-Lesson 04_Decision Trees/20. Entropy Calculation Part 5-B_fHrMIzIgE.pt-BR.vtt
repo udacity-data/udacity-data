@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.410 --> 00:00:05.030
+Vou explicar este cálculo porque se você for como eu, os dois números da log base dois
+
+00:00:05.030 --> 00:00:07.360
+ log não são algo que você possa calcular na sua memória e
+
+00:00:07.360 --> 00:00:09.622
+pode ser difícil encontrar uma calculadora que possa manipulá-los.
+
+00:00:09.622 --> 00:00:12.640
+Vou deixar o Python fazer o trabalho pesado para mim.
+
+00:00:12.640 --> 00:00:16.510
+Eu entro no Python e importo o módulo math.
+
+00:00:18.500 --> 00:00:22.058
+Eu quero o Pi negativo vezes a log base dois de PI.
+
+00:00:22.058 --> 00:00:31.658
+Portanto, faço Pslow negativo é 0,5 vezes log 0,5...
+
+00:00:31.658 --> 00:00:35.414
+Se eu colocar este segundo argumento aqui, o dois que informa a base de
+
+00:00:35.414 --> 00:00:38.741
+log a ser usada... portanto, como eu preciso da log base dois, coloco um dois aqui.
+
+00:00:38.741 --> 00:00:42.690
+Se eu quisesse a log base 10, eu colocaria 10 aqui e assim por diante.
+
+00:00:42.690 --> 00:00:44.800
+E, em seguida, preciso adicionar um segundo termo, para que
+
+00:00:44.800 --> 00:00:49.270
+isto cuide de Pslow e, também, tenha uma contribuição de Pfast.
+
+00:00:49.270 --> 00:00:52.120
+Lembre-se de que eu preciso somar todas as classes que estão disponíveis.
+
+00:00:53.650 --> 00:00:57.080
+Pslow e Pfast são iguais.
+
+00:00:57.080 --> 00:01:00.160
+Portanto, isso é muito fácil, basta digitar isto novamente.
+
+00:01:00.160 --> 00:01:02.317
+E a entropia, como se vê, é 1,0.
+
+00:01:02.317 --> 00:01:05.810
+Portanto, esse é o estado impuro máximo, certo?
+
+00:01:05.810 --> 00:01:08.780
+Temos dois rótulos de classe disponíveis para nós.
+
+00:01:08.780 --> 00:01:10.510
+E eu obtenho uma entropia de 1,0.
+
+00:01:10.510 --> 00:01:14.270
+Portanto, lembre-se de que o máximo que pudemos obter, o maior valor da
+
+00:01:14.270 --> 00:01:16.350
+entropia que pudemos obter foi 1,0.
+
+00:01:16.350 --> 00:01:21.070
+Isso significa que, esse é o exemplo impuro máximo que poderíamos ter.
+
+00:01:21.070 --> 00:01:25.110
+Se tivermos dois rótulos de classe, a situação mais impura que poderíamos
+
+00:01:25.110 --> 00:01:30.090
+ter é onde os exemplos são divididos igualmente entre os dois rótulos de classe, portanto,
+
+00:01:30.090 --> 00:01:33.990
+a entropia do nó de início seria 1,0.
+

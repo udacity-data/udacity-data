@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.320 --> 00:00:03.930
+Bem-vindo ao miniprojeto sobre árvores de decisão.
+
+00:00:03.930 --> 00:00:06.820
+Neste projeto vamos abordar o mesmo projeto que usamos em nossos
+
+00:00:06.820 --> 00:00:09.240
+últimos dois algoritmos de classificação supervisionada.
+
+00:00:09.240 --> 00:00:12.670
+Estamos tentando entender quem escreveu um email com base no conteúdo
+
+00:00:12.670 --> 00:00:14.200
+de palavras desse email.
+
+00:00:14.200 --> 00:00:16.730
+Desta vez, usaremos uma árvore de decisão.
+
+00:00:16.730 --> 00:00:20.285
+Também examinaremos um pouco mais os recursos que usamos.
+
+00:00:20.285 --> 00:00:22.790
+Esse será um tópico dedicado na última parte da aula.
+
+00:00:22.790 --> 00:00:24.720
+Quais recursos fornecem o algoritmo de classificação
+
+00:00:24.720 --> 00:00:27.380
+supervisionada mais efetivo e mais preciso?
+
+00:00:27.380 --> 00:00:31.020
+Mas você vai obter um vislumbre disso na segunda parte da lição.
+
+00:00:31.020 --> 00:00:31.830
+Portanto, esteja pronto para codificar.
+

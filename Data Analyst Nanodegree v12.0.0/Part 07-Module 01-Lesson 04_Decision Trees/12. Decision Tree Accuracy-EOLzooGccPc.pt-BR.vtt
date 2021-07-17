@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.670 --> 00:00:04.480
+Como se vê, quando computa a precisão, você pode ver que...
+
+00:00:04.480 --> 00:00:07.400
+que a fronteira de decisão mais simples fornece um resultado melhor.
+
+00:00:07.400 --> 00:00:15.040
+Você tem uma precisão de 91,2% com o min_samples_split definido como 50.
+
+00:00:15.040 --> 00:00:19.020
+E quando você permite que ele vá para baixo até dois,
+
+00:00:19.020 --> 00:00:20.360
+você obtém apenas uma precisão de 90,8%.
+
+00:00:20.360 --> 00:00:25.190
+Portanto, você pode ver que isso faz diferença,
+
+00:00:25.190 --> 00:00:27.370
+não apenas em termos da aparência da fronteira de decisão, mas
+
+00:00:27.370 --> 00:00:30.170
+na verdade em termos do desempenho de seu classificador.
+
+00:00:30.170 --> 00:00:32.729
+E essa pode não parecer uma enorme diferença,
+
+00:00:32.729 --> 00:00:36.130
+mas é algo que obtemos gratuitamente apenas mudando um parâmetro.
+
+00:00:36.130 --> 00:00:38.970
+E, se você se lembrar, havia vários parâmetros com os quais tivemos que brincar
+
+00:00:38.970 --> 00:00:40.640
+em árvores de decisão.
+
+00:00:40.640 --> 00:00:43.920
+Portanto, incentivo você agora mesmo ou em algum ponto no futuro a
+
+00:00:43.920 --> 00:00:46.230
+mergulhar e brincar com uma grande parte deles.
+
+00:00:46.230 --> 00:00:48.860
+Obtenha alguma intuição do que eles estão controlando e
+
+00:00:48.860 --> 00:00:52.070
+o que eles realmente alteram na forma da fronteira de decisão.
+
+00:00:52.070 --> 00:00:55.710
+Porque, no futuro, esses vão ser os parâmetros que você irá ajustar
+
+00:00:55.710 --> 00:00:58.110
+para obter o melhor desempenho de seu algoritmo.
+

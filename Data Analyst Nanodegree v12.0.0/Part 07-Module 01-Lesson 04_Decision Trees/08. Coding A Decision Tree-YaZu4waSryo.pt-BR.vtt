@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.490 --> 00:00:02.040
+Está certo, eu sou.
+
+00:00:02.040 --> 00:00:03.300
+Obrigado por esta excelente introdução.
+
+00:00:04.400 --> 00:00:08.420
+Neste vídeo, irei mostrar como podemos usar o SK Learn para fazer o
+
+00:00:08.420 --> 00:00:13.220
+trabalho pesado em termos de criação e de treinamento de nossa árvore de decisão.
+
+00:00:13.220 --> 00:00:16.630
+Começaremos na página de árvores de decisão da documentação do SK Learn.
+
+00:00:16.630 --> 00:00:18.350
+Você pode localizá-la usando o Google.
+
+00:00:18.350 --> 00:00:19.770
+Quando chego na página de destino de
+
+00:00:19.770 --> 00:00:23.160
+árvores de decisão, vejo que posso usá-las como classificadores.
+
+00:00:23.160 --> 00:00:26.380
+Elas também podem ser usadas para regressão, que é algo que abordaremos mais tarde.
+
+00:00:26.380 --> 00:00:29.150
+Rolando para baixo para localizar um pouco mais de informações sobre seu uso como
+
+00:00:29.150 --> 00:00:33.370
+classificadores, descubro que há alguma coisa chamada DecisionTreeClassifier,
+
+00:00:33.370 --> 00:00:35.110
+que parece ser o que eu quero.
+
+00:00:35.110 --> 00:00:39.590
+Melhor ainda, descubro algumas linhas de código base que posso usar para começar.
+
+00:00:39.590 --> 00:00:42.440
+Examinando este código base um pouco mais de perto, vejo que ele é muito
+
+00:00:42.440 --> 00:00:46.770
+semelhante ao que nós tínhamos no Naive Bayes e às máquinas de vetor de suporte.
+
+00:00:46.770 --> 00:00:49.070
+A primeira coisa que tenho é uma declaração import.
+
+00:00:49.070 --> 00:00:52.440
+A segunda linha importante do código será a criação do classificador.
+
+00:00:52.440 --> 00:00:56.010
+A terceira linha importante do código será ajustar o classificador usando, neste
+
+00:00:56.010 --> 00:00:57.990
+caso, alguns dados de treinamento.
+
+00:00:57.990 --> 00:01:01.880
+E a quarta linha importante será usar esse classificador ajustado para fazer
+
+00:01:01.880 --> 00:01:05.880
+uma previsão sobre um novo ponto, em geral, um ponto do conjunto de testes.
+
+00:01:05.880 --> 00:01:09.250
+Isso tudo deve começar a parecer muito familiar para você agora.
+
+00:01:09.250 --> 00:01:12.240
+Com esse pequeno curso rápido, irei joga você no
+
+00:01:12.240 --> 00:01:15.540
+fundo da piscina e pedir que você realmente codifique uma árvore de decisão sozinho para
+
+00:01:15.540 --> 00:01:17.060
+que você possa ver o que é.
+
+00:01:17.060 --> 00:01:19.610
+Nos vídeos seguintes, falaremos um pouco mais sobre isso.
+
+00:01:19.610 --> 00:01:22.390
+Este é um código base que fornecerei a você em um teste.
+
+00:01:22.390 --> 00:01:25.600
+Temos nossos recursos e nossos rótulos para o treinamento e o conjunto de testes.
+
+00:01:25.600 --> 00:01:29.390
+E, o que eu quero fazer, é criar um classificador de árvore de decisão que você
+
+00:01:29.390 --> 00:01:32.900
+treinará usando os recursos de treinamento e os rótulos de treinamento.
+
+00:01:32.900 --> 00:01:35.880
+Devem ser três linhas de código para chegar ao ponto de ajuste
+
+00:01:35.880 --> 00:01:37.260
+da árvore de decisão, e
+
+00:01:37.260 --> 00:01:41.520
+quatro linhas de código, se você decidir fazer algumas previsões usando o conjunto de testes.
+
+00:01:41.520 --> 00:01:44.400
+Forneci duas linhas de código aqui que visualizarão a fronteira de
+
+00:01:44.400 --> 00:01:47.730
+decisão para que você possa ver imediatamente sua aparência.
+
+00:01:47.730 --> 00:01:48.350
+Portanto, vá em frente e
+
+00:01:48.350 --> 00:01:51.470
+faça um teste e eu verei você no próximo vídeo para mostrar o que eu obtive
+

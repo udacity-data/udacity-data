@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.460 --> 00:00:03.150
+Agora, falaremos sobre algo que é muito importante para as
+
+00:00:03.150 --> 00:00:05.400
+árvores de decisão: a entropia.
+
+00:00:06.430 --> 00:00:11.120
+A entropia é basicamente o que determina a maneira como uma árvore de decisão
+
+00:00:11.120 --> 00:00:14.030
+decidirá onde dividir os dados.
+
+00:00:14.030 --> 00:00:16.270
+Por isso, ela é muito importante.
+
+00:00:16.270 --> 00:00:18.050
+Qual é a definição?
+
+00:00:18.050 --> 00:00:21.320
+É uma medida de impureza em uma série de exemplos.
+
+00:00:21.320 --> 00:00:22.590
+Vou mostrar o que quero dizer.
+
+00:00:22.590 --> 00:00:26.240
+Nos dados de carro autoguiado de Sebastian, temos a inclinação e
+
+00:00:26.240 --> 00:00:29.000
+a irregularidade do terreno, como fizemos antes.
+
+00:00:29.000 --> 00:00:31.610
+Mas, suponhamos que agora haja uma nova variável, uma nova característica
+
+00:00:31.610 --> 00:00:35.413
+que levaremos em conta: o limite de velocidade.
+
+00:00:35.413 --> 00:00:39.424
+Você se lembra de que a pergunta era se o carro pode ir rápido ou devagar?
+
+00:00:39.424 --> 00:00:43.190
+Se houver um limite de velocidade, ele não deverá ir muito rápido.
+
+00:00:44.230 --> 00:00:46.440
+Lembre-se de que, antes de termos dados semelhantes a isto,
+
+00:00:46.440 --> 00:00:48.640
+nós tínhamos a irregularidade e a inclinação.
+
+00:00:48.640 --> 00:00:51.760
+Agora, suponhamos que temos o limite de velocidade e a inclinação.
+
+00:00:51.760 --> 00:00:54.460
+E que o limite de velocidade funcione assim.
+
+00:00:54.460 --> 00:00:58.050
+Se o limite de velocidade estiver em vigor, você estará nesta metade dos dados.
+
+00:00:58.050 --> 00:00:59.800
+Se o limite de velocidade não estiver em vigor e
+
+00:00:59.800 --> 00:01:02.930
+você puder ir na velocidade que desejar, você estará nesta metade dos dados,
+
+00:01:02.930 --> 00:01:05.510
+a metade inferior deste gráfico de dispersão.
+
+00:01:05.510 --> 00:01:09.885
+Então, quando o limite de velocidade estiver em vigor, não importa a inclinação,
+
+00:01:09.885 --> 00:01:13.230
+tudo será devagar.
+
+00:01:13.230 --> 00:01:15.800
+Entretanto, quando o limite de velocidade não estiver em vigor,
+
+00:01:15.800 --> 00:01:18.820
+você ainda terá de ir devagar quando estiver muito inclinado, mas
+
+00:01:18.820 --> 00:01:22.570
+poderá ir rápido se estiver bastante plano, se o terreno for bom.
+

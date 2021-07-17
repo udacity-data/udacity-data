@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:01.690
+Bem-vindo de volta ao carro autoguiado.
+
+00:00:01.690 --> 00:00:04.760
+Katie acabou de me pedir para explicar dois termos do maquinário:
+
+00:00:04.760 --> 00:00:06.220
+inferência e variância.
+
+00:00:06.220 --> 00:00:10.870
+Eles são geralmente usados como dilema da variância da inferência, e aqui está a essência disso.
+
+00:00:10.870 --> 00:00:16.309
+Um algoritmo de aprendizado de máquina de alta inferência praticamente ignora os dados.
+
+00:00:16.309 --> 00:00:20.610
+Ele não tem capacitor em quase nada. Isso é chamado de inferência.
+
+00:00:20.610 --> 00:00:24.120
+Se eu tivesse um carro com inferência, eu poderia treiná-lo e,
+
+00:00:24.120 --> 00:00:26.730
+independentemente da maneira como eu o treino, ele não faria nada de maneira diferente.
+
+00:00:26.730 --> 00:00:30.270
+Geralmente, essa é uma ideia ruim no aprendizado de máquina, mas você pode ir para
+
+00:00:30.270 --> 00:00:33.090
+o outro extremo e criar um carro que seja extremamente perceptivo aos dados,
+
+00:00:33.090 --> 00:00:36.490
+e ele só replicará o que viu antes.
+
+00:00:36.490 --> 00:00:38.230
+Esse é um algoritmo de variância extremamente alta.
+
+00:00:38.230 --> 00:00:42.250
+O problema aqui é que ele reage muito inadequadamente em situações que ainda não
+
+00:00:42.250 --> 00:00:46.260
+viu antes porque não tem a inferência correta para generalizar a nova situação.
+
+00:00:46.260 --> 00:00:49.200
+Na verdade, o que você quer é algo intermediário.
+
+00:00:49.200 --> 00:00:50.790
+Existe a chamada compensação da variância da inferência.
+
+00:00:50.790 --> 00:00:54.120
+Você quer um algoritmo que tenha alguma autoridade para generalizar.
+
+00:00:54.120 --> 00:00:56.380
+Mas que ainda seja muito aberto para ouvir os dados.
+
+00:00:56.380 --> 00:00:57.960
+E essa é a sua escolha, na maioria das vezes.
+
+00:00:57.960 --> 00:01:00.600
+Existem muitos algoritmos em que você pode, de fato, girar um botão
+
+00:01:00.600 --> 00:01:03.986
+e torná-lo mais polarizado, ou ele pode ter alta variância. E
+
+00:01:03.986 --> 00:01:08.400
+a capacidade de girar esse botão é o que torna o maquinário incrível.
+

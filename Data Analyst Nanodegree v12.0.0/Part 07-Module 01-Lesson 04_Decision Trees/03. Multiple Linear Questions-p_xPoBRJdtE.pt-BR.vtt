@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.005 --> 00:00:02.750
+A resposta é não.
+
+00:00:02.750 --> 00:00:03.920
+Se não estiver ventando,
+
+00:00:03.920 --> 00:00:09.180
+todos os pontos de dados restantes irão neste branch aqui, nosso negativo.
+
+00:00:11.080 --> 00:00:16.490
+Então, você poderia dizer que, para não, a resposta é um grande x vermelho.
+
+00:00:16.490 --> 00:00:18.220
+Para o caso de sim, entretanto,
+
+00:00:18.220 --> 00:00:23.770
+temos que fazer outra pergunta, e ela é se está ensolarado.
+
+00:00:25.300 --> 00:00:27.680
+Há dois resultados, como antes, sim e não.
+
+00:00:30.160 --> 00:00:33.850
+É claro que eu, de modo inteligente, selecionei o limite exatamente aqui.
+
+00:00:35.330 --> 00:00:39.230
+E se você responder isso com sim, perguntaremos se responderia com não.
+
+00:00:39.230 --> 00:00:40.870
+Você obtém o x vermelho.
+
+00:00:40.870 --> 00:00:43.860
+Então, isto aqui é a chamada árvore de decisão.
+
+00:00:44.930 --> 00:00:48.741
+E o que o aprendizado de árvore de decisão faz no aprendizado de máquina é
+
+00:00:48.741 --> 00:00:53.136
+obter dados como esses e localizar algo como isso, o que pode ajudar você
+
+00:00:53.136 --> 00:00:57.920
+a classificar dados futuros usando essa estrutura de dados muito simples chamada de árvore.
+

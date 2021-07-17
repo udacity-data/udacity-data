@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.030 --> 00:00:05.050
+Lembre-se de que a entropia é a soma de todos os rótulos de classe
+
+00:00:06.150 --> 00:00:12.640
+de Pi negativo, log base 2, Pi.
+
+00:00:13.930 --> 00:00:17.560
+Portanto, qual é a entropia das crianças quando fazemos esta divisão?
+
+00:00:17.560 --> 00:00:22.330
+Eu tenho dois rótulos de classe disponíveis para mim, o slow e o fast.
+
+00:00:22.330 --> 00:00:27.420
+Vamos começar com slow. Pslow é dois terços.
+
+00:00:27.420 --> 00:00:28.560
+Portanto, isto é o que vou escrever aqui.
+
+00:00:28.560 --> 00:00:37.060
+Dois terços negativos, log base dois de dois terços.
+
+00:00:37.060 --> 00:00:39.870
+E agora fazemos o cálculo do componente rápido.
+
+00:00:41.302 --> 00:00:50.070
+Pfast é um terço, portanto, este um terço negativo, log base 2, um terço.
+
+00:00:55.130 --> 00:00:57.080
+Agora você faz o cálculo e
+
+00:00:57.080 --> 00:01:03.660
+escreve o valor decimal desta expressão na caixa aqui.
+
+00:01:03.660 --> 00:01:07.060
+Lembre-se de que se você precisar fazer o cálculo da log base 2,
+
+00:01:07.060 --> 00:01:10.530
+uma das coisas que eu acho realmente útil é o módulo math do Python.
+

@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.250 --> 00:00:03.719
+Bem-vindo ao nosso terceiro e último algoritmo de classificação supervisionada.
+
+00:00:03.719 --> 00:00:04.280
+&gt;&gt; Sobre?
+
+00:00:04.280 --> 00:00:05.210
+&gt;&gt; Árvores de decisão.
+
+00:00:05.210 --> 00:00:07.380
+&gt;&gt; Árvores de decisão são um dos elementos mais antigos e mais usados na
+
+00:00:07.380 --> 00:00:09.490
+maquinaria em geral.
+
+00:00:09.490 --> 00:00:13.050
+Elas vêm de décadas e são extremamente robustas.
+
+00:00:13.050 --> 00:00:15.610
+&gt;&gt; Realmente têm fronteira de decisão bem interessantes,
+
+00:00:15.610 --> 00:00:17.920
+que você verá assim que começarmos a codificação.
+
+00:00:17.920 --> 00:00:20.520
+&gt;&gt; E são muito intuitivas, então você pode ver e entender o resultado.
+
+00:00:20.520 --> 00:00:23.130
+É um ótimo algoritmo e estamos muito animados para começar.
+

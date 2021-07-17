@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.370 --> 00:00:05.080
+Vamos praticar isso usando um exemplo um pouco mais complicado.
+
+00:00:05.080 --> 00:00:10.480
+Suponha que temos duas coordenadas: X e Y; e estes são nossos dados.
+
+00:00:10.480 --> 00:00:14.020
+Então, na raiz de uma árvore, eu vou primeiro fazer uma pergunta sobre X, e
+
+00:00:14.020 --> 00:00:16.969
+quero que X seja menor ou maior do que algum limite.
+
+00:00:18.310 --> 00:00:20.024
+Destes números aqui: um,
+
+00:00:20.024 --> 00:00:23.420
+dois, três, quatro, cinco, qual deles você acha que é o melhor limite a
+
+00:00:23.420 --> 00:00:24.660
+ser usado neste conjunto de dados?
+
+00:00:24.660 --> 00:00:28.690
+Dê uma olhada e diga qual é o melhor limite para
+
+00:00:28.690 --> 00:00:30.671
+um a pergunta relacionada a X, entre um e cinco.
+
+00:00:30.671 --> 00:00:33.560
+. Ou seja, vamos criar uma árvore inteira;
+
+00:00:33.560 --> 00:00:37.830
+qual é a linguagem de X mais útil para dividir os dados?
+

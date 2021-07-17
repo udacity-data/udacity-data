@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.630 --> 00:00:03.900
+Um método no aprendizado de máquina que é muito,
+
+00:00:03.900 --> 00:00:07.580
+muito popular é chamado de árvores de decisão.
+
+00:00:07.580 --> 00:00:12.250
+E assim como na máquina de vetores de suporte você era capaz de usar uma função kernel,
+
+00:00:12.250 --> 00:00:15.920
+para transformar superfícies de decisão lineares em não-lineares.
+
+00:00:15.920 --> 00:00:22.457
+Árvores de decisão usam um truque que permite tomar decisões não-lineares, com superfícies
+
+00:00:22.457 --> 00:00:24.860
+de decisão simples e lineares.
+
+00:00:24.860 --> 00:00:25.978
+Vamos começar com um exemplo.
+
+00:00:25.978 --> 00:00:33.544
+Eu tenho um amigo chamado Tom, e Tom adora windsurf.
+
+00:00:33.544 --> 00:00:36.292
+Mas para curtir o windsurf, ele precisa de duas coisas.
+
+00:00:36.292 --> 00:00:40.395
+Vento e também precisa do sol, porque ele
+
+00:00:40.395 --> 00:00:45.810
+não gosta muito de surfar com tempo nublado ou chovendo.
+
+00:00:45.810 --> 00:00:48.981
+Pegamos todos os dias do último ano e os tornamos em pontos de dados.
+
+00:00:48.981 --> 00:00:53.284
+Ele não pratica windsurf quando não está muito sol.
+
+00:00:53.284 --> 00:00:57.500
+E ele não pratica windsurf quando não há vento suficiente.
+
+00:00:58.560 --> 00:01:01.988
+Mas quando essas condições, vento e sol, se combinam,
+
+00:01:01.988 --> 00:01:06.480
+ele sai para praticar windsurf no lago.
+
+00:01:06.480 --> 00:01:12.960
+Minha primeira pergunta, estes dados são linearmente separáveis?
+
+00:01:14.390 --> 00:01:14.970
+Sim ou não?
+

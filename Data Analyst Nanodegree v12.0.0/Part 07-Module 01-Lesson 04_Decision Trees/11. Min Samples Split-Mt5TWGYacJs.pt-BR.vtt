@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.070 --> 00:00:02.070
+Agora vamos ver o que isso faz no código.
+
+00:00:02.070 --> 00:00:03.700
+Então, eu tenho duas árvores de decisão.
+
+00:00:03.700 --> 00:00:06.840
+Uma delas é bem complexa com muitas partes intricadas da
+
+00:00:06.840 --> 00:00:08.300
+fronteira de decisão.
+
+00:00:08.300 --> 00:00:09.270
+A outra é muito mais simples.
+
+00:00:09.270 --> 00:00:11.760
+Talvez ela tenha só dois ou três cortes importantes.
+
+00:00:11.760 --> 00:00:15.617
+E um deles eu fiz com um min_samples_split igual a 2,
+
+00:00:15.617 --> 00:00:18.819
+o valor padrão, e o outro eu defini como 50.
+
+00:00:18.819 --> 00:00:21.655
+A questão é: qual é qual?
+
+00:00:21.655 --> 00:00:25.403
+Escreva seu palpite na caixa de texto, ou você pode codificá-lo e
+
+00:00:25.403 --> 00:00:29.470
+ver por si mesmo qual é a configuração de parâmetro que, a seu ver, cada um tem.
+

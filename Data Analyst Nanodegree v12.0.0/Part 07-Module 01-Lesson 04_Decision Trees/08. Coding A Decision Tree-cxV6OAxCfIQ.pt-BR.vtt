@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.490 --> 00:00:05.180
+Espero que você tenha tido algum sucesso com sua árvore de decisão. Agora, deixe-me mostrar
+
+00:00:05.180 --> 00:00:09.920
+a fronteira de decisão da árvore de decisão à qual cheguei ao tentar resolver esse problema.
+
+00:00:09.920 --> 00:00:10.810
+Eis o que consegui.
+
+00:00:10.810 --> 00:00:14.520
+De imediato, é possível ver que a fronteira de decisão da árvore de decisão é
+
+00:00:14.520 --> 00:00:16.120
+muito diferente.
+
+00:00:16.120 --> 00:00:18.830
+Todas estas pequenas linhas irregulares.
+
+00:00:18.830 --> 00:00:22.290
+Veja, parece até uma obra de arte moderna ou algo do tipo.
+
+00:00:23.745 --> 00:00:28.900
+Está modelando todos esses cortes horizontais e verticais que ele faz.
+
+00:00:28.900 --> 00:00:31.980
+Por causa da estrutura da árvore de decisão que ela está
+
+00:00:31.980 --> 00:00:36.730
+percorrendo tentando dividir o limite para
+
+00:00:36.730 --> 00:00:39.650
+obter o máximo de pontos possíveis no conjunto de treinamento.
+
+00:00:39.650 --> 00:00:44.440
+Você pode ver que ela apresenta pequenas ilhas, assim como o FBN.
+
+00:00:44.440 --> 00:00:48.180
+Em geral, esta é a forma que caracterizará a árvore
+
+00:00:48.180 --> 00:00:49.550
+de decisão ou um limite de árvore de decisão.
+
+00:00:49.550 --> 00:00:54.250
+Uma das coisas que você pode notar é que há alguns sinais de
+
+00:00:54.250 --> 00:01:00.390
+sobreajuste, talvez na árvore de decisão. Temos
+
+00:01:00.390 --> 00:01:02.180
+estas longas fatias.
+
+00:01:02.180 --> 00:01:05.610
+Como esta aqui e esta aqui,
+
+00:01:05.610 --> 00:01:08.210
+onde a árvore de decisão parece estar saindo do próprio percurso
+
+00:01:08.210 --> 00:01:09.690
+de forma não natural.
+
+00:01:09.690 --> 00:01:12.900
+Acho que, se você tivesse marcado os pontos de treinamento em vez
+
+00:01:12.900 --> 00:01:15.970
+dos pontos de teste na parte superior da fronteira de decisão, você descobriria que
+
+00:01:15.970 --> 00:01:20.960
+há alguns pontos de treinamento azuis que talvez estejam fora nesta parte,
+
+00:01:20.960 --> 00:01:25.150
+levando a fronteira de decisão a sair para selecionar esses pontos.
+
+00:01:25.150 --> 00:01:27.340
+Da mesma forma, talvez isso possa acontecer com alguns pontos vermelhos aqui.
+

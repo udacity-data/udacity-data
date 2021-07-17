@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.370 --> 00:00:06.610
+Eu diria que estamos no nível 4 no meu desenho,
+
+00:00:06.610 --> 00:00:10.380
+pois ele separa os círculos azuis dos valores x vermelhos.
+
+00:00:10.380 --> 00:00:12.930
+Ao perguntarmos se y é menor que 4,
+
+00:00:12.930 --> 00:00:15.330
+há 2 respostas, Sim e Não.
+
+00:00:15.330 --> 00:00:21.195
+Ao optar por Sim, você escolhe o x vermelho ou o círculo azul?
+
+00:00:21.195 --> 00:00:24.035
+Sua escolha foi sábia. De fato é o X vermelho.
+
+00:00:24.035 --> 00:00:28.360
+Isso significa que obtemos círculos azuis para a resposta Não,
+
+00:00:28.360 --> 00:00:31.575
+em que o valor é maior ou igual a 4.
+
+00:00:31.575 --> 00:00:34.320
+Esta é a árvore de decisão ou
+
+00:00:34.320 --> 00:00:37.750
+uma das principais árvores de decisão que caracterizam esses dados.
+
+00:00:37.750 --> 00:00:40.790
+O algoritmo de aprendizagem da árvore de decisão.
+
+00:00:40.790 --> 00:00:44.490
+Usa um algoritmo de computador para encontrar
+
+00:00:44.490 --> 00:00:48.700
+automaticamente as fronteiras de decisão com base em dados. Katie falará sobre isso
+

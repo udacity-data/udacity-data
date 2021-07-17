@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.170 --> 00:00:00.910
+E lembre-se de que,
+
+00:00:00.910 --> 00:00:04.470
+quando começamos com todos os dados, a entropia do pai era 1.0.
+
+00:00:04.470 --> 00:00:09.160
+Agora vamos usar o ganho de informações para decidir que variável usar na divisão.
+
+00:00:09.160 --> 00:00:15.260
+Vamos começar fazendo cálculo de ganho de informações para a inclinação.
+
+00:00:15.260 --> 00:00:19.650
+Então, este aqui é meu nó pai, com os quatro exemplos nele.
+
+00:00:19.650 --> 00:00:20.960
+Agora eu faço a divisão com base na inclinação.
+
+00:00:20.960 --> 00:00:22.320
+Então, a primeira pergunta para
+
+00:00:22.320 --> 00:00:27.950
+você é: quantos exemplos entram no branch íngreme?
+
+00:00:27.950 --> 00:00:28.930
+Escreva sua resposta na caixa.
+

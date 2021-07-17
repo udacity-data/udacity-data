@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.670 --> 00:00:05.870
+Certo. A precisão que você deveria ter obtido era de 90,8%,
+
+00:00:05.870 --> 00:00:09.030
+ao executar a árvore de decisão de outra perspectiva.
+
+00:00:10.350 --> 00:00:14.260
+Mas você também pode ver que há alguns problemas de sobreajuste nesta
+
+00:00:14.260 --> 00:00:15.480
+árvore específica.
+
+00:00:15.480 --> 00:00:17.860
+Talvez haja alguns parâmetros aqui que possamos ajustar,
+
+00:00:17.860 --> 00:00:20.330
+podemos tentar aumentar um pouco mais este número.
+
+00:00:20.330 --> 00:00:24.330
+Vamos voltar à documentação e tentar descobrir
+
+00:00:24.330 --> 00:00:27.720
+quais parâmetros podemos ajustar, para que esse número fique um pouco melhor.
+
