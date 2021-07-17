@@ -1,0 +1,527 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Filter, Drop Nulls, Dedupe
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Analysis Process - Case Study 2
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Lesson Overview.html">
+       01. Lesson Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Data Overview.html">
+       02. Data Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Data Attributes.html">
+       03. Data Attributes
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Asking Questions.html">
+       04. Asking Questions
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Assessing Data.html">
+       05. Assessing Data
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Cleaning Column Labels.html">
+       06. Cleaning Column Labels
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Filter, Drop Nulls, Dedupe.html">
+       07. Filter, Drop Nulls, Dedupe
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Inspecting Data Types.html">
+       08. Inspecting Data Types
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Fixing Data Types Pt 1.html">
+       09. Fixing Data Types Pt 1
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Fixing Data Types Pt 2.html">
+       10. Fixing Data Types Pt 2
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Fixing Data Types Pt 3.html">
+       11. Fixing Data Types Pt 3
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Exploring with Visuals.html">
+       12. Exploring with Visuals
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Conclusions &amp; Visuals.html">
+       13. Conclusions &amp; Visuals
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Types of Merges.html">
+       14. Types of Merges
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Merging Datasets.html">
+       15. Merging Datasets
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Results with Merged Dataset.html">
+       16. Results with Merged Dataset
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Conclusion.html">
+       17. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          07. Filter, Drop Nulls, Dedupe
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="filter-drop-nulls-dedupe">
+          Filter, Drop Nulls, Dedupe
+         </h1>
+         <h3 id="1-filter">
+          1. Filter
+         </h3>
+         <p>
+          For consistency, only compare cars certified by California standards. Filter both datasets using
+          <code>
+           query
+          </code>
+          to select only rows where
+          <code>
+           cert_region
+          </code>
+          is
+          <code>
+           CA
+          </code>
+          . Then, drop the
+          <code>
+           cert_region
+          </code>
+          columns, since it will no longer provide any useful information (we'll know every value is 'CA').
+         </p>
+         <h3 id="2-drop-nulls">
+          2. Drop Nulls
+         </h3>
+         <p>
+          Drop any rows in both datasets that contain missing values.
+         </p>
+         <h3 id="3-dedupe">
+          3. Dedupe
+         </h3>
+         <p>
+          Drop any duplicate rows in both datasets.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Match the values for the following features about the new dataset after filtering by certification region.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           number of samples in 2008 dataset
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           number of samples in 2018 dataset
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           number of columns in both datasets
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Feature
+            </p>
+           </th>
+           <th>
+            <p>
+             Value
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             14
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             798
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             13
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             823
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             10
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2404
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             1611
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             1084
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Feature
+             </p>
+            </th>
+            <th>
+             <p>
+              Value
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              798
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               number of samples in 2018 dataset
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              13
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               number of columns in both datasets
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              1084
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               number of samples in 2008 dataset
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="08. Inspecting Data Types.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('07. Filter, Drop Nulls, Dedupe')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

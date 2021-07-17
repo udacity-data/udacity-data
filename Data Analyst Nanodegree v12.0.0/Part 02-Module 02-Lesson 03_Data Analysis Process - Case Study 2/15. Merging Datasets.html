@@ -1,0 +1,414 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Merging Datasets
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Analysis Process - Case Study 2
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Lesson Overview.html">
+       01. Lesson Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Data Overview.html">
+       02. Data Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Data Attributes.html">
+       03. Data Attributes
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Asking Questions.html">
+       04. Asking Questions
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Assessing Data.html">
+       05. Assessing Data
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Cleaning Column Labels.html">
+       06. Cleaning Column Labels
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Filter, Drop Nulls, Dedupe.html">
+       07. Filter, Drop Nulls, Dedupe
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Inspecting Data Types.html">
+       08. Inspecting Data Types
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Fixing Data Types Pt 1.html">
+       09. Fixing Data Types Pt 1
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Fixing Data Types Pt 2.html">
+       10. Fixing Data Types Pt 2
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Fixing Data Types Pt 3.html">
+       11. Fixing Data Types Pt 3
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Exploring with Visuals.html">
+       12. Exploring with Visuals
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Conclusions &amp; Visuals.html">
+       13. Conclusions &amp; Visuals
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Types of Merges.html">
+       14. Types of Merges
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Merging Datasets.html">
+       15. Merging Datasets
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Results with Merged Dataset.html">
+       16. Results with Merged Dataset
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Conclusion.html">
+       17. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          15. Merging Datasets
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="merging-datasets">
+          Merging Datasets
+         </h1>
+         <h3 id="1-rename-2008-columns-to-distinguish-from-2018-columns-after-the-merge">
+          1. Rename 2008 columns to distinguish from 2018 columns after the merge
+         </h3>
+         <p>
+          To do this, use pandas' rename() with a lambda function. See example
+          <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.rename.html" rel="noopener noreferrer" target="_blank">
+           here
+          </a>
+          . In the lambda function, take the first 10 characters of the column label and and concatenate it with
+          <code>
+           _2008
+          </code>
+          . (Only take the first 10 characters to prevent really long column names.)
+         </p>
+         <p>
+          The lambda function should look something like this:
+          <code>
+           lambda x: x[:10] + "_2008"
+          </code>
+         </p>
+         <p>
+          In your
+          <code>
+           rename
+          </code>
+          , don't forget to specify the parameter
+          <code>
+           columns=
+          </code>
+          when you add the lambda function!
+         </p>
+         <h3 id="2-perform-inner-merge">
+          2. Perform inner merge
+         </h3>
+         <p>
+          To answer the last question, we are only interested in how the same model of car has been updated and how the new model's mpg compares to the old model's mpg.
+         </p>
+         <p>
+          Perform an inner merge with the left on
+          <code>
+           model_2008
+          </code>
+          and the right on
+          <code>
+           model
+          </code>
+          . See documentation for pandas' merge
+          <a href="https://pandas.pydata.org/pandas-docs/stable/merging.html#database-style-dataframe-joining-merging" rel="noopener noreferrer" target="_blank">
+           here
+          </a>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             How many columns are in your new merged dataset?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1507739453858" name="430632" type="radio" value="a1507739453858"/>
+           <label for="a1507739453858">
+            <p>
+             13
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1507739476163" name="430632" type="radio" value="a1507739476163"/>
+           <label for="a1507739476163">
+            <p>
+             26
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1507739480973" name="430632" type="radio" value="a1507739480973"/>
+           <label for="a1507739480973">
+            <p>
+             27
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1507739556637" name="430632" type="radio" value="a1507739556637"/>
+           <label for="a1507739556637">
+            <p>
+             32
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          26
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="16. Results with Merged Dataset.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('15. Merging Datasets')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

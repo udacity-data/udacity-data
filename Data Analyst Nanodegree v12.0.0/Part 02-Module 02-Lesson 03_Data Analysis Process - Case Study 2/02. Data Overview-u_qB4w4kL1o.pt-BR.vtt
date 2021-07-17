@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.555 --> 00:00:01.927
+Dados de economia
+de combustível
+
+00:00:01.993 --> 00:00:03.495
+são coletados
+de testes em veículos
+
+00:00:03.561 --> 00:00:06.240
+no Lab. Nacional de Veículos
+e Emissões de Combustível
+
+00:00:06.273 --> 00:00:08.038
+da Agência EPA
+em Ann Arbor, Michigan.
+
+00:00:08.071 --> 00:00:10.615
+A EPA fornece esses dados
+ao governo todo ano,
+
+00:00:10.747 --> 00:00:14.903
+e o Departamento de Energia publica
+o guia de economia de combustíveis.
+
+00:00:16.056 --> 00:00:18.555
+Você pode baixar
+esses dados.
+
+00:00:19.679 --> 00:00:22.571
+Você vai analisar conjuntos
+de dados baixados aqui,
+
+00:00:23.381 --> 00:00:26.595
+para 2018 e 2008.
+
+00:00:27.343 --> 00:00:31.439
+Aqui estão os dados de 2008
+e 2018, em um notebook Jupyter.
+
+00:00:31.996 --> 00:00:35.537
+Deve haver algumas coisas aqui
+que você não entende.
+
+00:00:35.603 --> 00:00:37.580
+Antes de analisar
+esses dados,
+
+00:00:37.646 --> 00:00:39.902
+dedique um tempo
+para entendê-los
+
+00:00:39.968 --> 00:00:41.586
+e para saber
+como foram coletados.
+
+00:00:41.652 --> 00:00:44.232
+Por sorte,
+isso está bem documentado.
+
+00:00:44.691 --> 00:00:47.981
+No final desta página há
+dois links para a documentação.
+
+00:00:48.849 --> 00:00:50.902
+Este link baixa
+o arquivo "leia-me".
+
+00:00:50.968 --> 00:00:53.390
+Ele fornece alguns detalhes
+sobre os dados.
+
+00:00:53.456 --> 00:00:56.050
+E este link leva
+à documentação em pdf
+
+00:00:56.116 --> 00:00:57.859
+que é mais claro e específico
+
+00:00:57.925 --> 00:00:59.825
+quanto aos dados
+que serão analisados.
+
+00:00:59.891 --> 00:01:04.003
+Há outros links com mais informações
+sobre essas características.
+
+00:01:04.102 --> 00:01:05.669
+Você vai usar a documentação
+
+00:01:05.702 --> 00:01:08.918
+para responder perguntas sobre
+esses dados na próxima seção.
+

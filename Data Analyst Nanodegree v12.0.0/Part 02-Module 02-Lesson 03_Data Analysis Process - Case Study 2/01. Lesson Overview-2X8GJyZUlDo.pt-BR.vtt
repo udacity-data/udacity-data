@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.789 --> 00:00:02.489
+Bem-vindo ao segundo
+estudo de caso
+
+00:00:02.522 --> 00:00:04.359
+e aproveite a análise
+dos dados.
+
+00:00:04.425 --> 00:00:08.736
+Nesta lição, aprofundaremos
+no Pandas, NumPy e Matplotlib
+
+00:00:08.769 --> 00:00:10.804
+para analisar dados
+de economia de combustível
+
+00:00:10.870 --> 00:00:14.362
+para diferentes modelos
+de carros de 2008 e 2018.
+
+00:00:14.652 --> 00:00:16.315
+Como no último
+estudo de caso,
+
+00:00:16.381 --> 00:00:18.753
+você vai fazer todo o processo
+de análise de dados
+
+00:00:18.819 --> 00:00:21.018
+do começo ao fim
+do conjunto de dados.
+
+00:00:21.084 --> 00:00:23.669
+Você vai ver novos tipos
+de problemas de dados
+
+00:00:23.702 --> 00:00:25.674
+e maneiras diferentes
+de lidar com eles.
+
+00:00:25.740 --> 00:00:28.438
+Você também vai aprender
+técnicas novas e mais poderosas
+
+00:00:28.504 --> 00:00:30.469
+de manipular
+e visualizar os dados.
+
+00:00:30.838 --> 00:00:32.206
+Vamos começar.
+

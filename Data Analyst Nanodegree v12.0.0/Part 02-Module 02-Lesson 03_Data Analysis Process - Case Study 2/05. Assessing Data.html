@@ -1,0 +1,1786 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Assessing Data
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Analysis Process - Case Study 2
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Lesson Overview.html">
+       01. Lesson Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Data Overview.html">
+       02. Data Overview
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Data Attributes.html">
+       03. Data Attributes
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Asking Questions.html">
+       04. Asking Questions
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Assessing Data.html">
+       05. Assessing Data
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Cleaning Column Labels.html">
+       06. Cleaning Column Labels
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Filter, Drop Nulls, Dedupe.html">
+       07. Filter, Drop Nulls, Dedupe
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Inspecting Data Types.html">
+       08. Inspecting Data Types
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Fixing Data Types Pt 1.html">
+       09. Fixing Data Types Pt 1
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Fixing Data Types Pt 2.html">
+       10. Fixing Data Types Pt 2
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Fixing Data Types Pt 3.html">
+       11. Fixing Data Types Pt 3
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Exploring with Visuals.html">
+       12. Exploring with Visuals
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Conclusions &amp; Visuals.html">
+       13. Conclusions &amp; Visuals
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Types of Merges.html">
+       14. Types of Merges
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Merging Datasets.html">
+       15. Merging Datasets
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Results with Merged Dataset.html">
+       16. Results with Merged Dataset
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Conclusion.html">
+       17. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          05. Assessing Data
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="assessing-data">
+          Assessing Data
+         </h1>
+         <p>
+          The files
+          <code>
+           all_alpha_08.csv
+          </code>
+          and
+          <code>
+           all_alpha_18.csv
+          </code>
+          discussed in the previous pages have been provided in the workspace for you here to access. Use pandas to explore these datasets in the Jupyter Notebook below to answer the quiz questions below the notebook about these characteristics of the data:
+         </p>
+         <ul>
+          <li>
+           number of samples in each dataset
+          </li>
+          <li>
+           number of columns in each dataset
+          </li>
+          <li>
+           duplicate rows in each dataset
+          </li>
+          <li>
+           datatypes of columns
+          </li>
+          <li>
+           features with missing values
+          </li>
+          <li>
+           number of non-null unique values for features in each dataset
+          </li>
+          <li>
+           what those unique values are and counts for each
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Find the correct count for each of the following in the 2008 dataset
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           samples
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           columns
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           duplicate rows
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           rows with missing data
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Feature
+            </p>
+           </th>
+           <th>
+            <p>
+             Count
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             3889
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2404
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             4
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             199
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             26
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             25
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             1611
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             18
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             1
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Feature
+             </p>
+            </th>
+            <th>
+             <p>
+              Count
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2404
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               samples
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              199
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               rows with missing data
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              25
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               duplicate rows
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              18
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               columns
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Find the correct count for each of the following in the 2018 dataset
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           samples
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           columns
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           duplicate rows
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           rows with missing data
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Feature
+            </p>
+           </th>
+           <th>
+            <p>
+             Count
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             15
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             1611
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             18
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2404
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             32
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             0
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Feature
+             </p>
+            </th>
+            <th>
+             <p>
+              Count
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              1611
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               samples
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              18
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               columns
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               rows with missing data
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              0
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               duplicate rows
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Match the datatype for each feature (some of these may not be ideal)
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           Cyl (2018)
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Cyl (2008)
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           City MPG (both)
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Greenhouse Gas Score (2008)
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Greenhouse Gas Score (2018)
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Feature
+            </p>
+           </th>
+           <th>
+            <p>
+             Datatype
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             bool
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             float
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             float
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             string
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             int
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             string
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             bool
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             string
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             int
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Feature
+             </p>
+            </th>
+            <th>
+             <p>
+              Datatype
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              float
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Cyl (2018)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              float
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Cyl (2018)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              string
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Cyl (2008)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              string
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               City MPG (both)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              string
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Greenhouse Gas Score (2008)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              int
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Greenhouse Gas Score (2018)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              string
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Cyl (2008)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              string
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               City MPG (both)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              string
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Greenhouse Gas Score (2008)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              string
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Cyl (2008)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              string
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               City MPG (both)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              string
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Greenhouse Gas Score (2008)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              int
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Greenhouse Gas Score (2018)
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Match the number of non-null unique values for each of the following features
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           SmartWay (2008)
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           SmartWay (2018)
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Sales Area (2008)
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Cert Region (2018)
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Trans (2008)
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Feature
+            </p>
+           </th>
+           <th>
+            <h1 id="unique-values">
+             Unique Values
+            </h1>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             3
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             5
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             42
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             1
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             18
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             14
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             3
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Feature
+             </p>
+            </th>
+            <th>
+             <h1 id="unique-values">
+              Unique Values
+             </h1>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              3
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               SmartWay (2018)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              3
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Sales Area (2008)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               SmartWay (2008)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Cert Region (2018)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               SmartWay (2008)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Cert Region (2018)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              14
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Trans (2008)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              3
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               SmartWay (2018)
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              3
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Sales Area (2008)
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             How do the
+             <code>
+              Cyl
+             </code>
+             columns in the 2008 and 2018 datasets differ?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1507049039124" name="415960" type="checkbox" value="a1507049039124"/>
+           <label for="a1507049039124">
+            <p>
+             Datatypes
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1507049098957" name="415960" type="checkbox" value="a1507049098957"/>
+           <label for="a1507049098957">
+            <p>
+             Format
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1507049099486" name="415960" type="checkbox" value="a1507049099486"/>
+           <label for="a1507049099486">
+            <p>
+             Number of unique values
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1507049099981" name="415960" type="checkbox" value="a1507049099981"/>
+           <label for="a1507049099981">
+            <p>
+             Meaning
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            Datatypes
+           </li>
+           <li>
+            Format
+           </li>
+           <li>
+            Number of unique values
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Where are each of these fuel types present?
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           Gasoline
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Ethanol/Gas
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Gasoline/Electricity
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           CNG
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           Electricity
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Fuel Type
+            </p>
+           </th>
+           <th>
+            <p>
+             Dataset
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Both
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2018
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Both
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2008
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2008
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Neither
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Both
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             2018
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Fuel Type
+             </p>
+            </th>
+            <th>
+             <p>
+              Dataset
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Both
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Gasoline
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Both
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Ethanol/Gas
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2018
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Gasoline/Electricity
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2018
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Electricity
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Both
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Gasoline
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Both
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Ethanol/Gas
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2008
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               CNG
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2008
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               CNG
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Both
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Gasoline
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Both
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Ethanol/Gas
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2018
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Gasoline/Electricity
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              2018
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               Electricity
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="06. Cleaning Column Labels.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. Assessing Data')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

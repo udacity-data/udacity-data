@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.560
+Fuel economy data is collected from vehicle testing at
+
+00:00:03.560 --> 00:00:07.685
+EPA's National Vehicle and Fuel Emissions Lab in Ann Arbor, Michigan.
+
+00:00:07.684 --> 00:00:10.675
+The EPA provides this data to the government each year,
+
+00:00:10.675 --> 00:00:15.065
+which the Department of Energy uses to publish their fuel economy guide.
+
+00:00:15.064 --> 00:00:19.879
+This data is available for download.
+
+00:00:19.879 --> 00:00:22.864
+You'll be analyzing data sets that are downloaded here,
+
+00:00:22.864 --> 00:00:27.265
+for 2018 and 2008.
+
+00:00:27.265 --> 00:00:31.535
+Here are the data sets for 2008 and 2018 in a Jupyter notebook.
+
+00:00:31.535 --> 00:00:35.600
+There are probably a few features here that don't make too much sense to you.
+
+00:00:35.600 --> 00:00:37.557
+Before analyzing the data sets,
+
+00:00:37.557 --> 00:00:41.350
+you should take some time to understand this data and how it was collected.
+
+00:00:41.350 --> 00:00:44.283
+Luckily, there's good documentation for this.
+
+00:00:44.283 --> 00:00:45.732
+On the bottom of this page,
+
+00:00:45.732 --> 00:00:48.839
+there are two links to documentation for this data.
+
+00:00:48.840 --> 00:00:50.785
+This link downloads the readme file,
+
+00:00:50.784 --> 00:00:53.354
+that provides some details about the data.
+
+00:00:53.354 --> 00:00:56.319
+And this leads to documentation in a PDF that's
+
+00:00:56.320 --> 00:00:59.560
+a bit clearer and more specific to the data set you'll be analyzing.
+
+00:00:59.560 --> 00:01:03.895
+It even has helpful links that provide more information about these features.
+
+00:01:03.895 --> 00:01:06.040
+You'll be using this documentation to answer
+
+00:01:06.040 --> 00:01:08.580
+some questions about this data set in the next section.
+

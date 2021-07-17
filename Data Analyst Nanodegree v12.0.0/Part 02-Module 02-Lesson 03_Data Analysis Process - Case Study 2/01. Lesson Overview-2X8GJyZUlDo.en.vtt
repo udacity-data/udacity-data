@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.307
+Welcome to the second case study and enjoy the data analysis.
+
+00:00:04.307 --> 00:00:08.774
+In this lesson, you'll dive even deeper into Pandas, NumPy, and Matplotlib,
+
+00:00:08.775 --> 00:00:14.780
+to analyze fuel economy data for different car models from 2008 and 2018.
+
+00:00:14.779 --> 00:00:16.274
+Like in the last case study,
+
+00:00:16.274 --> 00:00:20.399
+you'll go through the entire data analysis process from start to finish on this dataset.
+
+00:00:20.399 --> 00:00:25.890
+You'll be exposed to new kinds of problems of data and different ways of handling them.
+
+00:00:25.890 --> 00:00:27.164
+You'll also learn new,
+
+00:00:27.164 --> 00:00:32.079
+more powerful techniques to manipulate and visualize data. Let's get started.
+
