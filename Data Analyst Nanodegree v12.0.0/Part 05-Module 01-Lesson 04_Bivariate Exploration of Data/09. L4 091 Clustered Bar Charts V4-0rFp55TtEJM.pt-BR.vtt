@@ -1,0 +1,116 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.801 --> 00:00:04.534
+CONCEITO 9:
+GRÁFICOS DE BARRAS AGRUPADAS
+
+00:00:05.100 --> 00:00:09.133
+Se quisermos analisar a relação
+entre 2 variáveis categóricas,
+
+00:00:09.167 --> 00:00:12.534
+temos que ir além da
+codificação posicional simples.
+
+00:00:12.968 --> 00:00:15.968
+Nessa lição, você viu
+como mapas de calor representam
+
+00:00:16.000 --> 00:00:19.133
+um histograma 2D
+de duas variáveis numéricas.
+
+00:00:19.834 --> 00:00:21.133
+Uma estratégia parecida
+
+00:00:21.167 --> 00:00:23.567
+pode ser usada
+para duas variáveis categóricas,
+
+00:00:23.601 --> 00:00:26.767
+semelhante à criação
+de um gráfico de barras 2D.
+
+00:00:26.801 --> 00:00:30.234
+Mas para evitar a falta
+de precisão do uso de cores
+
+00:00:30.267 --> 00:00:31.634
+para codificar números,
+
+00:00:31.667 --> 00:00:35.801
+então a escolha padrão são
+os gráficos de barras agrupadas.
+
+00:00:35.834 --> 00:00:39.701
+Eles começam do mesmo modo
+do gráfico de barras univariantes,
+
+00:00:39.734 --> 00:00:42.267
+com os níveis de uma variável
+no eixo X
+
+00:00:42.300 --> 00:00:44.801
+e contagens plotadas
+no eixo Y.
+
+00:00:45.133 --> 00:00:49.133
+Mas em vez de plotar
+apenas uma barra por exposição,
+
+00:00:49.167 --> 00:00:51.234
+temos diversas barras.
+
+00:00:51.267 --> 00:00:55.000
+Uma para cada nível da
+2ª variável a ser plotada.
+
+00:00:55.601 --> 00:00:58.567
+Normalmente usamos codificação
+de cor ou textura
+
+00:00:58.601 --> 00:01:00.901
+para cada barra
+em cada agrupamento
+
+00:01:00.934 --> 00:01:04.133
+para distinguir
+os níveis da segunda variável.
+
+00:01:04.567 --> 00:01:07.667
+Assim, as contagens mostradas
+pela altura de cada barra
+
+00:01:07.701 --> 00:01:11.167
+são associadas à exposição geral
+da primeira variável
+
+00:01:11.200 --> 00:01:13.634
+e a cor
+para a segunda variável.
+
+00:01:14.467 --> 00:01:16.834
+Fica mais fácil
+ver a correspondência
+
+00:01:16.868 --> 00:01:20.267
+com o mapa de calor ao lado
+do gráfico de barras agrupadas.
+
+00:01:20.300 --> 00:01:23.868
+Ao comparar as 2 visualizações,
+vemos o aumento da precisão
+
+00:01:23.901 --> 00:01:25.234
+para entender a ordem
+
+00:01:25.267 --> 00:01:27.434
+e as diferenças
+das contagens de frequência
+
+00:01:27.467 --> 00:01:30.467
+quando comparamos o gráfico
+de barras com o mapa de calor.
+

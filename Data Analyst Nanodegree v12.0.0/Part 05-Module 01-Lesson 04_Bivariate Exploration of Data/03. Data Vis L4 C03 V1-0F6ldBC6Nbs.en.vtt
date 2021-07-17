@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.790
+Let's take a look at the relationship of fuel efficiency
+
+00:00:02.790 --> 00:00:05.780
+against another variable, manufacturing year.
+
+00:00:05.780 --> 00:00:10.074
+With improvements in technology and increasing environmental concerns have
+
+00:00:10.074 --> 00:00:14.504
+cars running under conventional fuels seen recent increases in fuel efficiency.
+
+00:00:14.505 --> 00:00:16.710
+Let's start by looking at a scatter plot of
+
+00:00:16.710 --> 00:00:20.519
+combined fuel efficiency against year like we tried last time.
+
+00:00:20.519 --> 00:00:24.960
+The regression line that got fit suggests a slight upward trend in efficiency,
+
+00:00:24.960 --> 00:00:27.164
+but this is not clear from the data.
+
+00:00:27.164 --> 00:00:31.855
+The only point that we can really make out are those above about 42 miles per gallon.
+
+00:00:31.855 --> 00:00:36.390
+This is a clear place for us to make use of transparency and jitter settings.
+
+00:00:36.390 --> 00:00:37.869
+Let's start with jitter.
+
+00:00:37.869 --> 00:00:39.979
+Since we want to jitter the x values,
+
+00:00:39.979 --> 00:00:42.239
+we add the x jitter parameter.
+
+00:00:42.240 --> 00:00:46.050
+The value 0.3 means that each x value will be
+
+00:00:46.049 --> 00:00:50.299
+adjusted randomly up to 0.3 more or 0.3 less.
+
+00:00:50.299 --> 00:00:52.539
+It should be noted that this only works with
+
+00:00:52.539 --> 00:00:56.534
+Seaborn's regplot function and not in matplotlib's scatter.
+
+00:00:56.534 --> 00:00:59.409
+The points now get arranged in strips with some width,
+
+00:00:59.409 --> 00:01:01.209
+rather than just a single line.
+
+00:01:01.210 --> 00:01:05.960
+But this is still not enough to really see the distribution of points below the mid 30s,
+
+00:01:05.959 --> 00:01:08.359
+we should now add some transparency.
+
+00:01:08.359 --> 00:01:11.189
+If we were working with matplotlib's scatter function,
+
+00:01:11.189 --> 00:01:14.709
+we could just add a parameter alpha directly to the function call.
+
+00:01:14.709 --> 00:01:17.529
+With regplot, we instead need to set the parameter in
+
+00:01:17.530 --> 00:01:21.695
+a dictionary set to the scatter KWS parameter.
+
+00:01:21.694 --> 00:01:26.789
+Alpha takes a value between zero and one that specifies the opaqueness of points,
+
+00:01:26.790 --> 00:01:30.475
+zero is fully transparent and one is fully opaque.
+
+00:01:30.474 --> 00:01:33.259
+Let's start by trying and alpha of 1/5.
+
+00:01:33.260 --> 00:01:34.829
+It's a good start, but
+
+00:01:34.829 --> 00:01:38.254
+the interesting areas in the center is still pretty indistinguishable.
+
+00:01:38.254 --> 00:01:40.765
+What if we try an alpha of one-twentieth,
+
+00:01:40.765 --> 00:01:43.825
+we can see the trend in the points a little bit better now.
+
+00:01:43.825 --> 00:01:48.570
+Darker areas naturally come about as an outcome of transparent points overlapping,
+
+00:01:48.569 --> 00:01:52.014
+and these areas slightly rise in value across the years.
+
+00:01:52.015 --> 00:01:53.890
+Note that through all of this,
+
+00:01:53.890 --> 00:01:56.150
+the regression line hasn't changed a bit.
+
+00:01:56.150 --> 00:01:58.450
+The jittering and transparency don't affect
+
+00:01:58.450 --> 00:02:02.075
+the underlying values for the purposes of regression line fits.
+
+00:02:02.075 --> 00:02:05.159
+If you're still feeling unsatisfied with the result of all this,
+
+00:02:05.159 --> 00:02:08.174
+there's still more alternative ways of plotting the data.
+
+00:02:08.175 --> 00:02:10.655
+For example, since year is discrete,
+
+00:02:10.655 --> 00:02:13.069
+we might treat it as a categorical variable and
+
+00:02:13.069 --> 00:02:15.799
+use a different plot type that you'll see later on.
+

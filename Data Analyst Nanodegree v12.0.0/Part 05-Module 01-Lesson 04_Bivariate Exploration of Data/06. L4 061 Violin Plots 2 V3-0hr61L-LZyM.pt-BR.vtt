@@ -1,0 +1,107 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.010 --> 00:00:04.802
+CONCEITO 6:
+VIOLIN PLOTS
+
+00:00:05.690 --> 00:00:08.913
+Como vimos, quando temos
+duas variáveis numéricas,
+
+00:00:08.947 --> 00:00:10.776
+sendo pelo menos
+uma discreta,
+
+00:00:10.810 --> 00:00:13.305
+jitter e transparência
+podem ser usados
+
+00:00:13.339 --> 00:00:15.888
+para mostrar
+tendências nos dados.
+
+00:00:15.922 --> 00:00:20.224
+Se colocarmos uma variável
+quantitativa contra uma qualitativa,
+
+00:00:20.258 --> 00:00:22.000
+podemos abordar
+da mesma forma,
+
+00:00:22.034 --> 00:00:24.424
+mas mapeando cada nível
+da variável qualitativa
+
+00:00:24.458 --> 00:00:26.238
+com um número arbitrário.
+
+00:00:26.590 --> 00:00:31.223
+Por exemplo, digamos que tenhamos
+pontuações de três times.
+
+00:00:31.257 --> 00:00:34.219
+Norte, Central e Sul.
+
+00:00:34.253 --> 00:00:38.948
+Se associarmos 1 com Norte,
+2 com Central e 3 com Sul,
+
+00:00:38.982 --> 00:00:42.348
+podemos usar jitter
+com o time no eixo X
+
+00:00:42.382 --> 00:00:45.027
+e a pontuação no eixo Y.
+
+00:00:45.324 --> 00:00:47.171
+Uma visualização mais comum
+
+00:00:47.205 --> 00:00:50.139
+dessa comparação
+quantitativa contra qualitativa
+
+00:00:50.173 --> 00:00:52.690
+é o violin plot.
+
+00:00:52.948 --> 00:00:55.348
+Em vez de marcar
+pontos individuais,
+
+00:00:55.382 --> 00:00:58.420
+temos uma curva para cada nível
+da variável categórica
+
+00:00:58.454 --> 00:01:01.707
+cuja área demonstra
+a distribuição de pontos.
+
+00:01:02.227 --> 00:01:05.860
+Onde a curva é mais larga,
+há mais pontos de dados.
+
+00:01:05.894 --> 00:01:11.157
+É basicamente uma curva de densidade
+vista do lado.
+
+00:01:11.191 --> 00:01:16.314
+Norte teve mais placares
+com 50 do que 60 pontos.
+
+00:01:16.348 --> 00:01:21.699
+Central tende a pontuar mais
+que Norte e Sul.
+
+00:01:22.731 --> 00:01:24.643
+Comparado ao gráfico
+de dispersão,
+
+00:01:24.677 --> 00:01:29.123
+as curvas distintas facilitam
+lembrar que a variável é categórica
+
+00:01:29.157 --> 00:01:31.492
+e facilitam comparar
+a distribuição delas.
+

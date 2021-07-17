@@ -1,0 +1,159 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.886 --> 00:00:04.781
+CONCEITO 7:
+DIAGRAMA DE CAIXA
+
+00:00:05.245 --> 00:00:07.669
+Vocês viram como violin plots
+podem ser usados
+
+00:00:07.703 --> 00:00:09.070
+para mostrar a relação
+
+00:00:09.104 --> 00:00:12.676
+entre variáveis quantitativas
+e qualitativas.
+
+00:00:12.710 --> 00:00:17.078
+Um diagrama alternativo
+é o diagrama de caixa.
+
+00:00:17.702 --> 00:00:20.469
+Num diagrama de caixa,
+computamos estatísticas descritivas
+
+00:00:20.503 --> 00:00:22.102
+em cada um dos níveis
+
+00:00:22.136 --> 00:00:25.214
+e as exibimos no gráfico
+desta forma.
+
+00:00:25.248 --> 00:00:29.325
+A linha central de cada caixa
+indica a média dos dados,
+
+00:00:29.359 --> 00:00:33.645
+e as bordas superior e inferior
+mostram o 1º e o 3º quartis.
+
+00:00:34.358 --> 00:00:37.430
+Linhas são estendidas
+para cima e para baixo
+
+00:00:37.464 --> 00:00:40.998
+para indicar os valores
+máximo e mínimo.
+
+00:00:41.718 --> 00:00:46.453
+25% dos dados ficam dentro
+de cada linha horizontal.
+
+00:00:47.860 --> 00:00:50.377
+Diagramas de caixa geralmente
+tem valores atípicos
+
+00:00:50.411 --> 00:00:53.368
+demonstrados além
+dos fins da linha.
+
+00:00:53.402 --> 00:00:56.113
+O valor mais comum acima
+dos fins da linha é
+
+00:00:56.147 --> 00:01:00.984
+1.5 vezes a amplitude interquartil,
+ou o comprimento da caixa.
+
+00:01:01.018 --> 00:01:05.152
+Para as pontuações de Norte,
+o IQR é 5.5,
+
+00:01:05.186 --> 00:01:09.000
+e o comprimento máximo
+da linha é 8.25.
+
+00:01:09.034 --> 00:01:11.827
+Se tivermos valores atípicos
+além dessa distância
+
+00:01:11.861 --> 00:01:15.052
+acima ou abaixo da caixa,
+
+00:01:15.086 --> 00:01:17.379
+eles são demonstrados
+como pontos únicos,
+
+00:01:17.413 --> 00:01:22.931
+e as linhas só se estendem
+até 1.25 vezes IQR.
+
+00:01:23.267 --> 00:01:28.339
+Neste caso, o limite máximo
+da linha superior é 66.75,
+
+00:01:28.373 --> 00:01:32.178
+então o valor máximo de 68
+é demonstrado como valor atípico,
+
+00:01:32.212 --> 00:01:36.442
+e a linha vai até o segundo
+valor mais alto, 63.
+
+00:01:37.411 --> 00:01:40.443
+Enquanto diagramas em caixa
+resumem bem os dados,
+
+00:01:40.477 --> 00:01:43.930
+há detalhes distribucionais
+que se perdem.
+
+00:01:44.483 --> 00:01:48.436
+Por exemplo, o diagrama revela
+mais claramente que o violin plot
+
+00:01:48.470 --> 00:01:50.790
+que o time Norte teve
+o pior desempenho,
+
+00:01:50.824 --> 00:01:53.147
+e o time Central, o melhor.
+
+00:01:53.181 --> 00:01:57.043
+No entanto, não é óbvio
+que as pontuações do time Sul
+
+00:01:57.077 --> 00:02:01.436
+incluem um planalto amplo
+entre 60 e 62 pontos,
+
+00:02:01.470 --> 00:02:04.115
+como podemos ver
+no violin plot.
+
+00:02:04.700 --> 00:02:07.651
+Uma abordagem alternativa
+para mostrar estatísticas resumidas
+
+00:02:07.685 --> 00:02:11.132
+é começando o violin plot
+e adicionando linhas às curvas
+
+00:02:11.166 --> 00:02:13.587
+para denotar os quartis.
+
+00:02:13.621 --> 00:02:17.148
+No entanto, isso é menos direto
+que o diagrama de caixa,
+
+00:02:17.182 --> 00:02:20.315
+então, quando é necessária
+visualização explicativa de dados,
+
+00:02:20.349 --> 00:02:24.078
+o diagrama de caixa talvez seja
+melhor pela simplicidade e o foco.
+

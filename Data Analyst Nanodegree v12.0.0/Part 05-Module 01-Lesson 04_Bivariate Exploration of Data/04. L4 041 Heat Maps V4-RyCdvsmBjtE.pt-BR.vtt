@@ -1,0 +1,120 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.976 --> 00:00:04.919
+CONCEITO 4:
+MAPAS DE CALOR
+
+00:00:05.400 --> 00:00:09.552
+Quando vemos o impacto do jitter
+e da transparência no gráfico,
+
+00:00:09.586 --> 00:00:13.967
+vemos uma relação implícita
+entre cor e densidade de dados.
+
+00:00:14.001 --> 00:00:18.256
+Há um tipo de gráfico que usa
+essa relação explicitamente,
+
+00:00:18.290 --> 00:00:20.031
+o mapa de calor.
+
+00:00:20.502 --> 00:00:24.736
+Em um mapa de calor, o campo
+é dividido em uma rede dessas,
+
+00:00:24.770 --> 00:00:28.336
+e o número de pontos de dado
+em cada célula é contado.
+
+00:00:28.848 --> 00:00:32.528
+Então cada célula recebe
+uma cor baseada no valor.
+
+00:00:32.562 --> 00:00:35.903
+Neste exemplo, quanto
+mais pontos em uma célula,
+
+00:00:35.937 --> 00:00:38.040
+mais escura é a cor.
+
+00:00:38.278 --> 00:00:41.415
+Um mapa de calor é como
+uma versão 2D de um histograma,
+
+00:00:41.449 --> 00:00:44.535
+como se víssemos os dados
+por cima.
+
+00:00:44.569 --> 00:00:46.814
+Não podemos usar barras
+neste caso,
+
+00:00:46.848 --> 00:00:49.679
+então cores são
+a melhor opção.
+
+00:00:50.294 --> 00:00:53.304
+Como atribuir valores
+baseado em cor é impreciso,
+
+00:00:53.338 --> 00:00:57.279
+considere adicionar a contagem
+em cima de cada célula,
+
+00:00:57.313 --> 00:01:00.871
+ainda mais se tiver
+um número limitado de células.
+
+00:01:00.905 --> 00:01:04.119
+Dessa forma,
+o mapa é como uma tabela,
+
+00:01:04.153 --> 00:01:06.902
+com cores diferentes
+para dar ênfase.
+
+00:01:07.447 --> 00:01:10.319
+O mapa de calor é melhor
+que o gráfico de dispersão
+
+00:01:10.353 --> 00:01:12.616
+quando se tem
+duas variáveis discretas,
+
+00:01:12.650 --> 00:01:16.471
+uma vez que o gráfico com jitter
+pode ser impreciso.
+
+00:01:16.505 --> 00:01:20.025
+Também é uma alternativa
+a adicionar transparência
+
+00:01:20.059 --> 00:01:23.367
+quando se tem uma quantidade grande
+de dados.
+
+00:01:23.401 --> 00:01:26.791
+No entanto, assim como histogramas,
+é preciso saber o impacto
+
+00:01:26.825 --> 00:01:30.190
+do tamanho dos bins
+na interpretação dos dados.
+
+00:01:30.224 --> 00:01:31.848
+Se o bin for grande demais,
+
+00:01:31.882 --> 00:01:34.360
+você pode não ver
+tendências grandes.
+
+00:01:34.394 --> 00:01:36.111
+Se o bin for pequeno demais,
+
+00:01:36.145 --> 00:01:37.998
+você pode acabar
+distraído pelo ruído.
+

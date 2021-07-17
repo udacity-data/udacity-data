@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.243 --> 00:00:05.234
+Até agora, só vimos relações
+entre variáveis quantitativas.
+
+00:00:05.268 --> 00:00:08.347
+Agora vamos ver a relação
+entre a eficiência do combustível
+
+00:00:08.381 --> 00:00:11.634
+e uma variável qualitativa,
+a classe do veículo.
+
+00:00:11.668 --> 00:00:14.322
+Vejam que usei a função astype
+do Pandas
+
+00:00:14.356 --> 00:00:17.267
+para converter a coluna VClass
+de um tipo de objeto plano
+
+00:00:17.301 --> 00:00:19.172
+a um tipo de ordem categórica,
+
+00:00:19.206 --> 00:00:21.459
+categorizando as classes
+em ordem de tamanho.
+
+00:00:21.493 --> 00:00:24.051
+Dessa forma, a ordenação
+dos níveis é automática,
+
+00:00:24.085 --> 00:00:27.866
+e não vou precisar de outro
+parâmetro de ordem na visualização.
+
+00:00:27.900 --> 00:00:31.402
+O tipo de gráfico que vou usar
+é o violin plot.
+
+00:00:31.436 --> 00:00:34.260
+Quando usamos a função
+sb.violinplot,
+
+00:00:34.294 --> 00:00:36.994
+com as variáveis X e Y
+dos dados,
+
+00:00:37.028 --> 00:00:38.931
+geramos o seguinte gráfico.
+
+00:00:40.234 --> 00:00:42.803
+Antes vou dar
+uma limpada nele.
+
+00:00:42.837 --> 00:00:45.010
+Vou usar a função
+color_palette
+
+00:00:45.044 --> 00:00:47.283
+para que cada nível
+tenha a mesma cor
+
+00:00:47.317 --> 00:00:50.674
+e que a função xticks
+gire um pouco os rótulos.
+
+00:00:50.708 --> 00:00:54.141
+Por enquanto, também vou
+usar o parâmetro inner = none
+
+00:00:54.175 --> 00:00:56.229
+para limpar o centro
+dos gráficos.
+
+00:00:56.263 --> 00:00:58.876
+Voltarei a falar
+desse parâmetro depois.
+
+00:00:58.910 --> 00:01:00.746
+Em cada uma das classes,
+
+00:01:00.780 --> 00:01:04.370
+as áreas mostram a densidade
+aproximada da eficiência
+
+00:01:04.404 --> 00:01:06.634
+de cada classe de veículo.
+
+00:01:06.668 --> 00:01:09.294
+São como curvas de densidade
+viradas de lado.
+
+00:01:09.328 --> 00:01:12.283
+Nesse gráfico, vemos que não há
+uma relação monotônica
+
+00:01:12.317 --> 00:01:15.108
+entre o tamanho do carro
+com a eficiência.
+
+00:01:15.142 --> 00:01:17.810
+Os carros maiores
+parecem ter menos eficiência,
+
+00:01:17.844 --> 00:01:20.003
+mas o rabo longo indica
+valores atípicos
+
+00:01:20.037 --> 00:01:21.811
+com maior eficiência.
+
+00:01:21.845 --> 00:01:23.931
+Ou seja, carros compactos
+e subcompactos
+
+00:01:23.965 --> 00:01:25.803
+têm as próximas duas
+melhores eficiências,
+
+00:01:25.837 --> 00:01:29.428
+mas a distribuição para carros
+minicompactos é mais concentrada.
+
+00:01:29.462 --> 00:01:32.892
+Por fim, carros compactos e médios
+têm a melhor eficiência,
+
+00:01:32.926 --> 00:01:34.814
+mas a distribuição
+dos carros médios
+
+00:01:34.848 --> 00:01:37.407
+é mais ampla
+que a dos compactos.
+
+00:01:37.441 --> 00:01:41.632
+Vamos voltar ao gráfico
+sem o parâmetro inner = none.
+
+00:01:41.666 --> 00:01:44.078
+A coisa que apareceu
+em cada violino
+
+00:01:44.112 --> 00:01:46.007
+é um gráfico em caixa
+em miniatura.
+
+00:01:46.041 --> 00:01:49.296
+O gráfico em caixa é outro tipo
+de quantitativa contra qualitativa
+
+00:01:49.330 --> 00:01:52.039
+que mostra os dados
+mais resumidamente.
+
+00:01:52.073 --> 00:01:55.000
+Vou detalhá-lo
+no próximo vídeo.
+

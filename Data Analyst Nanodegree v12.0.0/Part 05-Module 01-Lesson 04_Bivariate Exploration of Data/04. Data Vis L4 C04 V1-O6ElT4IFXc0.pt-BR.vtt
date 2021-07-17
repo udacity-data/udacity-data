@@ -1,0 +1,169 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.231 --> 00:00:03.015
+Já vimos a relação
+entre tamanho do motor
+
+00:00:03.049 --> 00:00:05.959
+e eficiência de combustível
+com um gráfico de dispersão.
+
+00:00:05.993 --> 00:00:07.918
+Adicionei jitter e transparência
+
+00:00:07.952 --> 00:00:10.454
+para ver onde estava
+a maior parte dos dados.
+
+00:00:10.488 --> 00:00:12.134
+Também podemos analisar
+
+00:00:12.168 --> 00:00:14.863
+em um mapa de calor
+ou histograma 2D.
+
+00:00:14.897 --> 00:00:19.902
+A forma mais fácil é usando
+a função hist2d do Matplotlib.
+
+00:00:19.936 --> 00:00:22.159
+Também vou adicionar
+uma função colorbar
+
+00:00:22.193 --> 00:00:24.967
+para que a legenda associando
+a contagem a cores
+
+00:00:25.001 --> 00:00:27.183
+apareça ao lado do gráfico.
+
+00:00:27.217 --> 00:00:29.422
+Similar à função
+hist univariante,
+
+00:00:29.456 --> 00:00:32.438
+por padrão, cada dimensão
+é dividida em 10 bins,
+
+00:00:32.472 --> 00:00:35.727
+e o número de pontos
+em cada bin é contado.
+
+00:00:35.761 --> 00:00:37.774
+Cada contagem é associada
+a uma cor.
+
+00:00:37.808 --> 00:00:41.239
+Neste padrão do Matplotlib,
+chamado "viridis",
+
+00:00:41.273 --> 00:00:43.247
+as maiores contagens
+são amarelas,
+
+00:00:43.281 --> 00:00:45.615
+e as menores, roxas.
+
+00:00:45.649 --> 00:00:47.735
+Ainda podemos ver
+a tendência de antes,
+
+00:00:47.769 --> 00:00:49.775
+mas podemos melhorar.
+
+00:00:49.809 --> 00:00:51.951
+Primeiro vamos criar
+uma contagem mínima
+
+00:00:51.985 --> 00:00:54.710
+antes de a área retangular
+ser marcada.
+
+00:00:54.744 --> 00:00:58.062
+Dando um valor a cmin,
+como 0,5,
+
+00:00:58.096 --> 00:01:01.253
+todos os bins sem contagem
+retornam sem número
+
+00:01:01.287 --> 00:01:03.094
+e não são coloridos.
+
+00:01:03.128 --> 00:01:05.030
+Como branco representa 0,
+
+00:01:05.064 --> 00:01:06.729
+vou usar cores invertidas,
+
+00:01:06.763 --> 00:01:10.050
+em que cores mais escuras
+são associadas a valores maiores.
+
+00:01:10.084 --> 00:01:13.675
+Eu digito
+cmap = 'viridis_r'.
+
+00:01:13.709 --> 00:01:17.497
+Esse _r indica
+um mapa de cores reverso.
+
+00:01:17.531 --> 00:01:22.946
+Muitos gráficos de cor são
+compatíveis com o Matplotlib.
+
+00:01:22.980 --> 00:01:27.287
+Vamos mais fundo na discussão
+da cor em geral mais tarde.
+
+00:01:27.321 --> 00:01:29.751
+Por fim,
+vamos mudar os bins.
+
+00:01:29.785 --> 00:01:33.646
+Podemos dar o parâmetro
+do hist2d com dois hists
+
+00:01:33.680 --> 00:01:35.007
+que especificam as bordas
+
+00:01:35.041 --> 00:01:37.935
+para os valores de X e Y,
+respectivamente.
+
+00:01:37.969 --> 00:01:41.033
+Depois de ver a estatística
+descritiva das variáveis,
+
+00:01:41.067 --> 00:01:44.849
+decidi usar tamanhos de bin
+de 0,3 para o tamanho
+
+00:01:44.883 --> 00:01:47.422
+e 3 para a eficiência
+do combustível.
+
+00:01:47.784 --> 00:01:49.815
+Vou usar a função arange,
+do NumPy,
+
+00:01:49.849 --> 00:01:54.687
+para dar os valores
+em bins_x e bins_y,
+
+00:01:54.721 --> 00:01:56.909
+gerando um novo gráfico.
+
+00:01:57.326 --> 00:02:00.214
+Podemos ver no gráfico
+duas áreas de alta frequência
+
+00:02:00.248 --> 00:02:01.950
+no meio da tendência negativa
+
+00:02:01.984 --> 00:02:04.300
+entre eficiência
+e tamanho do motor.
+

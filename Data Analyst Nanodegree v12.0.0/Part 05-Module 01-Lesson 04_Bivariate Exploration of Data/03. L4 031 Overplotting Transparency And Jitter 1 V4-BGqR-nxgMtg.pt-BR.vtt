@@ -1,0 +1,186 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.033 --> 00:00:04.962
+CONCEITO 3: OVERPLOTTING,
+TRANSPARÊNCIA E JITTER
+
+00:00:04.996 --> 00:00:06.824
+Em certas circunstâncias,
+
+00:00:06.858 --> 00:00:10.465
+pode ser difícil
+interpretar o gráfico.
+
+00:00:10.499 --> 00:00:13.345
+Talvez haja
+muitos pontos de dados,
+
+00:00:13.379 --> 00:00:17.121
+fazendo com que o gráfico
+fique confuso.
+
+00:00:17.155 --> 00:00:20.153
+Ou os dados numéricos
+tenham natureza discreta,
+
+00:00:20.187 --> 00:00:23.529
+dificultando ver
+a distribuição de dados.
+
+00:00:23.563 --> 00:00:26.809
+Consegue ver o que está havendo
+nesses dois gráficos?
+
+00:00:26.843 --> 00:00:28.449
+Eu também não.
+
+00:00:28.483 --> 00:00:32.009
+Condições como essas, em que há
+muitos pontos numa área pequena,
+
+00:00:32.043 --> 00:00:34.448
+são chamadas
+de "overplotting".
+
+00:00:34.482 --> 00:00:39.257
+Nesses casos, técnicas como
+amostragem, transparência e jitter
+
+00:00:39.291 --> 00:00:41.353
+podem ajudar a criar gráficos
+
+00:00:41.387 --> 00:00:45.113
+em que é mais fácil
+detectar padrões e relações.
+
+00:00:46.162 --> 00:00:49.256
+Por exemplo, este gráfico
+de 10 mil pontos de dados
+
+00:00:49.290 --> 00:00:53.202
+gerado por algumas
+distribuições bivariantes normais.
+
+00:00:53.236 --> 00:00:55.921
+É difícil dizer
+onde cai a densidade
+
+00:00:55.955 --> 00:00:59.889
+dos picos da distribuição
+nem a velocidade em que ocorre.
+
+00:01:00.473 --> 00:01:03.629
+Uma forma de solucionar isso,
+é usando amostragem aleatória
+
+00:01:03.663 --> 00:01:07.420
+e marcar um número menor
+de pontos, digamos 800.
+
+00:01:07.454 --> 00:01:09.702
+Podemos ver
+a distância entre os picos,
+
+00:01:09.736 --> 00:01:11.965
+em que menos pontos
+são marcados.
+
+00:01:11.999 --> 00:01:15.103
+A seleção aleatória ainda nos dá
+uma boa intuição
+
+00:01:15.137 --> 00:01:17.800
+da distribuição geral
+dos dados.
+
+00:01:17.834 --> 00:01:19.479
+Como estratégia alternativa,
+
+00:01:19.513 --> 00:01:22.471
+podemos marcar
+os 10 mil pontos originais,
+
+00:01:22.505 --> 00:01:25.895
+mas cada um
+com certa transparência.
+
+00:01:25.929 --> 00:01:28.856
+Cada ponto
+terá cor mais clara,
+
+00:01:28.890 --> 00:01:33.119
+mas, quando há sobreposição,
+a região fica mais escura.
+
+00:01:33.153 --> 00:01:36.824
+As duas regiões mais escuras
+são aquelas com mais pontos,
+
+00:01:36.858 --> 00:01:40.081
+indicando os picos
+da distribuição.
+
+00:01:40.431 --> 00:01:43.919
+Como uma maior densidade
+resulta em cor mais escura,
+
+00:01:43.953 --> 00:01:47.439
+usamos, de certa forma,
+cor para aumentar
+
+00:01:47.473 --> 00:01:51.309
+o que teria sido ofuscado
+usando apenas a posição.
+
+00:01:52.071 --> 00:01:55.615
+Mas e se uma ou as duas
+variáveis forem discretas?
+
+00:01:55.649 --> 00:01:57.386
+A amostragem
+não ajuda em nada,
+
+00:01:57.420 --> 00:02:01.026
+porque todas as amostragens
+são iguais.
+
+00:02:01.060 --> 00:02:04.835
+Transparência nos permite julgar
+a densidade baseado em cor,
+
+00:02:04.869 --> 00:02:09.379
+mas isso perde um pouco do poder
+disponível em códigos posicionais.
+
+00:02:09.413 --> 00:02:13.490
+Este é um caso
+em que adicionamos jitter.
+
+00:02:13.524 --> 00:02:15.878
+Jitter adiciona uma quantidade
+pequena de ruído
+
+00:02:15.912 --> 00:02:18.134
+na posição de cada ponto
+
+00:02:18.168 --> 00:02:20.744
+para que vários pontos de dados
+do mesmo valor
+
+00:02:20.778 --> 00:02:23.552
+se espalhem
+por uma área pequena.
+
+00:02:23.586 --> 00:02:25.552
+Desde que o jitter mantenha
+
+00:02:25.586 --> 00:02:28.681
+os valores discretos
+em faixas distintas,
+
+00:02:28.715 --> 00:02:33.087
+isso pode ajudar na identificação
+e na interpretação das tendências.
+

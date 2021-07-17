@@ -1,0 +1,172 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.333 --> 00:00:06.037
+Vamos ver a relação da eficiência
+com outra variável, ano de produção.
+
+00:00:06.071 --> 00:00:07.789
+Com melhoras na tecnologia
+
+00:00:07.823 --> 00:00:09.781
+e crescentes
+preocupações ambientais,
+
+00:00:09.815 --> 00:00:12.084
+será que carros com
+combustíveis tradicionais
+
+00:00:12.118 --> 00:00:14.651
+viram aumento na eficiência?
+
+00:00:14.685 --> 00:00:19.130
+Vamos começar vendo um gráfico
+de eficiência combinada contra ano,
+
+00:00:19.164 --> 00:00:20.777
+como tentamos da última vez.
+
+00:00:20.811 --> 00:00:24.834
+A linha de regressão sugere
+um pequeno aumento na eficiência,
+
+00:00:24.868 --> 00:00:27.385
+mas isso não fica claro
+com os dados.
+
+00:00:27.419 --> 00:00:29.264
+Os únicos pontos
+identificáveis
+
+00:00:29.298 --> 00:00:32.153
+são aqueles acima
+de 42 milhas por galão.
+
+00:00:32.187 --> 00:00:36.527
+É um lugar perfeito para usarmos
+transparência e jitter.
+
+00:00:36.561 --> 00:00:38.053
+Vamos começar com jitter.
+
+00:00:38.087 --> 00:00:42.198
+Como queremos identificar o X,
+vamos criar um parâmetro em X.
+
+00:00:42.550 --> 00:00:44.559
+O valor 0.3 significa
+
+00:00:44.593 --> 00:00:46.974
+que cada valor X
+será ajustado aleatoriamente
+
+00:00:47.008 --> 00:00:50.415
+com 0.3 a mais
+ou 0.3 a menos.
+
+00:00:50.742 --> 00:00:54.254
+Saiba que isso só funciona
+com a função regplot do Seaborn,
+
+00:00:54.288 --> 00:00:56.806
+não com a função scatter,
+do Matplotlib.
+
+00:00:56.840 --> 00:00:59.493
+Os pontos agora ficam arranjados
+em faixas largas
+
+00:00:59.527 --> 00:01:02.593
+em vez de só uma linha,
+mas ainda não é suficiente
+
+00:01:02.627 --> 00:01:06.158
+para vermos a distribuição
+dos pontos abaixo de 30mpg.
+
+00:01:06.192 --> 00:01:08.655
+Vamos adicionar transparência.
+
+00:01:08.689 --> 00:01:12.976
+No Matplotlib, poderíamos adicionar
+o parâmetro alpha
+
+00:01:13.010 --> 00:01:15.024
+direto ao chamado da função.
+
+00:01:15.058 --> 00:01:18.335
+Com o regplot, temos que usar
+o parâmetro em um dicionário
+
+00:01:18.369 --> 00:01:22.127
+ligado ao parâmetro KWS
+do scatter.
+
+00:01:22.161 --> 00:01:24.360
+Alpha recebe um valor
+entre 0 e 1
+
+00:01:24.394 --> 00:01:26.839
+que especifica a opacidade
+dos pontos.
+
+00:01:26.873 --> 00:01:30.758
+0 é transparente,
+e 1 é totalmente opaco.
+
+00:01:30.792 --> 00:01:33.598
+Vamos começar
+com um valor de 1/5 para alpha.
+
+00:01:33.632 --> 00:01:38.430
+É um bom começo, mas as áreas
+do centro continuam indistinguíveis.
+
+00:01:38.464 --> 00:01:41.071
+E se tentarmos
+um alpha de 1/20?
+
+00:01:41.105 --> 00:01:43.839
+Podemos ver as tendências
+um pouco melhor.
+
+00:01:43.873 --> 00:01:48.750
+As partes mais escuras ocorrem
+pela sobreposição dos pontos.
+
+00:01:48.784 --> 00:01:52.294
+Essas áreas aumentam um pouco
+de valor com o passar dos anos.
+
+00:01:52.328 --> 00:01:56.358
+Notem que, nesse meio tempo,
+a linha de regressão não mudou.
+
+00:01:56.392 --> 00:01:59.607
+O jitter e a transparência
+não afetam os valores
+
+00:01:59.641 --> 00:02:02.317
+e nem a linha de regressão.
+
+00:02:02.351 --> 00:02:05.190
+Se você continua insatisfeito
+com o resultado,
+
+00:02:05.224 --> 00:02:08.366
+há outras formas alternativas
+de traçar os dados.
+
+00:02:08.400 --> 00:02:10.693
+Por exemplo,
+como o ano é discreto,
+
+00:02:10.727 --> 00:02:12.902
+podemos tratar
+como uma variável categórica
+
+00:02:12.936 --> 00:02:15.367
+e usar outro tipo de gráfico
+que você verá mais tarde.
+

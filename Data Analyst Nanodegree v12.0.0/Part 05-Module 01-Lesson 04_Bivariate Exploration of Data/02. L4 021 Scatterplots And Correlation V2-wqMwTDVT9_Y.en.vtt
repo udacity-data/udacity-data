@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.849 --> 00:00:10.550
+If we are interested in looking at the relationship between two quantitative variables,
+
+00:00:10.550 --> 00:00:13.480
+the go-to plot type is the scatter plot.
+
+00:00:13.480 --> 00:00:17.940
+In a scatter plot, the values of one variable are indicated by position on
+
+00:00:17.940 --> 00:00:24.045
+the x-axis and values of the other variable are indicated by position on the y-axis.
+
+00:00:24.045 --> 00:00:26.800
+One point is plotted for every observation we
+
+00:00:26.800 --> 00:00:29.940
+have in our data resulting in a cloud of points.
+
+00:00:29.940 --> 00:00:32.609
+The pattern of points can clearly show what kind of
+
+00:00:32.609 --> 00:00:36.799
+relationship exists between our two variables and its strength.
+
+00:00:36.799 --> 00:00:40.369
+We are often interested in quantifying the strength of
+
+00:00:40.369 --> 00:00:44.754
+the relationship between two variables through a correlation coefficient.
+
+00:00:44.755 --> 00:00:48.945
+The most commonly used measure is the Pearson correlation coefficient,
+
+00:00:48.945 --> 00:00:53.520
+identified by the letter r. A detailed discussion of
+
+00:00:53.520 --> 00:00:56.030
+this correlation coefficient is best left for
+
+00:00:56.030 --> 00:00:59.969
+a different course but a quick overview is worthwhile here.
+
+00:00:59.969 --> 00:01:04.159
+The statistic takes a value between negative one and one.
+
+00:01:04.159 --> 00:01:07.950
+Positive numbers indicate relationship where positive changes in
+
+00:01:07.950 --> 00:01:11.909
+one variable are associated with positive changes in the second.
+
+00:01:11.909 --> 00:01:15.679
+While negative numbers indicate that when one variable increases,
+
+00:01:15.680 --> 00:01:18.640
+the second variable tends to decrease.
+
+00:01:18.640 --> 00:01:23.540
+Values close to the extremes of negative one or one indicate a stronger,
+
+00:01:23.540 --> 00:01:29.755
+more predictable relationship while values close to zero indicate a weaker relationship.
+
+00:01:29.754 --> 00:01:33.409
+The correlation coefficient does not necessarily tell you anything
+
+00:01:33.409 --> 00:01:37.340
+about the steepness of a line that models the relationship.
+
+00:01:37.340 --> 00:01:39.275
+And most importantly,
+
+00:01:39.275 --> 00:01:44.340
+the Pearson correlation coefficient only captures linear relationships.
+
+00:01:44.340 --> 00:01:47.380
+As observed with Anscombe's quartet,
+
+00:01:47.379 --> 00:01:51.739
+we had multiple data sets with the same Pearson correlation coefficient,
+
+00:01:51.739 --> 00:01:56.250
+but when plotted demonstrated very different shape characteristics.
+
+00:01:56.250 --> 00:01:58.840
+It is important to consider not just the numbers
+
+00:01:58.840 --> 00:02:02.885
+alone but whether or not they are meaningful for your data.
+
+00:02:02.885 --> 00:02:07.045
+If one of our goals is to create a regression model around the data,
+
+00:02:07.045 --> 00:02:10.650
+scale transformations can be useful to change a non-linear trend in
+
+00:02:10.650 --> 00:02:14.830
+the natural units into a linear trend in the transformed units.
+
+00:02:14.830 --> 00:02:18.665
+Let's say that we have a scatter plot like the one shown.
+
+00:02:18.664 --> 00:02:21.264
+As we increase the value of x,
+
+00:02:21.264 --> 00:02:24.839
+the spread in the value of y increases drastically.
+
+00:02:24.840 --> 00:02:28.610
+If we change the scaling of the y variable to a log scale,
+
+00:02:28.610 --> 00:02:30.815
+then a linear pattern appears.
+
+00:02:30.814 --> 00:02:33.914
+This informs us that we want to try using the value of
+
+00:02:33.914 --> 00:02:37.719
+x to predict the log of y in a regression approach.
+

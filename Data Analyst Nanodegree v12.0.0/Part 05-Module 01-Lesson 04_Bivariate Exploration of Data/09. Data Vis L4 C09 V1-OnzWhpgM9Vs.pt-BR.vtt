@@ -1,0 +1,176 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.233 --> 00:00:03.900
+Vamos plotar a relação
+entre 2 variáveis qualitativas:
+
+00:00:03.933 --> 00:00:07.367
+classe do veículo
+e tipo de transmissão.
+
+00:00:07.400 --> 00:00:10.767
+Para simplificar, só vou olhar
+a divisão do tipo principal:
+
+00:00:10.800 --> 00:00:12.633
+automática ou manual.
+
+00:00:12.667 --> 00:00:16.267
+Isso foi colocado na coluna
+trans_type.
+
+00:00:16.700 --> 00:00:20.800
+Podemos representar com o mapa
+de calor, como vimos antes.
+
+00:00:20.833 --> 00:00:24.900
+Há uma função Seaborn para
+esse tipo categórico de mapa:
+
+00:00:24.933 --> 00:00:26.833
+a função heatmap.
+
+00:00:26.867 --> 00:00:29.133
+Entretanto,
+essa função usa como argumento
+
+00:00:29.167 --> 00:00:31.133
+um array 2D
+ou estrutura de dados
+
+00:00:31.167 --> 00:00:33.500
+com valores
+a serem representados.
+
+00:00:33.533 --> 00:00:36.800
+Isso significa
+que temos que fazer um resumo
+
+00:00:36.833 --> 00:00:39.000
+antes de criarmos
+o nosso gráfico.
+
+00:00:39.033 --> 00:00:41.733
+Primeiro,
+usei as funções groupby e size
+
+00:00:41.767 --> 00:00:43.833
+para obter o número de carros
+em cada combinação
+
+00:00:43.867 --> 00:00:45.433
+dos 2 níveis de variáveis,
+
+00:00:45.467 --> 00:00:47.200
+como no Panda Series.
+
+00:00:47.667 --> 00:00:50.333
+Depois, usei reset_index
+
+00:00:50.367 --> 00:00:52.833
+para converter o Series
+em uma estrutura de dados.
+
+00:00:53.533 --> 00:00:56.300
+Daí, usei a função pivot
+para reorganizar os dados
+
+00:00:56.333 --> 00:00:58.533
+e obter a classe dos veículos
+em linhas,
+
+00:00:58.567 --> 00:01:00.167
+tipos de transmissão
+em colunas
+
+00:01:00.200 --> 00:01:02.500
+e valores nas células.
+
+00:01:02.700 --> 00:01:04.567
+Agora estamos prontos
+para plotar.
+
+00:01:04.800 --> 00:01:07.067
+Isso é meio decepcionante.
+
+00:01:07.100 --> 00:01:10.833
+É difícil comparar as contagens
+das proporções das transmissões
+
+00:01:10.867 --> 00:01:12.700
+com base apenas nas cores.
+
+00:01:12.733 --> 00:01:15.933
+Podemos ver que a manual é menos
+popular do que a automática,
+
+00:01:15.967 --> 00:01:18.767
+mas é difícil dizer
+algo além disso.
+
+00:01:18.800 --> 00:01:22.333
+Uma opção é adicionar notas
+com contagens às células,
+
+00:01:22.367 --> 00:01:25.133
+o que deixa a representação
+mais tabulada.
+
+00:01:25.900 --> 00:01:28.533
+O parâmetro fmt
+configurado para D
+
+00:01:28.567 --> 00:01:32.367
+garante que as contagens sejam
+listadas como valores decimais.
+
+00:01:32.400 --> 00:01:35.100
+Um modo alternativo de mostrar
+a distribuição em contagens
+
+00:01:35.133 --> 00:01:37.833
+é pelo uso de
+um gráfico de barras agrupadas.
+
+00:01:37.867 --> 00:01:41.333
+Na última aula, vimos como usar
+a função countplot do Seaborn
+
+00:01:41.400 --> 00:01:44.700
+para gerar um gráfico de barras
+com uma variável.
+
+00:01:44.733 --> 00:01:48.033
+Para dividir cada barra
+em diversas barras
+
+00:01:48.067 --> 00:01:49.967
+para os diferentes
+tipos de transmissão,
+
+00:01:50.000 --> 00:01:52.033
+precisamos apenas adicionar
+um parâmetro hue
+
+00:01:52.067 --> 00:01:54.900
+apontando para a variável
+trans_type.
+
+00:01:55.200 --> 00:01:56.600
+Com o gráfico
+de barras agrupadas,
+
+00:01:56.633 --> 00:01:58.900
+podemos ver claramente
+que os carros minicompactos
+
+00:01:58.933 --> 00:02:02.467
+têm a proporção mais próxima
+entre automáticas e manuais,
+
+00:02:02.500 --> 00:02:05.500
+enquanto carros grandes
+têm a proporção mais distante.
+

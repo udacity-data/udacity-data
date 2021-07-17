@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.960 --> 00:00:10.230
+In a line plot, we plot the relationship between two quantitative variables,
+
+00:00:10.230 --> 00:00:13.275
+one on each axis, using a line.
+
+00:00:13.275 --> 00:00:16.440
+The Y value of the line at any given X value,
+
+00:00:16.440 --> 00:00:20.339
+reports the average value taken by the y-axis variable.
+
+00:00:20.339 --> 00:00:25.664
+This is like a histogram with a variable-average instead of a count on the y-axis,
+
+00:00:25.664 --> 00:00:28.939
+and point positions instead of bar heights.
+
+00:00:28.940 --> 00:00:32.780
+The use of lines emphasize two things over bars.
+
+00:00:32.780 --> 00:00:36.710
+First, that we are more interested in relative change.
+
+00:00:36.710 --> 00:00:42.344
+The need for a zero on the y-axis is not necessary when we create a line plot.
+
+00:00:42.344 --> 00:00:48.269
+Secondly, the line emphasizes connections between values on the x-axis.
+
+00:00:48.270 --> 00:00:50.780
+That means that it is inappropriate to use
+
+00:00:50.780 --> 00:00:55.460
+a line plot if we have a nominal variable on the x-axis.
+
+00:00:55.880 --> 00:00:59.310
+Frequently, you'll see bivariate plots against
+
+00:00:59.310 --> 00:01:02.289
+a time-based variable plotted as a line plot.
+
+00:01:02.289 --> 00:01:06.534
+You see this in economic data like stock or currency charts,
+
+00:01:06.534 --> 00:01:10.069
+plotting the entities value across a period of time.
+
+00:01:10.069 --> 00:01:14.549
+In these cases, there's usually only one measurement per time value.
+
+00:01:14.549 --> 00:01:16.750
+So, the line isn't connecting averages,
+
+00:01:16.750 --> 00:01:19.099
+just the raw values across time,
+
+00:01:19.099 --> 00:01:24.469
+but the line still serves an important purpose over it and equivalent scatter plot.
+
+00:01:24.469 --> 00:01:30.109
+It clearly shows the connection between consecutive values and changes over time.
+
+00:01:30.109 --> 00:01:36.280
+This type of line chart showing values over time is known as a Time Series Plot.
+

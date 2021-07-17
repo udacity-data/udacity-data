@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.450
+Last time, we used a violin plot to look at
+
+00:00:02.450 --> 00:00:05.875
+the relationship between vehicle class and fuel efficiency.
+
+00:00:05.875 --> 00:00:09.449
+Now, we'll use box plots to summarize that relationship.
+
+00:00:09.449 --> 00:00:14.105
+Just substitute violin plot for box plot, and we've got our output.
+
+00:00:14.105 --> 00:00:15.820
+The bottom of each box,
+
+00:00:15.820 --> 00:00:19.990
+indicates the first quartile and the top of each box, the third quartile.
+
+00:00:19.989 --> 00:00:23.034
+The central line is the median of each group.
+
+00:00:23.035 --> 00:00:26.079
+Whiskers branch out toward the min and max and each group,
+
+00:00:26.079 --> 00:00:30.164
+with outliers depicted as individual points past a maximum whisker length.
+
+00:00:30.164 --> 00:00:32.280
+That depends on each group's box height.
+
+00:00:32.280 --> 00:00:35.509
+The taller each box, the wider the whiskers can be.
+
+00:00:35.509 --> 00:00:39.034
+The box plot supports the observations that we made in the last video,
+
+00:00:39.034 --> 00:00:43.959
+regarding the relative order and variability in fuel efficiencies by vehicle class.
+
+00:00:43.960 --> 00:00:45.969
+If we move back to the violin plot,
+
+00:00:45.969 --> 00:00:49.259
+now you can understand what was plotted in each violin area.
+
+00:00:49.259 --> 00:00:52.774
+The thicker black region represents the interquartile range,
+
+00:00:52.774 --> 00:00:55.989
+with the white dot in each violin, the medians.
+
+00:00:55.990 --> 00:00:59.420
+I actually prefer the inner equals quartile parameters setting.
+
+00:00:59.420 --> 00:01:02.795
+Which only plots the quartiles as dashed lines.
+
+00:01:02.795 --> 00:01:06.174
+The line with the larger dashes are the medians,
+
+00:01:06.174 --> 00:01:10.129
+and the lines with the shorter dashes on either side, the quartiles.
+

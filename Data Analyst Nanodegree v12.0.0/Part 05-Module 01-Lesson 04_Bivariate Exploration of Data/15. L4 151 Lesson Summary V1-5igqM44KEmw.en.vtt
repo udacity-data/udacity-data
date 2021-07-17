@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.240 --> 00:00:08.855
+Great work. Now that you've got a handle on bivariate plots,
+
+00:00:08.855 --> 00:00:11.330
+you will be able to visualize and identify
+
+00:00:11.330 --> 00:00:14.460
+the relationships between variables in your data.
+
+00:00:14.460 --> 00:00:18.865
+Scatter plots show the relationship between two quantitative variables
+
+00:00:18.864 --> 00:00:23.954
+while clustered bar charts show the relationship between two qualitative variables.
+
+00:00:23.954 --> 00:00:29.809
+You also saw how heat maps could be used as 2D histograms and bar charts.
+
+00:00:29.809 --> 00:00:34.479
+Violin plots and box plots are the primary plot types used to show
+
+00:00:34.479 --> 00:00:39.224
+the relationship between one quantitative and one qualitative variable.
+
+00:00:39.225 --> 00:00:44.859
+You also learned additional techniques to adapt univariate plots to bivariate data,
+
+00:00:44.859 --> 00:00:48.500
+letting you inspect data at different levels of complexity.
+
+00:00:48.500 --> 00:00:52.479
+This include faceting multiple univariate plots across subsets of
+
+00:00:52.479 --> 00:00:57.654
+a second variable as well as using a second variables mean instead of count.
+
+00:00:57.655 --> 00:01:03.945
+You also learned about line plots and how they can show changes in value across time.
+
+00:01:03.945 --> 00:01:07.790
+There were a lot of plots we covered in this lesson.
+
+00:01:07.790 --> 00:01:12.395
+These will form the core of your insights in your data exploration.
+
+00:01:12.394 --> 00:01:14.714
+Through these bivariate plots,
+
+00:01:14.715 --> 00:01:19.060
+you can learn how changes in one variable might affect the values in a second,
+
+00:01:19.060 --> 00:01:22.605
+and identify clusters and patterns in the data.
+
+00:01:22.605 --> 00:01:25.990
+This in turn will help develop the hypotheses
+
+00:01:25.989 --> 00:01:29.634
+and expectations surrounding your research questions.
+
+00:01:29.635 --> 00:01:32.895
+In the next lesson, you will learn techniques to introduce
+
+00:01:32.894 --> 00:01:37.024
+additional variables into your plots to refine your insights.
+
+00:01:37.025 --> 00:01:39.570
+I hope you're looking forward to it.
+

@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.339
+Earlier, we looked at the relationship between
+
+00:00:02.339 --> 00:00:05.615
+engine size and fuel efficiency using a scatter plot.
+
+00:00:05.615 --> 00:00:10.265
+I've added some jitter and transparency to see where the main bulk of the data lies.
+
+00:00:10.265 --> 00:00:14.635
+We can also plot this data as a heat map or a 2D histogram.
+
+00:00:14.634 --> 00:00:19.670
+The simplest way of going about this is by using matplotlib's hist2d function.
+
+00:00:19.670 --> 00:00:22.945
+I'm also adding a color bar function call so that a legend
+
+00:00:22.945 --> 00:00:26.859
+associating the counts to colors is placed adjacent to the plot.
+
+00:00:26.859 --> 00:00:29.269
+Similar to the univariate hist function,
+
+00:00:29.269 --> 00:00:31.460
+by default each dimension is split into
+
+00:00:31.460 --> 00:00:35.520
+10 bins and the number of points in each rectangular bin is counted up.
+
+00:00:35.520 --> 00:00:37.660
+Each count is associated with a color.
+
+00:00:37.659 --> 00:00:41.154
+In this default matplotlib color palette called for viridis,
+
+00:00:41.155 --> 00:00:43.009
+higher count skew yellow and bright,
+
+00:00:43.009 --> 00:00:45.304
+lower counts darker and purple.
+
+00:00:45.304 --> 00:00:49.585
+We can still see the main trend we saw before but we can certainly do better.
+
+00:00:49.585 --> 00:00:54.405
+First, let's set a minimum bound of counts before a rectangular area can be plotted.
+
+00:00:54.405 --> 00:00:58.020
+By setting cmin to a value such as zero point five,
+
+00:00:58.020 --> 00:01:02.840
+any bin with no counts will return as not a number and not get colored in.
+
+00:01:02.840 --> 00:01:04.935
+Since white now represents zero,
+
+00:01:04.935 --> 00:01:06.820
+I should choose a reversed color palette where
+
+00:01:06.819 --> 00:01:09.784
+darker colors are associated with higher values.
+
+00:01:09.784 --> 00:01:13.314
+I'll set the cmap variable to viridis_r,
+
+00:01:13.314 --> 00:01:17.140
+with the underscore r indicating a reversed color map.
+
+00:01:17.140 --> 00:01:19.375
+There's a ton of built-in color maps
+
+00:01:19.375 --> 00:01:22.730
+compatible with matplotlib that can be found in the documentation.
+
+00:01:22.730 --> 00:01:27.045
+I'll defer a deeper discussion of color in general until later in the course.
+
+00:01:27.045 --> 00:01:29.555
+Finally, let's change the bins.
+
+00:01:29.555 --> 00:01:32.760
+We can provide hist2d's bins parameter with a list of
+
+00:01:32.760 --> 00:01:37.609
+two hists specifying the bin edges for the x and y axis in that order.
+
+00:01:37.609 --> 00:01:41.015
+After looking at the descriptive statistics for my two variables,
+
+00:01:41.015 --> 00:01:44.739
+I've decided to go with bin sizes of zero point three for displacement,
+
+00:01:44.739 --> 00:01:47.199
+and three for the fuel efficiency.
+
+00:01:47.200 --> 00:01:50.920
+I'll use NumPy's arange function to assign the bin edges to
+
+00:01:50.920 --> 00:01:54.609
+my bins_x and bins_y variables,
+
+00:01:54.609 --> 00:01:56.844
+and then generate the revised plot.
+
+00:01:56.844 --> 00:02:00.359
+We can see from the plot, two areas of high frequency in
+
+00:02:00.359 --> 00:02:04.469
+the middle of the negative trend between fuel efficiency and engine size
+

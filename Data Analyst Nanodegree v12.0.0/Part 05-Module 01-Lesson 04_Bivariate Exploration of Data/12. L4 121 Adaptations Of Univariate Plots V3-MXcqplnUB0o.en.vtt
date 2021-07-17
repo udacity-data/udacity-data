@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.850 --> 00:00:08.440
+Besides faceting, there's one other way in which
+
+00:00:08.440 --> 00:00:12.595
+univariate plots can be adapted to display bivariate relationships.
+
+00:00:12.595 --> 00:00:14.970
+In both histograms and bar charts,
+
+00:00:14.970 --> 00:00:18.295
+we had the frequency of data points on the vertical axis.
+
+00:00:18.295 --> 00:00:22.330
+If we instead reported the mean of a second variable,
+
+00:00:22.330 --> 00:00:25.525
+this would make the plots bivariate in nature.
+
+00:00:25.525 --> 00:00:28.900
+Sometimes, we may add error bars to the plot to show
+
+00:00:28.900 --> 00:00:32.425
+the amount of uncertainty we have in the true average.
+
+00:00:32.425 --> 00:00:35.860
+You might wonder why we would do this for a bar chart when
+
+00:00:35.860 --> 00:00:40.550
+a box plot takes the same amount of space and reports more statistics.
+
+00:00:40.550 --> 00:00:43.570
+As an explanatory data visualization,
+
+00:00:43.570 --> 00:00:48.500
+the adapted bar chart is a more direct and easier to read summary of your findings,
+
+00:00:48.500 --> 00:00:52.585
+just as the box plot is more direct than the violin plot.
+
+00:00:52.585 --> 00:00:55.790
+There are also some cases where a violin or
+
+00:00:55.790 --> 00:00:59.045
+box plot is insufficient for depicting the data.
+
+00:00:59.045 --> 00:01:02.690
+Let's say that we have some game data recording the type of strategy
+
+00:01:02.690 --> 00:01:06.515
+used by the first player and whether or not they won the game.
+
+00:01:06.515 --> 00:01:10.385
+Since the outcomes can only take a value of one or zero,
+
+00:01:10.385 --> 00:01:14.195
+a box plot are violin plot doesn't make much sense.
+
+00:01:14.195 --> 00:01:18.085
+Instead, plotting a bar chart with the mean outcome
+
+00:01:18.085 --> 00:01:22.595
+gives us a quick indication of which strategies are better than others.
+
+00:01:22.595 --> 00:01:28.645
+Similarly, the adapted histogram acts as a condensed alternative to the scatter plot.
+
+00:01:28.645 --> 00:01:33.845
+However, it is likely that you will see values encoded not in bars and their heights,
+
+00:01:33.845 --> 00:01:36.830
+but the position of points on a line.
+
+00:01:36.830 --> 00:01:41.160
+We will talk about these line plots in the next part of the lesson.
+

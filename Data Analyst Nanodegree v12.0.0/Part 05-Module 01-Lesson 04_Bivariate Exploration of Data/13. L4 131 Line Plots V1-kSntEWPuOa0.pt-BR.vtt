@@ -1,0 +1,129 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.834 --> 00:00:04.534
+CONCEITO 13:
+GRÁFICOS DE LINHA
+
+00:00:05.767 --> 00:00:06.934
+Em um gráfico de linha,
+
+00:00:06.968 --> 00:00:10.334
+representamos a relação entre
+duas variáveis quantitativas,
+
+00:00:10.367 --> 00:00:11.801
+uma em cada eixo,
+
+00:00:11.834 --> 00:00:13.734
+usando uma linha.
+
+00:00:13.767 --> 00:00:16.534
+O valor Y da linha
+em qualquer valor X dado
+
+00:00:16.567 --> 00:00:20.701
+reporta o valor médio
+da variável do eixo Y.
+
+00:00:20.734 --> 00:00:23.434
+Isso é como um histograma
+com uma média variável
+
+00:00:23.467 --> 00:00:25.901
+em vez de uma contagem
+no eixo Y,
+
+00:00:25.934 --> 00:00:29.267
+e posições dos pontos
+em vez de alturas de barras.
+
+00:00:29.300 --> 00:00:33.000
+O uso das linhas enfatiza dois
+aspectos mais do que as barras.
+
+00:00:33.033 --> 00:00:37.000
+Primeiro, temos interesse
+em mudanças relativas.
+
+00:00:37.033 --> 00:00:40.367
+A necessidade do 0 no eixo X
+não é imprescindível
+
+00:00:40.400 --> 00:00:42.801
+quando criamos
+um gráfico de linhas.
+
+00:00:42.834 --> 00:00:47.968
+Segundo, a linha enfatiza
+conexões dos valores no eixo X.
+
+00:00:48.534 --> 00:00:51.367
+Isso significa que não é
+adequado usar gráficos de linha
+
+00:00:51.400 --> 00:00:54.801
+se tivermos uma variável nominal
+no eixo X.
+
+00:00:56.701 --> 00:00:58.868
+Frequentemente,
+veremos gráficos bivariantes
+
+00:00:58.901 --> 00:01:00.601
+contra uma variável
+baseada em tempo
+
+00:01:00.634 --> 00:01:02.601
+representada
+por um gráfico de linha.
+
+00:01:02.634 --> 00:01:04.434
+Vemos isso
+em dados econômicos,
+
+00:01:04.467 --> 00:01:06.667
+como em ações
+ou gráficos de moeda,
+
+00:01:06.701 --> 00:01:10.667
+representando um certo valor
+ao longo de um período de tempo.
+
+00:01:10.701 --> 00:01:14.601
+Nesses casos, há somente uma
+medida para o valor do tempo,
+
+00:01:14.634 --> 00:01:16.968
+então a linha não está
+conectando médias,
+
+00:01:17.033 --> 00:01:19.334
+apenas o valor bruto
+ao longo do tempo.
+
+00:01:19.367 --> 00:01:22.000
+Mas a linha ainda tem
+um papel importante
+
+00:01:22.033 --> 00:01:24.701
+sobre um gráfico de dispersão
+equivalente.
+
+00:01:24.734 --> 00:01:28.100
+Ela mostra claramente a conexão
+entre valores consecutivos
+
+00:01:28.133 --> 00:01:30.200
+e mudanças
+ao longo do tempo.
+
+00:01:30.667 --> 00:01:33.868
+Esse tipo de gráfico de linha
+com valores ao longo do tempo
+
+00:01:33.901 --> 00:01:36.067
+é chamado
+de "gráfico de série temporal".
+

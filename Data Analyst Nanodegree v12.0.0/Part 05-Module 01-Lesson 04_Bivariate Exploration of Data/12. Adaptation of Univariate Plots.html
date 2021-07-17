@@ -1,0 +1,530 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Adaptation of Univariate Plots
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Bivariate Exploration of Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Scatterplots and Correlation.html">
+       02. Scatterplots and Correlation
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Overplotting, Transparency, and Jitter.html">
+       03. Overplotting, Transparency, and Jitter
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Heat Maps.html">
+       04. Heat Maps
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Scatterplot Practice.html">
+       05. Scatterplot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Violin Plots.html">
+       06. Violin Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Box Plots.html">
+       07. Box Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Violin and Box Plot Practice.html">
+       08. Violin and Box Plot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Clustered Bar Charts.html">
+       09. Clustered Bar Charts
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Categorical Plot Practice.html">
+       10. Categorical Plot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Faceting.html">
+       11. Faceting
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Adaptation of Univariate Plots.html">
+       12. Adaptation of Univariate Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Line Plots.html">
+       13. Line Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Additional Plot Practice.html">
+       14. Additional Plot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Lesson Summary.html">
+       15. Lesson Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Extra Q-Q Plots.html">
+       16. Extra: Q-Q Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Extra Swarm Plots.html">
+       17. Extra: Swarm Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Extra Rug and Strip Plots.html">
+       18. Extra: Rug and Strip Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Extra Stacked Plots.html">
+       19. Extra: Stacked Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Extra Ridgeline Plots.html">
+       20. Extra: Ridgeline Plots
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          12. Adaptation of Univariate Plots
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L4 121 Adaptations Of Univariate Plots V3
+         </p>
+        </h3>
+        <video controls="">
+         <source src="12. L4 121 Adaptations Of Univariate Plots V3-MXcqplnUB0o.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="12. L4 121 Adaptations Of Univariate Plots V3-MXcqplnUB0o.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="12. L4 121 Adaptations Of Univariate Plots V3-MXcqplnUB0o.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="12. L4 121 Adaptations Of Univariate Plots V3-MXcqplnUB0o.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Data Vis L4 C12 V2
+         </p>
+        </h3>
+        <video controls="">
+         <source src="12. Data Vis L4 C12 V2-aJncRqqJUYI.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="12. Data Vis L4 C12 V2-aJncRqqJUYI.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="12. Data Vis L4 C12 V2-aJncRqqJUYI.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="12. Data Vis L4 C12 V2-aJncRqqJUYI.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+         <h2 id="adapted-bar-charts">
+          Adapted Bar Charts
+         </h2>
+         <p>
+          Histograms and bar charts were introduced in the previous lesson as depicting the distribution of numeric and categorical variables, respectively, with the height (or length) of bars indicating the number of data points that fell within each bar's range of values. These plots can be adapted for use as bivariate plots by, instead of indicating count by height, indicating a mean or other statistic on a second variable.
+         </p>
+         <p>
+          For example, we could plot a numeric variable against a categorical variable by adapting a bar chart so that its bar heights indicate the mean of the numeric variable. This is the purpose of seaborn's
+          <a href="https://seaborn.pydata.org/generated/seaborn.barplot.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            barplot
+           </code>
+          </a>
+          function:
+         </p>
+         <pre><code class="python language-python">base_color = sb.color_palette()[0]
+sb.barplot(data = df, x = 'cat_var', y = 'num_var', color = base_color)</code></pre>
+         <p>
+          Different hues are automatically assigned to each category level unless a fixed color is set in the "color" parameter, like in
+          <code>
+           countplot
+          </code>
+          and
+          <code>
+           violinplot
+          </code>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l4-c12-adaptations1.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The bar heights indicate the mean value on the numeric variable, with error bars plotted to show the uncertainty in the mean based on variance and sample size. The Delta bar dips below the 0 axis due to the negative mean.
+         </p>
+         <p>
+          As an alternative, the
+          <a href="https://seaborn.pydata.org/generated/seaborn.pointplot.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            pointplot
+           </code>
+          </a>
+          function can be used to plot the averages as points rather than bars. This can be useful if having bars in reference to a 0 baseline aren't important or would be confusing.
+         </p>
+         <pre><code class="python language-python">sb.pointplot(data = df, x = 'cat_var', y = 'num_var', linestyles = "")
+plt.ylabel('Avg. value of num_var')</code></pre>
+         <p>
+          By default,
+          <code>
+           pointplot
+          </code>
+          will connect values by a line. This is fine if the categorical variable is ordinal in nature, but it can be a good idea to remove the line via
+          <code>
+           linestyles = ""
+          </code>
+          for nominal data.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l4-c12-adaptations2.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The above plots can be useful alternatives to the box plot and violin plot if the data is not conducive to either of those plot types. For example, if the numeric variable is binary in nature, taking values only of 0 or 1, then a box plot or violin plot will not be informative, leaving the adapted bar chart as the best choice for displaying the data.
+         </p>
+         <pre><code class="python language-python">plt.figure(figsize = [12, 5])
+base_color = sb.color_palette()[0]
+
+# left plot: violin plot
+plt.subplot(1, 3, 1)
+sb.violinplot(data = df, x = 'condition', y = 'binary_out', inner = None,
+              color = base_color)
+plt.xticks(rotation = 10) # include label rotation due to small subplot size
+
+# center plot: box plot
+plt.subplot(1, 3, 2)
+sb.boxplot(data = df, x = 'condition', y = 'binary_out', color = base_color)
+plt.xticks(rotation = 10)
+
+# right plot: adapted bar chart
+plt.subplot(1, 3, 3)
+sb.barplot(data = df, x = 'condition', y = 'binary_out', color = base_color)
+plt.xticks(rotation = 10)</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l4-c12-adaptations3.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="adapted-histograms">
+          Adapted Histograms
+         </h2>
+         <p>
+          Matplotlib's
+          <code>
+           hist
+          </code>
+          function can also be adapted so that bar heights indicate value other than a count of points through the use of the "weights" parameter. By default, each data point is given a weight of 1, so that the sum of point weights in each bin is equal to the number of points. If we change the weights to be a representative function of each point's value on a second variable, then the sum will end up representing something other than a count.
+         </p>
+         <pre><code class="python language-python">bin_edges = np.arange(0, df['num_var'].max()+1/3, 1/3)
+
+# count number of points in each bin
+bin_idxs = pd.cut(df['num_var'], bin_edges, right = False, include_lowest = True,
+                  labels = False).astype(int)
+pts_per_bin = df.groupby(bin_idxs).size()
+
+num_var_wts = df['binary_out'] / pts_per_bin[bin_idxs].values
+
+# plot the data using the calculated weights
+plt.hist(data = df, x = 'num_var', bins = bin_edges, weights = num_var_wts)
+plt.xlabel('num_var')
+plt.ylabel('mean(binary_out)')</code></pre>
+         <p>
+          To get the mean of the y-variable ("binary_out") in each bin, the weight of each point should be equal to the y-variable value, divided by the number of points in its x-bin (
+          <code>
+           num_var_wts
+          </code>
+          ). As part of this computation, we make use of pandas'
+          <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.cut.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            cut
+           </code>
+          </a>
+          function in order to associate each data point to a particular bin (
+          <code>
+           bin_idxs
+          </code>
+          ). The
+          <code>
+           labels = False
+          </code>
+          parameter means that each point's bin membership is associated by a numeric index, rather than a string. We use these numeric indices into the
+          <code>
+           pts_per_bin
+          </code>
+          , with the
+          <code>
+           .values
+          </code>
+          at the end necessary in order for the Series' indices to not be confused between the indices of
+          <code>
+           df['binary_out']
+          </code>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l4-c12-adaptations4.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          This plot shows that the average outcome of the y-variable "binary_out" generally increases across values of the x-variable "num_var".
+         </p>
+         <p>
+          More commonly, you'll see plots summarizing one numeric variable against values of a second numeric variable not as adapted histograms, but instead as line plots. These are covered on the next page.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="13. Line Plots.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. Adaptation of Univariate Plots')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

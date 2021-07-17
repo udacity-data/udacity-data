@@ -1,0 +1,189 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.126 --> 00:00:04.999
+CONCEITO 2:
+GRÁFICOS DE DISPERSÃO E CORRELAÇÃO
+
+00:00:05.709 --> 00:00:10.681
+Se quisermos saber o relacionamento
+entre duas variáveis quantitativas,
+
+00:00:10.715 --> 00:00:13.742
+o melhor gráfico
+para isso é de dispersão.
+
+00:00:13.776 --> 00:00:16.557
+No gráfico de dispersão,
+os valores de uma variável
+
+00:00:16.591 --> 00:00:19.206
+são indicados pela posição
+no eixo X,
+
+00:00:19.240 --> 00:00:24.230
+e os valores da outra variável
+são indicados no eixo Y.
+
+00:00:24.264 --> 00:00:27.669
+Um ponto é marcado
+para cada observação que temos,
+
+00:00:27.703 --> 00:00:30.246
+resultando
+numa nuvem de pontos.
+
+00:00:30.280 --> 00:00:33.286
+O padrão de pontos pode mostrar
+que tipo de relacionamento
+
+00:00:33.320 --> 00:00:36.765
+existe entre as duas variáveis
+e a força dele.
+
+00:00:37.741 --> 00:00:41.102
+Constantemente queremos quantificar
+a força de um relacionamento
+
+00:00:41.136 --> 00:00:45.117
+entre duas variáveis por meio
+de um coeficiente de correlação.
+
+00:00:45.151 --> 00:00:49.070
+A medida mais comum é
+o coeficiente de correlação Pearson,
+
+00:00:49.104 --> 00:00:51.796
+identificado pela letra R.
+
+00:00:52.109 --> 00:00:57.270
+Discutiremos detalhadamente
+esse coeficiente em outro curso,
+
+00:00:57.304 --> 00:01:00.174
+mas faremos
+um resumo rápido agora.
+
+00:01:00.478 --> 00:01:04.414
+A estatística usa um valor
+entre -1 e 1.
+
+00:01:04.448 --> 00:01:06.684
+Números positivos indicam
+relacionamentos
+
+00:01:06.718 --> 00:01:08.957
+em que mudanças positivas
+em uma variável
+
+00:01:08.991 --> 00:01:12.157
+estão associadas
+a mudanças positivas na segunda.
+
+00:01:12.191 --> 00:01:15.749
+Enquanto números negativos indicam
+que, quando uma variável aumenta,
+
+00:01:15.783 --> 00:01:18.749
+a outra variável
+tende a diminuir.
+
+00:01:19.237 --> 00:01:22.262
+Valores próximos aos extremos
+de -1 e 1
+
+00:01:22.296 --> 00:01:25.487
+indicam um relacionamento
+mais forte e previsível,
+
+00:01:25.521 --> 00:01:27.343
+enquanto valores
+próximos a 0
+
+00:01:27.377 --> 00:01:30.070
+indicam um relacionamento
+mais fraco.
+
+00:01:30.381 --> 00:01:33.418
+O coeficiente de correlação
+não mostra necessariamente
+
+00:01:33.452 --> 00:01:37.682
+a inclinação de uma linha
+que modela o relacionamento.
+
+00:01:37.716 --> 00:01:39.371
+Sobretudo,
+
+00:01:39.405 --> 00:01:41.275
+o coeficiente
+de correlação Pearson
+
+00:01:41.309 --> 00:01:44.266
+só registra
+relacionamentos lineares.
+
+00:01:45.019 --> 00:01:47.570
+Como é observado
+no Quarteto de Anscombe,
+
+00:01:47.604 --> 00:01:51.979
+temos vários grupos de dados
+com o mesmo coeficiente,
+
+00:01:52.013 --> 00:01:56.212
+mas que, quando dispersados,
+demonstram diferentes formas.
+
+00:01:56.723 --> 00:01:59.580
+É importante considerar
+não só os números,
+
+00:01:59.614 --> 00:02:02.979
+mas também se são significativos
+para os dados.
+
+00:02:03.754 --> 00:02:07.305
+Se queremos criar um modelo
+de regressão ao redor dos dados,
+
+00:02:07.339 --> 00:02:09.581
+conversões de escala
+podem transformar
+
+00:02:09.615 --> 00:02:11.820
+tendências não lineares
+em unidades naturais
+
+00:02:11.854 --> 00:02:15.188
+em tendências lineares
+nas unidades transformadas.
+
+00:02:15.222 --> 00:02:19.005
+Digamos que temos
+um gráfico como o demonstrado.
+
+00:02:19.039 --> 00:02:21.420
+Quando aumentamos
+o valor de X,
+
+00:02:21.454 --> 00:02:25.108
+o espaçamento no valor
+de Y aumenta drasticamente.
+
+00:02:25.477 --> 00:02:28.813
+Se mudarmos a escala de Y
+para uma escala de log,
+
+00:02:28.847 --> 00:02:31.045
+aparece um padrão linear.
+
+00:02:31.079 --> 00:02:34.574
+Isso nos mostra que devemos
+usar o valor de X
+
+00:02:34.608 --> 00:02:37.524
+para prever o log de Y
+numa abordagem de regressão.
+

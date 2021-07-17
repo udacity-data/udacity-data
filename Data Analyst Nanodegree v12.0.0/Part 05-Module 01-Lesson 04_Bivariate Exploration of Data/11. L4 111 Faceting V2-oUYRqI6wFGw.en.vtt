@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.700 --> 00:00:09.300
+One way that you could think about clustered bar chart is that it's really a set of
+
+00:00:09.300 --> 00:00:13.839
+side-by-side univariate bar charts on different subsets of the data.
+
+00:00:13.839 --> 00:00:17.594
+This technique of creating multiple copies of the same type of
+
+00:00:17.594 --> 00:00:21.899
+plot but for different subsets of the data is called Faceting.
+
+00:00:21.899 --> 00:00:24.574
+We can use this for any type of plot,
+
+00:00:24.574 --> 00:00:26.384
+not just for bar charts.
+
+00:00:26.385 --> 00:00:29.920
+A violin plot for example could be thought of as very similar
+
+00:00:29.920 --> 00:00:34.094
+to a set of histograms faceted by a categorical variable.
+
+00:00:34.094 --> 00:00:36.254
+As a general technique,
+
+00:00:36.255 --> 00:00:41.605
+faceting is good for breaking down potentially complex patterns into simpler parts.
+
+00:00:41.604 --> 00:00:46.894
+This is especially useful if you have a categorical variable with a lot of levels.
+
+00:00:46.895 --> 00:00:50.609
+For example, this plot shows user registration dates
+
+00:00:50.609 --> 00:00:54.700
+faceted by month and arranged in a three by four grid,
+
+00:00:54.700 --> 00:00:58.050
+separating things out into multiple bar charts instead of
+
+00:00:58.049 --> 00:01:01.049
+a single long bar chart makes it easier to
+
+00:01:01.049 --> 00:01:05.263
+see the unusual number of January first registrations.
+
+00:01:05.263 --> 00:01:08.640
+One thing to be careful of when faceting is that
+
+00:01:08.640 --> 00:01:12.950
+your axis scales and limits are consistent across each subplot.
+
+00:01:12.950 --> 00:01:17.150
+A failure to have the same limits on each subplot we'll make it easier to have
+
+00:01:17.150 --> 00:01:22.850
+misconceptions about the overall frequency or value range for each subset of the data.
+
+00:01:22.849 --> 00:01:25.954
+Take for example these two plots.
+
+00:01:25.954 --> 00:01:30.349
+The plot on the left suggests that the two groups have approximately the same frequency
+
+00:01:30.349 --> 00:01:34.750
+and range but only if you don't pay attention to the axis ranges.
+
+00:01:34.750 --> 00:01:39.989
+The plot on the right fixes both subplots to the same axis ranges and clearly
+
+00:01:39.989 --> 00:01:42.309
+shows that there are more points of type B and
+
+00:01:42.310 --> 00:01:45.760
+that those points are generally of higher value than A
+

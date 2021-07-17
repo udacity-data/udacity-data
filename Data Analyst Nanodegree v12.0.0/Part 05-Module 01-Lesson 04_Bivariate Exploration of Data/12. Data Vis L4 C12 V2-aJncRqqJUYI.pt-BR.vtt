@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.233 --> 00:00:03.833
+Outra opção para representar
+uma variável quantitativa
+
+00:00:03.867 --> 00:00:05.700
+contra uma variável
+qualitativa
+
+00:00:05.733 --> 00:00:08.300
+é a adaptação
+de gráficos de barra.
+
+00:00:08.667 --> 00:00:10.933
+Em vez de mostrar contagens
+no eixo vertical,
+
+00:00:10.967 --> 00:00:13.433
+podemos mostrar a mediana
+da 2ª variável.
+
+00:00:13.467 --> 00:00:15.767
+Para isso, temos que usar
+uma função diferente
+
+00:00:15.800 --> 00:00:18.400
+da função countplot
+que usamos antes.
+
+00:00:18.433 --> 00:00:21.833
+Em vez disso, queremos
+a função barplot do Seaborn.
+
+00:00:22.300 --> 00:00:24.067
+Vou adicionar um rótulo
+ao eixo Y
+
+00:00:24.100 --> 00:00:27.633
+para deixar claro que estamos
+representando a mediana ali.
+
+00:00:27.667 --> 00:00:29.367
+Como temos
+um gráfico de barra,
+
+00:00:29.400 --> 00:00:33.000
+o limite inferior do eixo Y
+foi fixado em 0.
+
+00:00:33.033 --> 00:00:35.333
+As linhas pretas das barras
+indicam incerteza
+
+00:00:35.367 --> 00:00:37.767
+sobre a mediana
+como informação de confiança.
+
+00:00:37.800 --> 00:00:39.667
+Com tantos
+dados disponíveis,
+
+00:00:39.700 --> 00:00:42.267
+as retas de incerteza
+são bem pequenas.
+
+00:00:42.300 --> 00:00:44.600
+Se quisermos retirar
+essas retas,
+
+00:00:44.633 --> 00:00:47.333
+podemos fazer isso colocando
+errwidth = 0.
+
+00:00:47.367 --> 00:00:50.033
+Como alternativa,
+podemos mudar as barras
+
+00:00:50.067 --> 00:00:52.267
+para representar o desvio padrão
+dos pontos de dados
+
+00:00:52.300 --> 00:00:56.100
+ao fixarmos
+o parâmetro ci = 'sd'.
+
+00:00:56.133 --> 00:00:58.967
+Se não for interessante manter
+o limite inferior 0,
+
+00:00:59.000 --> 00:01:03.233
+você pode escolher a função
+pointplot em vez da barplot.
+
+00:01:03.267 --> 00:01:06.133
+Não temos que estabelecer
+a cor da base dessa vez
+
+00:01:06.167 --> 00:01:08.833
+para que tudo apareça
+da mesma cor.
+
+00:01:08.867 --> 00:01:12.933
+Note que o padrão
+conecta os pontos com uma linha.
+
+00:01:12.967 --> 00:01:14.533
+Não é um problema
+nesse caso,
+
+00:01:14.567 --> 00:01:18.000
+já que classes de veículos são
+ordenadas da menor para maior.
+
+00:01:18.033 --> 00:01:20.833
+Mas se representássemos
+uma variável nominal,
+
+00:01:20.867 --> 00:01:25.100
+poderíamos retirar a linha ao deixar
+o campo linestyles vazio.
+

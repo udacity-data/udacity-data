@@ -1,0 +1,123 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.000 --> 00:00:04.334
+CONCEITO 12: ADAPTAÇÕES
+DE GRÁFICOS UNIVARIANTES
+
+00:00:05.634 --> 00:00:09.934
+Além de faceting, há outra forma
+de adaptar gráficos univariantes
+
+00:00:09.968 --> 00:00:12.400
+para representar
+relações bivariantes.
+
+00:00:12.434 --> 00:00:14.801
+Em histogramas
+e gráficos de barra,
+
+00:00:14.834 --> 00:00:18.267
+temos a frequência dos pontos
+de dados no eixo vertical.
+
+00:00:18.300 --> 00:00:22.234
+Em vez disso, se relatarmos a
+mediana de uma segunda variável,
+
+00:00:22.267 --> 00:00:25.834
+isso tornaria
+os gráficos bivariantes.
+
+00:00:25.868 --> 00:00:28.267
+Às vezes, adicionamos
+barras de erros ao gráfico
+
+00:00:28.300 --> 00:00:32.067
+para mostrar a nossa incerteza
+sobre a média verdadeira.
+
+00:00:32.734 --> 00:00:35.367
+Talvez queira saber por que
+fazer isso num gráfico de barra,
+
+00:00:35.400 --> 00:00:38.067
+quando um diagrama de caixas
+tem o mesmo tamanho
+
+00:00:38.100 --> 00:00:40.868
+e reporta mais estatísticas.
+
+00:00:40.901 --> 00:00:43.534
+Como visualização de dados
+explicativa,
+
+00:00:43.567 --> 00:00:44.701
+o gráfico de barras adaptado
+
+00:00:44.734 --> 00:00:48.400
+é um resumo direto
+e simplificado das descobertas,
+
+00:00:48.567 --> 00:00:52.400
+como o diagrama de caixa é mais
+direto do que o violin plot.
+
+00:00:52.968 --> 00:00:56.067
+Há alguns casos em que o violin plot
+ou o diagrama de caixa
+
+00:00:56.100 --> 00:00:59.267
+são insuficientes
+para demonstrar os dados.
+
+00:00:59.300 --> 00:01:02.367
+Digamos que temos dados de jogos
+registrando a estratégia
+
+00:01:02.400 --> 00:01:04.067
+usada pelo primeiro jogador
+
+00:01:04.100 --> 00:01:06.234
+e se ele ganhou o jogo.
+
+00:01:06.767 --> 00:01:10.167
+Como os resultados
+só podem ter valores 1 ou 0,
+
+00:01:10.200 --> 00:01:13.801
+diagramas de caixa ou
+violin plots não fazem sentido.
+
+00:01:14.200 --> 00:01:18.000
+Em vez disso, criar um gráfico
+de barras com um resultado médio
+
+00:01:18.033 --> 00:01:22.033
+nos dá um rápido sinal de quais
+estratégias funcionam melhor.
+
+00:01:22.868 --> 00:01:25.133
+De modo parecido,
+o histograma adaptado
+
+00:01:25.167 --> 00:01:28.601
+age como alternativa condensada
+ao gráfico de dispersão.
+
+00:01:28.868 --> 00:01:30.968
+Mas é possível que vejamos
+
+00:01:31.000 --> 00:01:33.868
+valores não codificados
+em forma de barras e altura,
+
+00:01:33.901 --> 00:01:37.000
+mas nas posições de pontos
+em uma linha.
+
+00:01:37.033 --> 00:01:41.033
+Vamos falar sobre os gráficos de
+linha na próxima parte da aula.
+

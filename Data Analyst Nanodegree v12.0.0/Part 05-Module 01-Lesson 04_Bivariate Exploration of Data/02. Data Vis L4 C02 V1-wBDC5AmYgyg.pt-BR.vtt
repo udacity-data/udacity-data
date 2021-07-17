@@ -1,0 +1,138 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.299 --> 00:00:03.459
+Nesta lição, vamos explorar
+visualizações bivariantes
+
+00:00:03.493 --> 00:00:06.884
+usando esses dados
+de eficiência de combustível.
+
+00:00:06.918 --> 00:00:09.748
+Os dados consistem em mais
+de 3.900 carros sedan
+
+00:00:09.782 --> 00:00:12.923
+produzidos de 2013 a 2018
+
+00:00:12.957 --> 00:00:15.996
+e só considera
+combustível tradicional.
+
+00:00:16.030 --> 00:00:19.868
+Vamos começar vendo a relação
+entre duas variáveis quantitativas,
+
+00:00:19.902 --> 00:00:24.747
+a capacidade em litros do motor
+e a eficiência em milhas por galão.
+
+00:00:24.781 --> 00:00:28.918
+O maior motor está associado
+à maior eficiência ou à menor?
+
+00:00:28.952 --> 00:00:32.821
+Podemos investigar isso
+usando um gráfico de dispersão.
+
+00:00:32.855 --> 00:00:37.278
+Uma forma de criar isso é usando
+a função scatter do Matplotlib.
+
+00:00:37.312 --> 00:00:40.431
+Os argumentos dessa função
+são similares aos que vimos,
+
+00:00:40.465 --> 00:00:44.198
+mas agora especificamos
+variáveis nos eixos X e Y.
+
+00:00:44.232 --> 00:00:49.998
+Escreva data = fuel_econ,
+x = 'displ', y = 'comb',
+
+00:00:50.032 --> 00:00:52.654
+de eficiência combinada.
+
+00:00:52.688 --> 00:00:55.778
+Também vou adicionar rótulos
+
+00:00:55.812 --> 00:00:59.419
+para acompanhar as variáveis
+marcadas em cada eixo.
+
+00:00:59.913 --> 00:01:02.699
+O gráfico sugere uma correlação
+geralmente negativa
+
+00:01:02.733 --> 00:01:05.474
+entre tamanho do motor
+e eficiência de combustível.
+
+00:01:05.508 --> 00:01:08.467
+A variabilidade é muito maior
+nos motores menores
+
+00:01:08.501 --> 00:01:10.587
+do que nos maiores.
+
+00:01:10.621 --> 00:01:12.804
+Uma forma alternativa
+de criar um gráfico
+
+00:01:12.838 --> 00:01:15.861
+é por meio da função regplot
+do Seaborn.
+
+00:01:15.895 --> 00:01:18.532
+Essa função combina a criação
+de um gráfico
+
+00:01:18.566 --> 00:01:21.100
+que se encaixa na linha
+de regressão do dado.
+
+00:01:21.134 --> 00:01:24.515
+Para usá-la, é só usar
+a função sb.regplot
+
+00:01:24.549 --> 00:01:26.837
+em vez de plt.scatter.
+
+00:01:26.871 --> 00:01:30.101
+Pela linha, vemos que carros
+com motores menores
+
+00:01:30.135 --> 00:01:33.732
+e maior eficiência levantam
+o lado esquerdo da linha.
+
+00:01:33.766 --> 00:01:38.452
+Você pode desligar a linha
+digitando fit_reg = false.
+
+00:01:38.486 --> 00:01:41.843
+Talvez tenha dúvidas sobre os dados
+só olhando o gráfico.
+
+00:01:41.877 --> 00:01:45.531
+A precisão é
+de apenas 0,1 litro.
+
+00:01:45.565 --> 00:01:47.811
+Como há muitos dados,
+
+00:01:47.845 --> 00:01:50.147
+pode haver
+muitos pontos sobrepostos,
+
+00:01:50.181 --> 00:01:54.307
+então não vemos a verdadeira relação
+entre as variáveis detalhadamente.
+
+00:01:54.341 --> 00:01:57.667
+Vamos ver técnicas que resolvem isso
+nos próximos vídeos.
+

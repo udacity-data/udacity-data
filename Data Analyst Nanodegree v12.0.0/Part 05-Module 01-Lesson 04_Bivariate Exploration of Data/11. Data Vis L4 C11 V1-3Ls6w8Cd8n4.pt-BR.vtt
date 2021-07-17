@@ -1,0 +1,178 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.233 --> 00:00:03.500
+Nessa aula, você viu como
+violin plots e diagrama de caixa
+
+00:00:03.533 --> 00:00:05.433
+podem ser usados
+para representar a relação
+
+00:00:05.467 --> 00:00:08.567
+entre uma variável quantitativa
+e uma qualitativa.
+
+00:00:08.600 --> 00:00:11.367
+Nesse vídeo, usaremos
+uma estratégia alternativa.
+
+00:00:11.400 --> 00:00:14.000
+Faremos faceting dos histogramas
+da variável quantitativa
+
+00:00:14.033 --> 00:00:16.800
+contra os subconjuntos
+qualitativos dos dados.
+
+00:00:17.000 --> 00:00:18.133
+Para fazer o faceting,
+
+00:00:18.167 --> 00:00:22.200
+vamos usar o recurso facet grid
+object class do Seaborn.
+
+00:00:22.233 --> 00:00:26.100
+Vou estabelecer dois parâmetros
+para criar o facet grid object.
+
+00:00:26.133 --> 00:00:30.667
+A estrutura de dados fuel_econ
+é designado em data.
+
+00:00:30.767 --> 00:00:32.433
+Depois designamos
+a coluna VClass
+
+00:00:32.467 --> 00:00:34.533
+no parâmetro col.
+
+00:00:34.567 --> 00:00:37.533
+Isso significa que qualquer
+que seja o gráfico que usarmos
+
+00:00:37.567 --> 00:00:41.767
+haverá um gráfico feito para
+cada nível de classe de veículo.
+
+00:00:42.100 --> 00:00:45.033
+Agora temos que dizer que tipo
+de gráfico queremos gerar
+
+00:00:45.067 --> 00:00:46.267
+para cada faceta,
+
+00:00:46.300 --> 00:00:50.067
+usando a função de mapeamento
+chamada facet grid objects.
+
+00:00:50.100 --> 00:00:52.267
+O primeiro argumento
+é a função plotting.
+
+00:00:52.300 --> 00:00:54.300
+Nesse caso, usamos hist.
+
+00:00:54.333 --> 00:00:58.133
+O próximo argumento é a variável
+a ser plotada no eixo X.
+
+00:00:58.167 --> 00:01:00.067
+Nesse caso, usamos comb.
+
+00:01:00.467 --> 00:01:03.533
+É importante que você
+não estabeleça valor para X,
+
+00:01:03.567 --> 00:01:06.600
+ou o faceting dos subgrupos
+não funcionará.
+
+00:01:06.633 --> 00:01:10.033
+Os dados foram representados
+usando as 10 bins padrão
+
+00:01:10.067 --> 00:01:11.533
+da função hist,
+
+00:01:11.567 --> 00:01:14.733
+mas os limites dos eixos
+são os mesmos para cada faceta.
+
+00:01:14.767 --> 00:01:17.200
+Isso é útil para comparar
+a frequência para cada grupo
+
+00:01:17.233 --> 00:01:19.067
+na variável facetada
+
+00:01:19.100 --> 00:01:22.167
+e os valores de cada grupo
+para a variável plotada.
+
+00:01:22.200 --> 00:01:24.367
+Vamos fazer algumas alterações
+nos gráficos.
+
+00:01:24.400 --> 00:01:27.133
+Adicionarei o parâmetro bins
+na função de mapeamento
+
+00:01:27.167 --> 00:01:30.167
+para que as bins de cada faceta
+sejam iguais.
+
+00:01:30.200 --> 00:01:33.567
+A seguir, adicionarei
+o parâmetro col_wrap
+
+00:01:33.600 --> 00:01:37.067
+para limitar o número de facetas
+a serem colocadas lado a lado.
+
+00:01:37.100 --> 00:01:39.533
+Isso não é essencial
+para esse conjunto de dados,
+
+00:01:39.567 --> 00:01:41.800
+mas pode ser útil
+se você tiver mais níveis
+
+00:01:42.000 --> 00:01:44.033
+na sua variável facetada.
+
+00:01:44.067 --> 00:01:45.500
+Por último, quero demonstrar
+
+00:01:45.533 --> 00:01:50.133
+o que acontece se não estipular
+o mesmo limite das facetas.
+
+00:01:50.167 --> 00:01:53.733
+Ao colocar sharey = False
+na coluna FacetGrid,
+
+00:01:53.767 --> 00:01:57.367
+cada faceta pode ter seu próprio
+limite do eixo Y.
+
+00:01:57.400 --> 00:02:01.433
+Assim é mais fácil ver
+as distribuições dos níveis,
+
+00:02:01.467 --> 00:02:05.567
+mas você deixa de ver
+a frequência de cada grupo.
+
+00:02:05.600 --> 00:02:07.067
+Se não prestar atenção,
+
+00:02:07.100 --> 00:02:10.300
+talvez pense que cada classe tem
+um número parecido de carros,
+
+00:02:10.333 --> 00:02:13.267
+quando, na verdade,
+não são exatamente iguais.
+

@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.310 --> 00:00:07.950
+You saw how violin plots can be used to depict
+
+00:00:07.950 --> 00:00:12.535
+the relationship between a quantitative variable and a qualitative variable.
+
+00:00:12.535 --> 00:00:16.985
+An alternative plot that you might want to use, is the box plot.
+
+00:00:16.985 --> 00:00:20.705
+In a box plot, we compute descriptive statistics within
+
+00:00:20.705 --> 00:00:24.965
+each level and depict them graphically using a box and whiskers.
+
+00:00:24.965 --> 00:00:28.470
+The central line and each box indicates the median of
+
+00:00:28.470 --> 00:00:33.730
+the data and the upper and lower edges show the first and third quartiles.
+
+00:00:33.730 --> 00:00:36.700
+Whiskers are extended from the top and bottom of
+
+00:00:36.700 --> 00:00:41.015
+the boxes to indicate the largest and smallest values.
+
+00:00:41.015 --> 00:00:46.680
+25 percent of the data falls between each set of horizontal lines.
+
+00:00:46.840 --> 00:00:53.030
+Box plots often have outliers plotted as points beyond the ends of the whiskers.
+
+00:00:53.030 --> 00:00:56.410
+The most common upper bound on the length of the whiskers is
+
+00:00:56.410 --> 00:01:00.515
+1.5 times the interquartile range or box length.
+
+00:01:00.515 --> 00:01:02.810
+For the scores posted by North,
+
+00:01:02.810 --> 00:01:08.600
+the IQR is 5.5 and the maximum whisker length is 8.25.
+
+00:01:08.600 --> 00:01:11.675
+If we have outliers that are further than this distance
+
+00:01:11.675 --> 00:01:14.920
+above the top of the box are below the bottom of the box,
+
+00:01:14.920 --> 00:01:18.890
+they are depicted as single points and the whiskers are only extended
+
+00:01:18.890 --> 00:01:22.985
+to the farthest point within the 1.5 times IQR range.
+
+00:01:22.985 --> 00:01:28.215
+In this case, the maximum bound for the upper whisker is 66.75,
+
+00:01:28.215 --> 00:01:31.270
+so the maximum value of 68 is depicted as
+
+00:01:31.270 --> 00:01:36.650
+an outlier and the whisker is placed at the next largest value of 63.
+
+00:01:36.650 --> 00:01:40.300
+While box plots do a fine job of summarizing the data,
+
+00:01:40.300 --> 00:01:43.940
+there are some distributional details that can get lost.
+
+00:01:43.940 --> 00:01:47.360
+For example, the box plot reveals more clearly than
+
+00:01:47.360 --> 00:01:49.580
+the violin plot that the North team had
+
+00:01:49.580 --> 00:01:52.800
+the worst performance and the Central team the best.
+
+00:01:52.800 --> 00:01:55.950
+However, it is not obvious from the box plot that
+
+00:01:55.950 --> 00:02:01.385
+the South team scores include a broad plateaus between about 60 and 62 points,
+
+00:02:01.385 --> 00:02:03.880
+as you can see in the violin plot.
+
+00:02:03.880 --> 00:02:08.220
+One alternative approach for showing summary statistics is to start with
+
+00:02:08.220 --> 00:02:13.355
+a violin plot and then add lines to the curves to denote quartile points.
+
+00:02:13.355 --> 00:02:16.975
+However, this is a bit less direct than the box plot.
+
+00:02:16.975 --> 00:02:20.020
+So, when it comes to explanatory data visualization,
+
+00:02:20.020 --> 00:02:24.480
+you might want to choose a box plot for simplicity and focus.
+

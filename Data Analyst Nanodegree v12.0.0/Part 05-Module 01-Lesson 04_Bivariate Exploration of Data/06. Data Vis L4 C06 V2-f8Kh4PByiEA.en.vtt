@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.405
+Thus far in the lesson,
+
+00:00:01.405 --> 00:00:04.955
+we've only looked at relationships between quantitative variables.
+
+00:00:04.955 --> 00:00:07.700
+We'll now look at the relationship between our fuel efficiency
+
+00:00:07.700 --> 00:00:11.435
+variable against the qualitative variable, Vehicle class.
+
+00:00:11.435 --> 00:00:15.970
+Note here that I've used Pandas as type function to convert the V class column from
+
+00:00:15.970 --> 00:00:17.560
+a plain object type into
+
+00:00:17.559 --> 00:00:21.219
+an ordered categorical type putting the classes in order of size.
+
+00:00:21.219 --> 00:00:24.239
+This way, the sorting of levels is automatic and I
+
+00:00:24.239 --> 00:00:27.699
+won't need a second order parameter in my visualization calls.
+
+00:00:27.699 --> 00:00:31.239
+The prototype I'll be going over in this video is the violin plot.
+
+00:00:31.239 --> 00:00:33.539
+When we use seaborn's violin plot function in
+
+00:00:33.539 --> 00:00:36.979
+the usual way setting the data x and y variables,
+
+00:00:36.979 --> 00:00:39.229
+we get the following plot.
+
+00:00:39.429 --> 00:00:42.505
+We should clean this up a little bit first.
+
+00:00:42.505 --> 00:00:46.130
+I'm going to use the color palette function to make sure each level is
+
+00:00:46.130 --> 00:00:50.425
+the same color and the Xticks function to slightly rotate the labels.
+
+00:00:50.424 --> 00:00:52.359
+For now, I'm also going to set
+
+00:00:52.359 --> 00:00:55.890
+the inner equals none parameter to clean up the middle of the plots.
+
+00:00:55.890 --> 00:00:58.445
+I'll get back to this parameter later on.
+
+00:00:58.445 --> 00:01:00.554
+For each of the vehicle classes,
+
+00:01:00.554 --> 00:01:03.229
+an area is plotted that shows the approximate density
+
+00:01:03.229 --> 00:01:06.265
+of efficiency values for each vehicle class.
+
+00:01:06.265 --> 00:01:08.954
+They're like density curves turned on their sides.
+
+00:01:08.954 --> 00:01:11.159
+From this plot, we can see that there isn't
+
+00:01:11.159 --> 00:01:14.744
+a monotonic relationship between car size and fuel efficiency.
+
+00:01:14.745 --> 00:01:17.740
+The largest cars seem to have the lowest fuel efficiencies,
+
+00:01:17.739 --> 00:01:21.583
+but the longtail suggest outliers with the highest of efficiencies.
+
+00:01:21.584 --> 00:01:24.109
+Mini compact and subcompact cars have
+
+00:01:24.109 --> 00:01:25.909
+the next best efficiencies but
+
+00:01:25.909 --> 00:01:29.094
+the distribution for mini compact cars is much more peaked.
+
+00:01:29.094 --> 00:01:31.590
+Finally, compact and midsize cars have
+
+00:01:31.590 --> 00:01:33.920
+the best efficiencies but the distribution of
+
+00:01:33.920 --> 00:01:36.995
+the midsize cars is broader than the compacts.
+
+00:01:36.995 --> 00:01:41.390
+Let's briefly go back to the plot without the inner equals non parameter setting.
+
+00:01:41.390 --> 00:01:45.745
+The thing that is plotted in each violin is a miniature box plot.
+
+00:01:45.745 --> 00:01:48.740
+A box plot is another quantitative versus qualitative
+
+00:01:48.739 --> 00:01:51.799
+plot type that takes a summary approach to displaying the data.
+
+00:01:51.799 --> 00:01:55.399
+I'll give more details about box plots in the next video.
+

@@ -1,0 +1,616 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Line Plots
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Bivariate Exploration of Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Scatterplots and Correlation.html">
+       02. Scatterplots and Correlation
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Overplotting, Transparency, and Jitter.html">
+       03. Overplotting, Transparency, and Jitter
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Heat Maps.html">
+       04. Heat Maps
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Scatterplot Practice.html">
+       05. Scatterplot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Violin Plots.html">
+       06. Violin Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Box Plots.html">
+       07. Box Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Violin and Box Plot Practice.html">
+       08. Violin and Box Plot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Clustered Bar Charts.html">
+       09. Clustered Bar Charts
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Categorical Plot Practice.html">
+       10. Categorical Plot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Faceting.html">
+       11. Faceting
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Adaptation of Univariate Plots.html">
+       12. Adaptation of Univariate Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Line Plots.html">
+       13. Line Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Additional Plot Practice.html">
+       14. Additional Plot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Lesson Summary.html">
+       15. Lesson Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Extra Q-Q Plots.html">
+       16. Extra: Q-Q Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Extra Swarm Plots.html">
+       17. Extra: Swarm Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Extra Rug and Strip Plots.html">
+       18. Extra: Rug and Strip Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Extra Stacked Plots.html">
+       19. Extra: Stacked Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Extra Ridgeline Plots.html">
+       20. Extra: Ridgeline Plots
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          13. Line Plots
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L4 131 Line Plots V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="13. L4 131 Line Plots V1-kSntEWPuOa0.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="13. L4 131 Line Plots V1-kSntEWPuOa0.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="13. L4 131 Line Plots V1-kSntEWPuOa0.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="13. L4 131 Line Plots V1-kSntEWPuOa0.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Data Vis L4 C13 V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="13. Data Vis L4 C13 V1-Z7NjwA6jbjU.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="13. Data Vis L4 C13 V1-Z7NjwA6jbjU.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="13. Data Vis L4 C13 V1-Z7NjwA6jbjU.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="13. Data Vis L4 C13 V1-Z7NjwA6jbjU.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+         <h2 id="line-plots">
+          Line Plots
+         </h2>
+         <p>
+          The
+          <strong>
+           line plot
+          </strong>
+          is a fairly common plot type that is used to plot the trend of one numeric variable against values of a second variable. In contrast to a scatterplot, where all data points are plotted, in a line plot, only one point is plotted for every unique x-value or bin of x-values (like a histogram). If there are multiple observations in an x-bin, then the y-value of the point plotted in the line plot will be a summary statistic (like mean or median) of the data in the bin. The plotted points are connected with a line that emphasizes the sequential or connected nature of the x-values.
+         </p>
+         <p>
+          If the x-variable represents time, then a line plot of the data is frequently known as a
+          <strong>
+           time series
+          </strong>
+          plot. Often, we have only one observation per time period, like in stock or currency charts. While there is a seaborn function
+          <a href="https://seaborn.pydata.org/generated/seaborn.tsplot.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            tsplot
+           </code>
+          </a>
+          that is intended to be used with time series data, it is fairly specialized and (as of this writing's seaborn 0.8) is slated for major changes.
+         </p>
+         <p>
+          Instead, we will make use of Matplotlib's
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.errorbar.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            errorbar
+           </code>
+          </a>
+          function, performing some processing on the data in order to get it into its necessary form.
+         </p>
+         <pre><code class="python language-python">plt.errorbar(data = df, x = 'num_var1', y = 'num_var2')</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l4-c13-lineplot1.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          If we just blindly stick a dataframe into the function without considering its structure, we might end up with a mess like the above. The function just plots all the data points as a line, connecting values from the first row of the dataframe to the last row. In order to create the line plot as intended, we need to do additional work to summarize the data.
+         </p>
+         <pre><code class="python language-python"># set bin edges, compute centers
+bin_size = 0.25
+xbin_edges = np.arange(0.5, df['num_var1'].max()+bin_size, bin_size)
+xbin_centers = (xbin_edges + bin_size/2)[:-1]
+
+# compute statistics in each bin
+data_xbins = pd.cut(df['num_var1'], xbin_edges, right = False, include_lowest = True)
+y_means = df['num_var2'].groupby(data_xbins).mean()
+y_sems = df['num_var2'].groupby(data_xbins).sem()
+
+# plot the summarized data
+plt.errorbar(x = xbin_centers, y = y_means, yerr = y_sems)
+plt.xlabel('num_var1')
+plt.ylabel('num_var2')</code></pre>
+         <p>
+          Since the x-variable ('num_var1') is continuous, we first set a number of bins into which the data will be grouped. In addition to the usual edges, the center of each bin is also computed for later plotting. For the points in each bin, we compute the mean and standard error of the mean. Note that the
+          <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.cut.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            cut
+           </code>
+          </a>
+          function call is simpler here than in the previous page, since we don't need to compute individual point weights.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l4-c13-lineplot2.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          An interesting part of the above summarization of the data is that the uncertainty in the mean generally increases with increasing x-values. But for the largest two points, there are no error bars. Looking at the default
+          <code>
+           errorbar
+          </code>
+          plot (or the scatterplot below), we can see this is due to there only being one point in each of the last two bins.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="alternate-variations">
+          Alternate Variations
+         </h2>
+         <p>
+          Instead of computing summary statistics on fixed bins, you can also make computations on a rolling window through use of pandas'
+          <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.rolling.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            rolling
+           </code>
+          </a>
+          method. Since the rolling window will make computations on sequential rows of the dataframe, we should use
+          <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            sort_values
+           </code>
+          </a>
+          to put the x-values in ascending order first.
+         </p>
+         <pre><code class="python language-python"># compute statistics in a rolling window
+df_window = df.sort_values('num_var1').rolling(15)
+x_winmean = df_window.mean()['num_var1']
+y_median = df_window.median()['num_var2']
+y_q1 = df_window.quantile(.25)['num_var2']
+y_q3 = df_window.quantile(.75)['num_var2']
+
+# plot the summarized data
+base_color = sb.color_palette()[0]
+line_color = sb.color_palette('dark')[0]
+plt.scatter(data = df, x = 'num_var1', y = 'num_var2')
+plt.errorbar(x = x_winmean, y = y_median, c = line_color)
+plt.errorbar(x = x_winmean, y = y_q1, c = line_color, linestyle = '--')
+plt.errorbar(x = x_winmean, y = y_q3, c = line_color, linestyle = '--')
+
+plt.xlabel('num_var1')
+plt.ylabel('num_var2')</code></pre>
+         <p>
+          Note that we're also not limited to just one line when plotting. When multiple Matplotlib functions are called one after the other, all of them will be plotted on the same axes. Instead of plotting the mean and error bars, we will plot the three central quartiles, laid on top of the scatterplot.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l4-c13-lineplot3.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Another bivariate application of line plots is to plot the distribution of a numeric variable for different levels of a categorical variable. This is another alternative to using violin plots, box plots, and faceted histograms. With the line plot, one line is plotted for each category level, like overlapping the histograms on top of one another. This can be accomplished through multiple
+          <code>
+           errorbar
+          </code>
+          calls using the methods above, or by performing multiple
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            hist
+           </code>
+          </a>
+          calls, setting the "histtype = step" parameter so that the bars are depicted as unfilled lines.
+         </p>
+         <pre><code class="python language-python">bin_edges = np.arange(-3, df['num_var'].max()+1/3, 1/3)
+g = sb.FacetGrid(data = df, hue = 'cat_var', size = 5)
+g.map(plt.hist, "num_var", bins = bin_edges, histtype = 'step')
+g.add_legend()</code></pre>
+         <p>
+          Note that I'm performing the multiple
+          <code>
+           hist
+          </code>
+          calls through the use of
+          <a href="https://seaborn.pydata.org/generated/seaborn.FacetGrid.html" rel="noopener noreferrer" target="_blank">
+           FacetGrid
+          </a>
+          , setting the categorical variable on the "hue" parameter rather than the "col" parameter. You'll see more of this parameter of FacetGrid in the next lesson. I've also added an
+          <code>
+           add_legend
+          </code>
+          method call so that we can identify which level is associated with each curve.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l4-c13-lineplot4.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Unfortunately, the "Alpha" curve seems to be pretty lost behind the other three curves since the relatively low number of counts is causing a lot of overlap. Perhaps connecting the centers of the bars with a line, like what was seen in the first
+          <code>
+           errorbar
+          </code>
+          example, would be better.
+         </p>
+         <p>
+          Functions you provide to the
+          <code>
+           map
+          </code>
+          method of FacetGrid objects do not need to be built-ins. Below, I've written a function to perform the summarization operations seen above to plot an
+          <code>
+           errorbar
+          </code>
+          line for each level of the categorical variable, then fed that function (
+          <code>
+           freq_poly
+          </code>
+          ) to
+          <code>
+           map
+          </code>
+          .
+         </p>
+         <pre><code class="python language-python">def freq_poly(x, bins = 10, **kwargs):
+    """ Custom frequency polygon / line plot code. """
+    # set bin edges if none or int specified
+    if type(bins) == int:
+        bins = np.linspace(x.min(), x.max(), bins+1)
+    bin_centers = (bin_edges[1:] + bin_edges[:-1]) / 2
+
+    # compute counts
+    data_bins = pd.cut(x, bins, right = False,
+                       include_lowest = True)
+    counts = x.groupby(data_bins).count()
+
+    # create plot
+    plt.errorbar(x = bin_centers, y = counts, **kwargs)
+
+bin_edges = np.arange(-3, df['num_var'].max()+1/3, 1/3)
+g = sb.FacetGrid(data = df, hue = 'cat_var', size = 5)
+g.map(freq_poly, "num_var", bins = bin_edges)
+g.add_legend()</code></pre>
+         <p>
+          <code>
+           **kwargs
+          </code>
+          is used to allow additional keyword arguments to be set for the
+          <code>
+           errorbar
+          </code>
+          function.
+         </p>
+         <p>
+          (Documentation:
+          <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html" rel="noopener noreferrer" target="_blank">
+           numpy
+           <code>
+            linspace
+           </code>
+          </a>
+          )
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l4-c13-lineplot5.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="14. Additional Plot Practice.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('13. Line Plots')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

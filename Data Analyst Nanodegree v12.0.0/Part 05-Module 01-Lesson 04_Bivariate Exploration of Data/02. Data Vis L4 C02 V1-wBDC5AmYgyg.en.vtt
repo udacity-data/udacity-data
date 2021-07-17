@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.149
+In this lesson, we will be exploring
+
+00:00:02.149 --> 00:00:06.699
+bivariate visualizations through the use of this dataset on fuel efficiency.
+
+00:00:06.700 --> 00:00:09.644
+The data consists of over 3900 sedans,
+
+00:00:09.644 --> 00:00:12.853
+with manufacturing years from 2013 to 2018,
+
+00:00:12.853 --> 00:00:15.739
+and only considers conventional fuels.
+
+00:00:15.740 --> 00:00:19.765
+Let's start by looking at the relationship between two quantitative variables,
+
+00:00:19.765 --> 00:00:21.644
+the engine displacement in liters,
+
+00:00:21.644 --> 00:00:24.460
+and the overall fuel mileage in miles per gallon.
+
+00:00:24.460 --> 00:00:28.855
+Is a larger engine associated with a higher fuel efficiency or a lower one?
+
+00:00:28.855 --> 00:00:32.575
+We can investigate this relationship using a scatter plot.
+
+00:00:32.575 --> 00:00:37.000
+One way of creating a scatter plot is through Matplotlib's scatter function.
+
+00:00:37.000 --> 00:00:40.359
+The arguments to this function are similar to what we've used before,
+
+00:00:40.359 --> 00:00:44.070
+but now we specify variables on both the X and Y axis.
+
+00:00:44.070 --> 00:00:47.340
+Set the data parameter to fuel_econ, X to
+
+00:00:47.340 --> 00:00:49.905
+dispel, and Y to comb,
+
+00:00:49.905 --> 00:00:52.454
+for combined fuel efficiency.
+
+00:00:52.454 --> 00:00:55.049
+I'm also adding labels using X label,
+
+00:00:55.049 --> 00:00:59.424
+and Y label to help keep track of the variables plotted on each axis.
+
+00:00:59.424 --> 00:01:02.519
+The plot suggests a generally negative correlation
+
+00:01:02.520 --> 00:01:05.189
+between engine size and fuel efficiency.
+
+00:01:05.189 --> 00:01:07.259
+There's a large amount of variability for
+
+00:01:07.260 --> 00:01:10.275
+the smaller displacements compared to the larger ones.
+
+00:01:10.275 --> 00:01:15.390
+An alternative way of creating a scatter plot is through Seaborn's regplot function.
+
+00:01:15.390 --> 00:01:17.489
+This function combines the creation of
+
+00:01:17.489 --> 00:01:20.774
+a scatter plot with the fitting of a regression line to the data.
+
+00:01:20.775 --> 00:01:26.505
+To use it, just use the function sp.regplot instead of plt.scatter.
+
+00:01:26.504 --> 00:01:30.064
+Looking at the line, you can see how the cars with lower displacements,
+
+00:01:30.064 --> 00:01:33.424
+and higher efficiency, bring up the left side of the line.
+
+00:01:33.424 --> 00:01:35.599
+You can turn off the regression line if you'd like,
+
+00:01:35.599 --> 00:01:38.219
+by setting fit reg equals false.
+
+00:01:38.219 --> 00:01:41.534
+You might have some questions about the data just looking at this plot.
+
+00:01:41.534 --> 00:01:45.494
+The displacements are only listed to an accuracy of 0.1 liter.
+
+00:01:45.495 --> 00:01:47.810
+And since there's a lot of data to be plotted,
+
+00:01:47.810 --> 00:01:49.960
+there might be a lot of overlapping points,
+
+00:01:49.959 --> 00:01:54.250
+such that we don't really see the true relationship between variables and enough detail.
+
+00:01:54.250 --> 00:01:58.129
+We'll get to techniques that addressed this concern in the upcoming videos
+

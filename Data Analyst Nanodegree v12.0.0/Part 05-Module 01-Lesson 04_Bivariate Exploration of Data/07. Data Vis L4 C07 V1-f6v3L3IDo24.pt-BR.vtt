@@ -1,0 +1,101 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.967
+Na última aula, usamos o violin plot
+para analisar a relação
+
+00:00:03.000 --> 00:00:06.000
+entre a classe dos veículos
+e eficiência energética.
+
+00:00:06.033 --> 00:00:09.533
+Agora usaremos diagrama de caixa
+para resumir essa relação.
+
+00:00:09.567 --> 00:00:12.733
+Apenas substitua "violinplot"
+por "boxplot"
+
+00:00:12.767 --> 00:00:14.333
+e teremos o nosso resultado.
+
+00:00:14.367 --> 00:00:17.467
+A parte de baixo de cada caixa
+indica o primeiro quartil,
+
+00:00:17.500 --> 00:00:20.300
+e no alto de cada caixa
+temos o terceiro quartil.
+
+00:00:20.333 --> 00:00:23.167
+A linha central
+é a mediana de cada grupo.
+
+00:00:23.200 --> 00:00:26.100
+As retas se estendem em direção
+ao mínimo e máximo de cada grupo
+
+00:00:26.133 --> 00:00:28.500
+com valores atípicos mostrados
+como pontos individuais
+
+00:00:28.533 --> 00:00:30.400
+que ultrapassam
+o comprimento máximo da reta.
+
+00:00:30.433 --> 00:00:32.467
+Isso depende da altura
+de cada caixa.
+
+00:00:32.500 --> 00:00:35.767
+Quanto mais alta for a caixa,
+mais largas podem ser as retas.
+
+00:00:35.800 --> 00:00:39.033
+O diagrama de caixa suporta
+as observações do último vídeo
+
+00:00:39.067 --> 00:00:41.300
+sobre a ordem relativa
+e variabilidade
+
+00:00:41.333 --> 00:00:44.200
+em eficiência energética
+por classe de veículo.
+
+00:00:44.233 --> 00:00:46.000
+Se voltarmos ao violin plot,
+
+00:00:46.033 --> 00:00:49.500
+é possível entender o que houve
+em cada área.
+
+00:00:49.533 --> 00:00:52.933
+A região preta espessa mostra
+o intervalo interquartil
+
+00:00:52.967 --> 00:00:56.167
+com o ponto branco em cada um
+representando as medianas.
+
+00:00:56.200 --> 00:00:59.467
+Eu prefiro a configuração
+de parâmetro inner = quartile,
+
+00:00:59.500 --> 00:01:03.033
+que representa os quartis
+como linhas tracejadas.
+
+00:01:03.067 --> 00:01:06.267
+A linha com os maiores traços
+são as medianas,
+
+00:01:06.300 --> 00:01:08.733
+e as linhas com
+os traços menores de cada lado
+
+00:01:08.767 --> 00:01:10.033
+são os quartis.
+

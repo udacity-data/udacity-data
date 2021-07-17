@@ -1,0 +1,204 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.367 --> 00:00:02.533
+A função pointplot que você viu
+anteriormente
+
+00:00:02.600 --> 00:00:05.033
+servia para resumir
+uma variável quantitativa
+
+00:00:05.067 --> 00:00:07.067
+contra
+uma variável qualitativa.
+
+00:00:07.100 --> 00:00:09.033
+Precisamos de outra função
+para resumir
+
+00:00:09.067 --> 00:00:12.500
+uma variável quantitativa
+contra uma outra quantitativa,
+
+00:00:12.533 --> 00:00:16.100
+como eficiência energética
+por cilindradas.
+
+00:00:16.133 --> 00:00:19.700
+Nesse caso, usaremos a
+função error bar do Matplotlib,
+
+00:00:19.733 --> 00:00:21.500
+que usa uma linha
+entre pontos
+
+00:00:21.533 --> 00:00:24.400
+com uma configuração
+para adicionar barras de erros.
+
+00:00:24.433 --> 00:00:27.433
+Podemos fixar os argumentos
+dados, X e Y,
+
+00:00:27.467 --> 00:00:29.500
+assim como fizemos antes.
+
+00:00:29.533 --> 00:00:33.467
+Infelizmente, isso resultou
+num gráfico pouco útil.
+
+00:00:33.500 --> 00:00:37.600
+O Matplotlib está só conectando
+cada par de valores X e Y,
+
+00:00:37.633 --> 00:00:40.100
+em ordem, conforme
+aparecem na estrutura de dados,
+
+00:00:40.133 --> 00:00:41.633
+sem nenhum
+tipo de organização.
+
+00:00:41.667 --> 00:00:44.933
+O gráfico de dispersão é esse
+gráfico sem linhas de conexão
+
+00:00:44.967 --> 00:00:47.833
+e pontos distintos
+em cada par de valores.
+
+00:00:47.867 --> 00:00:49.400
+Podemos usar a barra de erro
+
+00:00:49.433 --> 00:00:51.967
+se os dados forem
+organizados pela variável X
+
+00:00:52.000 --> 00:00:55.633
+e se só houver um valor de Y
+para cada valor de X.
+
+00:00:55.667 --> 00:00:58.967
+Vamos trabalhar para conseguir
+uma estrutura de dados assim.
+
+00:00:59.000 --> 00:01:01.833
+Primeiro, vou estabelecer
+delimitações para bins e centros
+
+00:01:01.867 --> 00:01:05.200
+para resumir os dados
+dos valores das cilindradas.
+
+00:01:05.233 --> 00:01:06.933
+Preciso
+desses valores do centro
+
+00:01:06.967 --> 00:01:10.367
+para os pontos
+ficarem nas posições certas.
+
+00:01:10.400 --> 00:01:12.500
+Tirei o último valor
+das delimitações de bin
+
+00:01:12.533 --> 00:01:15.733
+porque não corresponde
+ao centro da bin.
+
+00:01:15.767 --> 00:01:18.267
+A seguir,
+usarei a função cut do Pandas
+
+00:01:18.300 --> 00:01:21.867
+para descobrir em qual bin
+cada ponto de dado deve ficar.
+
+00:01:21.900 --> 00:01:24.600
+O primeiro argumento
+é a série que fiz o slicing,
+
+00:01:24.633 --> 00:01:27.333
+o segundo
+é o conjunto de bins,
+
+00:01:27.367 --> 00:01:31.500
+e o terceiro garante que os
+valores equivalentes ao mínimo
+
+00:01:31.533 --> 00:01:33.900
+sejam incluídos nas bins.
+
+00:01:34.267 --> 00:01:37.567
+Agora vou usar o groupby para
+agrupar as bins de cilindradas
+
+00:01:37.600 --> 00:01:40.833
+e tirar a mediana dos pontos
+que estão em cada bin.
+
+00:01:41.567 --> 00:01:44.300
+Finalmente, estamos prontos
+para fazer o gráfico de novo.
+
+00:01:44.333 --> 00:01:46.933
+Como não estamos mais usando
+a estrutura de dados original,
+
+00:01:46.967 --> 00:01:49.000
+temos que mudar
+nossos argumentos.
+
+00:01:49.033 --> 00:01:51.500
+Os centros da bin
+vão com o parâmetro X,
+
+00:01:51.533 --> 00:01:55.067
+e a série Panda com a eficiência
+energética para o parâmetro Y.
+
+00:01:55.833 --> 00:01:57.800
+O gráfico de linha
+tem esse aspecto.
+
+00:01:57.833 --> 00:02:00.167
+Mostra uma diminuição
+da eficiência energética
+
+00:02:00.200 --> 00:02:02.067
+em relação
+ao tamanho do motor.
+
+00:02:02.100 --> 00:02:05.300
+Há um espaço na linha
+onde não há dados disponíveis.
+
+00:02:05.933 --> 00:02:07.433
+Com a função error bar,
+
+00:02:07.467 --> 00:02:09.267
+podemos computar
+o desvio padrão
+
+00:02:09.300 --> 00:02:11.100
+da eficiência energética
+de cada bin
+
+00:02:11.133 --> 00:02:14.500
+e representá-las
+no parâmetro de erro Y.
+
+00:02:14.567 --> 00:02:17.367
+Vemos que enquanto
+carros com motores menores
+
+00:02:17.400 --> 00:02:20.100
+têm maior
+eficiência energética,
+
+00:02:20.133 --> 00:02:23.600
+há também mais variação
+nessas eficiências.
+
