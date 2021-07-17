@@ -1,0 +1,409 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Order of Operations in Text Processing
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Text Learning
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Dimensions when Learning From Text.html">
+       01. Dimensions when Learning From Text
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Bag Of Words.html">
+       02. Bag Of Words
+      </a>
+     </li>
+     <li class="">
+      <a href="03. A Very Nice Day.html">
+       03. A Very Nice Day
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Mr. Day Loves a Nice Day.html">
+       04. Mr. Day Loves a Nice Day
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Properties of Bag of Words.html">
+       05. Properties of Bag of Words
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Bag of Words in Sklearn.html">
+       06. Bag of Words in Sklearn
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Low-Information Words.html">
+       07. Low-Information Words
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Stopwords.html">
+       08. Stopwords
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Getting Stopwords from NLTK.html">
+       09. Getting Stopwords from NLTK
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Stemming to Consolidate Vocabulary.html">
+       10. Stemming to Consolidate Vocabulary
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Stemming with NLTK.html">
+       11. Stemming with NLTK
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Order of Operations in Text Processing.html">
+       12. Order of Operations in Text Processing
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Weighting by Term Frequency.html">
+       13. Weighting by Term Frequency
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Why Upweight Rare Words.html">
+       14. Why Upweight Rare Words
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Text Learning Mini-Project Video.html">
+       15. Text Learning Mini-Project Video
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Text Learning Mini-Project.html">
+       16. Text Learning Mini-Project
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Warming Up with parseOutText().html">
+       17. Warming Up with parseOutText()
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Deploying Stemming.html">
+       18. Deploying Stemming
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Clean Away Signature Words.html">
+       19. Clean Away "Signature Words"
+      </a>
+     </li>
+     <li class="">
+      <a href="20. TfIdf It.html">
+       20. TfIdf It
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Accessing TfIdf Features.html">
+       21. Accessing TfIdf Features
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          12. Order of Operations in Text Processing
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Order of Operations in Text Processing
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Question:
+          </h4>
+          <video controls="">
+           <source src="12. Order of Operations in Text Processing-Fi3uuGj8bhs.mp4" type="video/mp4"/>
+           <track default="false" kind="subtitles" label="ar" src="12. Order of Operations in Text Processing-Fi3uuGj8bhs.ar.vtt" srclang="ar"/>
+           <track default="true" kind="subtitles" label="en" src="12. Order of Operations in Text Processing-Fi3uuGj8bhs.en.vtt" srclang="en"/>
+           <track default="false" kind="subtitles" label="BR" src="12. Order of Operations in Text Processing-Fi3uuGj8bhs.pt-BR.vtt" srclang="BR"/>
+           <track default="false" kind="subtitles" label="CN" src="12. Order of Operations in Text Processing-Fi3uuGj8bhs.zh-CN.vtt" srclang="CN"/>
+          </video>
+         </div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div style="display: block;">
+           <div style="position: relative;">
+            <img alt="" src="img/2992518635.gif" style="width: 100%; max-height: 100%"/>
+            <div style="
+    position: absolute; top: 47.85892461197339%; left: 24.448644014962593%; width: 5%; height: 5%;
+  ">
+             <input aria-label="" id="radio1" name="group1" type="radio"/>
+            </div>
+            <div style="
+    position: absolute; top: 65.28201219512195%; left: 24.427213216957604%; width: 5%; height: 5%;
+  ">
+             <input aria-label="" id="radio2" name="group1" type="radio"/>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div>
+          <details>
+           <summary>
+            <strong>
+             Solution:
+            </strong>
+           </summary>
+           <div>
+            <video controls="">
+             <source src="12. Order of Operations in Text Processing-qHk-FRWnYAo.mp4" type="video/mp4"/>
+             <track default="false" kind="subtitles" label="ar" src="12. Order of Operations in Text Processing-qHk-FRWnYAo.ar.vtt" srclang="ar"/>
+             <track default="true" kind="subtitles" label="en" src="12. Order of Operations in Text Processing-qHk-FRWnYAo.en.vtt" srclang="en"/>
+             <track default="false" kind="subtitles" label="BR" src="12. Order of Operations in Text Processing-qHk-FRWnYAo.pt-BR.vtt" srclang="BR"/>
+             <track default="false" kind="subtitles" label="CN" src="12. Order of Operations in Text Processing-qHk-FRWnYAo.zh-CN.vtt" srclang="CN"/>
+            </video>
+           </div>
+          </details>
+         </div>
+        </div>
+        <div class="jumbotron" style="margin-top: 50px; margin-bottom: 50px;">
+         <h3>
+          INSTRUCTOR NOTE:
+         </h3>
+         <p>
+          Here's an example that might help if this is all a little abstract:
+         </p>
+         <p>
+          Suppose that the text in question is "responsibility is responsive to responsible people" (ok, this doesn't make sense as a sentence, but you know what I mean…)
+         </p>
+         <p>
+          If you put into bag of words straightaway, you get something like
+          <br/>
+          <br>
+           [is:1
+           <br/>
+           <br>
+            people: 1
+            <br/>
+            <br>
+             responsibility: 1
+             <br/>
+             <br>
+              responsive: 1
+              <br/>
+              <br>
+               responsible:1]
+               <br/>
+              </br>
+             </br>
+            </br>
+           </br>
+          </br>
+         </p>
+         <p>
+          and then applying stemming gives you
+          <br/>
+          <br>
+           [is:1
+           <br/>
+           <br>
+            people:1
+            <br/>
+            <br>
+             respon:1
+             <br/>
+             <br>
+              respon:1
+              <br/>
+              <br>
+               respon:1]
+               <br/>
+               <br>
+                (if you can even find a way to stem the count vectorizer object in sklearn, the most likely outcome of trying would just be that your code would crash…)
+               </br>
+              </br>
+             </br>
+            </br>
+           </br>
+          </br>
+         </p>
+         <p>
+          Then you would need another post-processing step to get to the following bag of words, which is what you'd get straightaway if you stemmed first:
+          <br/>
+          <br>
+           [is:1
+           <br/>
+           <br>
+            people:1
+            <br/>
+            <br>
+             respon:3]
+             <br/>
+            </br>
+           </br>
+          </br>
+         </p>
+         <p>
+          Obviously the second is probably the one you want, so stemming first gets you the right answer here.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="13. Weighting by Term Frequency.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. Order of Operations in Text Processing')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

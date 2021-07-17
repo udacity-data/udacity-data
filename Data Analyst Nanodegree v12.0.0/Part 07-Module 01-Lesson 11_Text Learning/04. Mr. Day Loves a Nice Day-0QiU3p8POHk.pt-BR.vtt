@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.006 --> 00:00:04.590
+Eu argumento nice, eu argumento que nice ocorre uma vez.
+
+00:00:04.590 --> 00:00:06.350
+Day ocorre duas vezes agora.
+
+00:00:06.350 --> 00:00:07.920
+Portanto, você tem uma ocorrência dupla de day.
+
+00:00:09.230 --> 00:00:12.095
+E para a palavra loves, podemos argumentar,
+
+00:00:12.095 --> 00:00:14.189
+no sentido estrito, que a resposta é zero, e
+
+00:00:14.189 --> 00:00:15.800
+isto é o que eu pedi para você fazer aqui.
+
+00:00:16.820 --> 00:00:21.220
+Mas técnicas avançadas de conjuntos de palavras tendem a olhar apenas
+
+00:00:21.220 --> 00:00:24.750
+a origem de uma palavra, que é love, e contá-la.
+
+00:00:24.750 --> 00:00:27.440
+Mas da maneira como fiz a pergunta, ela deveria ser zero.
+
+00:00:27.440 --> 00:00:31.400
+Lembre-se disso mais tarde ao usar ferramentas reais, loves e
+
+00:00:31.400 --> 00:00:34.550
+love podem acabar na mesma categoria à direita.
+
+00:00:34.550 --> 00:00:36.160
+Mas acho que você entendeu o princípio.
+
+00:00:36.160 --> 00:00:37.270
+Trata-se apenas de uma contagem de frequência.
+
+00:00:37.270 --> 00:00:41.357
+Portanto, deixe-me fazer algumas perguntas sobre a técnica de conjunto de palavras.
+

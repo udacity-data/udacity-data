@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.120 --> 00:00:03.040
+Existe outra bela dica que ensinarei a vocês agora, e
+
+00:00:03.040 --> 00:00:07.380
+ela tem a ver com a ideia de que nem todas as palavras exclusivas são realmente diferentes, ou
+
+00:00:07.380 --> 00:00:08.760
+não muito diferentes.
+
+00:00:08.760 --> 00:00:11.500
+Deixe-me mostrar um exemplo do que quero dizer.
+
+00:00:11.500 --> 00:00:15.370
+Digamos que, em meu conjunto, eu tenha várias versões diferentes da palavra respond,
+
+00:00:15.370 --> 00:00:19.090
+nas quais o significado muda muito pouco com base no contexto ou
+
+00:00:19.090 --> 00:00:22.390
+com base na parte do discurso em que está a palavra, mas todas elas estão transmitindo
+
+00:00:22.390 --> 00:00:27.120
+basicamente a mesma ideia, de que algo ou alguém está respondendo.
+
+00:00:27.120 --> 00:00:30.810
+A ideia é que, se eu ingenuamente colocá-las em um conjunto de palavras,
+
+00:00:30.810 --> 00:00:33.430
+todas elas serão exibidas como recursos diferentes,
+
+00:00:33.430 --> 00:00:36.330
+embora, em termos gerais, estejam transmitindo a mesma ideia.
+
+00:00:36.330 --> 00:00:39.400
+Isso acontecerá com muitas palavras em diversos idiomas, que passam
+
+00:00:39.400 --> 00:00:44.130
+por várias transformações cujos significados são ligeiramente diferentes.
+
+00:00:44.130 --> 00:00:46.010
+Felizmente para nós, existe uma forma de, mais ou menos,
+
+00:00:46.010 --> 00:00:49.790
+agrupar essas palavras e representá-las como uma única palavra; a
+
+00:00:49.790 --> 00:00:53.440
+maneira como isso acontece é usando um algoritmo chamado lematizador.
+
+00:00:53.440 --> 00:00:56.500
+Dessa forma, se eu agrupar todas essas palavras e colocá-las em um lematizador,
+
+00:00:56.500 --> 00:01:00.060
+ele, então, aplicará uma função que as fragmentará
+
+00:01:00.060 --> 00:01:05.129
+até que tenham o mesmo tipo de raiz, que poderá ser algo como respon.
+
+00:01:05.129 --> 00:01:10.030
+A ideia não é, necessariamente, obter uma única palavra disso, pois,
+
+00:01:10.030 --> 00:01:15.060
+é claro, respon não é uma palavra, mas é como a raiz, ou o lema,
+
+00:01:15.060 --> 00:01:21.110
+de uma palavra, que pode ser usada em qualquer um de nossos classificadores ou de nossas regressões.
+
+00:01:21.110 --> 00:01:23.860
+Agora, transformamos essa entrada com cinco dimensões em
+
+00:01:23.860 --> 00:01:27.125
+uma dimensão, sem perder nenhuma informação real.
+
+00:01:27.125 --> 00:01:31.930
+Uma função de lematização pode ser, na verdade, um tanto complicada de implementarmos sozinhos.
+
+00:01:31.930 --> 00:01:36.150
+Existem linguistas profissionais e linguistas de computação, que criam essas
+
+00:01:36.150 --> 00:01:41.280
+funções de lematização, que descobrem melhor qual é a raiz de uma determinada palavra.
+
+00:01:41.280 --> 00:01:44.580
+Em geral, o que fazemos no aprendizado de máquina é usar um
+
+00:01:44.580 --> 00:01:48.850
+desses lematizadores já disponíveis, por exemplo, no NLTK, ou
+
+00:01:48.850 --> 00:01:53.130
+em algum pacote de processamento de texto semelhante, e apenas usá-lo,
+
+00:01:53.130 --> 00:01:56.202
+sem necessariamente analisar sempre como ele funciona.
+
+00:01:56.202 --> 00:01:57.580
+Em seguida, depois de aplicarmos o lematizador,
+
+00:01:57.580 --> 00:02:01.520
+é claro, temos um corpo muito mais limpo de vocabulário com que podemos trabalhar.
+

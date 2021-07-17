@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.490 --> 00:00:04.180
+Entre a abordagem de lematização e de conjunto de palavras, você está pronto
+
+00:00:04.180 --> 00:00:07.610
+para fazer coisas interessantes com aprendizado de texto.
+
+00:00:07.610 --> 00:00:10.330
+Há outra representação que quero ensinar para você antes de concluirmos,
+
+00:00:10.330 --> 00:00:13.290
+porque ela é bem legal.
+
+00:00:13.290 --> 00:00:16.379
+É a representação Tf Idf.
+
+00:00:16.379 --> 00:00:19.060
+Tf significa frequência do termo.
+
+00:00:19.060 --> 00:00:22.670
+Idf significa frequência do documento inverso.
+
+00:00:22.670 --> 00:00:24.490
+A ideia é a seguinte:
+
+00:00:24.490 --> 00:00:28.000
+a parte da frequência do termo é semelhante ao conjunto de palavras.
+
+00:00:28.000 --> 00:00:32.570
+Ou seja, cada termo, cada palavra, será ponderado para cima pela
+
+00:00:32.570 --> 00:00:36.450
+frequência dele em um documento, assim como em um conjunto de palavras.
+
+00:00:36.450 --> 00:00:38.580
+Se você tem uma palavra que ocorre dez vezes,
+
+00:00:38.580 --> 00:00:42.890
+ela terá dez vezes mais peso que uma palavra que ocorre apenas uma vez.
+
+00:00:42.890 --> 00:00:46.140
+A parte da frequência do documento inverso é nova.
+
+00:00:46.140 --> 00:00:50.020
+A ideia aqui é que a palavra também tem um peso relacionado à
+
+00:00:50.020 --> 00:00:55.470
+frequência que ela ocorre nos cupons como um todo, em todos os documentos juntos.
+
+00:00:55.470 --> 00:00:59.630
+Aqui está um teste para esclarecer essa ideia de peso.
+
+00:00:59.630 --> 00:01:00.710
+A pergunta é esta:
+
+00:01:00.710 --> 00:01:04.640
+o que faz mais sentido se você quer extrair informações
+
+00:01:04.640 --> 00:01:06.080
+destas palavras?
+
+00:01:06.080 --> 00:01:10.420
+Você dar um peso maior para as palavras comuns em vários
+
+00:01:10.420 --> 00:01:14.720
+documentos ou para as palavras raras?
+
+00:01:14.720 --> 00:01:18.119
+As palavras que ocorrem, por exemplo, em apenas 10% ou
+
+00:01:18.119 --> 00:01:21.290
+1% dos documentos presentes nos cupons.
+

@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.650 --> 00:00:02.000
+A principal coisa a saber sobre um
+
+00:00:02.000 --> 00:00:05.060
+conjunto de palavras é que a ordem das palavras não é importante.
+
+00:00:05.060 --> 00:00:09.720
+É claramente um não, pois na contagem de palavras, não existe preferência em relação ao local
+
+00:00:09.720 --> 00:00:11.160
+na frase em que a palavra ocorre,
+
+00:00:11.160 --> 00:00:16.050
+o que, de certo modo, a torna limitada em comparação à verdadeira compreensão de um texto.
+
+00:00:16.050 --> 00:00:20.100
+É como pegar todas as palavras e reclassificá-las em ordem aleatória.
+
+00:00:20.100 --> 00:00:21.860
+Daí o nome conjunto de palavras.
+
+00:00:21.860 --> 00:00:23.265
+Porque você as coloca em um saco.
+
+00:00:23.265 --> 00:00:24.861
+E pronto.
+
+00:00:24.861 --> 00:00:26.750
+Frases longas fornecem vetores diferentes?
+
+00:00:26.750 --> 00:00:29.660
+Vamos supor que pegamos o mesmo email e o duplicamos.
+
+00:00:29.660 --> 00:00:31.540
+Todas as contagens aumentam em um fator de dois e
+
+00:00:31.540 --> 00:00:32.810
+isso será um vetor de entrada diferente.
+
+00:00:32.810 --> 00:00:37.870
+Portanto, de certa forma, você está se induzindo a também codificar o comprimento do texto,
+
+00:00:37.870 --> 00:00:41.780
+e não apenas a frequência das palavras; por isso, a resposta é claramente sim.
+
+00:00:41.780 --> 00:00:44.500
+E podemos lidar com frases complexas?
+
+00:00:44.500 --> 00:00:47.050
+Neste momento, não podemos, a menos que façamos
+
+00:00:47.050 --> 00:00:49.820
+recipientes extras para elas, o que dificultaria bastante o preparo.
+
+00:00:49.820 --> 00:00:53.430
+Chicago Bulls teria um para Chicago e um para Bulls.
+
+00:00:53.430 --> 00:00:54.760
+Uma pequena informação engraçada é que,
+
+00:00:54.760 --> 00:00:59.480
+quando o Google surgiu como um mecanismo de busca e você digitava Chicago Bulls,
+
+00:00:59.480 --> 00:01:04.989
+obtinha muitas referências a cidades e muitas referências a animais.
+
+00:01:04.989 --> 00:01:09.480
+Por isso, vários engenheiros especialistas da Google alteraram o dicionário para também
+
+00:01:09.480 --> 00:01:11.760
+incluir frases combinadas, como Chicago Bulls.
+
+00:01:11.760 --> 00:01:13.490
+Acesse o Google e experimente.
+
+00:01:13.490 --> 00:01:16.730
+Eu prometo que você verá poucos animais e poucas cidades.
+

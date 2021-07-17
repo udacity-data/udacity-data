@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.730 --> 00:00:03.719
+Um dos desenvolvimentos mais interessantes do aprendizado de máquina é
+
+00:00:03.719 --> 00:00:06.640
+o aprendizado do texto.
+
+00:00:06.640 --> 00:00:12.260
+Muitos dados on-line são realmente dados de texto, como a Web, os e-mails e assim por diante.
+
+00:00:12.260 --> 00:00:14.210
+E empresas como Google, Yahoo!,
+
+00:00:14.210 --> 00:00:17.500
+e muitas outras são criadas, realmente, com a ideia de que você
+
+00:00:17.500 --> 00:00:19.600
+pode usar o aprendizado de máquina e aplicá-lo ao texto.
+
+00:00:19.600 --> 00:00:22.860
+Então se você quiser criar o próximo Google, preste atenção.
+
+00:00:22.860 --> 00:00:26.600
+A questão fundamental no aprendizado de texto está relacionada
+
+00:00:26.600 --> 00:00:28.150
+com o que é o recurso de entrada.
+
+00:00:28.150 --> 00:00:30.780
+E vou dar um exemplo e fazer uma pergunta.
+
+00:00:30.780 --> 00:00:35.144
+Suponha que você tenha duas strings, dois tipos de sentenças.
+
+00:00:35.144 --> 00:00:40.210
+Uma é chamada nice day e a outra é very nice day.
+
+00:00:40.210 --> 00:00:44.090
+Suponha que por qualquer motivo, um é um exemplo positivo.
+
+00:00:44.090 --> 00:00:48.070
+E um dos exemplos negativos é indicado por este X aqui e
+
+00:00:48.070 --> 00:00:48.710
+este círculo.
+
+00:00:49.710 --> 00:00:51.780
+E pode ser que haja muitos desses e
+
+00:00:51.780 --> 00:00:54.780
+você queira descartá-los para seu algoritmo de aprendizagem favorito, como a
+
+00:00:54.780 --> 00:00:58.440
+máquina de vetor de suporte, para produzir o rótulo de saída.
+
+00:00:58.440 --> 00:01:02.510
+Qual você acha a melhor dimensão de saída para a máquina de vetor de suporte?
+
+00:01:02.510 --> 00:01:09.390
+Posso dar algumas opções, uma, duas, três, quatro ou difícil dizer.
+
+00:01:09.390 --> 00:01:10.690
+Faça sua melhor escolha.
+

@@ -1,0 +1,16 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.340 --> 00:00:02.900
+E a resposta é que, quando limpamos as palavras irrelevantes dessa mensagem,
+
+00:00:02.900 --> 00:00:05.120
+descartamos 3 das 11 palavras.
+
+00:00:05.120 --> 00:00:10.370
+Nos livramos das palavras the, will e be.
+
+00:00:10.370 --> 00:00:12.140
+Porque todas elas aparecem em stopwords.
+

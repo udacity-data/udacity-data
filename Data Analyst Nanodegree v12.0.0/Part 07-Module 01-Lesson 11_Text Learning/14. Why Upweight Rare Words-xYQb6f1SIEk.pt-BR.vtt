@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.190 --> 00:00:04.540
+Vamos imaginar que você tenha alguns emails: alguns deles enviados por mim,
+
+00:00:04.540 --> 00:00:06.460
+outros por Sebastian.
+
+00:00:06.460 --> 00:00:07.820
+Talvez tenhamos sobreposição.
+
+00:00:07.820 --> 00:00:11.110
+Nós dois podemos estar falando sobre aprendizado de máquina e a Udacity.
+
+00:00:11.110 --> 00:00:13.470
+Mas alguns deles podem ser sobre, por exemplo, física,
+
+00:00:13.470 --> 00:00:15.600
+porque sou formado nisso.
+
+00:00:15.600 --> 00:00:17.230
+Isso será comparativamente raro.
+
+00:00:17.230 --> 00:00:18.400
+Não haverá muitos emails
+
+00:00:18.400 --> 00:00:21.690
+no corpus sobre física,
+
+00:00:21.690 --> 00:00:25.850
+porque nenhum email do Sebastian será sobre física.
+
+00:00:25.850 --> 00:00:26.802
+Todos serão meus.
+
+00:00:26.802 --> 00:00:28.160
+De forma semelhante,
+
+00:00:28.160 --> 00:00:30.680
+talvez haja vários emails sobre o robô Stanley,
+
+00:00:30.680 --> 00:00:32.580
+que é um dos projetos de Sebastian, mas
+
+00:00:32.580 --> 00:00:34.670
+não algo no qual eu seja especialista.
+
+00:00:34.670 --> 00:00:40.080
+O fato de palavras como física e Stanley serem raras no corpus,
+
+00:00:40.080 --> 00:00:43.630
+comparadas a palavras como Udacity ou aprendizado de máquina,
+
+00:00:43.630 --> 00:00:46.840
+significa que elas podem ser palavras com as informações mais
+
+00:00:46.840 --> 00:00:48.700
+importantes sobre o que está acontecendo.
+
+00:00:48.700 --> 00:00:50.890
+Quem pode ser o autor de uma mensagem?
+
+00:00:50.890 --> 00:00:54.160
+Isso é chamado de frequência inversa do documento,
+
+00:00:54.160 --> 00:00:55.920
+outra forma de chamar esse processo.
+
+00:00:55.920 --> 00:00:59.660
+Você pode pesar as palavras pelo inverso da frequência em que
+
+00:00:59.660 --> 00:01:02.250
+aparecem no corpus como um todo.
+
+00:01:02.250 --> 00:01:06.900
+Não pedirei que você codifique um exemplo de Tf Idf agora como teste,
+
+00:01:06.900 --> 00:01:08.650
+mas isso é algo que abordaremos no
+
+00:01:08.650 --> 00:01:11.930
+miniprojeto que teremos em breve, no fim desta lição.
+
+00:01:11.930 --> 00:01:14.620
+Você trabalhará com essa representação um pouco.
+

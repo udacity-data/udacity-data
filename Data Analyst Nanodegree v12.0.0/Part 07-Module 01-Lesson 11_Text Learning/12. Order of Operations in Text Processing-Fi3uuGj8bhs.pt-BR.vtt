@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.150 --> 00:00:03.170
+Agora, vamos fazer um teste rápido falando sobre a ordem das
+
+00:00:03.170 --> 00:00:05.110
+operações no processamento de texto.
+
+00:00:05.110 --> 00:00:07.920
+Falamos sobre duas importantes etapas que você usará com frequência
+
+00:00:07.920 --> 00:00:10.000
+ao executar processamento de texto.
+
+00:00:10.000 --> 00:00:14.210
+Uma é a representação do conjunto de palavras, e a outra é a lematização de palavras.
+
+00:00:14.210 --> 00:00:15.470
+E aqui está um teste para você.
+
+00:00:15.470 --> 00:00:18.860
+Suponha que você queira executar essas duas operações em seu texto.
+
+00:00:18.860 --> 00:00:22.710
+Você quer ter palavras lematizadas em uma representação de conjunto de palavras.
+
+00:00:22.710 --> 00:00:24.730
+Qual dessas etapas você deve executar primeiro?
+

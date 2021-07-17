@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.410 --> 00:00:03.110
+A resposta deve ser 127.
+
+00:00:03.110 --> 00:00:04.600
+Veja como descobri isso.
+
+00:00:04.600 --> 00:00:08.160
+Você pode repetir as etapas, conforme mostrei no vídeo anterior.
+
+00:00:08.160 --> 00:00:12.280
+Depois, basta colocar length na lista sw, e
+
+00:00:12.280 --> 00:00:13.880
+você obterá o número de elementos em sw.
+
+00:00:13.880 --> 00:00:17.461
+Este é o número de palavras irrelevantes, 127
+

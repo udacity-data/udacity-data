@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.250 --> 00:00:01.720
+Agora que você tem um conjunto de palavras em execução,
+
+00:00:01.720 --> 00:00:06.040
+será realmente capaz de começar a análise de texto em alto nível imediatamente.
+
+00:00:06.040 --> 00:00:07.570
+Porém, gostaria que você também pensasse em outra coisa quando
+
+00:00:07.570 --> 00:00:09.470
+estiver fazendo análise de texto.
+
+00:00:09.470 --> 00:00:14.360
+Em se tratando de vocabulário, nem todas as palavras são iguais.
+
+00:00:14.360 --> 00:00:15.880
+Outra maneira de pensar sobre isso
+
+00:00:15.880 --> 00:00:18.950
+é que algumas palavras contêm mais informações do que outras.
+
+00:00:18.950 --> 00:00:20.640
+Para estimular seu raciocínio,
+
+00:00:20.640 --> 00:00:22.240
+vou sugerir que você faça um teste.
+
+00:00:22.240 --> 00:00:23.730
+Vou fornecer a você um conjunto de palavras.
+
+00:00:23.730 --> 00:00:27.090
+E quero que você verifique as palavras que têm poucas informações.
+
+00:00:27.090 --> 00:00:28.970
+Você ainda não sabe tecnicamente o que isso significa,
+
+00:00:28.970 --> 00:00:30.410
+mas pense intuitivamente.
+
+00:00:30.410 --> 00:00:33.460
+Quais palavras você acha que dão as informações sobre o que está acontecendo no
+
+00:00:33.460 --> 00:00:34.470
+texto?
+
+00:00:34.470 --> 00:00:38.390
+E quais palavras não são tão úteis para ajudá-lo a entender o que está acontecendo?
+
+00:00:38.390 --> 00:00:41.560
+Vamos supor que seu corpus seja do mesmo tipo de conjunto padrão de
+
+00:00:41.560 --> 00:00:44.020
+mensagens que estivemos examinando até agora.
+
+00:00:44.020 --> 00:00:46.480
+Nosso vocabulário contém as palavras oi,
+
+00:00:46.480 --> 00:00:51.920
+Katie, Sebastian, vai, a, dirigindo, máquina, aprendizado e ótima.
+
+00:00:51.920 --> 00:00:56.180
+Obviamente todas essas palavras aparecem nas mensagens pelo menos uma vez.
+
+00:00:56.180 --> 00:00:59.130
+Verifique as que você acha que estão realmente dizendo mais sobre
+
+00:00:59.130 --> 00:01:00.390
+a mensagem.
+

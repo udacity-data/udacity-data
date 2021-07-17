@@ -1,0 +1,13 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.220 --> 00:00:05.950
+O que um TfIdf faz é classificar as palavras raras com peso maior do que as palavras comuns.
+
+00:00:05.950 --> 00:00:08.580
+Isso porque as palavras raras, em geral, serão aquelas que
+
+00:00:08.580 --> 00:00:11.390
+ajudarão você a distinguir as diferentes mensagens entre si.
+

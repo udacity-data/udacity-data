@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.180 --> 00:00:03.560
+Como a lematização de palavras pode ser um processo
+
+00:00:03.560 --> 00:00:06.680
+complexo, isso costuma ser tratado por funções especiais nos kits de
+
+00:00:06.680 --> 00:00:09.140
+ferramentas de processamento de linguagem natural.
+
+00:00:09.140 --> 00:00:13.950
+Como o NLTK ou outros tipos de kits de ferramentas disponíveis em outras linguagens.
+
+00:00:13.950 --> 00:00:16.170
+Vejamos como isso funciona.
+
+00:00:16.170 --> 00:00:17.920
+Se abro o interpretador Python, a
+
+00:00:17.920 --> 00:00:21.130
+primeira ação é importar um lematizador.
+
+00:00:21.130 --> 00:00:24.220
+O fato é que existem diversos lematizadores disponíveis.
+
+00:00:24.220 --> 00:00:26.940
+Vejamos o que o lematizador snowball faz.
+
+00:00:26.940 --> 00:00:30.320
+Mas, de tempos em tempos, você encontrará outros lematizadores.
+
+00:00:30.320 --> 00:00:32.950
+Este é o comando usado para importar o lematizador snowball.
+
+00:00:32.950 --> 00:00:34.210
+Vamos continuar e fazer isso.
+
+00:00:34.210 --> 00:00:36.220
+Encontrei este exemplo na Internet.
+
+00:00:36.220 --> 00:00:38.420
+Isso costuma levar apenas alguns segundos.
+
+00:00:38.420 --> 00:00:40.860
+Em seguida, vou criar o lematizador.
+
+00:00:40.860 --> 00:00:44.550
+Como ocorre com palavras irrelevantes, preciso declarar uma linguagem
+
+00:00:44.550 --> 00:00:47.580
+que desejo lematizar. É claro que lematizar uma palavra em francês
+
+00:00:47.580 --> 00:00:50.480
+não é o mesmo que lematizar uma palavra em inglês.
+
+00:00:50.480 --> 00:00:54.770
+Tenho este lematizador e posso usá-lo para lematizar a palavra que quiser.
+
+00:00:54.770 --> 00:00:58.450
+Vou experimentar uma das palavras do meu exemplo responsivo.
+
+00:00:58.450 --> 00:01:01.860
+Chamo a função stem no stemmer recém-criado. Usaremos a
+
+00:01:01.860 --> 00:01:03.630
+palavra responsiveness.
+
+00:01:03.630 --> 00:01:07.330
+Sabemos que o stem aqui será respons.
+
+00:01:07.330 --> 00:01:11.050
+É algo muito parecido com o que tentamos adivinhar no último vídeo.
+
+00:01:11.050 --> 00:01:12.490
+Vamos tentar outra coisa parecida.
+
+00:01:12.490 --> 00:01:17.530
+O mesmo que antes, respons, e adicionei um prefixo, unresponsive.
+
+00:01:17.530 --> 00:01:19.385
+Essa palavra significa o oposto de responsive,
+
+00:01:19.385 --> 00:01:23.400
+mas ainda estamos falando do conceito de algo ser responsivo ou não.
+
+00:01:23.400 --> 00:01:26.280
+Ainda assim, obteremos o mesmo stem.
+
+00:01:26.280 --> 00:01:30.420
+Podemos notar que este lematizador específico tem certas limitações.
+
+00:01:30.420 --> 00:01:34.660
+Por exemplo, ele não retirou o un de unresponsive.
+
+00:01:34.660 --> 00:01:36.030
+E talvez você queira preservar essa informação.
+
+00:01:36.030 --> 00:01:39.380
+Talvez queira manter a informação de que há uma diferença entre o
+
+00:01:39.380 --> 00:01:43.770
+que é responsive e algo que é unresponsive.
+
+00:01:43.770 --> 00:01:47.440
+Talvez o que interessa você é a ideia de que algo pode ser responsive.
+
+00:01:47.440 --> 00:01:48.912
+Podemos fazer um ajuste fino
+
+00:01:48.912 --> 00:01:52.520
+para descobrir exatamente como você deseja executar isso.
+
+00:01:52.520 --> 00:01:54.470
+Mas, em geral, quando você aplica um lematizador,
+
+00:01:54.470 --> 00:01:57.700
+ele limpa muito o vocabulário do seu corpus.
+
+00:01:57.700 --> 00:02:00.960
+Vou partir de algo muito complicado. Existem diversas
+
+00:02:00.960 --> 00:02:04.250
+dimensões que correspondem a todas as palavras no idioma.
+
+00:02:04.250 --> 00:02:08.050
+E isso é transformado em algo bem mais compacto.
+
+00:02:08.050 --> 00:02:08.720
+Você terá a chance de
+
+00:02:08.720 --> 00:02:11.200
+testar isso no miniprojeto no final da lição.
+

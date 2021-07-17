@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.280 --> 00:00:03.160
+Ao aprender de texto, um dos problemas fundamentais que
+
+00:00:03.160 --> 00:00:08.270
+temos é que o comprimento de cada documento do qual aprendemos, de cada email ou
+
+00:00:08.270 --> 00:00:11.710
+de cada título de livro não é padronizado.
+
+00:00:11.710 --> 00:00:15.290
+Portanto, não podemos apenas usar cada palavra individual como um recurso de entrada,
+
+00:00:15.290 --> 00:00:20.550
+porque então os emails longos precisariam de espaço de entrada diferente de emails curtos.
+
+00:00:20.550 --> 00:00:24.975
+Em vez disso, uma das coisas mais interessantes no aprendizado de máquina em texto,
+
+00:00:24.975 --> 00:00:31.690
+que analisa essas abordagens, é chamado de conjunto de palavras.
+
+00:00:31.690 --> 00:00:37.370
+E a ideia básica é usar qualquer texto e contar a frequência das palavras,
+
+00:00:37.370 --> 00:00:38.640
+o que você fará para mim em um segundo.
+
+00:00:38.640 --> 00:00:41.190
+Portanto, o truque é impor um dicionário.
+
+00:00:41.190 --> 00:00:42.760
+Então você tem todas as palavras que conhece.
+
+00:00:42.760 --> 00:00:46.470
+Obviamente, elas incluem palavras como nice, very e day.
+
+00:00:46.470 --> 00:00:51.440
+Podem incluir palavras que não ocorrem à esquerda, como he, she e love.
+
+00:00:51.440 --> 00:00:53.660
+Então, digamos que estas são as palavras que importam para você.
+
+00:00:53.660 --> 00:00:57.110
+Observe que há uma palavra à esquerda que não ocorre à direita.
+
+00:00:57.110 --> 00:01:02.880
+Em seguida, você pode mapear cada frase, cada email, cada título e
+
+00:01:02.880 --> 00:01:08.970
+cada texto em uma contagem de frequência definida sobre estes seis recursos aqui.
+
+00:01:08.970 --> 00:01:10.470
+Então, vamos fazer isso.
+
+00:01:10.470 --> 00:01:16.280
+Eu forneço seis caixas para cada uma das seis palavras em nosso dicionário.
+
+00:01:16.280 --> 00:01:22.880
+De todas as palavras com as quais você se importa, você pode... para a primeira sentença, nice day,
+
+00:01:22.880 --> 00:01:28.600
+preencher a contagem da frequência dessas palavras neste texto e me fornecer esse vetor?
+
+00:01:28.600 --> 00:01:30.970
+Então, especificamente, para cada palavra aqui,
+
+00:01:30.970 --> 00:01:33.370
+você me informa quantas vezes ela ocorre em nice day.
+

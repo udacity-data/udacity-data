@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.100 --> 00:00:03.310
+Algumas palavras não contêm muitas informações.
+
+00:00:03.310 --> 00:00:06.260
+Pode ser muito útil ficar atento a essas palavras
+
+00:00:06.260 --> 00:00:08.990
+para conseguir removê-las do nosso corpus, para
+
+00:00:08.990 --> 00:00:10.120
+não ter que considerá-las.
+
+00:00:10.120 --> 00:00:12.770
+Assim, elas não se tornam um ruído no seu conjunto de dados.
+
+00:00:13.860 --> 00:00:16.800
+Essa lista de palavras é denominada palavras irrelevantes.
+
+00:00:16.800 --> 00:00:19.830
+Essa definição exata de palavra irrelevante pode variar.
+
+00:00:19.830 --> 00:00:23.540
+Mas, no geral, é uma palavra com poucas informações que ocorre frequentemente.
+
+00:00:23.540 --> 00:00:28.660
+Alguns exemplos pode incluir palavras como and, the, I, you e have.
+
+00:00:30.260 --> 00:00:33.550
+Um pré-processamento comum na análise do texto
+
+00:00:33.550 --> 00:00:37.710
+é remover as palavras irrelevantes antes de utilizar os dados.
+
+00:00:37.710 --> 00:00:44.270
+Imagine que nosso grupo de palavras irrelevantes seja the, in, for, you, will, have e be.
+
+00:00:44.270 --> 00:00:47.680
+Dou essas palavras para você e digo que são palavras irrelevantes.
+
+00:00:48.710 --> 00:00:50.640
+Minha pergunta em um teste
+
+00:00:50.640 --> 00:00:55.280
+é quantas palavras serão removidas ao remover as palavras irrelevantes da mensagem:
+
+00:00:55.280 --> 00:00:58.080
+"Hi Katie the machine learning class will be great
+
+00:00:58.080 --> 00:00:58.840
+best Sebastian".
+

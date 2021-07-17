@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:02.120
+Este é um outro teste cuja resposta,
+
+00:00:02.120 --> 00:00:03.790
+é claro, ainda não demos.
+
+00:00:03.790 --> 00:00:06.110
+Espero que você tenha pensado um pouco.
+
+00:00:06.110 --> 00:00:08.820
+A resposta é que é preciso fazer a lematização antes de fazer a representação do
+
+00:00:08.820 --> 00:00:11.960
+conjunto de palavras por dois motivos.
+
+00:00:11.960 --> 00:00:15.630
+Primeiro, porque se você colocar na representação do conjunto de palavras antes de
+
+00:00:15.630 --> 00:00:18.960
+fazer a lematização, não faria sentido lematizar, porque você poderia
+
+00:00:18.960 --> 00:00:22.780
+obter a mesma palavra repetidas vezes na sua representação do conjunto de palavras.
+
+00:00:22.780 --> 00:00:26.770
+Você não estaria condensando a informação de maneira útil.
+
+00:00:26.770 --> 00:00:29.330
+Na verdade, você a está deixando mais trabalhosa e pior
+
+00:00:29.330 --> 00:00:32.800
+porque a palavra sponse aparecerá lá 6 vezes.
+
+00:00:32.800 --> 00:00:35.940
+E também é mais viável tecnicamente aplicar lematização antes e
+
+00:00:35.940 --> 00:00:38.710
+depois colocá-la na representação do conjunto de palavras
+
+00:00:38.710 --> 00:00:41.120
+porque a lematização vai assumir uma string.
+
+00:00:41.120 --> 00:00:44.550
+E a representação do conjunto de palavras vai parecer uma
+
+00:00:44.550 --> 00:00:48.560
+matriz que tem vários documentos diferentes com palavras dentro.
+
+00:00:48.560 --> 00:00:51.160
+Então, é quase sempre preferível fazer a lematização como
+
+00:00:51.160 --> 00:00:53.140
+uma das primeiras etapas no processamento de texto.
+
+00:00:53.140 --> 00:00:56.160
+Você lematiza cada palavra e depois as coloca na
+
+00:00:56.160 --> 00:00:58.900
+representação que será usada no seu algoritmo de aprendizado de máquina.
+

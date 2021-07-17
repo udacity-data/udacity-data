@@ -1,0 +1,107 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.650 --> 00:00:02.000
+And the key thing to know for
+关键是要知道
+
+00:00:02.000 --> 00:00:05.060
+bag of words is that the word order does not matter.
+词序并不重要 
+
+00:00:05.060 --> 00:00:09.720
+It's clearly a no, because we are counting words we have no preference to where in
+这显然是一个不 因为我们计算的单词 我们没有偏好在哪里
+
+00:00:09.720 --> 00:00:11.160
+the phrase a word occurs,
+一个词出现的短语,
+
+00:00:11.160 --> 00:00:16.050
+which kind of make it somewhat limited compared to really understanding a text.
+与真正理解文本相比 这有点局限 
+
+00:00:16.050 --> 00:00:20.100
+It's kind of taking all the words and resorting them in random order.
+这是一种把所有的单词随机排列的方式 
+
+00:00:20.100 --> 00:00:21.860
+That's why it's called bag of words.
+这就是为什么它被称为词语袋 
+
+00:00:21.860 --> 00:00:23.265
+Because you toss them into a bag.
+因为你把它们扔进袋子里 
+
+00:00:23.265 --> 00:00:24.861
+And gone they are.
+他们都走了 
+
+00:00:24.861 --> 00:00:26.750
+Long phrases do give different vectors.
+长词组确实给出了不同的矢量 
+
+00:00:26.750 --> 00:00:29.660
+So suppose we take the same email and duplicate it.
+所以假设我们使用同一封邮件并复制它 
+
+00:00:29.660 --> 00:00:31.540
+All the counts go up by a factor of two, and
+所有的计数都增加了两倍 而且
+
+00:00:31.540 --> 00:00:32.810
+it's going to be a different input vector.
+这将是一个不同的输入矢量 
+
+00:00:32.810 --> 00:00:37.870
+So to some extent you're biasing yourself to also encode the length of your text
+所以在某种程度上 你是在偏向自己 以便同时编码文本的长度
+
+00:00:37.870 --> 00:00:41.780
+not just the frequency of the words, so the answer would be clearly yes.
+不仅仅是单词的频率 所以答案很明显是肯定的 
+
+00:00:41.780 --> 00:00:44.500
+And I would say, can we handle complex phrases.
+我会说 我们能处理复杂的短语吗 
+
+00:00:44.500 --> 00:00:47.050
+Right now we can't, unless we make extra buckets for
+现在我们不能 除非我们多做一些桶
+
+00:00:47.050 --> 00:00:49.820
+those, which makes it a bit more difficult to preprocess.
+这使得预处理变得更加困难 
+
+00:00:49.820 --> 00:00:53.430
+Chicago Bulls would count one for Chicago and one for Bulls.
+芝加哥公牛队将为芝加哥公牛队计一分 公牛队计一分 
+
+00:00:53.430 --> 00:00:54.760
+And here's a funny little insight,
+这里有一个有趣的观点,
+
+00:00:54.760 --> 00:00:59.480
+when Google first came out as a search engine and you typed in Chicago Bulls.
+当谷歌第一次出现作为一个搜索引擎 你在芝加哥公牛输入 
+
+00:00:59.480 --> 00:01:04.989
+You saw lots of, of, of references to cities and lots of references to animals.
+你可以看到很多 很多关于城市和动物的参考资料 
+
+00:01:04.989 --> 00:01:09.480
+And so a, a bunch of smart Google engineers to change the dictionary to also
+于是 一群聪明的谷歌工程师把字典也改成了
+
+00:01:09.480 --> 00:01:11.760
+included combined phrases like Chicago Bulls.
+包括像芝加哥公牛队这样的组合短语 
+
+00:01:11.760 --> 00:01:13.490
+So go to Google, try it out.
+所以去谷歌上试试吧 
+
+00:01:13.490 --> 00:01:16.730
+I promise you you see very few animals and very few cities.
+我向你保证 你看到的动物很少 城市也很少 

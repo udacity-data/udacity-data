@@ -1,0 +1,211 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.790 --> 00:00:04.160
+Agora que você conhece a representação Bag of Words,
+
+00:00:04.160 --> 00:00:08.182
+vamos colocar nossas mãos no teclado e usá-la no SKlearn.
+
+00:00:08.182 --> 00:00:12.400
+No SKlearn, Bag of Words é chamado de CountVectorizer, provavelmente porque
+
+00:00:12.400 --> 00:00:16.520
+está contando o número de vezes que várias palavras aparecem no corpus.
+
+00:00:16.520 --> 00:00:19.450
+Agora vou mostrar alguns exemplos no Interpreter.
+
+00:00:19.450 --> 00:00:20.350
+E nos próximos vídeos,
+
+00:00:20.350 --> 00:00:23.930
+você fará algumas experiências práticas com os testes de programação.
+
+00:00:23.930 --> 00:00:27.430
+Eu vou para o Interpreter e, usando a documentação online como
+
+00:00:27.430 --> 00:00:30.325
+referência, eu importo o CountVectorizer.
+
+00:00:30.325 --> 00:00:36.430
+O CountVectorizer reside na parte feature_extraction.text do SKlearn.
+
+00:00:37.470 --> 00:00:38.860
+Ela errou na primeira vez.
+
+00:00:38.860 --> 00:00:42.670
+Mas posso importá-lo como qualquer outro objeto no SKlearn.
+
+00:00:42.670 --> 00:00:44.010
+Depois eu crio o vectorizer.
+
+00:00:44.010 --> 00:00:48.880
+E eu preciso incluir alguns documentos que vêm na forma de strings.
+
+00:00:48.880 --> 00:00:50.710
+Eu gostei do exemplo de Sebastian, mas
+
+00:00:50.710 --> 00:00:53.980
+acho que quero fazer algo que soa um pouco mais como os emails
+
+00:00:53.980 --> 00:00:56.810
+eu esperaria ver de fato em uma caixa de entrada.
+
+00:00:56.810 --> 00:00:58.570
+Então vou criar algumas strings.
+
+00:00:58.570 --> 00:01:01.940
+Estes não são emails de verdade, mas é como se fossem.
+
+00:01:01.940 --> 00:01:04.900
+A primeira coisa que preciso fazer para incluí-los no CountVectorizer é
+
+00:01:04.900 --> 00:01:06.610
+colocá-los em uma lista.
+
+00:01:06.610 --> 00:01:08.790
+Agora vou criar o Bag_of_Words,
+
+00:01:08.790 --> 00:01:13.410
+que é o que obtenho quando coloco esta lista de emails no meu CountVectorizer.
+
+00:01:13.410 --> 00:01:15.230
+E na verdade eu fiz isso um pouco errado.
+
+00:01:15.230 --> 00:01:17.510
+Há duas etapas que eu esqueci aqui.
+
+00:01:17.510 --> 00:01:20.920
+A primeira é que preciso ajustar os dados usando o vectorizer.
+
+00:01:20.920 --> 00:01:23.310
+A outra é que eu preciso transformá-los.
+
+00:01:23.310 --> 00:01:24.480
+Primeiro, vamos ajustar.
+
+00:01:24.480 --> 00:01:27.930
+Aqui é onde vamos descobrir quais são todas as palavras do corpus,
+
+00:01:27.930 --> 00:01:30.330
+todas as palavras em todos os emails.
+
+00:01:30.330 --> 00:01:33.820
+E atribuir, digamos, números ou índices de lista a cada um deles.
+
+00:01:33.820 --> 00:01:36.730
+Depois, a transformação é onde ele pega todas as palavras no
+
+00:01:36.730 --> 00:01:41.420
+corpus e descobre quantas vezes cada palavra aparece.
+
+00:01:41.420 --> 00:01:43.631
+Minha sintaxe não está perfeita aqui, mas vai funcionar.
+
+00:01:46.314 --> 00:01:49.190
+Agora, para começar a entender isso, vou imprimir o bag_of_words.
+
+00:01:49.190 --> 00:01:50.680
+Veja como ele fica.
+
+00:01:50.680 --> 00:01:54.740
+O que eu obtenho é um monte de tuplas e inteiros e, embora isso
+
+00:01:54.740 --> 00:01:58.880
+pareça um tanto opaco, posso desempacotar isso de uma forma bem simples.
+
+00:01:58.880 --> 00:02:01.110
+Vamos pegar esta linha como exemplo.
+
+00:02:01.110 --> 00:02:04.770
+A forma de interpretar isto é que, no documento número um,
+
+00:02:04.770 --> 00:02:06.780
+a palavra número sete ocorre um vez.
+
+00:02:06.780 --> 00:02:08.490
+É claro que temos
+
+00:02:08.490 --> 00:02:12.090
+de perguntar qual é a palavra número sete para podermos interpretar isto como humanos.
+
+00:02:13.270 --> 00:02:14.800
+Mas todas as informações estão aqui.
+
+00:02:15.850 --> 00:02:21.270
+Da mesma forma, posso ver no documento número um que a palavra número seis ocorre três vezes.
+
+00:02:21.270 --> 00:02:24.060
+Só por curiosidade, vamos voltar para o documento número um e
+
+00:02:24.060 --> 00:02:26.990
+descobrir qual é a palavra número seis.
+
+00:02:26.990 --> 00:02:31.290
+O documento número estará na string dois,
+
+00:02:31.290 --> 00:02:33.640
+pois a indexação começa em zero.
+
+00:02:33.640 --> 00:02:37.520
+E posso ver que na verdade há uma palavra que se repete três vezes, e
+
+00:02:37.520 --> 00:02:39.450
+é a palavra "great".
+
+00:02:39.450 --> 00:02:41.720
+Então, supondo que esta seja a palavra número sete,
+
+00:02:41.720 --> 00:02:42.820
+as coisas começam a fazer sentido.
+
+00:02:43.940 --> 00:02:46.190
+Olhando a documentação do SKlearn,
+
+00:02:46.190 --> 00:02:49.750
+vejo que há um atributo do bag_of_words chamado vocabulary.
+
+00:02:49.750 --> 00:02:52.630
+E essa é uma maneira de testar minha hipótese.
+
+00:02:52.630 --> 00:02:55.860
+Então, chamo a função get em vocabulary
+
+00:02:55.860 --> 00:02:58.230
+e passo para ela um argumento que é a palavra,
+
+00:02:58.230 --> 00:03:01.880
+e minha hipótese é que isso deve retornar, porque esta linha nos
+
+00:03:01.880 --> 00:03:06.140
+deu a pista, que a palavra número seis no documento um ocorreu três vezes.
+
+00:03:06.140 --> 00:03:06.970
+E isso é o que acontece.
+
+00:03:06.970 --> 00:03:10.120
+Dessa forma, para qualquer palavra no corpus,
+
+00:03:10.120 --> 00:03:14.720
+posso descobrir que número de recurso está no bag_of_words.
+
+00:03:14.720 --> 00:03:17.270
+Você também pode ser outro caminho.
+
+00:03:17.270 --> 00:03:20.150
+Se você quiser perguntar, por exemplo, qual é a palavra associada ao
+
+00:03:20.150 --> 00:03:24.030
+recurso número seis, há uma maneira de extrair essa informação também.
+
+00:03:24.030 --> 00:03:27.120
+Vou chegar a isso na próxima lição sobre seleção de recursos em um
+
+00:03:27.120 --> 00:03:28.650
+exemplo bem legal.
+
+00:03:28.650 --> 00:03:31.180
+Mas, por enquanto, quero suas mãos no teclado para fazer um teste.
+

@@ -1,0 +1,121 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.480 --> 00:00:03.680
+Agora que você sabe sobre palavras irrelevantes, vou mostrar como obter uma lista
+
+00:00:03.680 --> 00:00:08.550
+delas fora de um pacote Python chamado NLTK, que significa
+
+00:00:08.550 --> 00:00:11.110
+kit de ferramentas de idioma natural.
+
+00:00:11.110 --> 00:00:14.400
+Nesta demonstração, vou usar o interpretador.
+
+00:00:14.400 --> 00:00:16.520
+No fim deste vídeo, haverá um teste, e
+
+00:00:16.520 --> 00:00:22.390
+quero que você o faça no seu próprio laptop, não no navegador da Web da Udacity.
+
+00:00:22.390 --> 00:00:24.480
+Esse teste é um pouco diferente.
+
+00:00:24.480 --> 00:00:25.760
+Vamos começar.
+
+00:00:25.760 --> 00:00:26.720
+Vou abrir o interpretador.
+
+00:00:27.740 --> 00:00:31.100
+Para obter as palavras irrelevantes, tenho que importá-las do NLTK.
+
+00:00:31.100 --> 00:00:36.110
+Encontrei esta linha de código em um exemplo quando fui ao Google procurar
+
+00:00:36.110 --> 00:00:37.460
+como extrair palavras irrelevantes do NLTK.
+
+00:00:37.460 --> 00:00:44.850
+Para obter uma lista de palavras irrelevantes, digite algo como sw = stopwords.word.
+
+00:00:44.850 --> 00:00:46.440
+E como um parâmetro para palavras,
+
+00:00:46.440 --> 00:00:48.176
+preciso informá-lo em qual idioma estou interessada.
+
+00:00:48.176 --> 00:00:49.906
+É o inglês.
+
+00:00:49.906 --> 00:00:52.760
+E [LAUGH] se você estiver usando o NLTK pela
+
+00:00:52.760 --> 00:00:58.180
+primeira vez como eu neste computador, você obterá um erro porque o NLTK
+
+00:00:58.180 --> 00:01:01.900
+precisa ter um corpus do qual obter as palavras irrelevantes.
+
+00:01:01.900 --> 00:01:04.190
+O corpus é apenas um corpo de documentos.
+
+00:01:04.190 --> 00:01:08.430
+Para corrigir isso, tenho que chamar a função nltk.download.
+
+00:01:08.430 --> 00:01:13.520
+Você precisa garantir que o NLTK seja importado primeiro,
+
+00:01:13.520 --> 00:01:17.520
+depois precisamos de corpora e clicamos em Download.
+
+00:01:17.520 --> 00:01:18.470
+Isso levará alguns minutos.
+
+00:01:18.470 --> 00:01:21.000
+Agora que acabou, posso tentar novamente.
+
+00:01:23.510 --> 00:01:24.690
+Bem melhor.
+
+00:01:24.690 --> 00:01:29.150
+Posso adentrar nesta lista sw e perguntar quais são algumas das palavras irrelevantes.
+
+00:01:29.150 --> 00:01:31.560
+A primeira da lista é a palavra eu.
+
+00:01:31.560 --> 00:01:34.200
+Isso faz sentido, as pessoas gostam muito de falar sobre si mesmas.
+
+00:01:34.200 --> 00:01:35.370
+Vamos descobrir qual é a décima.
+
+00:01:36.440 --> 00:01:37.430
+Seu/sua.
+
+00:01:37.430 --> 00:01:38.670
+Novamente, faz sentido.
+
+00:01:38.670 --> 00:01:39.490
+O que quero que você faça
+
+00:01:39.490 --> 00:01:42.310
+neste teste é repetir essas etapas que executei.
+
+00:01:42.310 --> 00:01:45.810
+Use o interpretador Python para baixar o corpus e
+
+00:01:45.810 --> 00:01:48.550
+obter a lista de palavras irrelevantes.
+
+00:01:48.550 --> 00:01:50.350
+E aqui está minha pergunta para você.
+
+00:01:50.350 --> 00:01:52.490
+Quantas palavras irrelevantes há na lista?
+
+00:01:52.490 --> 00:01:53.460
+Escreva sua resposta nesta caixa
+

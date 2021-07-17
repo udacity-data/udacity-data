@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.350 --> 00:00:02.890
+Bem-vindo ao miniprojeto sobre aprendizado de texto.
+
+00:00:02.890 --> 00:00:05.980
+Quero que se lembre de algumas lições anteriores nesta aula,
+
+00:00:05.980 --> 00:00:08.570
+nas quais você estava identificando o autor de um email com base nas
+
+00:00:08.570 --> 00:00:12.410
+palavras que estavam sendo usadas nos emails enviados.
+
+00:00:12.410 --> 00:00:16.045
+Agora, você tem muito mais compreensão de todo o trabalho que passa por
+
+00:00:16.045 --> 00:00:21.010
+pré-processamento de texto antes de poder alimentá-lo em um classificador Naive Bayes, uma SVM
+
+00:00:21.010 --> 00:00:22.380
+ou algo do tipo.
+
+00:00:22.380 --> 00:00:24.310
+Nós cuidamos de todo esse pré-processamento para
+
+00:00:24.310 --> 00:00:27.880
+você no início, mas, agora, você, de certo modo, abrirá essa caixa preta.
+
+00:00:27.880 --> 00:00:30.430
+Você reunirá todas essas coisas por conta própria, de modo
+
+00:00:30.430 --> 00:00:33.520
+que possa começar com o que efetivamente é um email bruto e,
+
+00:00:33.520 --> 00:00:36.410
+depois, no final deste miniprojeto, terá uma saída pronta para
+
+00:00:36.410 --> 00:00:38.880
+ir direto para um algoritmo de classificação supervisionada.
+

@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.360 --> 00:00:05.110
+E agora, é claro, descobrimos que nosso vetor futuro é parecido com isto.
+
+00:00:05.110 --> 00:00:06.510
+Tínhamos quatro palavras aqui.
+
+00:00:06.510 --> 00:00:09.020
+Só obtivemos uma contagem de três porque não prestamos atenção no A.
+
+00:00:09.020 --> 00:00:11.590
+O A normalmente é chamado de palavra irrelevante.
+
+00:00:11.590 --> 00:00:13.440
+Ele tende a ser removido do aprendizado de texto.
+
+00:00:13.440 --> 00:00:17.100
+Assim como the, of e outras palavras irrelevantes.
+
+00:00:17.100 --> 00:00:19.140
+Mas as palavras-chave aqui são nice, very, day, e
+
+00:00:19.140 --> 00:00:22.550
+você pode ver como estes dois vetores de recursos da mesma dimensão,
+
+00:00:22.550 --> 00:00:27.300
+foram estimados seis, mas eles podem ser aplicados a outro texto.
+
