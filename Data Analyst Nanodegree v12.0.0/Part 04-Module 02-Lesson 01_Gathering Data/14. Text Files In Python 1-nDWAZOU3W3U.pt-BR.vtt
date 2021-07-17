@@ -1,0 +1,382 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.533 --> 00:00:04.233
+Juntar dados de arquivos de texto
+no Python significa abrir e ler
+
+00:00:04.267 --> 00:00:05.933
+textos de arquivos.
+
+00:00:05.967 --> 00:00:08.967
+Se você usa Pandas,
+como nós, também significa
+
+00:00:09.000 --> 00:00:13.367
+armazenar dados do texto em
+uma estrutura de dados do Pandas.
+
+00:00:13.400 --> 00:00:17.533
+Temos 88 críticas de Roger Ebert
+para abrir e ler.
+
+00:00:17.567 --> 00:00:19.400
+Precisaremos de um loop
+para iteragir
+
+00:00:19.433 --> 00:00:22.800
+todos os arquivos nessa pasta,
+para abrir e ler cada um.
+
+00:00:22.833 --> 00:00:25.533
+Há duas formas de fazer isso.
+
+00:00:25.567 --> 00:00:27.867
+Uma usa a biblioteca OS
+
+00:00:27.900 --> 00:00:30.733
+e outra usa uma biblioteca
+chamada Glob.
+
+00:00:30.767 --> 00:00:35.333
+Estamos usando os.listdir
+nesta aula até agora.
+
+00:00:35.367 --> 00:00:36.967
+Isso é bom
+se você quer abrir
+
+00:00:37.000 --> 00:00:39.733
+cada arquivo na pasta,
+como é o nosso caso.
+
+00:00:39.767 --> 00:00:43.533
+Cada arquivo de texto dessa pasta
+é uma crítica de Roger Ebert.
+
+00:00:43.567 --> 00:00:47.300
+Mas vamos mudar aqui
+e usar o Glob.
+
+00:00:47.333 --> 00:00:50.967
+A biblioteca do Glob permite
+expandir o padrão
+
+00:00:51.000 --> 00:00:54.000
+de caminho Unix-style,
+um modo sofisticado de dizer
+
+00:00:54.033 --> 00:00:58.233
+que usa algo chamado de padrão glob
+para especificar conjuntos
+
+00:00:58.267 --> 00:00:59.900
+de nomes de arquivos.
+
+00:00:59.933 --> 00:01:04.100
+Esses padrões glob usam uma coisa
+chamada caracteres wildcards.
+
+00:01:04.133 --> 00:01:08.300
+Ser apresentado à documentação
+e observá-la pode ser cansativo,
+
+00:01:08.333 --> 00:01:12.167
+então concentre-se apenas
+em uma coisa por ora:
+
+00:01:12.700 --> 00:01:15.033
+"glob.glob".
+
+00:01:15.067 --> 00:01:19.167
+Isso devolve uma lista de caminhos
+que combina caminhos, isto é,
+
+00:01:19.200 --> 00:01:21.700
+o parâmetro string
+que você passa por aqui.
+
+00:01:21.733 --> 00:01:24.300
+É aqui que entra
+o padrão glob.
+
+00:01:24.333 --> 00:01:25.967
+Então como usá-lo?
+
+00:01:26.000 --> 00:01:29.133
+Queremos todos os nomes de arquivos
+que terminem em .txt,
+
+00:01:29.167 --> 00:01:32.367
+ou seja, todos na pasta
+"ebert_reviews".
+
+00:01:32.400 --> 00:01:37.667
+E como" glob.glob" devolve uma lista,
+podemos executar o loop diretamente.
+
+00:01:37.700 --> 00:01:40.633
+Aqui entra o wildcard
+no padrão glob.
+
+00:01:40.667 --> 00:01:42.933
+Tudo na pasta ebert_reviews,
+
+00:01:42.967 --> 00:01:47.633
+depois cada arquivo
+que termina em .txt.
+
+00:01:48.200 --> 00:01:51.933
+Essa estrela significa combinação
+em strings de qualquer comprimento.
+
+00:01:51.967 --> 00:01:55.933
+Vamos imprimir o caminho para todos
+esses arquivos, usando glob.
+
+00:01:55.967 --> 00:01:59.433
+Você pode imaginar o quanto isso
+seria útil se nem todos os arquivos
+
+00:01:59.467 --> 00:02:01.967
+dessa pasta terminassem
+em .txt, por exemplo.
+
+00:02:02.000 --> 00:02:04.700
+Você pode passar por todo o caminho
+para os arquivos
+
+00:02:04.733 --> 00:02:07.500
+para a função aberta no Python.
+
+00:02:07.533 --> 00:02:10.667
+Enquanto abrimos arquivos
+como esse,
+
+00:02:10.700 --> 00:02:14.467
+com "abrir", o caminho do arquivo,
+as file,
+
+00:02:14.500 --> 00:02:17.100
+ou o file handle que você usou,
+
+00:02:17.133 --> 00:02:19.567
+em Python 3, quando abrimos
+um texto para leitura,
+
+00:02:19.600 --> 00:02:23.067
+você deve usar o open
+com uma codificação explícita,
+
+00:02:23.100 --> 00:02:25.967
+que vem depois desse parâmetro
+de codificação.
+
+00:02:26.000 --> 00:02:29.267
+Fazer isso significa obter
+Unicode corretamente decodificado,
+
+00:02:29.300 --> 00:02:31.067
+ou um erro logo de início,
+
+00:02:31.100 --> 00:02:33.533
+que o torna mais fácil
+de depurar.
+
+00:02:33.567 --> 00:02:35.600
+Não fizemos isso antes
+na aula
+
+00:02:35.633 --> 00:02:39.667
+porque não queria sobrecarregá-los
+com informações sobre codificação,
+
+00:02:39.700 --> 00:02:41.600
+mas agora é uma boa hora
+para começar.
+
+00:02:41.633 --> 00:02:45.000
+Daqui por diante, todos os seus
+códigos de abertura devem ser assim.
+
+00:02:45.033 --> 00:02:46.900
+Como é o código de verdade?
+
+00:02:46.933 --> 00:02:49.233
+Isso depende
+da fonte do texto.
+
+00:02:49.267 --> 00:02:52.167
+Vamos usar a crítica de Roger Ebert
+para o filme "Casablanca"
+
+00:02:52.933 --> 00:02:54.533
+como exemplo de trabalho,
+
+00:02:54.567 --> 00:02:56.700
+mas isso se aplica
+a todos os arquivos,
+
+00:02:56.733 --> 00:02:58.433
+porque todos vêm
+do mesmo site.
+
+00:02:58.467 --> 00:03:00.333
+Se vermos a fonte
+dessa página,
+
+00:03:00.367 --> 00:03:02.200
+em diversos navegadores
+isso é possível
+
+00:03:02.233 --> 00:03:05.133
+ao clicar com o botão direito
+do mouse e selecionar
+
+00:03:05.167 --> 00:03:07.433
+"exibir código fonte da página"
+ou algo assim,
+
+00:03:07.467 --> 00:03:10.833
+você verá que a codificação aqui
+é UTF-8.
+
+00:03:10.867 --> 00:03:15.333
+Ótimo. Vamos abrir o arquivo
+de texto para "Casablanca".
+
+00:03:15.367 --> 00:03:19.767
+Mas não queremos todos esses dados
+de texto em um grande bloco,
+
+00:03:19.800 --> 00:03:22.200
+o que conseguiríamos
+dessa maneira:
+
+00:03:22.233 --> 00:03:25.467
+file.read, que podemos verificar
+para um dos arquivos
+
+00:03:25.500 --> 00:03:30.633
+no loop glob, com uma declaração
+print e uma pausa do loop.
+
+00:03:30.667 --> 00:03:33.400
+Aí está todo o arquivo
+de "O Mágico de Oz",
+
+00:03:33.433 --> 00:03:35.600
+o primeiro da pasta.
+
+00:03:35.633 --> 00:03:39.400
+Em vez disso, queremos a primeira
+linha, ou o título do filme,
+
+00:03:39.433 --> 00:03:42.200
+a segunda linha,
+ou a URL,
+
+00:03:42.233 --> 00:03:47.233
+e tudo da terceira linha em diante,
+ou o texto da crítica,
+
+00:03:47.267 --> 00:03:52.033
+como blocos separados de dados,
+então não podemos usar file.read.
+
+00:03:52.067 --> 00:03:53.900
+Já que arquivos de textos
+são separados
+
+00:03:53.933 --> 00:03:55.567
+por novas linhas
+de caracteres,
+
+00:03:55.600 --> 00:03:59.800
+e o objeto do arquivo retornou
+de "with open as file",
+
+00:03:59.833 --> 00:04:04.033
+que é um iterador, podemos ler
+o arquivo linha por linha.
+
+00:04:04.067 --> 00:04:06.767
+Se você quiser ler
+só uma linha,
+
+00:04:06.800 --> 00:04:10.600
+use .readline.
+Assim, file.readline.
+
+00:04:10.633 --> 00:04:14.167
+Vamos verificar isso usando de novo
+a estratégia "print and break".
+
+00:04:14.200 --> 00:04:17.867
+Eis o título do filme
+na primeira linha do arquivo,
+
+00:04:17.900 --> 00:04:19.967
+e temos um espaço em branco
+aqui embaixo,
+
+00:04:20.000 --> 00:04:24.767
+o que é a barra invertida
+ou a nova linha de caracteres.
+
+00:04:24.800 --> 00:04:28.233
+Podemos nos livrar dele apagando-o
+no fim do string.
+
+00:04:28.267 --> 00:04:30.767
+Pronto, temos o título do filme.
+
+00:04:30.800 --> 00:04:34.633
+A seguir, você terá a URL
+e todo o texto com a crítica.
+
+00:04:34.667 --> 00:04:37.700
+Mas, antes, lembre-se de que
+queremos todos esses dados
+
+00:04:37.733 --> 00:04:40.867
+em uma estrutura de dados do Pandas,
+então devemos construir uma.
+
+00:04:40.900 --> 00:04:43.600
+A forma mais eficiente
+de fazer isso computacionalmente
+
+00:04:43.633 --> 00:04:47.467
+é criar uma lista vazia
+e enchê-la item por item,
+
+00:04:47.500 --> 00:04:49.500
+como iteramos
+por meio desse loop,
+
+00:04:49.533 --> 00:04:52.267
+e vamos encher a lista
+com dicionários.
+
+00:04:52.300 --> 00:04:54.867
+Essa lista de dicionários
+será convertida depois
+
+00:04:54.900 --> 00:04:57.233
+em uma estrutura de dados
+do Pandas, de uma vez,
+
+00:04:57.267 --> 00:04:59.367
+quando todos os dados
+forem reunidos.
+
+00:04:59.400 --> 00:05:04.600
+É sua vez, agora. Use a URL
+da crítica e um texto inteiro
+
+00:05:04.633 --> 00:05:08.100
+e anexe-os à lista
+de dicionários.
+

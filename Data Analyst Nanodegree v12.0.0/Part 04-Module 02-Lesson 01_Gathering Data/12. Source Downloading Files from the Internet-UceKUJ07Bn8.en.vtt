@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.450 --> 00:00:07.015
+Okay, so now we can start the Roger Ebert review word cloud.
+
+00:00:07.014 --> 00:00:08.317
+So the first thing you need,
+
+00:00:08.317 --> 00:00:09.949
+the text from each of his reviews,
+
+00:00:09.949 --> 00:00:13.849
+for each of the movies on the Rotten Tomatoes Top 100 Movies of All Time list.
+
+00:00:13.849 --> 00:00:16.000
+They live on his website.
+
+00:00:16.000 --> 00:00:21.890
+Lucky for you I've pre-gathered all of this text in the form of 100.txt files.
+
+00:00:21.890 --> 00:00:24.109
+I put them on this Udacity hosted web page
+
+00:00:24.109 --> 00:00:26.949
+and you're going to download them all programmatically.
+
+00:00:26.949 --> 00:00:31.734
+Yes, you can point and click and download each file manually but that would take forever,
+
+00:00:31.734 --> 00:00:34.984
+especially if someone else wants to reproduce your analysis.
+
+00:00:34.984 --> 00:00:37.204
+If they want to check your work, for example,
+
+00:00:37.204 --> 00:00:41.234
+they can download all of the files with the execution of a few lines of code.
+
+00:00:41.234 --> 00:00:43.804
+So downloading files from Internet programmatically
+
+00:00:43.804 --> 00:00:47.225
+is best for scalability and reproducibility.
+
+00:00:47.225 --> 00:00:50.420
+In practice you really only need to know one thing
+
+00:00:50.420 --> 00:00:54.380
+to download files like this, Python's request library.
+
+00:00:54.380 --> 00:00:56.375
+Knowing a bit of HTTP aka
+
+00:00:56.375 --> 00:01:01.445
+Hypertext Transfer Protocol will help you understand what's going on under the hood here.
+
+00:01:01.445 --> 00:01:06.109
+So next you'll learn the basics of HTTP along with Python's request library.
+

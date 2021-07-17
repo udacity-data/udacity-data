@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.120
+Okay. So since the review URL is online two,
+
+00:00:03.120 --> 00:00:06.839
+we'll just use readline again to read the next line in the file.
+
+00:00:06.839 --> 00:00:10.934
+And again there is that newline character that we don't want at the end of the string,
+
+00:00:10.935 --> 00:00:13.290
+so we'll slice that off like above.
+
+00:00:13.289 --> 00:00:16.655
+And then to read the rest of the lines in the text file,
+
+00:00:16.655 --> 00:00:19.710
+we just use file.read.
+
+00:00:19.710 --> 00:00:23.785
+Then we add those variables in the body of this loop to a dictionary.
+
+00:00:23.785 --> 00:00:26.280
+Then append that dictionary to df_list.
+
+00:00:26.280 --> 00:00:27.790
+After completing that loop,
+
+00:00:27.789 --> 00:00:30.119
+then we can convert that list of dictionaries to
+
+00:00:30.120 --> 00:00:34.429
+a Pandas dataframe and then we process the cell and that should be it.
+
+00:00:34.429 --> 00:00:36.109
+Before we run this code though,
+
+00:00:36.109 --> 00:00:39.269
+we have to import Pandas as the alias PD.
+
+00:00:39.270 --> 00:00:44.345
+And with the columns parameter specifying the order of the columns title,
+
+00:00:44.344 --> 00:00:46.539
+then review URL, then review text,
+
+00:00:46.539 --> 00:00:50.000
+our newly created dataframe is displayed below.
+

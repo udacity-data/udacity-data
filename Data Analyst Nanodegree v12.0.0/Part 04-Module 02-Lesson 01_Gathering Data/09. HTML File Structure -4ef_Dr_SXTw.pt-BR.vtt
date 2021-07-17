@@ -1,0 +1,57 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.102 --> 00:00:03.087
+Este é um dos arquivos HTML
+que utilizaremos nesta aula:
+
+00:00:04.054 --> 00:00:06.534
+a página do "E.T."
+no Rotten Tomatoes.
+
+00:00:06.580 --> 00:00:10.334
+Aqui podemos ver a estrutura
+descrita pelo Cameron.
+
+00:00:10.380 --> 00:00:14.174
+Uma coisa que me surpreendeu
+quando aprendi sobre arquivos HTML
+
+00:00:14.220 --> 00:00:18.173
+é que eles não são arquivos
+de internet mágicos,
+
+00:00:18.219 --> 00:00:21.461
+eles são arquivos comuns
+e podem ser salvos localmente.
+
+00:00:21.507 --> 00:00:23.479
+Se arrastarmos isso
+para um navegador,
+
+00:00:23.525 --> 00:00:27.245
+a página exibirá como se tivesse
+acessado por uma URL normal.
+
+00:00:27.291 --> 00:00:28.861
+Ele fica assim.
+
+00:00:28.907 --> 00:00:30.350
+No editor de texto Sublime,
+
+00:00:30.396 --> 00:00:33.022
+podemos arrastar este símbolo
+para o navegador.
+
+00:00:33.068 --> 00:00:34.502
+Isso ainda me surpreende.
+
+00:00:34.548 --> 00:00:39.565
+Todo esse código de texto
+gera a página na internet.
+
+00:00:39.611 --> 00:00:41.830
+O trabalho do navegador
+é parsear o código.
+

@@ -1,0 +1,87 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.133 --> 00:00:03.233
+ARMAZENAMENTO DE DADOS
+
+00:00:03.800 --> 00:00:05.967
+Então você tem todos os dados
+de que precisa
+
+00:00:06.000 --> 00:00:07.667
+para nossas duas visualizações.
+
+00:00:07.700 --> 00:00:09.833
+Está na estrutura de dados
+de Pandas.
+
+00:00:09.867 --> 00:00:11.833
+O que fazer com os dados
+na estrutura
+
+00:00:11.867 --> 00:00:12.933
+depois que terminar?
+
+00:00:12.967 --> 00:00:15.467
+Você os salva
+ou armazena, de algum modo.
+
+00:00:15.500 --> 00:00:17.033
+Duas opções populares:
+
+00:00:17.067 --> 00:00:19.933
+salvar em um banco de dados
+e salvar em um arquivo.
+
+00:00:19.967 --> 00:00:22.233
+Para dados tabulares
+como os que temos aqui,
+
+00:00:22.267 --> 00:00:26.733
+os dois arquivos, como arquivos CSD,
+são usados muito em bancos de dados.
+
+00:00:26.767 --> 00:00:28.800
+A solução depende do
+seu conjunto de dados
+
+00:00:28.833 --> 00:00:31.700
+e da infraestrutura que você usa
+no seu trabalho diário.
+
+00:00:31.733 --> 00:00:35.167
+Salvar em um arquivo CSD é fácil,
+e provavelmente a melhor solução
+
+00:00:35.200 --> 00:00:37.400
+para um conjunto simples
+como esse.
+
+00:00:37.433 --> 00:00:39.600
+Você vai aprender a seguir
+como fazer isso.
+
+00:00:39.633 --> 00:00:42.200
+Mas também vai aprender
+a carregar dados
+
+00:00:42.233 --> 00:00:43.800
+em um banco de dados.
+
+00:00:43.833 --> 00:00:47.033
+Eles são rápidos, escalam bem
+se o tamanho dos dados aumenta
+
+00:00:47.067 --> 00:00:50.167
+e você pode fazer perguntas a eles
+em linguagens como SQL.
+
+00:00:50.200 --> 00:00:52.600
+Eles são fortes, e habilidades
+em bancos de dados
+
+00:00:52.633 --> 00:00:55.167
+estão em demanda
+nos ambientes profissionais atuais.
+

@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.333 --> 00:00:03.533
+FONTE - APIs - INTERFACES
+DE PROGRAMAÇÃO DE APLICATIVOS
+
+00:00:03.567 --> 00:00:06.033
+Agora a cereja do bolo:
+
+00:00:06.067 --> 00:00:09.033
+pegar o pôster dos filmes
+e colocá-los na nuvem de palavras.
+
+00:00:09.067 --> 00:00:11.133
+Como vamos conseguir
+essas imagens?
+
+00:00:11.167 --> 00:00:13.800
+Você pode pegar a URL da imagem
+do HTML.
+
+00:00:13.833 --> 00:00:16.200
+Mas é melhor acessá-la
+por meio de uma API,
+
+00:00:16.233 --> 00:00:18.933
+interface de programação
+de aplicativos.
+
+00:00:18.967 --> 00:00:21.833
+Como os filmes têm os pôsteres
+em suas páginas da Wikipedia,
+
+00:00:21.867 --> 00:00:24.033
+use o API da Wikipedia.
+
+00:00:24.067 --> 00:00:27.567
+De forma simples, APIs permitem
+acessar dados da internet
+
+00:00:27.600 --> 00:00:29.433
+de forma razoavelmente fácil.
+
+00:00:29.467 --> 00:00:32.467
+Twitter, Facebook e Instagram
+são todos APIs.
+
+00:00:32.867 --> 00:00:35.233
+Não precisa haver uma empresa
+por trás de tudo.
+
+00:00:35.267 --> 00:00:37.500
+Existem diversos APIs
+de código aberto:
+
+00:00:37.533 --> 00:00:41.400
+MediaWiki, um API popular para
+a Wikipedia, é de código aberto.
+
+00:00:41.433 --> 00:00:44.467
+Esse é o API que você usará
+nesta aula.
+
+00:00:44.500 --> 00:00:47.667
+APIs me intimidaram
+por muito tempo,
+
+00:00:47.700 --> 00:00:49.300
+mas não precisa ser assim.
+
+00:00:49.333 --> 00:00:53.600
+Você vai aprender que juntar dados
+de APIs pode ser bem simples.
+

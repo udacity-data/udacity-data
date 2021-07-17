@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.859 --> 00:00:05.835
+Okay, so now for the cherry on top.
+
+00:00:05.835 --> 00:00:09.099
+Getting each movie's poster to add to our word cloud.
+
+00:00:09.099 --> 00:00:10.969
+So how are you going to get these images?
+
+00:00:10.970 --> 00:00:13.580
+You could scrape the image URL from the HTML.
+
+00:00:13.580 --> 00:00:18.899
+But a better way to access them is through an API or application programming interface.
+
+00:00:18.899 --> 00:00:21.750
+Since each movie has its poster on its Wikipedia page,
+
+00:00:21.750 --> 00:00:23.594
+you can use Wikipedia's API.
+
+00:00:23.594 --> 00:00:26.039
+At their simplest, APIs let you
+
+00:00:26.039 --> 00:00:29.339
+access data from the Internet in a reasonably easy manner.
+
+00:00:29.339 --> 00:00:32.649
+Twitter, Facebook, Instagram all have APIs.
+
+00:00:32.649 --> 00:00:34.894
+It doesn't have to be a company led thing though.
+
+00:00:34.895 --> 00:00:37.150
+There are tons of open source APIs.
+
+00:00:37.149 --> 00:00:41.530
+MediaWiki, which is a popular API for Wikipedia is open source.
+
+00:00:41.530 --> 00:00:44.420
+This is the API you'll be using in this lesson.
+
+00:00:44.420 --> 00:00:47.265
+I found APIs daunting for a long time,
+
+00:00:47.265 --> 00:00:49.090
+but they don't have to be.
+
+00:00:49.090 --> 00:00:54.000
+You're going to learn how gathering data from APIs can actually be pretty simple.
+

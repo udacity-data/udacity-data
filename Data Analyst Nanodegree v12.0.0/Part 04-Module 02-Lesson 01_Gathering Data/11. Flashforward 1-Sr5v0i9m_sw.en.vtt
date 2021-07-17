@@ -1,0 +1,231 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.069
+So at this point, you've actually gathered
+所以在这一点上 你实际上已经收集了
+
+00:00:02.069 --> 00:00:05.040
+enough data to produce one of the goal visualizations,
+足够的数据产生一个目标可视化,
+
+00:00:05.040 --> 00:00:07.919
+to scatterplot with quadrants with audience score
+用观众分数来散布情节
+
+00:00:07.919 --> 00:00:11.539
+on the horizontal axis and critics score in the vertical axis.
+在横轴上 评论家在纵轴上得分 
+
+00:00:11.539 --> 00:00:13.774
+Since this lesson is on gathering data,
+因为这一课是关于收集数据的,
+
+00:00:13.775 --> 00:00:17.550
+let's get past the assessing and cleaning steps of the data wrangling process,
+让我们跳过数据处理过程中的评估和清理步骤,
+
+00:00:17.550 --> 00:00:20.100
+which includes joining our two dataframes,
+包括加入我们的两个数据站,
+
+00:00:20.100 --> 00:00:24.480
+and let's flashforward to the final product, the visualization.
+让我们来看看最后的成果 视觉效果 
+
+00:00:24.480 --> 00:00:26.190
+So here's what the data frame looks like with
+这就是数据帧的样子
+
+00:00:26.190 --> 00:00:30.000
+your newly gathered audience score and number of audience ratings.
+你们新收集的观众分数和收视率 
+
+00:00:30.000 --> 00:00:33.435
+You can use matplotlib to create a simple visualization like this one,
+你可以使用 matplotlib 创建一个类似这样的简单可视化程序,
+
+00:00:33.435 --> 00:00:34.965
+a pretty basic scatterplot,
+一个很基本的散点图,
+
+00:00:34.965 --> 00:00:39.325
+but this is where something interactive like Tableau really shines.
+但是这就是像 Tableau 这样的交互式作品真正闪光的地方 
+
+00:00:39.325 --> 00:00:43.859
+And here's what it looks like in Tableau. Pretty amazing.
+这是它在 Tableau 的样子 非常惊人 
+
+00:00:43.859 --> 00:00:48.090
+So, you've got audience score on the horizontal axis ranging from 70% to 100%,
+你可以得到水平轴上70% 到100% 的观众分数,
+
+00:00:48.090 --> 00:00:53.375
+critics score in the vertical axis ranging from 91% to 100%,
+评论家在纵轴上的得分从91% 到100% ,
+
+00:00:53.375 --> 00:00:56.890
+well technically, 101, but that's just for visual purposes.
+严格来说是101度 但那只是为了视觉效果 
+
+00:00:56.890 --> 00:00:59.219
+Then you've got these reference lines.
+然后你就有了这些参考线 
+
+00:00:59.219 --> 00:01:02.850
+The vertical one being the median of audience score, which is 90%,
+垂直的是观众得分的中位数 为90% ,
+
+00:01:02.850 --> 00:01:07.159
+and the horizontal reference line is the median of critics score, 98%.
+横向参考线是评论家得分的中位数 98%  
+
+00:01:07.159 --> 00:01:09.594
+In the top right corner of the screen,
+在屏幕的右上角,
+
+00:01:09.594 --> 00:01:11.939
+we've even got number of audience ratings and number
+我们甚至有很多收视率和数量
+
+00:01:11.939 --> 00:01:14.810
+of critic ratings represented visually, too.
+评论家的评分也是直观的 
+
+00:01:14.810 --> 00:01:17.969
+Lighter shades of blue mean small number of
+浅色的蓝色意味着少量
+
+00:01:17.969 --> 00:01:21.164
+audience ratings and darker shades of blue means a larger number.
+收视率和深色调的蓝色意味着更多的人 
+
+00:01:21.165 --> 00:01:24.300
+And smaller circles mean a smaller number of critic ratings
+更小的圈子意味着评论家的数量更少
+
+00:01:24.299 --> 00:01:27.795
+and larger circles mean a larger number of critic ratings.
+更大的圈子意味着更多的评论家 
+
+00:01:27.795 --> 00:01:29.564
+And okay, so in the top right corner of the screen,
+好的 在屏幕的右上角,
+
+00:01:29.564 --> 00:01:31.829
+we've got universally loved movies.
+我们有全世界都喜欢的电影 
+
+00:01:31.829 --> 00:01:34.170
+High audience scores, high critics scores.
+观众得分高 评论家得分高 
+
+00:01:34.170 --> 00:01:37.530
+One of them being The Godfather, 1972,
+其中一部是1972年的《教父》
+
+00:01:37.530 --> 00:01:39.219
+which if we hover over this dot,
+如果我们盘旋在这个点上,
+
+00:01:39.219 --> 00:01:43.049
+we can see the 99% critics score and the 98% audience score.
+我们可以看到99% 的评论家和98% 的观众 
+
+00:01:43.049 --> 00:01:44.504
+And in the bottom right corner,
+在右下角,
+
+00:01:44.504 --> 00:01:47.354
+we've got critically underrated movies.
+我们有被严重低估的电影 
+
+00:01:47.355 --> 00:01:50.745
+Audience scores above the median audience score for this top 100 list
+观众得分高于百强榜的观众得分中位数
+
+00:01:50.745 --> 00:01:54.785
+and critics scores below the median critics score for this top 100 list.
+评论家得分低于评论家得分中位数 排名前100 
+
+00:01:54.784 --> 00:01:56.989
+One movie being The Dark Knight,
+一部电影是《黑暗骑士》
+
+00:01:56.989 --> 00:02:01.280
+2008, audience score and critics score of 94%.
+2008年 观众得分和评论家得分为94%  
+
+00:02:01.280 --> 00:02:05.030
+And in the top left, we have critically overrated movies.
+在左上角 我们看到的是被严重高估的电影 
+
+00:02:05.030 --> 00:02:08.194
+Audiences didn't like these movies as much as critics did, basically.
+基本上 观众并不像影评人那样喜欢这些电影 
+
+00:02:08.194 --> 00:02:10.784
+Compared to the median audience and critic rating,
+与观众和评论家收视率的中位数相比,
+
+00:02:10.784 --> 00:02:13.514
+the most notable point, 1940's, Pinocchio.
+最引人注目的一点是1940年代的匹诺曹 
+
+00:02:13.514 --> 00:02:19.875
+A 100% critics score over 45 reviews but only a 72% audience score.
+100% 的评论家评分超过45分 但只有72% 的观众评分 
+
+00:02:19.875 --> 00:02:21.379
+And then in the bottom left quadrant,
+然后在左下象限,
+
+00:02:21.379 --> 00:02:23.419
+we've got movies that didn't have
+我们有一些电影
+
+00:02:23.419 --> 00:02:28.334
+particularly high critic or audience scores in reference to the movies on this list.
+特别是高评论家或观众的分数 参考这个名单上的电影 
+
+00:02:28.335 --> 00:02:31.340
+One notable one, Lala Land, 2016,
+值得注意的是 《拉拉乐园》  2016年,
+
+00:02:31.340 --> 00:02:34.469
+an audience score of 82% and a critics score of 92%,
+观众得分为82%  评论家得分为92% ,
+
+00:02:34.469 --> 00:02:37.365
+both well below the median scores for each.
+都远低于各自的中位数 
+
+00:02:37.365 --> 00:02:41.165
+And here's E.T., right on the median critics score line,
+这是 e.t 就在中间的评论家评分线上,
+
+00:02:41.164 --> 00:02:46.569
+a 98% critics score and there's that low 72% audience score.
+98% 的评论家得分 还有72% 的观众得分 
+
+00:02:46.569 --> 00:02:50.294
+So, this Best of Rotten Tomatoes critic versus audience score visualization
+所以 这个烂番茄最佳评论家对观众得分可视化
+
+00:02:50.294 --> 00:02:54.724
+required gathering data from two different sources: Accessing files on hand,
+需要从两个不同的来源收集数据: 访问手头的文件,
+
+00:02:54.724 --> 00:02:59.269
+and scraping data from web pages and that data was in two different formats,
+从网页上抓取数据 数据有两种不同的格式,
+
+00:02:59.270 --> 00:03:02.015
+a flat file, or a TSV file specifically,
+一个平面文件 或者特定的一个 TSV 文件,
+
+00:03:02.014 --> 00:03:04.369
+and HTML. Great job.
+还有 HTML 干得好 

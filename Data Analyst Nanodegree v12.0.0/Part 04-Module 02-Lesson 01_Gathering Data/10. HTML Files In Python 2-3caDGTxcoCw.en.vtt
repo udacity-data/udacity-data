@@ -1,0 +1,274 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.000
+So the empty list of dictionaries,
+
+00:00:03.000 --> 00:00:04.935
+df_list, is already there for you,
+
+00:00:04.934 --> 00:00:11.079
+as well as the for loop that loops through every file in our rt_html folder.
+
+00:00:11.080 --> 00:00:13.410
+The first thing to do is make the soup,
+
+00:00:13.410 --> 00:00:16.995
+which we do by passing in the file handle file,
+
+00:00:16.995 --> 00:00:18.632
+or whatever you named your file handle.
+
+00:00:18.632 --> 00:00:21.900
+The first thing to grab from the HTML was the title,
+
+00:00:21.899 --> 00:00:25.469
+the movie title, which was already done previously.
+
+00:00:25.469 --> 00:00:29.714
+Again, using the find method to get the only title tag in the document,
+
+00:00:29.714 --> 00:00:32.789
+then accessing the contents of that file using.contents,
+
+00:00:32.789 --> 00:00:39.670
+and grabbing the first item in that tag and slicing off that last ' - Rotten Tomatoes'.
+
+00:00:39.670 --> 00:00:43.079
+Let's take a look here and debug a bit,
+
+00:00:43.079 --> 00:00:44.274
+just in case something has gone wrong.
+
+00:00:44.274 --> 00:00:46.854
+So we'll loop through this loop once,
+
+00:00:46.854 --> 00:00:49.019
+then print out the title variable as we have it here,
+
+00:00:49.020 --> 00:00:50.645
+then break from the loop.
+
+00:00:50.645 --> 00:00:53.185
+This is good practice. Okay, and there's the title.
+
+00:00:53.185 --> 00:00:56.224
+I actually forgot to specify the lxml parser,
+
+00:00:56.223 --> 00:00:59.454
+which is actually okay, but I'll specify it anyways.
+
+00:00:59.454 --> 00:01:01.199
+Okay, there we go, no warning.
+
+00:01:01.200 --> 00:01:04.070
+The next thing to grab was the audience_score.
+
+00:01:04.069 --> 00:01:07.379
+Let's take a look at our HTML code to see where that's at.
+
+00:01:07.379 --> 00:01:10.019
+So there's that 72% and it's actually within
+
+00:01:10.019 --> 00:01:14.409
+a div with the class titled audience-score meter.
+
+00:01:14.409 --> 00:01:17.670
+If you look closer, you'll see that the 72% is
+
+00:01:17.670 --> 00:01:21.795
+within the only span tag within this outermost div tag,
+
+00:01:21.795 --> 00:01:24.655
+the outermost one being this div with,
+
+00:01:24.655 --> 00:01:27.564
+again, the class audience-score meter.
+
+00:01:27.564 --> 00:01:29.204
+Because it's the first span tag,
+
+00:01:29.204 --> 00:01:31.284
+we can use the.find method,
+
+00:01:31.284 --> 00:01:37.054
+a beautiful soup, to get the first tag of whatever tag we search using find.
+
+00:01:37.055 --> 00:01:42.795
+But first, we'll actually have to identify the div with the class audience-score meter,
+
+00:01:42.795 --> 00:01:44.844
+which is done like so.
+
+00:01:44.844 --> 00:01:47.310
+Note that class has to have an underscore after it.
+
+00:01:47.310 --> 00:01:50.810
+That's because class is a reserved key word in Python.
+
+00:01:50.810 --> 00:01:53.894
+And we'll find this first span tag within this div and
+
+00:01:53.894 --> 00:01:57.524
+lt's just take a break here again and look where we're at with this code.
+
+00:01:57.525 --> 00:01:58.760
+We'll loop through this code once,
+
+00:01:58.760 --> 00:01:59.960
+print out the audience score,
+
+00:01:59.959 --> 00:02:03.774
+then break from the loop again. Okay, it's all looking good.
+
+00:02:03.775 --> 00:02:05.200
+It will access the contents of this tag
+
+00:02:05.200 --> 00:02:09.490
+using.contents and because it's the first and only item within this tag,
+
+00:02:09.490 --> 00:02:12.870
+we'll use the 0 index, i.e.
+
+00:02:12.870 --> 00:02:17.710
+the first item of the list returned from.contents, and we're almost there.
+
+00:02:17.710 --> 00:02:21.870
+We actually don't want this percentage sign.
+
+00:02:21.870 --> 00:02:25.270
+So, we'll get rid of that with some basic string slicing.
+
+00:02:25.270 --> 00:02:29.310
+Grabbing everything in the string except the last character in it, and great.
+
+00:02:29.310 --> 00:02:31.625
+We've got our audience score.
+
+00:02:31.625 --> 00:02:35.004
+Now, to grab the number of audience ratings.
+
+00:02:35.004 --> 00:02:37.400
+This one's a bit more complicated.
+
+00:02:37.400 --> 00:02:40.064
+Let's take a peek at the HTML code once again.
+
+00:02:40.064 --> 00:02:42.569
+If we scroll down a bit, we'll see the user ratings
+
+00:02:42.569 --> 00:02:45.709
+here or the number of audience ratings.
+
+00:02:45.710 --> 00:02:47.014
+This is for the E.T.
+
+00:02:47.014 --> 00:02:51.555
+movie HTML page, but this structure applies to all of the files we downloaded.
+
+00:02:51.555 --> 00:02:52.944
+So, it's a bit hard to see here,
+
+00:02:52.944 --> 00:02:55.979
+but the outermost div tag is this one here with
+
+00:02:55.979 --> 00:03:02.054
+the class audience-info hidden-xs superPageFontColor.
+
+00:03:02.055 --> 00:03:04.469
+So let's zoom in on that using BeautifulSoup.
+
+00:03:04.469 --> 00:03:07.685
+That's quite a bit to type out, so I'll copy and paste this here.
+
+00:03:07.685 --> 00:03:11.284
+Again, let's use the loop and print and break strategy.
+
+00:03:11.284 --> 00:03:13.430
+That's a bit more clear.
+
+00:03:13.430 --> 00:03:16.335
+Here's the outermost div with the class we specified,
+
+00:03:16.335 --> 00:03:20.754
+audience-info hidden-xs superPageFontColor,
+
+00:03:20.754 --> 00:03:24.509
+and within that div tag is two other div tags,
+
+00:03:24.509 --> 00:03:28.129
+and the number of audience ratings is in the second div tag.
+
+00:03:28.129 --> 00:03:33.174
+We can use find all and take the second item in that returned list.
+
+00:03:33.175 --> 00:03:35.795
+The second item being index number 1.
+
+00:03:35.794 --> 00:03:37.254
+Then if we look at the contents here,
+
+00:03:37.254 --> 00:03:40.335
+we'll see our number of audience ratings,
+
+00:03:40.335 --> 00:03:42.480
+third item index number 2.
+
+00:03:42.479 --> 00:03:46.929
+There's a bunch of white space here we'll strip out using the Python strip function,
+
+00:03:46.930 --> 00:03:49.200
+and we're almost done.
+
+00:03:49.199 --> 00:03:51.284
+This is currently in string form.
+
+00:03:51.284 --> 00:03:53.819
+We'll later have to convert to an integer and to do that,
+
+00:03:53.819 --> 00:03:56.199
+we'll actually have to remove these commas.
+
+00:03:56.199 --> 00:03:58.574
+So, we'll do that using Python's replace function,
+
+00:03:58.574 --> 00:04:01.204
+replacing commas with the empty character.
+
+00:04:01.205 --> 00:04:03.045
+And there we go and now,
+
+00:04:03.044 --> 00:04:05.919
+all that's left to do is convert our list of dictionaries,
+
+00:04:05.919 --> 00:04:08.734
+df_list, to a Pandas dataframe.
+
+00:04:08.735 --> 00:04:13.155
+First, we'll make sure that the Pandas library is imported and aliased as PD,
+
+00:04:13.155 --> 00:04:15.265
+and we'll specify the column order,
+
+00:04:15.264 --> 00:04:16.985
+and that should be it.
+
+00:04:16.985 --> 00:04:18.745
+Let's process this cell.
+
+00:04:18.745 --> 00:04:20.535
+This may take a bit of time to run.
+
+00:04:20.535 --> 00:04:24.110
+For me, around 15 seconds or so.
+
+00:04:24.110 --> 00:04:26.879
+And great, no errors.
+
+00:04:26.879 --> 00:04:28.665
+Let's take a look at this dataframe.
+
+00:04:28.665 --> 00:04:31.080
+And perfect, there we go.
+

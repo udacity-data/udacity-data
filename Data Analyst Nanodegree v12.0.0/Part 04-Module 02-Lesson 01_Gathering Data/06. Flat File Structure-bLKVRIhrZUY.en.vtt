@@ -1,0 +1,196 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.000
+The term flat file encompasses a wide family of
+
+00:00:03.000 --> 00:00:06.419
+files with similar core traits then some slight differences.
+
+00:00:06.419 --> 00:00:08.315
+Let's start with the core traits.
+
+00:00:08.316 --> 00:00:12.660
+Flat files contain tabular data in plain text format with one data record
+
+00:00:12.660 --> 00:00:17.429
+per line in each record or line having one or more fields.
+
+00:00:17.429 --> 00:00:19.823
+These fields are separated by delimiters,
+
+00:00:19.824 --> 00:00:21.547
+like commas for example,
+
+00:00:21.547 --> 00:00:23.585
+as you can see on the left side of the screen.
+
+00:00:23.585 --> 00:00:27.560
+Software like Pandas or spreadsheet applications like Google sheets,
+
+00:00:27.559 --> 00:00:29.849
+which you can see on the right side of the screen here.
+
+00:00:29.850 --> 00:00:32.520
+Use these cues in the data to understand how
+
+00:00:32.520 --> 00:00:35.655
+to represent the data inside their respective programs.
+
+00:00:35.655 --> 00:00:37.500
+So both of these sides of the screen are actually
+
+00:00:37.500 --> 00:00:40.049
+the same file just opened in different programs,
+
+00:00:40.049 --> 00:00:42.119
+the text editor and a spreadsheet program.
+
+00:00:42.119 --> 00:00:44.039
+And because they're in plain text,
+
+00:00:44.039 --> 00:00:46.085
+flat files are human readable.
+
+00:00:46.085 --> 00:00:48.218
+So again, plain text,
+
+00:00:48.218 --> 00:00:49.485
+one record per line,
+
+00:00:49.484 --> 00:00:51.341
+each line having fields,
+
+00:00:51.341 --> 00:00:53.160
+delimiters separating each field,
+
+00:00:53.159 --> 00:00:55.559
+moving on to the slight differences.
+
+00:00:55.560 --> 00:00:58.425
+First and foremost, the delimiters can vary.
+
+00:00:58.424 --> 00:01:00.704
+Most often, commas are used,
+
+00:01:00.704 --> 00:01:02.445
+which are called CSV files,
+
+00:01:02.445 --> 00:01:04.275
+or comma separated values,
+
+00:01:04.275 --> 00:01:06.592
+like this file on the left.
+
+00:01:06.591 --> 00:01:09.730
+Sometimes, other ones are use like tabs in
+
+00:01:09.730 --> 00:01:13.765
+a TSV or tab separated values file, which you can see here.
+
+00:01:13.765 --> 00:01:17.049
+This is the flat file you'll use in this lesson.
+
+00:01:17.049 --> 00:01:23.280
+Sometimes, the delimiters are spaces or even semi-colons.
+
+00:01:23.280 --> 00:01:26.326
+All of these files show up the same way in a spreadsheet program,
+
+00:01:26.325 --> 00:01:28.564
+like Google sheets on the right here though.
+
+00:01:28.564 --> 00:01:32.939
+There's also no standardization that's adhered to amongst flat files as a whole,
+
+00:01:32.939 --> 00:01:35.424
+and even within the individual file types.
+
+00:01:35.424 --> 00:01:37.744
+There are a bunch of little quirks.
+
+00:01:37.745 --> 00:01:39.700
+The major one being some files having
+
+00:01:39.700 --> 00:01:43.765
+single or double quotes around each field entry, like this.
+
+00:01:43.765 --> 00:01:46.155
+Here, double quotes are used.
+
+00:01:46.155 --> 00:01:48.840
+Okay, so let's talk about specific file types.
+
+00:01:48.840 --> 00:01:51.563
+CSV and TSV files,
+
+00:01:51.563 --> 00:01:54.653
+if valid and structure, are always flat.
+
+00:01:54.653 --> 00:01:55.795
+CSV on the left,
+
+00:01:55.795 --> 00:01:59.055
+TSV on the right..txt files,
+
+00:01:59.055 --> 00:02:02.565
+as you can see in the top of this header here,.txt,
+
+00:02:02.564 --> 00:02:04.454
+can be flat files too,
+
+00:02:04.454 --> 00:02:09.484
+if they adhere to the tabular one record per line with delimiters rules of flat files.
+
+00:02:09.485 --> 00:02:12.965
+But text files don't have to be flat files,
+
+00:02:12.965 --> 00:02:15.689
+they can just be a blob of text like,
+
+00:02:15.689 --> 00:02:19.743
+the Roger Ebert review text for the movie, Casablanca.
+
+00:02:19.743 --> 00:02:24.150
+You'll see this variation of a.txt file later in the lesson.
+
+00:02:24.150 --> 00:02:28.689
+In contrast, Excel files which are tabular aren't flat.
+
+00:02:28.689 --> 00:02:33.750
+Excel has this data in a zipped collection of XML files, another file format.
+
+00:02:33.750 --> 00:02:36.504
+In an Excel files original zip format,
+
+00:02:36.504 --> 00:02:37.995
+it's not human readable.
+
+00:02:37.995 --> 00:02:40.439
+But once unzipped, the XML is,
+
+00:02:40.439 --> 00:02:43.634
+but it's definitely not as easy as a flat file.
+
+00:02:43.634 --> 00:02:47.414
+So, flat files have their advantages and disadvantages.
+
+00:02:47.414 --> 00:02:50.459
+They're simple human readable and software that can read
+
+00:02:50.460 --> 00:02:54.135
+and write text files which all flat files are is ubiquitous.
+
+00:02:54.134 --> 00:02:57.504
+A simple text editor like sublime being one example.
+
+00:02:57.504 --> 00:03:00.074
+Some disadvantage is our lack of standards,
+
+00:03:00.074 --> 00:03:03.929
+lack of integrity, and sometimes, massive data redundancy.
+
+00:03:03.930 --> 00:03:08.000
+These will become more clear as we introduce other file types later in the lesson.
+

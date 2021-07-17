@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.575
+Accessing JSON files in Python is just like accessing dictionaries and lists in Python.
+
+00:00:05.575 --> 00:00:09.164
+That's because JSON objects are interpreted as dictionaries
+
+00:00:09.164 --> 00:00:13.589
+and JSON arrays are interpreted as lists. Using the E.T.
+
+00:00:13.589 --> 00:00:15.765
+Wikipedia info box example,
+
+00:00:15.765 --> 00:00:18.574
+which I have here loaded as a JSON object.
+
+00:00:18.574 --> 00:00:21.509
+Let's access a few pieces of data within this object.
+
+00:00:21.510 --> 00:00:24.720
+And there is the Box Office figure using bracket notation:
+
+00:00:24.719 --> 00:00:29.954
+$792,900,000 and here's the Produced by key,
+
+00:00:29.954 --> 00:00:32.769
+which returns a JSON array, which is like a list.
+
+00:00:32.770 --> 00:00:38.275
+The zero index should be Kathleen Kennedy and the first index should be Steven Spielberg.
+
+00:00:38.274 --> 00:00:43.964
+And here's the release key whose value is a JSON array of JSON objects.
+
+00:00:43.965 --> 00:00:49.170
+The first object in the array has the May 26 release date and the location being
+
+00:00:49.170 --> 00:00:55.505
+Cannes and the second object in the array has the June 11th release date for the USA.
+
+00:00:55.505 --> 00:00:59.475
+This is just an object so we can access these keys using bracket notation again.
+
+00:00:59.475 --> 00:01:05.064
+With API's, JSON, and downloading files from the Internet now under your belt,
+
+00:01:05.064 --> 00:01:10.004
+you now have all of the knowledge required to download all of the movie poster images.
+
+00:01:10.004 --> 00:01:13.739
+You're going to do that next and it's going to be pretty, pretty cool.
+

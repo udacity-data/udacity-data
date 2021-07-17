@@ -1,0 +1,178 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.533 --> 00:00:04.167
+Um arquivo de texto é um arquivo
+que usa caracteres específicos
+
+00:00:04.200 --> 00:00:07.833
+e não tem formatação,
+como itálico ou negrito,
+
+00:00:07.867 --> 00:00:11.067
+nem mídia,
+como imagens ou vídeos.
+
+00:00:11.100 --> 00:00:14.033
+Linhas de texto são separadas
+por novas linhas de caracteres,
+
+00:00:14.067 --> 00:00:16.167
+ou barra invertida, no Python.
+
+00:00:16.200 --> 00:00:18.000
+Esses caracteres
+são invisíveis
+
+00:00:18.033 --> 00:00:19.933
+na maioria dos aplicativos
+de software,
+
+00:00:19.967 --> 00:00:21.367
+como esse editor de texto.
+
+00:00:21.400 --> 00:00:22.700
+Falando em editor de texto,
+
+00:00:22.733 --> 00:00:25.700
+textos podem ser visualizados
+e editados em editores simples,
+
+00:00:25.733 --> 00:00:27.167
+o que faz sentido.
+
+00:00:27.200 --> 00:00:30.133
+Arquivos de texto simples,
+como o TSB mostrado aqui,
+
+00:00:30.167 --> 00:00:34.267
+são tecnicamente arquivos de texto,
+mas têm estrutura específica.
+
+00:00:34.300 --> 00:00:37.033
+Os arquivos de texto com críticas
+de Roger Ebert, porém,
+
+00:00:37.067 --> 00:00:40.000
+são só pedaços de texto,
+sem estrutura definida,
+
+00:00:40.033 --> 00:00:43.233
+como a estrutura tabular
+do formato TSB.
+
+00:00:43.267 --> 00:00:49.000
+Agora concentre-se nesse tipo
+de arquivo de texto sem estrutura.
+
+00:00:49.033 --> 00:00:52.967
+Mas saiba que as técnicas que você
+aplicar aqui podem ser usadas
+
+00:00:53.000 --> 00:00:55.700
+em qualquer arquivo de texto,
+não importa a estrutura.
+
+00:00:55.733 --> 00:00:58.033
+Quanto ao conjunto específico
+de caracteres,
+
+00:00:58.067 --> 00:00:59.700
+você já abriu um documento
+
+00:00:59.733 --> 00:01:01.900
+e os caracteres estavam
+desconfigurados assim,
+
+00:01:01.933 --> 00:01:04.300
+como uma fileira de
+interrogações?
+
+00:01:04.333 --> 00:01:07.033
+Ou como vários caracteres
+estranhos, como esses?
+
+00:01:07.067 --> 00:01:10.500
+Isso ocorre porque seu navegador,
+editor ou processador de texto
+
+00:01:10.533 --> 00:01:12.767
+ou outro programa que tente
+ler o documento,
+
+00:01:12.800 --> 00:01:14.900
+está lendo incorretamente
+a codificação
+
+00:01:14.933 --> 00:01:17.600
+ou o esquema
+para converter os caracteres
+
+00:01:17.633 --> 00:01:20.467
+em letras e números.
+
+00:01:20.500 --> 00:01:23.233
+Você deve selecionar
+a codificação certa
+
+00:01:23.267 --> 00:01:25.833
+para exibir o documento
+corretamente.
+
+00:01:25.867 --> 00:01:28.300
+Conjuntos de caracteres
+e codificação são coisas
+
+00:01:28.333 --> 00:01:32.233
+que todo programador deve considerar
+quando trabalhar com dados de texto,
+
+00:01:32.267 --> 00:01:34.500
+incluindo arquivos de texto simples
+como CSV,
+
+00:01:34.533 --> 00:01:37.300
+e também HTML e Json.
+
+00:01:37.333 --> 00:01:40.600
+Ainda não falamos muito
+desse último, mas iremos.
+
+00:01:40.633 --> 00:01:44.133
+Deixei links para dois
+textos prestigiados: este
+
+00:01:44.167 --> 00:01:46.533
+e este aqui.
+
+00:01:48.667 --> 00:01:52.100
+Ambos explicam a questão
+sem deixar dúvida.
+
+00:01:52.133 --> 00:01:54.067
+Separe um tempo para lê-los.
+
+00:01:58.567 --> 00:02:00.667
+Este texto,
+escrito por Joel Spolsky,
+
+00:02:00.700 --> 00:02:03.800
+é prazeroso e leve
+nos detalhes técnicos,
+
+00:02:03.833 --> 00:02:06.600
+que você não precisa saber
+necessariamente.
+
+00:02:06.633 --> 00:02:10.000
+O segundo, escrito
+em resposta ao primeiro,
+
+00:02:10.033 --> 00:02:11.933
+preenche as lacunas técnicas.
+
+00:02:11.967 --> 00:02:14.900
+Leia ambos se você não está
+familiarizado com o tema.
+

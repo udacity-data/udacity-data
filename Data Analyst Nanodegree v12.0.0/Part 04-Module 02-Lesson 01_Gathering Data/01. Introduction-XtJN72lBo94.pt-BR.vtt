@@ -1,0 +1,111 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.148 --> 00:00:03.010
+INTRODUÇÃO
+
+00:00:03.955 --> 00:00:06.946
+Chegamos à segunda aula
+do curso de preparação de dados.
+
+00:00:06.992 --> 00:00:10.059
+Na primeira aula, vimos
+todo o processo de preparação,
+
+00:00:10.105 --> 00:00:12.907
+compilação, avaliação
+e limpeza dos dados.
+
+00:00:12.953 --> 00:00:15.062
+Vimos até a iteração,
+quando necessária.
+
+00:00:15.108 --> 00:00:16.681
+Nas próximas três aulas,
+
+00:00:16.727 --> 00:00:19.058
+nos aprofundaremos
+em cada passo do processo.
+
+00:00:19.104 --> 00:00:21.859
+Primeiro dominaremos
+a compilação de dados.
+
+00:00:21.905 --> 00:00:24.907
+Dependendo do projeto,
+isso varia muito.
+
+00:00:24.953 --> 00:00:27.701
+Os dados necessários podem estar
+em diferentes fontes
+
+00:00:27.747 --> 00:00:29.299
+e formatos de arquivos,
+
+00:00:29.345 --> 00:00:32.467
+e essa pode ser
+a parte mais desafiadora.
+
+00:00:32.513 --> 00:00:35.010
+Não é a análise,
+a visualização
+
+00:00:35.056 --> 00:00:37.780
+nem os modelos
+de aprendizado de máquina,
+
+00:00:37.826 --> 00:00:39.603
+mas a compilação.
+
+00:00:39.649 --> 00:00:42.650
+Isso é negligenciado em muitos
+cursos de preparação de dados,
+
+00:00:42.696 --> 00:00:45.411
+pois os conjuntos de dados
+já são fornecidos.
+
+00:00:45.457 --> 00:00:46.763
+Mas aqui não.
+
+00:00:46.809 --> 00:00:48.916
+Nesta aula,
+compilaremos dados reais
+
+00:00:48.962 --> 00:00:51.188
+de diferentes fontes
+e formatos
+
+00:00:51.234 --> 00:00:54.725
+enquanto aprendemos sobre cada um
+e lidamos com eles no Python.
+
+00:00:54.771 --> 00:00:57.410
+Combinaremos tudo para criar
+um conjunto de dados
+
+00:00:57.456 --> 00:01:00.059
+que responderá
+perguntas interessantes
+
+00:01:00.105 --> 00:01:02.298
+e produzirá
+visualizações maravilhosas.
+
+00:01:02.344 --> 00:01:05.098
+Terminaremos esta aula
+com as habilidades necessárias
+
+00:01:05.144 --> 00:01:08.538
+para a grande maioria
+de projetos de preparação.
+
+00:01:08.584 --> 00:01:11.537
+Vamos nessa.
+Será divertido, desafiador
+
+00:01:11.583 --> 00:01:13.769
+e precisaremos
+de um pouco de criatividade.
+

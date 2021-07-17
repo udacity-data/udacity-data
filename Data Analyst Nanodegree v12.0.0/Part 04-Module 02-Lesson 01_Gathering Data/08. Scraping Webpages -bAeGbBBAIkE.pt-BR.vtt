@@ -1,0 +1,105 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.248 --> 00:00:03.804
+O primeiro passo da raspagem
+é obter os dados da página,
+
+00:00:03.850 --> 00:00:09.133
+que é armazenado no formato HTML,
+linguagem de marcação de hipertexto.
+
+00:00:09.179 --> 00:00:13.508
+Uma forma de obter o HTML é salvando
+manualmente no computador:
+
+00:00:13.554 --> 00:00:16.709
+ir até a página,
+depois, no menu do navegador,
+
+00:00:16.755 --> 00:00:20.981
+clicar em "salvar"
+ou pressionar comando ou Ctrl+S,
+
+00:00:21.027 --> 00:00:24.107
+mas essa não é a melhor maneira
+para análise de dados.
+
+00:00:24.153 --> 00:00:27.248
+Existem duas maneiras melhores,
+feitas programaticamente,
+
+00:00:27.294 --> 00:00:30.095
+o que é melhor para escalonar
+e para reproduzir,
+
+00:00:30.141 --> 00:00:31.440
+que é fundamental,
+
+00:00:31.486 --> 00:00:34.161
+pois temos 100 arquivos HTML
+para acessar
+
+00:00:34.865 --> 00:00:36.815
+e muitas pessoas, ou seja,
+
+00:00:36.861 --> 00:00:39.872
+todos os alunos da turma
+vão acessá-los.
+
+00:00:39.918 --> 00:00:44.361
+O primeiro passo é baixar
+o arquivo HTML programaticamente
+
+00:00:44.407 --> 00:00:45.615
+no seu computador.
+
+00:00:45.661 --> 00:00:47.951
+Aqui está o código
+do qual precisaremos.
+
+00:00:47.997 --> 00:00:51.067
+Veremos como este código funciona
+posteriormente
+
+00:00:51.113 --> 00:00:54.211
+quando baixarmos arquivos
+da internet programaticamente.
+
+00:00:54.257 --> 00:00:56.572
+Este código serve
+para baixar só um arquivo.
+
+00:00:56.618 --> 00:01:00.732
+Para baixar os 100 arquivos,
+colocamos o código em repetição.
+
+00:01:01.485 --> 00:01:04.595
+A segunda forma programática
+para acessar dados HTML
+
+00:01:04.641 --> 00:01:07.660
+não precisa salvar
+o arquivo no computador,
+
+00:01:07.706 --> 00:01:10.232
+nós trabalhamos
+com o conteúdo de resposta
+
+00:01:10.278 --> 00:01:12.064
+que fica na memória
+do computador.
+
+00:01:12.110 --> 00:01:14.649
+Usamos o parseador HTML
+BeautifulSoup
+
+00:01:14.695 --> 00:01:17.171
+para trabalharmos
+com o conteúdo diretamente.
+
+00:01:17.217 --> 00:01:19.833
+Veremos a biblioteca
+BeautifulSoup em breve.
+

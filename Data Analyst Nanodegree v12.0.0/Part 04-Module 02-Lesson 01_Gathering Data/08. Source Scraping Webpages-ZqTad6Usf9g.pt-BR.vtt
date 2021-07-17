@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.097 --> 00:00:02.378
+RASPAGEM DE DADOS
+
+00:00:03.121 --> 00:00:07.032
+Queremos adicionar a avaliação
+do público ao conjunto de dados
+
+00:00:07.078 --> 00:00:10.919
+e combinar essas avaliações
+com as dos críticos.
+
+00:00:10.965 --> 00:00:12.106
+Infelizmente,
+
+00:00:12.152 --> 00:00:15.088
+o Rotten Tomatoes não facilita
+o acesso às informações.
+
+00:00:15.134 --> 00:00:18.808
+Uma forma de obter os dados
+é por meio da raspagem de dados.
+
+00:00:18.854 --> 00:00:23.529
+Essa é uma forma de extrair dados
+dos sites utilizando os códigos.
+
+00:00:23.575 --> 00:00:27.968
+É uma das primeiras coisas
+que me atraíram na programação.
+
+00:00:28.014 --> 00:00:31.455
+Nos bastidores,
+a raspagem de dados é bem simples.
+
+00:00:31.501 --> 00:00:34.638
+Os dados que estão em uma página
+são chamados de HTML,
+
+00:00:34.684 --> 00:00:37.239
+linguagem de marcação
+de hipertexto,
+
+00:00:37.285 --> 00:00:41.350
+eles são constituídos por tags
+que estruturam a página.
+
+00:00:41.396 --> 00:00:43.601
+Como o código HTML
+é só um texto,
+
+00:00:43.647 --> 00:00:47.400
+as tags em contexto podem ser
+acessadas com os parseadores,
+
+00:00:47.446 --> 00:00:51.057
+no Python existe um chamado
+BeautifulSoup.
+
+00:00:51.103 --> 00:00:53.728
+Podemos baixar o HTML
+para acessá-lo off-line
+
+00:00:53.774 --> 00:00:56.640
+ou podemos fazer isso
+em tempo real, na internet.
+
+00:00:56.686 --> 00:00:59.182
+Para esta aula,
+baixaremos os arquivos HTML
+
+00:00:59.228 --> 00:01:01.606
+e parsearemos utilizando
+o BeautifulSoup.
+
+00:01:01.652 --> 00:01:05.031
+Antes disso, vamos explorar
+a estrutura dos arquivos HTML.
+

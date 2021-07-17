@@ -1,0 +1,107 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.000 --> 00:00:02.428
+Arquivos simples podem ser lidos
+pelos humanos,
+
+00:00:02.461 --> 00:00:06.320
+então podemos escrever um código
+para parsear ou entendê-los,
+
+00:00:06.353 --> 00:00:07.999
+a partir do Python,
+
+00:00:08.032 --> 00:00:10.792
+que possa abrir o arquivo,
+ler o texto linha a linha,
+
+00:00:10.825 --> 00:00:13.418
+separar o conteúdo de cada linha
+por delimitadores
+
+00:00:13.451 --> 00:00:16.258
+e armazenar tudo na estrutura
+de dados de sua escolha.
+
+00:00:16.291 --> 00:00:18.665
+Outras pessoas resolveram
+esse problema
+
+00:00:18.698 --> 00:00:21.305
+e criaram bibliotecas
+com várias funcionalidades,
+
+00:00:21.338 --> 00:00:24.712
+especialmente para wrangling,
+análise e visualização de dados.
+
+00:00:24.745 --> 00:00:27.208
+A biblioteca Pandas
+é um exemplo disso.
+
+00:00:27.241 --> 00:00:30.137
+A Pandas lida com quase
+todo tipo de arquivo imaginável
+
+00:00:30.170 --> 00:00:32.785
+e é especialmente adequada
+para dados tabulares.
+
+00:00:32.818 --> 00:00:35.229
+O código para ler dados
+separados por vírgulas
+
+00:00:35.262 --> 00:00:37.371
+e transformá-los
+em um quadro é simples.
+
+00:00:37.404 --> 00:00:39.538
+Usamos a função read_csv.
+
+00:00:46.756 --> 00:00:51.266
+Aqui está o quadro de dados
+Pandas do arquivo bestofrt.csv.
+
+00:00:54.162 --> 00:00:57.657
+O arquivo fornecido é,
+na verdade, um tsv -
+
+00:00:57.690 --> 00:01:01.536
+bestofrt.tsv -
+separado por tabulação,
+
+00:01:01.569 --> 00:01:02.918
+mas tudo bem.
+
+00:01:02.951 --> 00:01:05.680
+Como não há padronização clara
+dos arquivos simples,
+
+00:01:05.713 --> 00:01:08.104
+a Pandas possui uma função
+para parseá-los,
+
+00:01:08.137 --> 00:01:10.342
+que é a read_csv.
+
+00:01:10.375 --> 00:01:13.222
+A read_csv lida com todos
+os tipos de arquivos simples,
+
+00:01:13.255 --> 00:01:15.031
+incluindo o tsv.
+
+00:01:15.064 --> 00:01:18.289
+Só devemos mudar os parâmetros
+para se adequar ao caso de uso,
+
+00:01:18.322 --> 00:01:21.229
+como o parâmetro de separação,
+por exemplo,
+
+00:01:21.262 --> 00:01:24.231
+ou se as entradas possuem
+ou não aspas e muito mais.
+

@@ -1,0 +1,345 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.517 --> 00:00:05.030
+A lista vazia de dicionários "df_list"
+já está lá para você,
+
+00:00:05.076 --> 00:00:08.603
+assim como o loop for,
+que repete cada arquivo
+
+00:00:08.649 --> 00:00:10.826
+da pasta "rt_html".
+
+00:00:10.872 --> 00:00:13.770
+A primeira coisa a ser feita
+é o Soup,
+
+00:00:13.816 --> 00:00:16.307
+que fazemos passando
+o manipulador
+
+00:00:16.353 --> 00:00:19.410
+com o nome que você deu a ele.
+
+00:00:19.456 --> 00:00:23.192
+A primeira coisa a pegar no HTML
+é o título do filme,
+
+00:00:23.238 --> 00:00:25.391
+que já foi feito
+anteriormente.
+
+00:00:25.437 --> 00:00:29.662
+Utilizando o método find
+para obter a única tag de título,
+
+00:00:29.708 --> 00:00:32.921
+acessando os conteúdos
+do arquivo com .contents,
+
+00:00:32.967 --> 00:00:35.247
+obtendo o primeiro item da tag
+
+00:00:35.293 --> 00:00:39.743
+e retirando " - Rotten Tomatoes".
+
+00:00:39.789 --> 00:00:43.159
+Vamos observar
+e depurar um pouco
+
+00:00:43.205 --> 00:00:46.735
+o que está dando errado.
+Nós repetiremos o loop uma vez,
+
+00:00:46.781 --> 00:00:49.551
+imprimiremos a variável
+do título, como está aqui,
+
+00:00:49.597 --> 00:00:51.849
+e sairemos do loop.
+É uma boa prática.
+
+00:00:51.895 --> 00:00:53.258
+Aqui está o título.
+
+00:00:53.304 --> 00:00:56.321
+Eu me esqueci de especificar
+o parseador "lxml",
+
+00:00:56.367 --> 00:00:59.322
+mas tudo bem,
+eu farei assim mesmo.
+
+00:00:59.368 --> 00:01:01.113
+Pronto, nenhum aviso.
+
+00:01:01.159 --> 00:01:03.946
+A próxima coisa a se obter
+é a pontuação do público.
+
+00:01:03.992 --> 00:01:07.026
+Vejamos como isso está
+no código HTML.
+
+00:01:07.072 --> 00:01:10.674
+Os 72% estão
+dentro de um div
+
+00:01:10.720 --> 00:01:14.410
+na classe
+"audience-score meter".
+
+00:01:14.456 --> 00:01:19.402
+Vemos que os 72%
+estão dentro da única tag span,
+
+00:01:19.448 --> 00:01:22.113
+dentro da tag div
+mais distante,
+
+00:01:22.159 --> 00:01:27.698
+ou seja, este div com a classe
+audience-score meter.
+
+00:01:27.744 --> 00:01:31.410
+Como é a primeira tag span,
+podemos utilizar o método .find,
+
+00:01:31.456 --> 00:01:32.688
+um BeautifulSoup,
+
+00:01:32.734 --> 00:01:36.107
+para obter a primeira tag
+que procuramos com o find.
+
+00:01:36.947 --> 00:01:39.794
+Primeiro teremos
+que identificar
+
+00:01:39.840 --> 00:01:43.081
+o div com a classe
+audience-score meter,
+
+00:01:43.127 --> 00:01:44.921
+que é feito desta forma.
+
+00:01:44.967 --> 00:01:47.268
+A classe deve ter
+um sublinhado após,
+
+00:01:47.314 --> 00:01:50.730
+porque é uma palavra-chave
+reservada no Python.
+
+00:01:50.776 --> 00:01:53.618
+Encontramos
+a primeira tag span no div
+
+00:01:53.664 --> 00:01:57.450
+e vamos fazer uma pausa
+para observar o código.
+
+00:01:57.496 --> 00:01:59.915
+Nós repetimos o código,
+imprimimos a avaliação
+
+00:01:59.961 --> 00:02:02.051
+e saímos da repetição.
+
+00:02:02.097 --> 00:02:03.603
+Está tudo bom.
+
+00:02:03.649 --> 00:02:06.627
+Acessamos os conteúdos da tag
+utilizando .contents,
+
+00:02:06.673 --> 00:02:09.427
+e, como é o primeiro e único
+item dessa tag,
+
+00:02:09.473 --> 00:02:11.716
+utilizaremos o índice zero.
+
+00:02:12.428 --> 00:02:16.626
+Ou seja, o primeiro item
+retornado pelo .content.
+
+00:02:16.672 --> 00:02:21.925
+Estamos quase lá.
+Não queremos o sinal de porcentagem.
+
+00:02:21.971 --> 00:02:24.980
+Nos livraremos dele
+com o recorte da string.
+
+00:02:25.026 --> 00:02:28.597
+Pegaremos toda string
+exceto o último caractere.
+
+00:02:28.643 --> 00:02:31.693
+Agora temos a nota
+dada pelo público.
+
+00:02:31.739 --> 00:02:35.037
+Para obter a quantidade
+de avaliação do público.
+
+00:02:35.083 --> 00:02:37.333
+Isso é um pouco
+mais complicado.
+
+00:02:37.379 --> 00:02:40.180
+Vejamos o código HTML
+mais uma vez.
+
+00:02:40.226 --> 00:02:42.893
+Abaixo veremos
+as avaliações dos usuários
+
+00:02:42.939 --> 00:02:45.765
+ou a quantidade de avaliações
+feitas pelo público.
+
+00:02:45.811 --> 00:02:48.319
+Isto é para o HTML da página
+do filme "E.T.",
+
+00:02:48.365 --> 00:02:51.463
+mas a estrutura se aplica
+para todos os arquivos baixados.
+
+00:02:51.509 --> 00:02:54.655
+É um pouco difícil de se ver,
+mas a tag div mais distante
+
+00:02:54.701 --> 00:02:56.776
+é esta com a classe
+
+00:02:56.822 --> 00:03:02.031
+audience-info hidden-sx
+superPageFontColor.
+
+00:03:02.077 --> 00:03:04.767
+Vamos nos aproximar disso
+com o BeautifulSoup.
+
+00:03:04.813 --> 00:03:07.702
+Eu vou copiar e colar
+para facilitar.
+
+00:03:07.748 --> 00:03:11.382
+Vamos usar a estratégia de repetir,
+imprimir e romper.
+
+00:03:11.428 --> 00:03:13.376
+Agora ficou mais claro.
+
+00:03:13.422 --> 00:03:16.336
+Aqui está a div mais distante
+com a classe especificada,
+
+00:03:16.382 --> 00:03:20.790
+"audience-info hidden-xs
+superPageFontColor",
+
+00:03:20.836 --> 00:03:24.695
+e, dentro da tag div,
+há duas outras tags div.
+
+00:03:24.741 --> 00:03:28.114
+A quantidade de avaliações
+do público está na segunda tag div.
+
+00:03:28.160 --> 00:03:32.971
+Podemos utilizar "find" para obter
+o segundo item da lista retornada.
+
+00:03:33.017 --> 00:03:35.722
+O segundo item
+tem índice igual a um.
+
+00:03:35.768 --> 00:03:40.610
+Se observarmos os conteúdos,
+a quantidade de avaliações,
+
+00:03:40.656 --> 00:03:42.777
+o terceiro item
+tem índice igual a dois.
+
+00:03:42.823 --> 00:03:44.219
+Há muito espaço em branco
+
+00:03:44.265 --> 00:03:47.247
+que vou eliminar
+com a função strip do Python.
+
+00:03:47.293 --> 00:03:48.902
+Estamos quase terminando.
+
+00:03:48.948 --> 00:03:51.400
+Isto está atualmente
+na forma de string.
+
+00:03:51.446 --> 00:03:53.734
+Teremos que converter
+em um número inteiro,
+
+00:03:53.780 --> 00:03:56.158
+e, para isso,
+precisamos remover as vírgulas.
+
+00:03:56.204 --> 00:03:58.544
+Fazemos isso
+com a função replace do Python,
+
+00:03:58.590 --> 00:04:01.199
+para substituir as vírgulas
+por caracteres vazios.
+
+00:04:01.245 --> 00:04:02.559
+Pronto.
+
+00:04:02.605 --> 00:04:06.769
+Agora precisamos converter
+a lista de dicionários, df_list,
+
+00:04:06.815 --> 00:04:08.754
+em uma estrutura de dados
+do Pandas.
+
+00:04:08.800 --> 00:04:11.441
+Verificamos se a biblioteca
+Pandas foi importada
+
+00:04:11.487 --> 00:04:13.257
+e nomeada como PD,
+
+00:04:13.303 --> 00:04:15.199
+especificamos a ordem de coluna,
+
+00:04:15.245 --> 00:04:18.631
+e pronto.
+Vamos processar a célula.
+
+00:04:18.677 --> 00:04:20.783
+Isso pode levar tempo
+para rodar.
+
+00:04:20.829 --> 00:04:23.800
+Para mim,
+leva cerca de 15 segundos.
+
+00:04:24.456 --> 00:04:26.703
+Ótimo. Nenhum erro.
+
+00:04:26.749 --> 00:04:28.847
+Vamos observar
+a estrutura de dados.
+
+00:04:28.893 --> 00:04:31.533
+Perfeito. Isso mesmo.
+Ótimo trabalho.
+

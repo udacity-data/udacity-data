@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.233 --> 00:00:02.567
+Agora você juntou dados
+para produzir
+
+00:00:02.600 --> 00:00:04.733
+nossa segunda meta
+de visualização,
+
+00:00:04.767 --> 00:00:07.667
+a nuvem de palavras de críticas
+de Roger Ebert.
+
+00:00:07.700 --> 00:00:10.867
+A seguir, vamos acessar
+e limpar os dados.
+
+00:00:10.900 --> 00:00:13.833
+A segunda e a terceira etapa
+para a preparação de dados.
+
+00:00:13.867 --> 00:00:16.700
+Mas esta aula fala especificamente
+sobre juntar dados.
+
+00:00:16.733 --> 00:00:19.533
+Vamos nos concentrar
+e deixar a limpeza e a avaliação
+
+00:00:19.567 --> 00:00:21.833
+para as lições três e quatro.
+
+00:00:21.867 --> 00:00:24.367
+Eu resolvi esses dois
+nos bastidores.
+
+00:00:24.400 --> 00:00:27.933
+E o resultado é essa grande
+estrutura de dados aqui.
+
+00:00:27.967 --> 00:00:30.867
+Vamos direto para o segundo
+produto final aqui,
+
+00:00:30.900 --> 00:00:33.233
+as nuvens de palavras.
+
+00:00:33.267 --> 00:00:35.367
+Eis um exemplo delas.
+
+00:00:35.400 --> 00:00:38.900
+À direita, "E.T.".
+À esquerda, "Divertida Mente".
+
+00:00:38.933 --> 00:00:42.433
+"E.T." ficou em 11° lugar
+e "Divertida Mente" em 8°
+
+00:00:42.467 --> 00:00:43.900
+na lista Top 100.
+
+00:00:43.933 --> 00:00:46.600
+Acho o resultado bem legal
+e espero que você concorde.
+
+00:00:46.633 --> 00:00:51.100
+É um retrato único da trama do filme
+e do que o torna excelente,
+
+00:00:51.133 --> 00:00:54.700
+de acordo com aquele é tido como
+o melhor crítico de todos os tempos.
+
+00:00:54.733 --> 00:00:58.433
+Esses pôsteres colados dentro
+do estêncil da nuvem de palavras
+
+00:00:58.467 --> 00:01:00.533
+adicionam brilho aos filmes.
+
+00:01:00.567 --> 00:01:02.133
+Vamos ver outros.
+
+00:01:02.167 --> 00:01:04.433
+Agora clássicos antigos.
+
+00:01:04.467 --> 00:01:07.933
+À esquerda, "Janela Indiscreta",
+de Hitchcock, no 36° lugar.
+
+00:01:07.967 --> 00:01:11.133
+À direita, "Casablanca",
+na 16ª colocação.
+
+00:01:11.167 --> 00:01:14.333
+As cores aqui estão demais.
+Nunca vi "Janela Indiscreta",
+
+00:01:14.367 --> 00:01:17.500
+mas partindo dessa nuvem
+e sabendo que Hitchcock
+
+00:01:17.533 --> 00:01:20.767
+é conhecido por thrillers
+e filmes de terror,
+
+00:01:20.800 --> 00:01:23.167
+você enxerga perigo
+e assassinato aqui.
+
+00:01:23.200 --> 00:01:25.500
+A nuvem me deixou
+com vontade de ver o filme.
+
+00:01:25.533 --> 00:01:28.867
+Fique à vontade para pausar o vídeo
+e olhar os pôsteres, se quiser.
+
+00:01:28.933 --> 00:01:31.333
+Aqui estão mais dois,
+"Mulher Maravilha"
+
+00:01:31.367 --> 00:01:35.367
+e "Star Wars: O Despertar da Força".
+"Mulher Maravilha" ficou em 46°
+
+00:01:35.400 --> 00:01:37.800
+e "Star Wars" em 62°.
+
+00:01:37.833 --> 00:01:40.767
+Mais dois: "La La Land - Cantando
+Estações" e "Procurando Nemo",
+
+00:01:40.800 --> 00:01:44.267
+que ficaram, respectivamente,
+em 86° e 73°.
+
+00:01:44.300 --> 00:01:47.367
+Eu não me canso das cores,
+que são lindas.
+
+00:01:47.400 --> 00:01:51.733
+A visualização de dados pode ser
+informativa, e também pode ser arte.
+
+00:01:51.767 --> 00:01:54.033
+Há muitas outras
+dessas nuvens de palavras.
+
+00:01:54.067 --> 00:01:57.467
+Colocarei todas em uma pasta
+para você baixar e verificar
+
+00:01:57.500 --> 00:01:59.067
+se tiver interesse.
+
+00:01:59.100 --> 00:02:01.033
+As nuvens de palavras
+exigem reunir dados
+
+00:02:01.067 --> 00:02:02.867
+de duas fontes distintas.
+
+00:02:02.900 --> 00:02:07.100
+Baixar arquivos da Internet, isto é,
+as críticas do site de Roger Ebert,
+
+00:02:07.133 --> 00:02:11.867
+e acessar dados de uma API,
+isto é, as URLs dos pôsteres.
+
+00:02:11.900 --> 00:02:16.400
+Esses dados estão em dois formatos,
+.txt e .Json.
+
+00:02:16.433 --> 00:02:17.967
+Ótimo trabalho!
+

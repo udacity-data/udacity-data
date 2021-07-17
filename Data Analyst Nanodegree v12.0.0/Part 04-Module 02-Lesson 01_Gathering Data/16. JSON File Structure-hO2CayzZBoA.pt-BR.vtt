@@ -1,0 +1,263 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.800 --> 00:00:06.067
+A maior parte de dados de APIs
+vem no formato JSON ou XML.
+
+00:00:06.100 --> 00:00:09.400
+À esquerda, está o tutorial de JSON
+da W3Schools
+
+00:00:09.433 --> 00:00:12.267
+e à direita o de XML.
+
+00:00:12.300 --> 00:00:15.867
+JSON significa Notação
+de Objeto Javascript
+
+00:00:15.900 --> 00:00:19.333
+e XML significa
+Linguagem de Marcação Estendida.
+
+00:00:19.767 --> 00:00:22.333
+Ambos têm especificidades
+de uso,
+
+00:00:22.367 --> 00:00:25.367
+mas aqui vamos
+nos concentrar em JSON.
+
+00:00:25.400 --> 00:00:28.400
+Em muitos casos, ficamos limitados
+ao que podemos representar
+
+00:00:28.433 --> 00:00:29.967
+em dados tabulares.
+
+00:00:30.000 --> 00:00:33.000
+Às vezes temos dados com campos
+de múltiplas entradas,
+
+00:00:33.033 --> 00:00:34.867
+como aqui,
+em "produzido por:
+
+00:00:34.900 --> 00:00:37.033
+Kathleen Kennedy
+e Steven Spielberg".
+
+00:00:37.067 --> 00:00:38.300
+Duas entradas.
+
+00:00:38.333 --> 00:00:40.267
+E às vezes os campos
+têm subcampos,
+
+00:00:40.300 --> 00:00:42.333
+como data de lançamento,
+que tem uma data
+
+00:00:42.367 --> 00:00:44.767
+e também um local
+de lançamento,
+
+00:00:44.800 --> 00:00:48.733
+26 de maio de 1992,
+em Cannes, por exemplo.
+
+00:00:48.767 --> 00:00:51.933
+E também 11 de junho de 1982,
+nos Estados Unidos.
+
+00:00:51.967 --> 00:00:55.667
+Data de lançamento na verdade
+tem campos e entradas diversas.
+
+00:00:55.700 --> 00:00:57.933
+Representar esses dados
+em formato tabular
+
+00:00:57.967 --> 00:00:59.667
+seria estranho.
+
+00:00:59.700 --> 00:01:04.033
+Precisaríamos de algo assim,
+o que não é natural.
+
+00:01:04.067 --> 00:01:08.100
+Pause o vídeo e veja
+o quanto é estranho.
+
+00:01:08.133 --> 00:01:12.200
+Como mostrado aqui, JSON
+é especialmente bom para representar
+
+00:01:12.233 --> 00:01:14.700
+e acessar hierarquias de dados
+complicadas,
+
+00:01:14.733 --> 00:01:16.933
+como esse quadro de informações
+da Wikipedia.
+
+00:01:16.967 --> 00:01:18.467
+Vamos à estrutura.
+
+00:01:18.500 --> 00:01:21.333
+JSON é construído sobre
+duas estruturas-chave.
+
+00:01:21.367 --> 00:01:26.167
+A primeira é JSON objects,
+uma coleção de pares de valor-chave.
+
+00:01:26.200 --> 00:01:28.667
+Objetos ficam entre chaves.
+
+00:01:28.700 --> 00:01:31.433
+Todo esse bloco de código aqui
+é um objeto,
+
+00:01:31.467 --> 00:01:32.833
+como mostrado à direita.
+
+00:01:32.867 --> 00:01:35.533
+Do lado esquerdo está
+o visual do código JSON.
+
+00:01:35.567 --> 00:01:39.433
+O lado direito é uma interpretação
+útil e flexível desse código.
+
+00:01:39.467 --> 00:01:41.200
+Podemos minimizar
+o objeto aqui.
+
+00:01:41.233 --> 00:01:45.033
+De volta à parte das pares
+de valor-chave de JSON object.
+
+00:01:45.067 --> 00:01:46.767
+"Dirigido por" seria uma chave,
+
+00:01:46.800 --> 00:01:49.500
+e "Steven Spielberg"
+seria o valor para ela.
+
+00:01:49.533 --> 00:01:51.333
+Depois de Spielberg,
+temos uma vírgula
+
+00:01:51.367 --> 00:01:53.433
+separando os pares
+de valor-chave.
+
+00:01:53.467 --> 00:01:56.367
+Em Python, JSON objects
+são interpretados como dicionários
+
+00:01:56.400 --> 00:01:59.433
+e você pode acessá-los como
+acessaria um dicionário Python.
+
+00:01:59.467 --> 00:02:02.800
+A segunda chave de estrutura
+se chama JSON array,
+
+00:02:02.833 --> 00:02:04.833
+que é uma lista ordenada
+de valores.
+
+00:02:04.867 --> 00:02:08.200
+Eis um array no valor
+para a chave "produzido por".
+
+00:02:08.233 --> 00:02:11.033
+Colchetes denotam um array,
+o que faz sentido,
+
+00:02:11.067 --> 00:02:14.400
+porque, em Python, JSON arrays
+são interpretados como listas.
+
+00:02:14.433 --> 00:02:16.533
+E podem ser acessados
+como tal.
+
+00:02:16.567 --> 00:02:18.967
+Se você conhece outras
+linguagens de programação,
+
+00:02:19.000 --> 00:02:21.200
+uma estrutura análoga
+ao JSON object
+
+00:02:21.233 --> 00:02:24.033
+seria uma estrutura,
+registro, objeto,
+
+00:02:24.067 --> 00:02:28.000
+tabela hash, key list
+ou array associado.
+
+00:02:28.033 --> 00:02:31.233
+Para um array, a estrutura
+análoga de dados
+
+00:02:31.267 --> 00:02:34.833
+pode ser um array,
+vetor ou sequência.
+
+00:02:34.867 --> 00:02:37.833
+Enquanto chaves de JSON objetcts
+devem ser strings,
+
+00:02:37.867 --> 00:02:42.100
+você vai ver que toda chave
+à esquerda é string.
+
+00:02:42.133 --> 00:02:44.633
+Os valores para
+os JSON objetcts e arrays
+
+00:02:44.667 --> 00:02:47.100
+podem ser qualquer tipo
+de dado JSON válido.
+
+00:02:47.133 --> 00:02:52.367
+Então, um string, número, objeto,
+array, booleano ou nulo.
+
+00:02:52.400 --> 00:02:55.633
+Há um string, novamente
+Steven Spielberg, e um número,
+
+00:02:55.667 --> 00:03:01.033
+o faturamento de bilheteria
+em dólares ou duração em minutos.
+
+00:03:01.067 --> 00:03:04.900
+Aqui está o JSON array como o valor
+para a chave principal.
+
+00:03:04.933 --> 00:03:06.767
+Veja a chave
+de lançamento aqui.
+
+00:03:06.800 --> 00:03:09.633
+Temos o string lançado como chave,
+um JSON array,
+
+00:03:09.667 --> 00:03:11.967
+que contêm
+dois JSON objects.
+
+00:03:12.000 --> 00:03:14.267
+Quando objects e arrays
+são combinados assim,
+
+00:03:14.300 --> 00:03:15.400
+ocorre um aninhamento.
+

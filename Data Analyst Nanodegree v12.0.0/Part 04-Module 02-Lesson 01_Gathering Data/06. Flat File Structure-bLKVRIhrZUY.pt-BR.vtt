@@ -1,0 +1,267 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.023 --> 00:00:03.396
+O termo "arquivo de texto" engloba
+uma grande família de arquivos
+
+00:00:03.442 --> 00:00:06.299
+com traços parecidos,
+mas com algumas diferenças.
+
+00:00:06.345 --> 00:00:08.210
+Vejamos
+os traços essenciais.
+
+00:00:08.256 --> 00:00:11.427
+Arquivos de textos contêm
+dados tabulares em formato de texto
+
+00:00:11.473 --> 00:00:14.589
+com um registro de dados
+por linha e cada registro
+
+00:00:14.635 --> 00:00:17.381
+ou cada linha contendo
+um ou mais campos.
+
+00:00:17.427 --> 00:00:19.695
+Os campos são separados
+por delimitadores
+
+00:00:19.741 --> 00:00:21.479
+como vírgulas, por exemplo,
+
+00:00:21.525 --> 00:00:23.559
+como vemos
+à esquerda da tela.
+
+00:00:23.605 --> 00:00:27.440
+Programas como o Pandas
+ou planilhas como o Google Sheets,
+
+00:00:27.486 --> 00:00:29.695
+que vemos à direita da tela,
+
+00:00:29.741 --> 00:00:33.630
+utilizam as sugestões dos dados
+para entender como representá-los
+
+00:00:33.676 --> 00:00:35.637
+dentro dos respectivos
+programas.
+
+00:00:35.683 --> 00:00:38.410
+Os dois lados da tela
+são o mesmo arquivo
+
+00:00:38.456 --> 00:00:40.061
+aberto em programas
+diferentes,
+
+00:00:40.107 --> 00:00:42.504
+um editor de texto
+e um programa de planilhas.
+
+00:00:42.550 --> 00:00:46.020
+Como é um arquivo de texto,
+ele pode ser lido pelos humanos.
+
+00:00:46.066 --> 00:00:49.477
+Novamente, arquivos de texto,
+um registro por linha,
+
+00:00:49.523 --> 00:00:51.094
+cada linha contendo campos
+
+00:00:51.140 --> 00:00:53.326
+e delimitadores
+separando cada campo.
+
+00:00:53.372 --> 00:00:55.550
+Vamos falar das diferenças.
+
+00:00:55.596 --> 00:00:58.557
+Primeiro de tudo,
+os delimitadores podem variar.
+
+00:00:58.603 --> 00:01:00.669
+O mais comum
+é a utilização de vírgulas,
+
+00:01:00.715 --> 00:01:04.365
+que são os arquivos CSV,
+ou valores separados por vírgula,
+
+00:01:04.411 --> 00:01:06.228
+como este arquivo
+à esquerda.
+
+00:01:06.274 --> 00:01:08.260
+Às vezes outros são utilizados,
+
+00:01:08.306 --> 00:01:10.580
+como a tabulação, em um TSV,
+
+00:01:10.626 --> 00:01:13.810
+arquivos de valores
+separados por tabulação.
+
+00:01:13.856 --> 00:01:17.066
+Este é o arquivo de texto
+que utilizaremos nesta aula.
+
+00:01:17.112 --> 00:01:19.443
+Às vezes, o delimitador
+é o espaço
+
+00:01:20.675 --> 00:01:23.234
+ou até mesmo
+o ponto e vírgula.
+
+00:01:23.280 --> 00:01:25.234
+Estes arquivos aparecem
+da mesma forma
+
+00:01:25.280 --> 00:01:28.441
+em um programa de planilha
+como o Google Sheets à direita.
+
+00:01:28.487 --> 00:01:32.839
+Não existe padronização
+para arquivos de texto,
+
+00:01:32.885 --> 00:01:35.571
+nem mesmo para os vários
+tipos de arquivos.
+
+00:01:35.617 --> 00:01:37.691
+Mas existem
+algumas peculiaridades.
+
+00:01:37.737 --> 00:01:40.925
+A maior é que alguns arquivos
+possuem aspas simples ou duplas
+
+00:01:40.971 --> 00:01:43.867
+em cada entrada de campo,
+desta forma.
+
+00:01:43.913 --> 00:01:46.131
+Aqui vemos aspas duplas.
+
+00:01:46.177 --> 00:01:48.955
+Vamos falar de tipos
+de arquivos específicos.
+
+00:01:49.001 --> 00:01:51.307
+Arquivos CSV e TSV,
+
+00:01:51.353 --> 00:01:54.387
+quando válidos e estruturados,
+são sempre simples.
+
+00:01:54.433 --> 00:01:56.876
+CSV à esquerda,
+TSV à direita.
+
+00:01:57.564 --> 00:02:01.204
+Arquivos .txt, como vemos
+no topo deste cabeçalho,
+
+00:02:01.250 --> 00:02:04.387
+também podem ser
+de texto simples
+
+00:02:04.433 --> 00:02:09.779
+se possuírem um registro por linha
+com delimitadores.
+
+00:02:09.825 --> 00:02:12.859
+Mas os arquivos de texto
+não precisam ser simples.
+
+00:02:12.905 --> 00:02:15.081
+Eles podem ser
+um emaranhado de texto,
+
+00:02:15.127 --> 00:02:17.369
+como o texto da crítica
+de Roger Ebert
+
+00:02:17.415 --> 00:02:19.600
+para o filme "Casablanca".
+
+00:02:19.646 --> 00:02:24.097
+Veremos uma variação
+deste arquivo .txt mais tarde.
+
+00:02:24.143 --> 00:02:27.368
+Por outro lado, arquivos Excel,
+que são tabulares,
+
+00:02:27.414 --> 00:02:28.726
+não são simples.
+
+00:02:28.772 --> 00:02:30.940
+O Excel é uma coleção
+de dados compactados
+
+00:02:30.986 --> 00:02:33.754
+de arquivos XML,
+outro formato de arquivo.
+
+00:02:33.800 --> 00:02:36.426
+O formato compactado original
+dos arquivos Excel
+
+00:02:36.472 --> 00:02:38.121
+não pode ser lido
+pelo humano,
+
+00:02:38.167 --> 00:02:40.610
+mas, uma vez descompactado,
+o XML passa a ser,
+
+00:02:40.656 --> 00:02:43.985
+mas ele não é tão fácil
+quanto um arquivo simples.
+
+00:02:44.031 --> 00:02:47.433
+Arquivos de texto simples apresentam
+vantagens e desvantagens.
+
+00:02:47.479 --> 00:02:49.217
+Eles são simples,
+fáceis de serem lidos
+
+00:02:49.263 --> 00:02:52.809
+e o programa que pode ler
+e escrever arquivos de texto simples
+
+00:02:52.855 --> 00:02:54.204
+é algo comum.
+
+00:02:54.250 --> 00:02:57.409
+Um editor de texto como o Sublime
+pode servir de exemplo.
+
+00:02:57.455 --> 00:03:00.065
+Algumas desvantagens
+é a falta de padrão,
+
+00:03:00.111 --> 00:03:01.296
+a falta de integridade
+
+00:03:01.342 --> 00:03:03.852
+e, às vezes,
+a grande redundância de dados.
+
+00:03:03.898 --> 00:03:05.450
+Isso ficará mais claro
+
+00:03:05.496 --> 00:03:07.900
+quando apresentarmos
+outros tipos de arquivos.
+

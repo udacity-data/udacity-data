@@ -1,0 +1,59 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:03.467
+Tendo a lista de URLs
+com as críticas de Ebert,
+
+00:00:03.500 --> 00:00:06.033
+o primeiro passo é executar
+loops ao longo dela.
+
+00:00:06.067 --> 00:00:09.567
+Então teremos a resposta HTTP
+pelo "request.get".
+
+00:00:09.600 --> 00:00:13.467
+Em qualquer URL, estamos fazendo
+a iteração desse loop.
+
+00:00:13.500 --> 00:00:16.267
+Então vem a parte de código
+para abrir o arquivo
+
+00:00:16.300 --> 00:00:20.733
+e escrever response.content
+para esse arquivo, que é a mesma.
+
+00:00:20.767 --> 00:00:24.967
+É isso, vamos processar a célula.
+Isso pode demorar um pouco.
+
+00:00:25.000 --> 00:00:27.400
+Baixar os arquivos
+leva algum tempo.
+
+00:00:27.433 --> 00:00:30.300
+Meu computador
+levou uns cinco segundos.
+
+00:00:30.333 --> 00:00:32.867
+Vamos ver o conteúdo
+da pasta.
+
+00:00:32.900 --> 00:00:35.900
+Aí estão todos
+os arquivos de texto.
+
+00:00:37.600 --> 00:00:41.367
+Devem ser 88. Isso mesmo.
+
+00:00:41.400 --> 00:00:43.767
+Doze filmes no Top 100
+do Rotten Tomatoes
+
+00:00:43.800 --> 00:00:46.600
+não tinham críticas
+no site de Roger Ebert.
+

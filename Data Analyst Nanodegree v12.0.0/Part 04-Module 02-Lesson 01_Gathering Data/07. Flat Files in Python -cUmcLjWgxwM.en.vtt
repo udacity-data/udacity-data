@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.080
+Reading a tab separated values file into a Panda's data frame is
+
+00:00:04.080 --> 00:00:08.355
+very similar to reading a CSV or a Comma Separated Values file.
+
+00:00:08.355 --> 00:00:10.019
+We still use read_csv,
+
+00:00:10.019 --> 00:00:13.769
+then put in the path to our file, which is bestofrt.tsv,
+
+00:00:13.769 --> 00:00:17.894
+then the only difference is including the set parameter,
+
+00:00:17.894 --> 00:00:20.843
+which we want to be a tab, which is \t.
+
+00:00:20.843 --> 00:00:24.875
+It will process the cell and display our data frame.
+
+00:00:24.875 --> 00:00:26.410
+And there it is.
+

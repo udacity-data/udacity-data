@@ -1,0 +1,476 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Relational Databases in Python
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Gathering Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Lesson Outline.html">
+       02. Lesson Outline
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Dataset Finding the Best Movies.html">
+       03. Dataset: Finding the Best Movies
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Navigating Your Working Directory and File IO.html">
+       04. Navigating Your Working Directory and File I/O
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Source Files on Hand.html">
+       05. Source: Files on Hand
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Flat File Structure.html">
+       06. Flat File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Flat Files in Python.html">
+       07. Flat Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Source Web Scraping.html">
+       08. Source: Web Scraping
+      </a>
+     </li>
+     <li class="">
+      <a href="09. HTML File Structure.html">
+       09. HTML File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="10. HTML Files in Python.html">
+       10. HTML Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Flashforward 1.html">
+       11. Flashforward 1
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Source Downloading Files from the Internet.html">
+       12. Source: Downloading Files from the Internet
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Text File Structure.html">
+       13. Text File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Text Files in Python.html">
+       14. Text Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Source APIs (Application Programming Interfaces).html">
+       15. Source: APIs (Application Programming Interfaces)
+      </a>
+     </li>
+     <li class="">
+      <a href="16. JSON File Structure.html">
+       16. JSON File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="17. JSON Files in Python.html">
+       17. JSON Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Mashup APIs, Downloading Files Programmatically, JSON.html">
+       18. Mashup: APIs, Downloading Files Programmatically, JSON
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Mashup Solution.html">
+       19. Mashup Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Flashforward 2.html">
+       20. Flashforward 2
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Storing Data.html">
+       21. Storing Data
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Relational Database Structure.html">
+       22. Relational Database Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Relational Databases in Python.html">
+       23. Relational Databases in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Other File Formats.html">
+       24. Other File Formats
+      </a>
+     </li>
+     <li class="">
+      <a href="25. You Can Iterate.html">
+       25. You Can Iterate
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Gathering Summary.html">
+       26. Gathering Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Conclusion.html">
+       27. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          23. Relational Databases in Python
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="relational-databases-in-python">
+          Relational Databases in Python
+         </h2>
+         <h3 id="data-wrangling-and-relational-databases">
+          Data Wrangling and Relational Databases
+         </h3>
+         <p>
+          In the context of data wrangling, we recommend that databases and SQL only come into play for gathering data or storing data. That is:
+         </p>
+         <ul>
+          <li>
+           <strong>
+            Connecting to a database and importing data
+           </strong>
+           into a pandas DataFrame (or the analogous data structure in your preferred programming language), then assessing and cleaning that data, or
+          </li>
+          <li>
+           <strong>
+            Connecting to a database and storing data
+           </strong>
+           you just gathered (which could potentially be from a database), assessed, and cleaned
+          </li>
+         </ul>
+         <p>
+          These tasks are especially necessary when you have large amounts of data, which is where SQL and other databases excel over flat files.
+         </p>
+         <p>
+          The two scenarios above can be further broken down into three main tasks:
+         </p>
+         <ul>
+          <li>
+           Connecting to a database in Python
+          </li>
+          <li>
+           Storing data
+           <strong>
+            <em>
+             from
+            </em>
+           </strong>
+           a pandas DataFrame
+           <strong>
+            <em>
+             in
+            </em>
+           </strong>
+           a database to which you're connected, and
+          </li>
+          <li>
+           Importing data
+           <strong>
+            <em>
+             from
+            </em>
+           </strong>
+           a database to which you're connected
+           <strong>
+            <em>
+             to
+            </em>
+           </strong>
+           a pandas DataFrame
+          </li>
+         </ul>
+         <h3 id="this-lesson">
+          This Lesson
+         </h3>
+         <p>
+          For the example in this lesson, we're going to do these in order:
+         </p>
+         <ol>
+          <li>
+           Connect to a database. We'll connect to a SQLite database using
+           <a href="https://www.sqlalchemy.org/" rel="noopener noreferrer" target="_blank">
+            SQLAlchemy
+           </a>
+           , a database toolkit for Python.
+          </li>
+          <li>
+           Store the data in the cleaned master dataset in that database. We'll do this using pandas'
+           <code>
+            to_sql
+           </code>
+           DataFrame method.
+          </li>
+          <li>
+           Then read the brand new data in that database back into a pandas DataFrame. We'll do this using pandas'
+           <code>
+            read_sql
+           </code>
+           function.
+          </li>
+         </ol>
+         <p>
+          The third one isn’t necessary for this lesson, but often in the workplace, instead of having to download files, scrape web pages, hit an API, etc., you're given a database right at the beginning of a project.
+         </p>
+         <p>
+          All three of these tasks will be introduced and carried out in the Jupyter Notebook below. These are not quizzes. All of the code is provided for you. Your job is to read and understand each comment and line of code, then run the code.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="data-wrangling-in-sql">
+          Data Wrangling in SQL?
+         </h3>
+         <p>
+          Data wrangling
+          <em>
+           can
+          </em>
+          actually be performed in SQL. We believe that pandas is better equipped for gathering (pandas has a huge simplicity advantage in this area), assessing, and cleaning data, so we usually recommend that you use pandas if given the choice. If wrangling in a work setting, sometimes your tool of choice for data wrangling depends on your company infrastructure, though.
+         </p>
+         <p>
+          Here is an interesting
+          <a href="https://www.reddit.com/r/Python/comments/1tqjt4/why_do_you_use_pandas_instead_of_sql/" rel="noopener noreferrer" target="_blank">
+           Reddit thread that debates pandas vs. SQL
+          </a>
+          in general and touches on several topics related to data wrangling.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="24. Other File Formats.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('23. Relational Databases in Python')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

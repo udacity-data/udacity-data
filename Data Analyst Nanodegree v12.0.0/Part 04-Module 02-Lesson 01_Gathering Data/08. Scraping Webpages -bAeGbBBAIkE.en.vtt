@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.765
+The first step of web scraping is getting the web page's data,
+
+00:00:03.765 --> 00:00:05.429
+which is stored in a format called,
+
+00:00:05.429 --> 00:00:09.359
+HTML, HyperText Markup Language.
+
+00:00:09.359 --> 00:00:13.660
+One way of getting the HTML is by saving it to your computer manually,
+
+00:00:13.660 --> 00:00:14.984
+going to your web page,
+
+00:00:14.984 --> 00:00:16.859
+then to your browser's menu,
+
+00:00:16.859 --> 00:00:20.039
+and clicking save or hitting command or control
+
+00:00:20.039 --> 00:00:24.059
+S. But that's not the best way to do it for data analysis.
+
+00:00:24.059 --> 00:00:25.614
+There are two better ways,
+
+00:00:25.614 --> 00:00:27.559
+and they're both done programmatically,
+
+00:00:27.559 --> 00:00:30.104
+which is best for scalability and reproducibility,
+
+00:00:30.105 --> 00:00:31.440
+which is key in this case.
+
+00:00:31.440 --> 00:00:34.575
+Because we have 100 HTML files to access,
+
+00:00:34.575 --> 00:00:36.810
+and multiple people, i.e.,
+
+00:00:36.810 --> 00:00:40.030
+every student that takes this class is going to access them.
+
+00:00:40.030 --> 00:00:42.439
+Okay, so the first is actually downloading
+
+00:00:42.439 --> 00:00:45.460
+the HTML file programmatically to your computer.
+
+00:00:45.460 --> 00:00:47.549
+Here's all the code you need.
+
+00:00:47.549 --> 00:00:51.269
+You'll learn how this code works under the hood later in the lesson,
+
+00:00:51.270 --> 00:00:54.060
+when you download files from the internet programmatically.
+
+00:00:54.060 --> 00:00:56.670
+This is just the code to download one file.
+
+00:00:56.670 --> 00:00:58.800
+To download all 100 files,
+
+00:00:58.799 --> 00:01:01.574
+we just need to put this code in a loop.
+
+00:01:01.575 --> 00:01:03.320
+The second programmatic way to access
+
+00:01:03.320 --> 00:01:07.757
+HTML data is done by not saving a file to your computer at all,
+
+00:01:07.757 --> 00:01:12.149
+and simply working with the response content live in your computer's memory.
+
+00:01:12.150 --> 00:01:14.635
+You can use the BeautifulSoup HTML parser
+
+00:01:14.635 --> 00:01:17.170
+to help you work with the response content directly.
+
+00:01:17.170 --> 00:01:20.000
+You're going to dive into this BeautifulSoup library shortly.
+

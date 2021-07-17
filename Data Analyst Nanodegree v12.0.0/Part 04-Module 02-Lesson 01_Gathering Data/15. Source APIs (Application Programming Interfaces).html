@@ -1,0 +1,619 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Source: APIs (Application Programming Interfaces)
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Gathering Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Lesson Outline.html">
+       02. Lesson Outline
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Dataset Finding the Best Movies.html">
+       03. Dataset: Finding the Best Movies
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Navigating Your Working Directory and File IO.html">
+       04. Navigating Your Working Directory and File I/O
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Source Files on Hand.html">
+       05. Source: Files on Hand
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Flat File Structure.html">
+       06. Flat File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Flat Files in Python.html">
+       07. Flat Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Source Web Scraping.html">
+       08. Source: Web Scraping
+      </a>
+     </li>
+     <li class="">
+      <a href="09. HTML File Structure.html">
+       09. HTML File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="10. HTML Files in Python.html">
+       10. HTML Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Flashforward 1.html">
+       11. Flashforward 1
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Source Downloading Files from the Internet.html">
+       12. Source: Downloading Files from the Internet
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Text File Structure.html">
+       13. Text File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Text Files in Python.html">
+       14. Text Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Source APIs (Application Programming Interfaces).html">
+       15. Source: APIs (Application Programming Interfaces)
+      </a>
+     </li>
+     <li class="">
+      <a href="16. JSON File Structure.html">
+       16. JSON File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="17. JSON Files in Python.html">
+       17. JSON Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Mashup APIs, Downloading Files Programmatically, JSON.html">
+       18. Mashup: APIs, Downloading Files Programmatically, JSON
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Mashup Solution.html">
+       19. Mashup Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Flashforward 2.html">
+       20. Flashforward 2
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Storing Data.html">
+       21. Storing Data
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Relational Database Structure.html">
+       22. Relational Database Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Relational Databases in Python.html">
+       23. Relational Databases in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Other File Formats.html">
+       24. Other File Formats
+      </a>
+     </li>
+     <li class="">
+      <a href="25. You Can Iterate.html">
+       25. You Can Iterate
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Gathering Summary.html">
+       26. Gathering Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Conclusion.html">
+       27. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          15. Source: APIs (Application Programming Interfaces)
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="source-apis-application-programming-interfaces">
+          Source: APIs (Application Programming Interfaces)
+         </h2>
+         <h3 id="introduction">
+          Introduction
+         </h3>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Source: APIs (Application Programming Interfaces)
+         </p>
+        </h3>
+        <video controls="">
+         <source src="15. Source APIs (Application Programming Interfaces)-1y_qjUMDsCw.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="15. Source APIs (Application Programming Interfaces)-1y_qjUMDsCw.ar.vtt" srclang="ar"/>
+         <track default="true" kind="subtitles" label="en" src="15. Source APIs (Application Programming Interfaces)-1y_qjUMDsCw.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="15. Source APIs (Application Programming Interfaces)-1y_qjUMDsCw.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="15. Source APIs (Application Programming Interfaces)-1y_qjUMDsCw.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="apis-and-access-libraries">
+          APIs and Access Libraries
+         </h3>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Source: APIs (Application Programming Interfaces) 2
+         </p>
+        </h3>
+        <video controls="">
+         <source src="15. Source APIs (Application Programming Interfaces) 2-tobH58uO24U.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="15. Source APIs (Application Programming Interfaces) 2-tobH58uO24U.ar.vtt" srclang="ar"/>
+         <track default="true" kind="subtitles" label="en" src="15. Source APIs (Application Programming Interfaces) 2-tobH58uO24U.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="15. Source APIs (Application Programming Interfaces) 2-tobH58uO24U.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="15. Source APIs (Application Programming Interfaces) 2-tobH58uO24U.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           MediaWiki API
+          </strong>
+         </p>
+         <p>
+          MediaWiki has a great
+          <a href="https://www.mediawiki.org/wiki/API:Tutorial" rel="noopener noreferrer" target="_blank">
+           tutorial
+          </a>
+          on their website on how their API calls are structured. It's a nice and simple example and they explain the various moving parts:
+         </p>
+         <ul>
+          <li>
+           The endpoint
+           <em>
+            (important takeaway: there is nothing special about this URL!)
+           </em>
+          </li>
+          <li>
+           The format
+          </li>
+          <li>
+           The action
+          </li>
+          <li>
+           Action-specific parameters
+          </li>
+         </ul>
+         <p>
+          Go and read that example and then come back to the classroom.
+         </p>
+         <p>
+          Done reading? Great! Though they say that is a "simple example," it could definitely be simpler! This is where access libraries, also known as client libraries or even just libraries (as in "Twitter API libraries"), come into play and make our lives easier.
+         </p>
+         <p>
+          <strong>
+           wptools Library
+          </strong>
+         </p>
+         <p>
+          There are a bunch of different access libraries for MediaWiki to satisfy the variety of programming languages that exist. Here is a
+          <a href="https://www.mediawiki.org/wiki/API:Client_code#Python" rel="noopener noreferrer" target="_blank">
+           list
+          </a>
+          for Python. This is pretty standard for most APIs. Some libraries are better than others, which again, is standard. For a MediaWiki, the most up to date and human readable one in Python is called
+          <a href="https://github.com/siznax/wptools" rel="noopener noreferrer" target="_blank">
+           wptools
+          </a>
+          . The analogous relationship for Twitter is:
+         </p>
+         <ul>
+          <li>
+           MediaWiki API → wptools
+          </li>
+          <li>
+           Twitter API → tweepy
+          </li>
+         </ul>
+         <p>
+          <em>
+           wptools
+          </em>
+          has an even simpler tutorial on their GitHub page using the
+          <a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi" rel="noopener noreferrer" target="_blank">
+           Mahatma Gandhi Wikipedia page
+          </a>
+          as a working example.
+         </p>
+         <p>
+          To get a
+          <code>
+           page
+          </code>
+          object, the
+          <a href="https://github.com/siznax/wptools/wiki/Usage#page-usage" rel="noopener noreferrer" target="_blank">
+           usage
+          </a>
+          is as follows:
+         </p>
+         <pre><code class="python language-python">page = wptools.page('Mahatma_Gandhi')</code></pre>
+         <p>
+          …where
+          <em>
+           'Mahatma_Gandhi'
+          </em>
+          is the last bit of the Wikipedia URL for that page (
+          <a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi)" rel="noopener noreferrer" target="_blank">
+           https://en.wikipedia.org/wiki/Mahatma_Gandhi)
+          </a>
+          . This
+          <code>
+           page
+          </code>
+          object has methods that can get us various pieces of data about that Wikipedia page, including all of the images on the page. To get all of the data:
+         </p>
+         <blockquote>
+          <p>
+           Simply calling get() on a page will automagically fetch extracts, images, infobox data, wikidata, and other metadata via the MediaWiki, Wikidata, and RESTBase APIs.
+          </p>
+         </blockquote>
+         <pre><code class="python language-python">page = wptools.page('Mahatma_Gandhi').get()</code></pre>
+         <p>
+          Or if you already have a page object assigned to
+          <code>
+           page
+          </code>
+          :
+         </p>
+         <pre><code class="python language-python">page.get()</code></pre>
+         <p>
+          <code>
+           page
+          </code>
+          now has the following attributes, which can be accessed using dot notation through
+          <code>
+           .data
+          </code>
+          :
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screenshot-2017-10-05-15.37.03.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <code>
+           page.data['image']
+          </code>
+          , for example, would return a list of data for six images on this specific Wikipedia page.
+         </p>
+         <h3 id="quiz">
+          Quiz
+         </h3>
+         <p>
+          In the Jupyter Notebook below, get the page object for the E.T. The Extra-Terrestial Wikipedia page. Here is the
+          <a href="https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial" rel="noopener noreferrer" target="_blank">
+           E.T. Wikipedia page
+          </a>
+          for easy reference.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Quiz: APIs
+         </p>
+        </h3>
+        <div>
+         <div>
+          <p>
+           <strong>
+            QUESTION:
+           </strong>
+           <p>
+            Get your code to work in the Jupyter Notebook above, then copy and paste the line of code that assigns a
+            <em>
+             wptools page object
+            </em>
+            to the variable
+            <em>
+             page
+            </em>
+            for the movie E.T. The Extra-Terrestrial, starting with and including
+            <code>
+             page =
+            </code>
+            .
+           </p>
+          </p>
+          <div class="" form-group"="">
+           <label for="answer">
+            <strong>
+             ANSWER:
+            </strong>
+           </label>
+           <textarea class="form-control" id="answer"></textarea>
+          </div>
+         </div>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <p>
+           <i>
+            NOTE: The solutions are expressed in RegEx pattern. Udacity uses these patterns to check the given answer
+           </i>
+          </p>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="16. JSON File Structure.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('15. Source: APIs (Application Programming Interfaces)')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

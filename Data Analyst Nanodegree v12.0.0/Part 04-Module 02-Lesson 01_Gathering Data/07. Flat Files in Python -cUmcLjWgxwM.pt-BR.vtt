@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.348 --> 00:00:03.914
+Ler um arquivo com valores
+separados por tabulação no Pandas
+
+00:00:03.960 --> 00:00:08.134
+é parecido com a leitura de um CVS,
+valores separados por vírgula.
+
+00:00:08.180 --> 00:00:11.925
+Ainda utilizamos "read_csv"
+e colocamos o caminho do arquivo,
+
+00:00:11.971 --> 00:00:14.677
+que é "bastofrt.tsv".
+
+00:00:14.723 --> 00:00:17.551
+A única diferença
+é a inclusão do parâmetro "sep",
+
+00:00:18.218 --> 00:00:22.079
+que desejamos
+que seja a tabulação: \t.
+
+00:00:22.125 --> 00:00:25.101
+Processaremos a célula
+e exibiremos a estrutura de dados.
+
+00:00:25.147 --> 00:00:26.467
+Pronto. Ótimo.
+

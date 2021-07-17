@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.810 --> 00:00:07.349
+Congrats. You've reached the end of our lesson on gathering data,
+
+00:00:07.349 --> 00:00:09.299
+the first step of the data wrangling process.
+
+00:00:09.300 --> 00:00:12.185
+You gather data from multiple different sources,
+
+00:00:12.185 --> 00:00:14.535
+you extract the data from a file handed to you,
+
+00:00:14.535 --> 00:00:16.484
+you scrape data off of a web page,
+
+00:00:16.484 --> 00:00:18.195
+downloaded files from the internet,
+
+00:00:18.195 --> 00:00:20.480
+and accessed data from an API,
+
+00:00:20.480 --> 00:00:22.245
+then put it all in a database.
+
+00:00:22.245 --> 00:00:26.125
+And all of this data was in completely different formats: TSV,
+
+00:00:26.125 --> 00:00:30.359
+HTML, TXT, JSON, then eventually a database.
+
+00:00:30.359 --> 00:00:34.649
+Becoming a master data gatherer requires a bunch of skills since data
+
+00:00:34.649 --> 00:00:39.119
+comes in so many different formats and from so many different sources in practice.
+
+00:00:39.119 --> 00:00:41.114
+So keep up the awesome work.
+
+00:00:41.115 --> 00:00:43.140
+This stuff's not easy.
+
+00:00:43.140 --> 00:00:44.429
+In the next lesson,
+
+00:00:44.429 --> 00:00:49.000
+you're going to put on your detective cap and assess a completely new exciting dataset.
+

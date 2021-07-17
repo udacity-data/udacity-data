@@ -1,0 +1,283 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.575
+Gathering data from text files in Python means opening and reading from files.
+
+00:00:05.575 --> 00:00:07.875
+If you're using Pandas like we are here,
+
+00:00:07.875 --> 00:00:13.129
+then this also means storing the text data you just read in a Pandas data frame.
+
+00:00:13.130 --> 00:00:17.295
+We have 88 Roger Ebert reviews to open and read.
+
+00:00:17.295 --> 00:00:19.560
+We'll need a loop to iterate through all of
+
+00:00:19.559 --> 00:00:22.769
+the files in this folder to open and read each.
+
+00:00:22.769 --> 00:00:25.814
+There are two main ways of doing this.
+
+00:00:25.815 --> 00:00:30.789
+One using the OS library and the other using a library called glob.
+
+00:00:30.789 --> 00:00:35.089
+We've been using os.listdir in this lesson so far.
+
+00:00:35.090 --> 00:00:36.935
+This is good if you're sure you want to open
+
+00:00:36.935 --> 00:00:39.395
+every file in the folder, like our case here.
+
+00:00:39.395 --> 00:00:43.630
+Every file in this folder is a Roger Ebert review text file.
+
+00:00:43.630 --> 00:00:47.100
+But let's switch it up here and use glob instead.
+
+00:00:47.100 --> 00:00:52.395
+The glob library allows for Unix-style pathname pattern expansion,
+
+00:00:52.395 --> 00:00:53.825
+which is a fancy way of saying,
+
+00:00:53.825 --> 00:00:59.780
+using something called glob patterns to specify sets of filenames.
+
+00:00:59.780 --> 00:01:03.725
+These glob patterns use something called wildcard characters.
+
+00:01:03.725 --> 00:01:08.540
+Being introduced to documentation and looking through it like this can be overwhelming,
+
+00:01:08.540 --> 00:01:15.032
+so I just want you to focus on this one thing here for now, glob.glob.
+
+00:01:15.031 --> 00:01:19.099
+This returns a list of path name that match pathname, i.e.
+
+00:01:19.099 --> 00:01:21.579
+the string parameter you pass in here,
+
+00:01:21.579 --> 00:01:24.239
+this is where the glob pattern goes.
+
+00:01:24.239 --> 00:01:25.719
+How can we use this?
+
+00:01:25.719 --> 00:01:28.000
+We want all file names that end in.txt,
+
+00:01:28.000 --> 00:01:31.844
+which in this Ebert reviews folder, is all of them.
+
+00:01:31.844 --> 00:01:34.929
+And because glob.glob returns a list,
+
+00:01:34.930 --> 00:01:37.565
+we can loop through that directly here.
+
+00:01:37.564 --> 00:01:40.459
+Here's that wildcard in the glob pattern.
+
+00:01:40.459 --> 00:01:43.143
+Everything in the folder, ebert_reviews,
+
+00:01:43.144 --> 00:01:46.792
+then every single file that ends in.txt.
+
+00:01:46.792 --> 00:01:51.840
+This star means match any string of any length.
+
+00:01:51.840 --> 00:01:55.719
+Let's just print out the paths to all of these files here using glob.
+
+00:01:55.719 --> 00:01:57.924
+You can imagine how useful this would be if not
+
+00:01:57.924 --> 00:02:01.524
+every file in this folder ended in.txt, for example.
+
+00:02:01.525 --> 00:02:07.440
+You can pass this entire path for each file into the open function in Python.
+
+00:02:07.439 --> 00:02:11.597
+While we've been opening files like this, with open,
+
+00:02:11.598 --> 00:02:13.480
+then the path to the file, then,
+
+00:02:13.479 --> 00:02:16.514
+as file, or whatever file handle you used.
+
+00:02:16.514 --> 00:02:19.282
+In Python 3, when opening text to read,
+
+00:02:19.282 --> 00:02:22.709
+you should actually always use open with an explicit encoding,
+
+00:02:22.710 --> 00:02:25.849
+which comes after this encoding parameter.
+
+00:02:25.849 --> 00:02:29.039
+Doing so means you get correctly decoded Unicode,
+
+00:02:29.039 --> 00:02:30.824
+or an error right off the bat,
+
+00:02:30.824 --> 00:02:33.354
+making it much easier to debug.
+
+00:02:33.354 --> 00:02:36.509
+Again, we haven't been doing this earlier in the lesson because I didn't
+
+00:02:36.509 --> 00:02:39.983
+want to overload you with information about encodings,
+
+00:02:39.983 --> 00:02:41.245
+but now is a good time to start.
+
+00:02:41.245 --> 00:02:44.879
+And going forward, all of your opening code should be like this.
+
+00:02:44.879 --> 00:02:46.694
+What's the actual encoding?
+
+00:02:46.694 --> 00:02:49.164
+That depends on the source of the text.
+
+00:02:49.164 --> 00:02:54.234
+Let's use Roger Ebert's review for the movie Casablanca as a working example.
+
+00:02:54.235 --> 00:02:55.950
+But keep in mind, this applies to all of
+
+00:02:55.949 --> 00:02:58.185
+these files because they are all from the same website.
+
+00:02:58.185 --> 00:03:00.180
+If we inspect this page's source,
+
+00:03:00.180 --> 00:03:03.165
+which you can do in various browsers by right clicking
+
+00:03:03.164 --> 00:03:06.810
+and selecting View page source or something of like,
+
+00:03:06.810 --> 00:03:10.569
+you'll find that the encoding here is utf-8.
+
+00:03:10.569 --> 00:03:15.174
+Great. Let's open up the text file for this movie, Casablanca.
+
+00:03:15.175 --> 00:03:19.650
+We actually don't want all of this text data in one big chunk though,
+
+00:03:19.650 --> 00:03:22.134
+which would be done like this,
+
+00:03:22.133 --> 00:03:25.589
+file.read, which we can check for one of the files in
+
+00:03:25.590 --> 00:03:30.224
+this glob loop with a print statement and then a break from the loop.
+
+00:03:30.224 --> 00:03:33.134
+There is the entirety of the Wizard of Oz file,
+
+00:03:33.134 --> 00:03:35.509
+which is the first file in the folder.
+
+00:03:35.509 --> 00:03:38.074
+Instead, we want the first line, a.k.a.
+
+00:03:38.074 --> 00:03:40.675
+the movie title, the second line, a.k.a.
+
+00:03:40.675 --> 00:03:45.609
+the URL, and then everything from the third line onwards, a.k.a.
+
+00:03:45.610 --> 00:03:49.445
+the review text, as separate pieces of data,
+
+00:03:49.444 --> 00:03:52.114
+so we can't just use file.read.
+
+00:03:52.115 --> 00:03:53.700
+Since text files are separated by
+
+00:03:53.699 --> 00:03:58.769
+newline characters and the file object returned from with open,
+
+00:03:58.770 --> 00:04:01.020
+as file, is an iterator,
+
+00:04:01.020 --> 00:04:03.675
+we can read the file line by line.
+
+00:04:03.675 --> 00:04:05.855
+If you just want to read one line,
+
+00:04:05.854 --> 00:04:10.704
+you use.readline, like so, file.readline.
+
+00:04:10.705 --> 00:04:14.235
+Let's check this out using the print and break strategy again.
+
+00:04:14.235 --> 00:04:17.585
+There is the title of the movie on the first line of the file,
+
+00:04:17.584 --> 00:04:19.859
+and it's actually a bit of white space below here,
+
+00:04:19.860 --> 00:04:22.759
+which is actually the \n,
+
+00:04:22.759 --> 00:04:24.649
+or the newline character.
+
+00:04:24.649 --> 00:04:27.764
+We can get rid of that by slicing it off at the end of these string.
+
+00:04:27.764 --> 00:04:30.639
+There we go, we've got the movie title.
+
+00:04:30.639 --> 00:04:34.300
+Next, you're going to grab the URL and the full review text.
+
+00:04:34.300 --> 00:04:39.125
+But before that, recall that we want all this data in a Pandas data frame,
+
+00:04:39.125 --> 00:04:40.697
+so we need to build one.
+
+00:04:40.697 --> 00:04:44.060
+The most computationally efficient way to do that is first to create
+
+00:04:44.060 --> 00:04:49.459
+an empty list then populate that list one by one as we iterate through this loop,
+
+00:04:49.459 --> 00:04:51.834
+and we'll fill this list with dictionaries.
+
+00:04:51.834 --> 00:04:56.060
+That list of dictionaries will later be converted to a Pandas data frame,
+
+00:04:56.060 --> 00:04:59.009
+all at once, once all of the data has been gathered.
+
+00:04:59.009 --> 00:05:02.629
+Now, it's your turn. Your task is to grab the review URL,
+
+00:05:02.629 --> 00:05:05.029
+and then the full review text,
+
+00:05:05.029 --> 00:05:08.159
+and then append it to the list of dictionaries.
+

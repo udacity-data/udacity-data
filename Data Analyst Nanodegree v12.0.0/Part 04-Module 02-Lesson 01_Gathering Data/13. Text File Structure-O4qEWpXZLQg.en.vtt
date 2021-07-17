@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.669
+A text file refers to a file that uses
+
+00:00:02.669 --> 00:00:05.894
+a specific character set and contains no formatting,
+
+00:00:05.894 --> 00:00:07.604
+like italics or bolding.
+
+00:00:07.605 --> 00:00:09.165
+It also, has no media,
+
+00:00:09.164 --> 00:00:10.679
+like images or video.
+
+00:00:10.679 --> 00:00:16.390
+Lines of text are separated by newline characters or backslash end in Python.
+
+00:00:16.390 --> 00:00:21.010
+These characters are invisible in most software applications, like this text editor.
+
+00:00:21.010 --> 00:00:22.480
+And speaking of text editors,
+
+00:00:22.480 --> 00:00:27.050
+text files can be viewed and edited in simple text editors, which makes sense.
+
+00:00:27.050 --> 00:00:29.949
+Flat files, like our TSB file pictured here,
+
+00:00:29.949 --> 00:00:31.875
+are technically text files,
+
+00:00:31.875 --> 00:00:34.159
+but they have a specific structure.
+
+00:00:34.159 --> 00:00:38.534
+These Roger Ebert review text files though are just blobs of text,
+
+00:00:38.534 --> 00:00:43.144
+no defined structure like the tabular structure in the TSB format.
+
+00:00:43.145 --> 00:00:46.040
+Right now, you're going to focus on this no structure,
+
+00:00:46.039 --> 00:00:48.729
+just a blob of text kind of text file.
+
+00:00:48.729 --> 00:00:51.814
+But know that all of the techniques you apply here
+
+00:00:51.814 --> 00:00:55.519
+can be done with any text file regardless of structure.
+
+00:00:55.520 --> 00:00:57.620
+Regarding the specific character set,
+
+00:00:57.619 --> 00:01:01.774
+have you ever opened a document and its characters are all garbled like this?
+
+00:01:01.774 --> 00:01:03.844
+Like just a bunch of question marks in a row.
+
+00:01:03.844 --> 00:01:06.914
+Or a bunch of weird characters like these here.
+
+00:01:06.915 --> 00:01:09.005
+That's because your text editor, browser,
+
+00:01:09.004 --> 00:01:13.039
+or word processor or whatever else that's trying to read the document is assuming
+
+00:01:13.040 --> 00:01:16.010
+the wrong encoding or the wrong scheme for
+
+00:01:16.010 --> 00:01:20.385
+converting the character sets bits to letters and numbers.
+
+00:01:20.385 --> 00:01:25.290
+You simply need to select the right encoding to display the document properly.
+
+00:01:25.290 --> 00:01:28.215
+Character sets and encodings are two things that
+
+00:01:28.215 --> 00:01:31.859
+every programmer needs to be aware of when working with any text data,
+
+00:01:31.859 --> 00:01:36.950
+including flat files like CSV files and also HTML and Json,
+
+00:01:36.950 --> 00:01:40.369
+the latter most of which we haven't covered yet, but we will soon.
+
+00:01:40.370 --> 00:01:42.885
+I've provided links to two popular articles.
+
+00:01:42.885 --> 00:01:46.945
+This one. And this one.
+
+00:01:46.944 --> 00:01:52.039
+These articles make the point loud and clear.
+
+00:01:52.040 --> 00:01:55.160
+Take a second to read this.
+
+00:01:56.459 --> 00:02:03.593
+This article here by Joel Spolsky is entertaining and lighter on the technical details,
+
+00:02:03.593 --> 00:02:06.319
+all of which you don't necessarily need to know.
+
+00:02:06.319 --> 00:02:09.814
+And this second one, which was actually built in response to the first one,
+
+00:02:09.814 --> 00:02:11.689
+fills in the technical gaps.
+
+00:02:11.689 --> 00:02:15.000
+Check them both out if you're not familiar with these topics.
+

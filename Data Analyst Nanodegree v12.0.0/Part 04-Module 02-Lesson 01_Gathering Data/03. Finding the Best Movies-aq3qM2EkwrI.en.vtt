@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.084
+It's Sunday night. You just had a nice meal,
+
+00:00:03.084 --> 00:00:05.219
+maybe some dessert, and you're on the couch with
+
+00:00:05.219 --> 00:00:08.184
+some popcorn and you want to watch a movie.
+
+00:00:08.185 --> 00:00:10.165
+How do you pick what to watch?
+
+00:00:10.164 --> 00:00:12.059
+Being a data driven person,
+
+00:00:12.060 --> 00:00:15.705
+I love to check the ratings and reviews on Rotten Tomatoes,
+
+00:00:15.705 --> 00:00:18.510
+which is a popular movie rating website.
+
+00:00:18.510 --> 00:00:21.290
+This list they have here is so useful.
+
+00:00:21.289 --> 00:00:25.064
+The Rotten Tomatoes top 100 movies of all time list.
+
+00:00:25.065 --> 00:00:30.410
+As written here, movies with 40 or more critic reviews are eligible for this list.
+
+00:00:30.410 --> 00:00:32.640
+That's critic reviews, so ratings from
+
+00:00:32.640 --> 00:00:37.219
+regular movie watchers like you and me aren't included in these calculations.
+
+00:00:37.219 --> 00:00:41.280
+It's sorted by this adjusted score metric which combines
+
+00:00:41.280 --> 00:00:46.135
+the rating and number of critic reviews for each movie to create this adjusted score.
+
+00:00:46.134 --> 00:00:48.479
+The idea being that movies with fewer critic ratings have
+
+00:00:48.479 --> 00:00:52.324
+an easier path to getting that 100% score or close to it.
+
+00:00:52.325 --> 00:00:54.270
+Let's scroll a bit here.
+
+00:00:54.270 --> 00:00:57.390
+Okay, so E.T., I've never actually seen
+
+00:00:57.390 --> 00:01:01.784
+Steven Spielberg's 1982 masterpiece despite hearing lots about it.
+
+00:01:01.784 --> 00:01:07.295
+It's currently 11th on this list with a 98% rating and 114 critic reviews.
+
+00:01:07.295 --> 00:01:11.370
+Let's check it out. Okay, so there's that 98% rating.
+
+00:01:11.370 --> 00:01:13.165
+This number is a bit deceiving though.
+
+00:01:13.165 --> 00:01:15.450
+It's actually the Tomatometer score,
+
+00:01:15.450 --> 00:01:16.680
+which is the percentage of
+
+00:01:16.680 --> 00:01:20.715
+approved Tomatometer critics who have given the movie a positive review.
+
+00:01:20.715 --> 00:01:24.790
+But okay, there's this audience score here, 72%.
+
+00:01:24.790 --> 00:01:27.710
+That metric wasn't included in that top 100 list.
+
+00:01:27.709 --> 00:01:29.634
+That's a pretty massive gap.
+
+00:01:29.635 --> 00:01:31.725
+Maybe this movie isn't that amazing.
+
+00:01:31.724 --> 00:01:36.269
+Also, wouldn't it be cool to compare this critic's score and also the audience score
+
+00:01:36.269 --> 00:01:41.409
+for all of these movies to see which movie really truly is the best?
+
+00:01:41.409 --> 00:01:44.640
+Also to find the worst best movie if you will.
+
+00:01:44.640 --> 00:01:47.295
+I'm picturing a scatterplot with four quadrants,
+
+00:01:47.295 --> 00:01:50.704
+like this one, but with different axis labels and values.
+
+00:01:50.704 --> 00:01:56.469
+We'd have audience score on the horizontal axis and critics score on the vertical one.
+
+00:01:56.469 --> 00:01:58.659
+That would put amazing movies with
+
+00:01:58.659 --> 00:02:02.394
+high audience and critics scores in the top right quadrant
+
+00:02:02.394 --> 00:02:05.140
+then critically underrated movies in the bottom
+
+00:02:05.140 --> 00:02:09.009
+right quadrant with high audience scores and low critics scores,
+
+00:02:09.009 --> 00:02:11.379
+and critically overrated movies in the top
+
+00:02:11.379 --> 00:02:15.370
+left with low audience scores and high critics scores.
+
+00:02:15.370 --> 00:02:19.090
+Also, I don't trust every single reviewer necessarily.
+
+00:02:19.090 --> 00:02:20.875
+One person I do though,
+
+00:02:20.875 --> 00:02:23.259
+the late great Roger Ebert.
+
+00:02:23.259 --> 00:02:24.879
+For lots of people,
+
+00:02:24.879 --> 00:02:28.659
+Roger Ebert's was the only review they needed because he explained the movie in
+
+00:02:28.659 --> 00:02:30.759
+such a way that they would know whether they would
+
+00:02:30.759 --> 00:02:33.969
+like it or not, his opinion notwithstanding.
+
+00:02:33.969 --> 00:02:37.120
+Wouldn't it be neat if we had a word cloud for each of the movies in
+
+00:02:37.120 --> 00:02:43.390
+that top 100 list with Roger Ebert's review text in that word cloud for each movie?
+
+00:02:43.389 --> 00:02:46.944
+This cool little word cloud generator in Python can help us out.
+
+00:02:46.944 --> 00:02:49.209
+Having a word cloud for each movie would give us
+
+00:02:49.210 --> 00:02:51.895
+a snapshot of what makes each movie great.
+
+00:02:51.895 --> 00:02:55.870
+This word cloud library also has the ability to use stencils,
+
+00:02:55.870 --> 00:02:59.365
+so we could take the movie poster for each movie and surround it with
+
+00:02:59.365 --> 00:03:03.950
+a stencil and then put the word cloud around the poster image.
+
+00:03:03.949 --> 00:03:07.280
+That'd be really cool. So, to create both of these visualizations,
+
+00:03:07.280 --> 00:03:09.680
+the data is in a few different spots and
+
+00:03:09.680 --> 00:03:12.375
+it will require some craftiness to gather it all,
+
+00:03:12.375 --> 00:03:14.289
+but you can definitely do it.
+
+00:03:14.289 --> 00:03:16.844
+This is actually going to be so awesome.
+
+00:03:16.844 --> 00:03:19.180
+I'm so excited for you to see the final products.
+

@@ -1,0 +1,182 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.367 --> 00:00:04.067
+O objetivo é pegar imagens
+de pôsteres de filmes de algum modo.
+
+00:00:04.100 --> 00:00:06.700
+Aqui temos
+o de "E.T. - O Extraterrestre".
+
+00:00:06.733 --> 00:00:10.800
+O Rotten Tomatoes tem uma API,
+
+00:00:10.833 --> 00:00:13.900
+que fornece notas do público,
+
+00:00:13.933 --> 00:00:19.000
+então você podia ter usado a API
+em vez do site do Rotten Tomatoes,
+
+00:00:19.033 --> 00:00:21.100
+como fizemos antes.
+
+00:00:21.133 --> 00:00:25.200
+Mas essa API não fornece
+imagens e pôsteres, infelizmente.
+
+00:00:25.233 --> 00:00:29.333
+E mesmo que fornecesse, pede
+autorização para uso
+
+00:00:29.367 --> 00:00:33.367
+por meio de um formulário
+de solicitação.
+
+00:00:33.400 --> 00:00:35.200
+Isso não é incomum.
+
+00:00:35.233 --> 00:00:37.633
+Essa API não seria
+escalável o bastante
+
+00:00:37.667 --> 00:00:39.767
+para usarmos no curso.
+
+00:00:39.800 --> 00:00:42.833
+Quando se tem escolha,
+a regra é usar a API
+
+00:00:42.867 --> 00:00:44.367
+em vez de extrair dados,
+
+00:00:44.400 --> 00:00:47.200
+como essa resposta no
+Stack Overflow sugere.
+
+00:00:47.233 --> 00:00:50.500
+Pause o vídeo
+e leia a resposta, se quiser.
+
+00:00:51.700 --> 00:00:55.033
+Extrair é inseguro, e destrói
+novos projetos de layout web,
+
+00:00:55.067 --> 00:00:58.033
+porque o HTML básico
+foi alterado.
+
+00:00:58.067 --> 00:01:01.300
+Mas imagine que podemos acessar
+a API do Rotten Tomatoes.
+
+00:01:02.400 --> 00:01:05.833
+APIs à esquerda
+e suas bibliotecas de acesso,
+
+00:01:05.867 --> 00:01:07.933
+como o exemplo à direita,
+
+00:01:07.967 --> 00:01:12.067
+permitem que programadores
+acessem dados de forma muito fácil.
+
+00:01:12.100 --> 00:01:15.233
+Você vai aprender a diferença
+entre API e biblioteca de acesso
+
+00:01:15.267 --> 00:01:16.733
+em um segundo.
+
+00:01:16.767 --> 00:01:19.433
+Antes um exemplo
+do quanto seria simples
+
+00:01:19.467 --> 00:01:22.800
+pegar as notas do público
+usando a API do Rotten Tomatoes
+
+00:01:22.833 --> 00:01:28.133
+e a biblioteca de acesso,
+chamada "rtsimple".
+
+00:01:28.167 --> 00:01:32.300
+Como escrito aqui, "rtsimple"
+é um wrapper escrito em Python
+
+00:01:32.333 --> 00:01:34.433
+para a API do Rotten Tomatoes.
+
+00:01:34.467 --> 00:01:38.933
+Primeiro importamos a biblioteca
+"rtsimple" com o codinome "rt",
+
+00:01:38.967 --> 00:01:41.033
+então configuramos
+nossa chave de API.
+
+00:01:41.067 --> 00:01:43.300
+Isso é o que o Rotten Tomatoes
+esconde por trás
+
+00:01:43.333 --> 00:01:46.333
+do formulário de solicitação
+que veta o processo.
+
+00:01:46.367 --> 00:01:49.400
+E criamos esse objeto de filme,
+usando um pouco de código
+
+00:01:49.433 --> 00:01:53.867
+e a ID do filme,
+que, para "E.T.", é 10.489.
+
+00:01:53.900 --> 00:01:57.000
+Então, acessamos as notas
+usando .ratings
+
+00:01:57.033 --> 00:01:59.667
+e audience_score
+entre colchetes.
+
+00:01:59.700 --> 00:02:02.733
+Se tivéssemos uma chave de API
+e fôssemos processar a célula,
+
+00:02:02.767 --> 00:02:07.133
+a nota audience_score 72 de "E.T."
+seria impressa aqui embaixo.
+
+00:02:07.167 --> 00:02:09.100
+Comparando à extração
+é menos inseguro
+
+00:02:09.133 --> 00:02:11.533
+e apesar de beautifulsoup
+ser bem simples,
+
+00:02:11.567 --> 00:02:14.233
+esse código é mais intuitivo.
+
+00:02:14.267 --> 00:02:17.500
+Como não podemos usar a API
+do Rotten Tomatoes nesta aula,
+
+00:02:17.533 --> 00:02:21.533
+entre na Wikipedia,
+especificamente na MediaWiki.
+
+00:02:21.567 --> 00:02:25.400
+MediaWiki é uma API que hospeda
+todos os dados da Wikipedia.
+
+00:02:25.433 --> 00:02:28.400
+A seguir, você vai entender
+como APIs funcionam por dentro
+
+00:02:28.433 --> 00:02:32.067
+usando a MediaWiki e uma biblioteca
+de acesso popular para o Python.
+

@@ -1,0 +1,95 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:03.167
+FONTE
+BAIXANDO ARQUIVOS DA INTERNET
+
+00:00:03.467 --> 00:00:05.800
+Agora podemos começar o jogo
+da nuvem de palavras
+
+00:00:05.833 --> 00:00:07.367
+das críticas de Roger Ebert.
+
+00:00:07.400 --> 00:00:10.400
+Você vai precisar do texto
+de cada crítica dele
+
+00:00:10.433 --> 00:00:12.967
+para cada filme no Top 100 Filmes
+de Todos os Tempos,
+
+00:00:13.000 --> 00:00:14.167
+do Rotten Tomatoes,
+
+00:00:14.200 --> 00:00:16.000
+que estão no site dele.
+
+00:00:16.033 --> 00:00:21.833
+Sorte a sua que eu juntei todos
+esses textos em 100 arquivos .txt.
+
+00:00:21.867 --> 00:00:24.567
+Eu os coloquei em um site
+hospedado pelo Udacity,
+
+00:00:24.600 --> 00:00:27.067
+e você irá baixá-los
+programaticamente.
+
+00:00:27.100 --> 00:00:30.267
+Você pode clicar e baixar
+cada arquivo manualmente,
+
+00:00:30.300 --> 00:00:32.067
+mas isso demoraria muito,
+
+00:00:32.100 --> 00:00:35.367
+ainda mais se outra pessoa quiser
+reproduzir sua análise.
+
+00:00:35.400 --> 00:00:37.500
+Se alguém quiser verificar
+seu trabalho,
+
+00:00:37.533 --> 00:00:41.400
+pode baixar todos os arquivos
+executando algumas linhas de código.
+
+00:00:41.433 --> 00:00:43.967
+Baixar arquivos da Internet
+programaticamente
+
+00:00:44.000 --> 00:00:47.100
+é melhor para a escala
+e a reprodução.
+
+00:00:47.133 --> 00:00:50.533
+Na prática, você só precisa
+saber de uma coisa
+
+00:00:50.567 --> 00:00:54.400
+para baixar arquivos assim:
+a biblioteca Requests do Python.
+
+00:00:54.433 --> 00:00:56.067
+Saber um pouco de HTTP,
+
+00:00:56.100 --> 00:00:58.733
+Protocolo de Transferência
+de Hipertexto,
+
+00:00:58.767 --> 00:01:01.500
+vai ajudá-lo a entender
+o que se passa por aqui.
+
+00:01:01.533 --> 00:01:04.433
+A seguir, você aprenderá
+o básico de HTTP
+
+00:01:04.467 --> 00:01:06.600
+e da biblioteca
+Requests do Python.
+

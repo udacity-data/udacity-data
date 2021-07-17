@@ -1,0 +1,72 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:03.233
+Já que a URL da crítica
+está na segunda linha,
+
+00:00:03.267 --> 00:00:07.033
+vamos usar readline de novo para
+ler a linha seguinte do arquivo.
+
+00:00:07.067 --> 00:00:11.300
+Novamente, há a linha de caracteres
+que não queremos no fim do string.
+
+00:00:11.333 --> 00:00:13.800
+Vamos cortá-la
+como fizemos acima.
+
+00:00:13.833 --> 00:00:16.533
+E para ler o resto das linhas
+no arquivo de texto,
+
+00:00:16.567 --> 00:00:19.767
+usamos file.read.
+
+00:00:19.800 --> 00:00:23.800
+Adicionamos essas variáveis
+no corpo do loop para um dicionário
+
+00:00:23.833 --> 00:00:26.400
+e anexamos o dicionário
+à "df_list".
+
+00:00:26.433 --> 00:00:27.933
+Depois de completar esse loop,
+
+00:00:27.967 --> 00:00:30.167
+podemos converter
+a lista de dicionários
+
+00:00:30.200 --> 00:00:32.167
+para uma estrutura de dados
+do Pandas.
+
+00:00:32.200 --> 00:00:34.800
+Daí processamos a célula
+e pronto.
+
+00:00:34.833 --> 00:00:37.833
+Mas antes de executarmos o código,
+temos que importar Pandas
+
+00:00:37.867 --> 00:00:39.633
+como um alias PD.
+
+00:00:39.667 --> 00:00:43.233
+E com os parâmetros de coluna
+especificando a ordem
+
+00:00:43.267 --> 00:00:45.633
+dos títulos das colunas,
+então a URL da crítica,
+
+00:00:45.667 --> 00:00:47.133
+o texto da crítica,
+
+00:00:47.167 --> 00:00:49.967
+a estrutura de dados recém-criada
+é exibida abaixo.
+

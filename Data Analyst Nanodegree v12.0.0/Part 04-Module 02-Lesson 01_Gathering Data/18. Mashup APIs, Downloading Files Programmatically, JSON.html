@@ -1,0 +1,687 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Mashup: APIs, Downloading Files Programmatically, JSON
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Gathering Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Lesson Outline.html">
+       02. Lesson Outline
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Dataset Finding the Best Movies.html">
+       03. Dataset: Finding the Best Movies
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Navigating Your Working Directory and File IO.html">
+       04. Navigating Your Working Directory and File I/O
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Source Files on Hand.html">
+       05. Source: Files on Hand
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Flat File Structure.html">
+       06. Flat File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Flat Files in Python.html">
+       07. Flat Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Source Web Scraping.html">
+       08. Source: Web Scraping
+      </a>
+     </li>
+     <li class="">
+      <a href="09. HTML File Structure.html">
+       09. HTML File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="10. HTML Files in Python.html">
+       10. HTML Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Flashforward 1.html">
+       11. Flashforward 1
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Source Downloading Files from the Internet.html">
+       12. Source: Downloading Files from the Internet
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Text File Structure.html">
+       13. Text File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Text Files in Python.html">
+       14. Text Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Source APIs (Application Programming Interfaces).html">
+       15. Source: APIs (Application Programming Interfaces)
+      </a>
+     </li>
+     <li class="">
+      <a href="16. JSON File Structure.html">
+       16. JSON File Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="17. JSON Files in Python.html">
+       17. JSON Files in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Mashup APIs, Downloading Files Programmatically, JSON.html">
+       18. Mashup: APIs, Downloading Files Programmatically, JSON
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Mashup Solution.html">
+       19. Mashup Solution
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Flashforward 2.html">
+       20. Flashforward 2
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Storing Data.html">
+       21. Storing Data
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Relational Database Structure.html">
+       22. Relational Database Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Relational Databases in Python.html">
+       23. Relational Databases in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Other File Formats.html">
+       24. Other File Formats
+      </a>
+     </li>
+     <li class="">
+      <a href="25. You Can Iterate.html">
+       25. You Can Iterate
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Gathering Summary.html">
+       26. Gathering Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Conclusion.html">
+       27. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          18. Mashup: APIs, Downloading Files Programmatically, JSON
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="mashup-apis-downloading-files-programmatically-and-json">
+          Mashup: APIs, Downloading Files Programmatically, and JSON
+         </h2>
+         <p>
+          With APIs, downloading files programmatically from the internet, and JSON under your belt, you now have all of the knowledge to download all of the movie poster images for the Roger Ebert review word clouds. This is your next task.
+         </p>
+         <p>
+          There are two key things to be aware of before you begin:
+         </p>
+         <h3 id="1-wikipedia-page-titles">
+          1. Wikipedia Page Titles
+         </h3>
+         <p>
+          To access Wikipedia page data via the MediaWiki API with
+          <em>
+           wptools
+          </em>
+          (
+          <em>
+           phew
+          </em>
+          , that was a mouthful), you need each movie's Wikipedia page title, i.e., what comes after the last slash in
+          <strong>
+           en.wikipedia.org/wiki/
+          </strong>
+          in the URL. For this lesson, I've compiled all of these titles for each of the movies in the Top 100 for you.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screenshot-2017-09-27-00.16.09.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="2-downloading-image-files">
+          2. Downloading Image Files
+         </h3>
+         <p>
+          Downloading images may seem tricky from a reading and writing perspective, in comparison to text files which you can read line by line, for example. But in reality, image files aren't special—they're just binary files. To interact with them, you don't need special software (like Photoshop or something) that "understands" images. You can use regular file opening, reading, and writing techniques, like this:
+         </p>
+         <pre><code class="python language-python">import requests
+r = requests.get(url)
+with open(folder_name + '/' + filename, 'wb') as f:
+        f.write(r.content)</code></pre>
+         <p>
+          But this technique can be error-prone. It will work most of the time, but sometimes the file you write to will be damaged. This happened to me when preparing this lesson:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/screenshot-2017-09-26-17.23.26.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          This type of error is why the
+          <em>
+           requests
+          </em>
+          library maintainers
+          <a href="http://docs.python-requests.org/en/latest/user/quickstart/#binary-response-content" rel="noopener noreferrer" target="_blank">
+           recommend
+          </a>
+          using the
+          <a href="https://pillow.readthedocs.io/" rel="noopener noreferrer" target="_blank">
+           <em>
+            PIL
+           </em>
+          </a>
+          library (short for Pillow) and
+          <code>
+           BytesIO
+          </code>
+          from the
+          <em>
+           io
+          </em>
+          library for non-text requests, like images. They recommend that you access the response body as bytes, for non-text requests. For example, to create an image from binary data returned by a request:
+         </p>
+         <pre><code class="python language-python">import requests
+from PIL import Image
+from io import BytesIO
+r = requests.get(url)
+i = Image.open(BytesIO(r.content))</code></pre>
+         <p>
+          Though you may still encounter a similar file error, this code above will at least warn us with an error message, at which point we can manually download the problematic images.
+         </p>
+         <h3 id="quiz">
+          Quiz
+         </h3>
+         <p>
+          Let's gather the last piece of data for the Roger Ebert review word clouds now: the movie poster image files. Let's also keep each image's URL to add to the master DataFrame later.
+         </p>
+         <p>
+          Though we're going to use a loop to minimize repetition, here's how the major parts inside that loop will work, in order:
+         </p>
+         <ol>
+          <li>
+           We're going to query the MediaWiki API using
+           <em>
+            wptools
+           </em>
+           to get a movie poster URL via each page object's
+           <code>
+            image
+           </code>
+           attribute.
+          </li>
+          <li>
+           Using that URL, we'll programmatically download that image into a folder called
+           <em>
+            bestofrt_posters
+           </em>
+           .
+          </li>
+         </ol>
+         <p>
+          <strong>
+           This one's a doozy, so take your time.
+          </strong>
+          If you get stuck, the solution is presented in full Jupyter Notebook-form on the next page.
+         </p>
+         <p>
+          The Jupyter Notebook below contains template code that:
+         </p>
+         <ul>
+          <li>
+           Contains
+           <em>
+            title_list
+           </em>
+           , which is a list of all of the Wikipedia page titles for each movie in the Rotten Tomatoes Top 100 Movies of All Time list. This list is in the same order as the Top 100.
+          </li>
+          <li>
+           Creates an empty list,
+           <em>
+            df_list
+           </em>
+           , to which dictionaries will be appended. This list of dictionaries will eventually be converted to a pandas DataFrame (this is the
+           <a href="https://stackoverflow.com/a/28058264" rel="noopener noreferrer" target="_blank">
+            most efficient way of building a DataFrame row by row
+           </a>
+           ).
+          </li>
+          <li>
+           Creates an empty folder,
+           <em>
+            bestofrt_posters
+           </em>
+           , to store the downloaded movie poster image files.
+          </li>
+          <li>
+           Creates an empty dictionary,
+           <em>
+            image_errors
+           </em>
+           , to fill to keep track of movie poster image URLs that don't work.
+          </li>
+          <li>
+           Loops through the Wikipedia page titles in
+           <em>
+            title_list
+           </em>
+           and:
+           <ul>
+            <li>
+             Stores the ranking of that movie in the Top 100 list based on its position in
+             <em>
+              title_list
+             </em>
+             . Ranking is needed so we can join this DataFrame with the master DataFrame later. We can't join on title because the titles of the Rotten Tomatoes pages and the Wikipedia pages differ.
+            </li>
+            <li>
+             Uses
+             <a href="http://www.pythonforbeginners.com/error-handling/python-try-and-except" rel="noopener noreferrer" target="_blank">
+              <code>
+               try
+              </code>
+              and
+              <code>
+               except
+              </code>
+              blocks
+             </a>
+             to attempt to query MediaWiki for a movie poster image URL and to attempt to download that image. If the attempt fails and an error is encountered, the offending movie is documented in
+             <em>
+              image_errors
+             </em>
+             .
+            </li>
+            <li>
+             Appends a dictionary with
+             <em>
+              ranking
+             </em>
+             ,
+             <em>
+              title
+             </em>
+             , and
+             <em>
+              poster_url
+             </em>
+             as the keys and the extracted values for each as the values to
+             <em>
+              df_list
+             </em>
+             .
+            </li>
+           </ul>
+          </li>
+          <li>
+           Inspects the images that caused errors and downloads the correct image individually (either via another URL in the
+           <code>
+            image
+           </code>
+           attribute's list or a URL from Google Images)
+          </li>
+          <li>
+           Creates a DataFrame called
+           <em>
+            df
+           </em>
+           by converting
+           <em>
+            df_list
+           </em>
+           using the
+           <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html" rel="noopener noreferrer" target="_blank">
+            <code>
+             pd.DataFrame
+            </code>
+            constructor
+           </a>
+           .
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Tasks
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Task Description:
+          </h4>
+          <p>
+           Inside the "for title in title_list:" loop in the Jupyter Notebook below:
+          </p>
+         </div>
+         <form>
+          <fieldset>
+           <legend>
+            Task List:
+           </legend>
+           <div>
+            <input id="5ce631e9-ad35-4f29-ad77-c121ae4823ad--0" type="checkbox"/>
+            <label for="5ce631e9-ad35-4f29-ad77-c121ae4823ad--0">
+             <p>
+              Fill in the
+              <em>
+               images
+              </em>
+              variable. This tests your API skills.
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="5ce631e9-ad35-4f29-ad77-c121ae4823ad--1" type="checkbox"/>
+            <label for="5ce631e9-ad35-4f29-ad77-c121ae4823ad--1">
+             <p>
+              Fill in the
+              <em>
+               first_image_url
+              </em>
+              variable. This tests your JSON skills.
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="5ce631e9-ad35-4f29-ad77-c121ae4823ad--2" type="checkbox"/>
+            <label for="5ce631e9-ad35-4f29-ad77-c121ae4823ad--2">
+             <p>
+              Fill in the
+              <em>
+               r
+              </em>
+              variable. This tests your programmatic downloading skills.
+             </p>
+            </label>
+           </div>
+          </fieldset>
+         </form>
+         <div>
+          <h4>
+           Task Feedback:
+          </h4>
+          <p>
+           Great! Check your solution by running the last cell in the notebook below, if you haven't already.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div class="jumbotron">
+         <h3>
+          Workspace
+         </h3>
+         <p class="lead">
+          This section contains either a workspace (it can be a
+          <a href="http://jupyter.org/" target="_blank">
+           Jupyter
+      Notebook
+          </a>
+          workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto
+          <a href="https://github.com/udacity" target="_blank">
+           https://github.com/udacity
+          </a>
+          , so you may be able to download them there.
+         </p>
+         <h4>
+          Workspace Information:
+         </h4>
+         <ul>
+          <li>
+           <strong>
+            Default file path:
+           </strong>
+          </li>
+          <li>
+           <strong>
+            Workspace type:
+           </strong>
+           jupyter
+          </li>
+          <li>
+           <strong>
+            Opened files (when workspace is loaded):
+           </strong>
+           n/a
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="19. Mashup Solution.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('18. Mashup: APIs, Downloading Files Programmatically, JSON')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

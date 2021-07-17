@@ -1,0 +1,184 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.775
+Python for Quest library makes HTTP requests easy.
+
+00:00:04.775 --> 00:00:08.685
+It has a method called get which will send the request for us,
+
+00:00:08.685 --> 00:00:11.940
+return the contents of the file we requested, which for us,
+
+00:00:11.939 --> 00:00:16.199
+is a text file, which we can then save to a file.
+
+00:00:16.199 --> 00:00:20.054
+This is how we programmatically download a file from the Internet.
+
+00:00:20.054 --> 00:00:22.464
+Here's how it's done. It's super simple.
+
+00:00:22.464 --> 00:00:24.225
+We import the request library,
+
+00:00:24.225 --> 00:00:26.570
+and we'll actually import the OS library,
+
+00:00:26.570 --> 00:00:31.370
+too, so we can store the downloaded file in a folder called ebert_reviews.
+
+00:00:31.370 --> 00:00:35.950
+This bit of code here just creates the folder ebert_reviews if it doesn't exist already.
+
+00:00:35.950 --> 00:00:38.425
+Here comes the actual bit of request code.
+
+00:00:38.424 --> 00:00:41.254
+We use requests.get on a URL,
+
+00:00:41.255 --> 00:00:43.695
+and that returns a response.
+
+00:00:43.695 --> 00:00:45.679
+And I'll give you this you this URL here.
+
+00:00:45.679 --> 00:00:48.719
+Here is the URL for the Roger Ebert reviews
+
+00:00:48.719 --> 00:00:52.174
+text file that I saved on new Udacity's servers.
+
+00:00:52.174 --> 00:00:54.534
+So we haven't actually saved the response to anything yet,
+
+00:00:54.534 --> 00:00:57.599
+but let's take a look at what this response variable looks like.
+
+00:00:57.600 --> 00:01:00.265
+And we see response 200.
+
+00:01:00.265 --> 00:01:05.590
+200 being the HTTP status code for the request has succeeded.
+
+00:01:05.590 --> 00:01:10.829
+So that's good. So this response returned from the requests.get method.
+
+00:01:10.829 --> 00:01:12.450
+You can't see it currently,
+
+00:01:12.450 --> 00:01:14.780
+but all the text in our text file is actually in
+
+00:01:14.780 --> 00:01:19.355
+our computer's working memory right now within this response variable.
+
+00:01:19.355 --> 00:01:24.425
+It's stored in the body of the response which we can access using.content,
+
+00:01:24.424 --> 00:01:29.215
+as shown in the request library documentation. Let's check it out.
+
+00:01:29.215 --> 00:01:31.445
+And okay, there it all is.
+
+00:01:31.444 --> 00:01:33.429
+It's in bytes format.
+
+00:01:33.430 --> 00:01:36.130
+Using this and some basic file IO,
+
+00:01:36.129 --> 00:01:39.209
+we're going to save this file to our computer.
+
+00:01:39.209 --> 00:01:46.439
+So we'll open a file called 11-e.t-the-extra-terrestrial.txt, i.e.
+
+00:01:46.439 --> 00:01:49.295
+everything after the last slash in this URL.
+
+00:01:49.295 --> 00:01:51.644
+And to get everything after that last slash,
+
+00:01:51.644 --> 00:01:53.685
+we'll use Python's split function,
+
+00:01:53.685 --> 00:01:56.085
+and select the last item in the list returned.
+
+00:01:56.084 --> 00:01:58.679
+And we need to open this file which
+
+00:01:58.680 --> 00:02:01.620
+will then write the contents of the response variable to.
+
+00:02:01.620 --> 00:02:04.895
+We have to open this in WB mode, Write Binary.
+
+00:02:04.894 --> 00:02:09.764
+That's because response.content is in bytes and not text. But don't worry.
+
+00:02:09.764 --> 00:02:13.089
+When we open these files in a text editor or in Pandas later,
+
+00:02:13.090 --> 00:02:16.409
+the bytes will be rendered as human readable text.
+
+00:02:16.409 --> 00:02:21.145
+Then we write to the file handle we've opened, file.write response.
+
+00:02:21.145 --> 00:02:23.529
+content. And that should do it.
+
+00:02:23.530 --> 00:02:26.550
+That's how you download one file programmatically.
+
+00:02:26.550 --> 00:02:29.365
+Let's check the contents of our folder ebert_reviews
+
+00:02:29.365 --> 00:02:32.685
+to make sure this worked. And there it is.
+
+00:02:32.685 --> 00:02:35.460
+This.DS_Store is a hidden file that
+
+00:02:35.460 --> 00:02:38.224
+stores the attributes of our folder. Ignore that for now.
+
+00:02:38.224 --> 00:02:41.055
+And if you go to your Jupyter Notebook dashboard,
+
+00:02:41.055 --> 00:02:42.390
+and open that file,
+
+00:02:42.389 --> 00:02:46.019
+you'll see that the entirety of it was correctly downloaded.
+
+00:02:46.020 --> 00:02:48.409
+So again, that's how you download one file.
+
+00:02:48.409 --> 00:02:50.805
+But if we have lots of files to download though,
+
+00:02:50.805 --> 00:02:55.918
+like we do for all of these Ebert reviews for the top 100 Rotten Tomatoes movie list,
+
+00:02:55.918 --> 00:02:59.280
+writing a lot of these statements would be annoying.
+
+00:02:59.280 --> 00:03:02.745
+Luckily, downloading files programmatically scales well.
+
+00:03:02.745 --> 00:03:08.080
+You can use a for loop over all of the file URLs to minimize code repetition.
+
+00:03:08.080 --> 00:03:11.844
+Lucky for you, I've provided the URLs for you here.
+
+00:03:11.844 --> 00:03:13.919
+Your task now is to write this loop,
+
+00:03:13.919 --> 00:03:17.239
+and download all of the Roger Ebert review files programmatically.
+

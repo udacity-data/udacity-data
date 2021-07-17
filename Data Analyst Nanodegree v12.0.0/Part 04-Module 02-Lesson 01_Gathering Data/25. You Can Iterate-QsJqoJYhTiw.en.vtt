@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.529 --> 00:00:07.310
+Remember, data wrangling can be an iterative process.
+
+00:00:07.309 --> 00:00:09.049
+Whether you're in the gather, assess,
+
+00:00:09.050 --> 00:00:11.750
+or clean phase, you can iterate on them.
+
+00:00:11.750 --> 00:00:13.710
+So you just gathered a bunch of data.
+
+00:00:13.710 --> 00:00:16.253
+For this lesson, I handled the assessing,
+
+00:00:16.253 --> 00:00:18.725
+cleaning, then analyzing, and visualizing.
+
+00:00:18.725 --> 00:00:20.615
+But at any point in that process,
+
+00:00:20.614 --> 00:00:23.570
+I could have stopped to gather more data.
+
+00:00:23.570 --> 00:00:27.600
+Maybe we wanted different data like scraping the actual average ratings,
+
+00:00:27.600 --> 00:00:30.740
+instead of these critic and audience score metrics.
+
+00:00:30.739 --> 00:00:35.989
+These are the percentage of reviewers that gave the movie a 70% rating or higher.
+
+00:00:35.990 --> 00:00:39.050
+We get a different take on the same question.
+
+00:00:39.049 --> 00:00:42.000
+Starting small and iterating is very okay.
+

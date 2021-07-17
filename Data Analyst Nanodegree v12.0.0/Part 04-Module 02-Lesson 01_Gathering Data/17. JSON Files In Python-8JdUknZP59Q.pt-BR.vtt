@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.233 --> 00:00:04.733
+Acessar arquivos JSON em Python
+é como acessar dicionários e listas
+
+00:00:04.767 --> 00:00:06.033
+no Python.
+
+00:00:06.067 --> 00:00:09.067
+Isso porque JSON objects são
+interpretados como dicionários
+
+00:00:09.100 --> 00:00:12.800
+e JSON arrays são interpretados
+como listas.
+
+00:00:12.833 --> 00:00:16.000
+Usando o exemplo das informações
+de "E.T." na Wikipedia,
+
+00:00:16.033 --> 00:00:18.967
+que eu carreguei aqui
+como um JSON object,
+
+00:00:19.000 --> 00:00:21.933
+vamos acessar alguns dados
+dentro desse objeto.
+
+00:00:21.967 --> 00:00:24.836
+Eis o valor da bilheteria
+usando notação em colchetes.
+
+00:00:24.902 --> 00:00:28.367
+$ 792.900.000.
+
+00:00:28.400 --> 00:00:30.267
+Aqui, a chave "produzido por",
+
+00:00:30.300 --> 00:00:33.100
+que retorna um JSON array,
+que é como uma lista.
+
+00:00:33.133 --> 00:00:35.900
+O índice zero deve ser
+Kathleen Kennedy
+
+00:00:35.933 --> 00:00:38.533
+e o 1 deve ser
+Steven Spielberg.
+
+00:00:38.567 --> 00:00:42.133
+Aqui está a chave de lançamento
+cujo valor é um JSON array
+
+00:00:42.167 --> 00:00:44.167
+de JSON objects.
+
+00:00:44.200 --> 00:00:48.367
+O primeiro objeto no array é
+a data de lançamento, 26/5,
+
+00:00:48.400 --> 00:00:50.333
+e o local, Cannes.
+
+00:00:50.367 --> 00:00:55.167
+O segundo objeto no array é a data
+de lançamento nos EUA, 11/6.
+
+00:00:55.200 --> 00:00:58.033
+Isso é apenas um objeto,
+então podemos acessar essas chaves
+
+00:00:58.067 --> 00:01:00.000
+usando notação em colchetes
+novamente.
+
+00:01:00.033 --> 00:01:05.167
+Com conhecimento sobre APIs, JSON
+e baixando arquivos da internet,
+
+00:01:05.200 --> 00:01:10.233
+agora você sabe como baixar
+as imagens dos pôsteres dos filmes.
+
+00:01:10.267 --> 00:01:13.833
+Você vai fazer isso a seguir
+e vai ser muito bacana.
+

@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.044
+Given this Ebert review URL's list,
+
+00:00:03.044 --> 00:00:05.040
+the first thing to do is loop through it.
+
+00:00:05.040 --> 00:00:09.294
+Then, we'll get the HTTP response via request.get.
+
+00:00:09.294 --> 00:00:13.279
+On whatever URL, we are currently on the iteration of that loop.
+
+00:00:13.279 --> 00:00:16.320
+Then, the bit of code to open a file and write the
+
+00:00:16.320 --> 00:00:20.545
+response.content to that file is the same.
+
+00:00:20.545 --> 00:00:24.840
+And that's it, we'll process the cell and this may take a bit of time to do,
+
+00:00:24.839 --> 00:00:27.359
+downloading these files takes some time.
+
+00:00:27.359 --> 00:00:32.454
+It took my computer roughly five seconds and let's check the contents of this folder.
+
+00:00:32.454 --> 00:00:36.085
+And the're all of the text files.
+
+00:00:36.085 --> 00:00:40.935
+There should be 88, and there are.
+
+00:00:40.935 --> 00:00:46.219
+12 movies in the top 100 Rotten Tomatoes list didn't have reviews on Roger Ebert's site.
+

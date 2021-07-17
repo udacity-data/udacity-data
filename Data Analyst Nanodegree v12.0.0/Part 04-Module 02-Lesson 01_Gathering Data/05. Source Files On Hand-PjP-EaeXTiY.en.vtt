@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.100 --> 00:00:06.769
+So the inspiration for our little project here,
+
+00:00:06.769 --> 00:00:11.089
+was this Rotten Tomatoes top 100 movies of all time list. How do we get it.
+
+00:00:11.089 --> 00:00:14.884
+Rotten Tomatoes doesn't give us a file to download unfortunately.
+
+00:00:14.884 --> 00:00:17.975
+For this lesson, I'm just going to give it to you.
+
+00:00:17.975 --> 00:00:19.535
+Gathering can be complicated,
+
+00:00:19.535 --> 00:00:21.934
+but it can also be extremely easy.
+
+00:00:21.934 --> 00:00:24.649
+Sometimes you are simply just given a file.
+
+00:00:24.649 --> 00:00:28.549
+I've pre-gathered this dataset with its four columns; rank, title, rating,
+
+00:00:28.550 --> 00:00:31.295
+and number of reviews, and it's 101 rows,
+
+00:00:31.295 --> 00:00:34.969
+one for the headers and one for each of the top 100 movies.
+
+00:00:34.969 --> 00:00:40.859
+I put the data in a flat file called a TSV file which stands for tab separated values.
+
+00:00:40.859 --> 00:00:43.394
+There's a link for you to download it in the classroom.
+
+00:00:43.395 --> 00:00:46.145
+Picture this as me e-mailing this file to you,
+
+00:00:46.145 --> 00:00:48.305
+or giving it to you on a thumb drive,
+
+00:00:48.304 --> 00:00:52.280
+or you accessing the file from your company's file storage system.
+
+00:00:52.280 --> 00:00:55.740
+So point and click and download it, and we'll move on.
+
+00:00:55.740 --> 00:00:57.844
+We don't need to do it programmatically in this case,
+
+00:00:57.844 --> 00:01:00.185
+because we'll assume that this data is internal,
+
+00:01:00.185 --> 00:01:02.455
+and can't be downloaded from the Internet.
+
+00:01:02.454 --> 00:01:06.000
+You're going to learn about the structure of flat files next.
+

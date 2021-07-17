@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.710
+Here's one of the html files you will use in this lesson.
+
+00:00:03.710 --> 00:00:06.644
+The ET rotten tomatoes page.
+
+00:00:06.644 --> 00:00:10.649
+And if we scroll, we can see its structure as Cameron described.
+
+00:00:10.650 --> 00:00:13.130
+One thing that blew my mind when I first started learning about
+
+00:00:13.130 --> 00:00:18.410
+html files is that they are not some sort of magic fancy internet file.
+
+00:00:18.410 --> 00:00:22.579
+They are just like any regular file and can be saved locally and if you drag this into
+
+00:00:22.579 --> 00:00:25.219
+a browser the web page will display as if you
+
+00:00:25.219 --> 00:00:28.654
+accessed it through a regular URL. Here's what that looks like.
+
+00:00:28.655 --> 00:00:30.150
+In the Sublime Text Editor,
+
+00:00:30.149 --> 00:00:34.530
+you can drag this mini file symbol to your browser. That's still crazy to me.
+
+00:00:34.530 --> 00:00:39.620
+All this code in text on the left here generates the web page on the right in a browser.
+
+00:00:39.619 --> 00:00:41.659
+That's the browser's job.
+

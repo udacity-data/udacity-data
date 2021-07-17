@@ -1,0 +1,92 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.210 --> 00:00:03.513
+ARQUIVOS EM MÃOS
+
+00:00:04.193 --> 00:00:06.705
+A inspiração para nosso
+pequeno projeto
+
+00:00:06.751 --> 00:00:10.113
+foi a lista dos 100 Melhores Filmes
+do Rotten Tomatoes.
+
+00:00:10.159 --> 00:00:11.552
+Como a obtemos?
+
+00:00:11.598 --> 00:00:14.880
+Infelizmente o site não nos permite
+baixar um arquivo.
+
+00:00:14.926 --> 00:00:17.744
+Para esta aula,
+eu fornecerei a lista.
+
+00:00:17.790 --> 00:00:21.861
+A compilação pode ser complicada,
+mas pode ser extremamente fácil.
+
+00:00:21.907 --> 00:00:24.341
+Às vezes o arquivo
+é fornecido.
+
+00:00:24.387 --> 00:00:27.979
+Pré-compilei o conjunto de dados
+com quatro colunas, posição, título,
+
+00:00:28.025 --> 00:00:29.942
+avaliação
+e quantidade de avaliações,
+
+00:00:29.988 --> 00:00:31.448
+e obtivemos 101 linhas,
+
+00:00:31.494 --> 00:00:34.709
+uma para o cabeçalho
+e uma para cada filme.
+
+00:00:34.755 --> 00:00:37.911
+Coloquei os dados
+em um arquivo chamado de TSV,
+
+00:00:37.957 --> 00:00:40.526
+que significa
+"valores separados por tabulação".
+
+00:00:40.572 --> 00:00:43.273
+Existe um link
+para você baixá-lo.
+
+00:00:43.319 --> 00:00:46.245
+Imagine como se eu tivesse
+enviado o arquivo por e-mail,
+
+00:00:46.291 --> 00:00:48.393
+passando por um pen drive
+
+00:00:48.439 --> 00:00:52.161
+ou que você o tenha acessado
+por um sistema de armazenamento.
+
+00:00:52.207 --> 00:00:55.602
+Clique e baixe o arquivo
+para seguirmos em frente.
+
+00:00:55.648 --> 00:00:57.912
+Não precisamos fazer
+programaticamente,
+
+00:00:57.958 --> 00:01:00.200
+porque consideramos
+os dados como internos,
+
+00:01:00.246 --> 00:01:02.540
+e eles não podem ser baixados
+pela internet.
+
+00:01:02.586 --> 00:01:05.803
+Falaremos sobre a estrutura
+dos arquivos a seguir.
+

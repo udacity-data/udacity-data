@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.169
+Since flat files are human readable,
+
+00:00:02.169 --> 00:00:08.219
+you can easily write your own code to parse or understand these files using Base Python.
+
+00:00:08.220 --> 00:00:10.740
+Open the file, read the text line by line,
+
+00:00:10.740 --> 00:00:13.335
+separate each line's content by the delimiter,
+
+00:00:13.335 --> 00:00:16.300
+and store everything in your data structure of choice.
+
+00:00:16.300 --> 00:00:18.660
+But people have come for us and solved this problem
+
+00:00:18.660 --> 00:00:21.269
+and created libraries with a ton of additional functionalities,
+
+00:00:21.269 --> 00:00:24.835
+especially for data wrangling, analysis, and visualization.
+
+00:00:24.835 --> 00:00:26.984
+A library like pandas, for example.
+
+00:00:26.984 --> 00:00:30.100
+Pandas can handle pretty much every file type imaginable,
+
+00:00:30.100 --> 00:00:33.085
+and is especially well-suited for tabular data.
+
+00:00:33.085 --> 00:00:37.280
+The code to read comma separated data into a data frame is super simple.
+
+00:00:37.280 --> 00:00:41.420
+We use the read_csv function.
+
+00:00:44.890 --> 00:00:53.039
+And there's our pandas data frame for the best of our t.CSV file.
+
+00:00:53.039 --> 00:01:00.090
+But the file we wanted to use is actually a TSV file, bestofrt.TSV.
+
+00:01:00.090 --> 00:01:02.800
+That's tab-separated, and that's okay.
+
+00:01:02.799 --> 00:01:05.709
+Since there's no clear standard for flat files,
+
+00:01:05.709 --> 00:01:08.064
+pandas has one main function for parsing them,
+
+00:01:08.064 --> 00:01:10.105
+and it is read_csv.
+
+00:01:10.105 --> 00:01:15.189
+Read_csv can handle all kinds of flat files, including TSV files.
+
+00:01:15.189 --> 00:01:18.204
+You just need to change the parameters to fit your specific use case,
+
+00:01:18.204 --> 00:01:21.159
+like changing the separator parameter set, for example.
+
+00:01:21.159 --> 00:01:24.649
+Or whether or not entries are quoted and more.
+

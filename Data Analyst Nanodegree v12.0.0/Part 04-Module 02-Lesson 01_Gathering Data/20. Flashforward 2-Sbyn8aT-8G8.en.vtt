@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.620
+So now you've gathered the data to produce our second goal visualization,
+
+00:00:04.620 --> 00:00:07.525
+the Roger Ebert Review Wordcloud.
+
+00:00:07.525 --> 00:00:10.665
+Next, we'd have to assess and clean the data.
+
+00:00:10.664 --> 00:00:13.914
+The second and third steps in the data wrangling process.
+
+00:00:13.914 --> 00:00:16.957
+This lesson is on gathering specifically though.
+
+00:00:16.957 --> 00:00:21.515
+So we'll stay focused and leave assessing and cleaning to lessons three and four ahead.
+
+00:00:21.515 --> 00:00:24.652
+I took care of both of these behind the scenes.
+
+00:00:24.652 --> 00:00:27.824
+And the result of that is this master data frame here.
+
+00:00:27.824 --> 00:00:31.024
+Let's hop straight to the second final product here,
+
+00:00:31.024 --> 00:00:33.350
+the word clouds themselves.
+
+00:00:33.350 --> 00:00:36.649
+And here's a sample of them. On the right, E.T.
+
+00:00:36.649 --> 00:00:38.625
+on the left, Inside Out.
+
+00:00:38.625 --> 00:00:43.640
+E.T. was ranked 11th and Inside out was ranked 8th on that top 100 list.
+
+00:00:43.640 --> 00:00:46.494
+I think this is so cool and I hope you do too.
+
+00:00:46.494 --> 00:00:49.949
+It's definitely a unique snapshot into the movie's plot and what
+
+00:00:49.950 --> 00:00:54.410
+makes it great according to arguably the best film critic that ever lived.
+
+00:00:54.409 --> 00:00:57.059
+These movie posters pasted within the stencil
+
+00:00:57.060 --> 00:01:00.390
+of this word cloud really do add some flash.
+
+00:01:00.390 --> 00:01:01.954
+Let's check out a few more.
+
+00:01:01.954 --> 00:01:04.129
+Here are some older classics.
+
+00:01:04.129 --> 00:01:07.724
+On the left, Alfred Hitchcock's Rear Window, ranked 36.
+
+00:01:07.724 --> 00:01:10.719
+And on the right, Casablanca, ranked 16th.
+
+00:01:10.719 --> 00:01:12.855
+The colors here look so cool.
+
+00:01:12.855 --> 00:01:16.665
+I've never seen Rear Window but just from this word cloud and knowing
+
+00:01:16.665 --> 00:01:20.780
+Alfred Hitchcock is known for thriller or horror-type movies,
+
+00:01:20.780 --> 00:01:22.894
+you can see danger and murder here.
+
+00:01:22.894 --> 00:01:25.164
+This word cloud has me itching to watch it.
+
+00:01:25.165 --> 00:01:28.960
+Feel free to pause the video and take a look through these if you'd like.
+
+00:01:28.959 --> 00:01:30.554
+And here are two more.
+
+00:01:30.555 --> 00:01:33.405
+Wonder Woman and Star Wars: The Force Awakens.
+
+00:01:33.405 --> 00:01:37.394
+Wonder Woman ranked 46th and Star Wars ranked 62nd.
+
+00:01:37.394 --> 00:01:40.515
+And two more, Lala Land and Finding Nemo,
+
+00:01:40.515 --> 00:01:44.045
+ranked 86th and 73rd respectively.
+
+00:01:44.045 --> 00:01:47.195
+I can't get over the colors, they're just so pretty.
+
+00:01:47.194 --> 00:01:49.864
+Data visualization can be informative,
+
+00:01:49.864 --> 00:01:51.640
+but it can also be art.
+
+00:01:51.640 --> 00:01:53.780
+So there are lots more of these word clouds.
+
+00:01:53.780 --> 00:01:58.930
+So I'll put them all in a folder for you to download and check out if you're interested.
+
+00:01:58.930 --> 00:02:02.750
+These word clouds required gathering data from two different sources.
+
+00:02:02.750 --> 00:02:04.810
+Downloading files from the internet, i.e.
+
+00:02:04.810 --> 00:02:09.944
+the Roger Ebert review text files and accessing data from an API, i.e.
+
+00:02:09.944 --> 00:02:11.979
+the movie poster URLs.
+
+00:02:11.979 --> 00:02:13.489
+And this data was in two formats,
+
+00:02:13.490 --> 00:02:18.000
+.txt and Json. Again, great work.
+

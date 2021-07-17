@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:02.830 --> 00:00:07.480
+So, you've got all of the pieces of data you need for our two visualizations.
+
+00:00:07.480 --> 00:00:09.580
+In its own Pandas dataframe.
+
+00:00:09.580 --> 00:00:12.455
+What do you do with the data in that dataframe now that you're done?
+
+00:00:12.455 --> 00:00:15.289
+You want to save or store it somehow.
+
+00:00:15.289 --> 00:00:16.875
+Two popular options.
+
+00:00:16.875 --> 00:00:18.089
+Saving to a database,
+
+00:00:18.089 --> 00:00:19.800
+and saving to a file.
+
+00:00:19.800 --> 00:00:22.905
+For tabular data like we have here, both files,
+
+00:00:22.905 --> 00:00:26.630
+like CSD files, in databases are used a ton.
+
+00:00:26.629 --> 00:00:28.529
+The right solution depends on your dataset
+
+00:00:28.530 --> 00:00:31.155
+and the infrastructure you use in your daily work.
+
+00:00:31.155 --> 00:00:33.899
+Saving to a CSV file is easy,
+
+00:00:33.899 --> 00:00:37.634
+and is probably the best solution for a simple dataset like this one.
+
+00:00:37.634 --> 00:00:39.609
+You'll learn how to do this next.
+
+00:00:39.609 --> 00:00:43.405
+But you're also going to learn how to load the data into a database.
+
+00:00:43.405 --> 00:00:46.675
+They're fast, they scale well as your data grows in size,
+
+00:00:46.674 --> 00:00:50.214
+and you can ask them questions using languages like SQL.
+
+00:00:50.215 --> 00:00:55.660
+They're very powerful, and database skills are hugely in demand in today's workplace.
+
