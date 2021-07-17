@@ -1,0 +1,232 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.160 --> 00:00:02.730
+Estava observando uma coisa muito importante
+
+00:00:02.730 --> 00:00:06.770
+enquanto desenhava meu conjunto de treinamento de todas as pessoas envolvidas, que
+
+00:00:06.770 --> 00:00:09.280
+é basicamente o tamanho do conjunto.
+
+00:00:09.280 --> 00:00:11.200
+O tamanho do conjunto de treinamento é tão
+
+00:00:11.200 --> 00:00:14.690
+importante porque geralmente ele tem um grande efeito sobre a precisão que
+
+00:00:14.690 --> 00:00:17.090
+você pode alcançar com o classificador.
+
+00:00:17.090 --> 00:00:19.220
+Vou dar um exemplo do que quero dizer.
+
+00:00:19.220 --> 00:00:22.100
+Uma vez, estava tentando resolver um problema de física.
+
+00:00:22.100 --> 00:00:26.500
+Eu estava usando um classificador Naive Bayes para tentar identificar determinados tipos de
+
+00:00:26.500 --> 00:00:32.009
+partículas e havia 1.000 eventos de cada classe no meu conjunto de treinamento.
+
+00:00:32.009 --> 00:00:33.870
+Minha pergunta era:
+
+00:00:33.870 --> 00:00:37.410
+esses eventos são suficientes para capturar todas as tendências nos dados?
+
+00:00:37.410 --> 00:00:39.770
+Veja como responder a essa pergunta.
+
+00:00:39.770 --> 00:00:45.100
+Dos 1.000 eventos, coloquei 800 em um conjunto de treinamento e
+
+00:00:45.100 --> 00:00:47.410
+200 em um conjunto de testes.
+
+00:00:47.410 --> 00:00:53.260
+Depois, dividi esses 800 novamente em 4 x 200.
+
+00:00:53.260 --> 00:00:57.768
+Ao recombinar essas diferentes partes,
+
+00:00:57.768 --> 00:01:04.632
+posso produzir um conjunto de treinamento com 200, 400, 600 e 800 eventos.
+
+00:01:04.632 --> 00:01:09.670
+E sempre farei os testes com o mesmo conjunto de testes de 200 eventos.
+
+00:01:09.670 --> 00:01:12.000
+O que descobri foi isto.
+
+00:01:12.000 --> 00:01:16.200
+A precisão máxima que você consegue alcançar é 100%.
+
+00:01:16.200 --> 00:01:20.420
+Geralmente, na prática, a precisão máxima hipoteticamente
+
+00:01:20.420 --> 00:01:23.380
+possível será inferior a 100%.
+
+00:01:23.380 --> 00:01:27.700
+Se você não tiver estatísticas suficientes em seu conjunto de treinamento, se ele
+
+00:01:27.700 --> 00:01:31.680
+não for grande o suficiente, você obterá uma precisão ainda menor do que isso.
+
+00:01:31.680 --> 00:01:37.620
+Então, para 200 eventos, talvez eu consiga uma precisão em torno de 55%.
+
+00:01:37.620 --> 00:01:43.630
+Entretanto, quando aumento para 400 eventos, a precisão salta para cerca de 70%.
+
+00:01:43.630 --> 00:01:48.480
+Então, ganhei 15 pontos percentuais apenas adicionando mais dados de treinamento.
+
+00:01:48.480 --> 00:01:50.160
+Sem fazer mais nada.
+
+00:01:50.160 --> 00:01:52.170
+Então, passei para 600 eventos.
+
+00:01:52.170 --> 00:01:55.910
+Mais uma vez, a precisão aumenta, mas, provavelmente, não tanto quanto antes.
+
+00:01:55.910 --> 00:01:58.005
+Digamos que agora seja 80%.
+
+00:01:58.005 --> 00:02:04.280
+E quando adiciono a última parte de 200 eventos, ela pode chegar a cerca de 82%.
+
+00:02:04.280 --> 00:02:07.790
+E o que isso me revelou é que há uma tendência nos dados,
+
+00:02:07.790 --> 00:02:10.800
+talvez algo como isto aqui, que
+
+00:02:10.800 --> 00:02:13.730
+me diz se posso esperar uma precisão
+
+00:02:13.730 --> 00:02:17.860
+muito maior à medida que aumento o tamanho do conjunto de treinamento.
+
+00:02:17.860 --> 00:02:20.120
+Obviamente, 200 não foi ideal.
+
+00:02:20.120 --> 00:02:23.060
+Se houvesse apenas um conjunto de treinamento com 200 eventos,
+
+00:02:23.060 --> 00:02:24.840
+não poderíamos esperar uma precisão muito boa.
+
+00:02:24.840 --> 00:02:29.306
+Ao aumentar para 800, subimos para 82%.
+
+00:02:29.306 --> 00:02:33.580
+Além disso, ao analisar esta tendência, posso ver que ela está começando a estabilizar e,
+
+00:02:33.580 --> 00:02:38.630
+mesmo se passássemos para 1.000 eventos, chegaríamos apenas a 83%.
+
+00:02:38.630 --> 00:02:42.810
+Portanto, não é tão vantajoso adicionar mais 200 eventos no
+
+00:02:42.810 --> 00:02:46.750
+final quanto é no início.
+
+00:02:46.750 --> 00:02:50.960
+Então, uma das minhas preocupações ao tentar identificar as pessoas envolvidas
+
+00:02:50.960 --> 00:02:54.810
+é se teríamos de descer até aqui e ter tão poucos
+
+00:02:54.810 --> 00:02:56.840
+exemplos,
+
+00:02:56.840 --> 00:03:00.690
+principalmente em relação à quantidade de pessoas totalmente inocentes em nosso conjunto de dados.
+
+00:03:00.690 --> 00:03:04.020
+Mas é muito difícil distinguir os padrões que separam
+
+00:03:04.020 --> 00:03:05.030
+as pessoas envolvidas.
+
+00:03:06.050 --> 00:03:10.170
+Agora, na melhor das hipóteses, eu poderia tentar fazer um gráfico como este.
+
+00:03:10.170 --> 00:03:12.600
+E se descobrisse que estava neste canto, eu poderia sair e
+
+00:03:12.600 --> 00:03:14.430
+tentar encontrar mais dados.
+
+00:03:14.430 --> 00:03:17.050
+Neste exemplo específico, isso não é possível, certo?
+
+00:03:17.050 --> 00:03:19.540
+Temos apenas uma determinada quantidade de pessoas envolvidas.
+
+00:03:19.540 --> 00:03:22.510
+Não surgirão mais pessoas apenas porque eu quero fazer um
+
+00:03:22.510 --> 00:03:23.360
+classificador melhor.
+
+00:03:23.360 --> 00:03:28.590
+Mas isso foi algo que eu sempre tive em mente quanto tentei resolver esse problema
+
+00:03:28.590 --> 00:03:34.500
+pela primeira vez: quantos exemplos podemos obter de pessoas envolvidas?
+
+00:03:34.500 --> 00:03:37.670
+Quando olho para esta lista de nomes de pessoas envolvidas que compilei
+
+00:03:37.670 --> 00:03:40.310
+e vejo que temos cerca de 30 pessoas,
+
+00:03:40.310 --> 00:03:42.980
+me pergunto se isso é suficiente para continuar o projeto.
+
+00:03:42.980 --> 00:03:46.770
+Honestamente, não sei, principalmente no início.
+
+00:03:46.770 --> 00:03:49.940
+E não existe uma maneira de saber, a não ser com testes.
+
+00:03:49.940 --> 00:03:52.480
+Mas, se você estiver trabalhando com um
+
+00:03:52.480 --> 00:03:56.810
+carro autoguiado, por exemplo, em que tem a opção de fazer perguntas como
+
+00:03:56.810 --> 00:04:00.310
+"de que modo a precisão é alterada de acordo com o número de eventos de treinamento?" e
+
+00:04:00.310 --> 00:04:04.250
+especialmente se você puder coletar mais dados caso precise,
+
+00:04:04.250 --> 00:04:07.670
+essa poderá ser uma série de perguntas extremamente útil.
+
+00:04:07.670 --> 00:04:10.790
+Em geral, mais dados fornecerão
+
+00:04:10.790 --> 00:04:15.360
+um resultado melhor do que um algoritmo superajustado.
+
+00:04:15.360 --> 00:04:18.730
+Isso foi algo que surpreendeu muitos pesquisadores de aprendizado de máquina assim
+
+00:04:18.730 --> 00:04:20.959
+que eles fizeram essa descoberta anos atrás,
+
+00:04:20.959 --> 00:04:24.760
+mas, isso passou a ser tão banal em aprendizado de máquina que a capacidade de
+
+00:04:24.760 --> 00:04:29.010
+usar mais dados quase sempre melhorará o desempenho do algoritmo.
+

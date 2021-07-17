@@ -1,0 +1,523 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.430 --> 00:00:03.310
+Bem, Katie, falaremos sobre a Enron.
+
+00:00:03.310 --> 00:00:05.890
+Diga-me, qual é a história da Enron?
+
+00:00:05.890 --> 00:00:07.620
+&gt;&gt; Ah, a história da Enron é bem interessante.
+
+00:00:07.620 --> 00:00:12.510
+A história da Enron é o maior caso de fraude corporativa da história americana.
+
+00:00:12.510 --> 00:00:14.220
+&gt;&gt; O que aconteceu? &gt;&gt; Foi assim.
+
+00:00:14.220 --> 00:00:18.290
+A Enron era uma empresa de capital aberto de energia que, por volta do ano 2.000,
+
+00:00:18.290 --> 00:00:22.420
+era uma das dez principais maiores empresas dos EUA, uma empresa enorme.
+
+00:00:22.420 --> 00:00:24.550
+Ela tinha participação nos diferentes tipos de projetos e,
+
+00:00:24.550 --> 00:00:26.820
+até meados de 2.002, não existia mais.
+
+00:00:26.820 --> 00:00:31.480
+Ela foi à falência, várias pessoas foram presas, bilhões de dólares desapareceram e
+
+00:00:31.480 --> 00:00:34.560
+milhares de pessoas ficaram desempregadas.
+
+00:00:35.950 --> 00:00:40.170
+Como você deve imaginar, quando algo assim acontece, quando uma empresa de vários
+
+00:00:40.170 --> 00:00:43.530
+bilhões de dólares entra em colapso, isso não acontece de modo totalmente orgânico.
+
+00:00:43.530 --> 00:00:47.140
+Havia muita fraude acontecendo por debaixo dos panos.
+
+00:00:47.140 --> 00:00:50.300
+De certa forma, foi surpreendente como a empresa não faliu
+
+00:00:50.300 --> 00:00:52.270
+antes disso, considerando a quantidade de fraude que estava ocorrendo.
+
+00:00:52.270 --> 00:00:54.120
+&gt;&gt; Bem, isso é superinteressante.
+
+00:00:54.120 --> 00:00:56.900
+Mas, por que isso é relevante para esta aula?
+
+00:00:56.900 --> 00:01:01.610
+&gt;&gt; É relevante porque, no final, a Enron teve, de certo
+
+00:01:01.610 --> 00:01:06.590
+modo, uma segunda chance sob a forma de um dos conjuntos de dados mais famosos de todos os tempos.
+
+00:01:06.590 --> 00:01:08.910
+E o conjunto de dados que usaremos
+
+00:01:08.910 --> 00:01:11.380
+motivará vários de nossos projetos no restante desta aula.
+
+00:01:11.380 --> 00:01:15.580
+Ele é denominado Enron Corpus e tem milhares de emails.
+
+00:01:15.580 --> 00:01:16.710
+Milhares e milhares de emails.
+
+00:01:16.710 --> 00:01:18.510
+&gt;&gt; Emails reais de pessoas reais?
+
+00:01:18.510 --> 00:01:19.615
+&gt;&gt; Emails reais de pessoas reais.
+
+00:01:19.615 --> 00:01:22.370
+Que eu saiba, é um dos
+
+00:01:22.370 --> 00:01:26.360
+maiores conjuntos de emails que existe na área.
+
+00:01:26.360 --> 00:01:27.580
+&gt;&gt; Que existe abertamente, eu suponho.
+
+00:01:27.580 --> 00:01:28.690
+&gt;&gt; Isso mesmo, abertamente.
+
+00:01:28.690 --> 00:01:31.600
+Porque os emails geralmente são confidenciais, certo?
+
+00:01:31.600 --> 00:01:33.930
+Por isso, eles foram usados para muitas finalidades diferentes.
+
+00:01:34.930 --> 00:01:38.510
+E vamos usá-lo para responder a uma pergunta muito interessante nesta aula.
+
+00:01:38.510 --> 00:01:41.290
+Quero usar esse conjunto para tentar descobrir se
+
+00:01:41.290 --> 00:01:45.550
+existem padrões nos emails das pessoas que foram acusadas
+
+00:01:45.550 --> 00:01:47.800
+no caso da fraude para verificar se é possível identificar esses padrões.
+
+00:01:47.800 --> 00:01:49.910
+&gt;&gt; Portanto, esses são emails reais de pessoas reais-
+
+00:01:49.910 --> 00:01:52.258
+&gt;&gt; Sim. &gt;&gt; Se elas tinham um caso amoroso, você descobrirá nos emails;
+
+00:01:52.258 --> 00:01:54.633
+se elas desviaram dinheiro, você descobrirá nos emails.
+
+00:01:54.633 --> 00:01:55.212
+&gt;&gt; Sim, sim.
+
+00:01:55.212 --> 00:01:56.090
+&gt;&gt; Então, você verá tudo isso.
+
+00:01:56.090 --> 00:01:57.490
+&gt;&gt; Ah, sim. É possível ver tudo.
+
+00:01:58.710 --> 00:02:02.530
+Na verdade, uma das coisas mais interessantes para mim quando
+
+00:02:02.530 --> 00:02:05.300
+estava aprendendo sobre o caso de fraude da Enron,
+
+00:02:05.300 --> 00:02:08.350
+e lendo artigos de jornal e assistindo a documentários,
+
+00:02:08.350 --> 00:02:10.530
+é que você tem uma ideia sobre alguns desses indivíduos e
+
+00:02:10.530 --> 00:02:13.480
+exatamente as funções que desempenhavam na fraude.
+
+00:02:13.480 --> 00:02:16.890
+E, à medida que se aprofunda e lê os emails, é uma experiência muito estranha.
+
+00:02:16.890 --> 00:02:18.250
+Sim, claro, ela é real.
+
+00:02:18.250 --> 00:02:19.930
+&gt;&gt; Mas, isso é coisa do passado, certo?
+
+00:02:19.930 --> 00:02:22.320
+O aprendizado de máquina é o futuro.
+
+00:02:22.320 --> 00:02:27.310
+Por que é interessante analisar este conjunto de emails e localizar padrões de fraude?
+
+00:02:27.310 --> 00:02:28.350
+Quem se importaria com isso?
+
+00:02:28.350 --> 00:02:32.740
+&gt;&gt; O que adorei nesse projeto é que, embora esse conjunto de dados esteja
+
+00:02:32.740 --> 00:02:35.370
+aberto ao mundo e tenha sido muito famoso na última década
+
+00:02:35.370 --> 00:02:39.400
+ou mais, ninguém realmente tentou responder a essa pergunta.
+
+00:02:39.400 --> 00:02:42.990
+Podemos identificar padrões nos emails das pessoas que foram...
+
+00:02:42.990 --> 00:02:43.950
+&gt;&gt; Mas, quem se importaria com isso?
+
+00:02:43.950 --> 00:02:45.550
+A NSA? Você está trabalhando para a NSA?
+
+00:02:45.550 --> 00:02:48.270
+&gt;&gt; Eu me importo. Acho que é uma questão muito interessante.
+
+00:02:48.270 --> 00:02:49.060
+&gt;&gt; Esse é o ponto.
+
+00:02:49.060 --> 00:02:54.230
+Pelo menos, para mim, é uma questão de curiosidade.
+
+00:02:54.230 --> 00:02:57.410
+É claro que, se você fosse um especialista de aprendizado de máquina forense,
+
+00:02:57.410 --> 00:03:01.170
+isso talvez não fosse um caso do passado para você.
+
+00:03:01.170 --> 00:03:03.260
+Você poderia realmente se interessar em responder a essa pergunta e
+
+00:03:03.260 --> 00:03:04.880
+isso poderia ter implicações reais.
+
+00:03:04.880 --> 00:03:06.740
+Para mim, é só uma perversa curiosidade mesmo.
+
+00:03:06.740 --> 00:03:07.470
+&gt;&gt; Interessante.
+
+00:03:07.470 --> 00:03:10.789
+Então, Katie, você já fez experimentos nos dados.
+
+00:03:10.789 --> 00:03:11.429
+&gt;&gt; Já fiz bastante, sim. &gt;&gt; Por conta própria...
+
+00:03:11.429 --> 00:03:14.090
+Então, o que você fez, o que funcionou, o que não funcionou?
+
+00:03:14.090 --> 00:03:17.400
+&gt;&gt; Bem, isso é basicamente o que ensinarei no
+
+00:03:17.400 --> 00:03:18.300
+restante da aula.
+
+00:03:18.300 --> 00:03:21.780
+Muitos projetos, todos os miniprojetos,
+
+00:03:21.780 --> 00:03:24.300
+na verdade, farão referência ao conjunto Enron Corpus.
+
+00:03:24.300 --> 00:03:26.420
+Como estou tentando compreendê-lo
+
+00:03:26.420 --> 00:03:29.120
+e usando técnicas de aprendizado de máquina diferentes para atacá-lo
+
+00:03:29.120 --> 00:03:30.590
+a partir de diferentes ângulos,
+
+00:03:30.590 --> 00:03:36.000
+fiz várias experimentos inteligentes e várias experimentos estúpidos; e também aprendi
+
+00:03:36.000 --> 00:03:40.470
+no processo desse exercício.
+
+00:03:40.470 --> 00:03:44.330
+Então, daqui para frente, destacarei alguns
+
+00:03:44.330 --> 00:03:48.230
+momentos em que fiz algo estúpido,
+
+00:03:48.230 --> 00:03:49.150
+mas que não percebi de primeira.
+
+00:03:49.150 --> 00:03:52.070
+E como descobri qual foi o meu erro e como o resolvi.
+
+00:03:52.070 --> 00:03:55.310
+Espero que isso funcione mais ou menos como
+
+00:03:55.310 --> 00:03:59.210
+assistir a um exercício de aprendizado de máquina na prática.
+
+00:03:59.210 --> 00:04:03.750
+De certa maneira, estou dois passos à sua frente, como que abrindo meu caminho
+
+00:04:03.750 --> 00:04:08.060
+na mata, mas os alunos estão um passo atrás de mim.
+
+00:04:08.060 --> 00:04:11.390
+E eles estão, de certo modo, assistindo a todo o meu processo durante seu desdobramento.
+
+00:04:11.390 --> 00:04:12.660
+Enquanto estou tentando responder a essa pergunta.
+
+00:04:12.660 --> 00:04:14.810
+&gt;&gt; O que você acha que os alunos aprenderão com esses dados?
+
+00:04:14.810 --> 00:04:17.055
+E onde você acha que poderão aplicar isso?
+
+00:04:17.055 --> 00:04:20.110
+&gt;&gt; Esse é um conjunto de dados incrivelmente vasto.
+
+00:04:20.110 --> 00:04:22.930
+Em muitos momentos, falaremos sobre coisas que têm uma ampla aplicação.
+
+00:04:24.000 --> 00:04:27.240
+Então, os pontos que abordaremos nas próximas lições, por
+
+00:04:27.240 --> 00:04:29.720
+exemplo, falaremos sobre regressões.
+
+00:04:29.720 --> 00:04:33.870
+Ao usar as regressões, consegui entender a relação entre
+
+00:04:33.870 --> 00:04:37.330
+os salários das pessoas na Enron e seus bônus.
+
+00:04:37.330 --> 00:04:39.770
+Pude analisar se há alguma relação interessante aí.
+
+00:04:39.770 --> 00:04:42.530
+Não estou muito certa de que isso tenha muita implicação
+
+00:04:42.530 --> 00:04:45.190
+na fraude, mas foi algo que achei bastante interessante.
+
+00:04:45.190 --> 00:04:46.380
+Falaremos sobre agrupamento.
+
+00:04:46.380 --> 00:04:50.620
+Você pode usar agrupamento em dados, o que é um tipo de aprendizagem não supervisionada.
+
+00:04:50.620 --> 00:04:55.560
+Esse é um algoritmo muito interessante para descobrir quem,
+
+00:04:55.560 --> 00:04:58.310
+nessa organização, era membro da diretoria e
+
+00:04:58.310 --> 00:05:00.250
+quem era apenas um funcionário comum.
+
+00:05:00.250 --> 00:05:02.160
+Usaremos a detecção e a remoção
+
+00:05:02.160 --> 00:05:07.680
+de outliers para localizar determinadas linhas no conjunto de dados que eram apenas bugs.
+
+00:05:07.680 --> 00:05:10.760
+Eram outliers que tive de encontrar e limpar manualmente
+
+00:05:10.760 --> 00:05:13.370
+para assegurar que estávamos obtendo resultados concretos de nossos dados.
+
+00:05:13.370 --> 00:05:14.380
+Coisas desse tipo.
+
+00:05:14.380 --> 00:05:14.940
+&gt;&gt; Ótimo, ótimo.
+
+00:05:14.940 --> 00:05:17.410
+E os alunos basicamente verão você fazendo isso?
+
+00:05:17.410 --> 00:05:19.320
+Ou eles mesmos farão isso?
+
+00:05:19.320 --> 00:05:20.220
+&gt;&gt; Um pouco dos dois.
+
+00:05:20.220 --> 00:05:23.180
+Houve momentos em que precisei trabalhar duramente por
+
+00:05:23.180 --> 00:05:26.870
+vários dias até descobrir o que estava errado.
+
+00:05:26.870 --> 00:05:31.330
+Eu espero que eles não sofram tanto assim, pois,
+
+00:05:31.330 --> 00:05:34.190
+como já aprendi algumas coisas, posso orientá-los na direção certa.
+
+00:05:34.190 --> 00:05:35.170
+Mas, basicamente,
+
+00:05:35.170 --> 00:05:38.860
+será a replicação das etapas que já segui para
+
+00:05:38.860 --> 00:05:42.260
+encontrar as respostas para as perguntas que despertaram minha curiosidade.
+
+00:05:42.260 --> 00:05:45.135
+&gt;&gt; E, em relação às habilidades dos alunos de aprenderem fazendo [INAUDIBLE]isso,
+
+00:05:45.135 --> 00:05:47.484
+eles poderão aplicá-las à sua vida profissional?
+
+00:05:47.484 --> 00:05:48.790
+Quais são os outros exemplos?
+
+00:05:48.790 --> 00:05:51.770
+Porque o conjunto de dados da Enron é único em uma década.
+
+00:05:51.770 --> 00:05:55.610
+Além de ser um caso específico que foi tornado público por alguma ação legal específica.
+
+00:05:55.610 --> 00:05:56.140
+&gt;&gt; Certo.
+
+00:05:56.140 --> 00:05:58.750
+&gt;&gt; Em que outras circunstâncias, hoje, os alunos poderão usar isso,
+
+00:05:58.750 --> 00:06:00.910
+após terem praticado com esse exemplo específico?
+
+00:06:00.910 --> 00:06:04.030
+Bem, muitos dos tópicos que abordaremos
+
+00:06:04.030 --> 00:06:05.640
+usarão a Enron como caso de uso.
+
+00:06:05.640 --> 00:06:08.620
+Mas é claro que esse não é o único caso de uso para todas as circunstâncias.
+
+00:06:08.620 --> 00:06:11.380
+Vamos usar o exemplo do agrupamento.
+
+00:06:11.380 --> 00:06:14.670
+Eu disse que o agrupamento será usado para identificar a diferença
+
+00:06:14.670 --> 00:06:18.930
+entre pessoas da diretoria e funcionários comuns da Enron.
+
+00:06:18.930 --> 00:06:24.060
+Ao abordamos o agrupamento, assistiremos a uma entrevista com um vice-presidente da
+
+00:06:24.060 --> 00:06:27.230
+Netflix, que está muito envolvido com o aprendizado de máquina.
+
+00:06:27.230 --> 00:06:30.730
+Na Netflix, o que eles fazem com o agrupamento é identificar
+
+00:06:30.730 --> 00:06:34.130
+tipos específicos de pessoas de acordo com suas escolhas de filmes.
+
+00:06:34.130 --> 00:06:39.350
+Eles podem ter clusters de usuários sobre os quais podem afirmar:
+
+00:06:39.350 --> 00:06:43.520
+esses aqui são os homens de 25 a 35 anos que gostam de assistir filmes de ação e comédias.
+
+00:06:43.520 --> 00:06:46.554
+Essas são as crianças que gostam de assistir a filmes da Disney.
+
+00:06:46.554 --> 00:06:50.145
+Essas são as mulheres que gostam de assistir a romances. Com base nesses grupos,
+
+00:06:50.145 --> 00:06:52.972
+eles podem descobrir quem são seus clientes.
+
+00:06:52.972 --> 00:06:56.850
+&gt;&gt; Então, você está nos dizendo que, ao analisar os emails de uma organização fraudulenta
+
+00:06:56.850 --> 00:07:01.220
+de muitos anos atrás, você aprende sobre as preferências de filmes das pessoas na Netflix?
+
+00:07:02.270 --> 00:07:04.360
+&gt;&gt; Usando os mesmos algoritmos, sim; não há,
+
+00:07:04.360 --> 00:07:05.970
+não há uma diferença tão grande.
+
+00:07:05.970 --> 00:07:09.850
+Há muitas perguntas diferentes que você pode fazer, e o
+
+00:07:09.850 --> 00:07:12.090
+aprendizado de máquina é uma ferramenta que você usará para respondê-las.
+
+00:07:12.090 --> 00:07:16.950
+Por isso, não importa em que direção você apontará a mangueira de incêndio...
+
+00:07:16.950 --> 00:07:18.460
+&gt;&gt; Isso é realmente empolgante.
+
+00:07:18.460 --> 00:07:20.220
+&gt;&gt; Eu estou muito empolgada.
+
+00:07:20.220 --> 00:07:23.460
+E tem uma coisa que eu quero enfatizar,
+
+00:07:23.460 --> 00:07:28.920
+que é: o que estamos tentando fazer com esse conjunto de dados, identificando as pessoas
+
+00:07:28.920 --> 00:07:32.660
+envolvidas na fraude, nunca foi feito antes, que eu saiba.
+
+00:07:33.700 --> 00:07:37.940
+Escolhemos ele porque acho que é um problema interessante.
+
+00:07:37.940 --> 00:07:42.420
+E não porque eu sei que existe uma resposta fácil de ser encontrada.
+
+00:07:42.420 --> 00:07:45.060
+Acho que é muito importante que esse ponto seja
+
+00:07:45.060 --> 00:07:49.030
+destacado porque existem muitas coisas por aí que poderiam ser fáceis de resolver.
+
+00:07:49.030 --> 00:07:52.590
+E este não é um desses casos; na verdade, no final, se houver algum aluno
+
+00:07:52.590 --> 00:07:56.500
+que se aprofunde muito nisso e comece a vasculhar os dados por conta própria,
+
+00:07:56.500 --> 00:08:00.580
+ele poderá facilmente se tornar mais experiente do que eu sou agora.
+
+00:08:00.580 --> 00:08:04.120
+Eu realmente espero que haja alunos que se empolguem
+
+00:08:04.120 --> 00:08:08.610
+tanto quanto eu com isso e que façam dele o seu projeto,
+
+00:08:08.610 --> 00:08:11.760
+comecem a desenvolver suas próprias características, coloquem suas ideias e
+
+00:08:11.760 --> 00:08:15.690
+descubram como implementá-las porque, enquanto eu estiver definindo um bom exemplo,
+
+00:08:15.690 --> 00:08:18.750
+estarei impedindo um bom começo; não tenho como abordar
+
+00:08:18.750 --> 00:08:22.210
+todas as ideias inteligentes que podem resolver isso, certo?
+
+00:08:22.210 --> 00:08:22.860
+&gt;&gt; Isso é ótimo.
+
+00:08:22.860 --> 00:08:23.710
+Obrigado, Katie.
+
+00:08:23.710 --> 00:08:24.210
+&gt;&gt; Obrigada.
+

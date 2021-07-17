@@ -1,0 +1,383 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Query the Dataset 2
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Datasets and Questions
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. What Is A POI.html">
+       02. What Is A POI
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Accuracy vs. Training Set Size.html">
+       03. Accuracy vs. Training Set Size
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Downloading Enron Data.html">
+       04. Downloading Enron Data
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Types of Data Quiz 1.html">
+       05. Types of Data Quiz 1
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Types of Data Quiz 2.html">
+       06. Types of Data Quiz 2
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Types of Data Quiz 3.html">
+       07. Types of Data Quiz 3
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Types of Data Quiz 4.html">
+       08. Types of Data Quiz 4
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Types of Data Quiz 5.html">
+       09. Types of Data Quiz 5
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Types of Data Quiz 6.html">
+       10. Types of Data Quiz 6
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Enron Dataset Mini-Project Video.html">
+       11. Enron Dataset Mini-Project Video
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Datasets and Questions Mini-Project.html">
+       12. Datasets and Questions Mini-Project
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Size of the Enron Dataset.html">
+       13. Size of the Enron Dataset
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Features in the Enron Dataset.html">
+       14. Features in the Enron Dataset
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Finding POIs in the Enron Data.html">
+       15. Finding POIs in the Enron Data
+      </a>
+     </li>
+     <li class="">
+      <a href="16. How Many POIs Exist.html">
+       16. How Many POIs Exist?
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Problems with Incomplete Data.html">
+       17. Problems with Incomplete Data
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Query the Dataset 1.html">
+       18. Query the Dataset 1
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Query the Dataset 2.html">
+       19. Query the Dataset 2
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Query the Dataset 3.html">
+       20. Query the Dataset 3
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Research the Enron Fraud.html">
+       21. Research the Enron Fraud
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Enron CEO.html">
+       22. Enron CEO
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Enron Chairman.html">
+       23. Enron Chairman
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Enron CFO.html">
+       24. Enron CFO
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Follow the Money.html">
+       25. Follow the Money
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Unfilled Features.html">
+       26. Unfilled Features
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Dealing with Unfilled Features.html">
+       27. Dealing with Unfilled Features
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Dict-to-array conversion.html">
+       28. Dict-to-array conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Missing POIs 1 (optional).html">
+       29. Missing POIs 1 (optional)
+      </a>
+     </li>
+     <li class="">
+      <a href="30. Missing POIs 2 (optional).html">
+       30. Missing POIs 2 (optional)
+      </a>
+     </li>
+     <li class="">
+      <a href="31. Missing POIs 3 (optional).html">
+       31. Missing POIs 3 (optional)
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Missing POIs 4 (optional).html">
+       32. Missing POIs 4 (optional)
+      </a>
+     </li>
+     <li class="">
+      <a href="33. Missing POIs 5 (optional).html">
+       33. Missing POIs 5 (optional)
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Missing POIs 6 (optional).html">
+       34. Missing POIs 6 (optional)
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Mixing Data Sources (optional).html">
+       35. Mixing Data Sources (optional)
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          19. Query the Dataset 2
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Query the Dataset 2
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Question:
+          </h4>
+          <p>
+           <p>
+            Like any dict of dicts, individual people/features can be accessed like so:
+           </p>
+           <p>
+            <i>
+             enron_data["LASTNAME FIRSTNAME"]["feature_name"]
+            </i>
+           </p>
+           <p>
+            <b>
+             How many email messages do we have from Wesley Colwell to persons of interest?
+            </b>
+           </p>
+          </p>
+         </div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div style="display: block;">
+           <div style="position: relative;">
+            <img alt="" src="img/3011168678.gif" style="width: 100%; max-height: 100%"/>
+            <div style="
+    position: absolute; top: 34.026240245201635%; left: 9.365920735474392%; width: 20%; height: 10%;
+  ">
+             <input aria-label="" id="numeric1" name="null" style="width: 100%; height: 100%;" type="number"/>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="20. Query the Dataset 3.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('19. Query the Dataset 2')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

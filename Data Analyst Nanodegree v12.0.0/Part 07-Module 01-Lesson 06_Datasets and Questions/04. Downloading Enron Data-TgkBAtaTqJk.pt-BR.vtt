@@ -1,0 +1,238 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.080 --> 00:00:02.770
+Agora que defini o que é uma pessoa envolvida, é hora de trabalharmos
+
+00:00:02.770 --> 00:00:03.840
+com o conjunto de dados.
+
+00:00:03.840 --> 00:00:06.910
+Este foi o caminho que segui para localizar o conjunto de dados.
+
+00:00:06.910 --> 00:00:09.370
+Comecei pelo Google, como sempre faço.
+
+00:00:09.370 --> 00:00:10.760
+Procurei no Google por Enron emails.
+
+00:00:10.760 --> 00:00:12.860
+A primeira coisa que apareceu foi o conjunto de dados Enron Email Dataset.
+
+00:00:12.860 --> 00:00:15.630
+Você pode ver que é um conjunto de dados muito famoso.
+
+00:00:16.750 --> 00:00:20.350
+Várias pessoas já o estudaram antes de nós para muitas finalidades diferentes.
+
+00:00:20.350 --> 00:00:21.980
+Ele tem sua própria página na Wikipédia.
+
+00:00:21.980 --> 00:00:24.630
+Ele tem um artigo muito interessante que eu recomendo,
+
+00:00:24.630 --> 00:00:28.000
+da MIT Technology Review, sobre os diversos usos
+
+00:00:28.000 --> 00:00:29.680
+deste conjunto de dados ao longo dos anos.
+
+00:00:29.680 --> 00:00:32.240
+Mas, o primeiro link é o próprio conjunto de dados.
+
+00:00:32.240 --> 00:00:33.510
+Vamos abrir esse link.
+
+00:00:33.510 --> 00:00:37.400
+Ele nos leva a uma página do departamento da Carnegie Mellon CS.
+
+00:00:37.400 --> 00:00:40.030
+Ele nos dá um pequeno histórico sobre o conjunto de dados e,
+
+00:00:40.030 --> 00:00:41.389
+se rolarmos para baixo,
+
+00:00:42.560 --> 00:00:43.700
+encontramos este link aqui.
+
+00:00:43.700 --> 00:00:45.990
+Este é verdadeiro link para o conjunto de dados.
+
+00:00:45.990 --> 00:00:48.260
+Abaixo disso, temos mais algumas informações.
+
+00:00:48.260 --> 00:00:51.960
+Se você clicar aqui, um arquivo TGZ será baixado.
+
+00:00:51.960 --> 00:00:54.880
+Você pode ver aqui que eu já o baixei.
+
+00:00:54.880 --> 00:00:55.830
+Se você fizer isso por conta própria,
+
+00:00:55.830 --> 00:00:59.050
+sabia que levei aproximadamente meia hora para baixar todo o conjunto de dados.
+
+00:00:59.050 --> 00:01:01.810
+Por isso, recomendo que você inicie o download e
+
+00:01:01.810 --> 00:01:04.030
+vá fazer outra coisa.
+
+00:01:04.030 --> 00:01:06.440
+Quando o download for concluído, descompacte-o.
+
+00:01:06.440 --> 00:01:09.340
+Para isso, vá para o diretório em que deseja trabalhar e
+
+00:01:09.340 --> 00:01:11.240
+execute um comando como este.
+
+00:01:11.240 --> 00:01:16.820
+Não existe mágica aqui; eu apenas pesquisei no Google como descompactar o .tgz e
+
+00:01:16.820 --> 00:01:18.170
+encontrei o comando.
+
+00:01:18.170 --> 00:01:20.530
+Mais uma vez, isso levará alguns minutos.
+
+00:01:20.530 --> 00:01:24.170
+Quando terminar, você obterá um diretório chamado enron_mail.
+
+00:01:24.170 --> 00:01:26.210
+Em seguida, CD em maildir.
+
+00:01:26.210 --> 00:01:27.870
+Aqui está o conjunto de dados.
+
+00:01:27.870 --> 00:01:32.680
+Ele está organizado em vários diretórios, cada um pertencendo a uma pessoa.
+
+00:01:32.680 --> 00:01:36.260
+Você pode ver que há tantos que nem consigo mostrá-los em uma única página.
+
+00:01:36.260 --> 00:01:39.630
+Na verdade, você descobrirá que há mais de 150 pessoas neste conjunto de dados.
+
+00:01:39.630 --> 00:01:41.530
+Cada uma delas está identificada pelo sobrenome e
+
+00:01:41.530 --> 00:01:43.260
+pela primeira letra do nome.
+
+00:01:43.260 --> 00:01:46.850
+Então, olhando superficialmente, consigo encontrar Jeff Skilling.
+
+00:01:46.850 --> 00:01:48.110
+Vejamos se encontro Ken Lay.
+
+00:01:48.110 --> 00:01:50.450
+Ele deve estar mais para cima.
+
+00:01:50.450 --> 00:01:52.050
+Sim. Aqui está Ken Lay.
+
+00:01:52.050 --> 00:01:55.730
+E, é claro, uma série de pessoas de quem nunca ouvi falar.
+
+00:01:55.730 --> 00:01:57.270
+E lembre-se de que minha pergunta é:
+
+00:01:57.270 --> 00:02:00.330
+eu tenho emails de quantas pessoas envolvidas?
+
+00:02:00.330 --> 00:02:03.070
+Tenho o número suficiente de pessoas e tenho seus emails
+
+00:02:03.070 --> 00:02:05.680
+para que possa começar a descrever os padrões nesses emails
+
+00:02:05.680 --> 00:02:08.538
+usando algoritmos de classificação supervisionada?
+
+00:02:08.538 --> 00:02:10.639
+Mais uma vez, respondi a essa pergunta por meio de
+
+00:02:10.639 --> 00:02:13.980
+trabalho manual, basicamente.
+
+00:02:13.980 --> 00:02:17.710
+Peguei minha lista de pessoas envolvidas e
+
+00:02:17.710 --> 00:02:21.660
+procurei o nome da cada uma delas nesse diretório.
+
+00:02:21.660 --> 00:02:24.590
+Vamos voltar à lista e rever sua aparência.
+
+00:02:24.590 --> 00:02:26.020
+Você pode ver a lista anotada aqui.
+
+00:02:26.020 --> 00:02:28.540
+Talvez você esteja se perguntando o que são essas letras antes de cada um dos nomes.
+
+00:02:28.540 --> 00:02:30.460
+Elas são anotações que fiz para mim mesma.
+
+00:02:30.460 --> 00:02:34.750
+Para saber se realmente tenho a caixa de entrada de cada uma dessas pessoas.
+
+00:02:34.750 --> 00:02:38.800
+Portanto, já achamos Ken Lay e Jeff Skilling.
+
+00:02:38.800 --> 00:02:41.594
+Mas, depois, começou a ficar um pouco mais difícil.
+
+00:02:41.594 --> 00:02:45.630
+Então, podemos ver que há muitas pessoas com um N ao lado de seus nomes.
+
+00:02:45.630 --> 00:02:50.750
+Isso significa que eu não tenho, por exemplo, Scott Yeager.
+
+00:02:50.750 --> 00:02:56.850
+Se eu analisar o conjunto de dados, não consigo encontrar um Yeager aqui.
+
+00:02:56.850 --> 00:02:59.430
+Portanto, Scott Yeager é uma pessoa de quem eu adoraria ter a caixa de entrada.
+
+00:02:59.430 --> 00:03:03.490
+Eu adoraria ter alguns emails enviados e recebidos por ele, mas não tenho.
+
+00:03:03.490 --> 00:03:07.400
+No final das contas, não tenho as caixas de entrada de email de várias pessoas.
+
+00:03:07.400 --> 00:03:08.070
+Honestamente,
+
+00:03:08.070 --> 00:03:10.890
+neste ponto, eu já estava bastante desestimulada em relação à possibilidade de
+
+00:03:10.890 --> 00:03:13.270
+usar isso como um projeto.
+
+00:03:13.270 --> 00:03:16.880
+Acho que contei quatro ou cinco pessoas das quais tenho as caixas de entrada.
+
+00:03:16.880 --> 00:03:20.150
+E, embora isso possa representar centenas de emails ou algo assim,
+
+00:03:21.160 --> 00:03:25.210
+não existe nenhuma chance de que, com quatro exemplos de pessoas envolvidas, eu
+
+00:03:25.210 --> 00:03:29.760
+possa começar a descrever padrões de pessoas envolvidas.
+
+00:03:29.760 --> 00:03:32.830
+No próximo vídeo, falarei sobre uma boa ideia que eu
+
+00:03:32.830 --> 00:03:36.280
+tive para dar uma segunda chance a este projeto.
+
+00:03:36.280 --> 00:03:38.900
+Uma maneira diferente de tentar acessar as caixas de entrada de emails
+
+00:03:38.900 --> 00:03:39.920
+das pessoas envolvidas.
+

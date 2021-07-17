@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.220 --> 00:00:02.020
+Vamos dizer algumas palavras sobre tipos de dados.
+
+00:00:02.020 --> 00:00:05.300
+É alguma coisa que já apareceu nesta aula, mas vamos fazer isso
+
+00:00:05.300 --> 00:00:09.000
+de uma maneira um pouco mais explícita para que você saiba que isso é algo para prestar atenção.
+
+00:00:09.000 --> 00:00:11.870
+Aqui estão alguns tipos de dados importantes sobre os quais você deve estar ciente.
+
+00:00:11.870 --> 00:00:13.270
+Um é numérico.
+
+00:00:13.270 --> 00:00:16.090
+Algo como informações sobre salário seria um exemplo de
+
+00:00:16.090 --> 00:00:19.500
+uma variável numérica, onde o recurso é basicamente um número.
+
+00:00:19.500 --> 00:00:21.810
+Outra coisa sobre a qual falamos muito no contexto de
+
+00:00:21.810 --> 00:00:24.670
+classificação supervisionada são os recursos categóricos.
+
+00:00:24.670 --> 00:00:27.790
+Estes podem utilizar um número limitado de valores distintos.
+
+00:00:27.790 --> 00:00:32.630
+Portanto, um cat..., um exemplo de um recurso categórico seria o rótulo de classe.
+
+00:00:32.630 --> 00:00:35.540
+Isso seria também algo como se uma pessoa é um homem ou
+
+00:00:35.540 --> 00:00:40.970
+uma mulher ou, talvez, quantas estrelas você usa ao classificar um filme.
+
+00:00:40.970 --> 00:00:44.700
+Embora estrelas, você poderia argumentar, também são chamadas de um valor numérico.
+
+00:00:44.700 --> 00:00:49.353
+Outro que é muito importante, principalmente em áreas específicas, como finanças,
+
+00:00:49.353 --> 00:00:50.509
+é dados de série temporal.
+
+00:00:50.509 --> 00:00:54.178
+São dados que têm um valor temporal conectado a eles, portanto, isso seria
+
+00:00:54.178 --> 00:00:58.059
+algo como uma data ou um carimbo de data e hora que você pode examinar para tendências no tempo.
+
+00:00:58.059 --> 00:01:00.870
+Um tipo com o qual você já está muito familiarizado é dados de texto
+
+00:01:00.870 --> 00:01:03.070
+que são basicamente apenas palavras.
+
+00:01:03.070 --> 00:01:05.900
+Muitas vezes, a primeira coisa que você faz com texto é transformá-lo
+
+00:01:05.900 --> 00:01:09.370
+em números usando algumas funções interessantes sobre
+
+00:01:09.370 --> 00:01:13.170
+as quais aprenderemos, coisas, como formulação de conjuntos de palavras.
+
+00:01:13.170 --> 00:01:17.440
+Portanto, estes são todos os tipos de dados que você pode encontrar e, dependendo
+
+00:01:17.440 --> 00:01:20.820
+exatamente do tipo de dados, isso pode ter algumas repercussões no tipo de
+
+00:01:20.820 --> 00:01:24.030
+algoritmo que você pode usar ou o tipo de perguntas que você pode fazer a respeito.
+
+00:01:24.030 --> 00:01:27.090
+Vou fornecer um teste só para você praticar isso.
+
+00:01:27.090 --> 00:01:29.580
+Vou dar a você um amontoado de tipos de recursos que você pode ver e
+
+00:01:29.580 --> 00:01:31.790
+perguntar de que tipo de dados é esse recurso.
+
+00:01:31.790 --> 00:01:33.710
+O primeiro exemplo é informações sobre salário.
+
+00:01:33.710 --> 00:01:38.030
+Você chamaria isso de numérico, categórico, série temporal, texto ou
+
+00:01:38.030 --> 00:01:41.680
+vamos colocar Outro nesta lista porque esta lista não está completa.
+
