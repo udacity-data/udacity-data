@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:06.230 --> 00:00:10.840
+Hi there and welcome to the Data Analyst Nanodegree Program.
+
+00:00:10.840 --> 00:00:14.645
+I'm Mike and I'm one of the instructors for this nanodegree program.
+
+00:00:14.645 --> 00:00:17.880
+More and more companies all over the world are gathering
+
+00:00:17.880 --> 00:00:21.310
+tons of data to help them make informed business decisions.
+
+00:00:21.310 --> 00:00:24.250
+However, the data on its own isn't useful,
+
+00:00:24.250 --> 00:00:27.415
+they also need employees who can make sense of it.
+
+00:00:27.415 --> 00:00:31.669
+That's why data analyst and data scientist are consistently
+
+00:00:31.669 --> 00:00:36.030
+some of the most in-demand jobs today especially in the tech world.
+
+00:00:36.030 --> 00:00:39.620
+The goal of this program is to help you develop all of the skills you
+
+00:00:39.620 --> 00:00:43.565
+need to start or advance your career as a data analyst.
+
+00:00:43.565 --> 00:00:45.830
+Not only that, you will also gain
+
+00:00:45.830 --> 00:00:50.020
+the fundamental skills and knowledge necessary for work in data science,
+
+00:00:50.020 --> 00:00:53.185
+machine learning and artificial intelligence.
+
+00:00:53.185 --> 00:00:57.645
+This program has been built 3for students with some experience working with data.
+
+00:00:57.645 --> 00:01:01.885
+If you've run basic queries in SQL and know how to write function in Python,
+
+00:01:01.885 --> 00:01:03.730
+you're ready to start.
+
+00:01:03.730 --> 00:01:07.400
+In this program, we will focus on Python which is
+
+00:01:07.400 --> 00:01:11.625
+quickly becoming the most popular programming language for working with data.
+
+00:01:11.625 --> 00:01:15.320
+First, you'll cover the major Python frameworks you'll be using for
+
+00:01:15.320 --> 00:01:19.380
+most of your data analysis, NumPy and Pandas.
+
+00:01:19.380 --> 00:01:23.440
+Next, you will use statistics to make decisions based on data.
+
+00:01:23.440 --> 00:01:25.340
+You will then see how to gather,
+
+00:01:25.340 --> 00:01:27.320
+assess and clean data,
+
+00:01:27.320 --> 00:01:31.005
+steps typically falling under umbrella called data wrangling.
+
+00:01:31.005 --> 00:01:35.930
+Finally, you'll learn how to effectively explore your data and share your findings by
+
+00:01:35.930 --> 00:01:41.255
+building visualizations using Python's matplotlib and seaborn libraries.
+
+00:01:41.255 --> 00:01:43.270
+When you complete this program,
+
+00:01:43.270 --> 00:01:45.260
+you'll graduate ready to get a job as
+
+00:01:45.260 --> 00:01:48.845
+a data analyst or to continue your journey in the world of data.
+
+00:01:48.845 --> 00:01:51.040
+So let's get started.
+
