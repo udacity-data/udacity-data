@@ -1,0 +1,223 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.319 --> 00:00:01.628
+Paramos na última vez
+
+00:00:01.661 --> 00:00:04.883
+ao criar um gráfico de barras de
+Pokémon de acordo com seu 1º tipo.
+
+00:00:04.916 --> 00:00:06.416
+Fiz uma preparação de dados
+
+00:00:06.449 --> 00:00:10.312
+para obter uma estrutura de dados
+com o 1º e o 2º tipo em uma coluna.
+
+00:00:10.694 --> 00:00:12.309
+Também criei variáveis
+
+00:00:12.342 --> 00:00:14.334
+para ordenar os tipos
+por frequência
+
+00:00:14.367 --> 00:00:16.974
+e plotei essas contagens
+em um gráfico de barras.
+
+00:00:17.007 --> 00:00:18.731
+Uma coisa
+que me interessa agora
+
+00:00:18.764 --> 00:00:21.490
+e a proporção de Pokémons
+de cada tipo.
+
+00:00:21.523 --> 00:00:24.290
+Embora eu possa estimar isso
+pelo gráfico,
+
+00:00:24.323 --> 00:00:26.148
+sabendo o número total
+de Pokémons,
+
+00:00:26.271 --> 00:00:29.483
+é melhor mostrar isso diretamente
+na visualização.
+
+00:00:29.853 --> 00:00:32.221
+Uma maneira de fazer isso
+é usando o Matplotlib
+
+00:00:32.254 --> 00:00:35.020
+para mudar as marcas do eixo,
+de contagens absolutas
+
+00:00:35.053 --> 00:00:36.698
+para contagens relativas.
+
+00:00:36.731 --> 00:00:39.907
+Vamos começar criando uma lista
+de posições de marcas.
+
+00:00:40.223 --> 00:00:42.744
+Vamos calcular o comprimento
+da barra mais comprida
+
+00:00:42.777 --> 00:00:44.337
+em termos de proporção.
+
+00:00:44.458 --> 00:00:47.394
+A estrutura de dados original
+dos Pokémon é o denominador
+
+00:00:47.427 --> 00:00:49.960
+e a contagem dos valores
+é o numerador.
+
+00:00:50.545 --> 00:00:53.299
+Agora vamos usar a função arange
+do Numpy
+
+00:00:53.332 --> 00:00:55.824
+para produzir valores proporcionais
+igualmente espaçados
+
+00:00:55.857 --> 00:00:59.017
+entre zero e o máximo,
+com intervalos de 2%,
+
+00:00:59.298 --> 00:01:02.058
+guardando os valores
+na variável tick_props.
+
+00:01:02.694 --> 00:01:04.867
+Também estou usando
+uma compreensão de lista
+
+00:01:04.900 --> 00:01:07.221
+para criar uma variável adicional,
+tick_names,
+
+00:01:07.254 --> 00:01:08.864
+para aplicar aos rótulos.
+
+00:01:09.549 --> 00:01:13.164
+Essas strings vão mostrar as
+proporções com duas casas decimais.
+
+00:01:13.827 --> 00:01:15.914
+Agora podemos modificar
+nosso gráfico.
+
+00:01:16.327 --> 00:01:18.337
+Para mudar a posição
+das marcas e rótulos,
+
+00:01:18.370 --> 00:01:20.756
+usamos a função Xticks
+do Matplotlib.
+
+00:01:21.242 --> 00:01:23.764
+O primeiro argumento define
+a posição das marcas.
+
+00:01:23.797 --> 00:01:25.946
+Como as contagens
+são um valor absoluto,
+
+00:01:25.979 --> 00:01:29.136
+temos que multiplicar tick_props
+pelo número de Pokémons
+
+00:01:29.169 --> 00:01:30.901
+para ter as posições
+corretas.
+
+00:01:30.934 --> 00:01:33.285
+O segundo argumento define
+os rótulos.
+
+00:01:33.318 --> 00:01:35.318
+Precisamos usar
+os dois argumentos aqui,
+
+00:01:35.351 --> 00:01:38.070
+já que as posições
+e seus valores são diferentes.
+
+00:01:38.464 --> 00:01:40.639
+Por fim,
+usamos a função xlabel
+
+00:01:40.672 --> 00:01:43.324
+para mudar o rótulo do eixo-x
+da contagem padrão
+
+00:01:43.357 --> 00:01:45.959
+para uma proporção
+mais adequada.
+
+00:01:46.158 --> 00:01:49.684
+O gráfico resultante nos mostra
+que 16% de todos os Pokémons
+
+00:01:49.717 --> 00:01:51.164
+incluem o tipo água,
+
+00:01:51.197 --> 00:01:54.526
+até os 4% que incluem
+o tipo gelo.
+
+00:01:55.117 --> 00:01:58.806
+Mas pode ser que queremos colocar
+os eixos em termos de contagens,
+
+00:01:58.839 --> 00:02:01.481
+usando texto nas barras
+para mostrar a proporção.
+
+00:02:01.514 --> 00:02:04.448
+É aqui que a flexibilidade
+do Matplotlib brilha.
+
+00:02:04.995 --> 00:02:08.283
+Usamos um loop para colocar
+elementos de texto, um por um.
+
+00:02:08.991 --> 00:02:11.763
+O primeiro argumento
+da função text é a posição x,
+
+00:02:11.908 --> 00:02:13.556
+logo depois
+do final da barra.
+
+00:02:14.050 --> 00:02:16.110
+O segundo argumento
+é a posição y,
+
+00:02:16.143 --> 00:02:18.719
+que começa em zero
+e aumenta conforme o loop.
+
+00:02:19.158 --> 00:02:21.610
+O terceiro argumento
+é a string a ser exibida,
+
+00:02:21.643 --> 00:02:22.973
+a porcentagem.
+
+00:02:23.456 --> 00:02:26.830
+Por fim, vou colocar
+um parâmetro adicional, VA,
+
+00:02:26.863 --> 00:02:30.678
+para centralizar o alinhamento
+vertical de texto em cada barra.
+
+00:02:31.116 --> 00:02:33.194
+O gráfico final fica assim.
+

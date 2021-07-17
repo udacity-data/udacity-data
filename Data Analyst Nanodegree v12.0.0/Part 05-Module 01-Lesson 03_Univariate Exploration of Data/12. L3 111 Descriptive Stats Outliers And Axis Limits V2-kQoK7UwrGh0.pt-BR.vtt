@@ -1,0 +1,180 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.257 --> 00:00:02.710
+CONCEITO 11
+
+00:00:02.751 --> 00:00:04.937
+ESTATÍSTICA DESCRITIVA,
+DADOS ANÔMALOS E LIMITES DE EIXO
+
+00:00:05.493 --> 00:00:07.317
+As visualizações
+que você criar
+
+00:00:07.350 --> 00:00:09.161
+vão te dar insights
+sobre os dados
+
+00:00:09.194 --> 00:00:12.017
+que não são possíveis de obter
+da estatística descritiva.
+
+00:00:12.372 --> 00:00:14.085
+Um gráfico vai dizer
+imediatamente
+
+00:00:14.126 --> 00:00:16.084
+se os dados são simétricos
+ou distorcidos,
+
+00:00:16.118 --> 00:00:18.169
+unimodais ou multimodais.
+
+00:00:19.053 --> 00:00:21.370
+Os gráficos podem indicar
+áreas interessantes
+
+00:00:21.403 --> 00:00:23.787
+para investigar
+e esclarecer melhor.
+
+00:00:24.755 --> 00:00:27.132
+Categorias em um gráfico de barras
+com baixa contagem
+
+00:00:27.165 --> 00:00:29.156
+podem sugerir
+que há erros nos dados,
+
+00:00:29.189 --> 00:00:32.541
+e se você vir barras com valores
+que contrariem o esperado,
+
+00:00:32.574 --> 00:00:34.865
+pode ser que precise
+de mais pesquisa
+
+00:00:35.195 --> 00:00:37.076
+ou de uma reexaminação
+dos dados.
+
+00:00:38.644 --> 00:00:40.880
+Por exemplo:
+digamos que você estuda
+
+00:00:40.913 --> 00:00:43.353
+a distribuição de mês de nascimento
+dos usuários.
+
+00:00:43.386 --> 00:00:46.040
+Ver um número curiosamente alto
+em janeiro
+
+00:00:46.375 --> 00:00:48.700
+pode sugerir uma investigação
+mais profunda.
+
+00:00:48.733 --> 00:00:52.987
+Talvez sejam usuários demais
+enviando informação padrão
+
+00:00:53.489 --> 00:00:56.534
+ou talvez tenha algo errado
+com o registro dos dados.
+
+00:00:57.412 --> 00:00:58.690
+Em um histograma,
+
+00:00:58.723 --> 00:01:01.824
+uma das informações mais importantes
+que se pode observar
+
+00:01:01.857 --> 00:01:04.457
+é se há ou não dados anômalos
+no seu conjunto.
+
+00:01:05.154 --> 00:01:07.739
+Se o gráfico cobrir
+um intervalo inesperado,
+
+00:01:07.772 --> 00:01:10.098
+isso pode indicar a presença
+de pontos incomuns
+
+00:01:10.131 --> 00:01:12.194
+que podem ser dignos
+de investigação.
+
+00:01:13.317 --> 00:01:16.618
+Em alguns casos, como quando
+você tem dados muito distorcidos,
+
+00:01:16.651 --> 00:01:18.640
+pode ser bom mudar o intervalo
+dos dados
+
+00:01:18.673 --> 00:01:21.318
+para ver de perto
+as partes mais interessantes.
+
+00:01:22.655 --> 00:01:24.741
+Em vez de filtrar
+os dados originais,
+
+00:01:24.774 --> 00:01:27.215
+você pode simplesmente mudar
+os limites dos eixos
+
+00:01:27.248 --> 00:01:28.727
+para fazer suas observações.
+
+00:01:28.760 --> 00:01:32.037
+Digamos que temos um gráfico
+da duração dos passeios, em minutos,
+
+00:01:32.070 --> 00:01:33.375
+de um serviço de bicicletas
+
+00:01:33.408 --> 00:01:35.595
+e ele se pareça com isso.
+
+00:01:36.300 --> 00:01:38.460
+Há alguns dados anômalos
+na última barra,
+
+00:01:38.493 --> 00:01:40.948
+de 1400 a 1500 minutos,
+
+00:01:40.981 --> 00:01:44.233
+que fazem todos os outros pontos
+caírem na 1ª barra.
+
+00:01:44.990 --> 00:01:47.837
+Podemos estudar melhor
+os pontos anômalos depois,
+
+00:01:47.870 --> 00:01:50.219
+mas dá para mudar os limites
+do eixo
+
+00:01:50.252 --> 00:01:52.912
+para ver o formato
+da maioria dos pontos.
+
+00:01:53.850 --> 00:01:56.032
+Quando limitamos o eixo
+a 60 minutos,
+
+00:01:56.065 --> 00:01:58.210
+e a largura das barras
+a 5 minutos,
+
+00:01:58.243 --> 00:02:01.273
+vemos claramente
+que a duração típica do passeio
+
+00:02:01.306 --> 00:02:03.753
+está entre 5 e 15 minutos.
+

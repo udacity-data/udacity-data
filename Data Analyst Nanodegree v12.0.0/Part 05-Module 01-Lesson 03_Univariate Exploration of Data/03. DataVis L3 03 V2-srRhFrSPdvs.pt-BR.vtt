@@ -1,0 +1,363 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.254 --> 00:00:02.998
+Olá! Espero que esteja pronto
+para usar o Python
+
+00:00:03.031 --> 00:00:04.649
+para visualizar seus dados.
+
+00:00:04.986 --> 00:00:08.354
+Neste curso, vamos usar
+NumPy e Pandas para armazenar dados
+
+00:00:08.387 --> 00:00:11.986
+e o Matplotlib e o Seaborn
+para criar nossas visualizações.
+
+00:00:12.544 --> 00:00:15.907
+Você pode ver a abreviação SNS
+para o Seaborn,
+
+00:00:15.940 --> 00:00:18.205
+mas eu vou chamar de SB
+neste curso.
+
+00:00:18.788 --> 00:00:20.839
+Também vamos escrever e rodar
+nosso código
+
+00:00:20.872 --> 00:00:22.316
+usando cadernos Jupyter.
+
+00:00:22.830 --> 00:00:26.171
+Esse comando mágico,
+%matplotlib inline,
+
+00:00:26.204 --> 00:00:29.327
+faz com que gráficos sejam traçados
+diretamente no caderno.
+
+00:00:29.644 --> 00:00:32.347
+Nesta lição, vamos usar
+este conjunto de dados,
+
+00:00:32.380 --> 00:00:35.867
+que compila atributos de criaturas
+da série Pokémon.
+
+00:00:36.057 --> 00:00:39.223
+O conjunto de dados consiste
+em 807 colunas por 14 colunas
+
+00:00:39.394 --> 00:00:42.264
+que incluem características
+categóricas e numéricas.
+
+00:00:42.806 --> 00:00:43.918
+Para começar,
+
+00:00:43.951 --> 00:00:47.468
+vamos fazer um gráfico de barras
+de uma das variáveis categóricas,
+
+00:00:47.506 --> 00:00:49.146
+a ID de geração.
+
+00:00:49.587 --> 00:00:51.862
+Os valores da coluna
+parecem numéricos,
+
+00:00:51.895 --> 00:00:53.641
+mas são só
+rótulos categóricos,
+
+00:00:53.924 --> 00:00:56.569
+indicando quando cada espécie
+apareceu na série,
+
+00:00:56.602 --> 00:00:58.877
+da 1ª geração
+até a 7ª geração.
+
+00:00:59.517 --> 00:01:03.398
+Para criar o gráfico, vamos usar
+a função countplot do Seaborn.
+
+00:01:03.915 --> 00:01:06.183
+Ajustamos a fonte de dados,
+os dados de Pokémon,
+
+00:01:06.216 --> 00:01:07.635
+no parâmetro de dados,
+
+00:01:07.668 --> 00:01:10.522
+e a variável de interesse,
+a coluna de ID de geração,
+
+00:01:10.555 --> 00:01:12.074
+no parâmetro x.
+
+00:01:12.442 --> 00:01:14.025
+Não é absolutamente
+necessário,
+
+00:01:14.058 --> 00:01:16.538
+mas eu pus um ";"
+no final da expressão
+
+00:01:16.571 --> 00:01:19.937
+para suprimir a exibição
+da informação do objeto do gráfico.
+
+00:01:20.079 --> 00:01:21.217
+O gráfico nos diz
+
+00:01:21.250 --> 00:01:25.106
+que a maior parte dos Pokémon
+apareceram nas gerações 1, 3 e 5,
+
+00:01:25.139 --> 00:01:27.939
+com poucos aparecendo
+nas gerações 6 e 7.
+
+00:01:28.237 --> 00:01:30.672
+Uma coisa que me incomoda
+na configuração padrão
+
+00:01:30.705 --> 00:01:33.951
+é que cada barra é ilustrada
+usando uma cor diferente.
+
+00:01:34.411 --> 00:01:37.881
+O número da geração já está
+codificado pela posição no eixo-x
+
+00:01:37.914 --> 00:01:41.115
+e não há um bom motivo agora
+para associar cada geração
+
+00:01:41.148 --> 00:01:42.552
+com uma cor diferente.
+
+00:01:42.585 --> 00:01:45.354
+É melhor começar plotando
+tudo em uma cor só
+
+00:01:45.387 --> 00:01:47.048
+para evitar distrações.
+
+00:01:47.384 --> 00:01:49.003
+Vou obter meu valor de cor
+
+00:01:49.036 --> 00:01:51.548
+usando a função de paleta de cor
+do Seaborn.
+
+00:01:52.067 --> 00:01:55.287
+Ela retorna uma lista de tuplas
+que corresponde à paleta de cores
+
+00:01:55.320 --> 00:01:57.315
+definida nos argumentos
+da função.
+
+00:01:57.847 --> 00:01:59.798
+Já que não especifiquei
+parâmetro algum,
+
+00:01:59.831 --> 00:02:02.452
+vou só recuperar
+a paleta padrão atual.
+
+00:02:02.924 --> 00:02:04.600
+Como eu só quero uma cor,
+
+00:02:04.633 --> 00:02:06.313
+vou cortar o índice zero
+
+00:02:06.346 --> 00:02:08.079
+para pegar a primeira tupla
+da lista
+
+00:02:08.112 --> 00:02:10.510
+e vou guardá-la na variável
+de cor básica.
+
+00:02:10.933 --> 00:02:12.700
+Depois, na função countplot,
+
+00:02:13.210 --> 00:02:16.293
+vou definir o valor do parâmetro
+de cor para a tupla.
+
+00:02:16.527 --> 00:02:18.317
+O gráfico revisado fica assim.
+
+00:02:18.662 --> 00:02:20.047
+Bem mais limpo.
+
+00:02:21.894 --> 00:02:24.233
+Uma coisa que podemos fazer
+agora
+
+00:02:24.266 --> 00:02:26.194
+é colocar as gerações
+em ordem
+
+00:02:26.227 --> 00:02:28.799
+por número de espécies
+de Pokémon apresentadas.
+
+00:02:29.525 --> 00:02:32.798
+Isso é feito com o parâmetro
+de ordem na função countplot.
+
+00:02:33.347 --> 00:02:35.588
+Esse parâmetro tem como argumento
+uma lista
+
+00:02:35.621 --> 00:02:38.184
+com a ordem na qual
+as barras serão plotadas.
+
+00:02:38.463 --> 00:02:40.476
+Poderíamos colocar
+os valores no código,
+
+00:02:40.509 --> 00:02:42.946
+baseado no que vimos
+no gráfico desarrumado.
+
+00:02:42.979 --> 00:02:46.828
+Por exemplo, poderíamos começar
+com 5 e terminar com 6.
+
+00:02:47.448 --> 00:02:49.379
+Uma abordagem melhor seria
+escrever um código
+
+00:02:49.412 --> 00:02:51.365
+para programar essa ordem.
+
+00:02:51.651 --> 00:02:55.467
+A função de série do Panda,
+value count, é valiosa para isso.
+
+00:02:55.500 --> 00:02:59.029
+A função conta a frequência
+de cada valor único na série
+
+00:02:59.062 --> 00:03:01.193
+e os organiza em ordem
+decrescente.
+
+00:03:01.721 --> 00:03:03.209
+Para ordenar as barras,
+
+00:03:03.242 --> 00:03:04.889
+pegamos os valores
+dos índices
+
+00:03:04.922 --> 00:03:06.624
+e os armazenamos
+numa variável
+
+00:03:07.219 --> 00:03:08.937
+e colocamos
+no parâmetro de ordem
+
+00:03:08.970 --> 00:03:10.851
+para ordenar
+o gráfico de barras.
+
+00:03:12.347 --> 00:03:14.895
+Vamos passar a uma variável
+categórica diferente,
+
+00:03:14.928 --> 00:03:16.234
+o tipo de Pokémon.
+
+00:03:16.267 --> 00:03:18.966
+Cada espécie
+tem um ou dois tipos
+
+00:03:18.999 --> 00:03:22.723
+que influenciam a capacidade
+ofensiva e defensiva da criatura.
+
+00:03:23.318 --> 00:03:25.843
+Por ora, vamos conferir
+a distribuição
+
+00:03:25.876 --> 00:03:27.628
+dos primeiros tipos
+de Pokémon.
+
+00:03:27.661 --> 00:03:29.374
+Quando geramos o gráfico,
+
+00:03:29.407 --> 00:03:31.572
+vemos que os rótulos
+do eixo-x
+
+00:03:31.605 --> 00:03:33.959
+ficam ilegíveis
+por causa da sobreposição.
+
+00:03:34.409 --> 00:03:35.831
+Uma coisa que podemos fazer
+
+00:03:35.864 --> 00:03:38.690
+é usar a função Xticks
+do Matplotlib
+
+00:03:38.723 --> 00:03:40.777
+para girar os rótulos
+de categoria.
+
+00:03:41.057 --> 00:03:43.261
+Ao ajustar a rotação
+para 90,
+
+00:03:43.335 --> 00:03:46.215
+os rótulos giram 90°
+no sentido anti-horário
+
+00:03:46.248 --> 00:03:47.926
+e não estão mais
+sobrepostos.
+
+00:03:48.357 --> 00:03:51.603
+Outra estratégia é criar
+um gráfico de barras horizontal.
+
+00:03:52.052 --> 00:03:56.355
+No Seaborn, basta mudar
+o parâmetro x para y.
+
+00:03:56.915 --> 00:04:00.304
+Agora os rótulos da variável tipo
+estão no eixo vertical
+
+00:04:00.337 --> 00:04:02.354
+e a frequência aparece
+no eixo-x.
+
+00:04:03.313 --> 00:04:05.477
+Quando arrumamos o gráfico
+pela frequência de tipos,
+
+00:04:05.510 --> 00:04:07.369
+Vamos que "água" e "normal"
+
+00:04:07.402 --> 00:04:09.961
+são os primeiros tipos
+mais comuns dos Pokémon,
+
+00:04:09.994 --> 00:04:12.376
+enquanto "voador"
+é o primeiro tipo menos comum.
+

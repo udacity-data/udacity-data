@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.129 --> 00:00:10.359
+Great job. You've taken your first steps in visualizing your data.
+
+00:00:10.359 --> 00:00:14.080
+In this lesson, you'll learned about the plots and code that you can use to
+
+00:00:14.080 --> 00:00:17.835
+visualize and understand individual variables in your data set.
+
+00:00:17.835 --> 00:00:21.120
+For quantitative variables, the most common plot type is
+
+00:00:21.120 --> 00:00:23.964
+the histogram and for qualitative variables,
+
+00:00:23.964 --> 00:00:26.605
+the most common plot type is the bar chart.
+
+00:00:26.605 --> 00:00:29.190
+You learned about the limitations of pie charts and
+
+00:00:29.190 --> 00:00:32.170
+doughnut charts and how they can be used effectively.
+
+00:00:32.170 --> 00:00:34.899
+You also learned about techniques to help you identify
+
+00:00:34.899 --> 00:00:37.780
+trends in the data and deal with outliers.
+
+00:00:37.780 --> 00:00:39.425
+On the vertical axis,
+
+00:00:39.424 --> 00:00:41.509
+you learned how to report frequencies in terms of
+
+00:00:41.509 --> 00:00:44.390
+absolute counts or as relative frequencies.
+
+00:00:44.390 --> 00:00:47.920
+For quantitative data, you also learned how to set parameters in
+
+00:00:47.920 --> 00:00:52.429
+your functions to set axis limits and to change the scale of measurements.
+
+00:00:52.429 --> 00:00:54.390
+The observations you make during
+
+00:00:54.390 --> 00:00:57.710
+the univariate stage of exploration will help you start to answer
+
+00:00:57.710 --> 00:01:03.179
+your research questions or generate more specific questions for further investigation.
+
+00:01:03.179 --> 00:01:07.909
+In the next lesson, you will learn how to create bivariate visualizations so you can
+
+00:01:07.909 --> 00:01:13.539
+observe the relationships between pairs of variables in your data set. See you there.
+

@@ -1,0 +1,514 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Bar Charts
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Univariate Exploration of Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Tidy Data.html">
+       02. Tidy Data
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Bar Charts.html">
+       03. Bar Charts
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Absolute vs. Relative Frequency.html">
+       04. Absolute vs. Relative Frequency
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Counting Missing Data.html">
+       05. Counting Missing Data
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Bar Chart Practice.html">
+       06. Bar Chart Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Pie Charts.html">
+       07. Pie Charts
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Histograms.html">
+       08. Histograms
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Histogram Practice.html">
+       09. Histogram Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Figures, Axes, and Subplots.html">
+       10. Figures, Axes, and Subplots
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Choosing a Plot for Discrete Data.html">
+       11. Choosing a Plot for Discrete Data
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Descriptive Statistics, Outliers and Axis Limits.html">
+       12. Descriptive Statistics, Outliers and Axis Limits
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Scales and Transformations.html">
+       13. Scales and Transformations
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Scales and Transformations Practice.html">
+       14. Scales and Transformations Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Lesson Summary.html">
+       15. Lesson Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Extra Kernel Density Estimation.html">
+       16. Extra: Kernel Density Estimation
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Extra Waffle Plots.html">
+       17. Extra: Waffle Plots
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. Bar Charts
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L3 031 Bar Charts V3
+         </p>
+        </h3>
+        <video controls="">
+         <source src="03. L3 031 Bar Charts V3-ybXcduB6cXA.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="03. L3 031 Bar Charts V3-ybXcduB6cXA.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="03. L3 031 Bar Charts V3-ybXcduB6cXA.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="03. L3 031 Bar Charts V3-ybXcduB6cXA.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          DataVis L3 03 V2
+         </p>
+        </h3>
+        <video controls="">
+         <source src="03. DataVis L3 03 V2-srRhFrSPdvs.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="03. DataVis L3 03 V2-srRhFrSPdvs.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="03. DataVis L3 03 V2-srRhFrSPdvs.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="03. DataVis L3 03 V2-srRhFrSPdvs.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+         <h2 id="bar-charts">
+          Bar Charts
+         </h2>
+         <p>
+          A
+          <strong>
+           bar chart
+          </strong>
+          is used to depict the distribution of a categorical variable. In a bar chart, each level of the categorical variable is depicted with a bar, whose height indicates the frequency of data points that take on that level. A basic bar chart of frequencies can be created through the use of seaborn's
+          <a href="https://seaborn.pydata.org/generated/seaborn.countplot.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            countplot
+           </code>
+          </a>
+          function:
+         </p>
+         <pre><code class="python language-python">sb.countplot(data = df, x = 'cat_var')</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c03-barchart1.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          For the example given, you can see that the Beta level has the highest frequency at over 100 counts, followed by Gamma and Alpha, with Delta the least frequent at around 50. By default, each category is given a different color. This might come in handy for building associations between these category labels and encodings in plots with more variables. Otherwise, it's a good idea to simplify the plot and reduce unnecessary distractions by plotting all bars in the same color. This can be set using the "color" parameter:
+         </p>
+         <pre><code class="python language-python">base_color = sb.color_palette()[0]
+sb.countplot(data = df, x = 'cat_var', color = base_color)</code></pre>
+         <p>
+          <a href="https://seaborn.pydata.org/generated/seaborn.color_palette.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            color_palette
+           </code>
+          </a>
+          returns a list of RGB tuples. Each tuple consists of three digits specifying the red, green, and blue channel values to specify a color. Calling this function without any parameters returns the current / default palette, and we take the first color to be the color for all bars.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c03-barchart2.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          One thing that we might want to do with a bar chart is to sort the data in some way. For nominal-type data, one common operation is to sort the data in terms of frequency. With our data in a pandas DataFrame, we can use various DataFrame methods to compute and extract an ordering, then set that ordering on the "order" parameter:
+         </p>
+         <pre><code class="python language-python">base_color = sb.color_palette()[0]
+cat_order = df['cat_var'].value_counts().index
+sb.countplot(data = df, x = 'cat_var', color = base_color, order = cat_order)</code></pre>
+         <p>
+          (Documentation:
+          <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.value_counts.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            Series.value_counts()
+           </code>
+          </a>
+          )
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c03-barchart3.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          For ordinal-type data, we probably want to sort the bars in order of the variables. While we could sort the levels by frequency like above, we usually care about whether the most frequent values are at high levels, low levels, etc. The best thing for us to do in this case is to convert the column into an ordered categorical data type. By default, pandas reads in string data as object types, and will plot the bars in the order in which the unique values were seen. By converting the data into an ordered type, the order of categories becomes innate to the feature, and we won't need to specify an "order" parameter each time it's required in a plot.
+         </p>
+         <pre><code class="python language-python"># this method requires pandas v0.21 or later
+level_order = ['Alpha', 'Beta', 'Gamma', 'Delta']
+ordered_cat = pd.api.types.CategoricalDtype(ordered = True, categories = level_order)
+df['cat_var'] = df['cat_var'].astype(ordered_cat)
+
+# # use this method if you have pandas v0.20.3 or earlier
+# df['cat_var'] = df['cat_var'].astype('category', ordered = True,
+#                                      categories = level_order)
+
+base_color = sb.color_palette()[0]
+sb.countplot(data = df, x = 'cat_var', color = base_color)</code></pre>
+         <p>
+          (Documentation:
+          <a href="https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.api.types.CategoricalDtype.html" rel="noopener noreferrer" target="_blank">
+           CategoricalDtype
+          </a>
+          )
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c03-barchart4.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Should you find that you need to sort an ordered categorical type in a different order, you can always temporarily override the data type by setting the "order" parameter as above.
+         </p>
+         <h2 id="additional-variations">
+          Additional Variations
+         </h2>
+         <p>
+          If your data is in a pandas Series, 1-d NumPy array, or list, you can also just set it as the first argument to the
+          <code>
+           countplot
+          </code>
+          function, as we do with the Series
+          <code>
+           data_var
+          </code>
+          here:
+         </p>
+         <pre><code class="python language-python">sb.countplot(data_var)</code></pre>
+         <p>
+          If you have a lot of category levels, or the category names are long, then you might end up with overcrowding of the tick labels. One way to address this is through creation of a horizontal bar chart. In a horizontal bar chart, it is the length of each bar that indicates frequency, rather than the height. In the code, instead of setting the data or variable on the "x" parameter, you can set the variable to be plotted on the parameter "y":
+         </p>
+         <pre><code class="python language-python">base_color = sb.color_palette()[0]
+sb.countplot(data = df, y = 'cat_var', color = base_color)</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c03-barchart5.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Alternatively, you can use matplotlib's
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.xticks.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            xticks
+           </code>
+          </a>
+          function and its "rotation" parameter to change the orientation in which the labels will be depicted (as degrees counter-clockwise from horizontal):
+         </p>
+         <pre><code class="python language-python">base_color = sb.color_palette()[0]
+sb.countplot(data = df, x = 'cat_var', color = base_color)
+plt.xticks(rotation = 90)</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c03-barchart6.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. Absolute vs. Relative Frequency.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Bar Charts')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

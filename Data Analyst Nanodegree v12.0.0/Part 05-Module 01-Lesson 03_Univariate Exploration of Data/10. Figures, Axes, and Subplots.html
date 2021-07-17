@@ -1,0 +1,695 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Figures, Axes, and Subplots
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Univariate Exploration of Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Tidy Data.html">
+       02. Tidy Data
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Bar Charts.html">
+       03. Bar Charts
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Absolute vs. Relative Frequency.html">
+       04. Absolute vs. Relative Frequency
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Counting Missing Data.html">
+       05. Counting Missing Data
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Bar Chart Practice.html">
+       06. Bar Chart Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Pie Charts.html">
+       07. Pie Charts
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Histograms.html">
+       08. Histograms
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Histogram Practice.html">
+       09. Histogram Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Figures, Axes, and Subplots.html">
+       10. Figures, Axes, and Subplots
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Choosing a Plot for Discrete Data.html">
+       11. Choosing a Plot for Discrete Data
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Descriptive Statistics, Outliers and Axis Limits.html">
+       12. Descriptive Statistics, Outliers and Axis Limits
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Scales and Transformations.html">
+       13. Scales and Transformations
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Scales and Transformations Practice.html">
+       14. Scales and Transformations Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Lesson Summary.html">
+       15. Lesson Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Extra Kernel Density Estimation.html">
+       16. Extra: Kernel Density Estimation
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Extra Waffle Plots.html">
+       17. Extra: Waffle Plots
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          10. Figures, Axes, and Subplots
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="figures-axes-and-subplots">
+          Figures, Axes, and Subplots
+         </h2>
+         <p>
+          At this point, you've seen and had some practice with some basic plotting functions using matplotlib and seaborn. The previous page introduced something a little bit new: creating two side-by-side plots through the use of matplotlib's
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplot.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            subplot()
+           </code>
+          </a>
+          function. If you have any questions about how that or the
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.figure.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            figure()
+           </code>
+          </a>
+          function worked, then read on. This page will discuss the basic structure of visualizations using matplotlib and how subplots work in that structure.
+         </p>
+         <p>
+          The base of a visualization in matplotlib is a
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html" rel="noopener noreferrer" target="_blank">
+           Figure
+          </a>
+          object. Contained within each Figure will be one or more
+          <a href="https://matplotlib.org/api/axes_api.html" rel="noopener noreferrer" target="_blank">
+           Axes
+          </a>
+          objects, each Axes object containing a number of other elements that represent each plot. In the earliest examples, these objects have been created implicitly. Let's say that the following expression is run inside a Jupyter notebook to create a histogram:
+         </p>
+         <pre><code class="python language-python">plt.hist(data = df, x = 'num_var')</code></pre>
+         <p>
+          Since we don't have a Figure area to plot inside, Python first creates a Figure object. And since the Figure doesn't start with any Axes to draw the histogram onto, an Axes object is created inside the Figure. Finally, the histogram is drawn within that Axes.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c09b-subplotsa.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          This hierarchy of objects is useful to know about so that we can take more control over the layout and aesthetics of our plots. One alternative way we could have created the histogram is to explicitly set up the Figure and Axes like this:
+         </p>
+         <pre><code class="python language-python">fig = plt.figure()
+ax = fig.add_axes([.125, .125, .775, .755])
+ax.hist(data = df, x = 'num_var')</code></pre>
+         <p>
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.figure.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            figure()
+           </code>
+          </a>
+          creates a new Figure object, a reference to which has been stored in the variable
+          <code>
+           fig
+          </code>
+          . One of the Figure methods is
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure.add_axes" rel="noopener noreferrer" target="_blank">
+           <code>
+            .add_axes()
+           </code>
+          </a>
+          , which creates a new Axes object in the Figure. The method requires one list as argument specifying the dimensions of the Axes: the first two elements of the list indicate the position of the lower-left hand corner of the Axes (in this case one quarter of the way from the lower-left corner of the Figure) and the last two elements specifying the Axes width and height, respectively. We refer to the Axes in the variable
+          <code>
+           ax
+          </code>
+          . Finally, we use the Axes method
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.hist.html#matplotlib.axes.Axes.hist" rel="noopener noreferrer" target="_blank">
+           <code>
+            .hist()
+           </code>
+          </a>
+          just like we did before with
+          <code>
+           plt.hist()
+          </code>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="This plot is just like the first histogram on the Histograms page." class="img img-fluid" src="img/l3-c08-histograms1.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            This plot is just like the first histogram on the Histograms page.
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          To use Axes objects with seaborn, seaborn functions usually have an "ax" parameter to specify upon which Axes a plot will be drawn.
+         </p>
+         <pre><code class="python language-python">fig = plt.figure()
+ax = fig.add_axes([.125, .125, .775, .755])
+base_color = sb.color_palette()[0]
+sb.countplot(data = df, x = 'cat_var', color = base_color, ax = ax)</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="This is the same as the second plot on the Bar Charts page." class="img img-fluid" src="img/l3-c03-barchart2.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            This is the same as the second plot on the Bar Charts page.
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          In the above two cases, there was no purpose to explicitly go through the Figure and Axes creation steps. And indeed, in most cases, you can just use the basic matplotlib and seaborn functions as is. Each function targets a Figure or Axes, and they'll automatically target the most recent Figure or Axes worked with. As an example of this, let's review in detail how
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplot.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            subplot()
+           </code>
+          </a>
+          was used on the Histograms page:
+         </p>
+         <pre><code class="python language-python">plt.figure(figsize = [10, 5]) # larger figure size for subplots
+
+# example of somewhat too-large bin size
+plt.subplot(1, 2, 1) # 1 row, 2 cols, subplot 1
+bin_edges = np.arange(0, df['num_var'].max()+4, 4)
+plt.hist(data = df, x = 'num_var', bins = bin_edges)
+
+# example of somewhat too-small bin size
+plt.subplot(1, 2, 2) # 1 row, 2 cols, subplot 2
+bin_edges = np.arange(0, df['num_var'].max()+1/4, 1/4)
+plt.hist(data = df, x = 'num_var', bins = bin_edges)</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c08-histograms3.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          First of all,
+          <code>
+           plt.figure(figsize = [10, 5])
+          </code>
+          creates a new Figure, with the "figsize" argument setting the width and height of the overall figure to 10 inches by 5 inches, respectively. Even if we don't assign any variable to return the function's output, Python will still implicitly know that further plotting calls that need a Figure will refer to that Figure as the active one.
+         </p>
+         <p>
+          Then,
+          <code>
+           plt.subplot(1, 2, 1)
+          </code>
+          creates a new Axes in our Figure, its size determined by the
+          <code>
+           subplot()
+          </code>
+          function arguments. The first two arguments says to divide the figure into one row and two columns, and the third argument says to create a new Axes in the first slot. Slots are numbered from left to right in rows from top to bottom. Note in particular that the index numbers start at 1 (rather than the usual Python indexing starting from 0). (You'll see the indexing a little better in the example at the end of the page.) Again, Python will implicitly set that Axes as the current Axes, so when the
+          <code>
+           plt.hist()
+          </code>
+          call comes, the histogram is plotted in the left-side subplot.
+         </p>
+         <p>
+          Finally,
+          <code>
+           plt.subplot(1, 2, 2)
+          </code>
+          creates a new Axes in the second subplot slot, and sets that one as the current Axes. Thus, when the next
+          <code>
+           plt.hist()
+          </code>
+          call comes, the histogram gets drawn in the right-side subplot.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Subplots Exploration Quiz
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             What if we removed
+             <code>
+              plt.subplot(1, 2, 2)
+             </code>
+             from the above code block, and just ran the rest of the lines? What would the outcome plot look like? (
+             <strong>
+              HINT
+             </strong>
+             : Try playing around with some code for yourself to come up with an answer!)
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1535143077570" name="698540" type="checkbox" value="a1535143077570"/>
+           <label for="a1535143077570">
+            <p>
+             We would see only one set of bars, for the first
+             <code>
+              .hist()
+             </code>
+             call.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1535143184826" name="698540" type="checkbox" value="a1535143184826"/>
+           <label for="a1535143184826">
+            <p>
+             We would see only one set of bars, for the second
+             <code>
+              .hist()
+             </code>
+             call.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1535143185580" name="698540" type="checkbox" value="a1535143185580"/>
+           <label for="a1535143185580">
+            <p>
+             We would see two sets of bars, plotted one on top of the other.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1535143186363" name="698540" type="checkbox" value="a1535143186363"/>
+           <label for="a1535143186363">
+            <p>
+             We would see one set of axes, occupying the left side of the figure.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1535143186979" name="698540" type="checkbox" value="a1535143186979"/>
+           <label for="a1535143186979">
+            <p>
+             We would see one set of axes, occupying the right side of the figure.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1535143332313" name="698540" type="checkbox" value="a1535143332313"/>
+           <label for="a1535143332313">
+            <p>
+             We would see one set of axes, filling the full figure length.
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            We would see two sets of bars, plotted one on top of the other.
+           </li>
+           <li>
+            We would see one set of axes, occupying the left side of the figure.
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="additional-techniques">
+          Additional Techniques
+         </h2>
+         <p>
+          To close this page, we'll quickly run through a few other ways of dealing with Axes and subplots. The techniques above should suffice for basic plot creation, but you might want to keep the following in the back of your mind as additional tools to break out as needed.
+         </p>
+         <p>
+          If you don't assign Axes objects as they're created, you can retrieve the current Axes using
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.gca.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            ax = plt.gca()
+           </code>
+          </a>
+          , or you can get a list of all Axes in a Figure
+          <code>
+           fig
+          </code>
+          by using
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure.get_axes" rel="noopener noreferrer" target="_blank">
+           <code>
+            axes = fig.get_axes()
+           </code>
+          </a>
+          . As for creating subplots, you can use
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure.add_subplot" rel="noopener noreferrer" target="_blank">
+           <code>
+            fig.add_subplot()
+           </code>
+          </a>
+          in the same way as
+          <code>
+           plt.subplot()
+          </code>
+          above. If you already know that you're going to be creating a bunch of subplots, you can use the
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            plt.subplots()
+           </code>
+          </a>
+          function:
+         </p>
+         <pre><code class="python language-python">fig, axes = plt.subplots(3, 4) # grid of 3x4 subplots
+axes = axes.flatten() # reshape from 3x4 array into 12-element vector
+for i in range(12):
+    plt.sca(axes[i]) # set the current Axes
+    plt.text(0.5, 0.5, i+1) # print conventional subplot index number to middle of Axes</code></pre>
+         <p>
+          As a special note for the text, the Axes limits are [0,1] on each Axes by default, and we increment the iterator counter
+          <code>
+           i
+          </code>
+          by 1 to get the subplot index, if we were creating the subplots through
+          <code>
+           subplot()
+          </code>
+          . (Reference:
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.sca.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            plt.sca()
+           </code>
+          </a>
+          ,
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.text.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            plt.text()
+           </code>
+          </a>
+          )
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c09b-subplots4.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="documentation">
+          Documentation
+         </h2>
+         <p>
+          Documentation pages for Figure and Axes objects are linked below. Note that they're pretty dense, so I don't suggest reading them until you need to dig down deeper and override matplotlib or seaborn's default behavior. Even then, they
+          <em>
+           are
+          </em>
+          just reference pages, so they're better for skimming or searching in case other internet resources don't provide enough detail.
+         </p>
+         <ul>
+          <li>
+           <a href="https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html" rel="noopener noreferrer" target="_blank">
+            Figure
+           </a>
+          </li>
+          <li>
+           <a href="https://matplotlib.org/api/axes_api.html" rel="noopener noreferrer" target="_blank">
+            Axes
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="11. Choosing a Plot for Discrete Data.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('10. Figures, Axes, and Subplots')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

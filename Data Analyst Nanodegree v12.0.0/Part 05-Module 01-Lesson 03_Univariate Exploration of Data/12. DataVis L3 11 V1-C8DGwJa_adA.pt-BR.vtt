@@ -1,0 +1,71 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.119 --> 00:00:03.899
+Vamos tentar fazer outro histograma
+de mais um atributo de Pokémons:
+
+00:00:03.932 --> 00:00:07.369
+a altura.
+As unidades estão em metros.
+
+00:00:07.593 --> 00:00:10.338
+O gráfico indica
+que ela é bem distorcida à direita
+
+00:00:10.371 --> 00:00:13.812
+com relativamente poucos pontos
+com valor acima de 6 metros.
+
+00:00:14.149 --> 00:00:16.884
+Pode valer a pena ampliar
+o grupo principal dos dados
+
+00:00:16.917 --> 00:00:18.414
+através do limite de eixo.
+
+00:00:19.010 --> 00:00:21.761
+Podemos usar a função xlim
+do Matplotlib
+
+00:00:21.794 --> 00:00:25.796
+para definir os limites superior
+e inferior das barras no gráfico.
+
+00:00:25.829 --> 00:00:29.344
+Essa função tem como argumento
+uma lista ou tupla de dois valores
+
+00:00:29.377 --> 00:00:31.177
+que especificam
+esses limites.
+
+00:00:31.210 --> 00:00:34.484
+Neste caso, defino os limites
+do eixo de zero a 6.
+
+00:00:35.103 --> 00:00:36.719
+Também mudei o tamanho
+da barra
+
+00:00:36.752 --> 00:00:39.400
+antecipando a redução
+do limite do eixo.
+
+00:00:39.978 --> 00:00:43.406
+Neste caso,
+não há grandes insights obtidos
+
+00:00:43.439 --> 00:00:45.472
+pelo corte
+dos limites do eixo.
+
+00:00:45.758 --> 00:00:48.825
+A maioria dos Pokémons
+são de tamanho humano ou menor,
+
+00:00:48.858 --> 00:00:51.600
+e relativamente poucos
+são mais altos que isso.
+

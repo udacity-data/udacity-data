@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:03.500 --> 00:00:06.960
+We start our exploration of any data set with
+
+00:00:06.960 --> 00:00:11.315
+univariate visualizations or visualizations of single variables.
+
+00:00:11.314 --> 00:00:13.674
+By looking at one variable at a time,
+
+00:00:13.675 --> 00:00:17.074
+we can build an intuition for how each variable is distributed
+
+00:00:17.074 --> 00:00:21.515
+before moving on to more complicated interactions between variables.
+
+00:00:21.515 --> 00:00:24.324
+When you start looking at any data set,
+
+00:00:24.324 --> 00:00:27.660
+keep in mind the goals of your investigation and explore
+
+00:00:27.660 --> 00:00:31.495
+the variables that will be key to answering your research questions.
+
+00:00:31.495 --> 00:00:36.500
+If we observe any oddities in the data such as outliers, or missing values,
+
+00:00:36.500 --> 00:00:38.399
+this can point us to areas where we need to do
+
+00:00:38.399 --> 00:00:41.905
+more cleaning or otherwise perform further inspection.
+
+00:00:41.905 --> 00:00:44.600
+It often makes sense to integrate this part of
+
+00:00:44.600 --> 00:00:48.710
+the exploration process into parts of the data wrangling process.
+
+00:00:48.710 --> 00:00:52.149
+This lesson will focus on two different plot types,
+
+00:00:52.149 --> 00:00:57.039
+bar charts for qualitative variables and histograms for quantitative variables.
+
+00:00:57.039 --> 00:01:01.984
+While both of these plot types take the appearance of rectangles on a pair of axes,
+
+00:01:01.984 --> 00:01:05.429
+you will see how datatype makes these plots distinct.
+
+00:01:05.430 --> 00:01:08.650
+You will also learn how to use code to create these plots
+
+00:01:08.650 --> 00:01:12.240
+as well as how to use these plots to gain an understanding of your data.
+

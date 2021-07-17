@@ -1,0 +1,270 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.456 --> 00:00:02.808
+Agora vamos ver
+algumas variáveis numéricas
+
+00:00:02.841 --> 00:00:04.298
+neste conjunto de dados.
+
+00:00:04.331 --> 00:00:07.397
+Vamos começar este exemplo
+conferindo velocidades de Pokémons.
+
+00:00:07.512 --> 00:00:10.452
+Quanto maior o valor,
+mais cedo eles agem em batalha.
+
+00:00:10.846 --> 00:00:13.791
+O Matplotlib tem uma função
+para criar histogramas,
+
+00:00:13.824 --> 00:00:15.219
+a função hist.
+
+00:00:15.454 --> 00:00:18.936
+Criamos o histograma básico da mesma
+forma que o gráfico de barras.
+
+00:00:18.969 --> 00:00:21.113
+O conjunto de dados
+é a estrutura dos Pokémons
+
+00:00:21.146 --> 00:00:23.137
+e x será a variável
+velocidade.
+
+00:00:23.402 --> 00:00:25.990
+A distribuição de velocidades
+parece ser unimodal
+
+00:00:26.023 --> 00:00:27.634
+e pouco distorcida
+à direita.
+
+00:00:27.667 --> 00:00:29.354
+Mas há pouco detalhe aqui.
+
+00:00:29.938 --> 00:00:33.182
+Por padrão, o Matplotlib
+divide os dados em 10 barras,
+
+00:00:33.215 --> 00:00:34.984
+o que geralmente é pouco.
+
+00:00:35.544 --> 00:00:39.224
+Além disso, as barras não estão
+muito alinhadas com as marcas,
+
+00:00:39.542 --> 00:00:41.678
+o que dificulta
+a interpretação.
+
+00:00:42.112 --> 00:00:45.966
+Para resolver isso, vamos usar
+o parâmetro de barra da função hist.
+
+00:00:45.999 --> 00:00:49.136
+Se definirmos um valor inteiro
+para as barras, como 20,
+
+00:00:49.169 --> 00:00:52.059
+isso vai determinar o número
+de barras no gráfico.
+
+00:00:52.716 --> 00:00:54.820
+Agora temos um gráfico
+mais detalhado,
+
+00:00:54.853 --> 00:00:58.002
+mas ainda temos o problema
+de limites de barra malfeitos.
+
+00:00:58.035 --> 00:01:00.827
+Hist vai retornar o contorno
+das barras e a contagem
+
+00:01:00.860 --> 00:01:02.524
+quando eu tirar o ";".
+
+00:01:02.913 --> 00:01:05.347
+O fato dos limites das barras
+não ser inteiro
+
+00:01:05.380 --> 00:01:07.443
+enquanto os valores
+são inteiros,
+
+00:01:07.476 --> 00:01:11.264
+significa que algumas barras cobrem
+mais valores inteiros que outras.
+
+00:01:11.682 --> 00:01:14.668
+Então um jeito melhor
+de usar o parâmetro de barra
+
+00:01:14.701 --> 00:01:17.506
+é especificar os limites
+das barras explicitamente.
+
+00:01:17.970 --> 00:01:20.673
+Aqui eu vou usar a função arange
+do Numpy
+
+00:01:20.706 --> 00:01:22.650
+para criar barras
+de largura 5.
+
+00:01:23.587 --> 00:01:25.656
+O primeiro argumento
+é o valor mínimo,
+
+00:01:25.689 --> 00:01:28.759
+enquanto o 2º argumento
+é o valor máximo.
+
+00:01:29.505 --> 00:01:32.403
+O 3º argumento é o tamanho
+do intervalo das barras.
+
+00:01:33.172 --> 00:01:36.557
+O que vou fazer aqui
+é somar 5 ao segundo argumento.
+
+00:01:37.183 --> 00:01:39.715
+Faço isso porque o valor
+gerado pela arange
+
+00:01:39.748 --> 00:01:41.684
+não inclui o valor máximo,
+
+00:01:41.943 --> 00:01:45.021
+só aquilo que for
+estritamente menor que o máximo.
+
+00:01:45.774 --> 00:01:46.801
+Ao somar 5,
+
+00:01:46.834 --> 00:01:49.918
+todos os valores devem estar
+representados no gráfico.
+
+00:01:50.587 --> 00:01:53.084
+Ao adicionar a lista de barras
+à função hist,
+
+00:01:53.233 --> 00:01:57.061
+criamos uma visualização que sugere
+que os dados são unimodais,
+
+00:01:57.437 --> 00:02:00.635
+a não ser por um buraco
+no intervalo de 75 a 85.
+
+00:02:01.298 --> 00:02:04.143
+E se colocarmos um tamanho de barra
+muito pequeno?
+
+00:02:04.176 --> 00:02:05.331
+Tipo, 1?
+
+00:02:05.521 --> 00:02:08.772
+Por um lado, esse tamanho parece
+pequeno demais,
+
+00:02:09.038 --> 00:02:11.094
+gerando muito ruído
+no gráfico.
+
+00:02:11.888 --> 00:02:13.016
+Por outro lado,
+
+00:02:13.049 --> 00:02:16.257
+ele mostra bem que a estatística
+de velocidade dos Pokémons
+
+00:02:16.290 --> 00:02:18.271
+geralmente
+são divisíveis por 5.
+
+00:02:18.733 --> 00:02:21.494
+O Seaborn também tem
+uma função para criar histogramas,
+
+00:02:21.527 --> 00:02:22.979
+a distplot.
+
+00:02:23.012 --> 00:02:25.961
+Diferente das funções já vistas,
+countplot e hist,
+
+00:02:25.994 --> 00:02:28.098
+o argumento principal
+de distplot
+
+00:02:28.131 --> 00:02:30.676
+é somente o Panda Series
+que contém os dados.
+
+00:02:31.672 --> 00:02:33.827
+Repare duas coisas
+sobre este gráfico.
+
+00:02:34.272 --> 00:02:37.904
+Primeiro, a contagem padrão de
+barras é maior que a do Matplotlib.
+
+00:02:38.177 --> 00:02:41.331
+Segundo, veja que uma linha
+foi desenhada sobre as barras
+
+00:02:41.436 --> 00:02:44.335
+e que os valores do eixo-y
+são muito pequenos.
+
+00:02:44.894 --> 00:02:47.898
+Isso é porque a linha é
+a estimativa da curva de densidade
+
+00:02:47.931 --> 00:02:49.443
+da distribuição de dados
+
+00:02:49.476 --> 00:02:52.974
+e que a área total sob a curva
+é definida como igual a 1.
+
+00:02:53.746 --> 00:02:55.527
+Se estiver
+interessado nisso,
+
+00:02:55.560 --> 00:02:59.064
+você pode ler mais a respeito
+no material extra ao fim da aula.
+
+00:02:59.961 --> 00:03:01.455
+Dá para desligar a curva
+
+00:03:01.488 --> 00:03:04.141
+definindo o parâmetro
+kde = false.
+
+00:03:05.066 --> 00:03:06.170
+Com esse parâmetro,
+
+00:03:06.203 --> 00:03:08.665
+repare que o histograma
+é plotado sozinho,
+
+00:03:08.698 --> 00:03:10.528
+com contagens no eixo-y.
+
+00:03:11.098 --> 00:03:13.483
+Porém, como voltamos
+ao histograma básico,
+
+00:03:13.516 --> 00:03:17.282
+podemos usar a função hist
+do Matplotlib desde o princípio.
+

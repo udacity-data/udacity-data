@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.351 --> 00:00:01.908
+Já conferimos a altura
+
+00:00:01.941 --> 00:00:04.336
+e agora vamos estudar
+o peso dos Pokémons.
+
+00:00:04.607 --> 00:00:07.535
+Esta variável está expressa
+em quilogramas.
+
+00:00:08.014 --> 00:00:09.404
+O histograma desta variável
+
+00:00:09.437 --> 00:00:11.696
+é ainda mais distorcido
+que o da altura.
+
+00:00:11.729 --> 00:00:14.970
+Algumas espécies pesam
+mais de 800 kg.
+
+00:00:15.512 --> 00:00:18.138
+Em vez de cortar os limites
+dos eixos, como antes,
+
+00:00:18.171 --> 00:00:20.616
+vamos transformar os eixos.
+
+00:00:21.079 --> 00:00:23.974
+Aqui vamos usar a função xscale
+do Matplotlib.
+
+00:00:24.502 --> 00:00:26.303
+Como argumento desta função
+
+00:00:26.336 --> 00:00:27.636
+vamos usar uma string
+
+00:00:27.669 --> 00:00:30.560
+que corresponde à transformação
+que queremos usar.
+
+00:00:31.203 --> 00:00:34.187
+Neste caso vamos usar
+uma transformação logarítmica.
+
+00:00:34.220 --> 00:00:36.985
+Vamos usar a string log.
+
+00:00:37.641 --> 00:00:39.979
+Aplicando só essa linha
+no código do gráfico,
+
+00:00:40.012 --> 00:00:42.156
+a imagem fica
+muito estranha.
+
+00:00:42.654 --> 00:00:44.066
+A altura das barras
+é a mesma
+
+00:00:44.099 --> 00:00:46.774
+mas elas são largas à esquerda
+e finas à direita.
+
+00:00:47.155 --> 00:00:49.045
+Para interpretar melhor
+o gráfico,
+
+00:00:49.078 --> 00:00:50.946
+temos que modificar
+os limites das barras
+
+00:00:50.979 --> 00:00:53.744
+e gerar marcas de eixo
+mais informativas.
+
+00:00:54.153 --> 00:00:56.114
+Primeiro, vamos discutir
+as barras.
+
+00:00:56.631 --> 00:00:58.371
+O peso mínimo é 0,1
+
+00:00:58.404 --> 00:01:01.213
+e o máximo é 999,9.
+
+00:01:01.905 --> 00:01:04.086
+O logaritmo desses valores,
+em base 10,
+
+00:01:04.119 --> 00:01:06.455
+são -1 e uma fração
+abaixo de 3.
+
+00:01:07.251 --> 00:01:09.674
+Esses são os limites das barras.
+
+00:01:09.973 --> 00:01:13.848
+Os limites das barras estarão
+entre 10 elevado a -1 e 10 a 3,
+
+00:01:13.881 --> 00:01:17.544
+para que fiquem igualmente espaçados
+depois de tomar o logaritmo.
+
+00:01:18.397 --> 00:01:22.010
+O gráfico ficou muito melhor,
+exibindo uma distribuição unimodal,
+
+00:01:22.043 --> 00:01:24.891
+mas as marcas de eixo
+podem ficar mais interpretáveis.
+
+00:01:24.924 --> 00:01:26.806
+Podemos começar escrevendo
+as marcas dadas,
+
+00:01:26.839 --> 00:01:28.916
+mas pode ser
+que precisemos de mais.
+
+00:01:29.431 --> 00:01:31.463
+Agora vamos precisar
+de muito código,
+
+00:01:31.496 --> 00:01:33.467
+já que fora das potências inteiras
+de 10,
+
+00:01:33.500 --> 00:01:36.396
+não há valores intermediários
+regularmente espaçados.
+
+00:01:36.981 --> 00:01:38.706
+Mas ainda dá
+para chegar perto.
+
+00:01:38.945 --> 00:01:41.822
+O 3 fica mais ou menos no meio
+de potências de 10 consecutivas
+
+00:01:41.855 --> 00:01:43.296
+na escala logarítmica.
+
+00:01:43.594 --> 00:01:45.331
+Colocar esses valores
+nas marcas
+
+00:01:45.364 --> 00:01:47.404
+completa nosso gráfico
+exploratório.
+
+00:01:47.882 --> 00:01:51.682
+É mais fácil ler que os pesos
+mais comuns estão entre 10 e 100,
+
+00:01:51.715 --> 00:01:55.034
+com um máximo perto de 30,
+com esses rótulos nas marcas.
+

@@ -1,0 +1,99 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.911 --> 00:00:04.559
+CONCEITO 01
+INTRODUÇÃO
+
+00:00:04.592 --> 00:00:06.713
+Começamos a explorar
+qualquer conjunto de dados
+
+00:00:06.746 --> 00:00:08.695
+com visualizações
+univariadas,
+
+00:00:08.728 --> 00:00:10.993
+ou visualizações
+de variável única.
+
+00:00:11.630 --> 00:00:13.770
+Olhando uma variável
+de cada vez
+
+00:00:13.803 --> 00:00:16.971
+podemos imaginar como
+cada variável é distribuída
+
+00:00:17.190 --> 00:00:21.144
+antes de examinar interações
+mais complexas entre variáveis.
+
+00:00:22.087 --> 00:00:24.525
+Quando você olha
+para qualquer conjunto de dados,
+
+00:00:24.558 --> 00:00:27.139
+tenha em mente os objetivos
+de sua investigação
+
+00:00:27.172 --> 00:00:29.029
+e explore as variáveis
+que serão cruciais
+
+00:00:29.062 --> 00:00:31.494
+para responder às perguntas
+de sua pesquisa.
+
+00:00:32.161 --> 00:00:34.213
+Se você vir
+coisas estranhas nos dados,
+
+00:00:34.246 --> 00:00:36.437
+como dados discrepantes
+ou ausentes,
+
+00:00:36.662 --> 00:00:39.320
+isso pode indicar áreas
+que precisam de mais limpeza
+
+00:00:39.353 --> 00:00:41.586
+ou de uma inspeção melhor.
+
+00:00:42.504 --> 00:00:45.983
+Geralmente é sensato integrar
+essa parte do processo de exploração
+
+00:00:46.016 --> 00:00:48.618
+em partes do processo
+de preparação de dados.
+
+00:00:49.312 --> 00:00:52.278
+Esta aula vai se concentrar
+em dois tipos de gráficos:
+
+00:00:52.311 --> 00:00:54.320
+gráficos de barra,
+para variáveis qualitativas,
+
+00:00:54.353 --> 00:00:56.881
+e histogramas,
+para variáveis quantitativas.
+
+00:00:57.426 --> 00:01:01.825
+Os dois gráficos são retângulos
+em um par de eixos,
+
+00:01:02.051 --> 00:01:05.211
+mas você vai ver que o tipo
+de dados os diferenciam.
+
+00:01:05.928 --> 00:01:08.814
+Você também vai aprender o código
+para criar esses gráficos
+
+00:01:08.847 --> 00:01:12.172
+e a usar esses gráficos
+para compreender seus dados.
+

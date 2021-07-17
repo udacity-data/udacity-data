@@ -1,0 +1,232 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.329 --> 00:00:04.849
+CONCEITO 12
+ESCALAS E TRANSFORMAÇÕES
+
+00:00:05.447 --> 00:00:06.564
+Em certos casos,
+
+00:00:06.597 --> 00:00:09.801
+você pode querer mudar não só
+os limites de acesso do gráfico,
+
+00:00:09.834 --> 00:00:11.245
+mas a escala também.
+
+00:00:11.720 --> 00:00:15.304
+Por padrão, assumimos que se deve
+interpretar os dados linearmente,
+
+00:00:15.337 --> 00:00:18.739
+com as diferenças sendo os pontos
+de atenção mais importantes.
+
+00:00:19.587 --> 00:00:22.465
+Em outros casos,
+você pode examinar as diferenças
+
+00:00:22.498 --> 00:00:24.588
+em termos de quocientes
+ou porcentagens.
+
+00:00:25.732 --> 00:00:29.389
+O exemplo clássico de variável
+que pode exigir escalas diferentes
+
+00:00:29.422 --> 00:00:31.546
+são dados referentes
+a finanças.
+
+00:00:32.133 --> 00:00:35.283
+Considere esse gráfico hipotético
+de preços de veículos.
+
+00:00:35.789 --> 00:00:37.698
+Variáveis assim
+tendem a ter valores
+
+00:00:37.731 --> 00:00:39.992
+espalhados por várias
+ordens de grandeza
+
+00:00:40.025 --> 00:00:42.179
+e geralmente
+são deformadas à direita.
+
+00:00:42.733 --> 00:00:45.493
+Com barras de valor 10 mil
+em escala linear,
+
+00:00:45.526 --> 00:00:48.242
+ficamos com um gráfico
+irregularmente distribuído,
+
+00:00:48.275 --> 00:00:51.556
+com vários buracos, para capturar
+os pontos de maior valor.
+
+00:00:52.980 --> 00:00:54.977
+Se tivermos um modelo linear
+em mente,
+
+00:00:55.010 --> 00:00:57.446
+pode ser difícil
+para uma variável preditiva
+
+00:00:57.479 --> 00:01:00.338
+capturar pequenas diferenças
+na parte menor da escala
+
+00:01:00.371 --> 00:01:03.524
+e as distâncias maiores
+na parte maior.
+
+00:01:04.336 --> 00:01:06.479
+A transformação
+que vamos aplicar
+
+00:01:06.512 --> 00:01:08.306
+é usar a escala logarítmica,
+
+00:01:08.339 --> 00:01:11.974
+para que as distâncias na escala
+sejam multiplicativas,
+
+00:01:12.007 --> 00:01:14.237
+em vez de serem
+distâncias aritméticas.
+
+00:01:14.928 --> 00:01:17.029
+Neste gráfico,
+os valores em cada barra
+
+00:01:17.062 --> 00:01:20.131
+são cerca de 25% maiores
+do que os da barra anterior.
+
+00:01:20.973 --> 00:01:24.520
+Em vez de cada marca ter um valor
+40 mil a mais que a anterior,
+
+00:01:24.553 --> 00:01:27.127
+cada uma tem o dobro do valor
+da anterior.
+
+00:01:28.325 --> 00:01:30.340
+Uma distribuição normal
+que resulta disso
+
+00:01:30.373 --> 00:01:32.161
+é a distribuição log-normal,
+
+00:01:32.454 --> 00:01:34.661
+onde os dados parecem
+normais
+
+00:01:34.694 --> 00:01:36.952
+depois de uma transformação
+logarítmica.
+
+00:01:37.600 --> 00:01:41.063
+O gráfico sugere que fazer um modelo
+para o logaritmo dos preços
+
+00:01:41.096 --> 00:01:42.592
+pode funcionar melhor.
+
+00:01:43.111 --> 00:01:44.515
+Com essa transformação,
+
+00:01:44.548 --> 00:01:46.851
+mudanças lineares
+e características preditivas
+
+00:01:46.884 --> 00:01:49.703
+resultarão em efeitos
+multiplicativos no preço.
+
+00:01:50.433 --> 00:01:54.088
+Veremos isso de novo na próxima aula
+sobre gráficos bivariados.
+
+00:01:55.107 --> 00:01:58.132
+Repare também que todos os valores
+têm que ser positivos
+
+00:01:58.165 --> 00:02:00.153
+para usar
+transformação logarítmica.
+
+00:02:00.528 --> 00:02:02.251
+Se continuássemos
+para a esquerda,
+
+00:02:02.284 --> 00:02:04.846
+os valores continuariam
+sendo divididos por 2.
+
+00:02:04.879 --> 00:02:06.512
+Não importa o quanto
+recuemos,
+
+00:02:06.545 --> 00:02:09.564
+nunca chegaremos a zero
+ou a um número negativo.
+
+00:02:10.722 --> 00:02:12.472
+Transformações de eixo
+são úteis
+
+00:02:12.505 --> 00:02:14.346
+porque possibilitam
+interpretar dados
+
+00:02:14.379 --> 00:02:16.347
+em suas unidades naturais.
+
+00:02:16.965 --> 00:02:19.776
+Por exemplo, poderíamos fazer
+uma abordagem alternativa
+
+00:02:19.809 --> 00:02:23.468
+aplicando a transformação
+diretamente sobre os dados.
+
+00:02:24.636 --> 00:02:27.245
+Ao plotar os dados transformados
+numa escala linear,
+
+00:02:27.278 --> 00:02:29.445
+temos a mesma imagem
+dos dados originais
+
+00:02:29.478 --> 00:02:31.348
+plotados
+em escala logarítmica.
+
+00:02:31.381 --> 00:02:33.666
+Mas para interpretar
+os valores
+
+00:02:33.699 --> 00:02:36.925
+teríamos que aplicar mentalmente
+a transformação inversa.
+
+00:02:37.712 --> 00:02:41.015
+A maioria das pessoas não entende
+que 10 elevado a 4.6
+
+00:02:41.586 --> 00:02:43.005
+é o mesmo que 40 mil.
+
+00:02:43.997 --> 00:02:47.298
+Embora tenhamos que transformar
+os dados durante a análise,
+
+00:02:47.840 --> 00:02:51.187
+é melhor transformar só os eixos
+para as visualizações.
+

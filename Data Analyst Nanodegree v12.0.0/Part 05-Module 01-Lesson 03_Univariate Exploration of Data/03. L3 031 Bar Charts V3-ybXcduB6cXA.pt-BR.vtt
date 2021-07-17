@@ -1,0 +1,210 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.464 --> 00:00:04.767
+CONCEITO 3:
+GRÁFICOS DE BARRAS
+
+00:00:06.173 --> 00:00:08.040
+Se estiver interessado
+na distribuição
+
+00:00:08.073 --> 00:00:09.557
+de uma variável qualitativa,
+
+00:00:09.590 --> 00:00:11.532
+sua escolha
+de visualização principal
+
+00:00:11.565 --> 00:00:13.725
+provavelmente será
+o gráfico de barras.
+
+00:00:14.263 --> 00:00:16.177
+Geralmente, um gráfico de barras
+é feito
+
+00:00:16.210 --> 00:00:18.468
+de forma que cada nível
+da variável categórica
+
+00:00:18.501 --> 00:00:20.147
+tenha uma posição x única,
+
+00:00:20.180 --> 00:00:23.649
+enquanto a altura de cada barra
+ilustra a frequência ou contagem
+
+00:00:23.682 --> 00:00:27.548
+do número de vezes que um ponto de
+dados assumiu um valor categórico.
+
+00:00:28.467 --> 00:00:31.090
+Por exemplo: digamos que temos
+dados de uma pesquisa
+
+00:00:31.123 --> 00:00:33.508
+e queremos contar
+o sexo dos entrevistados.
+
+00:00:34.255 --> 00:00:36.735
+Este gráfico de barras traduz
+o sumário tabular
+
+00:00:36.768 --> 00:00:38.040
+nas alturas das barras.
+
+00:00:38.859 --> 00:00:40.403
+Repare que a contagem
+de homens
+
+00:00:40.436 --> 00:00:43.491
+está no meio do caminho
+entre as marcas de 400 e 500,
+
+00:00:43.524 --> 00:00:47.705
+e que a contagem de mulheres está
+mais perto de 600 do que de 500.
+
+00:00:47.742 --> 00:00:49.801
+Para evitar distorção
+de informações,
+
+00:00:49.834 --> 00:00:52.263
+a origem do gráfico
+deve estar no zero.
+
+00:00:53.080 --> 00:00:56.350
+Se a origem começasse
+em 400, neste exemplo,
+
+00:00:56.621 --> 00:00:58.227
+as alturas das barras
+implicariam
+
+00:00:58.260 --> 00:01:00.784
+que que há 3,5 vezes
+mais mulheres que homens
+
+00:01:01.112 --> 00:01:03.129
+e não apenas 28% a mais.
+
+00:01:03.818 --> 00:01:05.015
+Para dados nominais,
+
+00:01:05.048 --> 00:01:07.960
+é preferível arranjar as barras
+em ordem de frequência,
+
+00:01:07.993 --> 00:01:09.579
+com a mais comum à esquerda.
+
+00:01:10.242 --> 00:01:13.254
+Isso torna mais fácil ver
+que categoria é a mais comum
+
+00:01:13.499 --> 00:01:16.164
+e qual é a comparação
+com as outras categorias.
+
+00:01:16.630 --> 00:01:19.491
+Você deve evitar fazer isso
+com dados ordinais.
+
+00:01:20.042 --> 00:01:21.579
+A ordem inerente dos níveis
+
+00:01:21.612 --> 00:01:24.662
+geralmente será a informação
+mais importante a exibir.
+
+00:01:25.053 --> 00:01:26.383
+É mais importante saber
+
+00:01:26.416 --> 00:01:29.842
+se a categoria mais comum
+é menor ou maior no espectro
+
+00:01:29.875 --> 00:01:32.201
+em vez de saber
+qual é a mais frequente.
+
+00:01:33.104 --> 00:01:35.618
+Considere que este gráfico
+representa uma pesquisa
+
+00:01:35.651 --> 00:01:37.946
+com respostas
+em uma escala de 5 pontos.
+
+00:01:37.979 --> 00:01:39.528
+A barra mais alta,
+à esquerda,
+
+00:01:39.561 --> 00:01:41.915
+informa que a resposta modal
+foi "concordo".
+
+00:01:42.372 --> 00:01:44.308
+Mas isso oculta o fato que,
+
+00:01:44.341 --> 00:01:46.970
+quando as opiniões
+são colocadas na ordem inerente,
+
+00:01:47.003 --> 00:01:49.741
+de "discordo fortemente"
+para "concordo fortemente",
+
+00:01:49.774 --> 00:01:51.981
+as respostas foram
+altamente polarizadas
+
+00:01:52.014 --> 00:01:54.030
+entre concordância
+e discordância.
+
+00:01:54.642 --> 00:01:57.637
+Uma variação comum
+que se vê para gráficos de barras
+
+00:01:57.670 --> 00:01:59.568
+é o gráfico de barras
+horizontal.
+
+00:01:59.938 --> 00:02:03.877
+Nesta variante, o gráfico
+é inclinado 90° no sentido horário,
+
+00:02:04.134 --> 00:02:06.604
+de forma que o eixo-y
+indica a categoria
+
+00:02:06.637 --> 00:02:08.990
+e o eixo-x
+indica a frequência.
+
+00:02:10.120 --> 00:02:12.672
+Isso não muda
+o que seu gráfico informa,
+
+00:02:12.835 --> 00:02:14.470
+mas é bom ter em mente,
+
+00:02:14.503 --> 00:02:17.156
+dependendo de como os dados
+são estruturados.
+
+00:02:17.880 --> 00:02:21.317
+Se há muitas categorias,
+ou se os nomes forem compridos,
+
+00:02:21.581 --> 00:02:24.644
+a orientação horizontal
+pode ser mais conveniente
+
+00:02:24.677 --> 00:02:28.075
+em termos do espaço necessário
+para fazer um gráfico legível.
+

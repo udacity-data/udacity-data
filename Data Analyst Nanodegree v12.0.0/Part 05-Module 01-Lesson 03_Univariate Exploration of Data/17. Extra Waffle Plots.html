@@ -1,0 +1,545 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Extra: Waffle Plots
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Univariate Exploration of Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Tidy Data.html">
+       02. Tidy Data
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Bar Charts.html">
+       03. Bar Charts
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Absolute vs. Relative Frequency.html">
+       04. Absolute vs. Relative Frequency
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Counting Missing Data.html">
+       05. Counting Missing Data
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Bar Chart Practice.html">
+       06. Bar Chart Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Pie Charts.html">
+       07. Pie Charts
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Histograms.html">
+       08. Histograms
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Histogram Practice.html">
+       09. Histogram Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Figures, Axes, and Subplots.html">
+       10. Figures, Axes, and Subplots
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Choosing a Plot for Discrete Data.html">
+       11. Choosing a Plot for Discrete Data
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Descriptive Statistics, Outliers and Axis Limits.html">
+       12. Descriptive Statistics, Outliers and Axis Limits
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Scales and Transformations.html">
+       13. Scales and Transformations
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Scales and Transformations Practice.html">
+       14. Scales and Transformations Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Lesson Summary.html">
+       15. Lesson Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Extra Kernel Density Estimation.html">
+       16. Extra: Kernel Density Estimation
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Extra Waffle Plots.html">
+       17. Extra: Waffle Plots
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          17. Extra: Waffle Plots
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="waffle-plots">
+          Waffle Plots
+         </h2>
+         <p>
+          One alternative univariate plot type that you might see for categorical data is the
+          <strong>
+           waffle plot
+          </strong>
+          , also known as the square pie chart. While the standard pie chart uses a circle to represent the whole, a waffle plot is plotted onto a square divided into a 10x10 grid. Each small square in the grid represents one percent of the data, and a number of squares are colored by category to indicate total proportions. Compared to a pie chart, it is much easier to make precise assessments of relative frequencies.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="You've seen code for the pie chart (left) previously in the lesson. Code for the waffle plot (right) will be walked through below." class="img img-fluid" src="img/l3-c16-waffleplots3.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            You've seen code for the pie chart (left) previously in the lesson. Code for the waffle plot (right) will be walked through below.
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          There's no built-in function for waffle plots in Matplotlib or Seaborn, so we'll need to take some additional steps in order to build one with the tools available. First, we need to create a function to decide how many blocks to allocate to each category. The function below,
+          <code>
+           percentage_blocks
+          </code>
+          , uses a rule where each category gets a number of blocks equal to the number of full percentage points it covers. The remaining blocks to get to the full one hundred are assigned to the categories with the largest fractional parts.
+         </p>
+         <pre><code class="python language-python">def percentage_blocks(df, var):
+    """
+    Take as input a dataframe and variable, and return a Pandas series with
+    approximate percentage values for filling out a waffle plot.
+    """
+    # compute base quotas
+    percentages = 100 * df[var].value_counts() / df.shape[0]
+    counts = np.floor(percentages).astype(int) # integer part = minimum quota
+    decimal = (percentages - counts).sort_values(ascending = False)
+
+    # add in additional counts to reach 100
+    rem = 100 - counts.sum()
+    for cat in decimal.index[:rem]:
+        counts[cat] += 1
+
+    return counts</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="Note that if we just rounded the proportions (center), we would round all of them up, ending up with a total of 101 blocks." class="img img-fluid" src="img/l3-c16-waffleplotsa.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            Note that if we just rounded the proportions (center), we would round all of them up, ending up with a total of 101 blocks.
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Now it's time to actually plot those counts as boxes in the waffle plot form. To do this, we'll make use of Matplotlib's
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.bar.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            bar
+           </code>
+          </a>
+          function. We could have used this function earlier in the lesson to create our bar charts instead of Seaborn's
+          <code>
+           countplot
+          </code>
+          , but it would have required us to aggregate the data first to get the height of each bar. For the case of the waffle plot, we're going to specify the x- and y- coordinates of the boxes, and set their widths and heights to be equal, to create squares. The initial plotting code looks like this:
+         </p>
+         <pre><code class="python language-python">waffle_counts = percentage_blocks(df, 'cat_var')
+
+prev_count = 0
+# for each category,
+for cat in range(waffle_counts.shape[0]):
+    # get the block indices
+    blocks = np.arange(prev_count, prev_count + waffle_counts[cat])
+    # and put a block at each index's location
+    x = blocks % 10 # use mod operation to get ones digit
+    y = blocks // 10 # use floor division to get tens digit
+    plt.bar(x = x, height = 0.8, width = 0.8, bottom = y)
+    prev_count += waffle_counts[cat]</code></pre>
+         <p>
+          The blocks are drawn from left to right, bottom to top, using the ones and tens digits for numbers from 0 to 99 to specify the x- and y- positions, respectively. A loop is used to call the
+          <code>
+           bar
+          </code>
+          function once for each category; each time it is called, the plotted bars are assigned a different color.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c16-waffleplots1.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The last steps that we need to do involve aesthetic cleaning to polish it up for interpretability. We can take away the plot border and ticks, since they're arbitrary, but we should change the limits so that the boxes are square. We should also add a legend so that the mapping from colors to category levels is clear.
+         </p>
+         <pre><code class="python language-python">waffle_counts = percentage_blocks(df, 'cat_var')
+
+prev_count = 0
+# for each category,
+for cat in range(waffle_counts.shape[0]):
+    # get the block indices
+    blocks = np.arange(prev_count, prev_count + waffle_counts[cat])
+    # and put a block at each index's location
+    x = blocks % 10 # use mod operation to get ones digit
+    y = blocks // 10 # use floor division to get tens digit
+    plt.bar(x = x, height = 0.8, width = 0.8, bottom = y)
+    prev_count += waffle_counts[cat]
+
+# aesthetic wrangling
+plt.legend(waffle_counts.index, bbox_to_anchor = (1, 0.5), loc = 6)
+plt.axis('off')
+plt.axis('square')</code></pre>
+         <p>
+          The two calls to Matplotlib's
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.axis.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            axis
+           </code>
+          </a>
+          function make use of two convenience strings for arguments: 'off' removes the axis lines, ticks, and labels, while 'square' ensures that the scaling on each axis is equal within a square bounding box. As for the
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.legend.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            legend
+           </code>
+          </a>
+          call, the first argument is a list of categories as obtained from the sorted
+          <code>
+           waffle_counts
+          </code>
+          Series variable. This will match each category to each
+          <code>
+           bar
+          </code>
+          call, in order. The "bbox_to_anchor" argument sets an anchor for the legend to the right side of the plot, and "loc = 6" positions the anchor to the center left of the legend. The final plot is as it looks at the top of the page:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c16-waffleplots2.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Other variants of the waffle plot exist to extend it beyond just displaying probabilities. By associating each square with an amount rather than a percentage, we can use waffle plots to show absolute frequencies instead. This might cause us to end up with something other than 100 squares.
+         </p>
+         <pre><code class="python language-python"># each box represents five full counts
+waffle_counts = (df['cat_var'].value_counts() / 5).astype(int)
+
+prev_count = 0
+# for each category,
+for cat in range(waffle_counts.shape[0]):
+    # get the block indices
+    blocks = np.arange(prev_count, prev_count + waffle_counts[cat])
+    # and put a block at each index's location
+    x = blocks % 10
+    y = blocks // 10
+    plt.bar(y, 0.8, 0.8, x)
+    prev_count += waffle_counts[cat]
+
+# box size legend
+plt.bar(7.5, 0.8, 0.8, 2, color = 'white', edgecolor = 'black', lw = 2)
+plt.text(8.1, 2.4,'= 5 data points', va = 'center')
+
+# aesthetic wrangling
+plt.legend(waffle_counts.index, bbox_to_anchor = (0.8, 0.5), loc = 6)
+plt.axis('off')
+plt.axis('square')</code></pre>
+         <p>
+          In the above code,
+          <code>
+           waffle_counts
+          </code>
+          has been adjusted so that each box represents 5 data points. Most of the code is the same as before, though it should be noted that the
+          <code>
+           x
+          </code>
+          and
+          <code>
+           y
+          </code>
+          variables have been swapped in the
+          <code>
+           bar
+          </code>
+          function so that the boxes are plotted in columns from left to right. Additional
+          <code>
+           bar
+          </code>
+          and
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.text.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            text
+           </code>
+          </a>
+          calls have been added to the plot to act as an ad hoc legend. The positions of these elements, and the legend, have been adjusted manually through some trial and error to improve the aesthetic appeal. Note that this constitutes more of an explanatory polishing than it is a part of exploration!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c16-waffleplots4.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          As a further extension, there's no restriction against us using icons for each tally, rather than just squares. Infographics often take this approach, by having each icon represent some number of units (e.g. one person icon representing one million people). But while it can be tempting to use icons to represent values as a bit of visual flair, an icon-based plot contains more chart junk than a bar chart that conveys the same information. There’s a larger cognitive challenge in having to count a number of icons to understand the scale of a value, compared to just referencing a box's endpoint on a labeled axis.
+         </p>
+         <p>
+          One other downside of the waffle plot is that it is not commonly supported out of the box for most visualization libraries, including Matplotlib and Seaborn. The length of the demonstration code presented above is a testament to that. The effort required to create a meaningful and useful waffle plot means that it is best employed carefully as a part of explanatory visualizations. During the exploratory phase, you're better off using more traditional plots like the bar chart to more rapidly build your understanding of the data.
+         </p>
+         <h2 id="additional-resources">
+          Additional Resources
+         </h2>
+         <p>
+          You don't actually need to go through all of the code wrangling shown above to create waffle plots in Python. The
+          <a href="https://github.com/ligyxy/PyWaffle" rel="noopener noreferrer" target="_blank">
+           PyWaffle
+          </a>
+          package can be used with Matplotlib's
+          <code>
+           figure
+          </code>
+          function to create waffle plots, with a few options for the orientation and order of icons, but you'll need to install it separately since it's not a major package. One of the main reasons why I didn't use it above is that the syntax for using it is very different from what you've seen and will see in this course. If you want to make use of the library, check out the examples on the linked GitHub page.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('17. Extra: Waffle Plots')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,139 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.400 --> 00:00:07.710
+In certain cases, you might want to change not
+
+00:00:07.710 --> 00:00:11.205
+just the access limits of your plots, but it's scaling.
+
+00:00:11.205 --> 00:00:14.280
+The standard assumption is that your data should be interpreted
+
+00:00:14.279 --> 00:00:19.015
+linearly with differences being the most salient points of attention.
+
+00:00:19.015 --> 00:00:25.045
+In other cases, you might be interested in differences in terms of ratios or percentages.
+
+00:00:25.045 --> 00:00:28.190
+The classic example of a variable that might require
+
+00:00:28.190 --> 00:00:31.645
+a different scale is data dealing with finance.
+
+00:00:31.644 --> 00:00:35.219
+Consider this hypothetical plot of vehicle prices.
+
+00:00:35.219 --> 00:00:39.799
+Variables like this tend to have a range that crosses many orders of magnitude,
+
+00:00:39.799 --> 00:00:42.144
+and are usually skewed to the right.
+
+00:00:42.145 --> 00:00:45.545
+With bins of size 10,000 on a linear scale,
+
+00:00:45.545 --> 00:00:48.500
+we end up with an unevenly balanced plot with
+
+00:00:48.500 --> 00:00:52.284
+a lot of gaps in order to capture the highest values points.
+
+00:00:52.284 --> 00:00:54.864
+If we have a linear model in mind,
+
+00:00:54.865 --> 00:00:58.660
+it may be difficult for a predictor variable to capture small differences at
+
+00:00:58.659 --> 00:01:03.619
+the low end of the scale at the same time as large distances on the high end.
+
+00:01:03.619 --> 00:01:08.099
+The transformation that we apply in this case is a logarithmic scaling.
+
+00:01:08.099 --> 00:01:10.569
+So the distances on the scaled axis represent
+
+00:01:10.569 --> 00:01:14.394
+multiplicative differences rather than arithmetic differences.
+
+00:01:14.394 --> 00:01:17.369
+In this plot, the values in each bar are about
+
+00:01:17.370 --> 00:01:20.435
+25 percent larger than the values in the previous bar.
+
+00:01:20.435 --> 00:01:24.314
+Instead of the tick marks increasing by adding 40,000 to the previous,
+
+00:01:24.314 --> 00:01:27.670
+each tick mark is twice the value of the previous.
+
+00:01:27.670 --> 00:01:32.180
+One common distribution that results from this As the log-normal distribution,
+
+00:01:32.180 --> 00:01:36.760
+where the data looks approximately normal shaped after a log transform.
+
+00:01:36.760 --> 00:01:42.505
+This plot suggests that building a model for the logarithm of prices might work better.
+
+00:01:42.504 --> 00:01:45.589
+Under this transformation, linear changes in
+
+00:01:45.590 --> 00:01:49.820
+predictor features will result in multiplicative effects in the price.
+
+00:01:49.819 --> 00:01:54.294
+You'll see this again in the next lesson regarding bi-variate plots.
+
+00:01:54.295 --> 00:01:57.120
+Note as well that all the values in a variable
+
+00:01:57.120 --> 00:02:00.050
+must be positive in order to use a log transform.
+
+00:02:00.049 --> 00:02:02.119
+If we were to continue to the left,
+
+00:02:02.120 --> 00:02:04.620
+the values would continue to be divided by two.
+
+00:02:04.620 --> 00:02:09.890
+But no matter how far we go we will never reach zero or any negative number.
+
+00:02:09.889 --> 00:02:13.349
+Axis transformations are useful because they allow you to
+
+00:02:13.349 --> 00:02:16.519
+interpret your data with their naturally recording units.
+
+00:02:16.520 --> 00:02:20.060
+For example, an alternative approach we could have taken could
+
+00:02:20.060 --> 00:02:23.949
+have been to start by applying the transformation directly to the data.
+
+00:02:23.949 --> 00:02:27.125
+When we plot the transfer of data on a linear scale,
+
+00:02:27.125 --> 00:02:30.935
+we get the same picture as the original data plotted on a log scale.
+
+00:02:30.935 --> 00:02:33.689
+However, to interpret the values,
+
+00:02:33.689 --> 00:02:37.094
+we would need to mentally apply the inverse transformation.
+
+00:02:37.094 --> 00:02:43.359
+Most people would not understand that tend to the power of 4.6 is the same as 40,000.
+
+00:02:43.360 --> 00:02:47.470
+While we will need to transform the data when it comes to the analysis step,
+
+00:02:47.469 --> 00:02:51.359
+for visualization, it's best to stick with axis transformations.
+

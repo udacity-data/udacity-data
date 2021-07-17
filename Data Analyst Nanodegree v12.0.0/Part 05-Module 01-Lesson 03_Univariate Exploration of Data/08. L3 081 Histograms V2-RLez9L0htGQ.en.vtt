@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.589 --> 00:00:07.609
+If you have a quantitative variable,
+
+00:00:07.610 --> 00:00:11.830
+then your univariate plot of choice will probably be the histogram.
+
+00:00:11.830 --> 00:00:18.149
+Similar to a bar chart you have feature values on the x-axis and counts on the y-axis.
+
+00:00:18.149 --> 00:00:21.390
+However, due to the numeric nature of the data,
+
+00:00:21.390 --> 00:00:23.859
+bars in a histogram do not indicate counts on
+
+00:00:23.859 --> 00:00:27.939
+single values but instead counts on value ranges.
+
+00:00:27.940 --> 00:00:33.310
+In this histogram, we have plotted 30 values with bins of size three.
+
+00:00:33.310 --> 00:00:36.050
+The first bin on the left counts two data
+
+00:00:36.049 --> 00:00:38.704
+points that take a value between zero and three,
+
+00:00:38.704 --> 00:00:43.744
+the second bin counts four points between three and six and so on.
+
+00:00:43.744 --> 00:00:49.429
+Normally, bins include values on their left end and exclude values on their right end.
+
+00:00:49.429 --> 00:00:54.329
+So the datapoint with value 6.0 will go into the bin on its right.
+
+00:00:54.329 --> 00:00:59.289
+The size of the bins can have a major effect on how you interpret the data.
+
+00:00:59.289 --> 00:01:01.539
+If your bin size is too large,
+
+00:01:01.539 --> 00:01:06.549
+then you may end up losing a lot of information about the overall distribution of data.
+
+00:01:06.549 --> 00:01:10.209
+On the opposite side, a too small bin size can
+
+00:01:10.209 --> 00:01:14.114
+introduce noise that can distract from the main trends in your data.
+
+00:01:14.114 --> 00:01:16.199
+When creating a histogram,
+
+00:01:16.200 --> 00:01:19.820
+it's a good idea to play around with different settings for the bin sizes and
+
+00:01:19.819 --> 00:01:24.119
+boundary points to achieve a good understanding of the plotted variable.
+

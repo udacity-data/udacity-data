@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.309 --> 00:00:09.539
+You're probably familiar with one other plot type that is used for
+
+00:00:09.539 --> 00:00:14.174
+plotting relative frequencies for qualitative variables, the pie chart.
+
+00:00:14.175 --> 00:00:17.800
+In a pie chart, each category is indicated by a slice of
+
+00:00:17.800 --> 00:00:22.804
+a circle with the area indicating the relative frequency of that category.
+
+00:00:22.804 --> 00:00:25.855
+A variant of the pie chart, the donut plot,
+
+00:00:25.855 --> 00:00:31.380
+is very similar except that the center of the circle has been removed, leaving a donut.
+
+00:00:31.379 --> 00:00:37.500
+Most of the time, you'll probably prefer a bar chart over either on these two plots.
+
+00:00:37.500 --> 00:00:41.039
+It is actually fairly difficult to get an accurate estimate of
+
+00:00:41.039 --> 00:00:44.835
+relative frequency from a pie or donut plot alone.
+
+00:00:44.835 --> 00:00:47.060
+If there are a lot of categories,
+
+00:00:47.060 --> 00:00:52.575
+there are major limitations on how many categories can be plotted in a readable way.
+
+00:00:52.575 --> 00:00:56.020
+A bar chart will usually be more versatile and should be
+
+00:00:56.020 --> 00:00:59.269
+your first choice for exploring qualitative variables.
+
+00:00:59.268 --> 00:01:03.519
+That's not to say that pie or donut charts should never be used however.
+
+00:01:03.520 --> 00:01:06.034
+If you want to use one of these charts,
+
+00:01:06.034 --> 00:01:08.819
+then you should keep in mind a few guidelines.
+
+00:01:08.819 --> 00:01:12.169
+First of all, you only want to use a pie chart if you want to
+
+00:01:12.170 --> 00:01:15.734
+show how the whole of the data is broken down into parts.
+
+00:01:15.734 --> 00:01:20.319
+Second, you should plan on only plotting a small number of slices.
+
+00:01:20.319 --> 00:01:23.579
+A pie chart works best with two or three slices,
+
+00:01:23.579 --> 00:01:26.859
+so that the relative portions are distinct.
+
+00:01:26.859 --> 00:01:30.644
+If you determine that a pie chart meet these two criteria,
+
+00:01:30.644 --> 00:01:35.574
+you should then organize your plot to clearly convey the information in your data.
+
+00:01:35.575 --> 00:01:38.915
+Usually, you should start planning from the 12 o'clock position and
+
+00:01:38.915 --> 00:01:42.690
+then mark slices clockwise in order of frequency.
+
+00:01:42.689 --> 00:01:46.125
+There are other reasonable ways of generating a pie chart,
+
+00:01:46.125 --> 00:01:48.969
+but you should consider your data carefully about both
+
+00:01:48.969 --> 00:01:52.799
+whether you should use a pie chart and how best to present it.
+

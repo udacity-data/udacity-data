@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.301 --> 00:00:04.973
+CONCEITO 8:
+HISTOGRAMAS
+
+00:00:05.502 --> 00:00:07.704
+Se você tiver
+uma variável quantitativa,
+
+00:00:07.737 --> 00:00:11.430
+seu gráfico univariado favorito
+provavelmente será o histograma.
+
+00:00:12.354 --> 00:00:13.860
+Como o gráfico de barras,
+
+00:00:13.893 --> 00:00:16.179
+você tem valores
+característicos no eixo-x
+
+00:00:16.212 --> 00:00:18.191
+e contagens no eixo-y.
+
+00:00:18.617 --> 00:00:21.413
+Porém, devido à natureza
+numérica dos dados,
+
+00:00:21.446 --> 00:00:24.951
+as barras do histograma não indicam
+contagens em um só valor
+
+00:00:24.984 --> 00:00:27.490
+e sim intervalos de valores.
+
+00:00:28.497 --> 00:00:29.761
+Neste histograma,
+
+00:00:29.888 --> 00:00:32.817
+plotamos 30 valores
+com barras de largura 3.
+
+00:00:33.805 --> 00:00:36.518
+A 1ª barra, à esquerda,
+conta dois pontos de dados,
+
+00:00:36.551 --> 00:00:38.511
+com valor entre zero e 3.
+
+00:00:39.122 --> 00:00:41.865
+A segunda barra conta 4 pontos
+entre 3 e 6,
+
+00:00:42.365 --> 00:00:43.646
+e assim por diante.
+
+00:00:44.536 --> 00:00:47.336
+Normalmente, as barras
+incluem os valores à esquerda
+
+00:00:47.369 --> 00:00:49.362
+e excluem valores à direita.
+
+00:00:49.888 --> 00:00:51.913
+Assim, o ponto com valor 6.0
+
+00:00:52.263 --> 00:00:54.414
+vai entrar na barra
+à direita do 6.
+
+00:00:55.160 --> 00:00:57.374
+O tamanho das barras
+pode ter grande efeito
+
+00:00:57.407 --> 00:00:59.151
+na interpretação dos dados.
+
+00:00:59.941 --> 00:01:01.595
+Se a barra for muito larga,
+
+00:01:01.628 --> 00:01:04.042
+você pode acabar perdendo
+muita informação
+
+00:01:04.075 --> 00:01:06.199
+sobre a distribuição geral
+dos dados.
+
+00:01:07.140 --> 00:01:11.069
+Por outro lado, barras finas demais
+vão criar ruído,
+
+00:01:11.102 --> 00:01:14.095
+o que pode confundir
+as tendências dos seus dados.
+
+00:01:14.752 --> 00:01:16.113
+Ao criar um histograma,
+
+00:01:16.350 --> 00:01:19.332
+é uma boa ideia brincar
+com a largura das barras
+
+00:01:19.417 --> 00:01:20.678
+e com pontos limites
+
+00:01:20.711 --> 00:01:23.582
+para compreender bem
+a variável plotada.
+

@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.620 --> 00:00:08.460
+The visualizations you create will give you insights into
+
+00:00:08.460 --> 00:00:11.914
+the data that you can't get from descriptive statistics.
+
+00:00:11.913 --> 00:00:15.939
+A plot can immediately tell you if your data is symmetric or skewed,
+
+00:00:15.939 --> 00:00:18.458
+if it is unimodal or multimodal.
+
+00:00:18.458 --> 00:00:24.125
+Plots can also indicate interesting areas for further investigation and clarification.
+
+00:00:24.125 --> 00:00:28.109
+Categories in a bar chart with low counts might point to errors in
+
+00:00:28.109 --> 00:00:32.604
+the data or if you see that bars have values that counter your expectations,
+
+00:00:32.604 --> 00:00:37.924
+then that might point towards further research or a revisiting of data assumptions.
+
+00:00:37.924 --> 00:00:43.204
+For example, let's say you're looking at a distribution of user birth months.
+
+00:00:43.204 --> 00:00:45.289
+Seeing an unusually large number of
+
+00:00:45.289 --> 00:00:49.769
+January responses might suggest a deeper investigation such as whether
+
+00:00:49.770 --> 00:00:51.810
+there are a lot of users who are just submitting
+
+00:00:51.810 --> 00:00:56.780
+default information or if there's something wrong with how the data has been recorded.
+
+00:00:56.780 --> 00:01:00.679
+In a histogram, one of the most salient bits of information
+
+00:01:00.679 --> 00:01:04.659
+that you can observe is whether or not there are outliers in your data.
+
+00:01:04.659 --> 00:01:07.519
+If the plot covers an unexpected range,
+
+00:01:07.519 --> 00:01:12.699
+this can point to the presence of unusual points that are worth further investigation.
+
+00:01:12.700 --> 00:01:16.144
+In some cases, like if you have highly skewed data,
+
+00:01:16.144 --> 00:01:18.789
+you might want to change the range of the data plotted in
+
+00:01:18.790 --> 00:01:21.920
+order to zoom into parts that are more interesting.
+
+00:01:21.920 --> 00:01:24.689
+Rather than filtering on the original data,
+
+00:01:24.689 --> 00:01:28.530
+you can simply make changes to the axis limits to make your observations.
+
+00:01:28.530 --> 00:01:33.275
+Let's say that we make a plot of ride durations in minutes for a bike-sharing service,
+
+00:01:33.275 --> 00:01:35.594
+and obtain a plot as shown.
+
+00:01:35.594 --> 00:01:39.414
+There are a few outliers in the last bar from 1,400 to
+
+00:01:39.415 --> 00:01:44.455
+1,500 minutes that cause all of the other points to be fit into the first bar.
+
+00:01:44.454 --> 00:01:47.804
+While we might want to look at those outlier points later,
+
+00:01:47.805 --> 00:01:50.140
+we could first just change the axis limits
+
+00:01:50.140 --> 00:01:53.170
+to see the shape of where most of the data points lie.
+
+00:01:53.170 --> 00:01:56.144
+When we limit the axis to 60 minutes,
+
+00:01:56.144 --> 00:01:58.194
+and use bins of five-minutes wide,
+
+00:01:58.194 --> 00:01:59.899
+we get a clear picture that
+
+00:01:59.900 --> 00:02:03.960
+the typical ride length lies between five and 15-minute range.
+

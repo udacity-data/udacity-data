@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.810
+Last time, we looked at height.
+
+00:00:01.810 --> 00:00:04.355
+So, this time, let's look at Pokemon weight.
+
+00:00:04.355 --> 00:00:07.625
+The units for this variable are in terms of kilograms.
+
+00:00:07.625 --> 00:00:11.570
+The histogram of this variable is even more skewed than the height histogram,
+
+00:00:11.570 --> 00:00:15.240
+with some species with value of over 800 kilograms.
+
+00:00:15.240 --> 00:00:18.015
+Rather than trim the axis limits like before,
+
+00:00:18.015 --> 00:00:20.690
+we'll try an axis transform instead.
+
+00:00:20.690 --> 00:00:24.170
+Here, we want to use matplotlib.xscale function.
+
+00:00:24.170 --> 00:00:26.235
+As an argument to this function,
+
+00:00:26.234 --> 00:00:30.954
+we want to set a string corresponding to a specific transform that we want to use.
+
+00:00:30.954 --> 00:00:34.109
+In this case, we're going to use a logarithmic transform.
+
+00:00:34.109 --> 00:00:37.179
+So, we're going to use the string log.
+
+00:00:37.179 --> 00:00:39.820
+If we only add this line to the plotting code,
+
+00:00:39.820 --> 00:00:42.250
+we end up with a very odd looking plot.
+
+00:00:42.250 --> 00:00:44.049
+The bar heights are still the same,
+
+00:00:44.049 --> 00:00:46.759
+but they're wide on the left and thin on the right.
+
+00:00:46.759 --> 00:00:48.984
+In order to get the plot more interpretable,
+
+00:00:48.984 --> 00:00:53.814
+we need to modify the bin boundaries and generate more informative axis ticks.
+
+00:00:53.814 --> 00:00:56.250
+First, let's discuss the bins.
+
+00:00:56.250 --> 00:01:01.465
+The minimum weight is 0.1 and the maximum 999.9.
+
+00:01:01.465 --> 00:01:03.145
+The Log of these values,
+
+00:01:03.145 --> 00:01:06.825
+base 10 are negative one at a hair under three.
+
+00:01:06.825 --> 00:01:09.750
+These give us the limits for our bins.
+
+00:01:09.750 --> 00:01:13.219
+Our bin edges will be 10 to the of power values between negative one
+
+00:01:13.219 --> 00:01:17.569
+and three so that they are evenly spaced after taking the logarithm.
+
+00:01:17.569 --> 00:01:19.644
+The plot looks a lot better now,
+
+00:01:19.644 --> 00:01:21.594
+showing a unimodal distribution,
+
+00:01:21.594 --> 00:01:24.429
+but the tick marks could be made more interpretable.
+
+00:01:24.430 --> 00:01:26.670
+We can start with writing out the given ticks,
+
+00:01:26.670 --> 00:01:28.855
+but we might want to add more.
+
+00:01:28.855 --> 00:01:33.295
+Here is where we need to do some hard coding since outside of the whole powers of 10,
+
+00:01:33.295 --> 00:01:38.040
+there aren't nice evenly spaced intermediate values. We can still get close.
+
+00:01:38.040 --> 00:01:43.190
+However, a three is about halfway between consecutive powers of 10 on a log scale.
+
+00:01:43.189 --> 00:01:47.399
+Adding these values to a ticks list completes our exploratory plot.
+
+00:01:47.400 --> 00:01:51.760
+It's much easier to read that the most common weights are between 10 and 100,
+
+00:01:51.760 --> 00:01:55.400
+with a peak around 30 using these tick labels.
+

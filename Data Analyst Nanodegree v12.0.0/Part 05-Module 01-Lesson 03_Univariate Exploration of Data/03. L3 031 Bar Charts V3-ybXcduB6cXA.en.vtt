@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.110 --> 00:00:09.400
+If you're interested in the distribution of a qualitative variable,
+
+00:00:09.400 --> 00:00:13.845
+your primary visualization of choice will probably be the bar chart.
+
+00:00:13.845 --> 00:00:17.160
+Usually, a bar chart is constructed so that each level of
+
+00:00:17.160 --> 00:00:20.510
+the categorical variable has a unique x position while
+
+00:00:20.510 --> 00:00:23.640
+the height of each bar illustrates the frequency or count
+
+00:00:23.640 --> 00:00:27.899
+of the number of times a data point took on each categorical value.
+
+00:00:27.899 --> 00:00:30.250
+For example, let's say we gathered
+
+00:00:30.250 --> 00:00:33.799
+some survey data and wanted to count the genders of respondents.
+
+00:00:33.799 --> 00:00:38.250
+This bar chart translate the tabular summary into bar heights.
+
+00:00:38.250 --> 00:00:41.159
+You can see that the count of males is halfway between
+
+00:00:41.159 --> 00:00:47.129
+the 400 and 500 tick marks and the count of females closer to 600 then 500.
+
+00:00:47.130 --> 00:00:49.645
+To avoid information distortion,
+
+00:00:49.645 --> 00:00:52.560
+the baseline for the plot should start from zero.
+
+00:00:52.560 --> 00:00:56.410
+If we plotted our example from my 400 baseline instead,
+
+00:00:56.409 --> 00:00:58.409
+then the bar lengths would apply there to be
+
+00:00:58.409 --> 00:01:03.319
+three and a half times more females than males rather than about 28% more.
+
+00:01:03.320 --> 00:01:06.469
+For nominal data, you might want to arrange the bars
+
+00:01:06.469 --> 00:01:09.724
+in order of frequency with the most common on the left.
+
+00:01:09.724 --> 00:01:12.679
+This makes it easy to see which category is the most
+
+00:01:12.680 --> 00:01:16.045
+common and how the rest of the categories compare.
+
+00:01:16.045 --> 00:01:19.670
+You should not be inclined to do this with ordinal data.
+
+00:01:19.670 --> 00:01:24.335
+The inherent order of the levels will usually be a more important feature to convey.
+
+00:01:24.334 --> 00:01:28.265
+It's more important to know if the most common categories are lower
+
+00:01:28.265 --> 00:01:32.555
+or higher in the spectrum rather than just which label is the most frequent.
+
+00:01:32.555 --> 00:01:37.625
+Consider this bar chart a survey responses taken on a five-point scale.
+
+00:01:37.625 --> 00:01:41.814
+The highest bar on the left shows that the mode response was agree.
+
+00:01:41.814 --> 00:01:45.640
+However, this hides the fact that when opinions are put in
+
+00:01:45.640 --> 00:01:49.375
+their inherent ordering from strongly disagree to strongly agree,
+
+00:01:49.375 --> 00:01:54.140
+the responses were highly polarized between agreement and disagreement.
+
+00:01:54.140 --> 00:01:59.510
+One common variation that you might see for bar charts is the horizontal bar chart.
+
+00:01:59.510 --> 00:02:03.990
+In this variation, the chart has essentially turned 90 degrees clockwise
+
+00:02:03.989 --> 00:02:09.449
+such that the Y positions indicate category and the X-linked indicates frequency.
+
+00:02:09.449 --> 00:02:12.634
+This does not change what is conveyed by your plot,
+
+00:02:12.634 --> 00:02:17.169
+but it's useful to keep in mind depending on how your data is structured.
+
+00:02:17.169 --> 00:02:21.449
+If you have a lot of categories or the category names are long,
+
+00:02:21.449 --> 00:02:23.839
+then the horizontal orientation can be more
+
+00:02:23.840 --> 00:02:28.250
+convenient in terms of the space needed to create a readable plot.
+

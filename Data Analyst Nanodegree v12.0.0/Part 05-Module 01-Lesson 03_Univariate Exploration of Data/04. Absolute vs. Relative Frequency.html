@@ -1,0 +1,444 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Absolute vs. Relative Frequency
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Univariate Exploration of Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Tidy Data.html">
+       02. Tidy Data
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Bar Charts.html">
+       03. Bar Charts
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Absolute vs. Relative Frequency.html">
+       04. Absolute vs. Relative Frequency
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Counting Missing Data.html">
+       05. Counting Missing Data
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Bar Chart Practice.html">
+       06. Bar Chart Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Pie Charts.html">
+       07. Pie Charts
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Histograms.html">
+       08. Histograms
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Histogram Practice.html">
+       09. Histogram Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Figures, Axes, and Subplots.html">
+       10. Figures, Axes, and Subplots
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Choosing a Plot for Discrete Data.html">
+       11. Choosing a Plot for Discrete Data
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Descriptive Statistics, Outliers and Axis Limits.html">
+       12. Descriptive Statistics, Outliers and Axis Limits
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Scales and Transformations.html">
+       13. Scales and Transformations
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Scales and Transformations Practice.html">
+       14. Scales and Transformations Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Lesson Summary.html">
+       15. Lesson Summary
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Extra Kernel Density Estimation.html">
+       16. Extra: Kernel Density Estimation
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Extra Waffle Plots.html">
+       17. Extra: Waffle Plots
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Absolute vs. Relative Frequency
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L3 041 Absolute V Relative Frequency V5
+         </p>
+        </h3>
+        <video controls="">
+         <source src="04. L3 041 Absolute V Relative Frequency V5-FpnZ7dH4FqU.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="04. L3 041 Absolute V Relative Frequency V5-FpnZ7dH4FqU.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="04. L3 041 Absolute V Relative Frequency V5-FpnZ7dH4FqU.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="04. L3 041 Absolute V Relative Frequency V5-FpnZ7dH4FqU.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          DataVis L3 04 V2
+         </p>
+        </h3>
+        <video controls="">
+         <source src="04. DataVis L3 04 V2-HLum_ys7RJ0.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="04. DataVis L3 04 V2-HLum_ys7RJ0.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="04. DataVis L3 04 V2-HLum_ys7RJ0.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="04. DataVis L3 04 V2-HLum_ys7RJ0.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          (Note: Towards the end of the video, the text labeling works since the bars have been sorted by frequency. For a more general method, see the section at the bottom of this page.)
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+         <h2 id="absolute-vs-relative-frequency">
+          Absolute vs. Relative Frequency
+         </h2>
+         <p>
+          By default, seaborn's
+          <code>
+           countplot
+          </code>
+          function will summarize and plot the data in terms of
+          <strong>
+           absolute frequency
+          </strong>
+          , or pure counts. In certain cases, you might want to understand the distribution of data or want to compare levels in terms of proportions of the whole. In this case, you will want to plot the data in terms of
+          <strong>
+           relative frequency
+          </strong>
+          , where the height indicates the proportion of data taking each level, rather than the absolute count.
+         </p>
+         <p>
+          One method of plotting the data in terms of relative frequency on a bar chart is to just relabel the counts axis in terms of proportions. The underlying data will be the same, it will simply be the scale of the axis ticks that will be changed.
+         </p>
+         <pre><code class="python language-python"># get proportion taken by most common group for derivation
+# of tick marks
+n_points = df.shape[0]
+max_count = df['cat_var'].value_counts().max()
+max_prop = max_count / n_points
+
+# generate tick mark locations and names
+tick_props = np.arange(0, max_prop, 0.05)
+tick_names = ['{:0.2f}'.format(v) for v in tick_props]
+
+# create the plot
+base_color = sb.color_palette()[0]
+sb.countplot(data = df, x = 'cat_var', color = base_color)
+plt.yticks(tick_props * n_points, tick_names)
+plt.ylabel('proportion')</code></pre>
+         <p>
+          The
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.xticks.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            xticks
+           </code>
+          </a>
+          and
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.yticks.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            yticks
+           </code>
+          </a>
+          functions aren't only about rotating the tick labels. You can also get and set their locations and labels as well. The first argument takes the tick locations: in this case, the tick proportions multiplied back to be on the scale of counts. The second argument takes the tick names: in this case, the tick proportions formatted as strings to two decimal places.
+         </p>
+         <p>
+          I've also added a
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.ylabel.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            ylabel
+           </code>
+          </a>
+          call to make it clear that we're no longer working with straight counts.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c04-relfreqchart1.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="additional-variation">
+          Additional Variation
+         </h2>
+         <p>
+          Rather than plotting the data on a relative frequency scale, you might use text annotations to label the frequencies on bars instead. This requires writing a loop over the tick locations and labels and adding one text element for each bar.
+         </p>
+         <pre><code class="python language-python"># create the plot
+base_color = sb.color_palette()[0]
+sb.countplot(data = df, x = 'cat_var', color = base_color)
+
+# add annotations
+n_points = df.shape[0]
+cat_counts = df['cat_var'].value_counts()
+locs, labels = plt.xticks() # get the current tick locations and labels
+
+# loop through each pair of locations and labels
+for loc, label in zip(locs, labels):
+
+    # get the text property for the label to get the correct count
+    count = cat_counts[label.get_text()]
+    pct_string = '{:0.1f}%'.format(100*count/n_points)
+
+    # print the annotation just below the top of the bar
+    plt.text(loc, count-8, pct_string, ha = 'center', color = 'w')</code></pre>
+         <p>
+          I use the
+          <code>
+           .get_text()
+          </code>
+          method to obtain the category name, so I can get the count of each category level. At the end, I use the
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.text.html#matplotlib.pyplot.text" rel="noopener noreferrer" target="_blank">
+           <code>
+            text
+           </code>
+          </a>
+          function to print each percentage, with the x-position, y-position, and string as the three main parameters to the function.
+         </p>
+         <p>
+          (Documentation:
+          <a href="https://matplotlib.org/api/text_api.html?highlight=get_text#matplotlib.text.Text" rel="noopener noreferrer" target="_blank">
+           Text objects
+          </a>
+          )
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l3-c04-relfreqchart2.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. Counting Missing Data.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Absolute vs. Relative Frequency')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,223 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.530
+Hi there! I hope you're ready to start using Python to visualize your data.
+
+00:00:04.530 --> 00:00:08.009
+In this course, we will use NumPy and Pandas to store our data
+
+00:00:08.009 --> 00:00:12.265
+it will use matplotlib Seaborn to create our visualizations.
+
+00:00:12.265 --> 00:00:18.394
+You might see the abbreviation SNS for Seaborne but I'll be using SB In this course.
+
+00:00:18.394 --> 00:00:22.359
+We will also write and run all of our code using Jupyter Notebooks.
+
+00:00:22.359 --> 00:00:26.189
+This magic command percent sign matplotlib inline
+
+00:00:26.190 --> 00:00:29.290
+allows plots to be rendered directly inside the notebook.
+
+00:00:29.289 --> 00:00:32.240
+In this lesson, we're going to make use of this dataset
+
+00:00:32.240 --> 00:00:35.800
+comprised of attributes of creatures in the video game series Pokemon.
+
+00:00:35.799 --> 00:00:38.199
+The dataset consists of 807 rows by
+
+00:00:38.200 --> 00:00:42.390
+14 columns which include both categorical and numeric features.
+
+00:00:42.390 --> 00:00:45.369
+To start off with, let's create a bar chart on one of
+
+00:00:45.369 --> 00:00:49.239
+the categorical variables in the dataset, generation ID.
+
+00:00:49.240 --> 00:00:51.645
+Even though the values in the column look numeric,
+
+00:00:51.645 --> 00:00:55.230
+they're actually just categorical labels indicating when each species
+
+00:00:55.229 --> 00:00:59.054
+was introduced to the series from first generation to seventh generation.
+
+00:00:59.054 --> 00:01:03.530
+To create a bar chart, we want to make use of the Seaborn function, countplot.
+
+00:01:03.530 --> 00:01:04.980
+We set the data source,
+
+00:01:04.980 --> 00:01:07.850
+the Pokemon dataframe on the data parameter and
+
+00:01:07.849 --> 00:01:12.054
+the variable of interest the generation ID column on the x parameter.
+
+00:01:12.055 --> 00:01:15.780
+It's not absolutely necessary but I've added a semicolon to the end of
+
+00:01:15.780 --> 00:01:19.655
+the expression to suppress printing of the plotting object information.
+
+00:01:19.655 --> 00:01:23.859
+We can see from the plot that the most Pokemon were introduced in generations one,
+
+00:01:23.859 --> 00:01:27.924
+three and five with the fewest in generations six, seven.
+
+00:01:27.924 --> 00:01:30.879
+One thing that bothers me about the default settings is
+
+00:01:30.879 --> 00:01:34.084
+that each bar is illustrated using a different color.
+
+00:01:34.084 --> 00:01:38.169
+The generation number is already encoded by position on the x-axis and we
+
+00:01:38.170 --> 00:01:42.359
+don't have a good reason right now to associate each generation with a different color.
+
+00:01:42.359 --> 00:01:47.069
+It's better to start by plotting everything in one color to avoid being distracted.
+
+00:01:47.069 --> 00:01:51.534
+I will obtain my color value using Seaborn's color palette function.
+
+00:01:51.534 --> 00:01:54.269
+This function returns a list of tuples corresponding
+
+00:01:54.269 --> 00:01:57.289
+to the color pallet set in the function's arguments.
+
+00:01:57.290 --> 00:01:59.795
+Since I haven't specified any parameters,
+
+00:01:59.795 --> 00:02:02.519
+I'll just get back the current default palate.
+
+00:02:02.519 --> 00:02:04.494
+Since I just want one color,
+
+00:02:04.495 --> 00:02:07.300
+I'm going to slice off index zero to get the first tuple in
+
+00:02:07.299 --> 00:02:10.585
+the list and I'm going to store that in the base color variable.
+
+00:02:10.585 --> 00:02:12.870
+Then, in the countplot function,
+
+00:02:12.870 --> 00:02:16.125
+I'm going to set the value of the color parameter to the tuple.
+
+00:02:16.125 --> 00:02:20.490
+The revised plot looks like this. Much cleaner.
+
+00:02:20.840 --> 00:02:24.775
+One thing we might want to do with the plot now is to sort
+
+00:02:24.775 --> 00:02:29.105
+the generations in order by number of Pokemon species that were introduced.
+
+00:02:29.104 --> 00:02:32.959
+This can be done with the order parameter in the countplot function.
+
+00:02:32.960 --> 00:02:35.530
+This parameter takes as an argument a list
+
+00:02:35.530 --> 00:02:38.099
+with the order in which bars should be plotted.
+
+00:02:38.099 --> 00:02:40.060
+We could approach this by hard coding
+
+00:02:40.060 --> 00:02:42.759
+the values based on what we see in the unsorted plot.
+
+00:02:42.759 --> 00:02:47.149
+So, for example, we could start here with five and end was six.
+
+00:02:47.150 --> 00:02:51.405
+A better approach is to write some code to obtain that order programmatically.
+
+00:02:51.405 --> 00:02:55.349
+The pandas series function value counts is valuable here.
+
+00:02:55.349 --> 00:02:57.400
+This function counts the frequency of
+
+00:02:57.400 --> 00:03:01.379
+each unique value in the series and then sort them in descending order.
+
+00:03:01.379 --> 00:03:03.139
+In order to get the bar order,
+
+00:03:03.139 --> 00:03:05.250
+we want the index values and then,
+
+00:03:05.250 --> 00:03:06.740
+store them in a variable.
+
+00:03:06.740 --> 00:03:11.469
+We pass this to the order parameter in order to get the sorted bar chart.
+
+00:03:11.469 --> 00:03:16.060
+Let's move on to a different categorical variable, Pokemon type.
+
+00:03:16.060 --> 00:03:19.289
+Each species has one or two types that play
+
+00:03:19.289 --> 00:03:22.889
+a part in each creature's offensive and defensive capabilities.
+
+00:03:22.889 --> 00:03:27.459
+For now, let's just take a look at the distribution of first Pokemon types.
+
+00:03:27.460 --> 00:03:29.215
+When we generate the bar chart,
+
+00:03:29.215 --> 00:03:34.069
+we can see that the bar labels on the x axis are mostly unreadable due to overlap.
+
+00:03:34.069 --> 00:03:36.539
+One thing that we might do is make use of
+
+00:03:36.539 --> 00:03:40.750
+matplotlib's Xticks function to rotate the category labels.
+
+00:03:40.750 --> 00:03:43.330
+By setting rotation equals 90,
+
+00:03:43.330 --> 00:03:47.890
+the labels are turned 90 degrees counterclockwise and no longer overlap.
+
+00:03:47.889 --> 00:03:51.750
+An alternative strategy is to create a horizontal bar chart.
+
+00:03:51.750 --> 00:03:56.530
+In Seaborn, this is as simple as changing the x parameter into a Y.
+
+00:03:56.530 --> 00:03:59.370
+Now, the levels of the type variable are listed on
+
+00:03:59.370 --> 00:04:02.754
+the vertical axis with frequency shown on the X axis.
+
+00:04:02.754 --> 00:04:05.340
+Once we sort the plot by type frequency,
+
+00:04:05.340 --> 00:04:08.650
+we can see that water and normal types are the most common first type
+
+00:04:08.650 --> 00:04:12.599
+taken by Pokemon while flying is the least common first type.
+
