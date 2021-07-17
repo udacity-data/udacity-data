@@ -1,0 +1,796 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Check For Understanding: Functions
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Functions
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Defining Functions.html">
+       02. Defining Functions
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Quiz Defining Functions.html">
+       03. Quiz: Defining Functions
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution Defining Functions.html">
+       04. Solution: Defining Functions
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Check For Understanding Functions.html">
+       05. Check For Understanding: Functions
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Variable Scope.html">
+       06. Variable Scope
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Variable Scope.html">
+       07. Variable Scope
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Solution Variable Scope.html">
+       08. Solution: Variable Scope
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Check For Understanding Variable Scope.html">
+       09. Check For Understanding: Variable Scope
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Documentation.html">
+       10. Documentation
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Quiz Documentation.html">
+       11. Quiz: Documentation
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Solution Documentation.html">
+       12. Solution: Documentation
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Lambda Expressions.html">
+       13. Lambda Expressions
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Quiz Lambda Expressions.html">
+       14. Quiz: Lambda Expressions
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Solution Lambda Expressions.html">
+       15. Solution: Lambda Expressions
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Conclusion.html">
+       16. Conclusion
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          05. Check For Understanding: Functions
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="check-for-understanding">
+          Check for Understanding
+         </h2>
+         <p>
+          Let's do a quick review of concepts learned so far. As before, you will see some earlier concepts being revisited. It's important to review older concepts along with newer ones, to keep a firm grasp on your foundations.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Below are some types of statements you have used. Can you match each piece of code with the type of statement?
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           <code>
+            size = 8
+           </code>
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           <code>
+            42
+           </code>
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <pre><code>for i in [1, 2, 3, 4, 5]:  
+  print(i)</code></pre>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           <code>
+            string2.lower()
+           </code>
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <pre><code>while n &gt; 2:  
+  print(i)</code></pre>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             CODE
+            </p>
+           </th>
+           <th>
+            <p>
+             TYPE OF STATEMENT
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Method call
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             <code>
+              for
+             </code>
+             loop
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             <code>
+              while
+             </code>
+             loop
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Not a statement
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Assignment statement
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              CODE
+             </p>
+            </th>
+            <th>
+             <p>
+              TYPE OF STATEMENT
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Method call
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               <code>
+                string2.lower()
+               </code>
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              <code>
+               for
+              </code>
+              loop
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <pre><code>for i in [1, 2, 3, 4, 5]:  
+  print(i)</code></pre>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              <code>
+               while
+              </code>
+              loop
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <pre><code>while n &gt; 2:  
+  print(i)</code></pre>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Not a statement
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               <code>
+                42
+               </code>
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Assignment statement
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               <code>
+                size = 8
+               </code>
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Match each term with its description.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           A block of code that has a name, but doesn't run until we tell it to
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           A statement that makes a function run
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           A value that we can pass to a function when we call that function
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           A function associated with an object
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             DESCRIPTION
+            </p>
+           </th>
+           <th>
+            <p>
+             TERM
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Argument
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Function
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Function call
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             Method
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              DESCRIPTION
+             </p>
+            </th>
+            <th>
+             <p>
+              TERM
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Argument
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               A value that we can pass to a function when we call that function
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Function
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               A block of code that has a name, but doesn't run until we tell it to
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Function call
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               A statement that makes a function run
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              Method
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               A function associated with an object
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Here is a call to a function named print_list_elements:
+             <br>
+              <code>
+               print_list_elements(list)
+              </code>
+              <br>
+               Which part of this code is referred to as an
+               <strong>
+                argument
+               </strong>
+               ?
+              </br>
+             </br>
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1531375998469" name="673859" type="radio" value="a1531375998469"/>
+           <label for="a1531375998469">
+            <p>
+             <code>
+              print_list_elements
+             </code>
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1531376241017" name="673859" type="radio" value="a1531376241017"/>
+           <label for="a1531376241017">
+            <p>
+             <code>
+              list
+             </code>
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1531376255248" name="673859" type="radio" value="a1531376255248"/>
+           <label for="a1531376255248">
+            <p>
+             <code>
+              ()
+             </code>
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1537910152909" name="673859" type="radio" value="a1537910152909"/>
+           <label for="a1537910152909">
+            <p>
+             There is no argument in this function call
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          `list`
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Here is a call to a function named print_list_elements:
+             <br>
+              <code>
+               print_list_elements()
+              </code>
+              <br>
+               Which part of this code is referred to as an
+               <strong>
+                argument
+               </strong>
+               ?
+              </br>
+             </br>
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1531376395605" name="673860" type="radio" value="a1531376395605"/>
+           <label for="a1531376395605">
+            <p>
+             <code>
+              print_list_elements
+             </code>
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1531376412252" name="673860" type="radio" value="a1531376412252"/>
+           <label for="a1531376412252">
+            <p>
+             <code>
+              list
+             </code>
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1531376416337" name="673860" type="radio" value="a1531376416337"/>
+           <label for="a1531376416337">
+            <p>
+             <code>
+              ()
+             </code>
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1531376418668" name="673860" type="radio" value="a1531376418668"/>
+           <label for="a1531376418668">
+            <p>
+             There is no argument in this function call
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          There is no argument in this function call
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="06. Variable Scope.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. Check For Understanding: Functions')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
