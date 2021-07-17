@@ -1,0 +1,313 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Exploratory vs. Explanatory Analyses
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Visualization in Data Analysis
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction to Data Visualization.html">
+       01. Introduction to Data Visualization
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Motivation for Data Visualization.html">
+       02. Motivation for Data Visualization
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Further Motivation.html">
+       03. Further Motivation
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Exploratory vs. Explanatory Analyses.html">
+       04. Exploratory vs. Explanatory Analyses
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quiz Exploratory vs. Explanatory.html">
+       05. Quiz: Exploratory vs. Explanatory
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Visualization in Python.html">
+       06. Visualization in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Course Structure.html">
+       07. Course Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Lesson Summary.html">
+       08. Lesson Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Exploratory vs. Explanatory Analyses
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Exploratory vs. Explanatory Analysis
+         </p>
+        </h3>
+        <video controls="">
+         <source src="04. Exploratory vs. Explanatory Analysis-wvgBSMks4p8.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="04. Exploratory vs. Explanatory Analysis-wvgBSMks4p8.ar.vtt" srclang="ar"/>
+         <track default="true" kind="subtitles" label="en" src="04. Exploratory vs. Explanatory Analysis-wvgBSMks4p8.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="04. Exploratory vs. Explanatory Analysis-wvgBSMks4p8.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="uz" src="04. Exploratory vs. Explanatory Analysis-wvgBSMks4p8.uz.vtt" srclang="uz"/>
+         <track default="false" kind="subtitles" label="CN" src="04. Exploratory vs. Explanatory Analysis-wvgBSMks4p8.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          There are two main reasons for creating visuals using data:
+         </p>
+         <ol>
+          <li>
+           <p>
+            <strong>
+             Exploratory
+            </strong>
+            analysis is done when you are searching for insights.  These visualizations don't need to be perfect. You are using plots to find insights, but they don't need to be aesthetically appealing.  You are the consumer of these plots, and you need to be able to find the answer to your questions from these plots.
+            <br/>
+            <br/>
+           </p>
+          </li>
+          <li>
+           <p>
+            <strong>
+             Explanatory
+            </strong>
+            analysis is done when you are providing your results for others.  These visualizations need to provide you the emphasis necessary to convey your message.  They should be accurate, insightful, and visually appealing.
+           </p>
+          </li>
+         </ol>
+         <p>
+          The five steps of the data analysis process:
+         </p>
+         <ol>
+          <li>
+           <strong>
+            Extract
+           </strong>
+           - Obtain the data from a spreadsheet, SQL, the web, etc.
+           <br/>
+           <br/>
+          </li>
+          <li>
+           <strong>
+            Clean
+           </strong>
+           - Here we could use expl
+           <strong>
+            or
+           </strong>
+           atory visuals.
+           <br/>
+           <br/>
+          </li>
+          <li>
+           <strong>
+            Explore
+           </strong>
+           - Here we use expl
+           <strong>
+            or
+           </strong>
+           atory visuals.
+           <br/>
+           <br/>
+          </li>
+          <li>
+           <strong>
+            Analyze
+           </strong>
+           - Here we might use either expl
+           <strong>
+            or
+           </strong>
+           atory or expl
+           <strong>
+            an
+           </strong>
+           atory visuals.
+           <br/>
+           <br/>
+          </li>
+          <li>
+           <strong>
+            Share
+           </strong>
+           - Here is where expl
+           <strong>
+            an
+           </strong>
+           atory visuals live.
+          </li>
+         </ol>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. Quiz Exploratory vs. Explanatory.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Exploratory vs. Explanatory Analyses')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

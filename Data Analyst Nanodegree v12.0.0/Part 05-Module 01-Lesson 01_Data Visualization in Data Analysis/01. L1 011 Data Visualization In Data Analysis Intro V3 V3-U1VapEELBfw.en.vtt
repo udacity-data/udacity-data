@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.969 --> 00:00:07.410
+Hi there. I'm Mike.
+
+00:00:07.410 --> 00:00:08.460
+I'm Josh.
+
+00:00:08.460 --> 00:00:11.910
+We would like to welcome you to this course on data visualization.
+
+00:00:11.910 --> 00:00:17.100
+Data visualization is vital in multiple areas of the data analysis process.
+
+00:00:17.100 --> 00:00:19.725
+Two main topics are covered in this course.
+
+00:00:19.725 --> 00:00:22.590
+Exploratory data visualizations are used to understand
+
+00:00:22.589 --> 00:00:26.579
+the structure of your data faster than statistics would be able to load.
+
+00:00:26.579 --> 00:00:29.159
+This type of visualization is used once you are
+
+00:00:29.160 --> 00:00:31.980
+ready to start investigating your gathered data.
+
+00:00:31.980 --> 00:00:35.460
+Explanatory data visualizations, on the other hand,
+
+00:00:35.460 --> 00:00:37.799
+are created at the end of your analysis.
+
+00:00:37.799 --> 00:00:42.824
+This type of visualization is used to convey your findings to others or to tell a story.
+
+00:00:42.825 --> 00:00:47.344
+This course will go over more than just how to code to create your visualizations.
+
+00:00:47.344 --> 00:00:50.869
+You'll also learn about the design of visualizations from
+
+00:00:50.869 --> 00:00:54.594
+choosing the right plot type to selecting appropriate variable encoding.
+
+00:00:54.594 --> 00:00:58.144
+You will learn to create visualizations that are clear not just for you,
+
+00:00:58.145 --> 00:01:00.065
+but also for others.
+
+00:01:00.064 --> 00:01:05.435
+Data visualization is probably my favorite part of the data analysis process.
+
+00:01:05.435 --> 00:01:10.189
+It is always exciting to observe visualizations that generate new insights.
+
+00:01:10.189 --> 00:01:11.810
+By going through this course,
+
+00:01:11.810 --> 00:01:17.100
+you'll be able to use data visualization techniques to enhance your data analysis work.
+

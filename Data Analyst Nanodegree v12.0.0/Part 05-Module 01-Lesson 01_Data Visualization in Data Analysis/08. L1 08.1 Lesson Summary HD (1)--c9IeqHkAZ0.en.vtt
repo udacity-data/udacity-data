@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.200 --> 00:00:03.030
+Welcome to the end of the first lesson.
+
+00:00:03.029 --> 00:00:06.314
+In this lesson, you saw an example of why data visualization,
+
+00:00:06.315 --> 00:00:09.405
+it's so important to the data analysis process.
+
+00:00:09.404 --> 00:00:12.089
+You also learned about the primary libraries that will
+
+00:00:12.089 --> 00:00:14.594
+be introduced in later lessons - Pandas,
+
+00:00:14.595 --> 00:00:17.010
+Seaborn, and Matplotlib - and how they
+
+00:00:17.010 --> 00:00:19.675
+compliment each other in the visualization process.
+
+00:00:19.675 --> 00:00:21.050
+In the next lesson,
+
+00:00:21.050 --> 00:00:24.510
+you will learn more about the design aspects of your visualizations.
+
+00:00:24.510 --> 00:00:27.090
+Further lessons will see you building visualizations for
+
+00:00:27.089 --> 00:00:32.439
+both exploratory and explanatory analyses. See you in the next lesson.
+

@@ -1,0 +1,286 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Visualization in Python
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Visualization in Data Analysis
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction to Data Visualization.html">
+       01. Introduction to Data Visualization
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Motivation for Data Visualization.html">
+       02. Motivation for Data Visualization
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Further Motivation.html">
+       03. Further Motivation
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Exploratory vs. Explanatory Analyses.html">
+       04. Exploratory vs. Explanatory Analyses
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quiz Exploratory vs. Explanatory.html">
+       05. Quiz: Exploratory vs. Explanatory
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Visualization in Python.html">
+       06. Visualization in Python
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Course Structure.html">
+       07. Course Structure
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Lesson Summary.html">
+       08. Lesson Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. Visualization in Python
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L1 061 Visualization In Python V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="06. L1 061 Visualization In Python V1-MFS-1veFC_c.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="06. L1 061 Visualization In Python V1-MFS-1veFC_c.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="06. L1 061 Visualization In Python V1-MFS-1veFC_c.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="06. L1 061 Visualization In Python V1-MFS-1veFC_c.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="python-data-visualization-libraries">
+          Python Data Visualization Libraries
+         </h2>
+         <p>
+          In this course, you will make use of the following libraries for creating data visualizations:
+         </p>
+         <ul>
+          <li>
+           <a href="https://matplotlib.org/" rel="noopener noreferrer" target="_blank">
+            Matplotlib
+           </a>
+           : a versatile library for visualizations, but it can take some code effort to put together common visualizations.
+          </li>
+          <li>
+           <a href="https://seaborn.pydata.org/" rel="noopener noreferrer" target="_blank">
+            Seaborn
+           </a>
+           : built on top of matplotlib, adds a number of functions to make common statistical visualizations easier to generate.
+          </li>
+          <li>
+           <a href="https://pandas.pydata.org/" rel="noopener noreferrer" target="_blank">
+            pandas
+           </a>
+           : while this library includes some convenient methods for visualizing data that hook into matplotlib, we'll mainly be using it for its main purpose as a general tool for working with data.
+          </li>
+         </ul>
+         <p>
+          All together, these libraries will allow you to visualize data in a balance of productivity and flexibility, for both exploratory as well as explanatory analyses.
+         </p>
+         <h3 id="a-quick-note-about-library-versions">
+          A Quick Note about Library Versions
+         </h3>
+         <p>
+          Some of the things that you see in this course might not work the same depending on which version of the Python packages you have. For clarity, as of August 2018, here are the library versions that were used to create the course materials:
+         </p>
+         <ul>
+          <li>
+           <strong>
+            NumPy
+           </strong>
+           : Workspaces use v1.12.1, content created with v1.14.0
+          </li>
+          <li>
+           <strong>
+            pandas
+           </strong>
+           : Workspaces use v0.20.3, content created with v0.22.0
+          </li>
+          <li>
+           <strong>
+            Matplotlib
+           </strong>
+           : Workspaces use v2.1.0, content created with v2.1.2
+          </li>
+          <li>
+           <strong>
+            Seaborn
+           </strong>
+           : Workspaces and content both created with v0.8.1
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. Course Structure.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. Visualization in Python')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
