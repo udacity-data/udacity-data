@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.420 --> 00:00:03.110
+Agora que você sabe tudo sobre validação cruzada de k-fold
+
+00:00:03.110 --> 00:00:05.530
+para validar o desempenho do algoritmo,
+
+00:00:05.530 --> 00:00:07.790
+quero mostrar um uso diferente dela que gosto.
+
+00:00:08.900 --> 00:00:12.170
+Logo no início da aula, falamos sobre algoritmos
+
+00:00:12.170 --> 00:00:16.239
+de aprendizado de máquina, como máquinas de vetor de suporte Naive Bayes,
+
+00:00:16.239 --> 00:00:19.640
+árvores de decisão e, especialmente, os parâmetros que precisam ser
+
+00:00:19.640 --> 00:00:21.940
+ajustados para obter o melhor desempenho.
+
+00:00:21.940 --> 00:00:24.530
+Estávamos ajustando esses parâmetros com um método de adivinhação
+
+00:00:24.530 --> 00:00:25.610
+e verificação.
+
+00:00:25.610 --> 00:00:27.450
+Mas ele é muito pouco funcional.
+
+00:00:27.450 --> 00:00:28.025
+E demorado.
+
+00:00:28.025 --> 00:00:29.025
+Ninguém gosta dele.
+
+00:00:29.025 --> 00:00:30.235
+É o pior.
+
+00:00:30.235 --> 00:00:32.856
+A validação cruzada pode ajudar você aqui.
+
+00:00:32.856 --> 00:00:34.994
+Ela pode automatizar os testes.
+
+00:00:34.994 --> 00:00:37.452
+E escolher o melhor ajuste de parâmetro.
+
+00:00:37.452 --> 00:00:38.960
+Mostrarei como fazer isso.
+

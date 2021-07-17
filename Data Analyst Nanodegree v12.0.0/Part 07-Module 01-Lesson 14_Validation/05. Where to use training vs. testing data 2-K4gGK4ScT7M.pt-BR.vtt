@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.330 --> 00:00:02.029
+Aqui está o próximo teste.
+
+00:00:02.029 --> 00:00:05.585
+Agora, pegarei meus componentes principais e
+
+00:00:05.585 --> 00:00:09.320
+os colocarei no classificador de vetor de suporte.
+
+00:00:09.320 --> 00:00:12.660
+Quero usar esse comando de treinamento no svc.
+
+00:00:12.660 --> 00:00:14.880
+Mas primeiro preciso fazer uma transformação.
+
+00:00:14.880 --> 00:00:18.170
+Quando executo pca.fit, estou simplesmente localizando os componentes principais.
+
+00:00:18.170 --> 00:00:21.252
+Na verdade, não estou transformando os dados na
+
+00:00:21.252 --> 00:00:22.700
+representação dos componentes principais.
+
+00:00:22.700 --> 00:00:25.960
+Essa transformação acontece por meio da função de transformação.
+
+00:00:25.960 --> 00:00:28.680
+Minha pergunta é: a qual conjunto de dados devo
+
+00:00:28.680 --> 00:00:32.540
+aplicar essa função de transformação, os recursos de treinamento ou os recursos de teste?
+

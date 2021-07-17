@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:03.370
+A resposta certa será os recursos de treinamento.
+
+00:00:03.370 --> 00:00:06.410
+Para usar componentes de princípio quando estiver treinando meu classificador de vetor de suporte,
+
+00:00:06.410 --> 00:00:07.870
+precisarei transformar meu conjunto de dados de treinamento
+
+00:00:07.870 --> 00:00:12.150
+na representação correta.
+
+00:00:12.150 --> 00:00:15.320
+Portanto, você quer alimentar seu conjunto de dados de treinamento com esse comando de transformação.
+

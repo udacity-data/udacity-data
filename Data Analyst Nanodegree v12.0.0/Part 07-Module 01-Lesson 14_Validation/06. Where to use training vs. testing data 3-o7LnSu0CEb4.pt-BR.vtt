@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:02.380
+Quero transformar meus recursos de teste agora,
+
+00:00:02.380 --> 00:00:04.810
+como fiz com meus recursos de treinamento acima.
+
+00:00:04.810 --> 00:00:07.960
+Não esqueça que, já que não chamei o pca.fit de novo,
+
+00:00:07.960 --> 00:00:10.540
+isso significa que vou representar meus dados de teste
+
+00:00:11.710 --> 00:00:14.940
+agora com os componentes principais que encontrei nos meus dados de treinamento.
+
+00:00:14.940 --> 00:00:16.620
+Isso é muito importante.
+
+00:00:16.620 --> 00:00:20.230
+Se eu reaparelhar o PCA usando meus recursos de teste agora,
+
+00:00:20.230 --> 00:00:21.270
+isso não funcionará corretamente.
+

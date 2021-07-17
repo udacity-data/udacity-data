@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.250 --> 00:00:03.460
+Eu diria que as duas primeiras respostas são as
+
+00:00:03.460 --> 00:00:04.620
+mais precisas.
+
+00:00:04.620 --> 00:00:08.600
+O teste dos dados proporciona uma avaliação do desempenho do seu
+
+00:00:08.600 --> 00:00:11.500
+classificador ou regressão em um conjunto de dados independente e
+
+00:00:11.500 --> 00:00:13.200
+ajuda a evitar o sobreajuste.
+
+00:00:13.200 --> 00:00:16.219
+Especialistas afirmam que você deve fazer esse teste de treinamento dividido, mas
+
+00:00:16.219 --> 00:00:18.390
+isso não é motivo.
+
+00:00:18.390 --> 00:00:21.490
+Fazemos isso porque ajuda a entender melhor nossos resultados.
+
+00:00:21.490 --> 00:00:24.080
+Algo que ele não faz é maximizar a quantidade de dados
+
+00:00:24.080 --> 00:00:25.320
+de treinamento disponíveis.
+
+00:00:25.320 --> 00:00:27.950
+Se você tiver que manter 10% ou 20% dos seus dados para
+
+00:00:27.950 --> 00:00:31.420
+teste, eles não estarão disponíveis para o treinamento.
+
+00:00:31.420 --> 00:00:34.590
+E essa é uma desvantagem do teste de treinamento dividido.
+

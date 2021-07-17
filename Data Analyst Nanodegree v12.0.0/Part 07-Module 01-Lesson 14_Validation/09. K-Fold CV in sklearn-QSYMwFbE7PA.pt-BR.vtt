@@ -1,0 +1,179 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.180 --> 00:00:03.594
+Após a breve
+introdução sobre a teoria subjacente à validação
+
+00:00:03.594 --> 00:00:04.830
+cruzada de k-fold,
+
+00:00:04.830 --> 00:00:07.660
+talvez você já esteja imaginando que agora
+verificaremos o código.
+
+00:00:07.660 --> 00:00:12.030
+A validação cruzada de K-fold
+tem o suporte do conjunto
+
+00:00:12.030 --> 00:00:14.300
+de funções da
+validação cruzada disponíveis no sklearn.
+
+00:00:14.300 --> 00:00:17.330
+Vejamos agora sua aparência
+quando ela é implantada.
+
+00:00:17.330 --> 00:00:20.030
+Você já está familiarizado
+com o código
+
+00:00:20.030 --> 00:00:21.490
+que estou mostrando.
+
+00:00:21.490 --> 00:00:24.490
+Utilizamos este código
+no primeiro miniprojeto
+
+00:00:24.490 --> 00:00:27.180
+para identificar o autor dos emails.
+
+00:00:27.180 --> 00:00:28.690
+Foi a Sara ou a Chris?
+
+00:00:29.990 --> 00:00:32.810
+Estou usando um Naive Bayes Gaussiano.
+
+00:00:32.810 --> 00:00:36.040
+Acompanho o tempo de treinamento,
+o tempo de previsão
+
+00:00:36.040 --> 00:00:38.470
+e a precisão obtida
+para este classificador.
+
+00:00:39.720 --> 00:00:43.105
+Lembre-se de que as características que estou usando
+são as palavras dos emails e
+
+00:00:43.105 --> 00:00:46.790
+estou tentando prever quem escreveu
+o email com base no vocabulário
+
+00:00:46.790 --> 00:00:48.110
+empregado.
+
+00:00:48.110 --> 00:00:50.950
+Acima disso, vejo
+algumas transformações de características que executo,
+
+00:00:50.950 --> 00:00:55.590
+estou lendo o texto e
+fazendo algumas seleções de características.
+
+00:00:55.590 --> 00:00:56.890
+Já falamos
+sobre esses aspectos.
+
+00:00:56.890 --> 00:00:59.180
+Não vou me prolongar
+demais agora.
+
+00:00:59.180 --> 00:01:01.390
+Esta é a parte mais interessante do código.
+
+00:01:01.390 --> 00:01:06.220
+Primeiro, na validação
+sklearn.cross_validation, importo o KFold,
+
+00:01:06.220 --> 00:01:09.410
+que é o nome da função
+de validação cruzada k-fold.
+
+00:01:09.410 --> 00:01:14.640
+Depois, preciso declarar um objeto k-fold,
+que aceita dois argumentos.
+
+00:01:14.640 --> 00:01:19.500
+Um deles é o número de itens
+no conjunto total de dados.
+
+00:01:19.500 --> 00:01:20.820
+Nesse caso,
+
+00:01:20.820 --> 00:01:23.450
+ele equivale ao número de autores
+no conjunto de dados.
+
+00:01:23.450 --> 00:01:26.850
+O segundo argumento será
+o número de folds a serem verificados.
+
+00:01:26.850 --> 00:01:28.840
+Neste caso, a resposta é dois.
+
+00:01:28.840 --> 00:01:31.000
+Mas você pode
+mudar esse valor.
+
+00:01:31.000 --> 00:01:35.260
+Portanto, o k-fold apresentará
+duas listas.
+
+00:01:35.260 --> 00:01:37.870
+A primeira será um
+conjunto de índices de
+
+00:01:37.870 --> 00:01:40.810
+todos os pontos de dados que
+usarei no meu conjunto de treinamento.
+
+00:01:40.810 --> 00:01:44.520
+A segunda lista conterá todos
+os índices que usarei em meu
+
+00:01:44.520 --> 00:01:45.680
+conjunto de dados de teste.
+
+00:01:45.680 --> 00:01:50.090
+Assim, posso usar os índices
+para acessar minhas características e
+
+00:01:50.090 --> 00:01:54.230
+meus rótulos, e atribuir cada
+conjunto de característica ou cada rótulo
+
+00:01:54.230 --> 00:01:57.250
+ao conjunto de dados
+de treinamento ou de testes.
+
+00:01:57.250 --> 00:02:00.848
+Este é o real particionamento
+dos dados nos conjuntos de dados
+
+00:02:00.848 --> 00:02:02.090
+de treinamento e de testes.
+
+00:02:02.090 --> 00:02:04.210
+Abaixo disso, é como antes,
+
+00:02:04.210 --> 00:02:07.870
+fazemos algumas transformações
+nos dados de treinamento ou de testes.
+
+00:02:07.870 --> 00:02:10.750
+Depois, treinamos o classificador
+e avaliamos a precisão.
+
+00:02:10.750 --> 00:02:13.330
+Mas, se eu fizer isso fora de contexto,
+
+00:02:13.330 --> 00:02:15.960
+algo não
+dará certo.
+
+00:02:15.960 --> 00:02:18.110
+Veja o que ocorre
+quando executo este código.
+

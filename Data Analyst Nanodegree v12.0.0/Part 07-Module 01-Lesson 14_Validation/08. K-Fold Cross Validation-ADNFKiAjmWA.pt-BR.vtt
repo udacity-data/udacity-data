@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.240 --> 00:00:02.538
+Se você quiser minimizar o tempo de treinamento,
+
+00:00:02.538 --> 00:00:04.843
+treinar uma vez é mais rápido que dez vezes.
+
+00:00:04.843 --> 00:00:08.520
+Portanto, TRAIN/TEST é a melhor escolha.
+
+00:00:08.520 --> 00:00:10.420
+Se você quiser minimizar o tempo de execução,
+
+00:00:10.420 --> 00:00:13.907
+acabará escolhendo um algoritmo de execução de máquina.
+
+00:00:13.907 --> 00:00:16.568
+Se o importante for apenas minimizar o tempo de execução,
+
+00:00:16.568 --> 00:00:19.673
+você também pode ter o benefício da validação cruzada de 10 vezes,
+
+00:00:19.673 --> 00:00:21.960
+para uma avaliação melhor do que está acontecendo.
+
+00:00:21.960 --> 00:00:23.821
+Eu marcaria esta opção,
+
+00:00:23.821 --> 00:00:26.300
+mas ela não está clara. Qualquer uma está certa.
+
+00:00:26.300 --> 00:00:30.500
+Se você quiser maximizar a precisão da sua avaliação, a qualidade do seu algoritmo,
+
+00:00:30.500 --> 00:00:35.260
+escolha a penalidade da validação cruzada de 10 vezes.
+
+00:00:35.260 --> 00:00:37.650
+Use o tempo extra para obter um resultado melhor.
+

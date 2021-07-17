@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.170 --> 00:00:00.820
+A resposta certa,
+
+00:00:00.820 --> 00:00:03.660
+claro, é que você deseja fazer suas previsões usando seu conjunto de dados teste.
+
+00:00:03.660 --> 00:00:05.010
+Esse é o principal objetivo.
+
+00:00:05.010 --> 00:00:06.310
+Após essa transformação de PCA,
+
+00:00:06.310 --> 00:00:10.350
+seu conjunto de dados de teste agora está da mesma forma que seu conjunto de dados de treinamento.
+
+00:00:10.350 --> 00:00:13.800
+Ele tem os componentes de princípio aplicados a ele.
+
+00:00:13.800 --> 00:00:16.600
+Agora você deseja preenchê-lo em seu classificador de vetor de suporte e
+
+00:00:16.600 --> 00:00:17.650
+ver que previsões você recebe.
+

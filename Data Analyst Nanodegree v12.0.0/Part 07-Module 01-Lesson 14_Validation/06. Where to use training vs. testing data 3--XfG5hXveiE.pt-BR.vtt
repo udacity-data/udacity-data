@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.980 --> 00:00:04.980
+Neste ponto, o treinamento do meu classificador de vetor de suporte está concluído,
+
+00:00:04.980 --> 00:00:07.670
+incluindo a transformação de componentes de princípio.
+
+00:00:07.670 --> 00:00:09.270
+Agora, quero passar para os testes.
+
+00:00:10.620 --> 00:00:14.260
+Para fazer isso, preciso repetir o que fiz com os recursos de treinamento, mas,
+
+00:00:14.260 --> 00:00:16.510
+desta vez, com meus recursos de testes.
+
+00:00:16.510 --> 00:00:18.700
+Isso significa começar com um pca.transform.
+
+00:00:19.700 --> 00:00:22.450
+Algo muito importante que não estou fazendo aqui é
+
+00:00:22.450 --> 00:00:26.270
+reajustar minha PCA nos recursos de testes.
+
+00:00:26.270 --> 00:00:29.500
+Quero ser bastante consistente com o que fiz com os recursos de treinamento
+
+00:00:29.500 --> 00:00:32.020
+e o que farei com os recursos de testes.
+
+00:00:32.020 --> 00:00:35.350
+Isso significa usar os mesmos componentes de princípio que encontrei nos recursos de
+
+00:00:35.350 --> 00:00:41.050
+treinamento e representar meus recursos de testes usando esses componentes de princípio.
+
+00:00:41.050 --> 00:00:44.380
+Tendo dito isso, quando chamo pca.transform,
+
+00:00:44.380 --> 00:00:47.500
+quero fazer isso para os recursos de treinamento ou os recursos de testes?
+

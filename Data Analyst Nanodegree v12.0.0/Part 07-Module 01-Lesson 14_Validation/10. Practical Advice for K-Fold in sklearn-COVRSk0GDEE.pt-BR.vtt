@@ -1,0 +1,224 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.430 --> 00:00:03.280
+Então, eu tenho dois folds e, portanto,
+terei dois conjuntos de tempos de treinamento,
+
+00:00:03.280 --> 00:00:05.090
+tempos de previsão e precisões.
+
+00:00:05.090 --> 00:00:08.010
+Veja, leva apenas alguns segundos para
+fazer o treinamento e a previsão, mas
+
+00:00:08.010 --> 00:00:13.150
+a precisão é muito ruim,
+menos de 1% no primeiro fold e
+
+00:00:13.150 --> 00:00:15.410
+somente 15% no segundo.
+
+00:00:15.410 --> 00:00:18.130
+Então, o que deve estar acontecendo aqui?
+
+00:00:18.130 --> 00:00:21.590
+Para ajudar a desvendar isso, adicionarei
+algumas instruções print.
+
+00:00:21.590 --> 00:00:24.010
+A primeira coisa que eu farei
+será, na verdade, analisar
+
+00:00:24.010 --> 00:00:28.840
+os índices de todos os eventos que
+estão entrando no meu conjunto de dados de treinamento.
+
+00:00:28.840 --> 00:00:32.512
+Há alguns padrões em que todos os
+eventos de um tipo específico terminam no
+
+00:00:32.512 --> 00:00:33.968
+conjunto de dados de treinamento e
+
+00:00:33.968 --> 00:00:37.653
+todos os outros tipos específicos de
+evento terminam no conjunto de dados de teste?
+
+00:00:37.653 --> 00:00:41.271
+Porque, se esse for o caso,
+eu não devo esperar que o treinamento em
+
+00:00:41.271 --> 00:00:45.810
+um tipo de evento me permitirá classificar
+muito bem outro tipo de evento.
+
+00:00:45.810 --> 00:00:48.350
+Outra coisa que também farei
+será imprimir
+
+00:00:48.350 --> 00:00:52.030
+os rótulos de todos os eventos
+que estão em meu conjunto de dados de treinamento.
+
+00:00:52.030 --> 00:00:54.310
+Bem, isso é a repetição de
+algumas informações similares, mas
+
+00:00:54.310 --> 00:00:56.410
+agora eu estou analisando diretamente os rótulos.
+
+00:00:56.410 --> 00:00:59.490
+E, por fim, imprimirei
+os autores do conjunto de dados de teste
+
+00:00:59.490 --> 00:01:02.290
+para verificar se há alguma diferença importante
+entre os eventos que
+
+00:01:02.290 --> 00:01:04.510
+estão entrando no conjunto de dados de treinamento e
+no conjunto de dados de teste.
+
+00:01:06.040 --> 00:01:11.010
+Ah, nós tivemos muitos dados de saída
+porque eu tenho milhares de eventos.
+
+00:01:11.010 --> 00:01:12.780
+Vamos voltar para a primeira linha.
+
+00:01:12.780 --> 00:01:15.940
+Esta linha aqui está me mostrando os índices
+de todos os dados que estão entrando
+
+00:01:15.940 --> 00:01:17.720
+no meu conjunto de dados de treinamento, e
+
+00:01:17.720 --> 00:01:21.380
+eu posso perceber que o que está acontecendo aqui
+é apenas uma contagem sequencial.
+
+00:01:21.380 --> 00:01:26.385
+Então todos os eventos desde 8.789
+até o final do conjunto de dados,
+
+00:01:26.385 --> 00:01:31.330
+17.577, estão entrando
+no conjunto de dados de treinamento.
+
+00:01:31.330 --> 00:01:34.658
+A outra metade, que vai de 1 até 8.789,
+
+00:01:34.658 --> 00:01:38.290
+está indo para o
+conjunto de dados de teste.
+
+00:01:38.290 --> 00:01:40.830
+Então, em outras palavras, eu não estou
+embaralhando meus eventos.
+
+00:01:40.830 --> 00:01:42.720
+Eu não estou fazendo nenhuma aleatorização.
+
+00:01:42.720 --> 00:01:46.750
+Eu estou apenas dividindo meu conjunto de dados em
+duas partes, exatamente ao meio.
+
+00:01:46.750 --> 00:01:51.860
+E enquanto isso acontece, há um padrão
+no conjunto de dados que isso desorganizará.
+
+00:01:51.860 --> 00:01:56.724
+Parece que o padrão consiste em apresentar todos os
+emails enviados por Sarah na primeira metade
+
+00:01:56.724 --> 00:01:57.796
+do conjunto de dados.
+
+00:01:57.796 --> 00:02:01.140
+E todos os emails enviados por Chris na
+segunda metade do conjunto de dados.
+
+00:02:01.140 --> 00:02:03.855
+E isso se torna evidente quando
+começo a analisar os rótulos que
+
+00:02:03.855 --> 00:02:06.310
+estão aparecendo no conjunto de dados de teste
+e no conjunto de dados de treinamento.
+
+00:02:06.310 --> 00:02:08.900
+Então, todos estes aqui
+são os rótulos dos itens
+
+00:02:08.900 --> 00:02:10.830
+do conjunto de dados de treinamento.
+
+00:02:10.830 --> 00:02:13.523
+Você pode ver que tudo que está no
+conjunto de dados de treinamento é de classe 1.
+
+00:02:13.523 --> 00:02:14.626
+Então eu inicio a segunda lista.
+
+00:02:14.626 --> 00:02:18.121
+Estes são os rótulos de todos os itens
+que estão no conjunto de dados de teste.
+
+00:02:18.121 --> 00:02:21.327
+E posso perceber que tudo que está no
+conjunto de dados de teste é de rótulo 0.
+
+00:02:21.327 --> 00:02:24.460
+E talvez eu tenha
+alguns números 1 no final.
+
+00:02:24.460 --> 00:02:27.740
+Então o que está acontecendo é que eu estou fazendo todo o meu
+treinamento nos emails de uma pessoa
+
+00:02:27.740 --> 00:02:30.620
+e, depois, usando-os para tentar classificar
+os emails de uma segunda pessoa.
+
+00:02:30.620 --> 00:02:34.692
+É como treinar um algoritmo de
+aprendizado de máquina para dirigir um carro
+
+00:02:34.692 --> 00:02:36.986
+e, depois, pedir que ele faça seu café da manhã.
+
+00:02:36.986 --> 00:02:38.148
+Isso não vai funcionar.
+
+00:02:38.148 --> 00:02:40.868
+Então, essa é uma característica, eu diria,
+
+00:02:40.868 --> 00:02:44.120
+do funcionamento do algoritmo KFold
+do sklearn.
+
+00:02:44.120 --> 00:02:48.550
+Ele apenas dividirá os tipos de dados
+em partições de tamanhos iguais.
+
+00:02:49.740 --> 00:02:52.580
+Ele não fará nenhum
+tipo de embaralhamento dos eventos.
+
+00:02:52.580 --> 00:02:56.460
+Então, se houver padrões que demonstrem o modo como
+as classes são representadas
+
+00:02:56.460 --> 00:03:00.050
+em seus dados, esses padrões
+serão refletidos como
+
+00:03:00.050 --> 00:03:05.120
+grandes acúmulos de determinados rótulos, acabando em
+folds particulares da sua validação.
+
+00:03:05.120 --> 00:03:06.400
+Isso, provavelmente, não é o que você deseja.
+

@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.150 --> 00:00:03.460
+Vamos recapitular por que usamos dados de treinamento e teste.
+
+00:00:04.490 --> 00:00:06.540
+Marque todas as respostas aplicáveis.
+
+00:00:06.540 --> 00:00:10.260
+A primeira opção é o uso de dados separados de treinamento e teste
+
+00:00:10.260 --> 00:00:13.120
+para estimar o desempenho do seu classificador ou
+
+00:00:13.120 --> 00:00:16.120
+regressão em um conjunto de dados independente.
+
+00:00:16.120 --> 00:00:18.890
+A segunda opção é que dados separados de treinamento e
+
+00:00:18.890 --> 00:00:22.450
+teste permitem verificar o sobreajuste.
+
+00:00:22.450 --> 00:00:26.420
+A terceira possibilidade é que o teste de treinamento dividido é complexo e
+
+00:00:26.420 --> 00:00:30.590
+misterioso. Fazemos isso porque os especialistas dizem que é certo.
+
+00:00:30.590 --> 00:00:35.680
+E a última opção é que, como é importante ter o máximo de dados de
+
+00:00:35.680 --> 00:00:39.890
+treinamento, separar o conjunto de dados em dados de treinamento e teste
+
+00:00:39.890 --> 00:00:43.000
+ajuda a maximizar o volume de dados disponível para o treinamento.
+

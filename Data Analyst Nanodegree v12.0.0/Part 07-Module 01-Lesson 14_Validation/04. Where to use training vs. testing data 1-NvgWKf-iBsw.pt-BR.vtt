@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.420 --> 00:00:03.410
+Nesta parte da aula, você já aprendeu bastante sobre
+
+00:00:03.410 --> 00:00:08.189
+muitas das diferentes partes variáveis que podem entrar na análise de aprendizado de máquina.
+
+00:00:08.189 --> 00:00:11.840
+E eu acho importante recuar um pouco e falar explicitamente sobre
+
+00:00:11.840 --> 00:00:16.184
+onde você pretende usar seus dados de treinamento e seus dados de teste,
+
+00:00:16.184 --> 00:00:19.550
+porque às vezes isso pode ser um pouco confuso.
+
+00:00:19.550 --> 00:00:23.650
+Suponha que seu fluxo de análise geral seja parecido com isto.
+
+00:00:23.650 --> 00:00:28.420
+Você começa dividindo seus dados gerais em conjuntos de treinamento e teste.
+
+00:00:28.420 --> 00:00:34.140
+A próxima coisa a fazer é aplicar a PCA, depois uma transformação de recurso.
+
+00:00:34.140 --> 00:00:36.990
+Em seguida, você deve selecionar alguns dos seus componentes de princípio importantes
+
+00:00:36.990 --> 00:00:41.090
+e colocá-los em um SVM, um algoritmo de classificação.
+
+00:00:41.090 --> 00:00:45.340
+Lembre-se de que a PCA em si pode ter alguns comandos diferentes
+
+00:00:45.340 --> 00:00:46.590
+que você pode chamar nela.
+
+00:00:46.590 --> 00:00:49.000
+Você pode chamar de "fit" na PCA,
+
+00:00:49.000 --> 00:00:52.060
+o que de fato localiza os componentes principais dos seus dados.
+
+00:00:52.060 --> 00:00:55.020
+Mas você também tem que chamar de "pca.transform".
+
+00:00:55.020 --> 00:00:59.690
+Selecionamos este "fit" que é encontrado para transformar os dados
+
+00:00:59.690 --> 00:01:03.170
+na nova representação dos componentes principais.
+
+00:01:03.170 --> 00:01:05.150
+Uma máquina de vetor de suporte ou
+
+00:01:05.150 --> 00:01:10.270
+um classificador de vetor de suporte também podem ser adequados em alguns dados
+
+00:01:10.270 --> 00:01:13.630
+e usados para fazer previsões sobre um conjunto diferente de dados.
+
+00:01:13.630 --> 00:01:16.410
+Vamos supor que, no fim da divisão treinamento/teste,
+
+00:01:16.410 --> 00:01:19.050
+haja dois conjuntos diferentes de recursos.
+
+00:01:19.050 --> 00:01:21.190
+Só vamos observar os recursos no teste.
+
+00:01:21.190 --> 00:01:24.210
+Temos o que é chamado de recursos de treinamento e teste.
+
+00:01:24.210 --> 00:01:27.170
+A primeira coisa a fazer é aplicar os componentes principais.
+
+00:01:27.170 --> 00:01:30.800
+Especificamente, encontre os componentes principais usando o comando "fit".
+
+00:01:30.800 --> 00:01:35.190
+Deseja aplicar o pca.fit aos recursos de treinamento ou
+
+00:01:35.190 --> 00:01:36.320
+aos recursos de teste?
+

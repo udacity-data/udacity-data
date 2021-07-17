@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.360 --> 00:00:03.530
+Você quer chamar o ajuste para os recursos de treinamento porque,
+
+00:00:03.530 --> 00:00:07.300
+no momento, quer apenas procurar por padrões nos dados de treinamento.
+
+00:00:07.300 --> 00:00:09.900
+Lembre-se de que os dados de testes são algo que usaremos
+
+00:00:09.900 --> 00:00:14.820
+apenas como uma ferramenta de validação das etapas que estamos realizando.
+
+00:00:14.820 --> 00:00:18.460
+Portanto, se ajustarmos nossa PCA usando os dados de testes,
+
+00:00:18.460 --> 00:00:21.860
+de certa forma, estaremos tirando um pouco de vantagem injusta.
+
+00:00:21.860 --> 00:00:25.130
+Nós só queremos procurar por padrões nos dados de treinamento no momento.
+

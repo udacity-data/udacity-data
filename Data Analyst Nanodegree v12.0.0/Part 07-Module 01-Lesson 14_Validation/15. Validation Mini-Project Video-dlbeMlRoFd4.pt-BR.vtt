@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.410 --> 00:00:01.390
+O projeto final
+
+00:00:01.390 --> 00:00:06.200
+desta aula é criar um algoritmo de classificação supervisionada capaz de indicar,
+
+00:00:06.200 --> 00:00:10.150
+com base no conjunto de dados da Enron, a pessoa suspeita na Enron,
+
+00:00:10.150 --> 00:00:13.518
+que tinha interesse no caso de fraude que ocorreu quando a empresa foi à falência.
+
+00:00:13.518 --> 00:00:17.050
+Neste miniprojeto, você criará sua primeira iteração do identificador de
+
+00:00:17.050 --> 00:00:19.430
+interesse da pessoa.
+
+00:00:19.430 --> 00:00:23.270
+Primeiro, criaremos um tipo de mínimo produto viável.
+
+00:00:23.270 --> 00:00:24.820
+Não esperamos nada grandioso,
+
+00:00:24.820 --> 00:00:28.100
+nem muito otimizado, mas com certeza você terá algo
+
+00:00:28.100 --> 00:00:31.250
+operacional na primeira parte deste miniprojeto.
+
+00:00:31.250 --> 00:00:32.619
+Na segunda parte do miniprojeto,
+
+00:00:32.619 --> 00:00:36.180
+vamos concluir isso em um framework de teste de treinamento.
+
+00:00:36.180 --> 00:00:40.080
+Daqui em diante, ao calcular a precisão do identificador de interesse da pessoa,
+
+00:00:40.080 --> 00:00:43.270
+você terá tudo configurado adequadamente,
+
+00:00:43.270 --> 00:00:47.750
+e poderá calcular essa precisão no conjunto de testes da forma correta.
+
+00:00:47.750 --> 00:00:51.570
+A partir deste ponto, após configurar este código, sua tarefa será suprir
+
+00:00:51.570 --> 00:00:54.620
+todos os recursos que você deseja utilizar, fazer transformações
+
+00:00:54.620 --> 00:00:56.930
+ou algo dessa natureza.
+
+00:00:56.930 --> 00:00:59.350
+Agora vamos começar a criar o framework de código.
+
