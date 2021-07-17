@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.427 --> 00:00:03.483
+Às vezes, preparação e EDA
+são usados anonimamente
+
+00:00:03.517 --> 00:00:05.878
+porque seus propósitos
+costumam se sobrepor.
+
+00:00:05.912 --> 00:00:08.195
+Nesse curso,
+quando eu falo sobre preparação
+
+00:00:08.229 --> 00:00:11.547
+quero dizer que você vai coletar,
+avaliar e limpar os dados,
+
+00:00:11.581 --> 00:00:14.717
+mas as modificações que fizer
+quando limpar o conjunto de dados
+
+00:00:14.751 --> 00:00:17.779
+não melhoram sua análise,
+visualização ou modelos.
+
+00:00:17.813 --> 00:00:19.698
+Só os fazem funcionar.
+
+00:00:20.044 --> 00:00:22.341
+Por outro lado,
+EDA significa
+
+00:00:22.375 --> 00:00:24.550
+que você irá explorar
+e aumentar os dados
+
+00:00:24.584 --> 00:00:26.173
+para maximizar o potencial
+
+00:00:26.207 --> 00:00:28.987
+da sua análise, visualização
+e modelos.
+
+00:00:29.779 --> 00:00:33.351
+Um exemplo é a criação
+de recursos ou valores atípicos.
+
+00:00:33.738 --> 00:00:36.472
+Eles podem causar mais impacto
+na visualização.
+
+00:00:36.506 --> 00:00:38.867
+Por exemplo,
+remover valores atípicos
+
+00:00:38.901 --> 00:00:41.191
+para dar zoom
+no centro da distribuição
+
+00:00:41.225 --> 00:00:44.378
+ou melhorar o modelo
+de valores r-quadrado.
+
+00:00:45.131 --> 00:00:48.115
+Vamos nos aprofundar
+nesses detalhes mais tarde,
+
+00:00:48.149 --> 00:00:50.511
+mas daremos
+o 1º passo agora.
+
+00:00:50.545 --> 00:00:54.194
+Lembre-se: não se preocupe
+se não entender de primeira.
+
+00:00:54.228 --> 00:00:57.382
+Temos cursos completos
+para cada um desses passos.
+

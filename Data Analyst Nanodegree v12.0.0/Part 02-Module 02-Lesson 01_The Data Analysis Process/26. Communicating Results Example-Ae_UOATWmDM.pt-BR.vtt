@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.759 --> 00:00:03.049
+Vamos ver como podemos
+comunicar descobertas
+
+00:00:03.148 --> 00:00:06.169
+usando visualizações
+dos dados do censo de renda.
+
+00:00:08.271 --> 00:00:09.843
+Vamos criar dois data frames
+
+00:00:09.909 --> 00:00:13.003
+para separar pessoas que ganham
+mais e menos de US$ 50 mil.
+
+00:00:15.087 --> 00:00:18.114
+Podemos usar gráficos de barras
+para comparar o grau de educação
+
+00:00:18.172 --> 00:00:19.804
+alcançado por cada grupo.
+
+00:00:23.505 --> 00:00:27.102
+Como a contagem de valores
+ordena a contagem por tamanho,
+
+00:00:27.777 --> 00:00:31.234
+não há marcacações consistentes
+para o eixo-x dos gráficos.
+
+00:00:31.884 --> 00:00:34.181
+O ideal é ter as marcações
+na mesma ordem
+
+00:00:34.280 --> 00:00:36.664
+se quisermos fazer
+comparações mais claras.
+
+00:00:36.763 --> 00:00:39.932
+Vamos ordenar os dois resultados
+com o mesmo índice.
+
+00:00:48.929 --> 00:00:50.328
+Assim ficou muito melhor.
+
+00:00:50.619 --> 00:00:52.692
+Agora vamos fazer
+um gráfico de pizza
+
+00:00:52.791 --> 00:00:55.923
+para comparar quais classes
+de trabalho dominam cada grupo.
+
+00:00:55.989 --> 00:00:57.885
+Vamos usar a mesma técnica
+
+00:00:57.951 --> 00:01:00.876
+para manter consistente
+a ordem dos dois resultados.
+
+00:01:02.900 --> 00:01:04.760
+Por fim,
+vamos usar histogramas
+
+00:01:04.826 --> 00:01:07.542
+para plotar a distribuição etária
+de cada grupo.
+
+00:01:13.481 --> 00:01:16.448
+Interessante. As pessoas
+que ganham mais de US$ 50 mil
+
+00:01:16.514 --> 00:01:18.524
+parecem ser mais velhas.
+
+00:01:19.250 --> 00:01:20.942
+Se olharmos o resumo
+das estatísticas,
+
+00:01:21.008 --> 00:01:24.691
+vamos que a idade média de quem
+ganha menos é de 37 anos,
+
+00:01:25.223 --> 00:01:27.556
+e é de 44
+para quem ganha mais.
+
+00:01:27.990 --> 00:01:31.012
+Isso mostra que quem ganha mais
+tende a ter mais idade,
+
+00:01:31.078 --> 00:01:35.036
+mas essas visualizações
+nos dão uma ideia melhor
+
+00:01:35.135 --> 00:01:37.814
+de como é a distribuição etária
+nesses exemplos.
+

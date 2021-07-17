@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.030
+There are awesome packages for data analysis in Python.
+
+00:00:05.030 --> 00:00:10.720
+A package is a collection of modules or python files that we can import into our code.
+
+00:00:10.720 --> 00:00:15.795
+You can think of them as libraries of useful classes and functions that we can use.
+
+00:00:15.794 --> 00:00:18.344
+As a very simple example,
+
+00:00:18.344 --> 00:00:21.029
+let's say we wanted to find the mean of a list.
+
+00:00:21.030 --> 00:00:23.280
+We could code that manually by finding
+
+00:00:23.280 --> 00:00:26.745
+the sum and dividing that by the length of the list.
+
+00:00:26.745 --> 00:00:32.579
+We could even create a function for it if we wanted to reuse it in multiple places.
+
+00:00:32.579 --> 00:00:37.994
+Or, we could just get this function from a library like Numpy.
+
+00:00:37.994 --> 00:00:40.189
+Here, we are importing the package.
+
+00:00:40.189 --> 00:00:43.439
+This is typically done at the beginning of your file.
+
+00:00:43.439 --> 00:00:46.549
+NP is the conventional alias for Numpy.
+
+00:00:46.549 --> 00:00:50.494
+Importing it without the alias is still valid but can quickly get annoying
+
+00:00:50.494 --> 00:00:55.239
+if you reference it a lot which will be the case for the packages we're using.
+
+00:00:55.240 --> 00:00:59.155
+Using a short alias helps keep your code concise and clean.
+
+00:00:59.155 --> 00:01:02.240
+Three powerful packages for data analysis that
+
+00:01:02.240 --> 00:01:06.210
+we'll be using are Numpy, Pandas and Matplotlib.
+
+00:01:06.209 --> 00:01:09.319
+Numpy let's you perform mathematical functions on
+
+00:01:09.319 --> 00:01:13.169
+large multi dimensional arrays and matrices efficiently.
+
+00:01:13.170 --> 00:01:16.310
+Pandas is like a more powerful and flexible version
+
+00:01:16.310 --> 00:01:19.545
+of Excel that can handle large amounts of data.
+
+00:01:19.545 --> 00:01:22.715
+And, Matplotlib is a plotting library that can produce
+
+00:01:22.715 --> 00:01:26.975
+great visualizations often with very few lines of code.
+
+00:01:26.974 --> 00:01:32.234
+Links to documentation for these packages are provided in the instructor notes.
+
+00:01:32.234 --> 00:01:34.980
+Many people can be overwhelmed when they first try to navigate
+
+00:01:34.980 --> 00:01:39.245
+the docs to learn and master these packages, especially Pandas.
+
+00:01:39.245 --> 00:01:43.490
+We'll slowly introduce tools from each one throughout this course so that you can
+
+00:01:43.489 --> 00:01:48.000
+be comfortable using them and confident learning new things on your own with the docs.
+

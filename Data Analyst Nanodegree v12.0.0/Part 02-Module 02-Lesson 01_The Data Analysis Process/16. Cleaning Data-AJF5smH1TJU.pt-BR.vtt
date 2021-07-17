@@ -1,0 +1,33 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.631 --> 00:00:01.720
+Depois de avaliar,
+
+00:00:01.754 --> 00:00:04.056
+você pode precisar
+resolver problemas nos dados.
+
+00:00:04.090 --> 00:00:05.455
+Problemas comuns incluem:
+
+00:00:05.489 --> 00:00:08.585
+tipo incorreto de dados,
+dados faltando, duplicatas
+
+00:00:08.619 --> 00:00:10.096
+e problemas estruturais,
+
+00:00:10.130 --> 00:00:13.666
+como colunas do mesmo dado
+com nomes diferentes no arquivo CSV,
+
+00:00:13.700 --> 00:00:16.206
+ou um número divergente 
+de registros.
+
+00:00:16.240 --> 00:00:20.187
+Felizmente, Pandas tem funções úteis
+para ajudar com esses problemas.
+

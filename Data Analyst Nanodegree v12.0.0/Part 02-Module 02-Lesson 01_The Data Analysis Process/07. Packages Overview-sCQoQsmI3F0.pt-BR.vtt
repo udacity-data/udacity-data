@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.740 --> 00:00:04.541
+Existem pacotes incríveis
+para análise de dados com Python.
+
+00:00:04.575 --> 00:00:08.269
+Um pacote é um coletivo de módulos
+ou arquivos de Python
+
+00:00:08.303 --> 00:00:10.631
+que podemos importar
+para o nosso código.
+
+00:00:10.665 --> 00:00:12.436
+Você pode pensar neles
+como bibliotecas
+
+00:00:12.470 --> 00:00:15.570
+de aulas úteis e funções
+que podemos usar.
+
+00:00:16.075 --> 00:00:18.225
+Como um exemplo simples,
+
+00:00:18.259 --> 00:00:20.954
+digamos que queremos
+encontrar a média de uma lista.
+
+00:00:21.449 --> 00:00:22.945
+Podemos codificar
+manualmente
+
+00:00:22.979 --> 00:00:26.354
+encontrando o total
+e dividindo pelo tamanho da lista.
+
+00:00:27.514 --> 00:00:32.069
+Também podemos criar uma função
+se quisermos usar em outros lugares.
+
+00:00:33.527 --> 00:00:37.363
+Ou podemos pegar essa função
+em uma biblioteca como o NumPy.
+
+00:00:37.695 --> 00:00:39.684
+Estamos importando
+um pacote.
+
+00:00:39.718 --> 00:00:43.009
+Isso costuma ser feito
+no começo do arquivo.
+
+00:00:43.043 --> 00:00:46.440
+NP é como chamamos
+o NumPy.
+
+00:00:46.474 --> 00:00:49.401
+Importar sem esse nome
+é válido,
+
+00:00:49.435 --> 00:00:52.008
+mas pode ser irritante
+se você fizer muitas referências,
+
+00:00:52.042 --> 00:00:54.920
+que é o caso do pacote
+que estamos usando.
+
+00:00:55.300 --> 00:00:59.009
+Usar um nome curto
+mantém seu código preciso e limpo.
+
+00:00:59.043 --> 00:01:02.032
+Os 3 poderosos pacotes
+para análise de dados
+
+00:01:02.066 --> 00:01:06.234
+que vamos usar são
+NumPy, Pandas e Matplotlib.
+
+00:01:06.545 --> 00:01:08.776
+NumPy permite calcular
+com eficiência
+
+00:01:08.810 --> 00:01:13.201
+funções matemáticas de grandes
+arrays multidimensionais e matrizes.
+
+00:01:13.235 --> 00:01:17.181
+Pandas é uma versão
+mais poderosa e flexível do Excel,
+
+00:01:17.215 --> 00:01:19.730
+que aguenta
+grande quantidade de dados.
+
+00:01:19.764 --> 00:01:22.203
+E Matplotlib
+é uma grande biblioteca
+
+00:01:22.237 --> 00:01:24.378
+que pode produzir
+ótimas visualizações,
+
+00:01:24.412 --> 00:01:27.029
+muitas vezes com poucas linhas
+de código.
+
+00:01:27.358 --> 00:01:31.675
+Os links da documentação
+desses pacotes estão nas instruções.
+
+00:01:31.709 --> 00:01:33.834
+Muitas pessoas
+se sobrecarregam
+
+00:01:33.868 --> 00:01:35.864
+quando tentam
+olhar os documentos
+
+00:01:35.898 --> 00:01:37.928
+e aprender a usar
+esses pacotes.
+
+00:01:37.962 --> 00:01:39.517
+Principalmente Pandas.
+
+00:01:39.551 --> 00:01:42.753
+No curso, vamos mostrar
+as ferramentas para cada um
+
+00:01:42.787 --> 00:01:44.228
+para que você
+se sinta confortável
+
+00:01:44.262 --> 00:01:47.602
+as usando e aprendendo
+coisas novas sozinho.
+

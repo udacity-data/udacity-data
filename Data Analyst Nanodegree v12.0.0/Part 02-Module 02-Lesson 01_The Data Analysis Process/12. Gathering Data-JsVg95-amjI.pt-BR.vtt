@@ -1,0 +1,184 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.235 --> 00:00:02.004
+Vamos começar com coleta.
+
+00:00:02.038 --> 00:00:04.956
+Aquisição de dados
+pode acontecer de vários jeitos.
+
+00:00:04.990 --> 00:00:07.131
+Nesse caso,
+você já adquiriu os dados
+
+00:00:07.165 --> 00:00:09.675
+ao fazer o download
+de arquivos disponíveis.
+
+00:00:09.709 --> 00:00:12.809
+Em outros casos, você pode precisar
+pegar os dados de um API
+
+00:00:12.843 --> 00:00:14.920
+ou de uma página
+da internet.
+
+00:00:14.954 --> 00:00:17.869
+Em muitas empresas,
+eles já têm um banco de dados
+
+00:00:17.903 --> 00:00:20.709
+onde pegam dados
+e respondem perguntas.
+
+00:00:21.073 --> 00:00:24.691
+Você pode precisar combinar dados
+de muitos formatos diferentes.
+
+00:00:25.105 --> 00:00:28.231
+Não tem problema
+não reconhecer alguns termos.
+
+00:00:28.265 --> 00:00:31.813
+Eles serão abordados melhor
+no curso de preparação de dados,
+
+00:00:31.847 --> 00:00:34.227
+que está no link
+nas notas do instrutor.
+
+00:00:34.798 --> 00:00:37.602
+As aulas e a coleta de dados
+naquele curso são ótimas
+
+00:00:37.636 --> 00:00:38.782
+se você quiser
+aprender mais
+
+00:00:38.816 --> 00:00:41.565
+sobre obter dados
+de diferentes fontes.
+
+00:00:42.324 --> 00:00:44.654
+Seus arquivos estão em um formato
+chamado CSV,
+
+00:00:44.688 --> 00:00:47.349
+que significa
+"valores separados por vírgula".
+
+00:00:47.383 --> 00:00:49.672
+Um arquivo CSV
+é um arquivo de texto.
+
+00:00:49.706 --> 00:00:51.333
+Parece uma planilha,
+
+00:00:51.367 --> 00:00:53.174
+pois tem a mesma
+estrutura de tabela.
+
+00:00:53.208 --> 00:00:56.310
+Mas se você já viu declarações IF
+ou outras funções na sua planilha,
+
+00:00:56.344 --> 00:00:59.003
+isso não acontece
+no arquivo CSV.
+
+00:00:59.037 --> 00:01:00.883
+Eles contém apenas
+o material bruto.
+
+00:01:00.917 --> 00:01:03.022
+O conteúdo
+de um arquivo CSV
+
+00:01:03.056 --> 00:01:05.934
+é fácil de processar manualmente
+usando código.
+
+00:01:05.968 --> 00:01:08.737
+Diferente, por exemplo,
+de um arquivo XLSX,
+
+00:01:08.771 --> 00:01:11.579
+formato usado
+pelo Microsoft Excel.
+
+00:01:11.613 --> 00:01:13.606
+Vamos observar
+um dos seus arquivos
+
+00:01:13.640 --> 00:01:15.375
+que contém dados
+sobre câncer.
+
+00:01:15.409 --> 00:01:17.812
+É assim que o arquivo aparece
+no Google Spreadsheets.
+
+00:01:17.846 --> 00:01:20.649
+Temos uma linha para cada vez
+que o tumor foi extraído
+
+00:01:20.683 --> 00:01:22.751
+e colunas para diferentes
+tipos de informação,
+
+00:01:22.785 --> 00:01:28.116
+como ID, diagnóstico, raio,
+textura, área, suavidade.
+
+00:01:28.523 --> 00:01:31.845
+É assim que o arquivo fica aberto
+em um editor de texto normal.
+
+00:01:32.177 --> 00:01:35.755
+Um editor de texto é um programa
+como Notepad, Sublime ou Atom,
+
+00:01:35.789 --> 00:01:38.447
+que mostra exatamente
+o que tem no arquivo.
+
+00:01:38.481 --> 00:01:42.134
+Como pode ver, o conteúdo do arquivo
+é muito simples.
+
+00:01:42.466 --> 00:01:47.812
+O cabeçalho da planilha
+está na 1ª linha do arquivo CSV.
+
+00:01:47.846 --> 00:01:50.398
+A 2ª linha da planilha
+
+00:01:50.432 --> 00:01:53.664
+é a 2ª linha do arquivo CSV,
+e assim vai.
+
+00:01:53.698 --> 00:01:57.277
+Em cada linha, você verá
+a 1ª célula seguida de vírgula,
+
+00:01:57.311 --> 00:02:01.114
+depois a 2ª célula
+seguida de vírgula, e assim vai.
+
+00:02:01.148 --> 00:02:03.514
+Isso faz com esses arquivos
+sejam fáceis de processar
+
+00:02:03.548 --> 00:02:05.541
+em linguagem de programação
+como Python,
+
+00:02:05.575 --> 00:02:08.201
+e pacotes como Pandas
+tem funções específicas
+
+00:02:08.235 --> 00:02:10.497
+para processar dados de CSV.
+

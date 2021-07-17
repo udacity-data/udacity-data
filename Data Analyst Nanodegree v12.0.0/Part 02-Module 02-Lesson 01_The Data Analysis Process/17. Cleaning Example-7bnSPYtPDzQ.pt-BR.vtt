@@ -1,0 +1,405 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.100 --> 00:00:04.091
+Vamos explorar maneiras de resolver
+problemas comuns em dados.
+
+00:00:04.124 --> 00:00:07.133
+Este é um conjunto de dados fictício
+que criei para essa aula.
+
+00:00:07.167 --> 00:00:11.000
+Tem 11 instâncias de interações
+entre produto e usuário
+
+00:00:12.067 --> 00:00:14.600
+mostrando se o usuário
+gostou do produto,
+
+00:00:15.273 --> 00:00:17.467
+por quanto tempo ele o viu,
+
+00:00:18.267 --> 00:00:21.400
+se estava num site
+ou num aplicativo
+
+00:00:21.433 --> 00:00:24.233
+e a que horas ele começou
+a ver o produto.
+
+00:00:24.872 --> 00:00:26.767
+Pause o vídeo
+e veja se consegue achar
+
+00:00:26.800 --> 00:00:29.267
+algum erro em potencial
+com esses dados.
+
+00:00:32.500 --> 00:00:34.800
+Vamos ajustar 3 problemas
+nesse conjunto de dados
+
+00:00:34.833 --> 00:00:37.033
+que são comuns na vida real.
+
+00:00:37.067 --> 00:00:39.200
+O primeiro
+são dados faltando
+
+00:00:39.233 --> 00:00:42.000
+que encontramos
+na coluna view_duration.
+
+00:00:42.410 --> 00:00:46.267
+São 11 entradas ou linhas
+no conjunto de dados,
+
+00:00:46.633 --> 00:00:49.967
+mas só 8 valores não nulos
+em view_duration.
+
+00:00:50.833 --> 00:00:53.000
+Isso significa
+que existem 3 valores não nulos,
+
+00:00:53.033 --> 00:00:54.833
+o que também é possível
+ver aqui.
+
+00:00:54.867 --> 00:00:57.267
+Esse é um conjunto fictício
+pequeno,
+
+00:00:57.300 --> 00:00:59.833
+então conseguimos ver
+todos os valores nulos.
+
+00:00:59.867 --> 00:01:04.067
+Normalmente, olhamos esses valores
+em conjunto de dados maiores.
+
+00:01:04.876 --> 00:01:09.633
+O 2º problema são duplicatas
+que encontramos nas linhas 3 e 4.
+
+00:01:10.900 --> 00:01:15.000
+Novamente, só reparamos nisso
+porque é um conjunto pequeno.
+
+00:01:15.033 --> 00:01:18.967
+Vou mostrar um jeito melhor
+de encontrar duplicatas em breve.
+
+00:01:19.567 --> 00:01:23.000
+O 3º problema
+são tipos de dados incorretos.
+
+00:01:23.033 --> 00:01:26.500
+O horário é representado
+por uma string,
+
+00:01:27.057 --> 00:01:30.267
+quando deveria ser
+um objeto datetime.
+
+00:01:30.300 --> 00:01:33.033
+Lembre-se: está escrito "objeto",
+e não "string",
+
+00:01:33.067 --> 00:01:35.167
+porque o Pandas mostra
+indicadores de string
+
+00:01:35.200 --> 00:01:37.267
+e não a própria string.
+
+00:01:37.996 --> 00:01:41.733
+Vamos começar com o 1º problema:
+dados faltando.
+
+00:01:42.492 --> 00:01:45.288
+A falta de dados é um problema
+a ser lidado de jeito diferentes
+
+00:01:45.321 --> 00:01:47.230
+dependendo
+de vários fatores,
+
+00:01:47.263 --> 00:01:49.667
+como a razão
+dos dados estarem faltando
+
+00:01:49.700 --> 00:01:51.867
+e se é um fato aleatório.
+
+00:01:52.748 --> 00:01:56.131
+Um jeito de lidar com isso
+é atribuindo eles à média.
+
+00:01:56.164 --> 00:01:58.133
+Isso é feito de modo
+fácil e eficiente
+
+00:01:58.167 --> 00:02:00.500
+com uma função conveniente
+do Pandas.
+
+00:02:01.212 --> 00:02:04.333
+Primeiro, vamos descobrir a média
+da coluna view_duration.
+
+00:02:05.091 --> 00:02:07.800
+Agora usamos
+a função fillna do Pandas
+
+00:02:07.833 --> 00:02:10.033
+para completar os valores nulos
+com a média.
+
+00:02:10.683 --> 00:02:12.800
+Olha a estrutura de dados
+agora.
+
+00:02:12.833 --> 00:02:14.633
+Você resolveu o problema?
+
+00:02:14.667 --> 00:02:17.700
+Em vez de fazer mudanças
+na coluna original,
+
+00:02:17.733 --> 00:02:20.433
+ele fez uma nova coluna
+com as mudanças,
+
+00:02:20.467 --> 00:02:22.333
+mas nós não salvamos.
+
+00:02:22.367 --> 00:02:26.333
+Para manter as mudanças,
+junte ao arquivo original, assim.
+
+00:02:27.767 --> 00:02:30.733
+Ou você pode usar um parâmetro
+chamado inplace
+
+00:02:30.767 --> 00:02:34.133
+para fazer as mudanças
+no lugar certo.
+
+00:02:34.900 --> 00:02:37.733
+Ótimo. Resolvemos o problema
+de dados faltando.
+
+00:02:37.767 --> 00:02:40.967
+Agora vamos resolver o problema
+de dados duplicados.
+
+00:02:41.556 --> 00:02:44.998
+São várias as razões
+para existirem dados duplicados,
+
+00:02:45.037 --> 00:02:47.667
+como a união de fontes de dados
+ou erro humano.
+
+00:02:48.359 --> 00:02:50.067
+Esse é um exemplo simples
+
+00:02:50.100 --> 00:02:53.133
+em que duas linhas, 3 e 4,
+são idênticas.
+
+00:02:53.734 --> 00:02:57.500
+Esse conjunto é pequeno o suficiente
+para contarmos visualmente.
+
+00:02:57.533 --> 00:03:00.500
+Para conjuntos maiores,
+você pode usar a função de duplicata
+
+00:03:00.533 --> 00:03:02.567
+para ver quais linhas
+estão duplicadas.
+
+00:03:02.600 --> 00:03:07.300
+Como padrão, ele marca as duplicatas
+como certas e exclui a original.
+
+00:03:07.333 --> 00:03:08.967
+Ele considera
+duplicada apenas
+
+00:03:09.000 --> 00:03:12.497
+se os valores de todas as colunas
+forem iguais.
+
+00:03:12.541 --> 00:03:15.633
+Você pode mudar ambos
+com parâmetros diferentes.
+
+00:03:16.500 --> 00:03:17.774
+Para conjuntos maiores,
+
+00:03:17.807 --> 00:03:22.333
+seria melhor ter uma contagem
+dos dados duplicados, assim.
+
+00:03:22.810 --> 00:03:24.133
+Para movimentar
+a duplicada,
+
+00:03:24.167 --> 00:03:26.667
+podemos usar
+a função de movimento do Pandas.
+
+00:03:27.113 --> 00:03:29.500
+Precisamos usar
+o parâmetro inplace
+
+00:03:29.533 --> 00:03:31.933
+ou designar o output
+da estrutura de dados original
+
+00:03:31.967 --> 00:03:33.533
+quando usamos essa função.
+
+00:03:33.567 --> 00:03:35.433
+Como pode ver,
+nós descemos 4 linhas,
+
+00:03:35.467 --> 00:03:37.200
+a linha foi marcada
+como duplicada.
+
+00:03:37.233 --> 00:03:41.533
+Essa foi uma situação simples
+em que a linha inteira era igual.
+
+00:03:41.567 --> 00:03:44.033
+Podemos pensar
+em situações mais complexas
+
+00:03:44.067 --> 00:03:46.233
+de dados duplicados.
+
+00:03:46.267 --> 00:03:50.000
+Por exemplo, digamos que sejam dados
+de pacientes de um hospital.
+
+00:03:50.575 --> 00:03:52.927
+O que acontece quando você
+encontra duas linhas
+
+00:03:52.960 --> 00:03:57.567
+com o mesmo ID de paciente,
+mas exames médicos diferentes?
+
+00:03:57.600 --> 00:03:59.300
+Você junta?
+
+00:03:59.333 --> 00:04:01.233
+Só mantém a mais nova?
+
+00:04:01.994 --> 00:04:05.067
+É uma situação
+que você precisa investigar mais.
+
+00:04:05.100 --> 00:04:08.333
+Nessa situação,
+você encontraria duplicatas
+
+00:04:08.367 --> 00:04:11.633
+apenas baseado na coluna
+que mostra o ID do paciente.
+
+00:04:11.667 --> 00:04:14.934
+Você pode usar
+um parâmetro subset na duplicata
+
+00:04:14.967 --> 00:04:18.146
+e uma função de movimento
+para fazer isso.
+
+00:04:18.179 --> 00:04:20.600
+Por fim,
+vamos ver o último problema:
+
+00:04:20.633 --> 00:04:22.300
+tipo de dados incorretos.
+
+00:04:22.333 --> 00:04:24.033
+Tipo de dados incorretos
+
+00:04:24.067 --> 00:04:27.133
+é um problema
+que analistas encontram sempre.
+
+00:04:27.167 --> 00:04:29.567
+Nesse caso,
+o horário está representado
+
+00:04:29.600 --> 00:04:31.733
+como strings
+em vez de datetime.
+
+00:04:31.767 --> 00:04:34.067
+Não é um problema crítico,
+
+00:04:34.100 --> 00:04:36.933
+mas datetime
+é muito melhor de se trabalhar
+
+00:04:36.967 --> 00:04:39.300
+se você quiser
+uma informação específica
+
+00:04:39.333 --> 00:04:41.133
+ou filtrar de um jeito
+mais fácil.
+
+00:04:41.167 --> 00:04:43.867
+Vamos usar
+a função to_datetime do Pandas
+
+00:04:43.900 --> 00:04:45.900
+para converter essa coluna
+para datetime.
+
+00:04:47.967 --> 00:04:51.333
+Agora o horário está representado
+como datetime.
+
+00:04:52.040 --> 00:04:56.600
+Aliás, mesmo que você salve isso
+no arquivo CSV depois das mudanças,
+
+00:04:56.633 --> 00:05:00.433
+ainda será lido como string
+na próxima vez em que abrir.
+
+00:05:00.906 --> 00:05:04.388
+Você tem que converter de novo
+depois de abrir o arquivo CSV
+
+00:05:04.421 --> 00:05:08.500
+ou usar parâmetros como parsedates
+na função readCSV.
+
+00:05:08.533 --> 00:05:11.067
+Mas se as strings
+que você for analisar
+
+00:05:11.100 --> 00:05:13.200
+estiverem
+com formatação diferente,
+
+00:05:13.233 --> 00:05:15.733
+a função to_datetime
+fornece mais opções
+
+00:05:15.767 --> 00:05:17.967
+do que os parâmetros
+em readCSV.
+

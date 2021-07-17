@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.347 --> 00:00:03.894
+Nesse vídeo, vamos falar sobre
+os gráficos mais comuns e úteis
+
+00:00:03.927 --> 00:00:06.146
+que você pode criar
+com Pandas.
+
+00:00:06.551 --> 00:00:09.798
+Repare que os métodos de gráfico
+em séries ou estrutura de dados
+
+00:00:09.831 --> 00:00:12.456
+são versões simples
+das funções do Matplotlib.
+
+00:00:12.873 --> 00:00:15.919
+Por isso você pode usá-los
+de modo intercambiável.
+
+00:00:15.952 --> 00:00:18.204
+Pandas é ótimo
+para insights rápidos,
+
+00:00:18.237 --> 00:00:19.836
+mas você precisa
+usar o Matplotlib
+
+00:00:19.869 --> 00:00:23.927
+para se aprofundar nos detalhes
+e personalizar suas visualizações.
+
+00:00:23.960 --> 00:00:25.994
+Vamos falar mais
+sobre isso depois.
+
+00:00:26.027 --> 00:00:27.982
+Antes usaremos os dados
+de renda do recenseamento
+
+00:00:28.015 --> 00:00:30.330
+para praticar histogramas,
+gráfico de barras
+
+00:00:30.363 --> 00:00:32.363
+e gráfico de pizza
+no Pandas.
+
+00:00:32.396 --> 00:00:35.571
+Uma linha útil para incluir
+na sua visualização
+
+00:00:35.604 --> 00:00:39.294
+em blocos de anotação Jupyter
+é a declaração inline do Matplotlib.
+
+00:00:39.327 --> 00:00:42.007
+Ela deixa você ver
+seus gráficos nos blocos.
+
+00:00:47.294 --> 00:00:49.069
+Um jeito rápido
+de visualizar histogramas
+
+00:00:49.102 --> 00:00:51.513
+em que todas as colunas são
+numéricas numa estrutura de dados
+
+00:00:51.546 --> 00:00:53.063
+é a função hist,
+
+00:00:53.096 --> 00:00:56.323
+que pode ser usada diretamente
+na estrutura de dados do Pandas.
+
+00:00:56.349 --> 00:00:57.861
+Assim está muito apertado.
+
+00:00:57.894 --> 00:00:59.918
+Vamos aumentar o tamanho
+das nossas imagens.
+
+00:01:01.839 --> 00:01:05.665
+Podemos usar ponto e vírgula
+para esconder outputs indesejados.
+
+00:01:10.518 --> 00:01:14.136
+A função hist também pode ser usada
+na série de objetos do Pandas.
+
+00:01:14.169 --> 00:01:17.919
+Usamos para trazer histogramas
+para uma coluna específica, assim.
+
+00:01:20.446 --> 00:01:24.546
+Ou em vez de usar hist,
+use a função geral de gráficos
+
+00:01:24.579 --> 00:01:27.662
+e especifique o tipo de gráfico
+no parâmetro.
+
+00:01:30.747 --> 00:01:34.318
+A seguir, vamos fazer um gráfico
+de barra para a coluna de educação.
+
+00:01:34.351 --> 00:01:38.249
+Para isso, precisamos de contagens
+para cada valor ou barra.
+
+00:01:40.635 --> 00:01:42.193
+Esses valores
+da função de contagem
+
+00:01:42.226 --> 00:01:45.348
+reúnem contagem para cada
+valor único de uma coluna.
+
+00:01:46.472 --> 00:01:48.756
+Podemos usar a função de gráfico
+nesses resultados
+
+00:01:48.789 --> 00:01:50.236
+para criar
+um gráfico de barra.
+
+00:01:50.269 --> 00:01:52.814
+Também precisamos
+de valor de contagens
+
+00:01:52.847 --> 00:01:54.400
+para o gráfico de pizza.
+
+00:01:54.433 --> 00:01:57.436
+Vamos criar um gráfico de pizza
+para a coluna de classe de trabalho.
+
+00:01:57.469 --> 00:02:00.411
+Ótimo. Vamos agora para
+o nosso conjunto de dados de câncer
+
+00:02:00.444 --> 00:02:03.569
+para praticar gráficos de dispersão
+e diagrama de caixa.
+
+00:02:05.139 --> 00:02:08.316
+A próxima função é muito legal
+porque permite um insight rápido
+
+00:02:08.349 --> 00:02:12.016
+na relação entre variáveis numéricas
+com gráficos de dispersão.
+
+00:02:12.499 --> 00:02:15.426
+E exibe histogramas
+para cada variável.
+
+00:02:17.212 --> 00:02:19.277
+Podemos criar
+um único gráfico de dispersão
+
+00:02:19.310 --> 00:02:21.701
+usando a função de gráfico
+com parâmetros
+
+00:02:21.734 --> 00:02:25.210
+para especificar as colunas
+que serão usadas nos eixos X e Y.
+
+00:02:25.691 --> 00:02:28.084
+Finalmente, a função de gráfico
+pode ser usada
+
+00:02:28.117 --> 00:02:30.061
+para criar
+diagramas de caixa.
+

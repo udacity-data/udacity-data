@@ -1,0 +1,105 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.503 --> 00:00:02.600
+Oi, pessoal.
+Bem-vindos de volta.
+
+00:00:02.634 --> 00:00:04.993
+Nesse curso, você vai aprender
+a trabalhar com dados
+
+00:00:05.027 --> 00:00:07.768
+usando NumPy, Pandas
+e Matplotlib.
+
+00:00:07.802 --> 00:00:11.675
+Esses 3 pacotes são essenciais
+para trabalhar com análise de dados.
+
+00:00:12.037 --> 00:00:14.690
+NumPy te dá
+incríveis estruturas de dados
+
+00:00:14.724 --> 00:00:16.051
+chamadas de arrays,
+
+00:00:16.085 --> 00:00:17.601
+que tornam o trabalho
+com dados numéricos
+
+00:00:17.635 --> 00:00:21.172
+mais simples e mais rápido
+do que o Python sozinho.
+
+00:00:21.206 --> 00:00:24.301
+NumPy é a base
+da pilha de dados do Python,
+
+00:00:24.335 --> 00:00:27.745
+e é o que faz dele
+tão bom na análise de dados.
+
+00:00:27.779 --> 00:00:31.999
+Com Pandas,
+você vai usar estruturas dos dados
+
+00:00:32.033 --> 00:00:34.839
+para manipular e analisar
+seus dados.
+
+00:00:34.873 --> 00:00:36.828
+Pessoalmente,
+eu adoro trabalhar com Pandas,
+
+00:00:36.862 --> 00:00:39.613
+e quando você aprender,
+acho que vai gostar.
+
+00:00:39.647 --> 00:00:42.244
+Finalmente,
+Matplotlib é um pacote
+
+00:00:42.278 --> 00:00:44.712
+para construir
+visualizações de dados.
+
+00:00:44.746 --> 00:00:48.380
+Você pode fazer gráficos simples
+com poucos códigos,
+
+00:00:48.414 --> 00:00:51.273
+e criar imagens
+profissionais.
+
+00:00:52.433 --> 00:00:54.239
+Juno Lee vai te ensinar
+
+00:00:54.273 --> 00:00:56.668
+sobre o processo
+de análise de dados com Python.
+
+00:00:56.702 --> 00:01:00.241
+Juno é uma cientista de dados
+e já trabalhou numa startup
+
+00:01:00.275 --> 00:01:01.557
+onde trabalhou em projetos
+
+00:01:01.591 --> 00:01:03.924
+de aprendizado de máquina
+e deep learning
+
+00:01:03.958 --> 00:01:05.693
+para um aplicativo
+de compras personalizado.
+
+00:01:05.727 --> 00:01:07.426
+Ela está aqui agora
+para ensinar a vocês
+
+00:01:07.460 --> 00:01:10.429
+tudo sobre trabalhar com dados
+no Python. Aproveitem.
+

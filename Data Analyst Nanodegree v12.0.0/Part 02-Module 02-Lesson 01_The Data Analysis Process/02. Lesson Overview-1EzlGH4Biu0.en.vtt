@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.279
+Welcome to intro to data analysis.
+
+00:00:02.279 --> 00:00:05.639
+My name is Juno, and I'll be your instructor for this course.
+
+00:00:05.639 --> 00:00:08.910
+A data analyst, is someone who uses data to answer questions,
+
+00:00:08.910 --> 00:00:10.999
+and that's exactly what you'll be doing here.
+
+00:00:10.999 --> 00:00:12.945
+You'll tackle questions like,
+
+00:00:12.945 --> 00:00:16.170
+what characteristics make a tumor more likely to be cancerous?
+
+00:00:16.170 --> 00:00:21.735
+Or how much of car models improved since 2008 and which vehicles improved the most?
+
+00:00:21.734 --> 00:00:24.509
+Or how does wine quality vary by type,
+
+00:00:24.510 --> 00:00:28.265
+alcohol content, sugar, acidity level and much more?
+
+00:00:28.265 --> 00:00:32.460
+You'll also be introduced to some valuable libraries for data analysis in Python.
+
+00:00:32.460 --> 00:00:36.378
+Specifically, Numpy, Pandas and Matplotlib.
+
+00:00:36.378 --> 00:00:37.739
+The aim of this course,
+
+00:00:37.740 --> 00:00:41.520
+is to give you the tools and confidence to analyze data with Python and
+
+00:00:41.520 --> 00:00:46.280
+experience going through the steps of the data analysis process on real data sets.
+
+00:00:46.280 --> 00:00:49.410
+There are additional Udacity courses that dive deeply into each step
+
+00:00:49.409 --> 00:00:52.809
+of the process so don't worry if you don't get everything right away.
+
+00:00:52.810 --> 00:00:56.880
+This course doesn't require any previous experience with data analysis,
+
+00:00:56.880 --> 00:01:00.120
+but you should already be comfortable programming in Python.
+
+00:01:00.119 --> 00:01:02.280
+You should be familiar with things like, loops,
+
+00:01:02.280 --> 00:01:06.620
+functions, classes, dictionaries, lists and data types.
+
+00:01:06.620 --> 00:01:08.805
+If you need to learn or refresh on these topics,
+
+00:01:08.805 --> 00:01:12.340
+check out the resources and instructor notes below.
+
+00:01:12.340 --> 00:01:13.581
+In this first lesson,
+
+00:01:13.581 --> 00:01:16.155
+you'll learn about the steps of the data analysis process
+
+00:01:16.155 --> 00:01:19.469
+and practice investigating on different data sets along the way.
+
+00:01:19.469 --> 00:01:21.025
+In the next two lessons,
+
+00:01:21.025 --> 00:01:23.010
+you will complete case studies while you perform
+
+00:01:23.010 --> 00:01:27.090
+the entire data analysis process on two data sets. Let's get started.
+

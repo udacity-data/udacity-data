@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.404
+Hi everyone, and welcome back.
+
+00:00:02.404 --> 00:00:04.919
+In this course, you'll be learning how to work with data
+
+00:00:04.919 --> 00:00:07.980
+using NumPy, Pandas, and Matplotlib.
+
+00:00:07.980 --> 00:00:11.925
+These three packages are essential to your work as a data analyst.
+
+00:00:11.925 --> 00:00:15.690
+NumPy gives you these awesome data structures called arrays,
+
+00:00:15.689 --> 00:00:17.910
+that make working with numeric data super
+
+00:00:17.910 --> 00:00:21.234
+simple and faster than what you can do in pure Python.
+
+00:00:21.234 --> 00:00:24.195
+NumPy is the foundation for the Python data stack
+
+00:00:24.195 --> 00:00:28.240
+and it's really what makes Python so great for data analysis.
+
+00:00:28.239 --> 00:00:30.959
+With Pandas, you'll be using data structures called
+
+00:00:30.960 --> 00:00:34.859
+Data Frames to manipulate and analyze your data.
+
+00:00:34.859 --> 00:00:36.710
+Personally, I love working with Pandas,
+
+00:00:36.710 --> 00:00:39.924
+and when you get the hang of it, I think you will too.
+
+00:00:39.924 --> 00:00:44.969
+And finally, Matplotlib is a package for building visualizations from your data.
+
+00:00:44.969 --> 00:00:48.299
+You can make many kinds of simple plots with a tiny amount of code,
+
+00:00:48.299 --> 00:00:51.899
+but also create professional-looking figures.
+
+00:00:51.899 --> 00:00:56.634
+Juno Lee will be leading you through the data analysis process with Python.
+
+00:00:56.634 --> 00:01:00.820
+Juno is a data scientist and previously worked at a startup where she
+
+00:01:00.820 --> 00:01:02.530
+worked on a bunch of machine learning and
+
+00:01:02.530 --> 00:01:05.765
+deep learning projects for a personalized shopping app.
+
+00:01:05.765 --> 00:01:10.109
+Now, she is here to teach you all about working with data in Python. Enjoy.
+
