@@ -1,0 +1,504 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Non-Positional Encodings for Third Variables
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Multivariate Exploration of Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Non-Positional Encodings for Third Variables.html">
+       02. Non-Positional Encodings for Third Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Color Palettes.html">
+       03. Color Palettes
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Encodings Practice.html">
+       04. Encodings Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Faceting in Two Directions.html">
+       05. Faceting in Two Directions
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Other Adaptations of Bivariate Plots.html">
+       06. Other Adaptations of Bivariate Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Adapted Plot Practice.html">
+       07. Adapted Plot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Plot Matrices.html">
+       08. Plot Matrices
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Feature Engineering.html">
+       09. Feature Engineering
+      </a>
+     </li>
+     <li class="">
+      <a href="10. How Much is Too Much.html">
+       10. How Much is Too Much?
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Additional Plot Practice.html">
+       11. Additional Plot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Lesson Summary.html">
+       12. Lesson Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. Non-Positional Encodings for Third Variables
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L5 021 Non Positional Encodings For Third Variables V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="02. L5 021 Non Positional Encodings For Third Variables V1-D91mm-qaDkk.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="02. L5 021 Non Positional Encodings For Third Variables V1-D91mm-qaDkk.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="02. L5 021 Non Positional Encodings For Third Variables V1-D91mm-qaDkk.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="02. L5 021 Non Positional Encodings For Third Variables V1-D91mm-qaDkk.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          DataVis L5C02 V3
+         </p>
+        </h3>
+        <video controls="">
+         <source src="02. DataVis L5C02 V3-bgDNMfG9Gfs.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="02. DataVis L5C02 V3-bgDNMfG9Gfs.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="02. DataVis L5C02 V3-bgDNMfG9Gfs.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="02. DataVis L5C02 V3-bgDNMfG9Gfs.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+         <h2 id="non-positional-encodings-for-third-variables">
+          Non-Positional Encodings for Third Variables
+         </h2>
+         <p>
+          There are four major cases to consider when we want to plot three variables together:
+         </p>
+         <ul>
+          <li>
+           three numeric variables
+          </li>
+          <li>
+           two numeric variables and one categorical variable
+          </li>
+          <li>
+           one numeric variable and two categorical variables
+          </li>
+          <li>
+           three categorical variables
+          </li>
+         </ul>
+         <p>
+          If we have at least two numeric variables, as in the first two cases, one common method for depicting the data is by using a scatterplot to encode two of the numeric variables, then using a non-positional encoding on the points to convey the value on the third variable, whether numeric or categorical. (You will see additional techniques later in the lesson that can also be applied to the other two cases, i.e. where we have at least two categorical variables.)
+         </p>
+         <p>
+          Three main non-positional encodings stand out: shape, size, and color. For Matplotlib and Seaborn, color is the easiest of these three encodings to apply for a third variable. Color can be used to encode both qualitative and quantitative data, with different types of color palettes used for different use cases. Because of how broadly color can be used, a dedicated discussion of color and its use in Matplotlib and Seaborn will be deferred to the next page in the lesson.
+         </p>
+         <h2 id="encoding-via-shape">
+          Encoding via Shape
+         </h2>
+         <p>
+          Shape is a good encoding for categorical variables, using one shape for each level of the categorical variable. Unfortunately, there is no built-in way to automatically assign different shapes in a single call of the
+          <code>
+           scatter
+          </code>
+          or
+          <code>
+           regplot
+          </code>
+          function. Instead, we need to write a loop to call our plotting function multiple times, isolating data points by categorical level and setting a different "marker" argument value for each one.
+         </p>
+         <pre><code class="python language-python">cat_markers = [['A', 'o'],
+               ['B', 's']]
+
+for cat, marker in cat_markers:
+    df_cat = df[df['cat_var1'] == cat]
+    plt.scatter(data = df_cat, x = 'num_var1', y = 'num_var2', marker = marker)
+plt.legend(['A','B'])</code></pre>
+         <p>
+          The 'o' string specifies circular markers for members of category 'A', while the 's' string specifies square markers for members of category 'B'. The
+          <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.legend.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            legend
+           </code>
+          </a>
+          function adds a legend to the plot, with one marker for every
+          <code>
+           scatter
+          </code>
+          call made. The function argument sets the labels for those points.
+         </p>
+         <p>
+          (Documentation:
+          <a href="https://matplotlib.org/api/markers_api.html" rel="noopener noreferrer" target="_blank">
+           matplotlib built-in markers
+          </a>
+          ,
+          <a href="https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html" rel="noopener noreferrer" target="_blank">
+           marker reference example
+          </a>
+          )
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l5-c02-encodings1.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          From the positional encodings in the plot, you can see that there is a modest positive relationship between the two numeric variables. Adding the categorical variable via shape encoding, we can see that points of category 'A' tend to be smaller than those of category 'B' in terms of the numeric x-variable ("num_var1"). Neither category seems to have an advantage in terms of variability or value for the numeric y-variable ("num_var2").
+         </p>
+         <p>
+          Note that the two categories have automatically been double-encoded with different colors, in addition to the explicitly specified markers. If we wanted the points to have the same color as well, we could do that through the "c" parameter in
+          <code>
+           scatter
+          </code>
+          or "color" in
+          <code>
+           regplot
+          </code>
+          . A small example of where this is useful will be seen in the next section.
+         </p>
+         <h2 id="encoding-via-size">
+          Encoding via Size
+         </h2>
+         <p>
+          Point size is a good encoding for numeric variables. Usually, we want the numeric values to be proportional to the area of the point markers; this is the default functionality of the "s" parameter in
+          <code>
+           scatter
+          </code>
+          . (You need to refer to "s" through a dictionary assigned to the "scatter_kws" parameter when working with
+          <code>
+           regplot
+          </code>
+          .)
+         </p>
+         <pre><code class="python language-python">plt.scatter(data = df, x = 'num_var1', y = 'num_var2', s = 'num_var3')
+
+# dummy series for adding legend
+sizes = [20, 35, 50]
+base_color = sb.color_palette()[0]
+legend_obj = []
+for s in sizes:
+    legend_obj.append(plt.scatter([], [], s = s, color = base_color))
+plt.legend(legend_obj, sizes)</code></pre>
+         <p>
+          While the creation of the plot is easier with size, we need to put in extra leg work to create a legend. Since, as noted above,
+          <code>
+           legend
+          </code>
+          will only create one legend entry per plot function call, we need to create additional dummy
+          <code>
+           scatter
+          </code>
+          objects with reference sizes to create the plot. The color is fixed so that all of the legend entries have the same color, and two arguments are provided to the
+          <code>
+           legend
+          </code>
+          function: the list of plotting objects to depict in the legend, and their labels.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l5-c02-encodings2.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The size encoding for the third numeric variable ("num_var3") shows that its values are largest in the 'middle' of the distribution of values, and smaller on the upper and bottom edges. It is also clear that size is much less precise an encoding than position, so it is better used to make general, qualitative judgments than precise judgments.
+         </p>
+         <p>
+          In the case of the example, the data was also scaled in a way that the marker sizes made sense as given. You might need to apply a scaling factor (e.g., multiplying or dividing all values by 2) or shift in order to make the size encoding interpretable. In particular, if the values in your third numeric variable include negative values, then you might want to choose a color encoding instead.
+         </p>
+         <h2 id="a-warning-on-combining-encodings">
+          A Warning on Combining Encodings
+         </h2>
+         <p>
+          It might seem plausible to combine both size and shape encodings into the same plot, to depict the trend in four variables at once. Technically, this may be true, but there are some cautions to be taken with this approach. One surface issue is that the code to depict the plot and a reasonable legend gets complicated. A more important issue is that point areas won't all be the same even with the same value, depending on the shape of the marker:
+         </p>
+         <pre><code class="python language-python">plt.figure(figsize = [5,5])
+
+common_size = 2500
+plt.scatter([0],[1], marker = 's', s = common_size)
+plt.scatter([1],[1], marker = '^', s = common_size)
+plt.scatter([0],[0], marker = 'o', s = common_size)
+plt.scatter([1],[0], marker = 'X', s = common_size)
+
+# a little bit of aesthetic cleaning
+plt.xlim(-0.5,1.5)
+plt.xticks([])
+plt.ylim(-0.5,1.5)
+plt.yticks([])</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l5-c02-encodings3.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Despite having the same "s" values, the triangle, circle, and X markers all look smaller (have a smaller area) than the square. Perhaps this isn't a major concern, considering that size is better used as a qualitative measure for exploration. But it's still something to consider. A little more discussion of the number of variables that can be reasonably packed into a plot can be found later in the lesson ("How much is too much?").
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="further-reading">
+          Further Reading
+         </h2>
+         <ul>
+          <li>
+           Bloomberg:
+           <a href="https://www.bloomberg.com/graphics/infographics/tracking-super-bowl-ticket-prices.html" rel="noopener noreferrer" target="_blank">
+            Tracking Super Bowl Ticket Prices
+           </a>
+           - This visualization shows an interesting encoding for a third variable: connecting points by a line to show the changes in the two axis values across time. A different marker at each end of the path shows the starting point and the end point.
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. Color Palettes.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. Non-Positional Encodings for Third Variables')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

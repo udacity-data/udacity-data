@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.231 --> 00:00:03.742
+Na aula anterior,
+separamos o gráfico de combustível
+
+00:00:03.775 --> 00:00:05.835
+em subconjuntos
+de classe de veículo.
+
+00:00:05.868 --> 00:00:08.729
+A separação pode ser estendida
+para casos multivariados,
+
+00:00:08.762 --> 00:00:11.905
+nos quais cada parte
+será um gráfico bivariado.
+
+00:00:11.938 --> 00:00:15.082
+Podemos mudar os parâmetros
+de mapeamento do código -
+
+00:00:15.115 --> 00:00:17.669
+um gráfico de dispersão
+em vez de um histograma -
+
+00:00:17.702 --> 00:00:20.495
+e usar duas variáveis de eixos
+em vez de apenas uma.
+
+00:00:20.528 --> 00:00:23.896
+Vemos a eficiência dos valores
+nas classes compacto, porte médio
+
+00:00:23.929 --> 00:00:27.519
+e grande, assim como a tendência
+dos motores menores
+
+00:00:27.552 --> 00:00:30.511
+nas classes dos carros
+mini e subcompactos.
+
+00:00:30.544 --> 00:00:33.511
+Não nos limitamos em separar
+apenas uma variável.
+
+00:00:33.544 --> 00:00:37.407
+Se adicionarmos row = 'trans_type'
+ao FacetGrid,
+
+00:00:37.440 --> 00:00:39.136
+separamos a classe de veículo
+
+00:00:39.169 --> 00:00:41.736
+entre transmissão automática
+e manual.
+
+00:00:41.769 --> 00:00:46.146
+Quando temos duas variáveis facet,
+o título fica ilegível.
+
+00:00:46.179 --> 00:00:48.114
+A forma mais simples
+de aliviar isso
+
+00:00:48.147 --> 00:00:52.265
+é configurando margin_titles = True
+na chamada do FacetGrid.
+
+00:00:52.298 --> 00:00:54.959
+Isso moverá os níveis de linha
+para à direita,
+
+00:00:54.992 --> 00:00:57.530
+deixando os rótulos
+das colunas na parte de cima.
+

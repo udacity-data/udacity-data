@@ -1,0 +1,361 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.462 --> 00:00:03.261
+Nesta aula sobre
+visualizações multivariadas,
+
+00:00:03.294 --> 00:00:06.668
+usaremos os dois conjuntos de dados
+das aulas anteriores,
+
+00:00:06.701 --> 00:00:10.164
+um para estatísticas das criaturas
+do videogame "Pokémon"
+
+00:00:10.197 --> 00:00:12.868
+e outro sobre o consumo
+dos sedans fabricados
+
+00:00:12.901 --> 00:00:15.420
+entre 2013 e 2018.
+
+00:00:15.453 --> 00:00:18.063
+Começaremos com o conjunto
+de dados sobre o carro.
+
+00:00:18.096 --> 00:00:21.387
+Neste vídeo, veremos como
+usaremos forma e tamanho
+
+00:00:21.420 --> 00:00:24.081
+para codificar uma terceira variável
+em um gráfico.
+
+00:00:24.114 --> 00:00:27.224
+Criamos um gráfico
+de consumo de combustível
+
+00:00:27.257 --> 00:00:28.973
+de acordo
+com o tamanho do motor.
+
+00:00:29.006 --> 00:00:31.401
+Peguei um subconjunto
+aleatório de 200 carros
+
+00:00:31.434 --> 00:00:33.647
+para reduzir o excesso
+e para combinar isso
+
+00:00:33.680 --> 00:00:36.230
+com uma pequena quantidade
+de jitter horizontal.
+
+00:00:36.263 --> 00:00:39.127
+Existe diferença entre carros
+de transmissão automática
+
+00:00:39.160 --> 00:00:41.695
+e manual em relação
+à eficiência de combustível
+
+00:00:41.728 --> 00:00:43.094
+e ao tamanho do motor?
+
+00:00:43.127 --> 00:00:45.551
+Como o tipo de transmissão
+é categórico,
+
+00:00:45.584 --> 00:00:48.070
+a forma será a melhor
+codificação a ser usada.
+
+00:00:48.103 --> 00:00:50.214
+No gráfico
+e nas funções de dispersão,
+
+00:00:50.247 --> 00:00:52.502
+o parâmetro de marcação
+configurará a forma
+
+00:00:52.535 --> 00:00:54.126
+dos pontos no gráfico.
+
+00:00:54.159 --> 00:00:56.006
+Infelizmente,
+em ambos os casos,
+
+00:00:56.039 --> 00:00:58.548
+o parâmetro só usa
+uma string única.
+
+00:00:58.581 --> 00:01:00.923
+Isso significa que precisaremos
+criar um loop
+
+00:01:00.956 --> 00:01:03.942
+para posicionar cada subconjunto
+dos dados um a um.
+
+00:01:03.975 --> 00:01:07.518
+Primeiro, configuramos
+uma lista de listas ttype_markers,
+
+00:01:07.551 --> 00:01:10.790
+mapeando os níveis
+para os tipos de símbolo.
+
+00:01:10.823 --> 00:01:13.487
+Carros automáticos
+aparecerão em círculos
+
+00:01:13.520 --> 00:01:15.143
+configurados pela string "o",
+
+00:01:15.176 --> 00:01:17.512
+e carros manuais
+aparecerão em triângulos
+
+00:01:17.545 --> 00:01:19.404
+configurados pela string "^".
+
+00:01:19.437 --> 00:01:22.450
+Configurei como uma lista
+de listas e não como um dicionário,
+
+00:01:22.483 --> 00:01:26.270
+assim poderei ter maior controle
+da ordem na qual os níveis aparecem.
+
+00:01:26.303 --> 00:01:28.904
+Agora criaremos um loop
+nos elementos da lista.
+
+00:01:29.640 --> 00:01:31.767
+Usei ttype para selecionar
+os gráficos
+
+00:01:31.800 --> 00:01:33.382
+com o mesmo
+tipo de transmissão
+
+00:01:33.415 --> 00:01:36.088
+e configurei o marcador
+na função regplot.
+
+00:01:39.536 --> 00:01:41.455
+O resultado é este gráfico.
+
+00:01:41.488 --> 00:01:44.186
+Perceba que, com as chamadas
+múltiplas de regplot,
+
+00:01:44.219 --> 00:01:46.729
+os dados são posicionados
+no mesmo eixo
+
+00:01:46.762 --> 00:01:48.956
+e as cores são associadas
+automaticamente
+
+00:01:48.989 --> 00:01:50.365
+para cada chamada.
+
+00:01:50.398 --> 00:01:54.376
+Isso é ótimo, pois há muita
+sobreposição de tipo de transmissão.
+
+00:01:54.409 --> 00:01:57.469
+A diferença entre os tipos
+de transmissão deste gráfico
+
+00:01:57.502 --> 00:01:59.588
+é que os carros
+com maior eficiência
+
+00:01:59.621 --> 00:02:01.621
+possuem transmissão
+automática.
+
+00:02:01.654 --> 00:02:05.742
+Podemos adicionar uma legenda
+com a função legend da Matplotlib.
+
+00:02:05.775 --> 00:02:07.452
+Como argumento da função,
+
+00:02:07.485 --> 00:02:10.085
+passamos uma lista de rótulos
+para a legenda,
+
+00:02:10.118 --> 00:02:12.325
+um para cada chamada regplot.
+
+00:02:13.958 --> 00:02:15.549
+E se, em vez da transmissão,
+
+00:02:15.582 --> 00:02:19.396
+adicionássemos o dióxido
+de carbono como terceira variável?
+
+00:02:19.429 --> 00:02:21.420
+Como CO2 é numérico,
+
+00:02:21.453 --> 00:02:24.644
+podemos usar o codificador
+de tamanho de marcador.
+
+00:02:24.677 --> 00:02:26.450
+Na função scatter
+da Matplotlib,
+
+00:02:26.483 --> 00:02:29.192
+configuramos o tamanho
+do marcador com o parâmetro "s",
+
+00:02:29.225 --> 00:02:33.397
+configurando com o nome da coluna
+para a qual mapearemos: co2.
+
+00:02:33.430 --> 00:02:35.424
+Porém, como usamos regplot,
+
+00:02:35.457 --> 00:02:38.171
+configuramos o parâmetro
+como parte de um dicionário
+
+00:02:38.204 --> 00:02:40.287
+no parâmetro
+de palavras-chave dispersas
+
+00:02:40.320 --> 00:02:44.885
+e atribuímos isso à série
+e não só ao nome da coluna.
+
+00:02:44.918 --> 00:02:46.837
+A tendência parece bem clara,
+
+00:02:46.870 --> 00:02:48.671
+mas vamos reduzir
+os marcadores
+
+00:02:48.704 --> 00:02:51.080
+para vermos os pontos.
+
+00:02:51.113 --> 00:02:53.473
+Parece que, quanto maior
+for o motor,
+
+00:02:53.506 --> 00:02:55.967
+maior será a emissão de CO2.
+
+00:02:56.000 --> 00:02:59.884
+Quanto menor for a eficiência
+do carro, maior será a emissão,
+
+00:02:59.917 --> 00:03:02.268
+mesmo com tamanhos
+de motores parecidos.
+
+00:03:02.301 --> 00:03:05.052
+Matplotlib associará
+a área dos pontos
+
+00:03:05.085 --> 00:03:06.763
+com os valores de input.
+
+00:03:06.796 --> 00:03:09.569
+Temos um problema
+ao adicionar uma legenda.
+
+00:03:09.602 --> 00:03:11.738
+Temos uma série
+de gráficos de dispersão,
+
+00:03:11.771 --> 00:03:14.480
+então a legenda só nos dará
+um único ponto.
+
+00:03:14.513 --> 00:03:17.264
+Para resolver isso,
+podemos usar sequências dummy
+
+00:03:17.297 --> 00:03:19.136
+para podermos construir
+a legenda.
+
+00:03:19.169 --> 00:03:22.125
+Ao usarmos funções de gráfico
+na Matplotlib e na Seaborn,
+
+00:03:22.158 --> 00:03:24.169
+obtemos objetos.
+
+00:03:24.202 --> 00:03:26.912
+Não os armazenamos,
+pois não precisávamos deles,
+
+00:03:26.945 --> 00:03:29.544
+mas agora precisaremos.
+
+00:03:29.577 --> 00:03:32.600
+Vamos configurar um loop
+para obter os três valores de CO2
+
+00:03:32.633 --> 00:03:35.782
+que desejamos usar para
+a referência de legenda de tamanho.
+
+00:03:35.815 --> 00:03:39.629
+No loop, use a função scatter
+para criar objetos dispersos,
+
+00:03:39.662 --> 00:03:42.243
+configurando os tamanhos
+dos pontos necessários.
+
+00:03:42.276 --> 00:03:44.718
+Os dois primeiros argumentos
+das posições x e y
+
+00:03:44.751 --> 00:03:47.644
+serão listas vazias,
+então não existem pontos.
+
+00:03:47.677 --> 00:03:49.443
+Adicionamos
+um argumento de cor,
+
+00:03:49.476 --> 00:03:52.652
+assim toda a série nova
+terá uma cor consistente.
+
+00:03:52.685 --> 00:03:57.292
+Por fim, configuramos uma lista
+para armazenar os objetos dummy.
+
+00:03:57.325 --> 00:04:00.042
+Na função legend,
+se houver apenas um argumento,
+
+00:04:00.075 --> 00:04:03.780
+ele será o rótulo
+dos objetos do gráfico.
+
+00:04:03.813 --> 00:04:06.467
+O primeiro argumento
+será uma lista dos objetos
+
+00:04:06.500 --> 00:04:10.940
+a serem exibidos na legenda,
+e o segundo, uma lista de rótulos.
+
+00:04:10.973 --> 00:04:12.509
+Adicionei um argumento título
+
+00:04:12.542 --> 00:04:14.965
+para atribuir valores
+às unidades da legenda.
+

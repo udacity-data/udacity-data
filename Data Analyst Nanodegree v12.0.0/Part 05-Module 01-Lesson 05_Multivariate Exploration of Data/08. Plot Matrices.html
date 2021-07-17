@@ -1,0 +1,403 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Plot Matrices
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Multivariate Exploration of Data
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Non-Positional Encodings for Third Variables.html">
+       02. Non-Positional Encodings for Third Variables
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Color Palettes.html">
+       03. Color Palettes
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Encodings Practice.html">
+       04. Encodings Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Faceting in Two Directions.html">
+       05. Faceting in Two Directions
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Other Adaptations of Bivariate Plots.html">
+       06. Other Adaptations of Bivariate Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Adapted Plot Practice.html">
+       07. Adapted Plot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Plot Matrices.html">
+       08. Plot Matrices
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Feature Engineering.html">
+       09. Feature Engineering
+      </a>
+     </li>
+     <li class="">
+      <a href="10. How Much is Too Much.html">
+       10. How Much is Too Much?
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Additional Plot Practice.html">
+       11. Additional Plot Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Lesson Summary.html">
+       12. Lesson Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          08. Plot Matrices
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L5 081 Plot Matrices V3
+         </p>
+        </h3>
+        <video controls="">
+         <source src="08. L5 081 Plot Matrices V3-2wY-euTIE5g.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="08. L5 081 Plot Matrices V3-2wY-euTIE5g.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="08. L5 081 Plot Matrices V3-2wY-euTIE5g.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="08. L5 081 Plot Matrices V3-2wY-euTIE5g.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          DataVis L5C08 V2
+         </p>
+        </h3>
+        <video controls="">
+         <source src="08. DataVis L5C08 V2-fq-hakwfpZw.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="08. DataVis L5C08 V2-fq-hakwfpZw.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="08. DataVis L5C08 V2-fq-hakwfpZw.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="08. DataVis L5C08 V2-fq-hakwfpZw.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <hr/>
+         <h2 id="plot-matrices">
+          Plot Matrices
+         </h2>
+         <p>
+          To move back to bivariate exploration for a bit, you might come out of your initial univariate investigation of the data wanting to look at the relationship between many pairs of variables. Rather than generate these bivariate plots one by one, a preliminary option you might consider for exploration is the creation of a plot matrix. In a plot matrix, a matrix of plots is generated. Each row and column represents a different variable, and a subplot against those variables is generated in each plot matrix cell. This contrasts with faceting, where rows and columns will subset the data, and the same variables are depicted in each subplot.
+         </p>
+         <p>
+          Seaborn's
+          <a href="https://seaborn.pydata.org/generated/seaborn.PairGrid.html" rel="noopener noreferrer" target="_blank">
+           <strong>
+            PairGrid
+           </strong>
+          </a>
+          class facilitates the creation of this kind of plot matrix.
+         </p>
+         <pre><code class="python language-python">g = sb.PairGrid(data = df, vars = ['num_var1', 'num_var2', 'num_var3'])
+g.map_diag(plt.hist)
+g.map_offdiag(plt.scatter)</code></pre>
+         <p>
+          By default,
+          <strong>
+           PairGrid
+          </strong>
+          only expects to depict numeric variables; a typical invocation of
+          <strong>
+           PairGrid
+          </strong>
+          plots the same variables on the horizontal and vertical axes. On the diagonals, where the row and column variables match, a histogram is plotted. Off the diagonals, a scatterplot between the two variables is created.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l5-c08-plotmatrices1.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The
+          <a href="https://seaborn.pydata.org/generated/seaborn.pairplot.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            pairplot
+           </code>
+          </a>
+          function can also be used to render this common use case in a single call.
+         </p>
+         <p>
+          For other relationships, the flexibility of
+          <strong>
+           PairGrid
+          </strong>
+          shines. For example, if we want to look at the relationship between the numeric and categorical variables in the data, we need to set the different variable types on the rows and columns, then use an appropriate plot type for all matrix cells.
+         </p>
+         <pre><code class="python language-python">g = sb.PairGrid(data = df, x_vars = ['num_var1', 'num_var2', 'num_var3'],
+                y_vars = ['cat_var1','cat_var2'])
+g.map(sb.violinplot, inner = 'quartile')</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l5-c08-plotmatrices2.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          When you choose to create a plot matrix, be aware that the time it takes to render the plot depends on the number of data points you have and the number of variables you want to plot. Increasing the number of variables increases the number of plots that need to be rendered in a quadratic fashion. In addition, increasing the number of variables means that the individual subplot size needs to be reduced in order to fit the matrix width on your screen. That means that, if you have a lot of data, it might be difficult to see the relationships between variables due to overplotting, and it will take a long time to complete. One recommended approach is to take a random subset of the data to plot in the plot matrix instead. Use the plot matrix to identify interesting variable pairs, and then follow it up with individual plots on the full data.
+         </p>
+         <h2 id="correlation-matrices">
+          Correlation Matrices
+         </h2>
+         <p>
+          For numeric variables, it can be useful to create a correlation matrix as part of your exploration. While it's true that the
+          <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.corr.html" rel="noopener noreferrer" target="_blank">
+           <code>
+            .corr
+           </code>
+          </a>
+          function is perfectly fine for computing and returning a matrix of correlation coefficients, it's not too much trouble to plot the matrix as a heat map to make it easier to see the strength of the relationships.
+         </p>
+         <pre><code class="python language-python">sb.heatmap(df.corr(), annot = True, fmt = '.2f', cmap = 'vlag_r', center = 0)</code></pre>
+         <p>
+          Instead of using the default sequential color map, a diverging color map is specified and its center is set to 0. That way, we can use hue to tell if a correlation is positive or negative, and see its strength from the hue's intensity.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l5-c08-plotmatrices3.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Don't forget that correlations are computed based on strength of linear relationship. Compare the correlation between "num_var2" and "num_var3" to the corresponding cell in the first plot matrix as an example of how a correlation statistic might be misleading.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="09. Feature Engineering.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. Plot Matrices')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

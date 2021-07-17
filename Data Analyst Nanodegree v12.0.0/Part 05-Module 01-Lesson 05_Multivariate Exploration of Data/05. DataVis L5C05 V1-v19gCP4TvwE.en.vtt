@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.389
+In the previous lesson,
+
+00:00:01.389 --> 00:00:05.609
+we used faceting to plot fuel efficiency on different vehicle class subsets.
+
+00:00:05.610 --> 00:00:07.350
+Faceting can be extended to
+
+00:00:07.349 --> 00:00:11.679
+multivariate cases by having each facet be a bivariate plot instead.
+
+00:00:11.679 --> 00:00:13.410
+From the code we started off with,
+
+00:00:13.410 --> 00:00:15.410
+we can just change the mapping parameters,
+
+00:00:15.410 --> 00:00:20.254
+a scatter plot instead of histogram and two axes variables instead of just one.
+
+00:00:20.254 --> 00:00:23.234
+You can see the efficiency outliers and the compact,
+
+00:00:23.234 --> 00:00:25.039
+midsize, and large classes,
+
+00:00:25.039 --> 00:00:27.585
+as well as the slight bias towards smaller engines
+
+00:00:27.585 --> 00:00:30.315
+in the mini and subcompact car classes.
+
+00:00:30.315 --> 00:00:33.564
+We're not limited to only facet by one variable either.
+
+00:00:33.564 --> 00:00:37.519
+If we add a row equals trans type argument to the facet grid,
+
+00:00:37.520 --> 00:00:41.765
+we separate each vehicle class by automatic and manual transmissions.
+
+00:00:41.765 --> 00:00:43.685
+When we have two facet variables,
+
+00:00:43.685 --> 00:00:45.905
+the titles get a little bit unreadable.
+
+00:00:45.905 --> 00:00:47.780
+The simplest way to alleviate this,
+
+00:00:47.780 --> 00:00:51.969
+is by setting margin titles equals true in the facet grid call.
+
+00:00:51.969 --> 00:00:54.350
+This moves the row levels to the right side of
+
+00:00:54.350 --> 00:00:57.600
+the facet grid leaving the column labels on top.
+

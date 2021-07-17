@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.786 --> 00:00:04.786
+CONCEITO 09:
+ENGENHARIA DE RECURSOS
+
+00:00:05.490 --> 00:00:09.409
+Uma técnica adicional
+útil para explorar dados
+
+00:00:09.442 --> 00:00:11.817
+é a engenharia de recursos.
+
+00:00:11.850 --> 00:00:14.657
+Na engenharia de recursos,
+criamos novas variáveis
+
+00:00:14.690 --> 00:00:18.346
+como funções de variáveis
+existentes nos dados.
+
+00:00:18.379 --> 00:00:21.600
+Como exemplo, imagine
+algumas estatísticas resumidas
+
+00:00:21.633 --> 00:00:25.761
+da quantidade de crimes ocorridos
+em quatro regiões diferentes.
+
+00:00:25.794 --> 00:00:27.380
+Este gráfico de barras inicial
+
+00:00:27.413 --> 00:00:31.321
+sugere que a região leste
+tem a maior incidência de crimes.
+
+00:00:31.354 --> 00:00:35.097
+No entanto, isso não leva em conta
+a população de cada região,
+
+00:00:35.130 --> 00:00:37.890
+que pode ser vista
+neste gráfico.
+
+00:00:37.923 --> 00:00:41.049
+A região leste também possui
+a maior população.
+
+00:00:41.082 --> 00:00:44.329
+O maior número de crimes
+pode ser uma correlação natural
+
+00:00:44.362 --> 00:00:46.638
+com a quantidade de pessoas.
+
+00:00:46.671 --> 00:00:49.677
+Nós devemos calcular uma razão
+entre essas duas variáveis,
+
+00:00:49.710 --> 00:00:53.466
+como a quantidade de crimes
+por 100.000 pessoas.
+
+00:00:53.499 --> 00:00:56.562
+Se criarmos essa variável
+e gerarmos um novo gráfico,
+
+00:00:56.595 --> 00:00:59.959
+veremos que a região norte
+tem a maior taxa de criminalidade.
+

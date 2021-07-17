@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.957 --> 00:00:04.661
+CONCEITO 01: INTRODUÇÃO
+
+00:00:05.037 --> 00:00:08.483
+Nas aulas anteriores, vimos
+como usar gráficos univariados
+
+00:00:08.516 --> 00:00:10.699
+e bivariados para visualizar
+os dados
+
+00:00:10.732 --> 00:00:13.379
+com uma ou duas
+variáveis por vez.
+
+00:00:13.412 --> 00:00:16.769
+Costumamos usar gráficos
+posicionais, como os de dispersão,
+
+00:00:16.802 --> 00:00:18.671
+ou de comprimento,
+como os de barra,
+
+00:00:18.704 --> 00:00:20.524
+para codificar as variáveis.
+
+00:00:20.557 --> 00:00:23.683
+Isso porque nossa percepção
+dos valores é mais precisa
+
+00:00:23.716 --> 00:00:25.732
+com essas codificações.
+
+00:00:25.765 --> 00:00:29.795
+Isso é um problema quando usamos
+os gráficos multivariados
+
+00:00:29.828 --> 00:00:32.540
+ou gráficos com três
+ou mais variáveis.
+
+00:00:32.573 --> 00:00:34.675
+Haverá uma ambiguidade
+no valor
+
+00:00:34.708 --> 00:00:37.140
+se tentarmos embutir dimensões
+tridimensionais
+
+00:00:37.173 --> 00:00:40.348
+em uma imagem plana
+e bidimensional.
+
+00:00:40.381 --> 00:00:44.798
+Observe este ponto
+em um gráfico tridimensional.
+
+00:00:44.831 --> 00:00:48.727
+Quais são os valores do ponto
+em x, y e z?
+
+00:00:48.760 --> 00:00:53.323
+Devido à perspectiva,
+existem vários valores possíveis.
+
+00:00:53.356 --> 00:00:56.478
+Resolvemos a ambiguidade
+com marcações adicionais,
+
+00:00:56.511 --> 00:01:00.511
+mas isso não faz sentido
+com muitos dados.
+
+00:01:00.544 --> 00:01:03.855
+Nesta aula, aprenderemos
+as codificações que podem ser usadas
+
+00:01:03.888 --> 00:01:06.751
+para criar gráficos multivariados
+eficazes.
+
+00:01:06.784 --> 00:01:09.701
+Também veremos outras técnicas,
+como o faceting,
+
+00:01:09.734 --> 00:01:11.639
+que expande
+os gráficos bivariados
+
+00:01:11.672 --> 00:01:13.639
+para torná-los multivariados.
+
+00:01:13.672 --> 00:01:18.048
+Também veremos técnicas adicionais
+que ajudarão na análise.
+

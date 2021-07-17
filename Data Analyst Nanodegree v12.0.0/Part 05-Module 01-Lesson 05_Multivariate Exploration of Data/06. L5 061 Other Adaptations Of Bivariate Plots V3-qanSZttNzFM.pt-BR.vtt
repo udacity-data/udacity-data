@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.948 --> 00:00:04.977
+CONCEITO 06: OUTRAS ADAPTAÇÕES
+DOS GRÁFICOS BIVARIADOS
+
+00:00:05.373 --> 00:00:07.020
+Na aula anterior,
+
+00:00:07.053 --> 00:00:10.043
+vimos que os histogramas
+e os gráficos de barra se tornam
+
+00:00:10.076 --> 00:00:12.962
+gráficos bivariados
+ao alterarmos o eixo de contagem
+
+00:00:12.995 --> 00:00:16.171
+para indicar o significado
+de uma segunda variável.
+
+00:00:16.204 --> 00:00:18.903
+Usamos uma abordagem parecida
+para os mapas de calor
+
+00:00:18.936 --> 00:00:24.610
+e os gráficos de barra, alterando-os
+de bivariados para multivariados.
+
+00:00:24.940 --> 00:00:28.659
+Por exemplo, vejamos este mapa
+de calor dos arremessos
+
+00:00:28.692 --> 00:00:31.555
+em uma partida de basquete.
+
+00:00:31.588 --> 00:00:36.483
+As posições x e y fazem relação
+à cesta, que está na origem.
+
+00:00:36.516 --> 00:00:40.059
+Neste gráfico multivariado,
+a cor mostra a terceira variável.
+
+00:00:40.092 --> 00:00:43.732
+Qual foi a precisão dos arremessos
+em cada área da quadra?
+
+00:00:43.765 --> 00:00:47.517
+As cores mais escuras indicam
+uma proporção maior dos arremessos.
+
+00:00:47.550 --> 00:00:51.461
+Vemos que, de forma geral,
+os arremessos próximos à cesta
+
+00:00:51.494 --> 00:00:54.048
+têm mais chance de entrar.
+

@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.700 --> 00:00:07.919
+As part of your bivariate exploration,
+
+00:00:07.919 --> 00:00:11.719
+you might be interested in relationships between lots of variables.
+
+00:00:11.720 --> 00:00:15.570
+You could explore these relationships two variables at a time,
+
+00:00:15.570 --> 00:00:18.480
+but there are other techniques besides multi-variate plots to
+
+00:00:18.480 --> 00:00:21.964
+explore multiple pairwise relationships at the same time.
+
+00:00:21.964 --> 00:00:23.625
+In a plot matrix,
+
+00:00:23.625 --> 00:00:25.804
+a grid of plots is generated.
+
+00:00:25.804 --> 00:00:31.000
+Unlike a faceted plot where each subplot is based on one subset of the data,
+
+00:00:31.000 --> 00:00:34.698
+each subplot in a plot matrix is based on the whole data,
+
+00:00:34.698 --> 00:00:37.820
+but with two different variables on the axes.
+
+00:00:37.820 --> 00:00:41.659
+Each row and column corresponds with one variable.
+
+00:00:41.659 --> 00:00:47.184
+For example, this plot shows the relationship between sugars and fats.
+
+00:00:47.185 --> 00:00:51.745
+Along the diagonal, the row variable and column variable match up.
+
+00:00:51.744 --> 00:00:57.500
+A univariate plot of each variable is usually placed along this diagonal line.
+
+00:00:57.500 --> 00:00:59.929
+A plot matrix is good for getting
+
+00:00:59.929 --> 00:01:03.829
+a broad overview of pairwise relationships between variables.
+
+00:01:03.829 --> 00:01:07.569
+Considering that the size of each subplot will be fairly small,
+
+00:01:07.569 --> 00:01:09.229
+a plot matrix is best as
+
+00:01:09.230 --> 00:01:13.805
+an initial exploratory tool to lead you to points of further interest.
+
+00:01:13.805 --> 00:01:16.685
+You should follow up a plot matrix by generating
+
+00:01:16.685 --> 00:01:20.225
+additional plots of specific variable sets on their own.
+
+00:01:20.224 --> 00:01:22.879
+We can also adapt heatmaps to depict
+
+00:01:22.879 --> 00:01:26.114
+the pairwise correlations between variables in our data.
+
+00:01:26.114 --> 00:01:28.039
+Like the plot matrix,
+
+00:01:28.040 --> 00:01:31.425
+each row and column corresponds with a single variable.
+
+00:01:31.424 --> 00:01:34.759
+The value and color depicted in each cell is
+
+00:01:34.760 --> 00:01:38.880
+the correlation between the corresponding row and column variables.
+
+00:01:38.879 --> 00:01:41.449
+This is another good summary option for
+
+00:01:41.450 --> 00:01:44.280
+exploration when starting with a lot of variables.
+

@@ -1,0 +1,180 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.179 --> 00:00:01.492
+Na aula anterior,
+
+00:00:01.525 --> 00:00:05.047
+as funções barplot e pointplot
+criaram um gráfico de barra
+
+00:00:05.080 --> 00:00:07.738
+com uma média da segunda variável
+no eixo vertical.
+
+00:00:07.771 --> 00:00:10.954
+Estenderemos o gráfico bivariado
+de eficiência de combustível
+
+00:00:10.987 --> 00:00:13.619
+com a classe do veículo
+em um gráfico multivariado,
+
+00:00:13.652 --> 00:00:15.611
+adicionando
+o tipo de transmissão.
+
+00:00:15.644 --> 00:00:20.770
+Usaremos hue = 'trans_type'
+na função pointplot.
+
+00:00:20.803 --> 00:00:22.715
+Como os pontos e barras
+se sobrepõem,
+
+00:00:22.748 --> 00:00:26.747
+usaremos dodge = True
+para ajustar os dois níveis.
+
+00:00:26.780 --> 00:00:30.986
+Também podemos mudar
+a função pointplot para barplot,
+
+00:00:31.019 --> 00:00:33.890
+para obtermos
+um gráfico de barras adaptado.
+
+00:00:33.923 --> 00:00:37.585
+Além disso, podemos voltar
+aos níveis de compactação
+
+00:00:37.618 --> 00:00:41.651
+e usar a função boxplot para obter
+um gráfico de barra agrupado.
+
+00:00:43.098 --> 00:00:45.056
+Também podemos
+adaptar mapas de calor,
+
+00:00:45.089 --> 00:00:47.573
+para que, em vez de a cor
+se basear na contagem,
+
+00:00:47.606 --> 00:00:50.386
+ela se basear na média
+de uma terceira variável.
+
+00:00:50.419 --> 00:00:53.898
+Vamos mudar o mapa de calor
+de eficiência versus o motor,
+
+00:00:53.931 --> 00:00:57.386
+de modo que a emissão média de CO2
+seja apresentada.
+
+00:00:57.419 --> 00:01:01.240
+O parâmetro de pesos hist2d
+definirá quanto cada ponto vale
+
+00:01:01.273 --> 00:01:02.976
+na agregação.
+
+00:01:03.009 --> 00:01:05.872
+Por padrão,
+o peso de cada ponto vale 1,
+
+00:01:05.905 --> 00:01:08.497
+assim as cores refletirão
+as contagens totais.
+
+00:01:08.530 --> 00:01:12.280
+Se mudarmos o peso para que seja
+igual à emissão de CO2
+
+00:01:12.313 --> 00:01:14.800
+dividida pela quantidade
+de carros no bin,
+
+00:01:14.833 --> 00:01:19.072
+então, o total dentro de cada bin
+será a média das emissões de CO2.
+
+00:01:19.105 --> 00:01:22.804
+Devemos descobrir
+em qual bin ficará cada ponto.
+
+00:01:22.837 --> 00:01:25.576
+Calculamos isso usando
+a função cut da Pandas.
+
+00:01:25.609 --> 00:01:27.946
+Além dos argumentos
+que vimos antes,
+
+00:01:27.979 --> 00:01:32.274
+o argumento labels = False
+identifica os bins numericamente,
+
+00:01:32.307 --> 00:01:36.714
+e aplicamos astype
+para facilitar a indexação.
+
+00:01:36.747 --> 00:01:40.649
+Em seguida, contamos o número
+de pontos de cada bin.
+
+00:01:40.682 --> 00:01:44.394
+Isso é feito usando
+as funções groupby e size.
+
+00:01:44.427 --> 00:01:47.424
+Esta série MultiIndex
+é meio difícil de usar,
+
+00:01:47.457 --> 00:01:49.569
+então usaremos
+reset_index e pivot
+
+00:01:49.602 --> 00:01:52.403
+para transformar as contagens
+em um array.
+
+00:01:52.436 --> 00:01:55.861
+Finalmente, usamos o atributo values
+para obter o número de pontos
+
+00:01:55.894 --> 00:01:57.690
+com um array.
+
+00:01:57.723 --> 00:02:01.018
+Podemos obter os pesos dos pontos
+usando todos esses valores.
+
+00:02:01.051 --> 00:02:03.826
+Pegamos a série de CO2,
+dividindo cada elemento
+
+00:02:03.859 --> 00:02:05.937
+pelo número de pontos
+em cada bin,
+
+00:02:05.970 --> 00:02:10.219
+usando os vetores de corte de bin
+para indexar nos lugares certos.
+
+00:02:11.308 --> 00:02:13.470
+Adicionamos os pesos
+ao parâmetro weights,
+
+00:02:13.503 --> 00:02:15.201
+em seguida,
+um rótulo ao colorbar
+
+00:02:15.234 --> 00:02:17.142
+e obtemos um mapa de calor
+
+00:02:17.175 --> 00:02:20.098
+parecido com o gráfico de dispersão
+do começo da aula.
+

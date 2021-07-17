@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.480
+In the previous lesson,
+
+00:00:01.480 --> 00:00:04.410
+you saw how the bar plot and point plot functions can be used to
+
+00:00:04.410 --> 00:00:07.845
+plot a bar chart with a second variables mean on the vertical axis.
+
+00:00:07.844 --> 00:00:11.070
+Let's extend this bivariate plot of fuel efficiency against
+
+00:00:11.070 --> 00:00:15.365
+the vehicle class into a multivariate plot by adding transmission type.
+
+00:00:15.365 --> 00:00:20.495
+To do this, all we need to do is add hue equals trans_type to the point plot function.
+
+00:00:20.495 --> 00:00:22.820
+Since the dots and bars are overlapping,
+
+00:00:22.820 --> 00:00:26.734
+we should add dodge equals true to offset the two levels slightly.
+
+00:00:26.734 --> 00:00:30.969
+Alternatively, we can change the point plot function into a bar plot function,
+
+00:00:30.969 --> 00:00:33.509
+to get an adapted clustered bar chart.
+
+00:00:33.509 --> 00:00:36.359
+Even further, we can take one more step back on
+
+00:00:36.359 --> 00:00:41.869
+the summarization levels and use the box plot function to get a clustered box plot.
+
+00:00:42.219 --> 00:00:45.019
+We can also adapt heat maps,
+
+00:00:45.020 --> 00:00:47.400
+so that instead of color being based on count,
+
+00:00:47.399 --> 00:00:50.239
+color is based on the mean of a third variable.
+
+00:00:50.240 --> 00:00:54.020
+Let's change this heat map of fuel efficiency against engine size,
+
+00:00:54.020 --> 00:00:57.040
+so that average CO2 output is plotted instead.
+
+00:00:57.039 --> 00:00:59.780
+There is a weights parameter hist2d that sets
+
+00:00:59.780 --> 00:01:02.870
+how much each data point is worth in the aggregation.
+
+00:01:02.869 --> 00:01:05.914
+By default, each point's weight is worth one,
+
+00:01:05.915 --> 00:01:08.425
+so that the colors reflect the total counts.
+
+00:01:08.424 --> 00:01:11.209
+If we change it so that each point's weight is equal to
+
+00:01:11.209 --> 00:01:14.659
+its CO2 emissions divided by the number of cars in its bin,
+
+00:01:14.659 --> 00:01:18.844
+then the total within each bin will be the average CO2 emissions.
+
+00:01:18.844 --> 00:01:22.625
+Our first step is to figure out in which bin each point falls.
+
+00:01:22.625 --> 00:01:25.495
+We compute this using the pandas cut function.
+
+00:01:25.495 --> 00:01:28.100
+In addition to the arguments you've seen before,
+
+00:01:28.099 --> 00:01:32.409
+the labels equals false argument is added so that the bins are identified numerically,
+
+00:01:32.409 --> 00:01:36.375
+and we apply as type to make the indexing later easier.
+
+00:01:36.375 --> 00:01:40.465
+Next, we count up the number of points that fall in each bin.
+
+00:01:40.465 --> 00:01:44.020
+This is done using the groupby and size functions.
+
+00:01:44.019 --> 00:01:47.539
+This MultiIndex series is kind of hard to work with,
+
+00:01:47.540 --> 00:01:51.925
+so we'll use reset index and pivot to put the counts in array form.
+
+00:01:51.924 --> 00:01:57.250
+Finally, we use the values attribute to get the number of points as an array.
+
+00:01:57.250 --> 00:02:00.810
+Now, we can get our point weights using all of these values.
+
+00:02:00.810 --> 00:02:05.745
+We take the CO2 series and divide each element by the number of points in each bin,
+
+00:02:05.745 --> 00:02:10.349
+using the cut bins vectors for indexing into the right places.
+
+00:02:10.419 --> 00:02:13.544
+We add the weights to the weights parameter,
+
+00:02:13.544 --> 00:02:15.089
+and then a label to the color bar,
+
+00:02:15.090 --> 00:02:17.240
+and we've got a heat map plot that looks in line with
+
+00:02:17.240 --> 00:02:20.400
+the colored scatter plot that we made earlier in the lesson.
+

@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.849 --> 00:00:07.094
+In the previous lesson,
+
+00:00:07.094 --> 00:00:10.349
+you saw how histograms and bar charts can be adapted into
+
+00:00:10.349 --> 00:00:15.855
+bivariate plots by changing the count axis to indicate the mean of a second variable.
+
+00:00:15.855 --> 00:00:20.280
+We can follow a similar approach for heat maps and clustered bar charts,
+
+00:00:20.280 --> 00:00:24.554
+to change them from bivariate plots into multivariate plots.
+
+00:00:24.554 --> 00:00:27.890
+For example, let's take this heat map
+
+00:00:27.890 --> 00:00:31.390
+regarding shots made over a series of basketball games.
+
+00:00:31.390 --> 00:00:36.215
+X and y positions are relative to the basket which is at the origin.
+
+00:00:36.215 --> 00:00:38.095
+In this multivariate plot,
+
+00:00:38.094 --> 00:00:39.969
+the color shows the third variable,
+
+00:00:39.969 --> 00:00:43.494
+how accurate shots were in each region of the court.
+
+00:00:43.494 --> 00:00:47.354
+Darker colors indicate a higher proportion of shots made.
+
+00:00:47.354 --> 00:00:49.640
+You can see that very generally,
+
+00:00:49.640 --> 00:00:54.509
+the shots that were closer to the basket had a higher chance of making it in.
+

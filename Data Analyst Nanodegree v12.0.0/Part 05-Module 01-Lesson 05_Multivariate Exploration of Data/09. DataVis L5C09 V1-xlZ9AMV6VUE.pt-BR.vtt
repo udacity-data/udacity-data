@@ -1,0 +1,143 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.135 --> 00:00:01.687
+Para encerrar esta aula,
+
+00:00:01.720 --> 00:00:05.126
+quero lembrar que a engenharia
+de recursos é uma opção
+
+00:00:05.159 --> 00:00:08.206
+ao investigar os dados.
+
+00:00:08.239 --> 00:00:10.854
+Neste vídeo,
+veremos a tendência
+
+00:00:10.887 --> 00:00:13.632
+na estatística
+das criaturas do "Pokémon".
+
+00:00:13.665 --> 00:00:17.336
+Especificamente, quero saber
+se o ataque é influenciado
+
+00:00:17.369 --> 00:00:19.920
+por um fator físico
+ou por um ataque especial.
+
+00:00:19.953 --> 00:00:23.514
+E se as defesas são, da mesma forma,
+influenciadas pela defesa física
+
+00:00:23.547 --> 00:00:25.162
+ou especial.
+
+00:00:25.195 --> 00:00:29.417
+Para isso, criarei novas variáveis
+a partir das razões.
+
+00:00:29.450 --> 00:00:33.627
+A coluna de ataque é a razão
+entre ataque e ataque especial.
+
+00:00:33.660 --> 00:00:35.837
+Se a criatura tiver valor
+maior do que 1,
+
+00:00:35.870 --> 00:00:38.846
+isso favorecerá o lado físico.
+Se for menos do que 1,
+
+00:00:38.879 --> 00:00:41.107
+isso favorecerá
+o lado especial.
+
+00:00:41.140 --> 00:00:44.219
+Faço o mesmo para a estatística
+da defesa.
+
+00:00:44.252 --> 00:00:46.923
+O gráfico ficará assim.
+
+00:00:46.956 --> 00:00:50.084
+Vamos melhorar as coisas
+adicionando transparência
+
+00:00:50.117 --> 00:00:53.563
+e alterando a escala dos eixos
+para log.
+
+00:00:53.596 --> 00:00:56.442
+Dessa forma, um viés de 2 para 1
+será mais espaçado
+
+00:00:56.475 --> 00:00:59.132
+do que a razão de 1,
+tanto para a direção física
+
+00:00:59.165 --> 00:01:01.486
+como para a especial.
+
+00:01:02.140 --> 00:01:06.552
+A seguir, adicionamos marcações
+apropriadas da escala log.
+
+00:01:06.585 --> 00:01:11.072
+Configuramos o limite dos eixos
+para remover os valores atípicos.
+
+00:01:11.105 --> 00:01:15.719
+Esses limites centralizam
+o gráfico em 1 nos dois eixos.
+
+00:01:15.752 --> 00:01:16.904
+No gráfico final,
+
+00:01:16.937 --> 00:01:20.304
+vemos que a maior parte dos pontos
+formam uma linha diagonal.
+
+00:01:20.337 --> 00:01:23.935
+No quadrante superior direito,
+temos as espécies com vieses físicos
+
+00:01:23.968 --> 00:01:25.515
+de ataque e de defesa.
+
+00:01:25.548 --> 00:01:28.410
+No quadrante inferior esquerdo,
+com vieses especiais
+
+00:01:28.443 --> 00:01:30.365
+tanto no ataque
+quanto na defesa.
+
+00:01:30.398 --> 00:01:34.454
+Parece haver mais Pokémons
+na linha y = 1
+
+00:01:34.487 --> 00:01:36.492
+sem nenhum viés de defesa.
+
+00:01:36.525 --> 00:01:39.861
+Esses Pokémons apresentam
+vieses de ataque.
+
+00:01:39.894 --> 00:01:43.008
+Parece haver menos Pokémons
+na linha x = 1
+
+00:01:43.041 --> 00:01:45.032
+que não possuem
+viés ofensivo.
+
+00:01:45.065 --> 00:01:48.234
+Essas descobertas são difíceis
+de serem combinadas
+
+00:01:48.267 --> 00:01:50.467
+sem a engenharia de recursos.
+

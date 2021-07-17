@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.370
+For the remaining videos in this lesson,
+
+00:00:02.370 --> 00:00:04.890
+we'll go back to the Pokemon creature dataset.
+
+00:00:04.889 --> 00:00:08.189
+Let's say that we're interested in looking at the pairwise relationships between
+
+00:00:08.189 --> 00:00:13.214
+the six combat statistics for all pokemon as seen in the last six columns.
+
+00:00:13.214 --> 00:00:15.839
+Rather than plot scatter plots one-by-one,
+
+00:00:15.839 --> 00:00:19.725
+we can inspect them all simultaneously using a plot matrix.
+
+00:00:19.725 --> 00:00:22.755
+This can be done with seaborn's PairGrid function.
+
+00:00:22.754 --> 00:00:25.919
+First, we set up the data frame on the data parameter and
+
+00:00:25.920 --> 00:00:29.220
+specify the variables of interest on the vars parameter.
+
+00:00:29.219 --> 00:00:31.229
+If vars is not specified,
+
+00:00:31.230 --> 00:00:34.770
+then all numeric variables in the data frame will be put into the plot.
+
+00:00:34.770 --> 00:00:36.630
+Even with only six variables,
+
+00:00:36.630 --> 00:00:39.910
+you can see that a plot matrix can take a lot of space.
+
+00:00:39.909 --> 00:00:44.734
+Each row corresponds with the variable from hp through special defense.
+
+00:00:44.734 --> 00:00:47.945
+The columns are also arranged in the same way.
+
+00:00:47.945 --> 00:00:51.079
+Let's start filling in the matrix with plots.
+
+00:00:51.079 --> 00:00:53.320
+Since all of the variables are numeric,
+
+00:00:53.320 --> 00:00:55.605
+let's put a scatter plot in each cell.
+
+00:00:55.604 --> 00:00:58.074
+Using the map method like with a FacetGrid,
+
+00:00:58.075 --> 00:01:00.635
+we can add in a scatter column.
+
+00:01:00.634 --> 00:01:04.399
+You'll notice that every cell now includes a scatter plot,
+
+00:01:04.400 --> 00:01:06.395
+including those on the diagonals.
+
+00:01:06.394 --> 00:01:11.119
+These diagonals are just straight lines since the column and row variables match up.
+
+00:01:11.120 --> 00:01:15.650
+Let's use the map_diag method to put histograms on the diagonal,
+
+00:01:15.650 --> 00:01:21.550
+and change map to map_offdiag to plot scatter plots only on the off-diagonal cells.
+
+00:01:21.549 --> 00:01:23.359
+Looking at this plot matrix,
+
+00:01:23.359 --> 00:01:27.290
+we can see some stronger relationships between hp and attack,
+
+00:01:27.290 --> 00:01:31.490
+attack and defense, and special attack and special defense.
+
+00:01:31.489 --> 00:01:33.859
+Let's check this numerically by computing and
+
+00:01:33.859 --> 00:01:36.679
+plotting the correlations in a correlation heatmap.
+
+00:01:36.680 --> 00:01:39.380
+The core function returns a matrix of
+
+00:01:39.379 --> 00:01:42.349
+pairwise of correlations between our selected variables.
+
+00:01:42.349 --> 00:01:46.834
+Putting this into the heatmap function produces our desired visualization.
+
+00:01:46.834 --> 00:01:49.369
+Let's add some parameters to the heatmap.
+
+00:01:49.370 --> 00:01:52.400
+Reverse the color palette using cmap then add
+
+00:01:52.400 --> 00:01:56.120
+annotations to format the values with two decimal places.
+
+00:01:56.120 --> 00:02:00.710
+It looks like there's only one correlation that's negative between defense and speed.
+
+00:02:00.709 --> 00:02:02.375
+Since it's essentially zero,
+
+00:02:02.375 --> 00:02:06.935
+let's add a vmin argument to set the lower bound of the colormap to zero.
+
+00:02:06.935 --> 00:02:11.240
+The correlation heatmap supports the observations we made from the plot matrix.
+
+00:02:11.240 --> 00:02:15.475
+We see that there are relatively high correlation values between hp and attack,
+
+00:02:15.474 --> 00:02:19.125
+attack and defense, and special attack and special defense.
+
+00:02:19.125 --> 00:02:21.620
+But it looks like there's a surprisingly high correlation
+
+00:02:21.620 --> 00:02:24.025
+between defense and special defense.
+
+00:02:24.025 --> 00:02:25.930
+Looking back on the plot matrix,
+
+00:02:25.930 --> 00:02:29.525
+perhaps that outlier in the upper right is boosting the statistic.
+
+00:02:29.525 --> 00:02:33.789
+That point would be worth further investigation in a deeper dive.
+

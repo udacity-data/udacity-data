@@ -1,0 +1,189 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.871 --> 00:00:04.638
+CONCEITO 03: PALETAS DE CORES
+
+00:00:05.628 --> 00:00:07.524
+Depois dos codificadores
+posicionais,
+
+00:00:07.557 --> 00:00:12.044
+o próximo codificador importante
+é o de cor.
+
+00:00:12.077 --> 00:00:17.045
+A cor pode ser usada em valores
+qualitativos e quantitativos.
+
+00:00:17.078 --> 00:00:19.772
+Já vimos isso
+na aula anterior.
+
+00:00:19.805 --> 00:00:22.966
+As contagens numéricas usaram
+cores e mapas de calor,
+
+00:00:22.999 --> 00:00:25.587
+e os rótulos categóricos
+foram codificados com cor
+
+00:00:25.620 --> 00:00:27.577
+e gráficos de barras
+agrupadas.
+
+00:00:28.281 --> 00:00:30.037
+Dependendo
+do tipo de variável,
+
+00:00:30.070 --> 00:00:33.302
+use diferentes
+tipos de paleta.
+
+00:00:33.335 --> 00:00:36.551
+Eu falarei das três
+maiores paletas de cores:
+
+00:00:36.584 --> 00:00:39.992
+a qualitativa, a sequencial
+e a divergente.
+
+00:00:40.937 --> 00:00:43.054
+As paletas qualitativas
+são orientadas
+
+00:00:43.087 --> 00:00:44.798
+na direção
+dos dados nominais.
+
+00:00:44.831 --> 00:00:47.603
+Essas paletas tendem
+a consistir em cores diferentes
+
+00:00:47.636 --> 00:00:51.206
+com brilho e saturação
+parecidos.
+
+00:00:51.239 --> 00:00:53.572
+Dessa forma,
+nenhuma ordem fica implícita
+
+00:00:53.605 --> 00:00:57.804
+e os níveis individuais
+não mostram nenhuma importância.
+
+00:00:58.446 --> 00:01:02.766
+As sequenciais são usadas
+para dados ordinais e numéricos.
+
+00:01:02.799 --> 00:01:04.518
+Em uma paleta sequencial boa,
+
+00:01:04.551 --> 00:01:08.089
+os valores baixos têm cores fracas
+e menos saturadas,
+
+00:01:08.122 --> 00:01:12.529
+enquanto os valores altos,
+cores mais escuras e saturadas.
+
+00:01:12.562 --> 00:01:15.305
+Às vezes,
+isso pode ser invertido.
+
+00:01:15.338 --> 00:01:18.234
+Claro para alto
+e escuro para baixo.
+
+00:01:18.267 --> 00:01:22.090
+Geralmente,
+uma única cor é utilizada.
+
+00:01:22.123 --> 00:01:24.249
+Para certos dados ordinais
+ou numéricos
+
+00:01:24.282 --> 00:01:26.082
+com um ponto central
+significativo,
+
+00:01:26.115 --> 00:01:28.625
+a paleta divergente
+pode ser usada.
+
+00:01:28.658 --> 00:01:31.550
+Ela é feita
+de duas paletas sequenciais
+
+00:01:31.583 --> 00:01:33.750
+com cores diferentes
+em lados opostos
+
+00:01:33.783 --> 00:01:36.716
+e uma cor que as une
+no ponto central.
+
+00:01:36.749 --> 00:01:40.006
+Uma cor indicará valores
+maiores do que o ponto central,
+
+00:01:40.039 --> 00:01:43.310
+e a outra, menores
+do que o ponto central.
+
+00:01:44.622 --> 00:01:48.340
+Devemos conferir algumas coisas
+depois de selecionar a paleta,
+
+00:01:48.373 --> 00:01:50.334
+independentemente do tipo.
+
+00:01:51.063 --> 00:01:55.435
+Primeiro, escolha cores pensando
+nos daltônicos,
+
+00:01:55.468 --> 00:01:59.333
+especialmente para escalas
+qualitativas e divergentes.
+
+00:01:59.366 --> 00:02:03.021
+Se quiser usar cores opostas,
+como vermelho e verde,
+
+00:02:03.054 --> 00:02:08.211
+verifique se elas serão diferentes
+para quem tem essa deficiência.
+
+00:02:08.244 --> 00:02:10.306
+O vermelho e o verde
+da parte de cima
+
+00:02:10.339 --> 00:02:12.730
+são muito próximos
+no brilho e na saturação,
+
+00:02:12.763 --> 00:02:15.636
+enquanto os de baixo
+são mais diferentes.
+
+00:02:16.266 --> 00:02:20.322
+Segundo, evite a transparência
+em cima da cor.
+
+00:02:20.355 --> 00:02:22.370
+Se houver sobreposição
+entre as cores,
+
+00:02:22.403 --> 00:02:25.890
+isso poderá criar cores novas
+não interpretáveis.
+
+00:02:25.923 --> 00:02:29.189
+Se os pontos forem da mesma cor,
+mas a saturação for diferente,
+
+00:02:29.222 --> 00:02:33.635
+isso criará uma nova cor
+com valor incorreto.
+

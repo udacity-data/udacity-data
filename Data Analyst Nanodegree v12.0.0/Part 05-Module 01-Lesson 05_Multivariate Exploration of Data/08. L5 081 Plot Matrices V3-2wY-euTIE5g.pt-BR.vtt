@@ -1,0 +1,126 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.908 --> 00:00:04.811
+CONCEITO 08:
+MATRIZES DE GRÁFICOS
+
+00:00:05.506 --> 00:00:07.803
+Como parte
+da exploração bivariada,
+
+00:00:07.836 --> 00:00:12.002
+você deve estar interessado
+na relação entre muitas variáveis.
+
+00:00:12.035 --> 00:00:15.418
+Poderíamos explorar essas relações
+usando duas variáveis por vez,
+
+00:00:15.451 --> 00:00:18.510
+mas existem outras técnicas
+além dos gráficos multivariados
+
+00:00:18.543 --> 00:00:22.258
+para explorar relações
+de emparelhamento múltiplo.
+
+00:00:22.291 --> 00:00:25.884
+Em uma matriz de gráfico,
+uma grade de gráficos é gerada.
+
+00:00:25.917 --> 00:00:29.624
+Ao contrário de um gráfico separado,
+no qual cada subgráfico se baseia
+
+00:00:29.657 --> 00:00:31.267
+em um subconjunto dos dados,
+
+00:00:31.300 --> 00:00:34.642
+cada subgráfico, em uma matriz,
+se baseará em todos os dados,
+
+00:00:34.675 --> 00:00:37.698
+mas com duas variáveis diferentes
+nos eixos.
+
+00:00:38.340 --> 00:00:42.027
+Cada linha e coluna
+corresponderá a uma variável.
+
+00:00:42.060 --> 00:00:47.665
+Por exemplo, este gráfico mostra
+a relação entre açúcares e gorduras.
+
+00:00:47.698 --> 00:00:51.906
+Na diagonal, a variável de linha
+e de coluna se correspondem.
+
+00:00:51.939 --> 00:00:54.282
+Um gráfico univariado
+de cada variável
+
+00:00:54.315 --> 00:00:57.794
+é geralmente colocado
+ao longo desta linha diagonal.
+
+00:00:57.827 --> 00:01:00.935
+Uma matriz de gráfico serve
+para termos uma visão mais ampla
+
+00:01:00.968 --> 00:01:04.022
+das relações
+entre as variáveis.
+
+00:01:04.055 --> 00:01:07.637
+Considerando que o tamanho
+de cada subgráfico será bem pequeno,
+
+00:01:07.670 --> 00:01:11.246
+uma matriz é uma ferramenta
+exploratória inicial,
+
+00:01:11.279 --> 00:01:14.245
+que levará você
+aos pontos de maior interesse.
+
+00:01:14.278 --> 00:01:17.597
+Siga uma matriz
+gerando gráficos adicionais
+
+00:01:17.630 --> 00:01:20.272
+de conjuntos específicos
+de variáveis.
+
+00:01:20.305 --> 00:01:22.417
+Nós também podemos adaptar
+mapas de calor
+
+00:01:22.450 --> 00:01:26.319
+para representar as correlações
+entre as variáveis dos dados.
+
+00:01:26.352 --> 00:01:27.937
+Como a matriz do gráfico,
+
+00:01:27.970 --> 00:01:31.737
+cada linha e coluna corresponde
+a uma única variável.
+
+00:01:31.770 --> 00:01:34.319
+O valor e a cor
+descritos em cada célula
+
+00:01:34.352 --> 00:01:39.225
+são a correlação entre as variáveis
+de linha e coluna correspondentes.
+
+00:01:39.258 --> 00:01:42.207
+Essa é outra boa opção
+de resumo para exploração,
+
+00:01:42.240 --> 00:01:44.200
+quando iniciamos
+com muitas variáveis.
+

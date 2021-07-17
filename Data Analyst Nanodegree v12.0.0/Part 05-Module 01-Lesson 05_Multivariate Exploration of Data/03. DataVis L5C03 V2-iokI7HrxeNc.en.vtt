@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.089
+Last time, you saw how to use marker size and
+
+00:00:03.089 --> 00:00:06.424
+shape to encode third variables into scatter plots.
+
+00:00:06.424 --> 00:00:12.099
+The more natural encoding supported by both Matplot and Seaborn however is color.
+
+00:00:12.099 --> 00:00:14.129
+For categorical data, we can use
+
+00:00:14.130 --> 00:00:18.405
+Seaborn's facet grid and set the hue argument to our column of choice.
+
+00:00:18.405 --> 00:00:22.919
+In the Mat method, we set the regplot function and our access variables.
+
+00:00:22.919 --> 00:00:27.490
+Additional red plot parameters are still set afterwards.
+
+00:00:27.809 --> 00:00:30.609
+Let's make a few tweaks to the plot.
+
+00:00:30.609 --> 00:00:33.869
+First, let's change the order in which the levels are plotted so
+
+00:00:33.869 --> 00:00:37.254
+that the manual transmission points are plotted on top of automatic.
+
+00:00:37.255 --> 00:00:41.090
+We set this through the hue order parameter in facet grid.
+
+00:00:41.090 --> 00:00:43.640
+Note that this is not just plain order since
+
+00:00:43.640 --> 00:00:47.270
+facet grid can also take orderings on other facet dimensions.
+
+00:00:47.270 --> 00:00:48.970
+Since we have only one plot,
+
+00:00:48.969 --> 00:00:51.064
+let's also increase its size.
+
+00:00:51.064 --> 00:00:56.530
+Setting size equals four and aspect equals 1.5 gives us a larger plot,
+
+00:00:56.530 --> 00:00:58.759
+50 percent longer than it is tall.
+
+00:00:58.759 --> 00:01:01.655
+Finally, let's use the facet grid object method
+
+00:01:01.655 --> 00:01:04.894
+add legend to automatically add a legend to the plot.
+
+00:01:04.894 --> 00:01:07.729
+Transmission type is a nominal type variable,
+
+00:01:07.730 --> 00:01:10.820
+so the default qualitative palette works great.
+
+00:01:10.819 --> 00:01:13.884
+What if we plotted by vehicle class instead?
+
+00:01:13.885 --> 00:01:16.310
+Vehicle class is an ordered variable,
+
+00:01:16.310 --> 00:01:19.254
+so the qualitative palette doesn't work quite as well.
+
+00:01:19.254 --> 00:01:22.454
+We should specify a sequential palette instead.
+
+00:01:22.454 --> 00:01:26.034
+This can be set through facet grids palette parameter.
+
+00:01:26.034 --> 00:01:29.215
+We can use the same strings as in Matplotlib.
+
+00:01:29.215 --> 00:01:32.240
+I'll use viridis_r in this case.
+
+00:01:32.239 --> 00:01:34.875
+This palette not only goes from light to dark,
+
+00:01:34.875 --> 00:01:39.519
+but it also has a good range of hues to further discriminate the categorical variables.
+
+00:01:39.519 --> 00:01:43.784
+What if we have a numeric variable instead, like CO2 emissions?
+
+00:01:43.784 --> 00:01:46.969
+We should not just set the variable in the hue parameter since
+
+00:01:46.969 --> 00:01:50.765
+facet grid only expects to facet across categorical variables.
+
+00:01:50.765 --> 00:01:54.590
+If we do that, otherwise we get a messy legend with one color
+
+00:01:54.590 --> 00:01:58.490
+for every unique CO2 value in a rank ordered color scheme.
+
+00:01:58.489 --> 00:02:03.834
+Instead, we should just use the basic Matplotlib scatter function to create our plot.
+
+00:02:03.834 --> 00:02:06.289
+We lose the convenient jitter in this case,
+
+00:02:06.290 --> 00:02:08.750
+but there is an interaction in the color parameters in
+
+00:02:08.750 --> 00:02:12.110
+red plot that make coloring by value hard to do.
+
+00:02:12.110 --> 00:02:16.550
+With scatter, adding a third numeric variable via color is as simple as setting
+
+00:02:16.550 --> 00:02:21.235
+the C parameter and different color palettes are set through the Cmap parameter.
+
+00:02:21.235 --> 00:02:25.160
+I used the colorbar function to add a color bar to the plot,
+
+00:02:25.159 --> 00:02:28.599
+and I add a label parameter to provide the color map units.
+

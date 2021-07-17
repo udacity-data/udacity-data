@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.790 --> 00:00:08.160
+One additional technique that you will find useful
+
+00:00:08.160 --> 00:00:11.449
+for exploring your data is feature engineering.
+
+00:00:11.449 --> 00:00:13.829
+In feature engineering, you create
+
+00:00:13.830 --> 00:00:17.839
+new variables as functions of existing variables in your data.
+
+00:00:17.839 --> 00:00:20.370
+As an example, let's say that we have
+
+00:00:20.370 --> 00:00:25.285
+some summary statistics for the number of crimes that occurred in four different regions.
+
+00:00:25.285 --> 00:00:31.054
+This initial bar chart suggests that the east region has the highest incidence of crime.
+
+00:00:31.054 --> 00:00:33.600
+However, this doesn't take into account
+
+00:00:33.600 --> 00:00:37.469
+the population for each region which can be seen in this chart.
+
+00:00:37.469 --> 00:00:40.729
+The east region also has the highest population.
+
+00:00:40.729 --> 00:00:43.219
+The higher number of crimes may simply be
+
+00:00:43.219 --> 00:00:46.204
+a natural correlation with the number of people.
+
+00:00:46.204 --> 00:00:49.759
+We should compute a ratio between these two variables,
+
+00:00:49.759 --> 00:00:52.974
+such as the number of crimes per 100,000 people.
+
+00:00:52.975 --> 00:00:56.505
+If we create this variable and then generate a new chart,
+
+00:00:56.505 --> 00:01:00.359
+we can see that the North region has the highest crime rate.
+

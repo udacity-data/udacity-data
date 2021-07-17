@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.230 --> 00:00:07.030
+Consider this scatter plot showing
+
+00:00:07.030 --> 00:00:10.009
+the relationship between interest rate and loan amount.
+
+00:00:10.009 --> 00:00:15.875
+How might we show how borrower rating or monthly payment relate to these variables?
+
+00:00:15.875 --> 00:00:19.449
+One option we have in this case is to use different encodings on
+
+00:00:19.449 --> 00:00:24.039
+the points to indicate the value of one of these variables on each point.
+
+00:00:24.039 --> 00:00:26.439
+The type of encoding that is most useful for
+
+00:00:26.440 --> 00:00:31.315
+the additional variable will depend on if it is qualitative or quantitative.
+
+00:00:31.315 --> 00:00:37.204
+Let's take a closer look at three encodings: shape, size, and color.
+
+00:00:37.204 --> 00:00:41.170
+Shape is a good encoding for categorical variables.
+
+00:00:41.170 --> 00:00:43.760
+Since there's no natural order of shapes,
+
+00:00:43.759 --> 00:00:47.234
+this is an especially good choice for nominal type data.
+
+00:00:47.234 --> 00:00:52.174
+Here, the borrower rating is indicated by one of three shapes on the plot.
+
+00:00:52.174 --> 00:00:54.399
+You can see that for a given loan amount,
+
+00:00:54.399 --> 00:00:58.789
+interest rates for borrowers of class A tend to be lower than those of B or
+
+00:00:58.789 --> 00:01:04.179
+C. Size is an encoding that is often used for numeric variables.
+
+00:01:04.180 --> 00:01:07.085
+In this plot, you can see how the monthly payment
+
+00:01:07.084 --> 00:01:10.109
+is derived from the loan amount and interest rate.
+
+00:01:10.109 --> 00:01:13.935
+A larger point size indicates a larger payment.
+
+00:01:13.935 --> 00:01:17.120
+When using size, it is important to pay attention to
+
+00:01:17.120 --> 00:01:21.035
+the mapping between the variable's value to the size of each point.
+
+00:01:21.034 --> 00:01:25.545
+For example, these points associate radius with value.
+
+00:01:25.545 --> 00:01:31.219
+However, this has a distorting effect since it is the area of each point that stands out.
+
+00:01:31.219 --> 00:01:33.799
+A point with doubled value ends up with
+
+00:01:33.799 --> 00:01:37.834
+four times the area, a disproportionate representation.
+
+00:01:37.834 --> 00:01:42.584
+It is more common for area to be associated directly with value.
+
+00:01:42.584 --> 00:01:47.539
+Sometimes, different functions might need to be used so that all points remain readable,
+
+00:01:47.540 --> 00:01:51.385
+similar to how you might perform an access transformation.
+
+00:01:51.385 --> 00:01:55.950
+The most common third variable encoding you will see is color.
+
+00:01:55.950 --> 00:02:00.350
+Color can be used for both qualitative and quantitative variables.
+
+00:02:00.349 --> 00:02:02.329
+This is a large topic that deserves
+
+00:02:02.329 --> 00:02:06.439
+its own focus and will be covered in the next segment of the lesson.
+

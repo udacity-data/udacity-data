@@ -1,0 +1,247 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.180
+In this lesson on multivariate visualizations,
+
+00:00:03.180 --> 00:00:06.595
+we'll continue to use the two datasets from the previous lessons.
+
+00:00:06.594 --> 00:00:10.859
+One for creature statistics from the Pokemon video game series and one on
+
+00:00:10.859 --> 00:00:15.199
+fuel efficiency for sedans manufactured from 2013 to 2018.
+
+00:00:15.199 --> 00:00:17.704
+We'll start here with the car dataset.
+
+00:00:17.704 --> 00:00:20.399
+In this video, I'm going to look at how to use
+
+00:00:20.399 --> 00:00:23.824
+shape or size to encode a third variable in a scatter plot.
+
+00:00:23.824 --> 00:00:25.285
+In the last lesson,
+
+00:00:25.285 --> 00:00:28.829
+we created a scatter plot of fuel mileage against engine size.
+
+00:00:28.829 --> 00:00:31.799
+I've taken a random subset of 200 cars to reduce
+
+00:00:31.800 --> 00:00:35.990
+over-plotting and combine that with a small amount of horizontal jitter.
+
+00:00:35.990 --> 00:00:39.410
+Are there differences between cars with automatic transmission and
+
+00:00:39.409 --> 00:00:42.884
+manual transmission in terms of fuel efficiency and engine size?
+
+00:00:42.884 --> 00:00:45.614
+Since transmission type is categorical,
+
+00:00:45.615 --> 00:00:47.829
+shape is a good encoding to use.
+
+00:00:47.829 --> 00:00:50.144
+In both the red plot and scatter functions,
+
+00:00:50.145 --> 00:00:53.965
+the marker parameter can be used to set the shape of the plotted points.
+
+00:00:53.965 --> 00:00:56.095
+Unfortunately, in both cases,
+
+00:00:56.094 --> 00:00:58.554
+the parameter can only take a single string.
+
+00:00:58.554 --> 00:01:03.784
+This means that we need to create a loop to plot each subset of the data one by one.
+
+00:01:03.784 --> 00:01:05.269
+First of all, I set up
+
+00:01:05.269 --> 00:01:10.515
+a list of lists ttype markers with my mapping of levels to symbol types.
+
+00:01:10.515 --> 00:01:13.879
+Cars with automatic transmission will be circles set by
+
+00:01:13.879 --> 00:01:19.129
+the string O and cars with manual transmission will be triangles set by the string caret.
+
+00:01:19.129 --> 00:01:22.459
+I've set it up as a list of lists rather than a dictionary
+
+00:01:22.459 --> 00:01:26.194
+so that I can have finer control of the order in which the levels are plotted.
+
+00:01:26.194 --> 00:01:29.309
+Then I'm going to loop over the list elements.
+
+00:01:29.310 --> 00:01:32.269
+I use ttype to select only the plots with matching
+
+00:01:32.269 --> 00:01:36.689
+transmission type and set the marker and the regplot function.
+
+00:01:38.680 --> 00:01:41.390
+The result is this plot.
+
+00:01:41.390 --> 00:01:44.349
+It's worth noting that with multiple regplot calls,
+
+00:01:44.349 --> 00:01:47.109
+all of the data is plotted on the same axis and
+
+00:01:47.109 --> 00:01:50.215
+different colors have been automatically assigned to each call.
+
+00:01:50.215 --> 00:01:54.200
+This is fortunate since the two transmission types have a lot of overlap.
+
+00:01:54.200 --> 00:01:57.880
+The main difference between transmission types that we can see in this plot is that
+
+00:01:57.879 --> 00:02:01.479
+the cars with the highest fuel efficiency are all of automatic type.
+
+00:02:01.480 --> 00:02:05.655
+We can add a legend to the plot by using Matplotlib's legend function.
+
+00:02:05.655 --> 00:02:07.510
+As an argument to the function,
+
+00:02:07.510 --> 00:02:10.000
+we give a list of labels to place on the legend.
+
+00:02:10.000 --> 00:02:12.800
+One for each regplot call.
+
+00:02:13.090 --> 00:02:15.610
+Instead of transmission type,
+
+00:02:15.610 --> 00:02:19.340
+what if we wanted to add carbon dioxide emissions as a third variable?
+
+00:02:19.340 --> 00:02:21.528
+Since CO2 is numeric,
+
+00:02:21.528 --> 00:02:24.405
+one encoding we could use is marker size.
+
+00:02:24.405 --> 00:02:26.610
+In Matplotlib scatter function,
+
+00:02:26.610 --> 00:02:29.065
+we can set marker size with the S parameter,
+
+00:02:29.064 --> 00:02:32.960
+setting it to the name of the column we want to map it to, CO2.
+
+00:02:32.960 --> 00:02:35.719
+However, since I'm using regplot,
+
+00:02:35.719 --> 00:02:38.569
+I need to set the parameter as part of a dictionary on the scatter
+
+00:02:38.569 --> 00:02:41.209
+keywords parameter and explicitly
+
+00:02:41.210 --> 00:02:44.510
+assigned it the full series rather than just the column name.
+
+00:02:44.509 --> 00:02:46.879
+The trend seems pretty clear to me here,
+
+00:02:46.879 --> 00:02:50.960
+but let's reduce the marker size somewhat so that we can see more of the points.
+
+00:02:50.960 --> 00:02:53.490
+It looks like as engine size increases,
+
+00:02:53.490 --> 00:02:55.930
+there is a higher level of CO2 emissions.
+
+00:02:55.930 --> 00:03:00.069
+It also seems that the less fuel efficient cars also tend to have higher emissions,
+
+00:03:00.069 --> 00:03:02.039
+even at similar engine sizes.
+
+00:03:02.039 --> 00:03:06.669
+Matplotlib will naturally associate the area of the points with input values.
+
+00:03:06.669 --> 00:03:09.604
+We have a small problem here when it comes to adding a legend.
+
+00:03:09.604 --> 00:03:11.829
+We only have one scatter plot series plotted,
+
+00:03:11.830 --> 00:03:14.225
+so the legend will only give us a single dot.
+
+00:03:14.224 --> 00:03:16.009
+As a work around, we can add
+
+00:03:16.009 --> 00:03:19.174
+dummy scatter plot sequences so that we can construct our legend.
+
+00:03:19.175 --> 00:03:21.900
+When we use plotting functions in Matplotlib and Seaborn,
+
+00:03:21.900 --> 00:03:24.034
+we actually get plotting objects back.
+
+00:03:24.034 --> 00:03:27.259
+We haven't been storing them so far since we've not needed them,
+
+00:03:27.259 --> 00:03:29.349
+but this is one case where we want them.
+
+00:03:29.349 --> 00:03:31.280
+Let's set up a loop to go over
+
+00:03:31.280 --> 00:03:35.344
+three CO2 values that we want to use for the size legend reference.
+
+00:03:35.344 --> 00:03:39.574
+Inside the loop, use the scatter function to create scatter plot objects,
+
+00:03:39.574 --> 00:03:42.134
+setting the necessary point sizes.
+
+00:03:42.134 --> 00:03:45.620
+The first two arguments for x and y positions are empty lists,
+
+00:03:45.620 --> 00:03:47.525
+so no points are actually plotted.
+
+00:03:47.525 --> 00:03:52.435
+I'm also adding a color argument so that all of our new series share a consistent color.
+
+00:03:52.435 --> 00:03:57.224
+Finally, I'm going to set up a list to store all of our dummy scatter plot objects.
+
+00:03:57.224 --> 00:03:58.879
+In the legend function,
+
+00:03:58.879 --> 00:04:00.169
+if there's only one argument,
+
+00:04:00.169 --> 00:04:03.469
+then it is assumed to be the labels for the plot objects.
+
+00:04:03.469 --> 00:04:06.710
+With two arguments, the first one is a list of objects to be
+
+00:04:06.710 --> 00:04:10.655
+depicted in the legend and the second one is a list of labels.
+
+00:04:10.655 --> 00:04:15.569
+I've also added a title argument to give the units of the legend values.
+

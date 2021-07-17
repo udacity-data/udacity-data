@@ -1,0 +1,98 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.716 --> 00:00:04.875
+CONCEITO 12:
+RESUMO DA AULA
+
+00:00:06.844 --> 00:00:08.347
+Parabéns!
+
+00:00:08.380 --> 00:00:09.922
+Com as habilidades aprendidas,
+
+00:00:09.955 --> 00:00:12.457
+você tem proficiência
+com visualizações de dados,
+
+00:00:12.490 --> 00:00:15.659
+de variáveis únicas
+até múltiplas variáveis.
+
+00:00:16.339 --> 00:00:19.234
+Nesta aula,
+vimos várias técnicas
+
+00:00:19.267 --> 00:00:23.163
+para criar visualizações
+multivariadas eficazes.
+
+00:00:23.196 --> 00:00:25.642
+Para gráficos únicos,
+codificações como forma,
+
+00:00:25.675 --> 00:00:30.858
+tamanho e cor podem ilustrar
+valores para variáveis adicionais.
+
+00:00:30.891 --> 00:00:34.162
+O faceting permite criar
+vários gráficos mais simples
+
+00:00:34.195 --> 00:00:38.043
+entre os níveis de uma
+ou duas outras variáveis.
+
+00:00:38.076 --> 00:00:40.363
+Vimos como os mapas de calor
+
+00:00:40.396 --> 00:00:42.770
+são usados
+para visualização multivariada,
+
+00:00:42.803 --> 00:00:46.500
+substituindo a contagem
+para medir uma terceira variável.
+
+00:00:47.203 --> 00:00:51.615
+Vimos técnicas para ajudar
+na sua exploração e análise.
+
+00:00:51.648 --> 00:00:54.655
+As matrizes de gráficos e mapas
+de calor correlacionais
+
+00:00:54.688 --> 00:00:59.642
+permitiram observar a relação
+emparelhada entre as variáveis.
+
+00:00:59.675 --> 00:01:01.371
+Com a engenharia de recursos,
+
+00:01:01.404 --> 00:01:03.163
+geramos recursos adicionais
+
+00:01:03.196 --> 00:01:06.692
+para identificar relações complexas
+entre os dados.
+
+00:01:08.052 --> 00:01:09.878
+Até agora,
+a maioria dos materiais
+
+00:01:09.911 --> 00:01:13.500
+se basearam no lado exploratório
+da visualização.
+
+00:01:13.533 --> 00:01:14.844
+Na próxima aula,
+
+00:01:14.877 --> 00:01:16.788
+veremos como aprimorar
+os gráficos,
+
+00:01:16.821 --> 00:01:20.614
+para torná-los parte da análise
+explanatória e da comunicação.
+

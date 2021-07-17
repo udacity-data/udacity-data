@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:06.080 --> 00:00:08.310
+Congratulations.
+
+00:00:08.310 --> 00:00:09.900
+With the skills you've learned,
+
+00:00:09.900 --> 00:00:12.449
+you now have proficiency with data visualizations
+
+00:00:12.449 --> 00:00:15.824
+from single variables through multiple variables.
+
+00:00:15.824 --> 00:00:19.289
+In this lesson, you learned about a number of techniques
+
+00:00:19.289 --> 00:00:22.814
+to create effective multivariate visualizations.
+
+00:00:22.815 --> 00:00:26.429
+For single plots, encodings like shape, size,
+
+00:00:26.429 --> 00:00:30.600
+and colour can illustrate values for additional variables.
+
+00:00:30.600 --> 00:00:32.745
+Faceting, allows you to plot
+
+00:00:32.744 --> 00:00:37.750
+multiple simpler plots across levels of one or two other variables.
+
+00:00:37.750 --> 00:00:42.539
+You also saw how heat maps could be used for multivariate visualization,
+
+00:00:42.539 --> 00:00:46.435
+substituting count for measuring a third variable.
+
+00:00:46.435 --> 00:00:51.355
+You also learned about techniques to help your exploration and analysis.
+
+00:00:51.354 --> 00:00:54.949
+Plot matrices and correlation heat maps allow for
+
+00:00:54.950 --> 00:00:59.310
+a high level look at pairwise relationships between your variables.
+
+00:00:59.310 --> 00:01:02.225
+With feature engineering, you can generate
+
+00:01:02.225 --> 00:01:06.980
+additional features to strike a complex relationships in your data.
+
+00:01:07.230 --> 00:01:09.885
+Most of the materials thus far,
+
+00:01:09.885 --> 00:01:13.329
+have been focused on the exploratory side of visualization.
+
+00:01:13.329 --> 00:01:14.890
+In the next lesson,
+
+00:01:14.890 --> 00:01:17.269
+you'll learn how to polish up your plots and make them
+
+00:01:17.269 --> 00:01:20.950
+part of explanatory analysis and communication.
+

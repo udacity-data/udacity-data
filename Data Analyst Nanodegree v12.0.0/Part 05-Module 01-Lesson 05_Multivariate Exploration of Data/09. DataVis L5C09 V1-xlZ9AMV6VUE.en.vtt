@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.635
+To close this lesson out,
+
+00:00:01.635 --> 00:00:04.469
+I want to make a quick reminder that feature engineering is
+
+00:00:04.469 --> 00:00:07.934
+an option when performing an investigation into your data.
+
+00:00:07.934 --> 00:00:13.320
+In this video, I'm going to look an example of biases in Pokemon creatures statistics.
+
+00:00:13.320 --> 00:00:15.570
+More specifically, I want to know if
+
+00:00:15.570 --> 00:00:19.710
+a creature's offensive stats are biased towards physical or special-attack,
+
+00:00:19.710 --> 00:00:24.945
+if their defensive stats are similarly biased towards physical or special defense.
+
+00:00:24.945 --> 00:00:29.144
+To do this, I will create new variables based on ratios.
+
+00:00:29.144 --> 00:00:33.594
+The attack ratio column is the ratio between attack and special-attack.
+
+00:00:33.594 --> 00:00:35.839
+If a creature has a value greater than one,
+
+00:00:35.840 --> 00:00:37.690
+then they favored the physical side,
+
+00:00:37.689 --> 00:00:40.890
+and if less than one, they favor the special sides.
+
+00:00:40.890 --> 00:00:43.945
+I do the same thing for the defensive statistics.
+
+00:00:43.945 --> 00:00:46.774
+The basic scatter plot looks like this.
+
+00:00:46.774 --> 00:00:48.949
+Let's polish things up by adding
+
+00:00:48.950 --> 00:00:53.240
+some transparency and then changing the axis scales to log scales.
+
+00:00:53.240 --> 00:00:56.630
+That way a bias of two to one is evenly spaced from
+
+00:00:56.630 --> 00:01:01.570
+the even ratio of one in both the physical and special directions.
+
+00:01:01.570 --> 00:01:06.079
+Next, I'll add some tick marks appropriate for a log scale.
+
+00:01:06.079 --> 00:01:10.834
+Finally, I'll set the axis limits to remove the extreme outliers.
+
+00:01:10.834 --> 00:01:15.579
+These particular limits also centered the plot on one on both axes.
+
+00:01:15.579 --> 00:01:20.075
+In the final plot, we see that most points seem to fall along a diagonal line.
+
+00:01:20.075 --> 00:01:21.814
+In the upper right-hand quadrant,
+
+00:01:21.814 --> 00:01:25.640
+we have Pokemon species that are physical biased in both offense and defense,
+
+00:01:25.640 --> 00:01:27.409
+and in the lower left-hand quadrant,
+
+00:01:27.409 --> 00:01:30.189
+they are special biased in both offense and defense.
+
+00:01:30.189 --> 00:01:33.109
+Interestingly, there appears to be a large number of Pokemon
+
+00:01:33.109 --> 00:01:36.290
+on the y equals one line showing no defensive bias.
+
+00:01:36.290 --> 00:01:39.710
+These Pokemon have a wide range of offensive biases.
+
+00:01:39.709 --> 00:01:42.199
+There appeared to be much fewer Pokemon on the x
+
+00:01:42.200 --> 00:01:45.005
+equals one line showing no offensive bias.
+
+00:01:45.004 --> 00:01:47.810
+Findings like these would be difficult to come by and
+
+00:01:47.810 --> 00:01:50.870
+summarize if we didn't build our engineered features.
+

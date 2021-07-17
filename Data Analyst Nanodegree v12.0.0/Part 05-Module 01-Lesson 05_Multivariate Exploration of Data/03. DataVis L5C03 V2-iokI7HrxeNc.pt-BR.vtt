@@ -1,0 +1,195 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.305 --> 00:00:03.502
+Vimos como usar o tamanho
+e o formato do marcador
+
+00:00:03.535 --> 00:00:06.642
+para codificar terceiras variáveis
+em gráficos de dispersão.
+
+00:00:06.675 --> 00:00:12.183
+A codificação mais natural
+da Matplot e da Seaborn é a de cor.
+
+00:00:12.216 --> 00:00:15.363
+Para dados categóricos,
+usamos o FacetGrid da Seaborn,
+
+00:00:15.396 --> 00:00:18.588
+configurando o argumento hue
+para a coluna de escolha.
+
+00:00:18.621 --> 00:00:21.171
+No método map,
+configuramos a função regplot
+
+00:00:21.204 --> 00:00:23.228
+nas variáveis dos eixos.
+
+00:00:23.261 --> 00:00:27.068
+Parâmetros regplot adicionais
+ainda são configurados depois.
+
+00:00:28.693 --> 00:00:30.824
+Vamos alterar um pouco
+o gráfico.
+
+00:00:30.857 --> 00:00:33.655
+Alteramos a ordem
+na qual os níveis são posicionados,
+
+00:00:33.688 --> 00:00:37.471
+para que a transmissão manual
+esteja acima da automática.
+
+00:00:37.504 --> 00:00:40.817
+Isso acontece no parâmetro hue_order
+do FacetGrid.
+
+00:00:40.850 --> 00:00:43.206
+Essa não é uma ordem comum,
+
+00:00:43.239 --> 00:00:45.209
+porque o FacetGrid também
+pode ordenar
+
+00:00:45.242 --> 00:00:47.517
+outras dimensões.
+
+00:00:47.550 --> 00:00:51.278
+Como só temos um gráfico,
+vamos aumentar o tamanho.
+
+00:00:51.311 --> 00:00:54.581
+Configurando o tamanho como 4
+e o aspecto como 1.5,
+
+00:00:54.614 --> 00:00:56.381
+teremos um gráfico maior,
+
+00:00:56.414 --> 00:00:58.989
+50% mais largo do que alto.
+
+00:00:59.022 --> 00:01:02.685
+Por fim, vamos usar o método
+de objeto add_legend do FacetGrid
+
+00:01:02.718 --> 00:01:05.198
+para adicionar
+a legenda ao gráfico.
+
+00:01:05.231 --> 00:01:07.725
+O tipo de transmissão
+é uma variável nominal,
+
+00:01:07.758 --> 00:01:11.013
+então a paleta qualitativa
+padrão funciona bem.
+
+00:01:11.046 --> 00:01:13.917
+E se posicionarmos
+a classe veículo no lugar?
+
+00:01:13.950 --> 00:01:16.244
+Ela é uma variável ordinal,
+
+00:01:16.277 --> 00:01:19.277
+então a paleta qualitativa
+não funcionará bem.
+
+00:01:19.310 --> 00:01:22.767
+Devemos especificar
+uma paleta sequencial.
+
+00:01:22.800 --> 00:01:26.157
+Isso pode ser configurado
+no parâmetro de paleta do FacetGrid.
+
+00:01:26.190 --> 00:01:29.421
+Podemos usar as mesmas strings
+da Matplotlib.
+
+00:01:29.454 --> 00:01:32.382
+Eu usarei viridis_r
+neste caso.
+
+00:01:32.415 --> 00:01:34.869
+Esta paleta, além de ir
+do claro para o escuro,
+
+00:01:34.902 --> 00:01:37.532
+tem muitas cores
+para discriminar
+
+00:01:37.565 --> 00:01:39.845
+as variáveis categóricas.
+
+00:01:39.878 --> 00:01:42.111
+E se tivermos
+uma variável numérica,
+
+00:01:42.144 --> 00:01:44.029
+como a de emissão de CO2?
+
+00:01:44.062 --> 00:01:46.692
+Não configure a variável
+no parâmetro hue,
+
+00:01:46.725 --> 00:01:51.005
+pois o FacetGrid espera usar
+variáveis categóricas.
+
+00:01:51.038 --> 00:01:53.829
+Se fizermos isso,
+teremos uma legenda bagunçada,
+
+00:01:53.862 --> 00:01:56.404
+com uma cor
+para cada valor de CO2
+
+00:01:56.437 --> 00:01:58.693
+e um esquema de cor
+classificado.
+
+00:01:58.726 --> 00:02:02.565
+Em vez disso, usamos a função
+scatter da Matplotlib
+
+00:02:02.598 --> 00:02:04.022
+para criar o gráfico.
+
+00:02:04.055 --> 00:02:06.269
+Perderemos o jitter
+neste caso,
+
+00:02:06.302 --> 00:02:09.270
+mas há uma interação
+nos parâmetros de cor
+
+00:02:09.303 --> 00:02:11.968
+que dificulta
+a coloração por valor.
+
+00:02:12.592 --> 00:02:15.831
+Com scatter, adicionar a terceira
+variável numérica pela cor
+
+00:02:15.864 --> 00:02:17.920
+é como configurar
+o parâmetro c,
+
+00:02:17.953 --> 00:02:21.617
+e as paletas de diferentes cores são
+configuradas pelo parâmetro cmap.
+
+00:02:21.650 --> 00:02:24.951
+Eu usarei a função colorbar
+para adicionar uma barra de cores
+
+00:02:24.984 --> 00:02:28.463
+e adicionei um parâmetro label
+para as unidades do mapa de cor.
+

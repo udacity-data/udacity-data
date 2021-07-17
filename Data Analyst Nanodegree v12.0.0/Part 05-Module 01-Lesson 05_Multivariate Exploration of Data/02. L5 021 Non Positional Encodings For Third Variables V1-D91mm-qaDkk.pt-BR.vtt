@@ -1,0 +1,147 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.781 --> 00:00:04.745
+CONCEITO 02: CODIFICAÇÕES
+NÃO POSICIONAIS PARA A 3ª VARIÁVEL
+
+00:00:05.141 --> 00:00:06.682
+Observe o gráfico de dispersão
+
+00:00:06.715 --> 00:00:10.253
+que mostra a relação entre os juros
+e a quantidade de empréstimos.
+
+00:00:10.286 --> 00:00:13.976
+Como mostramos que o empréstimo
+ou o pagamento mensal
+
+00:00:14.009 --> 00:00:15.985
+está relacionado
+com estas variáveis?
+
+00:00:16.018 --> 00:00:20.123
+Uma opção seria usar
+codificações diferentes nos pontos
+
+00:00:20.156 --> 00:00:22.479
+para indicar o valor
+de uma das variáveis
+
+00:00:22.512 --> 00:00:24.208
+em cada ponto.
+
+00:00:24.241 --> 00:00:27.688
+O tipo de codificação mais útil
+para a variável de adição
+
+00:00:27.721 --> 00:00:31.512
+dependerá de ela ser qualitativa
+ou quantitativa.
+
+00:00:31.545 --> 00:00:35.640
+Vejamos três codificações:
+a de formato, a de tamanho
+
+00:00:35.673 --> 00:00:37.800
+e a de cor.
+
+00:00:37.833 --> 00:00:41.244
+A codificação de formato é boa
+para variáveis categóricas.
+
+00:00:41.277 --> 00:00:43.664
+Como não existe
+uma ordem natural das formas,
+
+00:00:43.697 --> 00:00:47.447
+essa é uma boa escolha
+para o tipo de dado nominal.
+
+00:00:47.480 --> 00:00:52.452
+Aqui, a taxa de empréstimo
+é indicada por uma das três formas.
+
+00:00:52.485 --> 00:00:54.492
+Para uma certa quantidade
+de empréstimo,
+
+00:00:54.525 --> 00:00:59.924
+os juros da classe A tendem a ser
+menores do que os da classe B ou C.
+
+00:00:59.957 --> 00:01:04.381
+O tamanho é uma codificação usada
+para variáveis numéricas.
+
+00:01:04.414 --> 00:01:07.037
+Neste gráfico, vemos
+como o pagamento mensal
+
+00:01:07.070 --> 00:01:10.389
+deriva da quantidade de empréstimos
+e dos juros.
+
+00:01:10.422 --> 00:01:14.087
+O ponto maior indica
+maior pagamento.
+
+00:01:14.120 --> 00:01:15.693
+Ao usar o tamanho,
+
+00:01:15.726 --> 00:01:19.241
+é importante prestar atenção
+ao mapeamento do valor da variável
+
+00:01:19.274 --> 00:01:21.306
+para o tamanho de cada ponto.
+
+00:01:21.339 --> 00:01:25.761
+Por exemplo, estes pontos
+associam o raio ao valor.
+
+00:01:25.794 --> 00:01:28.088
+Porém, isso tem um efeito
+de distorção,
+
+00:01:28.121 --> 00:01:31.337
+pois é a área de cada ponto
+que se destaca.
+
+00:01:31.370 --> 00:01:35.041
+Um ponto com valor dobrado
+tem quatro vezes a área,
+
+00:01:35.074 --> 00:01:38.096
+ou seja, é uma representação
+desproporcional.
+
+00:01:38.129 --> 00:01:42.981
+É mais comum que a área seja
+associada diretamente ao valor.
+
+00:01:43.014 --> 00:01:47.212
+Às vezes, usamos funções diferentes
+para que os pontos fiquem legíveis,
+
+00:01:47.245 --> 00:01:51.094
+parecido com quando realizamos
+uma transformação de eixos.
+
+00:01:52.167 --> 00:01:56.142
+A terceira codificação mais comum
+é a de cor.
+
+00:01:56.175 --> 00:02:00.612
+Ela pode ser usada para variáveis
+qualitativas e quantitativas.
+
+00:02:00.645 --> 00:02:03.373
+Esse é um tópico
+que merece atenção
+
+00:02:03.406 --> 00:02:06.122
+e será abordado
+no próximo segmento da aula.
+
