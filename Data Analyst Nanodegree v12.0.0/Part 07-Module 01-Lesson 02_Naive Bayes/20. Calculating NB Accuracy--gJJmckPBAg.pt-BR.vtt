@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.100 --> 00:00:02.167
+Fantástico.
+Nós estamos quase terminando.
+
+00:00:02.201 --> 00:00:06.100
+Eu só pedirei mais uma coisa
+antes de terminarmos,
+
+00:00:06.134 --> 00:00:10.634
+que é avaliar o classificador
+para quantificar o desempenho
+
+00:00:10.668 --> 00:00:11.934
+ao classificar pontos.
+
+00:00:11.968 --> 00:00:16.133
+Seja uma pista rápida
+ou uma mais lenta.
+
+00:00:16.167 --> 00:00:18.834
+A métrica utilizada neste caso
+
+00:00:18.868 --> 00:00:22.434
+para decidir o desempenho
+do algoritmo é a precisão,
+
+00:00:22.468 --> 00:00:26.001
+que é a quantidade de pontos
+classificados corretamente
+
+00:00:26.035 --> 00:00:29.000
+dividido pelos pontos
+do conjunto de teste.
+
+00:00:29.034 --> 00:00:30.901
+No questionário,
+
+00:00:30.935 --> 00:00:35.834
+você dirá qual foi a precisão
+do classificador naive_bayes.
+
+00:00:35.868 --> 00:00:37.934
+Nós podemos fazer isso
+de duas maneiras,
+
+00:00:37.968 --> 00:00:43.534
+você pode usar
+as previsões feitas aqui
+
+00:00:44.734 --> 00:00:48.934
+e pode compará-las aos rótulos
+do conjunto de teste.
+
+00:00:48.968 --> 00:00:53.934
+Ou você pode voltar
+à documentação SKlearn
+
+00:00:53.968 --> 00:00:56.667
+para ver se existe
+alguma função
+
+00:00:56.701 --> 00:00:59.801
+que possa resolver
+isso para você.
+
+00:00:59.835 --> 00:01:04.234
+Você pode calcular a precisão
+elemento a elemento
+
+00:01:04.268 --> 00:01:06.701
+ou, se você quiser
+ser mais ousado,
+
+00:01:06.735 --> 00:01:08.767
+você pode conferir
+na documentação,
+
+00:01:08.801 --> 00:01:11.100
+talvez possa haver um código
+
+00:01:11.134 --> 00:01:14.067
+no SKlearn que você possa
+utilizar pra resolver isto.
+
+00:01:14.101 --> 00:01:16.767
+Está bem? A missão
+é basicamente
+
+00:01:17.667 --> 00:01:20.367
+fazer este cálculo,
+você mesmo ou não pelo SKlearn,
+
+00:01:20.401 --> 00:01:22.501
+e informar a precisão
+do classificador.
+

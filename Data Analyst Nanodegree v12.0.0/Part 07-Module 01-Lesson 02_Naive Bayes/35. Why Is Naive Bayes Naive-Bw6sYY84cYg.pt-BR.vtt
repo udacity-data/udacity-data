@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.410 --> 00:00:03.180
+E eu diria que a melhor resposta seria a ordem das palavras porque este
+
+00:00:03.180 --> 00:00:06.070
+produto não considera a ordem que as palavras ocorrem.
+
+00:00:06.070 --> 00:00:07.070
+Apesar de que no idioma inglês,
+
+00:00:07.070 --> 00:00:11.520
+posso dizer que se você reordenar nossas palavras aleatoriamente, nossas sentenças não farão sentido.
+
+00:00:11.520 --> 00:00:13.670
+Esta mensagem não presta atenção à ordem das palavras.
+
+00:00:13.670 --> 00:00:16.550
+Portanto, ele não entende realmente o texto, ele apenas examina
+
+00:00:16.550 --> 00:00:19.710
+as frequências das palavras como uma maneira de fazer a classificação.
+
+00:00:19.710 --> 00:00:21.300
+É por isso que ele é chamado Naive (ingênuo).
+
+00:00:22.310 --> 00:00:23.500
+Mas é suficientemente bom em muitos casos.
+

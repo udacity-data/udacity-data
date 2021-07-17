@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.740 --> 00:00:01.940
+Aqui está o que eu diria.
+
+00:00:01.940 --> 00:00:06.230
+O primeiro exemplo de reconhecimento da foto de alguém em um grupo
+
+00:00:06.230 --> 00:00:10.040
+de fotos marcadas é definitivamente uma classificação supervisionada.
+
+00:00:10.040 --> 00:00:13.200
+O Facebook faz isso o tempo todo ao reconhecer
+
+00:00:13.200 --> 00:00:16.140
+as fotos carregadas.
+
+00:00:16.140 --> 00:00:20.320
+Outro popular são os sistemas recomendadores, como Netflix e Pandora.
+
+00:00:20.320 --> 00:00:23.400
+Eles analisam o que acreditam que você já gosta, tentam entender
+
+00:00:23.400 --> 00:00:26.820
+as características desses filmes ou músicas e
+
+00:00:26.820 --> 00:00:30.700
+recomendam mais filmes ou músicas com características semelhantes.
+
+00:00:30.700 --> 00:00:34.280
+Fraude provavelmente não é um exemplo de classificação supervisionada,
+
+00:00:34.280 --> 00:00:37.910
+porque ainda não definimos o que é uma transação estranha.
+
+00:00:37.910 --> 00:00:41.160
+Não temos um exemplo do que isso possa significar.
+
+00:00:41.160 --> 00:00:43.320
+Há formas de fazer isso, mas esse seria um
+
+00:00:43.320 --> 00:00:46.130
+um exemplo de aprendizagem não supervisionada, sobre a
+
+00:00:46.130 --> 00:00:49.000
+qual falaremos posteriormente na aula.
+
+00:00:49.000 --> 00:00:52.620
+Outro exemplo de aprendizagem não supervisionada é o agrupamento.
+
+00:00:52.620 --> 00:00:55.880
+Neste exemplo, não sabemos quais são os tipos de alunos.
+
+00:00:55.880 --> 00:00:58.720
+Talvez não saibamos nem quantos tipos diferentes estamos procurando.
+
+00:00:58.720 --> 00:01:00.810
+Há formas de lidar com esse problema, mas esse não é um
+
+00:01:00.810 --> 00:01:04.560
+um exemplo no qual se tem um grande número de dados de treinamento
+
+00:01:04.560 --> 00:01:05.800
+nos quais já se sabe a resposta correta.
+

@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:02.340
+Bem-vindo ao primeiro miniprojeto.
+
+00:00:02.340 --> 00:00:04.470
+Ele é sobre o tópico Naive Bayes.
+
+00:00:04.470 --> 00:00:06.430
+Vamos pedir que você faça algo que eu acredito ser
+
+00:00:06.430 --> 00:00:09.050
+uma aplicação realmente interessante do aprendizado de máquina.
+
+00:00:09.050 --> 00:00:12.630
+É identificar quem é o autor de um trecho de texto.
+
+00:00:12.630 --> 00:00:15.400
+Portanto, como um pouco de plano de fundo, isso realmente foi publicado nos
+
+00:00:15.400 --> 00:00:16.950
+jornais há alguns anos.
+
+00:00:16.950 --> 00:00:20.820
+J. K. Rowling escreveu um livro sob o pseudônimo Robert Galbraith.
+
+00:00:20.820 --> 00:00:24.310
+E houve algum... algum aprendizado de máquina, algum trabalho forense de texto
+
+00:00:24.310 --> 00:00:27.960
+que foi feito, e puderam descobrir mesmo sem dizer que era de J.
+
+00:00:27.960 --> 00:00:30.860
+K. Rowling, o estilo da escrita e o
+
+00:00:30.860 --> 00:00:34.150
+uso do vocabulário eram distintos o bastante para poderem
+
+00:00:34.150 --> 00:00:36.230
+identificar quem o escreveu de qualquer maneira.
+
+00:00:36.230 --> 00:00:39.470
+Faremos algo como isso neste projeto, com a exceção de que iremos
+
+00:00:39.470 --> 00:00:41.660
+identificar autores de emails.
+
+00:00:41.660 --> 00:00:44.260
+Portanto temos vários emails e alguém de nome Chris e
+
+00:00:44.260 --> 00:00:45.710
+vários emails de alguém de nome Sara.
+
+00:00:45.710 --> 00:00:50.910
+E a pergunta é, usando Naive Bayes, você pode identificar quem é o autor de
+
+00:00:50.910 --> 00:00:53.120
+um novo email, um email que ainda não foi visto?
+
+00:00:53.120 --> 00:00:53.950
+Vamos começar.
+

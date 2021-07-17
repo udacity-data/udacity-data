@@ -1,0 +1,202 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.420 --> 00:00:04.330
+Certo. Então, agora, acessei a página de documentação do
+
+00:00:04.330 --> 00:00:05.385
+Gaussian Naive Bayes.
+
+00:00:05.385 --> 00:00:08.100
+sklearn.naive_bayes.GaussianNB.
+
+00:00:08.100 --> 00:00:11.450
+Esse era o algoritmo que eu pretendia descobrir.
+
+00:00:11.450 --> 00:00:15.650
+Encontrei a página de documentação do SK Learn.
+
+00:00:15.650 --> 00:00:18.410
+A primeira coisa que vejo aqui — aliás, isso é uma das coisas que
+
+00:00:18.410 --> 00:00:22.960
+adoro em relação à documentação do SK Learn — é que há muitos exemplos.
+
+00:00:22.960 --> 00:00:25.640
+Quando estava desenvolvendo o código para esta aula, uma das
+
+00:00:25.640 --> 00:00:28.550
+primeiras coisas que eu sempre fazia era procurar o código de exemplo
+
+00:00:28.550 --> 00:00:31.030
+e tentar executá-lo em meu interpretador Python para
+
+00:00:31.030 --> 00:00:32.549
+ver se funcionava.
+
+00:00:32.549 --> 00:00:36.110
+Quase que invariavelmente, funcionava sem alterações.
+
+00:00:36.110 --> 00:00:37.570
+Bem, aqui está algo bastante simples.
+
+00:00:37.570 --> 00:00:39.620
+Há apenas algumas linhas aqui que são realmente importantes.
+
+00:00:39.620 --> 00:00:41.110
+Vou indicá-las para você e,
+
+00:00:41.110 --> 00:00:45.640
+depois, mostrarei o código que realmente escrevi para o exemplo que acabamos de ver,
+
+00:00:45.640 --> 00:00:48.250
+e você começará a reconhecer algumas delas.
+
+00:00:48.250 --> 00:00:49.180
+Mas, primeiro, vou apresentá-las.
+
+00:00:49.180 --> 00:00:52.430
+A primeira linha realmente importante é esta aqui.
+
+00:00:53.550 --> 00:00:56.950
+Acima dela, vemos apenas a criação de alguns pontos de treinamento que podemos usar;
+
+00:00:56.950 --> 00:00:57.790
+nada tão importante.
+
+00:00:57.790 --> 00:01:01.790
+É aqui que começa a parte principal, com esta declaração import; se você já
+
+00:01:01.790 --> 00:01:04.540
+tiver programado no Python antes, estará familiarizado com as declarações import.
+
+00:01:04.540 --> 00:01:08.480
+Essa é a maneira de incorporar módulos externos no código que você
+
+00:01:08.480 --> 00:01:12.360
+está escrevendo, de modo que não precise sempre reimplementar tudo.
+
+00:01:12.360 --> 00:01:15.470
+Você pode usar o código que outra pessoa já escreveu.
+
+00:01:15.470 --> 00:01:19.380
+Então, dizemos que sklearn.naive_bayes importará GaussianNB.
+
+00:01:19.380 --> 00:01:20.350
+Muito bem.
+
+00:01:20.350 --> 00:01:23.020
+Em seguida, usaremos isso para
+
+00:01:23.020 --> 00:01:24.210
+criar um classificador.
+
+00:01:24.210 --> 00:01:27.040
+Portanto, o classificador é igual a GaussianNB.
+
+00:01:27.040 --> 00:01:28.790
+Se você esquecer a declaração import,
+
+00:01:28.790 --> 00:01:29.840
+se você esquecer esta linha por
+
+00:01:29.840 --> 00:01:32.480
+algum motivo, ela lançará um erro.
+
+00:01:32.480 --> 00:01:36.030
+Assim, se você receber algum tipo de erro indicando que essa função não
+
+00:01:36.030 --> 00:01:37.570
+foi reconhecida,
+
+00:01:37.570 --> 00:01:40.350
+provavelmente, o problema está na sua declaração import.
+
+00:01:40.350 --> 00:01:42.510
+Muito bem, criamos nosso classificador,
+
+00:01:42.510 --> 00:01:45.290
+Agora, o código está pronto para uso.
+
+00:01:45.290 --> 00:01:47.360
+Depois, precisamos ajustá-lo.
+
+00:01:48.550 --> 00:01:51.710
+Estávamos usando a palavra treinar de modo intercambiável com ajustar.
+
+00:01:51.710 --> 00:01:54.790
+Então, aqui é onde realmente fornecemos os dados de treinamento
+
+00:01:54.790 --> 00:01:57.070
+e ele reconhece os padrões.
+
+00:01:57.070 --> 00:02:00.030
+Então, temos o classificador que acabamos de criar.
+
+00:02:00.030 --> 00:02:03.870
+Estamos chamando a função fit nele. Depois, os dois argumentos que passamos para
+
+00:02:03.870 --> 00:02:10.000
+fit são x, que, neste caso, são as características, e y, que são os rótulos.
+
+00:02:10.000 --> 00:02:13.100
+Isso sempre acontecerá na classificação supervisionada.
+
+00:02:13.100 --> 00:02:14.740
+A função fit será chamada e, em seguida,
+
+00:02:14.740 --> 00:02:16.400
+haverá as características.
+
+00:02:16.400 --> 00:02:17.190
+E, depois, os rótulos.
+
+00:02:18.600 --> 00:02:22.060
+Por último, solicitamos ao classificador que
+
+00:02:22.060 --> 00:02:24.300
+acabamos de treinar algumas previsões.
+
+00:02:24.300 --> 00:02:25.470
+Então, damos a ele um novo ponto.
+
+00:02:25.470 --> 00:02:29.320
+Neste caso, o ponto é 0,8 negativo e 1 negativo.
+
+00:02:29.320 --> 00:02:32.880
+E perguntamos qual deve ser o rótulo para este ponto específico?
+
+00:02:32.880 --> 00:02:35.370
+A que classe ele pertence?
+
+00:02:35.370 --> 00:02:38.390
+Portanto, neste caso, ele diz que pertence a uma classe de número um.
+
+00:02:38.390 --> 00:02:42.480
+Ou você pode imaginar que, para outro ponto, pudesse ser a classe número dois.
+
+00:02:42.480 --> 00:02:47.600
+É claro que você já deve ter ajustado o classificador antes de
+
+00:02:47.600 --> 00:02:48.850
+solicitar uma previsão.
+
+00:02:48.850 --> 00:02:50.500
+Porque, quando ele está ajustando os dados, está,
+
+00:02:50.500 --> 00:02:51.590
+na verdade, reconhecendo os padrões.
+
+00:02:51.590 --> 00:02:55.140
+É aqui que ele está usando esses padrões para fazer uma previsão.
+
+00:02:55.140 --> 00:02:56.530
+Bem, é isso.
+
+00:02:56.530 --> 00:02:59.380
+Parece que, agora, você já sabe quase tudo
+
+00:02:59.380 --> 00:03:02.200
+para que possa colocar isso em funcionamento no primeiro exemplo que eu fiz.
+

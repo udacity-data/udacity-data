@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.390 --> 00:00:01.060
+Bem-vindo de volta!
+
+00:00:01.060 --> 00:00:04.734
+Você obteve um percentual de precisão de 88,4% no Naive Bayes.
+
+00:00:04.734 --> 00:00:05.460
+&gt;&gt; 88,4.
+
+00:00:05.460 --> 00:00:06.220
+Muito bom!
+
+00:00:06.220 --> 00:00:07.420
+&gt;&gt; Isso significa que o percentual
+
+00:00:07.420 --> 00:00:09.480
+de batidas do carro autoguiado foi de 11,6%?
+
+00:00:09.480 --> 00:00:12.710
+&gt;&gt; Sim, ele bate algumas vezes.
+
+00:00:12.710 --> 00:00:14.060
+Talvez não seja o carro ideal.
+
+00:00:14.060 --> 00:00:15.690
+&gt;&gt; Certo. &gt;&gt; Mas foi ótimo para este curso.
+
+00:00:15.690 --> 00:00:16.230
+&gt;&gt; É muito bom.
+
+00:00:16.230 --> 00:00:17.870
+Melhor do que fazermos suposições.
+
+00:00:17.870 --> 00:00:19.430
+Talvez você não tenha percebido,
+
+00:00:19.430 --> 00:00:21.870
+mas, naquele exemplo, você treinou e testou dois conjuntos de dados
+
+00:00:21.870 --> 00:00:23.790
+distintos.
+
+00:00:23.790 --> 00:00:27.450
+&gt;&gt; Isso é importante. No aprendizado de máquina, sempre treinamos e testamos
+
+00:00:27.450 --> 00:00:28.720
+diferentes dados.
+
+00:00:28.720 --> 00:00:31.730
+&gt;&gt; Se você não fizer isso, poderá sobreajustar os dados
+
+00:00:31.730 --> 00:00:32.299
+de treinamento.
+
+00:00:32.299 --> 00:00:35.890
+Pode pensar que sabe o que está ocorrendo, mas, de fato, não sabe tão bem assim.
+
+00:00:35.890 --> 00:00:38.308
+&gt;&gt; Isso mesmo. No aprendizado de máquina, você precisa, de certa forma,
+
+00:00:38.308 --> 00:00:40.668
+generalizar os novos dados que são diferentes.
+
+00:00:40.668 --> 00:00:43.280
+Eu memorizaria os dados,
+
+00:00:43.280 --> 00:00:46.540
+testando-os nos mesmos dados de treinamento, o que sempre retornará 100%.
+
+00:00:46.540 --> 00:00:49.210
+Mas não sei como generalizar os novos dados.
+
+00:00:49.210 --> 00:00:50.560
+&gt;&gt; Está certo. O que você deve fazer,
+
+00:00:50.560 --> 00:00:52.590
+e que sempre faremos neste curso,
+
+00:00:52.590 --> 00:00:55.940
+é economizar, digamos, 10% dos dados e usá-los como conjunto de testes.
+
+00:00:55.940 --> 00:00:58.540
+É isso que você usa para saber seu progresso em termos
+
+00:00:58.540 --> 00:01:00.740
+do aprendizado de padrões em seus dados.
+
+00:01:00.740 --> 00:01:04.739
+&gt;&gt; Quando você relatar os resultados para si mesmo e para seu chefe
+
+00:01:04.739 --> 00:01:08.400
+, ou para seu cliente, use o resultado testado; assim, você conseguirá
+
+00:01:08.400 --> 00:01:11.020
+compreender melhor o comportamento deles ao treiná-los.
+

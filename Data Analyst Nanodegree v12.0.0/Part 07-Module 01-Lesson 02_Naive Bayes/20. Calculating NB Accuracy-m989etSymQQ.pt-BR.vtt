@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.450 --> 00:00:02.130
+Muito bem. Isto foi o que eu fiz.
+
+00:00:02.130 --> 00:00:04.360
+Dei a você dois métodos diferentes para escolher,
+
+00:00:04.360 --> 00:00:09.770
+escrever seu próprio código para calcular a precisão ou usar o sklearn.
+
+00:00:09.770 --> 00:00:14.360
+O que escolhi foi usar o sklearn accuracy_score,
+
+00:00:14.360 --> 00:00:17.730
+que é o que você encontrará se pesquisar sklearn accuracy no Google.
+
+00:00:17.730 --> 00:00:21.620
+É apenas uma função que pega uma série de previsões,
+
+00:00:21.620 --> 00:00:23.570
+uma série de rótulos e depois analisa
+
+00:00:23.570 --> 00:00:26.120
+e faz a comparação elemento por elemento.
+
+00:00:26.120 --> 00:00:28.150
+E então teremos a precisão
+
+00:00:28.150 --> 00:00:30.800
+que o classificador tiver em seu conjunto de testes.
+
+00:00:30.800 --> 00:00:36.909
+Espero que o que você e eu obtivemos para a precisão seja cerca de 88,4%.
+
+00:00:36.909 --> 00:00:39.880
+Então, 88,4% dos pontos estão sendo rotulados corretamente
+
+00:00:39.880 --> 00:00:42.570
+pelo classificador quando usamos nosso conjunto de testes.
+

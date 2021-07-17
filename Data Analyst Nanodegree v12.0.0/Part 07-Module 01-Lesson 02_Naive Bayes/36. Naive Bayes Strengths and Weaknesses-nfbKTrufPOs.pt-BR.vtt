@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.170 --> 00:00:03.116
+Parabéns, você chegou ao fim do algoritmo de aprendizado
+
+00:00:03.116 --> 00:00:04.050
+Naive Bayes.
+
+00:00:04.050 --> 00:00:05.331
+Isso é impressionante.
+
+00:00:05.331 --> 00:00:08.460
+&gt;&gt; Um algoritmo a menos.
+
+00:00:08.460 --> 00:00:11.580
+Agora, começaremos uma lista do que você deve considerar
+
+00:00:11.580 --> 00:00:15.680
+ao escolher um algoritmo de classificação supervisionada.
+
+00:00:15.680 --> 00:00:18.910
+Dessa forma, você tem o básico para começar a escolher entre
+
+00:00:18.910 --> 00:00:21.140
+os diferente algoritmos sobre os quais falaremos.
+
+00:00:21.140 --> 00:00:24.340
+Há algumas coisas que o Naive Bayes faz de forma elegante.
+
+00:00:24.340 --> 00:00:26.660
+&gt;&gt; Ele é muito fácil de ser implementado.
+
+00:00:26.660 --> 00:00:32.037
+Estes foram com grandes espaços de recursos, entre 20.000 e
+
+00:00:32.037 --> 00:00:33.940
+200.000 palavras em inglês.
+
+00:00:33.940 --> 00:00:36.680
+Ele é bem simples de ser executado, muito eficiente.
+
+00:00:36.680 --> 00:00:39.530
+&gt;&gt; Há algumas coisas que o Naive Bayes não faz tão bem, com as quais você precisa
+
+00:00:39.530 --> 00:00:40.700
+ter cuidado.
+
+00:00:40.700 --> 00:00:42.130
+&gt;&gt; Ele pode falhar.
+
+00:00:42.130 --> 00:00:43.420
+Ele falha de maneira engraçada.
+
+00:00:43.420 --> 00:00:47.440
+Historicamente, quando o Google surgiu, as pessoas procuraram por
+
+00:00:47.440 --> 00:00:51.350
+Chicago Bulls, que é um time composto por duas palavras, Chicago Bulls.
+
+00:00:52.494 --> 00:00:56.476
+Várias imagens de búfalos, animais e cidades como Chicago eram exibidas.
+
+00:00:56.476 --> 00:00:58.280
+Mas Chicago Bulls é algo sucintamente diferente.
+
+00:00:58.280 --> 00:01:00.910
+Frases com várias palavras e
+
+00:01:00.910 --> 00:01:03.960
+significados distintos, como Naïve Bayes.
+
+00:01:03.960 --> 00:01:07.130
+&gt;&gt; Dependendo do problema que você está tentando resolver e
+
+00:01:07.130 --> 00:01:08.790
+o conjunto de dados no qual tem que resolvê-lo,
+
+00:01:08.790 --> 00:01:12.140
+não pense em algoritmos de classificação supervisionada como buracos negros.
+
+00:01:12.140 --> 00:01:15.550
+Pense neles em termos do entendimento teórico de como o
+
+00:01:15.550 --> 00:01:18.720
+algoritmo funciona e se isso está certo para a pergunta
+
+00:01:18.720 --> 00:01:19.670
+que está tentando responder.
+
+00:01:19.670 --> 00:01:20.800
+&gt;&gt; E você deve testá-lo, certo?
+
+00:01:20.800 --> 00:01:22.680
+Falamos sobre conjunto de testes e de treinamentos.
+
+00:01:22.680 --> 00:01:25.230
+Você pode verificar o desempenho no conjunto de testes e ver como funciona.
+
+00:01:25.230 --> 00:01:27.080
+&gt;&gt; Se você não gostar, ele pode ser o algoritmo errado ou
+
+00:01:27.080 --> 00:01:27.890
+os parâmetros errados.
+
+00:01:27.890 --> 00:01:28.390
+&gt;&gt; Exatamente.
+

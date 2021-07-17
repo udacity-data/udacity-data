@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.370 --> 00:00:04.040
+Muito bem, vamos fazer um teste sobre exemplos de classificação supervisionada.
+
+00:00:04.040 --> 00:00:07.630
+Aqui estão alguns exemplos de problemas e você deverá indicar quais parecem ser
+
+00:00:07.630 --> 00:00:11.260
+classificações supervisionadas e qual a ferramenta adequada para tentar resolvê-los.
+
+00:00:11.260 --> 00:00:15.010
+Então, o primeiro é usar um álbum de fotografias marcadas e tentar
+
+00:00:15.010 --> 00:00:17.160
+reconhecer alguém em uma foto.
+
+00:00:17.160 --> 00:00:20.540
+Ou analisar dados bancários em busca de transações estranhas e,
+
+00:00:20.540 --> 00:00:23.900
+quando encontrar algo esquisito, sinalizar isso como possível fraude.
+
+00:00:23.900 --> 00:00:25.000
+O próximo é,
+
+00:00:25.000 --> 00:00:28.710
+de acordo com as escolhas musicais de uma pessoa e os recursos da música de que ela gosta,
+
+00:00:28.710 --> 00:00:33.470
+dizer qual é o ritmo ou o gênero, recomendar uma nova música que ela possa gostar.
+
+00:00:33.470 --> 00:00:37.300
+E o último é agrupar alunos da Udacity em diferentes tipos com base em seus
+
+00:00:37.300 --> 00:00:39.020
+estilos de aprendizado.
+
+00:00:39.020 --> 00:00:42.480
+Agora, faça uma marca ao lado das opções que você acha que são exemplos de
+
+00:00:42.480 --> 00:00:44.320
+problemas de classificação supervisionada.
+

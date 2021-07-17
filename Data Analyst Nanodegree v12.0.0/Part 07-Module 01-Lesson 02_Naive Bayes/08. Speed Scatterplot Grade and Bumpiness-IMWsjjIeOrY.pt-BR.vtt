@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:03.310
+Vamos falar agora sobre algo chamado gráficos de dispersão.
+
+00:00:03.310 --> 00:00:05.250
+E vou usar o exemplo atual.
+
+00:00:05.250 --> 00:00:10.136
+Quando dirigimos nosso carro tivemos dias em que o terreno era completamente plano,
+
+00:00:10.136 --> 00:00:12.120
+dirigimos muito rápido.
+
+00:00:13.440 --> 00:00:17.870
+Algumas vezes encontramos um pouco de irregularidade ou muita irregularidade.
+
+00:00:17.870 --> 00:00:20.500
+O que nos força a reduzir a velocidade.
+
+00:00:20.500 --> 00:00:26.420
+Portanto, uma maneira na qual nosso terreno variou foi o nível de irregularidade.
+
+00:00:26.420 --> 00:00:29.220
+Que podia ir de suave a muito ruim.
+
+00:00:30.900 --> 00:00:35.450
+A segunda dimensão em que nosso terreno variou está relacionada à inclinação.
+
+00:00:35.450 --> 00:00:36.880
+Podia ser plano.
+
+00:00:36.880 --> 00:00:39.940
+Ou ter diferentes níveis de inclinação.
+
+00:00:39.940 --> 00:00:43.530
+Obviamente, estou exagerando um pouco aqui.
+
+00:00:43.530 --> 00:00:45.710
+Portanto, ele vai de plano para muito íngreme.
+
+00:00:45.710 --> 00:00:47.930
+E, mais uma vez, quanto mais íngreme, dirigimos mais lentamente.
+
+00:00:49.170 --> 00:00:51.900
+E, essa coisas podiam ocorrer novamente,
+
+00:00:51.900 --> 00:00:54.390
+conforme mostrado nestes gráficos de velocidade à direita.
+
+00:00:54.390 --> 00:00:58.430
+O que eu quero que você faça é mapear estes exemplos de terrenos aqui de,
+
+00:00:58.430 --> 00:01:05.830
+digamos, uma estrada plana e suave em nosso diagrama aqui.
+
+00:01:05.830 --> 00:01:09.890
+Eu forneço nove pontos possíveis que correspondem a
+
+00:01:09.890 --> 00:01:13.780
+todas as combinações dos três níveis de irregularidade que encontramos.
+
+00:01:13.780 --> 00:01:15.850
+E os três níveis de inclinação.
+
+00:01:15.850 --> 00:01:22.550
+E quando eu peço a você para utilizar um conjunto de carros, como este, e definir
+
+00:01:22.550 --> 00:01:27.030
+o correto dos itens principais que melhor representam a situação aqui.
+

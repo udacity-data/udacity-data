@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.350 --> 00:00:04.820
+O que queremos dizer é que temos uma situação na qual prior
+
+00:00:04.820 --> 00:00:09.970
+testa determinada sensibilidade e especificidade.
+
+00:00:09.970 --> 00:00:15.120
+Ao receber, por exemplo, um resultado de teste positivo, você multiplica o prior
+
+00:00:15.120 --> 00:00:18.640
+pela probabilidade do resultado de teste
+
+00:00:18.640 --> 00:00:24.240
+considerando C e pela probabilidade do resultado de teste sem considerar C.
+
+00:00:24.240 --> 00:00:28.470
+Este é seu branch considerando que você tem câncer.
+
+00:00:28.470 --> 00:00:31.740
+E este é seu branch considerando que você não tem câncer.
+
+00:00:31.740 --> 00:00:35.610
+Quando você terminar, chegará a um número que combina a hipótese de
+
+00:00:35.610 --> 00:00:37.580
+câncer com o resultado do teste,
+
+00:00:37.580 --> 00:00:41.380
+tanto para a hipótese de câncer quanto para a hipótese de não câncer.
+
+00:00:42.950 --> 00:00:45.680
+Agora você os soma.
+
+00:00:45.680 --> 00:00:49.580
+E o resultado não chega a 1.
+
+00:00:49.580 --> 00:00:51.080
+Você obtém determinada quantidade,
+
+00:00:51.080 --> 00:00:55.240
+que é a probabilidade total de o teste ser o que é.
+
+00:00:55.240 --> 00:00:56.580
+Neste caso, positivo.
+
+00:00:56.580 --> 00:00:59.185
+Tudo o que você faz a seguir é dividir ou
+
+00:00:59.185 --> 00:01:04.160
+normalizar isto por esta soma.
+
+00:01:04.160 --> 00:01:06.260
+E o mesmo se aplica ao lado direito.
+
+00:01:06.260 --> 00:01:08.030
+O divisor é o mesmo
+
+00:01:08.030 --> 00:01:12.990
+para os dois casos, porque essa é sua variação de câncer e não câncer.
+
+00:01:12.990 --> 00:01:15.325
+Mas esse cara não depende mais da variável câncer.
+
+00:01:15.325 --> 00:01:19.950
+O que você obtém agora é a probabilidade posterior desejada, e
+
+00:01:19.950 --> 00:01:23.720
+ela será somada a 1 se você tiver feito tudo certo, como mostrado aqui.
+
+00:01:23.720 --> 00:01:25.510
+Este é seu algoritmo para o teorema de Bayes.
+

@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.320 --> 00:00:03.945
+Vou só explicar a você porque isto é chamado Naive Bayes.
+
+00:00:03.945 --> 00:00:07.140
+O que fizemos foi dizer que há conceitos desconhecidos.
+
+00:00:07.140 --> 00:00:08.470
+Estes são nossos rótulos de destino.
+
+00:00:08.470 --> 00:00:11.210
+Vamos chamá-los de rótulo A e rótulo B.
+
+00:00:12.330 --> 00:00:14.160
+E você não os vê.
+
+00:00:14.160 --> 00:00:14.660
+Eles estão ocultos.
+
+00:00:15.840 --> 00:00:18.710
+Como sempre é o caso na aprendizagem supervisionada.
+
+00:00:18.710 --> 00:00:21.110
+E o que você verá no lugar.
+
+00:00:21.110 --> 00:00:22.820
+Acho que estas coisas servem.
+
+00:00:22.820 --> 00:00:24.890
+Como as palavras que usam.
+
+00:00:24.890 --> 00:00:26.960
+Se eles as usarem com exatamente a mesma probabilidade, você
+
+00:00:26.960 --> 00:00:28.310
+nunca poderá descobrir o que ele é.
+
+00:00:28.310 --> 00:00:32.384
+Se as usarem com diferentes probabilidades, e eles podem usar uma delas ou
+
+00:00:32.384 --> 00:00:33.814
+uma centena ou um mil.
+
+00:00:33.814 --> 00:00:38.224
+Mas cada palavra que você vê, como esta aqui, fornece
+
+00:00:38.224 --> 00:00:42.910
+evidência de se foi a pessoa A ou a pessoa B.
+
+00:00:42.910 --> 00:00:47.410
+E o que você faz é, você apenas multiplica todas as evidências de cada palavra que vê.
+
+00:00:47.410 --> 00:00:50.230
+E este é um produto grande.
+
+00:00:50.230 --> 00:00:53.670
+Você faz isso para a pessoa A e para a pessoa B.
+
+00:00:53.670 --> 00:00:57.460
+E você multiplica previamente e quando este produto é retornado,
+
+00:00:57.460 --> 00:01:02.620
+ele fornece a taxa de se você acredita que é a pessoa A ou a pessoa B.
+
+00:01:02.620 --> 00:01:04.300
+Isso é chamado Naive Bayes.
+
+00:01:04.300 --> 00:01:10.050
+Ele permite que você identifique a partir de uma origem de texto se este rótulo é mais provável
+
+00:01:10.050 --> 00:01:11.070
+ou se este rótulo é mais provável.
+
+00:01:11.070 --> 00:01:15.060
+E você pode fazer isso com pessoas, com origens de notícias, você pode
+
+00:01:15.060 --> 00:01:19.480
+perguntar se o texto foi escrito por Shakespeare ou por outra pessoa.
+
+00:01:20.640 --> 00:01:25.450
+É uma ferramenta muito poderosa que é amplamente usada em todo o aprendizado de máquina.
+
+00:01:26.480 --> 00:01:28.050
+E a razão de ela ser chamada Naive
+
+00:01:29.600 --> 00:01:35.200
+é porque ela ignora uma coisa, e você pode me dizer qual é essa coisa?
+
+00:01:35.200 --> 00:01:36.730
+Todos os indivíduos com palavras na mensagem,
+
+00:01:37.990 --> 00:01:40.700
+a ordem de suas palavras dentro de uma mensagem
+
+00:01:40.700 --> 00:01:42.600
+ou o comprimento da mensagem.
+
+00:01:42.600 --> 00:01:44.270
+Qual destas opções está sendo simplesmente ignorada aqui?
+

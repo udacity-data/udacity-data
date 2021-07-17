@@ -1,0 +1,203 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.250 --> 00:00:03.070
+Olá! Estamos na Google em um carro autônomo.
+
+00:00:03.070 --> 00:00:03.570
+Estamos dentro dele.
+
+00:00:03.570 --> 00:00:05.040
+Ele está me conduzindo.
+
+00:00:05.040 --> 00:00:07.070
+E faz tudo sozinho.
+
+00:00:07.070 --> 00:00:09.260
+&gt;&gt; E eu estou aqui como passageira.
+
+00:00:09.260 --> 00:00:11.670
+Espero que o Sebastian tenha treinado bem,
+
+00:00:11.670 --> 00:00:13.540
+pois ele não está dirigindo agora, e eu...
+
+00:00:13.540 --> 00:00:15.150
+&gt;&gt; Não estou dirigindo. O carro dirige melhor do que eu.
+
+00:00:15.150 --> 00:00:16.149
+&gt;&gt; Estou à mercê deste carro.
+
+00:00:16.149 --> 00:00:17.830
+Concordo que ele dirige melhor do que eu.
+
+00:00:17.830 --> 00:00:19.570
+&gt;&gt; Afinal, por que estamos falando sobre carros autônomos?
+
+00:00:19.570 --> 00:00:20.940
+&gt;&gt; Por que estamos falando sobre carros autônomos?
+
+00:00:20.940 --> 00:00:23.380
+Começaremos falando sobre a classificação supervisionada, e
+
+00:00:23.380 --> 00:00:26.060
+os carros autônomos são um dos desafios na classificação supervisionada.
+
+00:00:26.060 --> 00:00:27.020
+&gt;&gt; O que significa supervisionada?
+
+00:00:27.020 --> 00:00:29.170
+&gt;&gt; Supervisionada significa que você tem vários exemplos.
+
+00:00:29.170 --> 00:00:32.150
+E de, certa forma, você sabe a resposta certa nesses exemplos.
+
+00:00:32.150 --> 00:00:35.140
+Sei que você tem um exemplo disso referente a carros autônomos.
+
+00:00:35.140 --> 00:00:37.710
+&gt;&gt; Sim, nós treinamos o carro e
+
+00:00:37.710 --> 00:00:39.350
+mostramos a ele qual é o comportamento certo.
+
+00:00:39.350 --> 00:00:42.915
+Quando participamos do DARPA Grand Challenge, 
+saíamos com o carro para dar uma volta,
+
+00:00:42.915 --> 00:00:46.490
+e ele observava atentamente como nós dirigíamos e reproduzia nosso comportamento.
+
+00:00:46.490 --> 00:00:49.360
+&gt;&gt; Na verdade, é assim que aprendemos a dirigir, não é mesmo?
+
+00:00:49.360 --> 00:00:51.387
+&gt;&gt; Acredito que sim. Quando eu era criança, observava meus pais dirigirem.
+
+00:00:51.387 --> 00:00:53.101
+Eles não dirigiam tão bem, mas
+
+00:00:53.101 --> 00:00:55.190
+eu assimilei muito do que eles faziam.
+
+00:00:55.190 --> 00:00:56.410
+&gt;&gt; Sim, podemos dizer
+
+00:00:56.410 --> 00:00:58.560
+que aprendemos a dirigir observando vários exemplos.
+
+00:00:58.560 --> 00:01:00.580
+É isso que o aprendizado de máquina permite que os computadores façam.
+
+00:01:00.580 --> 00:01:03.110
+Você fornece vários exemplos, e eles tentam descobrir o que está acontecendo.
+
+00:01:03.110 --> 00:01:04.190
+É isso que aprenderemos agora.
+
+00:01:04.190 --> 00:01:04.780
+&gt;&gt; Isso mesmo.
+
+00:01:04.780 --> 00:01:06.480
+Nesta unidade, você aprenderá sobre
+
+00:01:06.480 --> 00:01:08.844
+aprendizado de máquina, da mesma forma que programamos etapas para dirigir um carro.
+
+00:01:08.844 --> 00:01:10.720
+Você irá programar dados e
+
+00:01:10.720 --> 00:01:15.450
+testar se consegue fazer com que um carro ande rápido e devagar no momento certo.
+
+00:01:15.450 --> 00:01:17.740
+Usando a aprendizagem supervisionada do aprendizado de máquina.
+
+00:01:17.740 --> 00:01:18.280
+&gt;&gt; Isso mesmo. Iremos
+
+00:01:18.280 --> 00:01:20.940
+abordar um problema de classificação de terreno bem interessante
+
+00:01:20.940 --> 00:01:22.460
+que foi importante para Stanley.
+
+00:01:22.460 --> 00:01:23.420
+Gostaria de falar sobre isso?
+
+00:01:23.420 --> 00:01:26.400
+&gt;&gt; No caso de Stanley, eu estava dirigindo no deserto e
+
+00:01:26.400 --> 00:01:28.000
+formam-se sulcos no terreno do deserto.
+
+00:01:28.000 --> 00:01:29.340
+Pode ser extremamente perigoso.
+
+00:01:29.340 --> 00:01:32.230
+Mas, se você dirigir muito rápido, corre o risco de capotar
+
+00:01:32.230 --> 00:01:33.420
+e se machucar.
+
+00:01:33.420 --> 00:01:36.680
+Treinamos o carro para baixar a velocidade
+
+00:01:36.680 --> 00:01:37.440
+na hora certa.
+
+00:01:37.440 --> 00:01:39.320
+Não criamos regras para isso.
+
+00:01:39.320 --> 00:01:41.790
+Procuramos demonstrar para o carro como nós dirigimos.
+
+00:01:41.790 --> 00:01:43.140
+Assim ele poderá nos copiar.
+
+00:01:43.140 --> 00:01:44.830
+&gt;&gt; Quantos quilômetros percorreram para conseguir treiná-lo?
+
+00:01:44.830 --> 00:01:45.970
+&gt;&gt; Milhares de quilômetros.
+
+00:01:45.970 --> 00:01:48.220
+Foram muitos quilômetros percorridos no deserto.
+
+00:01:48.220 --> 00:01:50.010
+&gt;&gt; Uau! &gt;&gt; E levou algum tempo para ensinar...
+
+00:01:50.010 --> 00:01:51.680
+bem. &gt;&gt; Pobres alunos de graduação.
+
+00:01:51.680 --> 00:01:52.410
+Posso imaginar.
+
+00:01:52.410 --> 00:01:55.430
+&gt;&gt; Eu era o cara que trazia pizza para todos, mas curtimos muito
+
+00:01:55.430 --> 00:01:58.420
+porque não havia emails. Só podíamos contar conosco e com o software.
+
+00:01:58.420 --> 00:02:01.240
+E toda vez que o software indicava um problema, era óbvio...
+
+00:02:01.240 --> 00:02:02.340
+Que o carro nos puniria por ele.
+
+00:02:02.340 --> 00:02:03.020
+&gt;&gt; Que ótimo!
+
+00:02:03.020 --> 00:02:05.205
+Acho que podemos começar a lição agora.
+
+00:02:05.205 --> 00:02:08.008
+Vamos testar alguns problemas de classificação supervisionada diferentes.
+
+00:02:08.008 --> 00:02:10.639
+&gt;&gt; Essa lição aborda a aprendizagem supervisionada. Vamos começar!
+
+00:02:10.639 --> 00:02:11.140
+&gt;&gt; Ótimo.
+

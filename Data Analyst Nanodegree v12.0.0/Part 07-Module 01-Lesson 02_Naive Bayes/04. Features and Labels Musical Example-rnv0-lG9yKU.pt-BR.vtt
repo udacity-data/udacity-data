@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.570 --> 00:00:03.719
+Vamos falar agora sobre recursos e rótulos.
+
+00:00:03.719 --> 00:00:06.640
+Esta é Katie, que usarei como exemplo.
+
+00:00:06.640 --> 00:00:08.930
+Note meu dom artístico para retratar Katie.
+
+00:00:08.930 --> 00:00:11.520
+Katie adora ouvir música.
+
+00:00:11.520 --> 00:00:15.990
+Pode parecer clichê, mas uma de suas canções favoritas é Let It Go.
+
+00:00:15.990 --> 00:00:18.588
+Ela passa o dia todo cantando essa música.
+
+00:00:18.588 --> 00:00:21.454
+&gt;&gt; Não posso suportar mais.
+
+00:00:21.454 --> 00:00:23.802
+&gt;&gt; [LAUGH] Certo.
+
+00:00:23.802 --> 00:00:28.880
+Não estamos falando sobre aulas de canto, mas sim sobre aprendizado de máquina.
+
+00:00:28.880 --> 00:00:33.450
+No aprendizado de máquina, temos recursos de entrada e
+
+00:00:33.450 --> 00:00:35.120
+tentamos gerar rótulos.
+
+00:00:35.120 --> 00:00:36.617
+Vamos entender melhor isso.
+
+00:00:36.617 --> 00:00:37.721
+[MUSIC]
+
+00:00:37.721 --> 00:00:42.830
+Esta música não chega aos ouvidos dela como música bruta.
+
+00:00:42.830 --> 00:00:44.010
+Só um instante, Katie.
+
+00:00:44.010 --> 00:00:44.780
+Certo.
+
+00:00:44.780 --> 00:00:48.050
+Extraímos o que chamamos de recursos.
+
+00:00:48.050 --> 00:00:51.930
+Pode ser a intensidade, o ritmo da música ou
+
+00:00:51.930 --> 00:00:55.200
+algo como estilo, ou talvez o gênero da voz.
+
+00:00:55.200 --> 00:00:58.830
+E o cérebro de Katie processa isso em uma destas duas categorias:
+
+00:00:58.830 --> 00:01:01.660
+gosto e não gosto.
+
+00:01:01.660 --> 00:01:04.160
+É claro que simplificamos demais o cérebro de Katie, mas,
+
+00:01:04.160 --> 00:01:06.440
+por enquanto, vamos aceitar isso como real
+

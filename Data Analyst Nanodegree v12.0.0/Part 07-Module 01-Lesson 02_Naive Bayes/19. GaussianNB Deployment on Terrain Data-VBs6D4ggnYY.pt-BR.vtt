@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.250 --> 00:00:02.990
+Vejamos o código que usei para criar o exemplo
+
+00:00:02.990 --> 00:00:05.710
+anterior. Você copiará este código
+
+00:00:05.710 --> 00:00:09.000
+no teste para poder verificar todos os detalhes.
+
+00:00:09.000 --> 00:00:11.790
+A parte destacada na tela corresponde ao código que é importante.
+
+00:00:11.790 --> 00:00:16.120
+Espero que isso seja parecido com o que acabou de ver no exemplo.
+
+00:00:16.120 --> 00:00:18.860
+Até aqui, carreguei meus dados de treinamento
+
+00:00:18.860 --> 00:00:22.550
+e fiz algumas visualizações dele.
+
+00:00:22.550 --> 00:00:24.090
+Vamos ignorar isso por enquanto.
+
+00:00:24.090 --> 00:00:28.300
+Mas, se estiver interessado, poderá ver o código no teste.
+
+00:00:28.300 --> 00:00:31.490
+Como disse antes, estas são as quatro linhas de fato importantes.
+
+00:00:31.490 --> 00:00:35.680
+Esta é a declaração import que você acabou de ver no exemplo.
+
+00:00:35.680 --> 00:00:37.540
+Depois, criamos o classificador.
+
+00:00:37.540 --> 00:00:43.530
+Vamos ajustá-lo, com os recursos de treinamento e os rótulos de treinamento.
+
+00:00:43.530 --> 00:00:47.280
+Por último, criamos um vetor de previsões,
+
+00:00:47.280 --> 00:00:52.700
+chamado pred, usando a função de previsão em nosso classificador treinado.
+
+00:00:53.980 --> 00:00:55.790
+Para fazer isso, passamos os recursos.
+

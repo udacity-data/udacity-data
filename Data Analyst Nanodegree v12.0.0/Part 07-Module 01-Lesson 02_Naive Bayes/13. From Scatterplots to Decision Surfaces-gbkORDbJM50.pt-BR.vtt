@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.360 --> 00:00:02.930
+O que nosso algoritmo de aprendizado de máquina faz
+
+00:00:02.930 --> 00:00:07.070
+é definir a chamada superfície de decisão.
+
+00:00:07.070 --> 00:00:10.500
+Ele costuma ficar em algum lugar entre duas classes diferentes,
+
+00:00:10.500 --> 00:00:12.280
+como este aqui.
+
+00:00:12.280 --> 00:00:18.070
+E, de um lado, ele preverá cruz vermelha para todos os pontos de dados possíveis.
+
+00:00:18.070 --> 00:00:21.300
+Já do outro lado, ele prevê o conceito oposto.
+
+00:00:21.300 --> 00:00:23.620
+Com a superfície de decisão aqui,
+
+00:00:23.620 --> 00:00:29.210
+não é fácil dizer qual seria o rótulo para o ponto de dados aqui.
+
+00:00:29.210 --> 00:00:31.840
+Novamente, dou duas opções: cruz vermelha ou círculo azul.
+

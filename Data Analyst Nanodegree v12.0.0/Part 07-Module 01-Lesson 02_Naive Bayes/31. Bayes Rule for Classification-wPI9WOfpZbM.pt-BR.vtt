@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.270 --> 00:00:02.510
+É ótimo que você aprenda sobre o teorema de Bayes.
+
+00:00:02.510 --> 00:00:07.470
+E uma das coisas em que você usa bastante o teorema de Bayes é no aprendizado de documentos,
+
+00:00:07.470 --> 00:00:09.760
+ou aprendizado de texto.
+
+00:00:09.760 --> 00:00:13.760
+Os métodos sobre os quais falarei geralmente são chamados de Naive Bayes.
+
+00:00:13.760 --> 00:00:15.650
+Na verdade, isso é um trocadilho;
+
+00:00:15.650 --> 00:00:19.330
+não é para ser ingênuo, não no próprio teorema de Bayes.
+
+00:00:19.330 --> 00:00:20.030
+Mas esse é nome.
+
+00:00:20.030 --> 00:00:24.295
+Certo. Você praticará isso posteriormente em nossos exames de prática usando
+
+00:00:24.295 --> 00:00:26.230
+conjuntos de dados de emails da Enron.
+
+00:00:26.230 --> 00:00:27.920
+Mas darei a você seus pontos principais.
+
+00:00:27.920 --> 00:00:32.619
+Suponha que temos duas pessoas, uma chamada Chris e outra chamada Sara.
+
+00:00:32.619 --> 00:00:35.310
+Ambos escrevem muitos emails e, para
+
+00:00:35.310 --> 00:00:40.180
+simplificar, irei supor que esses emails contêm apenas três palavras, certo?
+
+00:00:41.190 --> 00:00:46.190
+Eles contêm as palavras love, deal e life.
+
+00:00:46.190 --> 00:00:48.120
+O mesmo acontece com Sara.
+
+00:00:48.120 --> 00:00:50.600
+Obviamente que as pessoas usam mais de três palavras.
+
+00:00:50.600 --> 00:00:54.160
+Mas esta área é um pouco pequena para 30.000 palavras.
+
+00:00:54.160 --> 00:00:55.760
+A diferença entre essas duas pessoas, Chris e
+
+00:00:55.760 --> 00:00:58.760
+Sara, está na frequência com que usam essas palavras.
+
+00:00:58.760 --> 00:01:02.730
+Apenas para simplificar, digamos que Chris adora falar sobre negócios.
+
+00:01:02.730 --> 00:01:07.410
+Então, 80% dessas palavras, ou 0,8, são deal, e ele fala um pouco
+
+00:01:07.410 --> 00:01:09.730
+sobre life e love, com uma probabilidade de 0,1.
+
+00:01:09.730 --> 00:01:13.890
+Portanto, se Chris usar essas palavras em um email, 80% das vezes ele usará a palavra
+
+00:01:13.890 --> 00:01:17.070
+deal e 10% a palavras love ou life.
+
+00:01:17.070 --> 00:01:22.390
+Sara fala mais sobre amor, um pouco sobre negócios, 0,2, e sobre vida, 0,3.
+
+00:01:22.390 --> 00:01:25.300
+Novamente, este é um exemplo simplificado.
+
+00:01:25.300 --> 00:01:28.280
+O que o Naive Bayes permite fazer é determinar, com base em
+
+00:01:28.280 --> 00:01:32.260
+um email aleatório, quem é a pessoa provável que enviou o email.
+
+00:01:32.260 --> 00:01:35.970
+Vamos imaginar um email assim: love life, e
+
+00:01:35.970 --> 00:01:38.390
+você não sabe quem o enviou, mas gostaria de descobrir.
+
+00:01:38.390 --> 00:01:41.426
+Você pode fazer isso com base no teorema de Bayes;
+
+00:01:41.426 --> 00:01:48.280
+e suponha que, a princípio, haja 50% de probabilidade para Chris ou para Sara.
+
+00:01:48.280 --> 00:01:50.550
+Então, dizemos que P de Chris é igual a 0,5.
+
+00:01:50.550 --> 00:01:52.270
+Isso significa que a probabilidade anterior de
+
+00:01:52.270 --> 00:01:55.470
+ser Chris é de 50% e isso imediatamente significa que,
+
+00:01:55.470 --> 00:02:00.960
+como só pode ser um dos dois, a probabilidade de Sara também é de 0,5.
+
+00:02:00.960 --> 00:02:03.980
+Se você analisar isso intuitivamente, que tem a maior probabilidade de
+
+00:02:03.980 --> 00:02:05.110
+ter escrito o email?
+
+00:02:05.110 --> 00:02:07.650
+Chris ou Sara?
+
+00:02:07.650 --> 00:02:08.490
+Apenas marque uma caixa.
+

@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.320 --> 00:00:03.170
+E é assim que isso se parece para uma pessoa de aprendizado de máquina.
+
+00:00:03.170 --> 00:00:05.460
+Vamos fazer o que chamamos de gráfico de dispersão.
+
+00:00:05.460 --> 00:00:07.840
+Para simplificar, usarei apenas dois recursos.
+
+00:00:07.840 --> 00:00:10.370
+Estilo e intensidade.
+
+00:00:10.370 --> 00:00:14.570
+O estilo pode ir de relaxado até rápido e a intensidade, por
+
+00:00:14.570 --> 00:00:17.950
+enquanto, será leve ou alta.
+
+00:00:17.950 --> 00:00:22.410
+Assim, a música Let it Go está no meio do estilo, mas é bastante intensa.
+
+00:00:22.410 --> 00:00:25.230
+Portanto, seria um ponto de dados aqui.
+
+00:00:25.230 --> 00:00:28.230
+Para aquelas músicas, você pode extrair esses recursos.
+
+00:00:28.230 --> 00:00:31.630
+Cada música se torna um ponto neste diagrama
+
+00:00:31.630 --> 00:00:34.160
+bidimensional de estilo e intensidade.
+
+00:00:34.160 --> 00:00:36.400
+Esta música é lenta, mas é muito intensa.
+
+00:00:36.400 --> 00:00:38.990
+E esta é uma música lenta que também é muito leve.
+
+00:00:38.990 --> 00:00:42.100
+Assim, estou adicionando aqui pontos de dados de várias músicas.
+
+00:00:42.100 --> 00:00:46.060
+Agora, suponha que os verdes são aqueles que a Katie gosta.
+
+00:00:46.060 --> 00:00:49.780
+Enquanto estes vermelhos são aqueles que ela não gosta.
+
+00:00:49.780 --> 00:00:52.310
+Suponha que encontramos uma nova música com recursos
+
+00:00:52.310 --> 00:00:55.422
+localizados bem aqui no espectro.
+
+00:00:55.422 --> 00:00:58.210
+Apenas olhando para os dados, Katie gostaria ou não
+
+00:00:58.210 --> 00:00:59.280
+dessa música?
+
+00:00:59.280 --> 00:01:02.660
+Marque a caixa à direita para gostaria ou não gostaria.
+

@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.460 --> 00:00:03.640
+E, agora, finalmente, nós obtemos o posterior extra ou,
+
+00:00:03.640 --> 00:00:08.900
+como este aqui é normalmente chamado, a probabilidade conjunta de dois eventos.
+
+00:00:08.900 --> 00:00:13.000
+E o posterior é obtido pela divisão deste valor aqui
+
+00:00:14.200 --> 00:00:15.470
+por este normalizador.
+
+00:00:15.470 --> 00:00:17.150
+Então, vamos fazer isso aqui.
+
+00:00:17.150 --> 00:00:20.230
+Vamos dividir este valor aqui
+
+00:00:20.230 --> 00:00:24.205
+pelo normalizador para obter a distribuição posterior, acho que câncer,
+
+00:00:24.205 --> 00:00:28.590
+dado que recebi os resultados do teste positivo, então, dividimos este número por este
+

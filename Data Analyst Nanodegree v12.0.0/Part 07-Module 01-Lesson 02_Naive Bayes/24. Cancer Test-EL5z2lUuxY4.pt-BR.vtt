@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.380 --> 00:00:03.110
+Vamos usar o exemplo de câncer da última unidade.
+
+00:00:03.110 --> 00:00:07.340
+Digamos que há um tipo de câncer que ocorre em um 1% da população.
+
+00:00:07.340 --> 00:00:09.348
+E há um teste para esse câncer.
+
+00:00:09.348 --> 00:00:15.180
+E com 90% de chances de que seja positivo se você tiver o câncer C.
+
+00:00:15.180 --> 00:00:19.240
+Isso é conhecido como sensibilidade. Mas
+
+00:00:19.240 --> 00:00:22.890
+o teste às vezes dá positivo, mesmo que o tipo não seja C.
+
+00:00:22.890 --> 00:00:29.920
+Digamos que há outros 90% de chances de que seja negativo se você não tiver C.
+
+00:00:29.920 --> 00:00:39.510
+Isso é conhecido como especificidade.
+
+00:00:39.510 --> 00:00:40.870
+Eis minha dúvida.
+
+00:00:40.870 --> 00:00:47.430
+Sem maiores sintomas, você faz o teste e ele dá positivo.
+
+00:00:47.430 --> 00:00:52.110
+Qual será a probabilidade de ter esse tipo específico de câncer?
+
+00:00:52.110 --> 00:00:54.890
+Para responder isso, criaremos um diagrama.
+
+00:00:54.890 --> 00:00:57.680
+Digamos que aqui estão todas as pessoas;
+
+00:00:57.680 --> 00:01:02.810
+1% delas têm câncer e 99% não têm câncer.
+
+00:01:02.810 --> 00:01:08.300
+Sabemos que existe um teste em que, se você tem câncer,
+
+00:01:08.300 --> 00:01:12.090
+isso é diagnosticado com 90% de chances.
+
+00:01:12.090 --> 00:01:18.324
+Se você traçar a área em que o teste é positivo, câncer mais
+
+00:01:18.324 --> 00:01:25.700
+teste positivo, essa área ocupará 90% do círculo de câncer.
+
+00:01:25.700 --> 00:01:27.530
+Mas isso não é bem verdade.
+
+00:01:27.530 --> 00:01:32.790
+O teste é positivo, mesmo que a pessoa não esteja com câncer.
+
+00:01:34.280 --> 00:01:38.090
+No nosso caso, isso ocorreu em 10% de todos os casos.
+
+00:01:38.090 --> 00:01:40.000
+Acrescente mais área.
+
+00:01:41.540 --> 00:01:44.186
+Ela chega a 10% desta grande área.
+
+00:01:44.186 --> 00:01:50.580
+Ela chega a 10% desta grande área, onde o teste pode dar positivo.
+
+00:01:50.580 --> 00:01:52.450
+Mas a pessoa não está com câncer.
+
+00:01:53.860 --> 00:01:58.080
+A área azul é 10% de toda esta área
+
+00:01:58.080 --> 00:02:01.970
+menos o pequeno círculo de câncer.
+
+00:02:01.970 --> 00:02:06.245
+Obviamente, toda a área fora desses círculos corresponde à
+
+00:02:06.245 --> 00:02:12.000
+derivação de sem câncer, e o teste é negativo.
+
+00:02:12.000 --> 00:02:13.980
+Repito minha pergunta.
+
+00:02:13.980 --> 00:02:15.810
+Digamos que seu teste dê positivo.
+
+00:02:17.380 --> 00:02:18.610
+O que você acha?
+
+00:02:18.610 --> 00:02:23.430
+A probabilidade anterior de 1% de ter câncer.
+
+00:02:23.430 --> 00:02:27.157
+Com sensibilidade e especificidade de 90%.
+
+00:02:27.157 --> 00:02:33.655
+Você acha que as chances de ter câncer são de 90%,
+
+00:02:33.655 --> 00:02:37.252
+8% ou apenas 1%?
+

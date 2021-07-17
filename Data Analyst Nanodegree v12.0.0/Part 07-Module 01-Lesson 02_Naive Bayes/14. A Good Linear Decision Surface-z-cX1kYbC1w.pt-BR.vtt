@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.080 --> 00:00:01.970
+Esta pergunta foi difícil.
+
+00:00:01.970 --> 00:00:02.900
+Eu escolheria esta linha.
+
+00:00:04.260 --> 00:00:07.020
+É claro que esta outra não seria boa porque
+
+00:00:07.020 --> 00:00:09.110
+estaríamos classificando errado os dados existentes.
+
+00:00:10.390 --> 00:00:12.270
+Estes aqui estão do lado errado da superfície de decisão.
+
+00:00:12.270 --> 00:00:14.680
+Vamos esquecê-los.
+
+00:00:14.680 --> 00:00:19.560
+Mas esta linha vertical classifica corretamente a maioria dos pontos de dados.
+
+00:00:19.560 --> 00:00:20.735
+Com exceção deste ponto.
+
+00:00:20.735 --> 00:00:23.930
+E ela também está muito próxima desta cruz vermelha.
+
+00:00:23.930 --> 00:00:26.390
+Falaremos sobre isso mais adiante nesta aula.
+
+00:00:26.390 --> 00:00:29.140
+Por enquanto, procure notar o que o seu algoritmo
+
+00:00:29.140 --> 00:00:32.400
+de aprendizado de máquina faz; ele coleta dados e
+
+00:00:32.400 --> 00:00:35.560
+transforma-os em uma superfície de decisão.
+
+00:00:35.560 --> 00:00:36.870
+DS.
+
+00:00:36.870 --> 00:00:39.440
+Em todos os casos futuros.
+
+00:00:39.440 --> 00:00:44.160
+Isso o permitirá determinar se você tem uma cruz vermelha ou
+
+00:00:44.160 --> 00:00:46.270
+um círculo azul. Isso é incrível.
+

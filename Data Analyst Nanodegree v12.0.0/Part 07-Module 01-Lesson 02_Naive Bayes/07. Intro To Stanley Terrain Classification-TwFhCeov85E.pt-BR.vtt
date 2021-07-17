@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:03.810
+Você deve se lembrar de que, no começo dessa unidade, falamos sobre um exemplo
+
+00:00:03.810 --> 00:00:07.500
+em que usamos a aprendizagem supervisionada para treinar a velocidade de nosso robô Stanley.
+
+00:00:07.500 --> 00:00:10.820
+Agora, faremos a mesma coisa em um exemplo simplificado.
+
+00:00:10.820 --> 00:00:15.810
+Então, imagine um robô como o carro autoguiado no deserto ajustando sua velocidade.
+
+00:00:15.810 --> 00:00:18.230
+Ele fará isso com base em alguns recursos que podemos observar, e
+
+00:00:18.230 --> 00:00:20.850
+os recursos que escolhemos para este exemplo são apenas dois.
+
+00:00:20.850 --> 00:00:22.850
+A inclinação do terreno.
+
+00:00:22.850 --> 00:00:25.270
+Se ele é plano ou inclinado.
+
+00:00:25.270 --> 00:00:26.920
+E, também, a irregularidade do terreno.
+
+00:00:26.920 --> 00:00:28.180
+Quanto o veículo sacode para cima e
+
+00:00:28.180 --> 00:00:30.840
+para baixo, que podemos realmente medir dentro de um carro.
+
+00:00:30.840 --> 00:00:33.930
+O que vamos fazer será configurar um exemplo em que você será o
+
+00:00:33.930 --> 00:00:36.500
+especialista em aprendizado de máquina e você aprenderá e
+
+00:00:36.500 --> 00:00:40.070
+ajudará o Stanley a decidir se deve ir rápido ou devagar.
+
+00:00:40.070 --> 00:00:41.650
+Usando a aprendizagem de máquina supervisionada.
+
+00:00:41.650 --> 00:00:43.300
+Então, vamos começar.
+

@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.640 --> 00:00:03.630
+Muito bem. Nós demos um salto para o final aqui.
+
+00:00:03.630 --> 00:00:07.790
+Então, vamos dar um passo atrás e explicar o que acabei de fazer, só que bem mais devagar.
+
+00:00:07.790 --> 00:00:10.660
+Você verá todas as etapas pelas quais passei ao
+
+00:00:10.660 --> 00:00:13.930
+escrever o código Python que acabou de criar essa fronteira de decisão.
+
+00:00:13.930 --> 00:00:15.470
+E, ao final do próximo vídeo ou do
+
+00:00:15.470 --> 00:00:18.380
+segundo, você será capaz de escrever esse código sozinho.
+
+00:00:18.380 --> 00:00:23.530
+Portanto, nosso ponto de partida [LAUGH], como sempre, talvez, é o Google.
+
+00:00:23.530 --> 00:00:27.730
+Há uma biblioteca Python que usarei muito nesta lição.
+
+00:00:27.730 --> 00:00:31.330
+O Google nos ajudará a usar a documentação dessa
+
+00:00:31.330 --> 00:00:35.090
+biblioteca para descobrir como usar algumas das funções que ela oferece.
+
+00:00:35.090 --> 00:00:39.310
+O nome dessa biblioteca é scikit-learn, que geralmente é abreviada como sklearn.
+
+00:00:39.310 --> 00:00:42.740
+Vou familiarizá-lo com essa convenção agora.
+
+00:00:42.740 --> 00:00:47.000
+Procurarei sklearn e o nome do
+
+00:00:47.000 --> 00:00:51.550
+algoritmo que acabei de usar, que é Naive Bayes, no Google.
+
+00:00:51.550 --> 00:00:54.680
+Voltaremos daqui a pouco e falaremos o que o Naive Bayes faz exatamente.
+
+00:00:54.680 --> 00:00:56.700
+Mas, primeiro, quero ensinar você a executar o código.
+
+00:00:56.700 --> 00:00:59.320
+Então, digito sklearn Naive Bayes.
+
+00:00:59.320 --> 00:01:00.720
+Vamos ver o que ele retorna.
+
+00:01:00.720 --> 00:01:03.730
+Há uma página sobre o Naive Bayes que fornece
+
+00:01:03.730 --> 00:01:08.690
+uma derivação da fórmula Naive Bayes e, em seguida, vários casos de uso.
+
+00:01:08.690 --> 00:01:12.400
+Incluindo um tópico chamado Gaussian Naive Bayes. Como você pode ver,
+
+00:01:12.400 --> 00:01:14.180
+é isso que vou usar.
+
+00:01:14.180 --> 00:01:18.720
+Então, vamos voltar porque eu vi Gaussian Naive Bayes como um dos
+
+00:01:18.720 --> 00:01:20.090
+outros resultados do Google.
+
+00:01:20.090 --> 00:01:21.520
+É este aqui. Gaussian Naive Bayes,
+
+00:01:21.520 --> 00:01:24.730
+esta é a maneira como eu realmente escrevi o classificador que você acabou de ver.
+

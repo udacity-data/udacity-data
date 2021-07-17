@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:02.590
+Quero mostrar a você onde quero chegar com isso tudo.
+
+00:00:02.590 --> 00:00:05.420
+Vamos dar um salto à frente na classificação supervisionada.
+
+00:00:05.420 --> 00:00:07.870
+Temos o conjunto de dados de direção de carro,
+
+00:00:07.870 --> 00:00:09.820
+750 pontos agora que desenhamos no gráfico de dispersão.
+
+00:00:09.820 --> 00:00:13.800
+A meta é desenhar uma fronteira de decisão que nos ajude a distinguir em qual
+
+00:00:13.800 --> 00:00:17.800
+terreno precisamos dirigir devagar e em qual podemos dirigir rápido.
+
+00:00:17.800 --> 00:00:20.419
+Isso significa conseguir desenhar um limite parecido com este,
+
+00:00:21.750 --> 00:00:23.820
+no qual podemos dividir as duas classes.
+
+00:00:23.820 --> 00:00:25.870
+Ele ficará parecido com isto.
+
+00:00:25.870 --> 00:00:29.390
+Temos nossa fronteira de decisão, que podemos desenhar aqui, entre as duas
+
+00:00:29.390 --> 00:00:33.400
+classes, e, para qualquer ponto arbitrário, podemos classificá-lo como
+
+00:00:33.400 --> 00:00:36.960
+terreno no qual temos que ir devagar ou no qual podemos dirigir rápido.
+

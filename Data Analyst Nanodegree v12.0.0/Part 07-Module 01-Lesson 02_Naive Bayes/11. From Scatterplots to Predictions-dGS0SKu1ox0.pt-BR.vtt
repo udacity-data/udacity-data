@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.840 --> 00:00:03.180
+Vejamos outro gráfico de dispersão.
+
+00:00:03.180 --> 00:00:04.280
+Suponha que estes são seus dados
+
+00:00:04.280 --> 00:00:08.390
+e, de novo, eles estão em duas categorias em duas dimensões.
+
+00:00:08.390 --> 00:00:09.660
+E, agora, temos um novo ponto de dados,
+
+00:00:09.660 --> 00:00:14.100
+que fica bem aqui, desenhando uma pequena interrogação.
+
+00:00:14.100 --> 00:00:18.550
+Uma das perguntas absolutamente importantes em aprendizado de máquina é o que você
+
+00:00:18.550 --> 00:00:21.930
+pode dizer sobre um novo ponto de dados que nunca viu antes.
+
+00:00:21.930 --> 00:00:25.330
+Tendo os dados anteriores e apenas sua intuição, você
+
+00:00:25.330 --> 00:00:31.150
+acredita que este ponto do usuário é mais como um x vermelho ou mais como um círculo azul?
+
+00:00:31.150 --> 00:00:32.560
+Marque uma das duas caixas aqui.
+
