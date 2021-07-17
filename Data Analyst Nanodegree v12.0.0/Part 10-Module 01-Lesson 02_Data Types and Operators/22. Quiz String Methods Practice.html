@@ -1,0 +1,614 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Quiz: String Methods Practice
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Data Types and Operators
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Arithmetic Operators.html">
+       02. Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Quiz Arithmetic Operators.html">
+       03. Quiz: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Solution Arithmetic Operators.html">
+       04. Solution: Arithmetic Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Variables and Assignment Operators.html">
+       05. Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Quiz Variables and Assignment Operators.html">
+       06. Quiz: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Solution Variables and Assignment Operators.html">
+       07. Solution: Variables and Assignment Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Integers and Floats.html">
+       08. Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Quiz Integers and Floats.html">
+       09. Quiz: Integers and Floats
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Booleans, Comparison Operators, and Logical Operators.html">
+       10. Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Quiz Booleans, Comparison Operators, and Logical Operators.html">
+       11. Quiz: Booleans, Comparison Operators, and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Solution Booleans, Comparison and Logical Operators.html">
+       12. Solution: Booleans, Comparison and Logical Operators
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Strings.html">
+       13. Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Quiz Strings.html">
+       14. Quiz: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Solution Strings.html">
+       15. Solution: Strings
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Type and Type Conversion.html">
+       16. Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Quiz Type and Type Conversion.html">
+       17. Quiz: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="18. Solution Type and Type Conversion.html">
+       18. Solution: Type and Type Conversion
+      </a>
+     </li>
+     <li class="">
+      <a href="19. String Methods.html">
+       19. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="20. String Methods.html">
+       20. String Methods
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Another String Method - Split.html">
+       21. Another String Method - Split
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Quiz String Methods Practice.html">
+       22. Quiz: String Methods Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Solution String Methods Practice.html">
+       23. Solution: String Methods Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="24.   There's a Bug in my Code.html">
+       24.   "There's a Bug in my Code"
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Conclusion.html">
+       25. Conclusion
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Summary.html">
+       26. Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          22. Quiz: String Methods Practice
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="quiz-string-methods-coding-practice">
+          Quiz: String Methods Coding Practice
+         </h1>
+         <p>
+          Below, we have a string variable that contains the first verse of the poem,
+          <a href="https://en.wikipedia.org/wiki/If%E2%80%94" rel="noopener noreferrer" target="_blank">
+           If by Rudyard Kipling
+          </a>
+          . Remember,
+          <code>
+           \n
+          </code>
+          is a special sequence of characters that causes a line break (a new line).
+         </p>
+         <pre><code>verse = "If you can keep your head when all about you\n  Are losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\n  But make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\n  Or being lied about, don’t deal in lies,\nOr being hated, don’t give way to hating,\n  And yet don’t look too good, nor talk too wise:"</code></pre>
+         <p>
+          Use the code editor below to answer the following questions about
+          <code>
+           verse
+          </code>
+          and use Test Run to check your output in the quiz at the bottom of this page.
+         </p>
+         <ol>
+          <li>
+           What is the length of the string variable
+           <code>
+            verse
+           </code>
+           ?
+          </li>
+          <li>
+           What is the index of the first occurrence of the word 'and' in
+           <code>
+            verse
+           </code>
+           ?
+          </li>
+          <li>
+           What is the index of the last occurrence of the word 'you' in
+           <code>
+            verse
+           </code>
+           ?
+          </li>
+          <li>
+           What is the count of occurrences of the word 'you' in the
+           <code>
+            verse
+           </code>
+           ?
+          </li>
+         </ol>
+         <p>
+          You will need to refer to Python's
+          <a href="https://docs.python.org/2/library/string.html" rel="noopener noreferrer" target="_blank">
+           string methods documentation
+          </a>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h4>
+          Start Quiz:
+         </h4>
+         <div>
+          <div class="nav nav-tabs nav-fill" id="question-tabs" role="tablist">
+           <a aria-controls="665802-datatypes_practice_quiz-py" aria-selected="true" class="nav-item nav-link active show" data-toggle="tab" href="#665802-datatypes_practice_quiz-py" id="tab-665802-datatypes_practice_quiz-py" role="tab">
+            datatypes_practice_quiz.py
+           </a>
+          </div>
+          <div class="tab-content" id="question-tab-contents" style="padding: 20px 0;">
+           <div aria-labelledby="tab-665802-datatypes_practice_quiz-py" class="tab-pane active show" id="665802-datatypes_practice_quiz-py" role="tabpanel">
+            <pre><code></code>verse = "If you can keep your head when all about you\n  Are losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\n  But make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\n  Or being lied about, don’t deal in lies,\nOr being hated, don’t give way to hating,\n  And yet don’t look too good, nor talk too wise:"
+print(verse)
+
+# Use the appropriate functions and methods to answer the questions above
+# Bonus: practice using .format() to output your answers in descriptive messages!</pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Using String Methods
+         </p>
+        </h3>
+        <div>
+         <p>
+          <strong>
+           QUIZ QUESTION:
+          </strong>
+          :
+          <p>
+           Please match the correct response to each of the following questions.
+          </p>
+         </p>
+         <p>
+          <strong>
+           ANSWER CHOICES:
+          </strong>
+         </p>
+         <button class="btn btn-primary">
+          <p>
+           What is the length of the string variable verse?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What is the index of the first occurrence of the word 'and' in verse?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What is the index of the last occurrence of the word 'you' in verse?
+          </p>
+         </button>
+         <button class="btn btn-primary">
+          <p>
+           What is the count of occurrences of the word 'you' in the verse?
+          </p>
+         </button>
+         <br/>
+         <br/>
+         <table class="table">
+          <tr class="thead-dark table-hover">
+           <th>
+            <p>
+             Objective
+            </p>
+           </th>
+           <th>
+            <p>
+             Code
+            </p>
+           </th>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             65
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             62
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             362
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             10
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             64
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             8
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             3
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             368
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             186
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <p>
+             370
+            </p>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </table>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <table class="table">
+           <tr class="thead-dark table-hover">
+            <th>
+             <p>
+              Objective
+             </p>
+            </th>
+            <th>
+             <p>
+              Code
+             </p>
+            </th>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              65
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What is the index of the first occurrence of the word 'and' in verse?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              362
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What is the length of the string variable verse?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              8
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What is the count of occurrences of the word 'you' in the verse?
+              </p>
+             </button>
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <p>
+              186
+             </p>
+            </td>
+            <td>
+             <button class="btn btn-primary">
+              <p>
+               What is the index of the last occurrence of the word 'you' in verse?
+              </p>
+             </button>
+            </td>
+           </tr>
+          </table>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="23. Solution String Methods Practice.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('22. Quiz: String Methods Practice')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
