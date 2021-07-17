@@ -1,0 +1,32 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.224 --> 00:00:04.801
+Isto é algo muito importante
+ao trabalhar com branches.
+
+00:00:04.843 --> 00:00:07.448
+Se o conteúdo for armazenado
+em um branch
+
+00:00:07.490 --> 00:00:09.498
+e houver commits
+em outro branch,
+
+00:00:09.540 --> 00:00:13.511
+os outros commits serão invisíveis
+até mudarmos para o outro branch.
+
+00:00:13.553 --> 00:00:16.253
+Quando mudarmos,
+veremos os commits,
+
+00:00:16.295 --> 00:00:20.143
+mas os commits originais
+não aparecerão no editor de código.
+
+00:00:20.185 --> 00:00:24.532
+Eles não sumiram,
+só estão em um branch diferente.
+

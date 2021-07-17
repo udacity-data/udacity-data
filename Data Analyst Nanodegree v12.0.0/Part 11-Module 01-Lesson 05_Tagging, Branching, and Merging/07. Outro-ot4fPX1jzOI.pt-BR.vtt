@@ -1,0 +1,59 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.305 --> 00:00:03.206
+Branches, merges,
+conflitos de merge... Nossa!
+
+00:00:03.248 --> 00:00:06.384
+Esta aula trouxe
+muitas informações úteis.
+
+00:00:06.426 --> 00:00:09.863
+Os branches permitem trabalhar
+fora do projeto,
+
+00:00:09.905 --> 00:00:13.878
+então, depois de terminar,
+usamos Git para criar a fusão.
+
+00:00:13.920 --> 00:00:17.750
+Isso não ocorre sempre,
+mas se houver um conflito de merge,
+
+00:00:17.792 --> 00:00:21.337
+basta abrir o editor e procurar por
+indicadores de conflito de merge.
+
+00:00:21.379 --> 00:00:23.366
+Remova as linhas
+com os indicadores,
+
+00:00:23.408 --> 00:00:25.638
+descubra
+quais linhas você manterá,
+
+00:00:25.680 --> 00:00:28.402
+salve o arquivo,
+prepare o arquivo e faça o commit.
+
+00:00:28.444 --> 00:00:29.766
+Bem fácil.
+
+00:00:29.808 --> 00:00:33.272
+Parabéns,
+agora você domina o Git.
+
+00:00:33.314 --> 00:00:35.808
+Mas se quiser adquirir
+mais uma habilidade,
+
+00:00:35.850 --> 00:00:38.432
+confira a próxima aula
+na qual veremos edição,
+
+00:00:38.474 --> 00:00:40.940
+como desfazer
+e apagar commits.
+

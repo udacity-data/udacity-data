@@ -1,0 +1,87 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.301 --> 00:00:04.014
+Este é nosso projeto imaginário
+com diferentes branches.
+
+00:00:04.056 --> 00:00:08.554
+Vamos fazer o merge dos branches
+master e sidebar.
+
+00:00:08.596 --> 00:00:11.043
+Quando o merge ocorre,
+isso cria um commit.
+
+00:00:11.085 --> 00:00:13.809
+Como HEAD está apontando
+para o branch master,
+
+00:00:13.851 --> 00:00:17.697
+o commit merge será posicionado nele
+e ele seguirá adiante.
+
+00:00:17.739 --> 00:00:21.249
+Vamos fazer o merge do sidebar
+com o master.
+
+00:00:21.291 --> 00:00:25.890
+Perceba que o commit merge
+se liga aos dois commits anteriores.
+
+00:00:25.932 --> 00:00:28.050
+Isto não afetará
+o branch sidebar.
+
+00:00:28.092 --> 00:00:31.633
+Ainda podemos mudar para ele
+e criar commits.
+
+00:00:31.675 --> 00:00:33.498
+Vamos voltar para o master.
+
+00:00:33.540 --> 00:00:38.937
+Imagine um branch social-links,
+que está à frente do master.
+
+00:00:38.979 --> 00:00:42.929
+O branch master não tem
+commits do social-links ainda.
+
+00:00:42.971 --> 00:00:45.347
+Se quisermos esses commits
+no branch master,
+
+00:00:45.389 --> 00:00:49.009
+devemos fazer o merge
+do branch social-link no master.
+
+00:00:49.051 --> 00:00:51.161
+Como HEAD está apontando
+para master,
+
+00:00:51.203 --> 00:00:53.866
+o branch master se moverá
+quando o merge for feito.
+
+00:00:53.908 --> 00:00:57.242
+Como o branch social-link
+está à frente do master,
+
+00:00:57.284 --> 00:01:00.674
+Git fará
+um merge fast forward.
+
+00:01:00.716 --> 00:01:04.047
+A ordem das linhas coloridas
+não importa aqui,
+
+00:01:04.089 --> 00:01:07.393
+podemos mover a linha vermelha
+para cima e nada mudará.
+
+00:01:07.435 --> 00:01:10.032
+As linhas só servem
+para unir commits.
+

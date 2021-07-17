@@ -1,0 +1,81 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.133 --> 00:00:02.528
+Agora que você já domina
+a criação de commits,
+
+00:00:02.570 --> 00:00:04.593
+chegou a hora
+de darmos mais um passo,
+
+00:00:04.635 --> 00:00:06.935
+e esse será um passo
+maravilhoso,
+
+00:00:06.977 --> 00:00:09.905
+que dará a você superpoderes
+de controle de versão.
+
+00:00:09.947 --> 00:00:13.823
+Nesta aula, veremos o git tag,
+o git branch,
+
+00:00:13.865 --> 00:00:16.633
+o git checkout e o git merge.
+
+00:00:16.675 --> 00:00:20.709
+Com o git tag adicionaremos tags
+a commits específicos.
+
+00:00:20.751 --> 00:00:24.750
+Uma tag é um rótulo de um commit
+que dá informações úteis
+
+00:00:24.792 --> 00:00:27.189
+como "esta é a versão beta".
+
+00:00:27.231 --> 00:00:29.853
+Com git branch,
+você criará branches
+
+00:00:29.895 --> 00:00:33.102
+que permitem desenvolver
+recursos do projeto em paralelo
+
+00:00:33.144 --> 00:00:37.269
+sem confundir quais commits
+pertencem a quais recursos.
+
+00:00:37.311 --> 00:00:41.013
+Isso pode soar confuso,
+mas mostraremos em detalhes.
+
+00:00:41.055 --> 00:00:45.896
+Com git checkout, poderemos alternar
+entre diferentes branches e tags.
+
+00:00:45.938 --> 00:00:47.936
+Git merge é muito útil,
+
+00:00:47.978 --> 00:00:51.724
+pois podemos fundir as alterações
+em diferentes branches
+
+00:00:51.766 --> 00:00:55.276
+automaticamente.
+É um recurso muito poderoso.
+
+00:00:55.318 --> 00:00:58.820
+Os comandos desta aula
+ajudarão a organizar seu projeto
+
+00:00:58.862 --> 00:01:00.596
+e a acelerar
+o desenvolvimento.
+
+00:01:00.638 --> 00:01:03.796
+Vamos começar com o comando
+mais fácil, o git tag.
+

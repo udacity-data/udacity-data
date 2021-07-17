@@ -1,0 +1,84 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.062 --> 00:00:04.037
+Vamos começar do começo,
+pois é um bom lugar para começar.
+
+00:00:04.079 --> 00:00:06.077
+Temos um projeto
+com alguns arquivos,
+
+00:00:06.119 --> 00:00:08.830
+nós juntamos os arquivos
+e criamos um commit,
+
+00:00:08.872 --> 00:00:10.469
+que tem este SHA.
+
+00:00:10.511 --> 00:00:15.630
+Vamos ganhar espaço diminuindo isto
+e exibindo só a primeira letra.
+
+00:00:15.672 --> 00:00:17.637
+Agora temos este commit.
+
+00:00:17.679 --> 00:00:21.573
+Vamos alterar o projeto
+e enviá-lo.
+
+00:00:21.615 --> 00:00:26.283
+Demais. Digamos que o commit
+mais recente - que começa com f -
+
+00:00:26.325 --> 00:00:28.985
+é onde nosso projeto
+está na versão 1.0.
+
+00:00:29.027 --> 00:00:30.556
+Como indicaríamos isto
+no git?
+
+00:00:30.598 --> 00:00:33.039
+Não queremos escrever isto
+na mensagem commit.
+
+00:00:33.081 --> 00:00:35.295
+Podemos listar no corpo
+da mensagem commit,
+
+00:00:35.337 --> 00:00:36.990
+mas isso não é o ideal.
+
+00:00:37.032 --> 00:00:39.439
+Podemos usar uma tag
+para indicar isto.
+
+00:00:39.481 --> 00:00:41.629
+Elas permitem indicar
+commits específicos
+
+00:00:41.671 --> 00:00:43.641
+para que eles se destaquem
+dos outros,
+
+00:00:43.683 --> 00:00:47.126
+e podemos rotular a tag
+com algo como v1.0.
+
+00:00:47.168 --> 00:00:48.766
+Vamos adicionar outro commit.
+
+00:00:48.808 --> 00:00:51.520
+Viu como a tag
+fica presa a um commit?
+
+00:00:51.562 --> 00:00:55.263
+Vamos abrir mais espaço.
+A tag fica presa a um commit
+
+00:00:55.305 --> 00:00:57.466
+mesmo se mais commits
+forem adicionados.
+

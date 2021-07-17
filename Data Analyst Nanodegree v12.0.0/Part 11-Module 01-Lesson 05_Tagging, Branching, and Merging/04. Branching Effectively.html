@@ -1,0 +1,1392 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Branching Effectively
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Tagging, Branching, and Merging
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Tagging.html">
+       02. Tagging
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Branching.html">
+       03. Branching
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Branching Effectively.html">
+       04. Branching Effectively
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Merging.html">
+       05. Merging
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Merge Conflicts.html">
+       06. Merge Conflicts
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Outro.html">
+       07. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Branching Effectively
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Alright! Now that you've learned how to create, list, and delete branches, let's put that knowledge to use!
+         </p>
+         <p>
+          First, make sure we're on the same page and have the same starter code. We're going to be working in the
+          <code>
+           new-git-project
+          </code>
+          project. The project has the following files:
+         </p>
+         <ul>
+          <li>
+           <code>
+            index.html
+           </code>
+          </li>
+          <li>
+           <code>
+            css/app.css
+           </code>
+           (empty)
+          </li>
+          <li>
+           <code>
+            js/app.js
+           </code>
+           (empty)
+          </li>
+         </ul>
+         <p>
+          The CSS and JavaScript files are empty. Make sure the index file has the following content:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <pre><code class="html language-html">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Blog Project&lt;/title&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;meta name="description" content=""&gt;
+    &lt;link rel="stylesheet" href="css/app.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;header&gt;
+        &lt;h1&gt;Expedition&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;div class="container"&gt;
+        &lt;main&gt;
+
+        &lt;/main&gt;
+    &lt;/div&gt;
+
+    &lt;footer&gt;
+        Made with ♥ @ Udacity
+    &lt;/footer&gt;
+    &lt;script src="js/app.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Project Is Set Up
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Task Description:
+          </h4>
+          <p>
+           Before we proceed, let's make sure we have the same setup. Check off each of the following:
+          </p>
+         </div>
+         <form>
+          <fieldset>
+           <legend>
+            Task List:
+           </legend>
+           <div>
+            <input id="144ad1c9-ca59-40c9-af3f-45479b5fffe0--0" type="checkbox"/>
+            <label for="144ad1c9-ca59-40c9-af3f-45479b5fffe0--0">
+             <p>
+              I have an
+              <code>
+               index.html
+              </code>
+              file with the starter code from above
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="144ad1c9-ca59-40c9-af3f-45479b5fffe0--1" type="checkbox"/>
+            <label for="144ad1c9-ca59-40c9-af3f-45479b5fffe0--1">
+             <p>
+              I have an
+              <code>
+               app.css
+              </code>
+              file inside a
+              <code>
+               css
+              </code>
+              directory
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="144ad1c9-ca59-40c9-af3f-45479b5fffe0--2" type="checkbox"/>
+            <label for="144ad1c9-ca59-40c9-af3f-45479b5fffe0--2">
+             <p>
+              I have an
+              <code>
+               app.js
+              </code>
+              file inside a
+              <code>
+               js
+              </code>
+              directory
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="144ad1c9-ca59-40c9-af3f-45479b5fffe0--3" type="checkbox"/>
+            <label for="144ad1c9-ca59-40c9-af3f-45479b5fffe0--3">
+             <p>
+              all files have been saved
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="144ad1c9-ca59-40c9-af3f-45479b5fffe0--4" type="checkbox"/>
+            <label for="144ad1c9-ca59-40c9-af3f-45479b5fffe0--4">
+             <p>
+              all files have been staged and committed to the repository
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="144ad1c9-ca59-40c9-af3f-45479b5fffe0--5" type="checkbox"/>
+            <label for="144ad1c9-ca59-40c9-af3f-45479b5fffe0--5">
+             <p>
+              the current branch is the
+              <code>
+               master
+              </code>
+              branch
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="144ad1c9-ca59-40c9-af3f-45479b5fffe0--6" type="checkbox"/>
+            <label for="144ad1c9-ca59-40c9-af3f-45479b5fffe0--6">
+             <p>
+              I have deleted all other branches
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="144ad1c9-ca59-40c9-af3f-45479b5fffe0--7" type="checkbox"/>
+            <label for="144ad1c9-ca59-40c9-af3f-45479b5fffe0--7">
+             <p>
+              the output from running
+              <code>
+               git status
+              </code>
+              on the command line includes the text
+              <code>
+               working directory clean
+              </code>
+             </p>
+            </label>
+           </div>
+          </fieldset>
+         </form>
+         <div>
+          <h4>
+           Task Feedback:
+          </h4>
+          <p>
+           Fantastic work! Let's get crackin'!
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="the-game-plan">
+          The Game Plan
+         </h2>
+         <p>
+          Right now we have all of our code on the
+          <code>
+           master
+          </code>
+          branch (which is the default branch). We're about to work with branches, by:
+         </p>
+         <ul>
+          <li>
+           adding content to them
+          </li>
+          <li>
+           creating new branches
+          </li>
+          <li>
+           switching back and forth between them
+          </li>
+         </ul>
+         <p>
+          Let's use branches to make the following changes:
+         </p>
+         <ol>
+          <li>
+           on the master branch - add a default color to the page
+          </li>
+         </ol>
+         <ul>
+          <li>
+           create a sidebar branch - create a sidebar for the page
+          </li>
+          <li>
+           on the master branch - change the heading of the page
+          </li>
+          <li>
+           on the sidebar branch - add more content to the sidebar
+          </li>
+          <li>
+           create a footer branch - add social links to the footer
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="change-1---add-page-color">
+          Change 1 - Add Page Color
+         </h2>
+         <p>
+          Make sure you're on the
+          <code>
+           master
+          </code>
+          branch and add the following content to
+          <code>
+           css/app.css
+          </code>
+          :
+         </p>
+         <pre><code class="css language-css">body {
+    background-color: #00cae4;
+}</code></pre>
+         <p>
+          Save the file. Then add the file to the staging index and commit it to the repository.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the output of the `git log --oneline --decorate` command. The most-recent commit adds a default background color to the page._" class="img img-fluid" src="img/ud123-l5-changes-add-color.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of the
+             <code>
+              git log --oneline --decorate
+             </code>
+             command. The most-recent commit adds a default background color to the page.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="change-2---add-sidebar">
+          Change 2 - Add Sidebar
+         </h2>
+         <p>
+          Let's add a sidebar to the page. But let's say that we're not really sure if we like the new background color. So we'll place the sidebar branch on the commit
+          <em>
+           before
+          </em>
+          the one that sets the page's color. Your SHAs will be different, but, for me, the commit that's before the one that adds the color has a SHA of
+          <code>
+           5bfe5e7
+          </code>
+          . So adding the branch to that commit would look like:
+         </p>
+         <pre><code class="bash language-bash">$ git branch sidebar 5bfe5e7</code></pre>
+         <p>
+          Now use the
+          <code>
+           git checkout
+          </code>
+          command to switch to the new
+          <code>
+           sidebar
+          </code>
+          branch. Running a
+          <code>
+           git log --oneline --decorate
+          </code>
+          shows me:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the output of `git log --oneline --decorate`. The output does *NOT* include the `master` branch - it has disappeared._" class="img img-fluid" src="img/ud123-l5-git-branch-sidebar.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of
+             <code>
+              git log --oneline --decorate
+             </code>
+             . The output does
+             <em>
+              NOT
+             </em>
+             include the
+             <code>
+              master
+             </code>
+             branch - it has disappeared.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Did you notice that the
+          <code>
+           master
+          </code>
+          branch does not display in the output? Where did it go!?! Is it lost? Don't worry, it's still there, we'll see how to get it to display in just a second.
+         </p>
+         <p>
+          But first, in your code editor, switch to the
+          <code>
+           app.css
+          </code>
+          file. Notice that it does not have the CSS we previously entered! Because of this, if you load the project up in the browser, the page won't have a colored background. This makes sense since the CSS file is empty, but do you know why?
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Where's the CSS?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Thinking back to the branching repository video from the previous lesson, why would the CSS file be empty?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487195917493" name="266782" type="radio" value="a1487195917493"/>
+           <label for="a1487195917493">
+            <p>
+             The content has been erased.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487195933402" name="266782" type="radio" value="a1487195933402"/>
+           <label for="a1487195933402">
+            <p>
+             The content is stored safely on another branch.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487195934091" name="266782" type="radio" value="a1487195934091"/>
+           <label for="a1487195934091">
+            <p>
+             The content is in a temporary file that needs to be saved.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487195934667" name="266782" type="radio" value="a1487195934667"/>
+           <label for="a1487195934667">
+            <p>
+             A bear ate it.
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          The content is stored safely on another branch.
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Nd016 WebND Ud123 Gitcourse BETAMOJITO L5 54 Content On Different Branches
+         </p>
+        </h3>
+        <video controls="">
+         <source src="04. Nd016 WebND Ud123 Gitcourse BETAMOJITO L5 54 Content On Different Branches-Px6EUylw8Uw.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="04. Nd016 WebND Ud123 Gitcourse BETAMOJITO L5 54 Content On Different Branches-Px6EUylw8Uw.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="04. Nd016 WebND Ud123 Gitcourse BETAMOJITO L5 54 Content On Different Branches-Px6EUylw8Uw.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="04. Nd016 WebND Ud123 Gitcourse BETAMOJITO L5 54 Content On Different Branches-Px6EUylw8Uw.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="04. Nd016 WebND Ud123 Gitcourse BETAMOJITO L5 54 Content On Different Branches-Px6EUylw8Uw.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Create a sidebar by adding the following
+          <code>
+           &lt;aside&gt;
+          </code>
+          code to the HTML file:
+         </p>
+         <pre><code class="html language-html">&lt;div class="container"&gt;
+    &lt;main&gt;
+
+    &lt;/main&gt;
+&lt;/div&gt;
+
+&lt;!-- start of new content --&gt;
+&lt;aside&gt;
+    &lt;h2&gt;About Me&lt;/h2&gt;
+
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, debitis earum molestias veniam suscipit aliquam totam exercitationem tempore neque vitae. Minima, corporis pariatur facere at quo porro beatae similique! Odit.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;!-- end of new content --&gt;
+
+&lt;footer&gt;
+    Made with ♥ @ Udacity
+&lt;/footer&gt;</code></pre>
+         <p>
+          I added my
+          <code>
+           &lt;aside&gt;
+          </code>
+          content next to the
+          <code>
+           &lt;main&gt;
+          </code>
+          element as a fellow child of the
+          <code>
+           &lt;div class="container"&gt;
+          </code>
+          element.
+         </p>
+         <p>
+          Feel free to add any content inside the
+          <code>
+           &lt;aside&gt;
+          </code>
+          element!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <blockquote>
+          <h2 id="⚠️-dont-change-the-css">
+           ⚠️ Don't Change the CSS
+          </h2>
+         </blockquote>
+         <blockquote>
+          <p>
+           WARNING: It's very important that you
+           <em>
+            <em>
+             do not change the CSS file
+            </em>
+           </em>
+           .
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           We'll change it later, but if you make a change right now, we'll end up having what's known as a "merge conflict". We'll manually cause a merge conflict in a bit, but we don't want to have one right now, so just don't make any changes to the CSS file, yet.
+          </p>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Task Description:
+          </h4>
+          <p>
+           We're done with this step, so it's time to commit the changes.
+          </p>
+         </div>
+         <form>
+          <fieldset>
+           <legend>
+            Task List:
+           </legend>
+           <div>
+            <input id="0607a90d-8aef-419f-b523-1f65a097472c--0" type="checkbox"/>
+            <label for="0607a90d-8aef-419f-b523-1f65a097472c--0">
+             <p>
+              I've saved
+              <code>
+               index.html
+              </code>
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="0607a90d-8aef-419f-b523-1f65a097472c--1" type="checkbox"/>
+            <label for="0607a90d-8aef-419f-b523-1f65a097472c--1">
+             <p>
+              I've staged
+              <code>
+               index.html
+              </code>
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="0607a90d-8aef-419f-b523-1f65a097472c--2" type="checkbox"/>
+            <label for="0607a90d-8aef-419f-b523-1f65a097472c--2">
+             <p>
+              I've committed
+              <code>
+               index.html
+              </code>
+              to the repsitory
+             </p>
+            </label>
+           </div>
+          </fieldset>
+         </form>
+         <div>
+          <h4>
+           Task Feedback:
+          </h4>
+          <p>
+           Great job! 🎉
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="change-3---change-heading-on-master">
+          Change 3 - Change Heading On Master
+         </h2>
+         <p>
+          Let's switch back to the master branch and update the page heading.
+         </p>
+         <p>
+          Use the
+          <code>
+           git checkout
+          </code>
+          command to switch back to the
+          <code>
+           master
+          </code>
+          branch. (Notice that the HTML for the new sidebar is no longer there(!) because all that code is stored safely on the
+          <code>
+           sidebar
+          </code>
+          branch.)
+         </p>
+         <p>
+          Now change the
+          <code>
+           &lt;h1&gt;
+          </code>
+          heading of the page from "Expedition" to something else. How about something exciting like the word "Adventure"!?!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          See Changes Made?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Pop quiz time! How do you have Git show you the changes you've saved, but not yet committed?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487196644318" name="266789" type="radio" value="a1487196644318"/>
+           <label for="a1487196644318">
+            <p>
+             git show --diff
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487196658665" name="266789" type="radio" value="a1487196658665"/>
+           <label for="a1487196658665">
+            <p>
+             git log -p
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487196659223" name="266789" type="radio" value="a1487196659223"/>
+           <label for="a1487196659223">
+            <p>
+             git diff
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487196659848" name="266789" type="radio" value="a1487196659848"/>
+           <label for="a1487196659848">
+            <p>
+             git log --stat
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          git diff
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Heading Change Have Been Saved And Committed
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Task Description:
+          </h4>
+          <p>
+           Now it's time to save the
+           <code>
+            index.html
+           </code>
+           file and make a commit to add this change to the repository. (I used the commit message "Improve site heading for SEO", but see if you can think of a better one)
+          </p>
+         </div>
+         <form>
+          <fieldset>
+           <legend>
+            Task List:
+           </legend>
+           <div>
+            <input id="25e377f2-2537-4b52-8f43-6ea3731bc5dd--0" type="checkbox"/>
+            <label for="25e377f2-2537-4b52-8f43-6ea3731bc5dd--0">
+             <p>
+              I've saved
+              <code>
+               index.html
+              </code>
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="25e377f2-2537-4b52-8f43-6ea3731bc5dd--1" type="checkbox"/>
+            <label for="25e377f2-2537-4b52-8f43-6ea3731bc5dd--1">
+             <p>
+              I've staged
+              <code>
+               index.html
+              </code>
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="25e377f2-2537-4b52-8f43-6ea3731bc5dd--2" type="checkbox"/>
+            <label for="25e377f2-2537-4b52-8f43-6ea3731bc5dd--2">
+             <p>
+              I've committed
+              <code>
+               index.html
+              </code>
+              to the repsitory
+             </p>
+            </label>
+           </div>
+          </fieldset>
+         </form>
+         <div>
+          <h4>
+           Task Feedback:
+          </h4>
+          <p>
+           Stupendous job!
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="change-4---add-more-content-to-sidebar">
+          Change 4 - Add More Content To Sidebar
+         </h2>
+         <p>
+          Switch back to the
+          <code>
+           sidebar
+          </code>
+          branch (notice, again, that content we've added to the
+          <code>
+           master
+          </code>
+          branch isn't visible on the
+          <code>
+           sidebar
+          </code>
+          branch).
+         </p>
+         <p>
+          Now just add some content inside the
+          <code>
+           &lt;aside&gt;
+          </code>
+          element. Add something about yourself - your favorite movie or book (my favorite is LOTR!). Anything will work, you just need to add some content.
+         </p>
+         <p>
+          Again, make sure that you do not make changes to the CSS file.
+         </p>
+         <p>
+          Now save the
+          <code>
+           index.html
+          </code>
+          file and make a commit.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="change-5---add-social-links-to-footer">
+          Change 5 - Add Social Links To Footer
+         </h2>
+         <p>
+          We've made a number of changes, and we're about to make our last one. Let's add some social icons to the page's footer. For grins and giggles, let's make this change on a new footer branch that's based off the
+          <code>
+           master
+          </code>
+          branch. So we need to create a new
+          <code>
+           footer
+          </code>
+          branch, first.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <blockquote>
+          <h2 id="💡-switch-and-create-branch-in-one-command💡">
+           💡 Switch and Create Branch In One Command💡
+          </h2>
+         </blockquote>
+         <blockquote>
+          <p>
+           The way we currently work with branches is to create a branch with the
+           <code>
+            git branch
+           </code>
+           command and then switch to that newly created branch with the
+           <code>
+            git checkout
+           </code>
+           command.
+          </p>
+         </blockquote>
+         <blockquote>
+          <p>
+           But did you know that the
+           <code>
+            git checkout
+           </code>
+           command can actually create a new branch, too? If you provide the
+           <code>
+            -b
+           </code>
+           flag, you can create a branch
+           <em>
+            and
+           </em>
+           switch to it all in one command.
+          </p>
+         </blockquote>
+         <blockquote>
+          <pre><code class="bash language-bash">$ git checkout -b richards-branch-for-awesome-changes</code></pre>
+         </blockquote>
+         <blockquote>
+          <p>
+           It's a pretty useful command, and I use it often.
+          </p>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Let's use this new feature of the
+          <code>
+           git checkout
+          </code>
+          command to create our new
+          <code>
+           footer
+          </code>
+          branch and have this footer branch start at the same location as the master branch:
+         </p>
+         <pre><code class="bash language-bash">$ git checkout -b footer master</code></pre>
+         <p>
+          Now if we run a quick
+          <code>
+           git log --oneline --decorate
+          </code>
+          , we should see (your commit messages might be different):
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt='_The Terminal application showing the output of `git log --oneline --decorate`. The special `HEAD` pointer is pointing at the `footer` branch. The `footer` branch is on the same commit as the "master" branch._' class="img img-fluid" src="img/ud123-l5-git-checkout-b-footer-master.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of
+             <code>
+              git log --oneline --decorate
+             </code>
+             . The special
+             <code>
+              HEAD
+             </code>
+             pointer is pointing at the
+             <code>
+              footer
+             </code>
+             branch. The
+             <code>
+              footer
+             </code>
+             branch is on the same commit as the "master" branch.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h3 id="add-social-links">
+          Add Social Links
+         </h3>
+         <p>
+          Now that we're on a new branch, let's add some social links to the page's footer. I've added the following content:
+         </p>
+         <pre><code class="html language-html">&lt;footer&gt;
+    &lt;!-- start of new content --&gt;
+    &lt;section&gt;
+        &lt;h3 class="visuallyhidden"&gt;Social Links&lt;/h3&gt;
+        &lt;a class="social-link" href="https://twitter.com/udacity"&gt;
+            &lt;img src="img/social-twitter.png" alt="Twitter"&gt;
+        &lt;/a&gt;
+        &lt;a class="social-link" href="https://www.instagram.com/udacity/"&gt;
+            &lt;img src="img/social-instagram.png" alt="Instagram"&gt;
+        &lt;/a&gt;
+        &lt;a class="social-link" href="https://plus.google.com/+Udacity"&gt;
+            &lt;img src="img/social-google.png" alt="Google Plus"&gt;
+        &lt;/a&gt;
+    &lt;/section&gt;
+    &lt;!-- end of new content --&gt;
+&lt;/footer&gt;</code></pre>
+         <p>
+          Feel free to link to your own social accounts.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Task Description:
+          </h4>
+          <p>
+           Now save the file and make a commit. (I used the commit message "Add links to social media", but definitely try coming up with a better one)
+          </p>
+         </div>
+         <form>
+          <fieldset>
+           <legend>
+            Task List:
+           </legend>
+           <div>
+            <input id="9eafbeff-a750-40c1-8d97-0c98d288b9e8--0" type="checkbox"/>
+            <label for="9eafbeff-a750-40c1-8d97-0c98d288b9e8--0">
+             <p>
+              I've saved
+              <code>
+               index.html
+              </code>
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="9eafbeff-a750-40c1-8d97-0c98d288b9e8--1" type="checkbox"/>
+            <label for="9eafbeff-a750-40c1-8d97-0c98d288b9e8--1">
+             <p>
+              I've staged
+              <code>
+               index.html
+              </code>
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="9eafbeff-a750-40c1-8d97-0c98d288b9e8--2" type="checkbox"/>
+            <label for="9eafbeff-a750-40c1-8d97-0c98d288b9e8--2">
+             <p>
+              I've committed
+              <code>
+               index.html
+              </code>
+              to the repsitory
+             </p>
+            </label>
+           </div>
+          </fieldset>
+         </form>
+         <div>
+          <h4>
+           Task Feedback:
+          </h4>
+          <p>
+           Outstanding work! 👏
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="see-all-branches-at-once">
+          See All Branches At Once
+         </h2>
+         <p>
+          We've made it to the end of all the changes we needed to make! Awesome job!
+         </p>
+         <p>
+          Now we have multiple sets of changes on three different branches. We can't see other branches in the
+          <code>
+           git log
+          </code>
+          output unless we switch to a branch. Wouldn't it be nice if we could see
+          <em>
+           all
+          </em>
+          branches at once in the
+          <code>
+           git log
+          </code>
+          output.
+         </p>
+         <p>
+          As you've hopefully learned by now, the
+          <code>
+           git log
+          </code>
+          command is pretty powerful and
+          <em>
+           can
+          </em>
+          show us this information. We'll use the new
+          <code>
+           --graph
+          </code>
+          and
+          <code>
+           --all
+          </code>
+          flags:
+         </p>
+         <pre><code class="bash language-bash">$ git log --oneline --decorate --graph --all</code></pre>
+         <p>
+          The
+          <code>
+           --graph
+          </code>
+          flag adds the bullets and lines to the leftmost part of the output. This shows the actual
+          <em>
+           branching
+          </em>
+          that's happening. The
+          <code>
+           --all
+          </code>
+          flag is what displays
+          <em>
+           all
+          </em>
+          of the branches in the repository.
+         </p>
+         <p>
+          Running this command will show all branches and commits in the repository:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the output of `git log --oneline --graph --decorate --all`. This shows all branches and therefore all commits in the repository._" class="img img-fluid" src="img/ud123-l5-git-log-graph-all.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of
+             <code>
+              git log --oneline --graph --decorate --all
+             </code>
+             . This shows all branches and therefore all commits in the repository.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="recap-of-changes">
+          Recap Of Changes
+         </h2>
+         <p>
+          We've made the following changes:
+         </p>
+         <ol>
+          <li>
+           on the master branch, we added a default color to the page
+          </li>
+         </ol>
+         <ul>
+          <li>
+           we created a sidebar branch and added code for a sidebar
+          </li>
+          <li>
+           on the master branch, we changed the heading of the page
+          </li>
+          <li>
+           on the sidebar branch, we added more content to the sidebar
+          </li>
+          <li>
+           we created a footer branch and added social links to the footer
+          </li>
+         </ul>
+         <p>
+          These changes are all on their own, separate branches. Let's have Git combine these changes together. Combining branches together is called
+          <strong>
+           merging
+          </strong>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. Merging.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Branching Effectively')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

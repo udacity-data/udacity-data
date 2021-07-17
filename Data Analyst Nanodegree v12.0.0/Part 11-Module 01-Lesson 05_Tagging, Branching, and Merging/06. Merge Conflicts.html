@@ -1,0 +1,948 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Merge Conflicts
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Tagging, Branching, and Merging
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Tagging.html">
+       02. Tagging
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Branching.html">
+       03. Branching
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Branching Effectively.html">
+       04. Branching Effectively
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Merging.html">
+       05. Merging
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Merge Conflicts.html">
+       06. Merge Conflicts
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Outro.html">
+       07. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. Merge Conflicts
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="sometimes-merges-fail">
+          Sometimes Merges Fail
+         </h2>
+         <p>
+          Most of the time Git will be able to merge branches together without any problem. However, there are instances when a merge cannot be
+          <em>
+           fully
+          </em>
+          performed automatically. When a merge fails, it's called a
+          <strong>
+           merge conflict
+          </strong>
+          .
+         </p>
+         <p>
+          If a merge conflict does occur, Git will try to combine as much as it can, but then it will leave special markers (e.g.
+          <code>
+           &gt;&gt;&gt;
+          </code>
+          and
+          <code>
+           &lt;&lt;&lt;
+          </code>
+          ) that tell you where you (yep, you the programmer!) needs to manually fix.
+         </p>
+         <h3 id="what-causes-a-merge-conflict">
+          What Causes A Merge Conflict
+         </h3>
+         <p>
+          As you've learned, Git tracks
+          <em>
+           lines
+          </em>
+          in files. A merge conflict will happen when
+          <em>
+           the exact same line(s)
+          </em>
+          are changed in separate branches. For example, if you're on a
+          <code>
+           alternate-sidebar-style
+          </code>
+          branch and change the sidebar's heading to "About Me" but then on a different branch and change the sidebar's heading to "Information About Me", which heading should Git choose? You've changed the heading on both branches, so there's no way Git will know which one you actually want to keep. And it sure isn't going to just randomly pick for you!
+         </p>
+         <p>
+          Let's force a merge conflict so we can learn to resolve it. Trust me, it's simple once you get the hang of it! Remember that a merge conflict occurs when Git isn't sure which line(s) you want to use from the branches that are being merged. So we need to edit
+          <em>
+           the same line on two different branches
+          </em>
+          …and then try to merge them.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="forcing-a-merge-conflict">
+          Forcing A Merge Conflict!
+         </h2>
+         <p>
+          Remember that a merge conflict occurs when
+          <em>
+           the exact same line(s) are changed in separate branches
+          </em>
+          . Let's alter the page's heading on two different branches. So Let's:
+         </p>
+         <ul>
+          <li>
+           change the heading on the
+           <code>
+            master
+           </code>
+           branch
+          </li>
+          <li>
+           create a
+           <code>
+            heading-update
+           </code>
+           branch
+           <em>
+            that's located on the commit right before the recently modified
+            <code>
+             master
+            </code>
+            branch
+           </em>
+          </li>
+          <li>
+           change the
+           <em>
+            same
+           </em>
+           heading
+          </li>
+          <li>
+           switch back to the
+           <code>
+            master
+           </code>
+           branch
+          </li>
+          <li>
+           merge in the
+           <code>
+            heading-update
+           </code>
+           branch
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="change-heading-on-branch-1">
+          Change Heading On Branch 1
+         </h2>
+         <p>
+          Since the
+          <code>
+           master
+          </code>
+          branch is just a regular ol' branch like all the rest, let's just alter the heading while we're on the
+          <code>
+           master
+          </code>
+          branch. So change the
+          <code>
+           &lt;h1&gt;
+          </code>
+          heading from whatever you have it to something else. For me, the heading is currently "Adventure" on line 13, and I'm changing it to "Quest".
+         </p>
+         <p>
+          Once you've made the change, save the file and commit it to the repository.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="change-heading-on-branch-2">
+          Change Heading On Branch 2
+         </h2>
+         <p>
+          Now we need to create a different branch and update the heading on that branch.
+         </p>
+         <p>
+          Now this is important, we need to create a branch that's
+          <em>
+           not branching from the master branch
+          </em>
+          . If we make a change that branches
+          <em>
+           off
+          </em>
+          of the master branch, then
+          <em>
+           that
+          </em>
+          change will be "ahead" of this one and Git will just use that change instead of the one we just made on
+          <code>
+           master
+          </code>
+          . So we need to put the branch "in the past".
+         </p>
+         <p>
+          Let's just create a branch that's on the commit right
+          <em>
+           before
+          </em>
+          the most recent one. So use Git log to get the previous commit's SHA and create a branch on that commit. Here's what my Git log looks like after creating a
+          <code>
+           heading-update
+          </code>
+          branch:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the output of `git log --oneline --decorate --graph --all`. The `heading-update` branch is currently checked out._" class="img img-fluid" src="img/ud123-l5-git-merge-conflict-prep.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of
+             <code>
+              git log --oneline --decorate --graph --all
+             </code>
+             . The
+             <code>
+              heading-update
+             </code>
+             branch is currently checked out.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Ok, now that we've got our branch created, we just need to update the heading, again. Now make sure you change
+          <em>
+           the exact same line
+          </em>
+          that you changed on the
+          <code>
+           master
+          </code>
+          branch. I'm changing "Adventure" on line 13 to "Crusade".
+         </p>
+         <p>
+          Then save the file and commit it to the repository.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the output of `git log --oneline --decorate --graph --all`. Both the `master` branch and the `heading-update` branch alter the same line of the same file._" class="img img-fluid" src="img/ud123-l5-git-merge-conflict-prep2.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of
+             <code>
+              git log --oneline --decorate --graph --all
+             </code>
+             . Both the
+             <code>
+              master
+             </code>
+             branch and the
+             <code>
+              heading-update
+             </code>
+             branch alter the same line of the same file.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Prepped For Merge Conflict
+         </p>
+        </h3>
+        <div>
+         <div>
+          <h4>
+           Task Description:
+          </h4>
+          <p>
+           Ok, we're just about to cause a merge conflict, make sure you're at the same place I am:
+          </p>
+         </div>
+         <form>
+          <fieldset>
+           <legend>
+            Task List:
+           </legend>
+           <div>
+            <input id="2f5bdd8b-399e-459c-b3d3-34c87c859342--0" type="checkbox"/>
+            <label for="2f5bdd8b-399e-459c-b3d3-34c87c859342--0">
+             <p>
+              I've made a commit on the
+              <code>
+               master
+              </code>
+              branch that changes the heading
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="2f5bdd8b-399e-459c-b3d3-34c87c859342--1" type="checkbox"/>
+            <label for="2f5bdd8b-399e-459c-b3d3-34c87c859342--1">
+             <p>
+              I've made a commit on the
+              <code>
+               heading-update
+              </code>
+              branch that
+              <em>
+               also
+              </em>
+              changes the heading
+             </p>
+            </label>
+           </div>
+           <div>
+            <input id="2f5bdd8b-399e-459c-b3d3-34c87c859342--2" type="checkbox"/>
+            <label for="2f5bdd8b-399e-459c-b3d3-34c87c859342--2">
+             <p>
+              I am currently on the
+              <code>
+               master
+              </code>
+              branch
+             </p>
+            </label>
+           </div>
+          </fieldset>
+         </form>
+         <div>
+          <h4>
+           Task Feedback:
+          </h4>
+          <p>
+           Awesome! Let's proceed.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Make sure you're on the master branch (we could really do this on either branch, but I just have a habit of keeping the
+          <code>
+           master
+          </code>
+          branch the main one that other topic branches get merged into) and merge in the
+          <code>
+           heading-update
+          </code>
+          branch:
+         </p>
+         <pre><code class="bash language-bash">$ git merge heading-update</code></pre>
+         <p>
+          You should see the following:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt='_The Terminal application showing the output of a merge that resulted in a merge conflict. The word "CONFLICT" appears and says that the conflict occurred in the index.html file._' class="img img-fluid" src="img/ud123-l5-git-merge-conflict.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of a merge that resulted in a merge conflict. The word "CONFLICT" appears and says that the conflict occurred in the index.html file.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="merge-conflict-output-explained">
+          Merge Conflict Output Explained
+         </h2>
+         <p>
+          The output that shows in the Terminal is:
+         </p>
+         <pre><code class="bash language-bash">$ git merge heading-update 
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.</code></pre>
+         <p>
+          Notice that right after the
+          <code>
+           git merge heading-update
+          </code>
+          command, it tries merging the file that was changed on both branches (
+          <code>
+           index.html
+          </code>
+          ), but that there was a conflict. Also, notice that it tells you what happened - "Automatic merge failed; fix conflicts and then commit the result".
+         </p>
+         <p>
+          Remember our good friend
+          <code>
+           git status
+          </code>
+          ? Well he'll come in really handy when working with merge conflicts.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Merge Conflict's Status?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Try running
+             <code>
+              git status
+             </code>
+             right now. Which of the following information does it show?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487199322718" name="266834" type="checkbox" value="a1487199322718"/>
+           <label for="a1487199322718">
+            <p>
+             You have unmerged paths
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487199330549" name="266834" type="checkbox" value="a1487199330549"/>
+           <label for="a1487199330549">
+            <p>
+             Unmerged paths
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487199331117" name="266834" type="checkbox" value="a1487199331117"/>
+           <label for="a1487199331117">
+            <p>
+             fix conflicts and run "git commit"
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487199331717" name="266834" type="checkbox" value="a1487199331717"/>
+           <label for="a1487199331717">
+            <p>
+             use "git add
+             <file>
+              …" to mark resolution
+             </file>
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          <ul>
+           <li>
+            You have unmerged paths
+           </li>
+           <li>
+            Unmerged paths
+           </li>
+           <li>
+            fix conflicts and run "git commit"
+           </li>
+           <li>
+            use "git add
+            <file>
+             ..." to mark resolution
+            </file>
+           </li>
+          </ul>
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          The
+          <code>
+           git status
+          </code>
+          output tells us to that the merge conflict is inside
+          <code>
+           index.html
+          </code>
+          . So check out that file in your code editor!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_Code editor showing the merge conflict indicators._" class="img img-fluid" src="img/ud123-l5-git-merge-conflict-indicators.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Code editor showing the merge conflict indicators.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="merge-conflict-indicators-explanation">
+          Merge Conflict Indicators Explanation
+         </h2>
+         <p>
+          The editor has the following merge conflict indicators:
+         </p>
+         <ul>
+          <li>
+           <code>
+            &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+           </code>
+           everything below this line (until the next indicator) shows you what's on the current branch
+          </li>
+          <li>
+           <code>
+            ||||||| merged common ancestors
+           </code>
+           everything below this line (until the next indicator) shows you what the original lines were
+          </li>
+          <li>
+           <code>
+            =======
+           </code>
+           is the end of the original lines, everything that follows (until the next indicator) is what's on the branch that's being merged in
+          </li>
+          <li>
+           <code>
+            &gt;&gt;&gt;&gt;&gt;&gt;&gt; heading-update
+           </code>
+           is the ending indicator of what's on the branch that's being merged in (in this case, the
+           <code>
+            heading-update
+           </code>
+           branch)
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="resolving-a-merge-conflict">
+          Resolving A Merge Conflict
+         </h2>
+         <p>
+          Git is using the merge conflict indicators to show you what lines caused the merge conflict on the two different branches as well as what the original line used to have. So to resolve a merge conflict, you need to:
+         </p>
+         <ol>
+          <li>
+           choose which line(s) to keep
+          </li>
+         </ol>
+         <ul>
+          <li>
+           remove all lines with indicators
+          </li>
+         </ul>
+         <p>
+          For some reason, I'm not happy with the word "Crusade" right now, but "Quest" isn't all that exciting either. How about "Adventurous Quest" as a heading?!?
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_Code editor where showing the merge conflict indicators being removed and the page heading being updated._" class="img img-fluid" src="img/ud123-l5-resolve-merge-conflict.gif"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Code editor where showing the merge conflict indicators being removed and the page heading being updated.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="commit-merge-conflict">
+          Commit Merge Conflict
+         </h2>
+         <p>
+          Once you've removed all lines with merge conflict indicators and have selected what heading you want to use, just save the file, add it to the staging index, and commit it! Just like with a regular merge, this will pop open your code editor for you to supply a commit message. Just like before, it's common to use the provided merge commit message, so after the editor opens, just close it to use the provided commit message.
+         </p>
+         <p>
+          And that's it! Merge conflicts really aren't all that challenging once you understand what the merge conflict indicators are showing you.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Can Merge Conflict Indicators Be Committed?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             You've made numerous commits so far in your exploration of Git. If a merge conflict occurs in a file and you edit the file, save it, stage it, and commit it but
+             <em>
+              forget
+             </em>
+             to remove the merge conflict indicators, will Git commit the file?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1487199561900" name="266843" type="radio" value="a1487199561900"/>
+           <label for="a1487199561900">
+            <p>
+             Yes
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1487199583358" name="266843" type="radio" value="a1487199583358"/>
+           <label for="a1487199583358">
+            <p>
+             No
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          Yes
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="merge-conflict-recap">
+          Merge Conflict Recap
+         </h2>
+         <p>
+          A merge conflict happens when the same line or lines have been changed on different branches that are being merged. Git will pause mid-merge telling you that there is a conflict and will tell you in what file or files the conflict occurred. To resolve the conflict in a file:
+         </p>
+         <ul>
+          <li>
+           locate and remove all lines with merge conflict indicators
+          </li>
+          <li>
+           determine what to keep
+          </li>
+          <li>
+           save the file(s)
+          </li>
+          <li>
+           stage the file(s)
+          </li>
+          <li>
+           make a commit
+          </li>
+         </ul>
+         <p>
+          Be careful that a file might have merge conflicts in multiple parts of the file, so make sure you check the entire file for merge conflict indicators - a quick search for
+          <code>
+           &lt;&lt;&lt;
+          </code>
+          should help you locate all of them.
+         </p>
+         <h3 id="further-research">
+          Further Research
+         </h3>
+         <ul>
+          <li>
+           <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#Basic-Merge-Conflicts" rel="noopener noreferrer" target="_blank">
+            Basic Merge Conflicts
+           </a>
+           from the Git book
+          </li>
+          <li>
+           <a href="https://git-scm.com/docs/git-merge#_how_conflicts_are_presented" rel="noopener noreferrer" target="_blank">
+            How Conflicts Are Presented
+           </a>
+           from the Git docs
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. Outro.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. Merge Conflicts')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

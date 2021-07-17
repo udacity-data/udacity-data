@@ -1,0 +1,235 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.326 --> 00:00:04.380
+Este é o repositório Git de amostra
+que construímos na aula anterior.
+
+00:00:04.422 --> 00:00:06.517
+Existem alguns commits
+no repositório
+
+00:00:06.559 --> 00:00:08.477
+e uma tag em um dos commits.
+
+00:00:08.519 --> 00:00:10.852
+Além da tag,
+também há um branch.
+
+00:00:10.894 --> 00:00:13.596
+Ele estava escondido,
+mas vamos mostrá-lo.
+
+00:00:13.638 --> 00:00:16.764
+O nome do primeiro branch,
+por padrão, é master,
+
+00:00:16.806 --> 00:00:21.131
+mas não é um nome especial,
+é só o nome padrão do Git.
+
+00:00:21.173 --> 00:00:22.571
+Agora vem a parte legal.
+
+00:00:22.613 --> 00:00:24.804
+Quando um commit é criado
+no repositório,
+
+00:00:24.846 --> 00:00:29.197
+ele é adicionado ao branch
+e o ponteiro se move pra mostrá-lo.
+
+00:00:29.239 --> 00:00:30.661
+Legal, não é?
+
+00:00:30.703 --> 00:00:34.373
+Uma tag é um ponteiro permanente
+de um commit,
+
+00:00:34.415 --> 00:00:35.574
+e ele não se move,
+
+00:00:35.616 --> 00:00:38.765
+mas um branch se move
+quando um novo commit é adicionado.
+
+00:00:38.807 --> 00:00:42.693
+Vamos adicionar um novo branch
+ao repositório, chamado "sidebar".
+
+00:00:42.735 --> 00:00:44.645
+Por que faríamos isso?
+
+00:00:44.687 --> 00:00:47.126
+Os branches
+são muito poderosos,
+
+00:00:47.168 --> 00:00:49.597
+pois nos deixam trabalhar
+no mesmo projeto
+
+00:00:49.639 --> 00:00:52.093
+em ambientes isolados
+diferentes.
+
+00:00:52.135 --> 00:00:54.525
+Eu já mostrarei
+como isso funciona.
+
+00:00:54.567 --> 00:00:58.269
+Você deve estar se perguntando:
+"Se criarmos um commit agora,
+
+00:00:58.311 --> 00:01:03.197
+qual branch se moverá?
+O master ou o sidebar?"
+
+00:01:03.239 --> 00:01:06.373
+Precisamos revelar
+outra coisa escondida:
+
+00:01:06.415 --> 00:01:11.893
+o ponteiro HEAD,
+que mostra o branch ativo.
+
+00:01:11.935 --> 00:01:14.000
+Ele está apontando
+para o branch master,
+
+00:01:14.042 --> 00:01:16.678
+então ele é o branch ativo.
+
+00:01:16.720 --> 00:01:21.166
+Podemos usar o comando checkout
+para mudar o local do ponteiro.
+
+00:01:21.208 --> 00:01:23.031
+Para mudar
+para o branch sidebar
+
+00:01:23.073 --> 00:01:25.967
+usaríamos o comando
+git checkout sidebar.
+
+00:01:26.009 --> 00:01:29.495
+Vamos voltar usando
+git checkout master.
+
+00:01:29.537 --> 00:01:31.156
+Se criarmos um commit agora,
+
+00:01:31.198 --> 00:01:34.308
+ele será adicionado ao branch
+para qual o HEAD está apontando,
+
+00:01:34.350 --> 00:01:37.598
+pois ele indica o branch atual
+ou ativo.
+
+00:01:37.640 --> 00:01:41.006
+Vamos mudar para o branch sidebar
+e adicionar um commit.
+
+00:01:41.048 --> 00:01:43.183
+Agora que HEAD aponta
+para sidebar,
+
+00:01:43.225 --> 00:01:46.631
+o commit criado será adicionado
+ao branch sidebar.
+
+00:01:46.673 --> 00:01:49.558
+Além de podermos ter
+quantos branches quisermos,
+
+00:01:49.600 --> 00:01:51.987
+podemos escolher
+de onde eles começam.
+
+00:01:52.029 --> 00:01:55.948
+Imagine que haja um problema
+com o cabeçalho do commit a.
+
+00:01:55.990 --> 00:01:59.436
+Podemos criar um novo branch
+com o comando branch,
+
+00:01:59.478 --> 00:02:02.357
+mudar para ele
+com o comando checkout
+
+00:02:04.557 --> 00:02:07.693
+e fazer as alterações necessárias
+para consertar o problema.
+
+00:02:10.053 --> 00:02:13.882
+Há uma coisa importante
+que precisa ser dita.
+
+00:02:13.924 --> 00:02:17.485
+Vamos voltar para o branch master
+e criar um commit.
+
+00:02:17.527 --> 00:02:20.974
+A palavra "master" indica
+a ponta do branch,
+
+00:02:21.016 --> 00:02:24.395
+mas o commit mais recente
+está ligado aos anteriores.
+
+00:02:24.437 --> 00:02:28.125
+A linha vermelha indica os commits
+que estão no branch master.
+
+00:02:28.167 --> 00:02:32.642
+Os commit 7 e b não estão
+no branch master,
+
+00:02:32.684 --> 00:02:36.845
+e os commits f e 4
+também não estão no master.
+
+00:02:36.887 --> 00:02:38.899
+Se abrirmos
+o editor de código,
+
+00:02:38.941 --> 00:02:43.363
+as alterações feitas
+aos commits f, 4, 7 e b
+
+00:02:43.405 --> 00:02:45.621
+não aparecerão nos arquivos,
+
+00:02:45.663 --> 00:02:49.331
+pois o Git só exibe as alterações
+que estão no branch master.
+
+00:02:49.373 --> 00:02:52.739
+Não se preocupe, os commits
+estão armazenados no repositório.
+
+00:02:52.781 --> 00:02:54.515
+Para extrai-los
+do repositório,
+
+00:02:54.557 --> 00:02:58.187
+precisamos mudar para o branch
+com os commits que procuramos.
+
+00:02:58.229 --> 00:03:01.394
+Por exemplo, se mudarmos
+para o branch header-fix,
+
+00:03:01.436 --> 00:03:03.825
+os commits que estiverem
+no branch
+
+00:03:03.867 --> 00:03:06.426
+aparecerão no sistema de arquivos
+do computador
+
+00:03:06.468 --> 00:03:07.868
+e no editor de código.
+
