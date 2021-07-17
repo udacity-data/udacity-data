@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.500 --> 00:00:01.730
+Aqui temos um teste.
+
+00:00:01.730 --> 00:00:03.940
+É um teste um pouco desafiador, então pense um pouco.
+
+00:00:05.360 --> 00:00:09.740
+A pergunta é: o que é um bom critério para um bom ajuste?
+
+00:00:09.740 --> 00:00:14.240
+Como um bom ajuste minimizará os erros?
+
+00:00:14.240 --> 00:00:18.470
+O erro está no primeiro e no último ponto de dados?
+
+00:00:18.470 --> 00:00:24.030
+A soma dos erros está em todos os pontos de dados?
+
+00:00:24.030 --> 00:00:30.580
+A soma do valor absoluto dos erros está em todos os pontos de dados?
+
+00:00:31.690 --> 00:00:38.850
+E a última opção, a soma do erro ao quadrado está em todos os pontos de dados.
+
+00:00:38.850 --> 00:00:42.670
+Esta é complicada porque você pode ter um bom argumento para cada uma delas.
+
+00:00:42.670 --> 00:00:44.589
+Então quero que você selecione as que acha
+
+00:00:45.830 --> 00:00:49.640
+que têm a melhor chance de fornecer um bom ajuste aos dados.
+

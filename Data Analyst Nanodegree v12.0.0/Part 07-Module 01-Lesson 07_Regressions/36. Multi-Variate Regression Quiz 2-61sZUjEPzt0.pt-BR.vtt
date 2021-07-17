@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.480 --> 00:00:02.860
+Para solucionar isto, usamos o mesmo truque de antes.
+
+00:00:02.860 --> 00:00:04.550
+E novamente eu alinhei os números
+
+00:00:04.550 --> 00:00:07.340
+corretamente. Não é fácil fazer regressão real.
+
+00:00:07.340 --> 00:00:12.660
+Mas você vai descobrir que, ao aumentar nosso tamanho em 500 pés,
+
+00:00:12.660 --> 00:00:17.670
+de 500 para 1000 ou de 1000 para 1500, o preço também aumenta em 500.
+
+00:00:17.670 --> 00:00:23.060
+Portanto, isso significa que a proporção de preço aumentado para aumentos de tamanho é um.
+
+00:00:23.060 --> 00:00:24.990
+E isso vai aqui.
+
+00:00:24.990 --> 00:00:28.880
+Indo para a vertical, descobrimos que se aumentarmos a idade em 20 anos,
+
+00:00:28.880 --> 00:00:30.490
+nosso preço cai menos 200.
+
+00:00:30.490 --> 00:00:35.755
+Isso significa que a proporção desses menos 200 que é dividido por 20 é menos 10.
+
+00:00:35.755 --> 00:00:37.970
+É realmente importante colocar o sinal de menos corretamente
+
+00:00:37.970 --> 00:00:41.390
+porque casas mais antigas são mais baratas nesta planilha.
+
+00:00:41.390 --> 00:00:45.530
+E eventualmente ao tentarmos encontrar a interceptação de y por assim dizer.
+
+00:00:45.530 --> 00:00:47.440
+ou colocar uma constante diferente aqui,
+
+00:00:47.440 --> 00:00:50.010
+Nós ligamos estas duas constantes aqui no ponto de dados à esquerda.
+
+00:00:50.010 --> 00:00:53.860
+500 vezes um é 500.
+
+00:00:53.860 --> 00:00:56.670
+Zero vezes menos 10 é zero.
+
+00:00:56.670 --> 00:00:59.820
+Portanto, iríamos com estes dois coeficientes obter apenas um 500 aqui.
+
+00:00:59.820 --> 00:01:03.240
+Se precisarmos chegar até valor 1.000, precisamos adicionar 500 a ele.
+
+00:01:03.240 --> 00:01:05.750
+E este é o resultado correto.
+
+00:01:05.750 --> 00:01:09.430
+Certo. Mais uma vez, esta é uma regressão de multivariáveis.
+
+00:01:09.430 --> 00:01:11.570
+Acontece que ela é um ajuste exato.
+
+00:01:11.570 --> 00:01:14.580
+Se você encontrar situações onde esses números não tenham um ajuste exato,
+
+00:01:14.580 --> 00:01:16.510
+você precisará aplicar uma fórmula muito mais complicada.
+
+00:01:16.510 --> 00:01:18.490
+Você não pode olhar apenas para os dados aqui e aqui.
+
+00:01:18.490 --> 00:01:21.180
+Você precisa olhar para todos os dados, mas
+
+00:01:21.180 --> 00:01:25.490
+a explicação detalhada da fórmula para você está um pouco fora do escopo desta aula.
+
+00:01:25.490 --> 00:01:28.680
+Mas o que fará é usar o software existente
+
+00:01:28.680 --> 00:01:31.780
+para calcular resultados para situações como essa.
+

@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.410 --> 00:00:03.160
+Antes de sair deste exemplo de codificação, quero mostrar a você apenas
+
+00:00:03.160 --> 00:00:07.270
+algumas coisas que podem tornar sua regressão mais útil.
+
+00:00:07.270 --> 00:00:09.300
+A primeira coisa é que talvez você precise fazer uma previsão com ela.
+
+00:00:09.300 --> 00:00:12.070
+E, naturalmente, isso não deve ser tão difícil.
+
+00:00:12.070 --> 00:00:14.930
+Para isso, você pode simplesmente chamar a função predict em sua regressão.
+
+00:00:14.930 --> 00:00:18.730
+Mas aqui há uma pequena armadilha; ela esperará uma lista de valores.
+
+00:00:18.730 --> 00:00:23.150
+Portanto, mesmo que você tenha apenas um valor que deseja prever,
+
+00:00:23.150 --> 00:00:25.160
+ainda precisará colocá-lo em uma lista.
+
+00:00:25.160 --> 00:00:27.340
+Pode ser que você também queira saber quais são os coeficientes e
+
+00:00:27.340 --> 00:00:29.730
+a interceptação da regressão.
+
+00:00:29.730 --> 00:00:32.482
+Você pode acessar esses dados usando reg.coef_ e
+
+00:00:32.482 --> 00:00:35.510
+reg.intercept_ como pode ver aqui.
+
+00:00:35.510 --> 00:00:36.840
+Não esqueça deste pequeno sublinhado.
+
+00:00:36.840 --> 00:00:38.970
+Do contrário, ela não entenderá o que você está falando.
+
+00:00:38.970 --> 00:00:43.420
+Lembre-se de que esperávamos que a inclinação fosse aproximadamente 6,25.
+
+00:00:43.420 --> 00:00:44.860
+Mas talvez não exatamente.
+
+00:00:44.860 --> 00:00:46.970
+E a interceptação deve estar próxima a zero. Mas,
+
+00:00:46.970 --> 00:00:49.020
+novamente, não esperamos que isso seja exato,
+
+00:00:49.020 --> 00:00:51.590
+porque há um pouco de ruído em nossos dados de treinamento.
+
+00:00:51.590 --> 00:00:54.780
+Há mais algumas linhas aqui sobre a r squared score.
+
+00:00:54.780 --> 00:00:56.510
+Voltarei a isso em breve.
+
+00:00:56.510 --> 00:00:59.120
+Mas quero mostrar a você agora o que são a previsão, os coeficientes e a
+
+00:00:59.120 --> 00:01:01.330
+interceptação.
+
+00:01:01.330 --> 00:01:03.900
+Portanto, estas três linhas são as linhas sobre as quais estávamos falando.
+
+00:01:03.900 --> 00:01:06.470
+Posso prever meu patrimônio líquido com base na regressão.
+
+00:01:06.470 --> 00:01:09.250
+Ele é de aproximadamente 160, com base em minha idade.
+
+00:01:09.250 --> 00:01:11.760
+Podemos exibir também a inclinação e as interceptações.
+
+00:01:11.760 --> 00:01:14.090
+Lembre-se de que pensamos que a inclinação seria de aproximadamente 6,25.
+
+00:01:14.090 --> 00:01:15.970
+É quase isso, mas não exatamente.
+
+00:01:15.970 --> 00:01:18.760
+O mesmo se aplica à interceptação, que não é exatamente zero.
+
+00:01:18.760 --> 00:01:21.680
+Nos próximos vídeos, falaremos muito sobre os tipos de erros que
+
+00:01:21.680 --> 00:01:23.560
+você pode obter nas regressões.
+
+00:01:23.560 --> 00:01:25.470
+Porque eles são fundamentalmente diferentes dos tipos de
+
+00:01:25.470 --> 00:01:26.830
+erros que você obtém na classificação.
+
+00:01:26.830 --> 00:01:28.730
+Então, acabaremos
+
+00:01:28.730 --> 00:01:31.560
+calculando a chamada r-squared.
+
+00:01:31.560 --> 00:01:34.630
+Agora, as próximas linhas fornecem o desempenho de
+
+00:01:34.630 --> 00:01:35.760
+sua regressão.
+
+00:01:35.760 --> 00:01:39.080
+Uma forma de avaliar a regressão, sobre a qual falaremos
+
+00:01:39.080 --> 00:01:42.660
+muito mais nos próximos vídeos, é por meio de uma métrica chamada r-squared.
+
+00:01:42.660 --> 00:01:45.690
+Existe também a soma dos erros... falaremos sobre tudo isso.
+
+00:01:45.690 --> 00:01:47.200
+Mas, agora quero apenas mostrar como isso aparece.
+
+00:01:47.200 --> 00:01:50.690
+Para que você entenda porque isso é importante.
+
+00:01:50.690 --> 00:01:53.500
+Para acessar essas métricas de desempenho, você usa
+
+00:01:53.500 --> 00:01:56.500
+a chamada função score executada em sua regressão.
+
+00:01:56.500 --> 00:01:59.560
+Você sempre precisará analisar a pontuação dos seus dados de teste.
+
+00:01:59.560 --> 00:02:02.820
+Porque, naturalmente, você está ajustando a regressão usando os dados de treinamento.
+
+00:02:02.820 --> 00:02:05.680
+Se houver qualquer sobreajuste, isso será indicado
+
+00:02:05.680 --> 00:02:08.740
+através de uma pontuação mais baixa durante a análise dos dados de teste.
+

@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.140 --> 00:00:02.960
+Existe um problema importante em usar a soma do
+
+00:00:02.960 --> 00:00:06.040
+erro ao quadrado para avaliar sua regressão.
+
+00:00:06.040 --> 00:00:06.780
+Vou mostrá-lo para você agora.
+
+00:00:06.780 --> 00:00:11.540
+Aqui estão dois conjuntos de dados diferentes e a linha de regressão de cada um deles.
+
+00:00:11.540 --> 00:00:13.280
+E aqui está uma pergunta de teste.
+
+00:00:13.280 --> 00:00:16.490
+Qual destas regressões está fazendo o melhor trabalho
+
+00:00:16.490 --> 00:00:17.790
+ao ajustar os padrões nos dados?
+
+00:00:17.790 --> 00:00:21.820
+Eles são dois conjuntos de dados levemente diferentes, mas ainda é possível fazer uma comparação;
+
+00:00:21.820 --> 00:00:25.580
+eles não são tão diferentes que você não possa compará-los, pelo menos, visualmente.
+
+00:00:25.580 --> 00:00:28.920
+Então, você acha que o conjunto da esquerda está fazendo um trabalho melhor ao ajustar os dados,
+
+00:00:28.920 --> 00:00:31.140
+o da direita está fazendo um trabalho melhor de ajuste dos dados
+
+00:00:31.140 --> 00:00:33.920
+ou você diria que eles são praticamente iguais?
+
+00:00:33.920 --> 00:00:37.440
+Ainda não defini precisamente o que significa melhor aqui e
+
+00:00:37.440 --> 00:00:39.350
+isso é, de certo modo, de propósito;
+
+00:00:39.350 --> 00:00:42.220
+isso vai direto ao ponto do porque a soma de erros ao quadrado não é perfeita.
+
+00:00:42.220 --> 00:00:45.160
+Portanto, este é um teste um pouco desafiador, mas faça a sua melhor escolha.
+

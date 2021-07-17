@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.470 --> 00:00:03.370
+Agora que já expliquei o que é a r-squared, você deve estar se
+
+00:00:03.370 --> 00:00:07.240
+perguntando: Mas, Katie, mas como obtenho essas informações?
+
+00:00:07.240 --> 00:00:10.150
+Você não me deu uma equação para isso ou algo do tipo.
+
+00:00:10.150 --> 00:00:13.810
+E o que quero fazer, em vez de dar a você uma grande equação matemática,
+
+00:00:13.810 --> 00:00:17.220
+o que não acho tão interessante e que você mesmo poderia procurar,
+
+00:00:17.220 --> 00:00:19.730
+é mostrar como obter essas informações no scikit-learn.
+
+00:00:19.730 --> 00:00:22.910
+Este é o código que analisamos alguns vídeos atrás, quando estávamos criando nosso
+
+00:00:22.910 --> 00:00:24.500
+previsor de patrimônio líquido.
+
+00:00:24.500 --> 00:00:28.740
+Agora, eu preenchi estas linhas que estão importando a progressão linear e
+
+00:00:28.740 --> 00:00:30.130
+fazendo algumas previsões.
+
+00:00:30.130 --> 00:00:33.510
+Eu também exibi algumas informações na tela,
+
+00:00:33.510 --> 00:00:34.540
+você talvez se lembre.
+
+00:00:34.540 --> 00:00:36.430
+Duas delas eu já expliquei para você:
+
+00:00:36.430 --> 00:00:38.170
+o slope e o intercept.
+
+00:00:38.170 --> 00:00:40.690
+Eu acesso essas informações buscando os coeficientes e
+
+00:00:40.690 --> 00:00:42.100
+a interceptação da regressão.
+
+00:00:42.100 --> 00:00:45.670
+Estas são apenas linhas de código que encontrei em um exemplo online.
+
+00:00:45.670 --> 00:00:47.700
+Mas, prometi que voltaríamos a abordar este r-squared score
+
+00:00:47.700 --> 00:00:50.730
+que exibi e estou cumprindo a promessa.
+
+00:00:50.730 --> 00:00:56.310
+Acessamos isso por meio da medida de reg.score.
+
+00:00:56.310 --> 00:00:59.980
+Isso é bem parecido com o modo como computamos a precisão em
+
+00:00:59.980 --> 00:01:01.140
+nosso classificador supervisionado.
+
+00:01:01.140 --> 00:01:05.590
+O que fazemos é informar os valores de ages, que são as características neste caso,
+
+00:01:05.590 --> 00:01:06.680
+as entradas, e
+
+00:01:06.680 --> 00:01:10.440
+os valores de net_worths, que são as saídas, o que estamos tentando prever.
+
+00:01:10.440 --> 00:01:14.030
+E, como a regressão já foi ajustada, aqui em cima,
+
+00:01:14.030 --> 00:01:17.470
+ela já sabe o que acredita ser a relação entre essas duas quantidades.
+
+00:01:17.470 --> 00:01:20.550
+Então, essas são as informações necessárias para computar um r-squared score.
+
+00:01:20.550 --> 00:01:22.070
+E, então, posso exibi-la.
+
+00:01:22.070 --> 00:01:26.030
+Vamos voltar aqui e mostrar novamente sua aparência.
+
+00:01:26.030 --> 00:01:27.740
+Temos a mesma saída de antes, e
+
+00:01:27.740 --> 00:01:31.000
+isso pode parecer um pouco familiar; por isso, estou prevendo meu próprio patrimônio líquido.
+
+00:01:31.000 --> 00:01:32.610
+Tenho meu slope, meu intercept.
+
+00:01:32.610 --> 00:01:35.180
+Mas, agora, você entenderá a importância do r-squared score.
+
+00:01:35.180 --> 00:01:40.090
+Meu r-squared score está em torno de 0,86, o que é muito bom.
+
+00:01:40.090 --> 00:01:45.450
+Estou prevendo que estou fazendo 85% do melhor que eu poderia estar fazendo.
+
+00:01:45.450 --> 00:01:47.750
+Diria que 86% é próximo a 1.
+
+00:01:47.750 --> 00:01:53.690
+Pode ser um pouco difícil dizer se um r-squared numérico
+
+00:01:53.690 --> 00:01:55.150
+é bom ou não.
+
+00:01:55.150 --> 00:01:58.250
+Essa é uma intuição que você ganha com
+
+00:01:58.250 --> 00:02:00.830
+o tempo, à medida que faz experimentos.
+
+00:02:00.830 --> 00:02:06.920
+Eu diria, com certeza, que 0,857 é um bom r-squared.
+
+00:02:06.920 --> 00:02:10.970
+Estamos fazendo um bom trabalho de captura da relação entre a idade e
+
+00:02:10.970 --> 00:02:12.810
+o patrimônio líquido das pessoas aqui.
+
+00:02:12.810 --> 00:02:15.660
+Eu também já vi r-squareds maiores.
+
+00:02:15.660 --> 00:02:18.518
+Por isso, é possível que ainda haja variáveis por aí.
+
+00:02:18.518 --> 00:02:23.440
+Por exemplo, características. Se conseguirmos incorporar as informações de
+
+00:02:23.440 --> 00:02:27.420
+características adicionais, talvez seja melhor prever o patrimônio líquido de uma pessoa.
+
+00:02:27.420 --> 00:02:30.290
+Em outras palavras, se conseguirmos usar mais de uma característica,
+
+00:02:30.290 --> 00:02:32.510
+talvez consigamos aumentar ainda mais este r squared.
+
+00:02:32.510 --> 00:02:36.410
+Por outro lado, às vezes surgem problemas realmente complicados em que é
+
+00:02:36.410 --> 00:02:40.330
+quase impossível obter um r squared próximo a esse valor.
+
+00:02:40.330 --> 00:02:43.390
+Por isso que, nas ciências políticas, por exemplo, eles estão tentando
+
+00:02:43.390 --> 00:02:46.530
+executar uma regressão que preveja se um país entrará em guerra.
+

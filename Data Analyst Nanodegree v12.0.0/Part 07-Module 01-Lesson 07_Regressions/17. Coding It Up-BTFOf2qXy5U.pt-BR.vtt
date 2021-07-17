@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.420 --> 00:00:04.370
+Bem-vindo à parte da lição sobre regressão.
+
+00:00:04.370 --> 00:00:09.920
+Começamos, como sempre, pelo Google e procuramos o que o sklearn tem a oferecer.
+
+00:00:09.920 --> 00:00:12.380
+Como você pode ver, há muito conteúdo aqui.
+
+00:00:12.380 --> 00:00:15.880
+Esta regressão linear é o que acabaremos usando posteriormente.
+
+00:00:15.880 --> 00:00:20.080
+Mas, acho que este link é melhor para começar, porque oferece
+
+00:00:20.080 --> 00:00:23.900
+mais que uma simples introdução a modelos lineares generalizados.
+
+00:00:23.900 --> 00:00:27.810
+Temos aqui uma fórmula que, é difícil dizer, mas
+
+00:00:27.810 --> 00:00:31.480
+reescreve que y é igual a mx mais b, mas
+
+00:00:31.480 --> 00:00:35.720
+agora podemos ter mais de um x.
+
+00:00:35.720 --> 00:00:37.930
+Aprofundaremos isso mais tarde na lição,
+
+00:00:37.930 --> 00:00:40.280
+mas pelo menos sabemos que estamos no lugar certo para
+
+00:00:40.280 --> 00:00:43.510
+obter algo que tenha uma forma linear.
+
+00:00:43.510 --> 00:00:47.470
+Rolando um pouco para baixo, vejo algo chamado quadrados mínimos ordinários.
+
+00:00:47.470 --> 00:00:48.360
+O nome exato do
+
+00:00:48.360 --> 00:00:52.740
+código é regressão linear, e parece ser exatamente o que eu quero.
+
+00:00:52.740 --> 00:00:54.750
+Tenho alguns pontos.
+
+00:00:54.750 --> 00:00:56.620
+Estou ajustando-os a uma linha.
+
+00:00:56.620 --> 00:01:00.400
+E talvez até melhor, tenho alguns exemplos de código com os quais posso começar.
+
+00:01:00.400 --> 00:01:04.400
+Espero que você reconheça que este código não é tão diferente
+
+00:01:04.400 --> 00:01:07.760
+dos tipos de códigos que vimos para classificadores supervisionados.
+
+00:01:07.760 --> 00:01:10.220
+Isso significa que começamos com uma declaração import,
+
+00:01:10.220 --> 00:01:13.028
+from sklearn import linear_model.
+
+00:01:13.028 --> 00:01:17.980
+Em linear_model, há um objeto chamado linearRegression.
+
+00:01:17.980 --> 00:01:20.260
+Nós o utilizamos para criar nosso classificador.
+
+00:01:20.260 --> 00:01:22.480
+Em seguida, ajustamos o classificador.
+
+00:01:22.480 --> 00:01:23.800
+Aqui,
+
+00:01:23.800 --> 00:01:27.540
+eles não estão fazendo previsões com ele, embora também faremos isso.
+
+00:01:27.540 --> 00:01:30.900
+O que eles estão fazendo aqui é ler os coeficientes, ou
+
+00:01:30.900 --> 00:01:32.990
+o que chamamos de inclinação.
+
+00:01:32.990 --> 00:01:36.860
+Rolando um pouco mais para baixo, vejo que há um exemplo mais detalhado
+
+00:01:36.860 --> 00:01:38.830
+que posso usar se tiver problemas.
+
+00:01:40.140 --> 00:01:42.940
+Se acontecer, ele será suficiente para nos ajudar.
+

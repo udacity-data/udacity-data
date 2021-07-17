@@ -1,0 +1,187 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.110 --> 00:00:01.980
+Esta é uma pergunta complicada e,
+
+00:00:01.980 --> 00:00:03.700
+talvez, uma sobre a qual você tenha precisado pensar muito.
+
+00:00:03.700 --> 00:00:06.210
+Eu diria que há apenas uma resposta.
+
+00:00:06.210 --> 00:00:07.110
+Esta aqui.
+
+00:00:07.110 --> 00:00:07.750
+Um conjunto de dados.
+
+00:00:07.750 --> 00:00:10.960
+Ele seria um bom candidato para a regressão linear.
+
+00:00:10.960 --> 00:00:12.330
+Espero que isso tenha ficado claro.
+
+00:00:12.330 --> 00:00:14.400
+Portanto, quais são os problemas com os outros?
+
+00:00:14.400 --> 00:00:16.290
+Bem, vamos começar com este na parte inferior direita.
+
+00:00:16.290 --> 00:00:20.560
+Seria muito fácil pensar em uma função que possa ajustar bem isto, mas
+
+00:00:20.560 --> 00:00:24.490
+essa função seria algo como Y igual a X ao quadrado,
+
+00:00:24.490 --> 00:00:26.970
+que não está no formato y igual a mx mais b.
+
+00:00:26.970 --> 00:00:29.430
+Em outras palavras, esta não é uma linha.
+
+00:00:29.430 --> 00:00:31.396
+Isto é mais uma curva.
+
+00:00:31.396 --> 00:00:33.810
+Há maneiras com as quais ajustar essas funções, mas
+
+00:00:33.810 --> 00:00:37.170
+esse não seria um exemplo de regressão linear.
+
+00:00:37.170 --> 00:00:40.390
+Portanto, é por isso que isto não seria um bom candidato para regressão linear.
+
+00:00:40.390 --> 00:00:44.230
+Uma possibilidade que é quase boa para a regressão linear é esta aqui.
+
+00:00:44.230 --> 00:00:45.960
+Porque você poderia ajustá-lo com linhas, mas
+
+00:00:45.960 --> 00:00:48.970
+você precisa de duas linhas diferentes para ajustar o padrão de maneira adequada.
+
+00:00:48.970 --> 00:00:51.780
+Na verdade, se você tentar ajustar este conjunto de dados inteiro com uma linha,
+
+00:00:51.780 --> 00:00:53.850
+ele provavelmente fornecerá a você algo como isto.
+
+00:00:53.850 --> 00:00:58.330
+Uma coisa inteligente que você poderia fazer seria dividi-lo na metade ao longo desta linha
+
+00:00:58.330 --> 00:01:03.880
+pontilhada e ajustar uma metade dos dados em uma linha e uma metade com os outros.
+
+00:01:03.880 --> 00:01:07.110
+Portanto, se você marcou esta caixa porque está pensando em algo assim,
+
+00:01:07.110 --> 00:01:09.530
+eu diria que essa provavelmente é uma resposta aceitável.
+
+00:01:09.530 --> 00:01:14.120
+Mas da maneira como está, não há nenhuma linha que ajuste todos estes pontos de dados.
+
+00:01:14.120 --> 00:01:17.850
+Portanto, eu diria que sem fazer algo, como um ajuste em partes,
+
+00:01:17.850 --> 00:01:19.870
+este também não seria um bom candidato.
+
+00:01:19.870 --> 00:01:22.370
+Em seguida, vamos ver o conjunto de dados na parte superior do meio aqui.
+
+00:01:22.370 --> 00:01:25.070
+O problema aqui é que os dados estão em todos os lugares.
+
+00:01:25.070 --> 00:01:27.530
+Não parece haver um padrão muito forte.
+
+00:01:27.530 --> 00:01:32.310
+Há um grande número de linhas diferentes que podem ter rs ao quadrado semelhantes ou
+
+00:01:32.310 --> 00:01:35.030
+somas de erros ao quadrado que poderiam ser muito diferentes.
+
+00:01:35.030 --> 00:01:37.860
+E, neste caso, também é difícil dizer que qualquer uma destas linhas está realmente
+
+00:01:37.860 --> 00:01:40.120
+descrevendo um padrão nos dados.
+
+00:01:40.120 --> 00:01:42.750
+Portanto, eu diria que este não é um candidato particularmente bom.
+
+00:01:42.750 --> 00:01:47.110
+E este último, na parte superior esquerda, é muito complicado.
+
+00:01:47.110 --> 00:01:52.350
+E se você o entendeu errado, não deve se sentir mal, porque ele é difícil.
+
+00:01:52.350 --> 00:01:54.630
+E o problema com este aqui é...
+
+00:01:54.630 --> 00:01:57.880
+vamos examinar esta equação y igual a mx mais b.
+
+00:01:57.880 --> 00:02:02.010
+E o que isso significa é que variando a variável de entrada ao longo do eixo x,
+
+00:02:02.010 --> 00:02:05.090
+eu quero poder prever algo sobre
+
+00:02:05.090 --> 00:02:08.199
+qual será o valor y ao longo da escala vertical.
+
+00:02:08.199 --> 00:02:11.900
+Só temos um valor x, e este está bem aqui.
+
+00:02:12.930 --> 00:02:17.050
+E tenho muitos valores y diferentes ao longo deste intervalo.
+
+00:02:17.050 --> 00:02:20.690
+E, portanto, não existe uma maneira usando apenas estes dados,
+
+00:02:20.690 --> 00:02:24.840
+que permita que eu varie x e use isso para prever uma alteração em y.
+
+00:02:24.840 --> 00:02:28.600
+Outra maneira de dizer isso é que quando a equação tenta ajustar destes dados
+
+00:02:29.950 --> 00:02:32.080
+ela acabará com infinito para m.
+
+00:02:32.080 --> 00:02:36.070
+E, normalmente, quando você obtém infinitos, isso significa que algo está errado.
+
+00:02:36.070 --> 00:02:40.220
+Isso é muito complicado porque você definitivamente precisa ter uma variação em x.
+
+00:02:40.220 --> 00:02:46.270
+Agora, neste caso, naturalmente, na parte inferior esquerda, você só tem variação em x.
+
+00:02:46.270 --> 00:02:48.470
+Você não tem variação em y.
+
+00:02:48.470 --> 00:02:52.100
+Neste caso, a inclinação m seria igual a zero.
+
+00:02:52.100 --> 00:02:54.510
+Portanto, ajustar isso com uma linha seria um pouco sem sentido.
+
+00:02:54.510 --> 00:02:58.960
+Você poderia apenas dizer que supõe que isto seja oito.
+
+00:02:58.960 --> 00:03:00.860
+Você poderia apenas dizer que y é sempre igual a oito.
+
+00:03:01.860 --> 00:03:05.180
+E isso seria um trabalho perfeitamente bom de descrever o padrão.
+
+00:03:05.180 --> 00:03:09.840
+Mas é muito importante que você tenha um intervalo de valores x que você possa examinar.
+
+00:03:09.840 --> 00:03:14.390
+Portanto, é por isso que isto não é um bom candidato para a regressão linear, mas isto é.
+

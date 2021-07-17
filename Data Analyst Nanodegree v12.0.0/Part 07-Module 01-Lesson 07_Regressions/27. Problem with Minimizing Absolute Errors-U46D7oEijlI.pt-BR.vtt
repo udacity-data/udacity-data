@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.590 --> 00:00:03.880
+Agora que você já pensou sobre o assunto, mostrarei porque isso é importante.
+
+00:00:03.880 --> 00:00:06.340
+Vejamos primeiro o exemplo da linha do meio.
+
+00:00:06.340 --> 00:00:08.650
+Meus erros terão esta aparência.
+
+00:00:08.650 --> 00:00:09.710
+Estou esboçando-os agora.
+
+00:00:09.710 --> 00:00:13.070
+Esta é a distância de cada ponto para classificar o valor previsto
+
+00:00:13.070 --> 00:00:15.790
+desse ponto na linha de regressão.
+
+00:00:15.790 --> 00:00:19.370
+E se você somasse o valor absoluto dos erros,
+
+00:00:19.370 --> 00:00:22.930
+estaria somando todas estas distâncias em laranja e teria uma resposta.
+
+00:00:22.930 --> 00:00:24.740
+Vamos analisar a linha superior.
+
+00:00:24.740 --> 00:00:26.870
+Podemos fazer o mesmo aqui.
+
+00:00:26.870 --> 00:00:28.920
+Vamos começar a desenhar as distâncias.
+
+00:00:28.920 --> 00:00:30.970
+Apesar de nos aproximarmos de todos os pontos acima da linha,
+
+00:00:30.970 --> 00:00:33.820
+estamos nos afastando de todos os pontos abaixo dela.
+
+00:00:33.820 --> 00:00:37.130
+Considerando esses dois pontos como exemplos concretos,
+
+00:00:37.130 --> 00:00:38.610
+estamos nos aproximando do ponto superior e
+
+00:00:38.610 --> 00:00:40.660
+nos afastando do ponto inferior.
+
+00:00:40.660 --> 00:00:42.150
+Em geral, o erro total desses
+
+00:00:42.150 --> 00:00:45.640
+dois pontos de exemplo seria exatamente igual
+
+00:00:45.640 --> 00:00:48.520
+ao erro total desses dois pontos até a linha do meio.
+
+00:00:48.520 --> 00:00:50.030
+Na verdade, o mesmo vale para a
+
+00:00:50.030 --> 00:00:52.030
+linha de regressão inferior.
+
+00:00:52.030 --> 00:00:54.200
+E se o número de pontos acima e abaixo
+
+00:00:54.200 --> 00:00:57.510
+dessas linhas for igual, em geral, acontecerá a mesma coisa.
+
+00:00:57.510 --> 00:01:01.910
+Existe uma ambiguidade fundamental quando você usa o valor absoluto
+
+00:01:01.910 --> 00:01:06.290
+dos erros em termos do local exato da regressão.
+
+00:01:06.290 --> 00:01:07.470
+Ela pode estar em qualquer ponto neste intervalo.
+
+00:01:08.850 --> 00:01:13.830
+Ou seja, várias linhas podem minimizar os erros absolutos.
+
+00:01:13.830 --> 00:01:18.310
+Mas apenas uma linha minimiza o erro ao quadrado.
+
+00:01:18.310 --> 00:01:22.890
+Essa ambiguidade não existe quando a métrica empregada
+
+00:01:22.890 --> 00:01:26.300
+não é o valor absoluto da distância, o valor absoluto da distância ao quadrado.
+
+00:01:27.300 --> 00:01:29.590
+Quero fazer mais uma observação.
+
+00:01:29.590 --> 00:01:32.150
+É uma preocupação em termos práticos.
+
+00:01:32.150 --> 00:01:35.340
+Ao usarmos a soma do erro ao quadrado como uma forma de
+
+00:01:35.340 --> 00:01:38.630
+localizar a regressão, estamos facilitando a implementação da
+
+00:01:38.630 --> 00:01:40.420
+regressão subjacente.
+
+00:01:40.420 --> 00:01:43.100
+É bem mais fácil encontrar esta linha quando você tenta minimizar
+
+00:01:43.100 --> 00:01:46.680
+a soma dos erros ao quadrado, e não a soma dos erros absolutos.
+
+00:01:46.680 --> 00:01:50.180
+E temos o privilégio de não precisarmos nos preocupar tanto com isso
+
+00:01:50.180 --> 00:01:54.370
+quando usamos o SKlearn para fazer a maior parte dos cálculos para nós.
+
+00:01:54.370 --> 00:01:57.450
+É claro que, se você estiver escrevendo o código usado na
+
+00:01:57.450 --> 00:02:00.400
+álgebra linear para encontrar a regressão
+
+00:02:00.400 --> 00:02:05.530
+ou fazendo o cálculo para encontrar os resultados da resposta da regressão,
+
+00:02:05.530 --> 00:02:07.450
+sua preocupação será maior.
+
+00:02:07.450 --> 00:02:10.258
+Esse é outro motivo pelo qual as regressões tendem a ser
+
+00:02:10.258 --> 00:02:12.400
+minimizadas com algum tipo de erro ao quadrado.
+
+00:02:12.400 --> 00:02:15.500
+Porque, em termos de cálculos, é bem mais fácil fazer isso.
+

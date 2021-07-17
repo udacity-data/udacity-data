@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.330 --> 00:00:02.560
+Aprendemos muita coisa sobre regressão.
+
+00:00:02.560 --> 00:00:07.270
+Em todos os exemplos que vimos até agora, há exatamente uma variável de entrada.
+
+00:00:07.270 --> 00:00:13.040
+Por exemplo, aprendemos uma função que previu o patrimônio líquido com base em idade.
+
+00:00:13.040 --> 00:00:14.790
+Uma entrada, uma saída.
+
+00:00:14.790 --> 00:00:18.230
+Agora, existe uma forma de regressão onde é possível ter muitas variáveis de entrada
+
+00:00:18.230 --> 00:00:21.760
+diferentes, IQ, sua idade e talvez sua instrução.
+
+00:00:21.760 --> 00:00:25.210
+E estas podem prever conjuntamente o patrimônio líquido de uma pessoa.
+
+00:00:25.210 --> 00:00:26.050
+Há um nome para isso.
+
+00:00:26.050 --> 00:00:29.860
+Isso é chamado de regressão multivariável.
+
+00:00:29.860 --> 00:00:32.710
+Não é um nome intuitivo, mas é assim que ela é chamada.
+
+00:00:32.710 --> 00:00:36.660
+Vou dar um exemplo no qual o patrimônio líquido é a função de
+
+00:00:36.660 --> 00:00:40.650
+duas variáveis, x1 é igual a age, e x2 é o IQ.
+
+00:00:40.650 --> 00:00:44.508
+E temos determinados níveis de idade, 20, 40 e 60 aqui, e
+
+00:00:44.508 --> 00:00:47.822
+determinados níveis de IQ, digamos, 80, 100 e 120.
+
+00:00:47.822 --> 00:00:49.339
+E, neste exemplo,
+
+00:00:49.339 --> 00:00:54.520
+preencherei todas as nove combinações destas variáveis de entrada.
+
+00:00:54.520 --> 00:00:57.170
+Neste exemplo, fornecerei nove pontos de dados correspondentes às
+
+00:00:57.170 --> 00:01:00.110
+nove combinações destes números aqui.
+
+00:01:00.110 --> 00:01:04.250
+E sua tarefa é, à mão, por mero raciocínio,
+
+00:01:04.250 --> 00:01:09.020
+descobrir a fórmula que explica estes dados.
+
+00:01:09.020 --> 00:01:15.490
+Portanto, temos y, e y é o patrimônio líquido, e é algum
+
+00:01:15.490 --> 00:01:21.200
+número, que você me dirá, vezes x1, que é a idade, mais outro número,
+
+00:01:21.200 --> 00:01:26.080
+vezes x2, que é o IQ, mais potencialmente um terceiro número.
+
+00:01:26.080 --> 00:01:28.080
+É uma pergunta desafiadora, mas
+
+00:01:28.080 --> 00:01:31.600
+você pode descobrir quais números colocar aqui, aqui e aqui?
+
+00:01:31.600 --> 00:01:36.720
+E, como uma dica, trabalhe horizontalmente primeiro, em seguida, verticalmente, e
+
+00:01:36.720 --> 00:01:38.090
+os outros números devem ser organizados corretamente.
+

@@ -1,0 +1,408 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Visualizing Regression
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Regressions
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Continuous Output Quiz.html">
+       01. Continuous Output Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Continuous Quiz.html">
+       02. Continuous Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Age Continuous or Discrete.html">
+       03. Age: Continuous or Discrete?
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Weather Continuous or Discrete.html">
+       04. Weather: Continuous or Discrete
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Email Author Continuous or Discrete.html">
+       05. Email Author: Continuous or Discrete
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Phone Number Continuous or Discrete.html">
+       06. Phone Number: Continuous or Discrete?
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Income Continuous or Discrete.html">
+       07. Income: Continuous or Discrete?
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Continuous Feature Quiz.html">
+       08. Continuous Feature Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Supervised Learning w Continuous Output.html">
+       09. Supervised Learning w/ Continuous Output
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Equation of the Regression Line.html">
+       10. Equation of the Regression Line
+      </a>
+     </li>
+     <li class="">
+      <a href="11. Slope and Intercept.html">
+       11. Slope and Intercept
+      </a>
+     </li>
+     <li class="">
+      <a href="12. Slope Quiz.html">
+       12. Slope Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="13. Intercept Quiz.html">
+       13. Intercept Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="14. Predictions Using Regression.html">
+       14. Predictions Using Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="15. Adding An Intercept.html">
+       15. Adding An Intercept
+      </a>
+     </li>
+     <li class="">
+      <a href="16. Handoff to Katie.html">
+       16. Handoff to Katie
+      </a>
+     </li>
+     <li class="">
+      <a href="17. Coding It Up.html">
+       17. Coding It Up
+      </a>
+     </li>
+     <li class="">
+      <a href="18. AgeNet Worth Regression in sklearn.html">
+       18. Age/Net Worth Regression in sklearn
+      </a>
+     </li>
+     <li class="">
+      <a href="19. Extracting Information from sklearn.html">
+       19. Extracting Information from sklearn
+      </a>
+     </li>
+     <li class="">
+      <a href="20. Extracting Score Data from sklearn.html">
+       20. Extracting Score Data from sklearn
+      </a>
+     </li>
+     <li class="">
+      <a href="21. Linear Regression Errors.html">
+       21. Linear Regression Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="22. Error Quiz.html">
+       22. Error Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="23. Errors and Fit Quality.html">
+       23. Errors and Fit Quality
+      </a>
+     </li>
+     <li class="">
+      <a href="24. Minimizing Sum of Squared Errors.html">
+       24. Minimizing Sum of Squared Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="25. Algorithms for Minimizing Squared Errors.html">
+       25. Algorithms for Minimizing Squared Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="26. Why Minimize SSE.html">
+       26. Why Minimize SSE
+      </a>
+     </li>
+     <li class="">
+      <a href="27. Problem with Minimizing Absolute Errors.html">
+       27. Problem with Minimizing Absolute Errors
+      </a>
+     </li>
+     <li class="">
+      <a href="28. Evaluating Regression by Eye.html">
+       28. Evaluating Regression by Eye
+      </a>
+     </li>
+     <li class="">
+      <a href="29. Problem with SSE.html">
+       29. Problem with SSE
+      </a>
+     </li>
+     <li class="">
+      <a href="30. R Squared Metric for Regression.html">
+       30. R Squared Metric for Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="31. R Squared in SKlearn.html">
+       31. R Squared in SKlearn
+      </a>
+     </li>
+     <li class="">
+      <a href="32. Visualizing Regression.html">
+       32. Visualizing Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="33. What Data Is Good For Linear Regression.html">
+       33. What Data Is Good For Linear Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="34. Comparing Classification and Regression.html">
+       34. Comparing Classification and Regression
+      </a>
+     </li>
+     <li class="">
+      <a href="35. Multivariate Regression Quiz.html">
+       35. Multivariate Regression Quiz
+      </a>
+     </li>
+     <li class="">
+      <a href="36. Multi-Variate Regression Quiz 2.html">
+       36. Multi-Variate Regression Quiz 2
+      </a>
+     </li>
+     <li class="">
+      <a href="37. Regression Mini-Project Video.html">
+       37. Regression Mini-Project Video
+      </a>
+     </li>
+     <li class="">
+      <a href="38. Regression Mini-Project.html">
+       38. Regression Mini-Project
+      </a>
+     </li>
+     <li class="">
+      <a href="39. Bonus Target and Features.html">
+       39. Bonus Target and Features
+      </a>
+     </li>
+     <li class="">
+      <a href="40. Visualizing Regression Data.html">
+       40. Visualizing Regression Data
+      </a>
+     </li>
+     <li class="">
+      <a href="41. Extracting Slope and Intercept.html">
+       41. Extracting Slope and Intercept
+      </a>
+     </li>
+     <li class="">
+      <a href="42. Regression Score Training Data.html">
+       42. Regression Score: Training Data
+      </a>
+     </li>
+     <li class="">
+      <a href="43. Regression Score Test Data.html">
+       43. Regression Score: Test Data
+      </a>
+     </li>
+     <li class="">
+      <a href="44. Regressing Bonus Against LTI.html">
+       44. Regressing Bonus Against LTI
+      </a>
+     </li>
+     <li class="">
+      <a href="45. Salary vs. LTI for Predicting Bonus.html">
+       45. Salary vs. LTI for Predicting Bonus
+      </a>
+     </li>
+     <li class="">
+      <a href="46. Sneak Peek Outliers Break Regressions.html">
+       46. Sneak Peek: Outliers Break Regressions
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          32. Visualizing Regression
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Visualizing Regression
+         </p>
+        </h3>
+        <video controls="">
+         <source src="32. Visualizing Regression-zQAHZhcsXoQ.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="32. Visualizing Regression-zQAHZhcsXoQ.ar.vtt" srclang="ar"/>
+         <track default="true" kind="subtitles" label="en" src="32. Visualizing Regression-zQAHZhcsXoQ.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="32. Visualizing Regression-zQAHZhcsXoQ.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="32. Visualizing Regression-zQAHZhcsXoQ.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="33. What Data Is Good For Linear Regression.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('32. Visualizing Regression')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

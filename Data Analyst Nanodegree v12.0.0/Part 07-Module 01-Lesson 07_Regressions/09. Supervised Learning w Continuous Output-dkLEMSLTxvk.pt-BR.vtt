@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.310 --> 00:00:03.940
+Vamos ver um exemplo aqui para ter uma ideia do
+
+00:00:03.940 --> 00:00:07.160
+que você pode fazer nos espaços de saída contínua com o aprendizado de máquina.
+
+00:00:07.160 --> 00:00:11.870
+É um exemplo artificial, mas vamos imaginar que coloquemos todas as pessoas do mundo em um gráfico e
+
+00:00:11.870 --> 00:00:15.170
+registremos a idade e o patrimônio líquido delas.
+
+00:00:15.170 --> 00:00:18.270
+Se você não souber o que é patrimônio líquido: é todo o dinheiro
+
+00:00:18.270 --> 00:00:23.340
+que você tem, tanto em dinheiro vivo quanto em casas, carros, etc.
+
+00:00:23.340 --> 00:00:24.850
+Para fins de discussão,
+
+00:00:25.880 --> 00:00:31.970
+vou pressupor que não haja 7 milhões de pessoas. A relação
+
+00:00:31.970 --> 00:00:36.940
+entre patrimônio líquido e idade será parecida com isto.
+
+00:00:36.940 --> 00:00:38.770
+Na verdade, esse normalmente não é o caso,
+
+00:00:38.770 --> 00:00:40.870
+mas vamos imaginar que seja aqui.
+
+00:00:40.870 --> 00:00:45.000
+Agora, quero que você trace uma linha imaginária nos dados e
+
+00:00:45.000 --> 00:00:48.030
+escolha dois pontos que estou marcando aqui
+
+00:00:48.030 --> 00:00:51.520
+como dois pontos representativos nos quais a linha poderia passar.
+
+00:00:51.520 --> 00:00:54.060
+Basta clicar em dois desses pontos que melhor representam a linha e
+
+00:00:54.060 --> 00:00:55.310
+os dados.
+

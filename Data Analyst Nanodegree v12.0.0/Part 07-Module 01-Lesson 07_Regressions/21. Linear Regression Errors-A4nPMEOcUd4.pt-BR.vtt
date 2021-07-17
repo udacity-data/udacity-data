@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.370 --> 00:00:03.430
+Uma pergunta muito boa que você pode estar fazendo neste ponto é como
+
+00:00:03.430 --> 00:00:05.960
+avaliar sua regressão linear.
+
+00:00:05.960 --> 00:00:09.650
+Uma das coisas óbvias que você pode fazer é visualizar a regressão sobre
+
+00:00:09.650 --> 00:00:11.340
+os pontos de dispersão.
+
+00:00:11.340 --> 00:00:14.070
+Outra coisa que você pode fazer é analisar os erros criados
+
+00:00:14.070 --> 00:00:15.390
+pela regressão linear.
+
+00:00:16.480 --> 00:00:19.340
+Quando digo erros, não estou me referindo a enganos.
+
+00:00:20.370 --> 00:00:23.170
+O que eu quero dizer com erros é mais ou menos isto.
+
+00:00:23.170 --> 00:00:26.150
+Suponha que eu tenha meus dados de age e net worth.
+
+00:00:26.150 --> 00:00:33.040
+Eles seguirão algum padrão, embora não perfeitamente linear.
+
+00:00:34.200 --> 00:00:35.836
+Eu ajusto minha linha.
+
+00:00:35.836 --> 00:00:38.909
+E esse ajuste terá erros associados.
+
+00:00:40.620 --> 00:00:44.750
+Neste contexto, os erros são um termo técnico e, neste exemplo,
+
+00:00:44.750 --> 00:00:49.630
+ele se refere a diferença entre o patrimônio líquido real de uma pessoa e
+
+00:00:49.630 --> 00:00:52.650
+o patrimônio líquido previsto pela linha de regressão.
+

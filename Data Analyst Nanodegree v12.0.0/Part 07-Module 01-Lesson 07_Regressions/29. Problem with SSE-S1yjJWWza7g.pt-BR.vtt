@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.350 --> 00:00:03.510
+Neste caso, a distribuição à direita terá a soma maior dos
+
+00:00:03.510 --> 00:00:07.060
+erros ao quadrado, e vai ser bastante óbvio ver porque.
+
+00:00:07.060 --> 00:00:11.130
+Você pode comparar ponto por ponto. Estes serão todos os erros à esquerda.
+
+00:00:11.130 --> 00:00:14.990
+Há uma soma muito semelhante de erros ao quadrado à direita para estes pontos de dados.
+
+00:00:14.990 --> 00:00:17.660
+Mas, à direita, você tem todos estes pontos de dados adicionais.
+
+00:00:17.660 --> 00:00:20.850
+E cada um deles vai contribuir com um pouco de erros
+
+00:00:20.850 --> 00:00:24.420
+que adicionaremos à soma total dos erros ao quadrado do ajuste aqui.
+
+00:00:24.420 --> 00:00:27.660
+Portanto, isso significa que a distribuição à direita tem uma soma maior de
+
+00:00:27.660 --> 00:00:30.650
+erros ao quadrado, embora tenhamos concordado que isso provavelmente não está
+
+00:00:30.650 --> 00:00:35.130
+fazendo um trabalho muito pior de ajuste dos dados que a distribuição à esquerda,
+
+00:00:35.130 --> 00:00:37.840
+E essa é uma das desvantagens da soma de erros ao quadrado em
+
+00:00:37.840 --> 00:00:40.530
+geral como uma métrica de avaliação.
+
+00:00:40.530 --> 00:00:44.950
+É que ao adicionar mais dados, a soma dos erros ao quadrado irá quase que com certeza
+
+00:00:44.950 --> 00:00:49.310
+aumentar, mas isso não significa necessariamente que seu ajuste está fazendo um trabalho pior.
+
+00:00:49.310 --> 00:00:53.250
+No entanto, se você estiver comparando dois conjuntos de dados que têm um número diferente de
+
+00:00:53.250 --> 00:00:56.460
+pontos, isso poderá ser um grande problema porque se você estiver usando a soma dos
+
+00:00:56.460 --> 00:00:59.630
+erros ao quadrado para descobrir qual se ajusta melhor,
+
+00:00:59.630 --> 00:01:02.360
+a soma dos erros ao quadrado poderá ser manipulada pelo número de pontos
+
+00:01:02.360 --> 00:01:06.040
+de dados que você está usando, embora o ajuste possa estar perfeitamente correto.
+
+00:01:06.040 --> 00:01:09.770
+Portanto, isso me motiva a falar sobre uma outra métrica de avaliação que é muito
+
+00:01:09.770 --> 00:01:11.910
+popular ao avaliar regressões.
+

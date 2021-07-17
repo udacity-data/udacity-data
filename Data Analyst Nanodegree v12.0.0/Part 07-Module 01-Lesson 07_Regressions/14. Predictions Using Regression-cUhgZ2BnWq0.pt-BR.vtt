@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.440 --> 00:00:06.153
+Então, voltando ao nosso exemplo de idade versus patrimônio líquido,
+
+00:00:06.153 --> 00:00:12.898
+e digamos que meu algoritmo de aprendizado de máquina determinou que minha função-alvo
+
+00:00:12.898 --> 00:00:19.090
+é o patrimônio líquido, definido como y, que é igual a 6,25 vezes a idade mais 0.
+
+00:00:19.090 --> 00:00:23.580
+Suponha que você encontre uma pessoa com 36 anos.
+
+00:00:23.580 --> 00:00:26.840
+Qual você acha que nosso algoritmo de aprendizado de máquina
+
+00:00:26.840 --> 00:00:29.340
+diria ser o patrimônio líquido dela?
+

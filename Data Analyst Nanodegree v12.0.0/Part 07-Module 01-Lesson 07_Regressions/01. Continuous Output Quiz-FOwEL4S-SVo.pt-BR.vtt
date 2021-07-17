@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.330 --> 00:00:03.160
+E a resposta rápida é a saída, pois temos permissão para
+
+00:00:03.160 --> 00:00:07.310
+ter valores de entrada arbitrários, mas as saídas tendem a ser binárias.
+
+00:00:07.310 --> 00:00:09.640
+Por exemplo, lento e rápido.
+
+00:00:09.640 --> 00:00:12.670
+Agora, este tipo de saída é chamado de descontínuo, mas,
+
+00:00:12.670 --> 00:00:16.263
+em muitos problemas de aprendizagem, sua saída também poderá ser contínua.
+
+00:00:16.263 --> 00:00:20.520
+Então, por exemplo, se a entrada for a altura de uma pessoa e você colocar que a saída é
+
+00:00:20.520 --> 00:00:25.590
+o peso, o que encontrará será, provavelmente, uma função como esta.
+
+00:00:25.590 --> 00:00:29.890
+Ela indica que, quanto mais alta a pessoa, maior será seu peso.
+
+00:00:29.890 --> 00:00:34.290
+E, neste caso, a saída não é um conceito binário como leve ou pesado.
+
+00:00:34.290 --> 00:00:37.470
+É um conceito contínuo, e a própria saída também é contínua.
+
+00:00:37.470 --> 00:00:41.140
+Portanto, isso é o que chamamos de aprendizagem supervisionada contínua
+

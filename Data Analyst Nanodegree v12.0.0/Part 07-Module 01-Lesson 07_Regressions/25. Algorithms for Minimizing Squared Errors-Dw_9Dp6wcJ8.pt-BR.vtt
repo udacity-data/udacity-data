@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.490 --> 00:00:03.900
+Há vários algoritmos que ajudam você a encontrar isso.
+
+00:00:03.900 --> 00:00:07.130
+Não entraremos em muitos detalhes sobre a implementação deles.
+
+00:00:07.130 --> 00:00:08.470
+Mas só para que você saiba como eles são chamados.
+
+00:00:10.850 --> 00:00:17.149
+Os dois mais populares são os quadrados mínimos ordinários ou OLS.
+
+00:00:19.130 --> 00:00:25.090
+É esse que o algoritmo de regressão linear no sklearn usa.
+
+00:00:26.230 --> 00:00:28.980
+O outro algoritmo popular é o gradiente descendente.
+
+00:00:28.980 --> 00:00:31.580
+Não entraremos em mais detalhes sobre isso nesta aula, mas
+
+00:00:31.580 --> 00:00:34.760
+queremos que você pelo menos saiba que ele existe, caso encontre esse termo,
+
+00:00:34.760 --> 00:00:38.130
+Que ele é uma maneira de minimizar a soma dos erros ao quadrado em uma regressão.
+

@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.380 --> 00:00:03.270
+Então, na prática, quando aplica um algoritmo de aprendizado de máquina, você tem
+
+00:00:03.270 --> 00:00:06.840
+esta distinção entre saída contínua e saída discreta, mas isso é um pouco
+
+00:00:06.840 --> 00:00:10.390
+mais sutil, e darei alguns exemplos um pouco surpreendentes.
+
+00:00:10.390 --> 00:00:13.420
+Suponha que você queira prever a idade de alguém.
+
+00:00:13.420 --> 00:00:16.360
+Você usaria um classificador contínuo ou um classificador discreto?
+
+00:00:16.360 --> 00:00:19.260
+Digamos que a idade seja codificada alguns poucos segundos depois do nascimento
+

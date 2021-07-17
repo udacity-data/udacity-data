@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.700 --> 00:00:05.280
+Após um breve curso sobre a documentação de regressões para
+
+00:00:05.280 --> 00:00:09.390
+sklearn, vamos empregá-lo no problema de patrimônio líquido por idade para
+
+00:00:09.390 --> 00:00:11.220
+mostrar como funciona.
+
+00:00:11.220 --> 00:00:12.890
+Vejamos agora como farei isso.
+
+00:00:12.890 --> 00:00:16.870
+Criei um conjunto de dados de patrimônios líquidos e idades,
+
+00:00:16.870 --> 00:00:21.500
+dividi-o em conjuntos de treinamento e testes, como fazemos na classificação supervisionada.
+
+00:00:21.500 --> 00:00:22.940
+Tracei os dados do treinamento aqui.
+
+00:00:23.960 --> 00:00:26.770
+Note que há uma tendência geral nos dados.
+
+00:00:26.770 --> 00:00:29.450
+À medida que fica mais velho, seu patrimônio líquido aumenta.
+
+00:00:29.450 --> 00:00:32.280
+Mas acrescentei um pouco de ruído aos dados. Note que
+
+00:00:32.280 --> 00:00:33.800
+esta não é uma relação perfeita.
+
+00:00:33.800 --> 00:00:36.110
+Nesse sentido, parece mais com a vida real.
+
+00:00:36.110 --> 00:00:39.280
+Mas procurei gerar os dados empregando a equação que
+
+00:00:39.280 --> 00:00:41.860
+o Sebastian usou nos vídeos anteriores.
+
+00:00:41.860 --> 00:00:43.120
+Começo com uma idade
+
+00:00:43.120 --> 00:00:47.380
+e calculo um patrimônio líquido usando o coeficiente 6,25.
+
+00:00:47.380 --> 00:00:50.600
+A resposta que obtemos ao executar a regressão quando a inserimos
+
+00:00:50.600 --> 00:00:53.080
+deve gerar um coeficiente em torno de 6,25,
+
+00:00:53.080 --> 00:00:56.810
+embora não seja um valor exato por causa do ruído presente aqui.
+
+00:00:56.810 --> 00:00:58.570
+Esses são os dados do treinamento e
+
+00:00:58.570 --> 00:01:01.710
+é isso que você deve obter ao executar sua regressão.
+
+00:01:01.710 --> 00:01:04.989
+Neste gráfico de dispersão, temos os dados de treinamento e os dados de teste,
+
+00:01:04.989 --> 00:01:09.860
+que estão em vermelho para distinguir os pontos.
+
+00:01:09.860 --> 00:01:13.140
+Usando os pontos azuis, tracei uma linha bem aqui.
+
+00:01:13.140 --> 00:01:14.980
+Este é o resultado da regressão.
+
+00:01:14.980 --> 00:01:18.340
+Quando sobreponho nesses pontos, veja como a tendência
+
+00:01:18.340 --> 00:01:20.540
+nos dados parece estar bem capturada.
+
+00:01:20.540 --> 00:01:23.940
+Também posso usar esta linha para prever o patrimônio líquido de alguém
+
+00:01:23.940 --> 00:01:26.200
+entre 20 e 65 anos de idade.
+
+00:01:26.200 --> 00:01:28.520
+Afinal, é isso que buscamos.
+
+00:01:28.520 --> 00:01:31.700
+Agora vou mostrar o código de configuração que forneci.
+
+00:01:31.700 --> 00:01:35.040
+No teste, você preencherá as lacunas.
+
+00:01:35.040 --> 00:01:37.890
+Esta é a aparência do teste na tela.
+
+00:01:37.890 --> 00:01:41.530
+Eu crio dados de treinamento e teste para você com as idades
+
+00:01:41.530 --> 00:01:43.230
+e os patrimônios líquidos que você usará.
+
+00:01:44.720 --> 00:01:46.810
+Na verdade, a parte principal da regressão se encontra
+
+00:01:46.810 --> 00:01:48.920
+nesta função studentReg.
+
+00:01:48.920 --> 00:01:52.230
+Veremos o resultado disso daqui a pouco.
+
+00:01:52.230 --> 00:01:55.370
+Você só precisa retornar uma regressão ajustada,
+
+00:01:55.370 --> 00:01:58.200
+que eu utilizarei aqui neste código de plotagem.
+
+00:01:58.200 --> 00:02:02.370
+Agora eu insiro as idades de teste e minhas previsões para
+
+00:02:02.370 --> 00:02:04.400
+as idades de teste usando a regressão ajustada.
+
+00:02:04.400 --> 00:02:07.220
+O resultado será esta linha aqui.
+
+00:02:07.220 --> 00:02:09.400
+Mas, qual é a função de studentReg?
+
+00:02:09.400 --> 00:02:13.640
+Sei que estou enviando a ele dados referentes a idades de treinamento
+
+00:02:13.640 --> 00:02:14.568
+e a patrimônios líquidos.
+
+00:02:14.568 --> 00:02:17.480
+E preciso da sua ajuda agora.
+
+00:02:17.480 --> 00:02:20.590
+Comece importando o módulo de regressão sklearn e, depois,
+
+00:02:20.590 --> 00:02:23.000
+crie e treine sua regressão.
+
+00:02:23.000 --> 00:02:25.792
+Você chamará a regressão de reg porque estará
+
+00:02:25.792 --> 00:02:27.580
+retornando um objeto nomeado como reg.
+
+00:02:27.580 --> 00:02:29.890
+Portanto, ele buscará algo com esse nome.
+
+00:02:29.890 --> 00:02:31.430
+Esta é a tarefa e o teste.
+
+00:02:31.430 --> 00:02:31.930
+Faça uma experiência.
+

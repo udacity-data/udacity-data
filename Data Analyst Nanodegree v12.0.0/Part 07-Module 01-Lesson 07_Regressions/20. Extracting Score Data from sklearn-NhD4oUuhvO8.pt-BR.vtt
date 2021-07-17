@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.290 --> 00:00:01.530
+Agora que falamos sobre a inclinação e a
+
+00:00:01.530 --> 00:00:04.030
+interceptação, voltarei a essas linhas.
+
+00:00:04.030 --> 00:00:07.400
+Estou exibindo aqui algumas métricas de desempenho do meu
+
+00:00:07.400 --> 00:00:12.190
+conjunto de dados de testes e do meu conjunto de dados de treinamento apenas para fins de comparação.
+
+00:00:12.190 --> 00:00:15.110
+Lembre-se de que o conjunto de dados de testes fornece os números nos quais
+
+00:00:15.110 --> 00:00:15.700
+confiaremos.
+
+00:00:15.700 --> 00:00:17.800
+Vou voltar aqui.
+
+00:00:17.800 --> 00:00:20.450
+Nos próximos vídeos, falaremos exaustivamente sobre
+
+00:00:20.450 --> 00:00:24.170
+as métricas de desempenho que você pode usar para avaliar as regressões.
+
+00:00:24.170 --> 00:00:26.120
+Mas, farei uma prévia aqui.
+
+00:00:26.120 --> 00:00:29.650
+Uma métrica de desempenho sobre a qual falarei é a r-squared.
+
+00:00:29.650 --> 00:00:34.335
+Para encurtar a história, quanto mais alta for a r-squared, melhor.
+
+00:00:34.335 --> 00:00:37.100
+O valor máximo da r-squared é um.
+
+00:00:37.100 --> 00:00:38.480
+Então, podemos perguntar para
+
+00:00:38.480 --> 00:00:41.630
+esta regressão que fizemos até que ponto nossa r-squared é satisfatória.
+
+00:00:41.630 --> 00:00:44.390
+E queremos perguntar isso sobre nosso conjunto de dados de testes.
+
+00:00:44.390 --> 00:00:44.940
+Se perguntarmos isso sobre
+
+00:00:44.940 --> 00:00:48.110
+nosso conjunto de dados de treinamento, também obteremos informações interessantes, mas o
+
+00:00:48.110 --> 00:00:51.980
+uso apenas do conjunto de dados de testes pode nos retornar dados como sobreajuste.
+
+00:00:51.980 --> 00:00:54.900
+Então, quando eu analiso os valores da minha pontuação de r-quadrado no
+
+00:00:54.900 --> 00:00:58.710
+conjunto de dados de testes e, depois, no conjunto de dados de treinamento para comparação,
+
+00:00:58.710 --> 00:01:02.360
+obtenho um pouco de informações sobre o desempenho da regressão.
+
+00:01:02.360 --> 00:01:04.404
+Eu disse que o valor máximo é 1.
+
+00:01:04.404 --> 00:01:07.260
+O valor máximo de r-squared é 1.
+
+00:01:07.260 --> 00:01:10.238
+Como o conjunto de dados de testes é 0,81 e
+
+00:01:10.238 --> 00:01:14.220
+o conjunto de dados de treinamento é 0,87, não estou me saindo muito mal.
+
+00:01:15.220 --> 00:01:19.190
+Em vez de falar mais sobre a r-squared, vamos voltar ao tablet para
+
+00:01:19.190 --> 00:01:22.299
+falarmos mais sobre os tipos de erros que você pode encontrar nas regressões.
+
+00:01:23.480 --> 00:01:24.930
+E como é possível quantificá-los.
+
+00:01:24.930 --> 00:01:26.900
+Para que você entenda o que esses números significam.
+

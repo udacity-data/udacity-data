@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.150 --> 00:00:03.050
+Este é um teste para ajudar você a compreender por que minimizar a soma dos
+
+00:00:03.050 --> 00:00:06.340
+erros ao quadrado é a melhor maneira de pensar sobre uma regressão.
+
+00:00:06.340 --> 00:00:09.600
+Então, aqui estão alguns dados e minha pergunta inicial para
+
+00:00:09.600 --> 00:00:13.490
+você é: qual linha de regressão parece mais adequada para estes dados?
+
+00:00:13.490 --> 00:00:17.700
+Apenas use sua heurística intuitiva para o que "mais adequada" pode significar.
+
+00:00:17.700 --> 00:00:19.530
+Vou dar três opções a você.
+
+00:00:19.530 --> 00:00:22.610
+Elas são muito próximas umas das outras; então, me diga qual o seu melhor palpite.
+
+00:00:22.610 --> 00:00:24.940
+Você diria que é a linha de cima, do meio ou de baixo?
+

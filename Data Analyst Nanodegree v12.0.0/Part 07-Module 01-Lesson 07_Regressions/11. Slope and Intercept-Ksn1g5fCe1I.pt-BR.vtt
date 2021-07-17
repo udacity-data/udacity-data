@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.830 --> 00:00:06.440
+Em geral, esta é a maneira de escrever o resultado de um aprendiz supervisionado.
+
+00:00:06.440 --> 00:00:11.110
+À esquerda, está nossa variável-alvo, a que você está tentando prever,
+
+00:00:11.110 --> 00:00:12.900
+normalmente chamada de saída.
+
+00:00:12.900 --> 00:00:17.470
+À direita, "age" (idade) é a nossa variável de entrada.
+
+00:00:17.470 --> 00:00:23.050
+Mais duas palavras aqui: este fator, 6,25 também é chamado de coeficiente angular.
+
+00:00:23.050 --> 00:00:26.670
+E este número aqui, que é zero, é chamado de coeficiente linear.
+
+00:00:26.670 --> 00:00:30.730
+Eles definem a inclinação desta curva, 6,25,
+
+00:00:30.730 --> 00:00:34.310
+e onde ela intercepta o eixo vertical, aqui.
+
+00:00:34.310 --> 00:00:39.030
+Vamos ver se isso nos ajuda a entender os coeficientes angular e linear no próximo teste.
+

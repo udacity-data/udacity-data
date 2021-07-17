@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.090 --> 00:00:03.300
+Outro motivo de a visualização ser útil é quando há
+
+00:00:03.300 --> 00:00:06.870
+dados não muito bons
+
+00:00:06.870 --> 00:00:10.020
+ou que são difíceis de serem ajustados
+
+00:00:10.020 --> 00:00:11.220
+com uma regressão.
+
+00:00:11.220 --> 00:00:13.290
+Mostrarei o que quero dizer com um teste.
+
+00:00:13.290 --> 00:00:16.420
+Aqui estão alguns conjuntos de dados que posso ter.
+
+00:00:16.420 --> 00:00:19.610
+Estou fazendo um gráfico de dispersão de alguns recursos de cada um.
+
+00:00:19.610 --> 00:00:24.390
+Minha pergunta é: qual desses conjuntos de dados você diria que
+
+00:00:24.390 --> 00:00:28.470
+parece ser um bom candidato para regressão linear?
+
+00:00:28.470 --> 00:00:32.119
+Tivemos vários exemplos de regressão linear. Por um bom candidato,
+
+00:00:32.119 --> 00:00:37.270
+quero dizer que você pode escrever uma equação y igual a mx mais b
+
+00:00:37.270 --> 00:00:40.280
+que descreve bem os padrões dos dados.
+
+00:00:40.280 --> 00:00:43.650
+Marque a caixa de seleção ao lado dos bons candidatos.
+

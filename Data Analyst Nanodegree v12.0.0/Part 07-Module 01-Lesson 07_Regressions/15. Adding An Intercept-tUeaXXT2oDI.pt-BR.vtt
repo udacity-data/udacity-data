@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.215 --> 00:00:02.710
+Digamos que agora temos 255.
+
+00:00:02.710 --> 00:00:06.300
+Antes, 6,25 vezes 36 dava 225.
+
+00:00:06.300 --> 00:00:10.730
+Agora adicionamos 30 e temos 255.
+
+00:00:10.730 --> 00:00:17.270
+Observe que este exemplo de maquinário contínuo, chamado de Regressão.
+
+00:00:17.270 --> 00:00:21.060
+Permite fazer contínuas previsões para qualquer idade intermediária.
+
+00:00:21.060 --> 00:00:25.130
+Você obtém uma resposta significativa que sempre difere com a variação do
+
+00:00:25.130 --> 00:00:26.810
+parâmetro de entrada.
+
+00:00:26.810 --> 00:00:30.710
+Isso não é possível em classificações discretas.
+
+00:00:30.710 --> 00:00:34.060
+Se você precisasse criar uma classificação discreta aqui,
+
+00:00:34.060 --> 00:00:36.790
+o resultado seria parecido, inalterado
+
+00:00:36.790 --> 00:00:40.620
+para um intervalo inteiro do local de entrada
+

@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.280 --> 00:00:03.610
+Esta é uma pergunta realmente surpreendente se você nunca tiver feito
+
+00:00:03.610 --> 00:00:04.230
+isso antes.
+
+00:00:04.230 --> 00:00:06.270
+Portanto, deixe-me dissecar isso para você primeiro.
+
+00:00:06.270 --> 00:00:10.364
+Vou examinar o primeiro feed aqui e
+
+00:00:10.364 --> 00:00:13.311
+perguntar o quanto Y aumenta ao [INAUDIBLE] X.
+
+00:00:13.311 --> 00:00:18.680
+E você pode ver que ao adicionarmos 20 a X, de 20 a 40 ou outro 20 a X,
+
+00:00:18.680 --> 00:00:25.010
+Toda vez que x1 aumenta em 20, y aumenta em 100.
+
+00:00:25.010 --> 00:00:29.470
+Portanto o fator que acontece aqui é y dividido por x.
+
+00:00:29.470 --> 00:00:30.060
+É cinco.
+
+00:00:30.060 --> 00:00:32.159
+Espero que tenha ficado claro.
+
+00:00:32.159 --> 00:00:38.890
+Ao fazer a mesma coisa para a variável x2, descobrimos que quando x2 aumenta em 20,
+
+00:00:38.890 --> 00:00:40.020
+Y aumenta apenas em 50.
+
+00:00:40.020 --> 00:00:44.359
+Portanto dividimos 50 por 20 e escrevemos 2,5.
+
+00:00:44.359 --> 00:00:49.049
+Agora, se deixarmos isso como está e acreditarmos que esta é a fórmula e
+
+00:00:49.049 --> 00:00:54.231
+este número aqui não existe, o que preveremos para
+
+00:00:54.231 --> 00:01:00.717
+este valor aqui é 20 vezes 5 mais 80 vezes 2,5 que é igual a 300.
+
+00:01:00.717 --> 00:01:02.000
+Portanto, obtemos 200 muito grande.
+
+00:01:02.000 --> 00:01:04.769
+E precisamos subtrair menos 200.
+
+00:01:04.769 --> 00:01:08.280
+E isso revela, da maneira como eu fiz esta tabela,
+
+00:01:08.280 --> 00:01:09.970
+que esta é a equação correta.
+
+00:01:09.970 --> 00:01:13.150
+Portanto, você pode verificar qualquer valor nesta tabela aqui e descobrirá que
+
+00:01:13.150 --> 00:01:16.620
+esta equação específica explica exatamente o valor aqui,
+
+00:01:16.620 --> 00:01:17.730
+Agora, isto é um artefato.
+
+00:01:17.730 --> 00:01:21.520
+Na realidade, não temos uma situação tão boa onde um...
+
+00:01:21.520 --> 00:01:25.220
+o que chamamos de um hiperplano linear explique tão bem os dados.
+
+00:01:25.220 --> 00:01:28.740
+Mas isso dá a você uma percepção de que a variável de previsão, neste caso,
+
+00:01:28.740 --> 00:01:32.439
+patrimônio líquido, pode ser um fator de mais de uma variável de entrada e
+
+00:01:32.439 --> 00:01:34.950
+isso é chamado de regressão multivariável.
+
+00:01:34.950 --> 00:01:36.690
+E tudo o que você precisa saber sobre isso é que
+
+00:01:36.690 --> 00:01:39.930
+há uma parte do software que faz exatamente isso para você.
+
+00:01:39.930 --> 00:01:43.430
+Portanto, você realmente pode inserir dados como estes em uma tabela e
+
+00:01:43.430 --> 00:01:44.620
+obter o resultado correto.
+

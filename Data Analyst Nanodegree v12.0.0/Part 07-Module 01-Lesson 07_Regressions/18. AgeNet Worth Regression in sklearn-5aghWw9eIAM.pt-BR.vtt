@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.510 --> 00:00:03.010
+Portanto, esta é a solução para este teste, caso você tenha tido problemas.
+
+00:00:04.080 --> 00:00:07.190
+A primeira coisa que você precisa fazer é importar o módulo de regressão do sklearn.
+
+00:00:07.190 --> 00:00:11.110
+É claro que isto não é tão simples porque ele é chamado sklearn.linearmodel,
+
+00:00:11.110 --> 00:00:13.850
+mas você descobre isso muito facilmente na documentação.
+
+00:00:13.850 --> 00:00:16.480
+Há uma função de regressão linear familiar, e
+
+00:00:16.480 --> 00:00:18.550
+eu tenho minha regressão que denominei reg.
+
+00:00:18.550 --> 00:00:23.190
+A reg obtém LinearRegression,
+
+00:00:23.190 --> 00:00:26.030
+eu não preciso me preocupar com os parâmetros neste caso específico, e
+
+00:00:26.030 --> 00:00:29.400
+a próxima coisa a fazer é apenas ajustá-la da mesma maneira como fizemos com um classificador.
+
+00:00:29.400 --> 00:00:33.640
+Naturalmente, fazemos isso em nossos dados de treinamento. E agora temos esta
+
+00:00:33.640 --> 00:00:38.190
+regressão. Ela foi treinada em nossos dados de treinamento e estamos apenas retornando-a.
+

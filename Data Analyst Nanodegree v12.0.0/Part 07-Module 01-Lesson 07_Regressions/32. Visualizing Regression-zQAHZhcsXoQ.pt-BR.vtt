@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.350 --> 00:00:03.080
+É claro que sempre haverá algo mais a fazer quando eu
+
+00:00:03.080 --> 00:00:04.200
+estiver praticando o aprendizado de máquina.
+
+00:00:04.200 --> 00:00:08.480
+Mas, o que negligenciamos até agora foi a visualização de nossos resultados;
+
+00:00:08.480 --> 00:00:10.260
+então, vou fazer isso já.
+
+00:00:10.260 --> 00:00:13.660
+Aqui, eu criei um gráfico de dispersão de todos os meus pontos de dados e,
+
+00:00:13.660 --> 00:00:15.225
+depois, escrevi uma linha como esta.
+
+00:00:15.225 --> 00:00:18.340
+plt.plot desenhará uma linha.
+
+00:00:18.340 --> 00:00:22.660
+Os valores x de alguns pontos ao longo da linha serão as idades.
+
+00:00:22.660 --> 00:00:24.660
+E os valores y serão as previsões das
+
+00:00:24.660 --> 00:00:26.950
+idades fornecidas pela regressão.
+
+00:00:26.950 --> 00:00:29.060
+Isso aqui representa as características e
+
+00:00:29.060 --> 00:00:32.750
+as previsões, e esses dados são apenas informações de formatação.
+
+00:00:32.750 --> 00:00:35.340
+Em seguida, aplico alguns rótulos e os mostro.
+
+00:00:35.340 --> 00:00:37.520
+E uso o comando show para vê-los;
+
+00:00:37.520 --> 00:00:39.630
+uma imagem semelhante a esta é retornada.
+
+00:00:39.630 --> 00:00:42.800
+Estes são todos os pontos que tínhamos antes e, agora,
+
+00:00:42.800 --> 00:00:45.180
+eu inseri esta linha azul sobre eles.
+
+00:00:45.180 --> 00:00:48.170
+Apenas olhando, você pode dizer que a regressão não está fazendo nada insano.
+
+00:00:48.170 --> 00:00:52.380
+Sempre olhe os resultados da sua regressão para constatar a boa sanidade dos dados.
+
+00:00:52.380 --> 00:00:55.500
+Principalmente, se ela for uma regressão unidimensional como esta, em que você tem apenas
+
+00:00:55.500 --> 00:00:57.820
+uma variável de entrada, como as idades.
+
+00:00:57.820 --> 00:01:00.420
+É muito simples olhar os resultados e
+
+00:01:00.420 --> 00:01:01.360
+verificar como as coisas estão indo.
+

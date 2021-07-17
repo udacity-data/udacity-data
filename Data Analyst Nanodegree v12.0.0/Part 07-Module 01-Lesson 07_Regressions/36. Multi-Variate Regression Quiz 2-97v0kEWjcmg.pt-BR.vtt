@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.090 --> 00:00:03.640
+Apenas para praticar um pouco mais, vou dar um segundo exemplo.
+
+00:00:03.640 --> 00:00:06.080
+Você está tentando avaliar o preço de uma casa.
+
+00:00:06.080 --> 00:00:09.890
+Novamente, suponha dois recursos de entrada: o tamanho da casa e
+
+00:00:09.890 --> 00:00:11.110
+a idade da casa.
+
+00:00:11.110 --> 00:00:15.790
+A casa pode ser nova ou mais velha, talvez ter até 40 anos.
+
+00:00:15.790 --> 00:00:20.629
+E o tamanho em pés quadrados pode se 500, 1.000 ou 1.500.
+
+00:00:20.629 --> 00:00:25.020
+E, obviamente, qualquer valor entre esses números faz sentido na regressão.
+
+00:00:25.020 --> 00:00:28.620
+Mas, para este exercício, quero usar esses números exatos que
+
+00:00:28.620 --> 00:00:29.600
+marquei aqui.
+
+00:00:29.600 --> 00:00:35.450
+O tamanho chamarei de X1 e a idade de X2, e o preço da casa será Y.
+
+00:00:35.450 --> 00:00:38.735
+Portanto, o resultado será Y é igual a algum número
+
+00:00:38.735 --> 00:00:44.890
+vezes X1 mais algum outro número vezes X2 mais alguma constante.
+
+00:00:44.890 --> 00:00:48.240
+Então, deixe-me preencher os números. Este exemplo também é um pouco
+
+00:00:48.240 --> 00:00:52.340
+artificial, pois podemos obter uma resposta exata para esses coeficientes.
+
+00:00:52.340 --> 00:00:55.460
+Mas tente fazê-lo mentalmente.
+
+00:00:55.460 --> 00:00:56.430
+E veja como se sai.
+
