@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.790 --> 00:00:10.815
+Explanatory visualizations are primarily about conveying a message or story.
+
+00:00:10.814 --> 00:00:13.048
+They should grab your reader's attentions,
+
+00:00:13.048 --> 00:00:18.015
+and clearly convey a message that conveys a specific feeling or a call to action.
+
+00:00:18.015 --> 00:00:22.230
+In order to most effectively tell the story and engage your audience,
+
+00:00:22.230 --> 00:00:24.660
+you want your plots to be polished.
+
+00:00:24.660 --> 00:00:28.365
+Many aspects of polished explanatory visualizations,
+
+00:00:28.364 --> 00:00:31.214
+have already been covered in previous lessons.
+
+00:00:31.214 --> 00:00:33.780
+These include choosing an appropriate plot and
+
+00:00:33.780 --> 00:00:37.865
+encodings and paying attention to design integrity.
+
+00:00:37.865 --> 00:00:41.750
+The previous lessons haven't explicitly covered one aspect of
+
+00:00:41.750 --> 00:00:45.640
+explanatory visualizations, context information.
+
+00:00:45.640 --> 00:00:50.960
+On your axes, make sure you place appropriate labels and sufficient tick marks.
+
+00:00:50.960 --> 00:00:55.054
+Generate legends that describe non-positional encodings,
+
+00:00:55.054 --> 00:00:58.039
+provide a title on your plots, and accompany them
+
+00:00:58.039 --> 00:01:00.589
+with comments or additional text.
+
+00:01:00.590 --> 00:01:04.370
+All of these elements will provide your readers with a direct path
+
+00:01:04.370 --> 00:01:08.180
+to understanding what your visualization is telling them.
+

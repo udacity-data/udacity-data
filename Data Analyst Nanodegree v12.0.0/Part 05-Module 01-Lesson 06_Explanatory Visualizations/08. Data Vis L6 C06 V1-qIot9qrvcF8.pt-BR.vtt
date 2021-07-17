@@ -1,0 +1,195 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.191 --> 00:00:04.110
+Neste vídeo, mostrarei como usar
+a ferramenta nbconvert do Jupyter
+
+00:00:04.143 --> 00:00:05.551
+para transformar o notebook
+
+00:00:05.584 --> 00:00:07.718
+em um deck de slides
+para apresentação.
+
+00:00:07.751 --> 00:00:10.960
+O notebook resume as observações
+dos dados de quilometragem
+
+00:00:10.993 --> 00:00:12.448
+do início do curso,
+
+00:00:12.481 --> 00:00:14.593
+com foco na relação
+da emissão de CO2
+
+00:00:14.626 --> 00:00:16.577
+com os recursos
+do conjunto de dados,
+
+00:00:16.610 --> 00:00:19.609
+incluindo o tamanho do motor
+e o consumo de combustível.
+
+00:00:19.642 --> 00:00:21.888
+Para preparar
+o notebook para conversão,
+
+00:00:21.921 --> 00:00:26.209
+atribuímos cada célula a um tipo
+específico de elemento de slide.
+
+00:00:26.242 --> 00:00:28.832
+Para fazer isso,
+clique na opção View do menu,
+
+00:00:28.865 --> 00:00:32.257
+vá para a Cell Toolbar
+e selecione Slideshow.
+
+00:00:32.290 --> 00:00:35.361
+Veremos um menu no canto
+superior direito de cada célula,
+
+00:00:35.394 --> 00:00:38.154
+para atribuir a cada uma
+um tipo de slide.
+
+00:00:39.139 --> 00:00:42.825
+Para os slides de marcação,
+atribuirei o tipo Slide.
+
+00:00:42.858 --> 00:00:46.322
+Eles aparecerão como o fluxo
+principal do deck de slide.
+
+00:00:46.355 --> 00:00:49.197
+Para as células de código,
+faremos uma das duas coisas.
+
+00:00:49.230 --> 00:00:51.113
+Para células
+como as duas primeiras,
+
+00:00:51.146 --> 00:00:54.520
+nas quais fazemos coisas não tão
+importantes para a apresentação,
+
+00:00:54.553 --> 00:00:58.335
+atribuiremos Skip, assim
+não serão renderizadas no output.
+
+00:00:58.368 --> 00:01:00.761
+As outras células,
+que geram as visualizações,
+
+00:01:00.794 --> 00:01:02.590
+serão definidas como
+Sub-Slides
+
+00:01:02.623 --> 00:01:05.260
+e serão vistas
+depois dos slides pais.
+
+00:01:05.293 --> 00:01:07.460
+Depois de fazer isso
+e salvar o notebook,
+
+00:01:07.493 --> 00:01:10.645
+paramos o servidor do notebook
+e voltamos ao terminal.
+
+00:01:10.678 --> 00:01:14.211
+Para realizar a conversão,
+introduzimos o seguinte comando.
+
+00:01:14.244 --> 00:01:17.923
+A opção dois especifica o formato
+do output dos slides em HTML,
+
+00:01:17.956 --> 00:01:20.980
+enquanto o post serve
+abre um servidor HTTP
+
+00:01:21.013 --> 00:01:23.981
+para renderizar os slides
+imediatamente após a conversão.
+
+00:01:24.749 --> 00:01:28.772
+Vemos o deck de slides
+renderizado usando reveal.gs.
+
+00:01:28.805 --> 00:01:31.595
+As setas esquerda e direita na tela
+ou no teclado
+
+00:01:31.628 --> 00:01:34.492
+podem ser usadas para mover
+entre os slides principais.
+
+00:01:34.525 --> 00:01:36.540
+Para slides
+com subslides filhos,
+
+00:01:36.573 --> 00:01:39.837
+usamos as setas para cima e para
+baixo para navegar entre eles.
+
+00:01:39.870 --> 00:01:41.573
+Note nos slides
+de visualização
+
+00:01:41.606 --> 00:01:44.859
+que o código foi renderizado
+além da visualização.
+
+00:01:44.892 --> 00:01:48.013
+Preferimos que este código não seja
+visível na apresentação.
+
+00:01:48.046 --> 00:01:51.075
+Para isso, especificamos
+um arquivo template Jinja,
+
+00:01:51.108 --> 00:01:54.125
+que gera os slides
+no formato que desejamos.
+
+00:01:54.158 --> 00:01:55.942
+Na página do Damián Avila -
+
+00:01:55.975 --> 00:01:58.146
+um dos que contribuíram
+para o nbconvert -
+
+00:01:58.179 --> 00:01:59.596
+há um exemplo de template
+
+00:01:59.629 --> 00:02:03.500
+que esconde as células de input ao
+renderizar um notebook como slide.
+
+00:02:03.533 --> 00:02:08.725
+Fiz uma cópia local deste código
+como output_toggle.tpl,
+
+00:02:08.758 --> 00:02:11.859
+e o coloquei na mesma pasta
+do meu notebook.
+
+00:02:11.892 --> 00:02:14.037
+Agora, quando uso o nbconvert,
+
+00:02:14.070 --> 00:02:18.820
+adiciono uma opção,
+a template output_toggle.
+
+00:02:18.853 --> 00:02:21.774
+Os subslides só mostram
+os outputs da visualização
+
+00:02:21.807 --> 00:02:25.672
+e retêm os inputs de código,
+a menos que eu clique no output.
+

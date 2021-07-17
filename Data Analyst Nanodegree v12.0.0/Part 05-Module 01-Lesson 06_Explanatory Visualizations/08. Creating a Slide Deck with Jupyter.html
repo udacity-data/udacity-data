@@ -1,0 +1,349 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Creating a Slide Deck with Jupyter
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Explanatory Visualizations
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Revisiting the Data Analysis Process.html">
+       02. Revisiting the Data Analysis Process
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Tell A Story.html">
+       03. Tell A Story
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Same Data, Different Stories.html">
+       04. Same Data, Different Stories
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quizzes on Data Story Telling.html">
+       05. Quizzes on Data Story Telling
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Polishing Plots.html">
+       06. Polishing Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Polishing Plots Practice.html">
+       07. Polishing Plots Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Creating a Slide Deck with Jupyter.html">
+       08. Creating a Slide Deck with Jupyter
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Getting and Using Feedback.html">
+       09. Getting and Using Feedback
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Lesson Summary.html">
+       10. Lesson Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          08. Creating a Slide Deck with Jupyter
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="creating-a-slide-deck-with-jupyter">
+          Creating a Slide Deck with Jupyter
+         </h2>
+         <p>
+          There are many ways in which you can use explanatory visualizations to convey findings to others. You might save your plots on their own, and embed them in a report or blog post. Visualizations also have a major place in presentations, as part of a slide deck. When it comes to creating slides, you might normally think of dedicated tools like Powerpoint, Keynote, or Google Slides. What you might not be aware of is the fact that Jupyter notebooks include a tool,
+          <a href="https://nbconvert.readthedocs.io/en/latest/" rel="noopener noreferrer" target="_blank">
+           <strong>
+            nbconvert
+           </strong>
+          </a>
+          , that can export notebooks in an HTML slides format. The video below demonstrates a walkthrough of this:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Data Vis L6 C06 V1
+         </p>
+        </h3>
+        <video controls="">
+         <source src="08. Data Vis L6 C06 V1-qIot9qrvcF8.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="08. Data Vis L6 C06 V1-qIot9qrvcF8.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="08. Data Vis L6 C06 V1-qIot9qrvcF8.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="08. Data Vis L6 C06 V1-qIot9qrvcF8.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          If you're planning on creating a slide deck presentation through a Jupyter notebook, it's a good idea to create a new notebook that is separate from your original, exploratory, work. This way, your explanatory work will be focused, and there will be fewer elements to categorize. To start, you need to categorize the type of slide element that each cell will correspond with. From the menu bar, select
+          <strong>
+           View &gt; Cell Toolbar &gt; Slideshow
+          </strong>
+          . You'll see a drop down appear in the upper right hand corner of each cell, from which you can assign slide element types.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="Go to View &gt; Cell Toolbar &gt; Slideshow (left) to make the slide type dropdown show up on each cell (right)." class="img img-fluid" src="img/l6-c08-slidedeck1.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            Go to View &gt; Cell Toolbar &gt; Slideshow (left) to make the slide type dropdown show up on each cell (right).
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          For cells that you want readers to see, you'll choose the Slide, Sub-Slide, or Fragment types. Slides will form the main flow of the presentation, while sub-slides are children of slides in the main flow. Fragments are attached to preceding slides or sub-slides, and allow for gradual reveals of information on the same slide. It's a little hard to describe this abstractly through text: you can see an example of Slides, Sub-Slides, and Fragments at work through the example presentation found on the
+          <a href="https://revealjs.com/" rel="noopener noreferrer" target="_blank">
+           reveal.js
+          </a>
+          homepage (the library that is behind the nbconvert slide functionality).
+         </p>
+         <p>
+          Cells that you don't want users to see should be in the Skip or Notes types. Skip-type cells will never show up in a slide flow, while Notes cells can only be seen by the presenter in a speaker notes window.
+         </p>
+         <p>
+          In addition to setting slide types, make sure that all of your code cells have been run and produce the output that you want to show. nbconvert will only export elements of the notebook as-is, and won't run the notebook cells as is. It is recommended that you use the
+          <strong>
+           Kernel &gt; Restart &amp; Run All
+          </strong>
+          menu option to do a clean run-through of all of your cells as a final preparatory action.
+         </p>
+         <p>
+          Once your notebook has been prepared, save it and shut down your notebook server. On the command line, you can render the notebook as slides using the following expression as a base.
+         </p>
+         <pre><code class="text language-text">jupyter nbconvert presentation.ipynb --to slides</code></pre>
+         <p>
+          However, it's likely that you'll want to add additional options to the nbconvert call to make the slides look cleaner and to make serving them easier.
+         </p>
+         <p>
+          By default, code cell inputs and outputs are both rendered in the slides. More likely than not, you'll want to hide the code in your presentation so that all attention can be put on the visualizations and text. To do this, you can specify a template file using the
+          <code>
+           --template
+          </code>
+          option. The template file available at
+          <a href="https://s3.amazonaws.com/video.udacity-data.com/topher/2018/March/5abe98f3_output-toggle/output-toggle.tpl" rel="noopener noreferrer" target="_blank">
+           this link
+          </a>
+          and in the Resources at the bottom of this page, will hide code cells from nbconvert.
+         </p>
+         <p>
+          Additionally, running the base expression will not automatically open up the slide deck for viewing. In order to serve the slides, you would need to install a local copy of reveal.js (
+          <a href="https://github.com/hakimel/reveal.js#installation" rel="noopener noreferrer" target="_blank">
+           Installation documentation
+          </a>
+          ), make sure that your HTML slides point to the library correctly (using the
+          <code>
+           --reveal-prefix
+          </code>
+          option), and then start a local http server (e.g., via
+          <code>
+           python -m http.server
+          </code>
+          ). Alternatively, you can add the
+          <code>
+           --post serve
+          </code>
+          option to your expression to make use of a public, online version of
+          <code>
+           reveal.js
+          </code>
+          , start up a server, and immediately open a tab in your web browser with the slide deck ready to navigate.
+         </p>
+         <p>
+          If you're at home with HTML, css, and web engine templating, then you have a lot of potential room for customizing your slide deck work. Otherwise, you can just use an expression like the following to get a basic slide deck up and running.
+         </p>
+         <pre><code class="text language-text">jupyter nbconvert presentation.ipynb --to slides --template output-toggle.tpl
+--post serve</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="09. Getting and Using Feedback.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. Creating a Slide Deck with Jupyter')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

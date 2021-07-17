@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:04.549 --> 00:00:09.269
+There are two main reasons for creating data visualizations,
+
+00:00:09.269 --> 00:00:13.320
+exploratory analysis, and explanatory analysis.
+
+00:00:13.320 --> 00:00:15.554
+In previous lessons in this course,
+
+00:00:15.554 --> 00:00:18.390
+you've learned about exploratory analysis.
+
+00:00:18.390 --> 00:00:23.640
+Exploratory analysis is done when you are searching for insights in your data.
+
+00:00:23.640 --> 00:00:27.570
+The visualizations you create in this stage, don't need to be polished,
+
+00:00:27.570 --> 00:00:32.505
+they only need to convey information for you to answer your research questions.
+
+00:00:32.505 --> 00:00:36.175
+This lesson, we'll focus on explanatory analysis,
+
+00:00:36.174 --> 00:00:39.664
+which is done when you communicate your findings to others.
+
+00:00:39.664 --> 00:00:42.140
+These visualizations need to emphasize
+
+00:00:42.140 --> 00:00:46.070
+the key messages that you want the viewer to understand.
+
+00:00:46.070 --> 00:00:48.545
+Compared to exploratory plots,
+
+00:00:48.545 --> 00:00:50.840
+explanatory plots should be polished
+
+00:00:50.840 --> 00:00:54.520
+so that their purpose is clear and easy to obtain.
+
+00:00:54.520 --> 00:00:57.070
+When someone looks at your visualization,
+
+00:00:57.070 --> 00:00:59.975
+you may not be there in person to explain things.
+
+00:00:59.975 --> 00:01:03.289
+The goal of explanatory visualization is to make sure that
+
+00:01:03.289 --> 00:01:06.935
+your reader's interpretation matches what you want to convey.
+
+00:01:06.935 --> 00:01:11.010
+You'll learn best practices to do that in this lesson.
+

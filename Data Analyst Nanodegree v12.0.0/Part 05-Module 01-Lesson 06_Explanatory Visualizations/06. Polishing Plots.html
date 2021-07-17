@@ -1,0 +1,445 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Polishing Plots
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Explanatory Visualizations
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Revisiting the Data Analysis Process.html">
+       02. Revisiting the Data Analysis Process
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Tell A Story.html">
+       03. Tell A Story
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Same Data, Different Stories.html">
+       04. Same Data, Different Stories
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Quizzes on Data Story Telling.html">
+       05. Quizzes on Data Story Telling
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Polishing Plots.html">
+       06. Polishing Plots
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Polishing Plots Practice.html">
+       07. Polishing Plots Practice
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Creating a Slide Deck with Jupyter.html">
+       08. Creating a Slide Deck with Jupyter
+      </a>
+     </li>
+     <li class="">
+      <a href="09. Getting and Using Feedback.html">
+       09. Getting and Using Feedback
+      </a>
+     </li>
+     <li class="">
+      <a href="10. Lesson Summary.html">
+       10. Lesson Summary
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          06. Polishing Plots
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          L6 061 Polishing Plots V3
+         </p>
+        </h3>
+        <video controls="">
+         <source src="06. L6 061 Polishing Plots V3-4TixzVx79uk.mp4" type="video/mp4"/>
+         <track default="true" kind="subtitles" label="en" src="06. L6 061 Polishing Plots V3-4TixzVx79uk.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="BR" src="06. L6 061 Polishing Plots V3-4TixzVx79uk.pt-BR.vtt" srclang="BR"/>
+         <track default="false" kind="subtitles" label="CN" src="06. L6 061 Polishing Plots V3-4TixzVx79uk.zh-CN.vtt" srclang="CN"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="polishing-plots">
+          Polishing Plots
+         </h2>
+         <p>
+          Thus far in the course, the code you've seen has been fairly bare-bones, just enough to get your plots created. In order to convey your findings to others quickly and efficiently, you'll need to put work into polishing your plots. There are many dimensions to consider when putting together a polished plot.
+         </p>
+         <h5 id="choose-an-appropriate-plot">
+          Choose an appropriate plot
+         </h5>
+         <p>
+          Your choice of plot will depend on the number of variables that you have and their types: nominal, ordinal, discrete numeric, or continuous. Choice of plot also depends on the specific relationship that you want to convey. For example, whether you choose a violin plot, box plot, or adapted bar chart depends on how much data you have and whether distributions are significant or important. You'll be more likely to use a violin plot if you have a lot of data and the distributions are meaningful, and more inclined to use a box plot or bar chart if you have less data, or the distributions are less reliable.
+         </p>
+         <h5 id="choose-appropriate-encodings">
+          Choose appropriate encodings
+         </h5>
+         <p>
+          Your variables should impact not just the type of plot that is chosen, but also the variable encodings. For example, if you have three numeric variables, you shouldn't just assign x-position, y-position, and color encodings randomly. In many cases, the two variables that are most important should take the positional encodings; if one represents an outcome or dependent variable, then it should be plotted on the y-axis. In other cases, it makes sense to plot the dependent measure with color, as though you are taking a top-down view of the plane defined by the two independent measures plotted on the axes.
+         </p>
+         <h5 id="pay-attention-to-design-integrity">
+          Pay attention to design integrity
+         </h5>
+         <p>
+          When setting up your plotting parameters, remember the design principles from earlier in the course.
+         </p>
+         <p>
+          Make sure that you minimize chart junk and maximize the data-ink ratio, as far as it maintains good interpretability of the data. When deciding whether or not to add non-positional encodings, make sure that they are meaningful. For example, using color in a frequency bar chart may not be necessary on its own, but will be useful if those colors are used again later in the same presentation, matched with their original groups. By the same token, avoid using the same color scheme for different variables to minimize the chance of reader confusion.
+         </p>
+         <p>
+          You should also ensure that your plot avoids lie factors as much as possible. If you have a bar chart or histogram, it is best to anchor them to a 0 baseline. If you're employing a scale transformation, signal this clearly in the title, axis labels, and tick marks.
+         </p>
+         <h5 id="label-axes-and-choose-appropriate-tick-marks">
+          Label axes and choose appropriate tick marks
+         </h5>
+         <p>
+          For your positional axes, make sure you include axis labels. This is less important in exploration when you have the code available and have an extended flow to your work, but when you're conveying only the key pieces to others, it's crucial. When you add an axis label, make sure you also provide the units of measurement, if applicable (e.g., stating "Height (cm)" rather than just "Height").
+         </p>
+         <p>
+          As for tick marks, you should include at least three tick marks on each axis. This is especially important for data that has been transformed: you want enough tick marks so that the scale of the data can be communicated there. If your values are very large or very small numbers, consider using abbreviations to relabel the ticks (e.g., use "250K" instead of "250000").
+         </p>
+         <h5 id="provide-legends-for-non-positional-variables">
+          Provide legends for non-positional variables
+         </h5>
+         <p>
+          Make sure that you add a legend for variables not depicted on the axes of your plot. For color encoding, you can add a color bar to the side of the plot. The most important new thing here is that you provide a descriptive label to your legend or color bar, just as you would the axes of your plot.
+         </p>
+         <h5 id="title-your-plot-and-include-descriptive-comments">
+          Title your plot and include descriptive comments
+         </h5>
+         <p>
+          Finally, make sure that you provide a descriptive title to your plot. If this is a key plot that presents important findings to others, aim to create a title that draws attention to those main points, rather than just state what variables are plotted.
+         </p>
+         <p>
+          Also, realize that while a visualization might be the core mechanism by which you convey findings, it need not stand alone. Comments in the text below or surrounding the plot can provide valuable context to help the reader understand your message, or reinforce the main points that they should have gotten.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="using-matplotlib-to-polish-plots">
+          Using Matplotlib to Polish Plots
+         </h2>
+         <p>
+          Back in the univariate plots lesson, you were introduced to the general way that visualizations are structured in matplotlib and seaborn: each visualization is based off a single Figure, which contains one or more Axes, and each Axes houses elements like points, lines, and boxes that depict the plotted data. Understanding and making use of this structure will open up your ability to polish your visualizations. Each function below is linked to its documentation page and which object type it is associated with.
+         </p>
+         <ul>
+          <li>
+           <p>
+            <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.figure.html" rel="noopener noreferrer" target="_blank">
+             <code>
+              figure
+             </code>
+            </a>
+            (Figure): Used to create a new figure. You'll use this first to initialize the figure, most often using the "figsize" parameter to set the figure dimensions.
+           </p>
+          </li>
+          <li>
+           <p>
+            <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.xlabel.html" rel="noopener noreferrer" target="_blank">
+             <code>
+              xlabel
+             </code>
+            </a>
+            and
+            <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.ylabel.html" rel="noopener noreferrer" target="_blank">
+             <code>
+              ylabel
+             </code>
+            </a>
+            (Axes): Used for setting axis labels.
+           </p>
+          </li>
+          <li>
+           <p>
+            <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.xticks.html" rel="noopener noreferrer" target="_blank">
+             <code>
+              xticks
+             </code>
+            </a>
+            and
+            <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.yticks.html" rel="noopener noreferrer" target="_blank">
+             <code>
+              yticks
+             </code>
+            </a>
+            (Axes): Used for setting tick marks.
+           </p>
+          </li>
+          <li>
+           <p>
+            <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.legend.html" rel="noopener noreferrer" target="_blank">
+             <code>
+              legend
+             </code>
+            </a>
+            (Axes): Used to create and customize a legend. One key parameter to use is "title", which allows you to label what feature is being depicted in the legend. You might also need to make use of the "loc" and "ncol" parameters to move and shape the legend if it gets placed in an awkward location by default.
+           </p>
+          </li>
+          <li>
+           <p>
+            <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.colorbar.html" rel="noopener noreferrer" target="_blank">
+             <code>
+              colorbar
+             </code>
+            </a>
+            (Axes): Used to add a colorbar to a plot. Use the "label" parameter to set the label on a colorbar.
+           </p>
+          </li>
+          <li>
+           <p>
+            <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.title.html" rel="noopener noreferrer" target="_blank">
+             <code>
+              title
+             </code>
+            </a>
+            (Axes): Used for setting axis titles.
+           </p>
+          </li>
+          <li>
+           <p>
+            <a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.suptitle.html" rel="noopener noreferrer" target="_blank">
+             <code>
+              suptitle
+             </code>
+            </a>
+            (Figure): Used for setting figure titles. The main difference between
+            <code>
+             suptitle
+            </code>
+            and
+            <code>
+             title
+            </code>
+            is that the former sets a title for the Figure as a whole, and the latter for only a single Axes. This is an important distinction: if you're using faceting or subplotting, you'll want to use
+            <code>
+             suptitle
+            </code>
+            to set a title for the figure as a whole.
+           </p>
+          </li>
+         </ul>
+         <p>
+          All of the functions above, or parameters associated with those functions in the case of seaborn, have been used sporadically throughout the course. Below are a couple examples of these polishing functions in use.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          This example makes use of the fuel economy dataset. Since a colorbar is being added to the plot,
+          <code>
+           figsize
+          </code>
+          is used to make the figure a little bit wider than normal. Title, axes, and colorbar are all labeled. Note how the units of each feature being plotted is given in parentheses in each label.
+         </p>
+         <pre><code class="python language-python"># loading in the data, sampling to reduce points plotted
+fuel_econ = pd.read_csv('./data/fuel_econ.csv')
+
+np.random.seed(2018)
+sample = np.random.choice(fuel_econ.shape[0], 200, replace = False)
+fuel_econ_subset = fuel_econ.loc[sample]
+
+# plotting the data
+plt.figure(figsize = [7,4])
+plt.scatter(data = fuel_econ_subset, x = 'displ', y = 'comb', c = 'co2',
+            cmap = 'viridis_r')
+plt.title('Fuel Efficiency and CO2 Output by Engine Size')
+plt.xlabel('Displacement (l)')
+plt.ylabel('Combined Fuel Eff. (mpg)')
+plt.colorbar(label = 'CO2 (g/mi)');</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="" class="img img-fluid" src="img/l6-c06-polishing1.png"/>
+          <figcaption class="figure-caption">
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="07. Polishing Plots Practice.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. Polishing Plots')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

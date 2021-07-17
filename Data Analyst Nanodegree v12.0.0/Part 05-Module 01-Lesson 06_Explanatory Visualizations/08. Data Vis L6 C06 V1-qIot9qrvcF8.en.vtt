@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.459
+In this video, I'll show how to use
+
+00:00:02.459 --> 00:00:07.519
+jupyter's nbconvert tool to change this notebook into a slide deck for presentation.
+
+00:00:07.519 --> 00:00:10.019
+This notebook summarizes some observations from
+
+00:00:10.019 --> 00:00:12.629
+the car mileage dataset from earlier in the course,
+
+00:00:12.630 --> 00:00:16.475
+focusing on the relationship of CO2 emissions to other features in the data set,
+
+00:00:16.475 --> 00:00:19.480
+including engine size, and fuel mileage.
+
+00:00:19.480 --> 00:00:22.109
+In order to prepare the notebook for conversion,
+
+00:00:22.109 --> 00:00:25.954
+we need to assign each cell to a specific type of slide element.
+
+00:00:25.954 --> 00:00:28.924
+To do this, click on the view menu option,
+
+00:00:28.925 --> 00:00:32.274
+move to cell toolbar, and select slideshow.
+
+00:00:32.274 --> 00:00:34.954
+You'll see a drop-down in the upper right corner of
+
+00:00:34.954 --> 00:00:38.655
+each cell to assign each cell a slide type.
+
+00:00:38.655 --> 00:00:40.545
+For the markdown slides,
+
+00:00:40.545 --> 00:00:42.664
+I will assign the slide type.
+
+00:00:42.664 --> 00:00:46.019
+These will show up as the main flow of the slide deck.
+
+00:00:46.020 --> 00:00:49.395
+For the code cells, I'll do one of two things.
+
+00:00:49.395 --> 00:00:51.150
+For cells like the first two,
+
+00:00:51.149 --> 00:00:54.369
+we're undoing things that aren't really important to the presentation.
+
+00:00:54.369 --> 00:00:58.320
+I'll assign them to skip so that they won't be rendered in the output.
+
+00:00:58.320 --> 00:01:02.579
+The other cells that generate the visualizations will be set as subslide types,
+
+00:01:02.579 --> 00:01:05.239
+and will be seen after their parents slides.
+
+00:01:05.239 --> 00:01:07.699
+After doing this and saving the notebook,
+
+00:01:07.700 --> 00:01:10.540
+I stop the notebook server and return to the terminal.
+
+00:01:10.540 --> 00:01:12.005
+To perform the conversion,
+
+00:01:12.004 --> 00:01:14.054
+I input the following command.
+
+00:01:14.055 --> 00:01:18.100
+The two option specifies the HTML slides output format,
+
+00:01:18.099 --> 00:01:19.789
+while post serve will open up
+
+00:01:19.790 --> 00:01:24.295
+an HTTP server to render the slides immediately after conversion.
+
+00:01:24.295 --> 00:01:28.689
+You can see the slide deck now rendered using reveal.gs.
+
+00:01:28.689 --> 00:01:30.769
+The left and right arrows onscreen,
+
+00:01:30.769 --> 00:01:34.394
+or with the keyboard., can be used to move between main slides.
+
+00:01:34.394 --> 00:01:36.649
+For slides with child subslides,
+
+00:01:36.650 --> 00:01:39.605
+you can use the up and down arrows to navigate between them.
+
+00:01:39.605 --> 00:01:42.049
+You'll notice in the visualization slides that
+
+00:01:42.049 --> 00:01:44.780
+the code has been rendered in addition to the visualization.
+
+00:01:44.780 --> 00:01:47.924
+We'd rather this code not be visible in the presentation.
+
+00:01:47.924 --> 00:01:49.954
+To accomplish this, we can specify
+
+00:01:49.954 --> 00:01:54.034
+a Jinja template file to generate the slides in the format that we desire.
+
+00:01:54.034 --> 00:01:56.238
+This page by Damian Avila,
+
+00:01:56.239 --> 00:01:58.130
+one of the contributors to nbconvert,
+
+00:01:58.129 --> 00:02:00.229
+has an example of a template for hiding
+
+00:02:00.230 --> 00:02:03.469
+the input cells when rendering a notebook as slides.
+
+00:02:03.469 --> 00:02:08.574
+I've made a local copy of this code as output_toggle.tpl,
+
+00:02:08.574 --> 00:02:11.889
+and put it into the same folder as my notebook.
+
+00:02:11.889 --> 00:02:14.269
+Now, when I use nbconvert,
+
+00:02:14.270 --> 00:02:18.295
+I add an additional option, template output_toggle.
+
+00:02:18.294 --> 00:02:21.905
+The slope slides now only show the visualization outputs,
+
+00:02:21.905 --> 00:02:26.099
+and withhold the code inputs unless I click on the output.
+
