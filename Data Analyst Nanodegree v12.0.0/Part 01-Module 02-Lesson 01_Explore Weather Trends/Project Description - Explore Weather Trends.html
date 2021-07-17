@@ -1,0 +1,323 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Explore Weather Trends
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Explore Weather Trends
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Your First Project.html">
+       01. Your First Project
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Project Instructions.html">
+       02. Project Instructions
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Accessing Data With SQL.html">
+       03. Accessing Data With SQL
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Moving Averages.html">
+       04. Moving Averages
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Description - Explore Weather Trends.html">
+       Project Description - Explore Weather Trends
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Rubric - Explore Weather Trends.html">
+       Project Rubric - Explore Weather Trends
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          Explore Weather Trends
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <h1 id="exploring-weather-trends---project-instructions">
+        Exploring Weather Trends - Project Instructions
+       </h1>
+       <h3 id="summary">
+        Summary
+       </h3>
+       <p>
+        In this project, you will analyze local and global temperature data and compare the temperature trends where you live to overall global temperature trends.
+       </p>
+       <h3 id="instructions">
+        Instructions
+       </h3>
+       <p>
+        Your goal will be to create a visualization and prepare a write up describing the similarities and differences between global temperature trends and temperature trends in the closest big city to where you live. To do this, you’ll follow the steps below:
+       </p>
+       <ul>
+        <li>
+         <strong>
+          Extract the data
+         </strong>
+         from the database. There's a workspace in the previous section that is connected to a database. You’ll need to export the temperature data for the world as well as for the closest big city to where you live. You can find a list of cities and countries in the
+         <code>
+          city_list
+         </code>
+         table. To interact with the database, you'll need to write a SQL query.
+         <ul>
+          <li>
+           Write a SQL query to extract the city level data. Export to CSV.
+          </li>
+          <li>
+           Write a SQL query to extract the global data. Export to CSV.
+          </li>
+         </ul>
+        </li>
+        <li>
+         <strong>
+          Open up the CSV
+         </strong>
+         in whatever tool you feel most comfortable using. We suggest using Excel or Google sheets, but you are welcome to use another tool, such as Python or R.
+        </li>
+        <li>
+         <strong>
+          Create a line chart
+         </strong>
+         that compares your city’s temperatures with the global temperatures. Make sure to plot the
+         <em>
+          moving average
+         </em>
+         rather than the yearly averages in order to smooth out the lines, making trends more observable (the last concept in the previous lesson goes over how to do this in a spreadsheet).
+        </li>
+        <li>
+         <strong>
+          Make observations
+         </strong>
+         about the similarities and differences between the world averages and your city’s averages, as well as overall trends. Here are some questions to get you started.
+         <ul>
+          <li>
+           Is your city hotter or cooler on average compared to the global average? Has the difference been consistent over time?
+          </li>
+          <li>
+           “How do the changes in your city’s temperatures over time compare to the changes in the global average?”
+          </li>
+          <li>
+           What does the overall trend look like? Is the world getting hotter or cooler? Has the trend been consistent over the last few hundred years?
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <h3 id="submission">
+        Submission
+       </h3>
+       <p>
+        Your submission should be a PDF that includes:
+       </p>
+       <ul>
+        <li>
+         <strong>
+          An outline
+         </strong>
+         of steps taken to prepare the data to be visualized in the chart, such as:
+         <ul>
+          <li>
+           What tools did you use for each step? (Python, SQL, Excel, etc)
+          </li>
+          <li>
+           How did you calculate the moving average?
+          </li>
+          <li>
+           What were your key considerations when deciding how to visualize the trends?
+          </li>
+         </ul>
+        </li>
+        <li>
+         <strong>
+          Line chart
+         </strong>
+         with local and global temperature trends
+        </li>
+        <li>
+         At least
+         <strong>
+          four observations
+         </strong>
+         about the similarities and/or differences in the trends
+        </li>
+       </ul>
+       <h3 id="rubric">
+        Rubric
+       </h3>
+       <p>
+        A Udacity reviewer will assess your project based on the criteria in the
+        <a href="https://review.udacity.com/#!/rubrics/1125/view" rel="noopener noreferrer" target="_blank">
+         project rubric
+        </a>
+        . Use the rubric as a guide while you complete the project, then give yourself a quick self-assessment before you submit it.
+       </p>
+       <p>
+        If you're on this page, then you should have completed your exploration of local and global temperature trends. Congratulations! Before you submit your project, make sure to check the following points:
+       </p>
+       <ul>
+        <li>
+         Please submit your project as a PDF. Your report should include documentation of the steps in your analysis, a line chart depicting the local and global temperature data, and your observations regarding the trends.
+        </li>
+        <li>
+         Don't forget to review the
+         <a href="https://review.udacity.com/#!/rubrics/1125/view" rel="noopener noreferrer" target="_blank">
+          rubric
+         </a>
+         ! Reviewers will use the rubric to assess your work, so make sure it 'meets specifications' on all points before you submit.
+        </li>
+       </ul>
+       <p>
+        Once you've checked the above, click on the "Submit Project" button below to go to the project submission page. After you submit your project, it can take up to a week for it to be evaluated. Most of the time, it is much faster! In the meantime, you can feel free to continue to other parts of the program to continue your learning!
+       </p>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('Explore Weather Trends')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
