@@ -1,0 +1,708 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Determine A Repo's Status
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Create A Git Repo
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Create A Repo From Scratch.html">
+       02. Create A Repo From Scratch
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Clone An Existing Repo.html">
+       03. Clone An Existing Repo
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Determine A Repo's Status.html">
+       04. Determine A Repo's Status
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Outro.html">
+       05. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          04. Determine A Repo's Status
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Working with Git on the command line can be a little bit challenging because it's a little bit like a
+          <a href="https://en.wikipedia.org/wiki/Black_box" rel="noopener noreferrer" target="_blank">
+           black box
+          </a>
+          . I mean, how do you know when you should or shouldn't run certain Git commands? Is Git ready for me to run a command yet? What if I run a command but I think it didn't work…how can I find that out? The answer to all of these questions is the
+          <code>
+           git status
+          </code>
+          command!
+         </p>
+         <pre><code class="shell language-shell">$ git status</code></pre>
+         <p>
+          The
+          <code>
+           git status
+          </code>
+          is our key to the mind of Git. It will tell us what Git is thinking and the state of our repository as Git sees it. When you're first starting out, you should be using the
+          <code>
+           git status
+          </code>
+          command
+          <em>
+           <em>
+            all of the time
+           </em>
+          </em>
+          ! Seriously. You should get into the habit of running it after any other command. This will help you learn how Git works and it'll help you from making (possibly) incorrect assumptions about the state of your files/repository.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Status Of Cloned Repo
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             To answer this quiz, make sure you've
+             <code>
+              cd
+             </code>
+             ed into the
+             <code>
+              course-git-blog-project
+             </code>
+             project. If you've been following along in this lesson and haven't added any files to this project, then what does running
+             <code>
+              git status
+             </code>
+             display?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1486513004009" name="263628" type="radio" value="a1486513004009"/>
+           <label for="a1486513004009">
+            <p>
+             Status: good
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1486513023571" name="263628" type="radio" value="a1486513023571"/>
+           <label for="a1486513023571">
+            <p>
+             On branch master
+             <br/>
+             Your branch is up-to-date with 'origin/master'.
+             <br/>
+             Initial commit
+             <br/>
+             nothing to commit (create/copy files and use "git add" to track)
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1486513044449" name="263628" type="radio" value="a1486513044449"/>
+           <label for="a1486513044449">
+            <p>
+             master branch
+             <br/>
+             Please commit some files
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1486513057659" name="263628" type="radio" value="a1486513057659"/>
+           <label for="a1486513057659">
+            <p>
+             On branch master
+             <br/>
+             Your branch is up-to-date with 'origin/master'.
+             <br/>
+             nothing to commit, working directory clean
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          On branch master
+          <br/>
+          Your branch is up-to-date with 'origin/master'.
+          <br/>
+          nothing to commit, working directory clean
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-status-output">
+          Git Status Output
+         </h2>
+         <p>
+          The
+          <code>
+           git status
+          </code>
+          command will display a lot of information depending on the state of your files, the working directory, and the repository. You don't need to worry too much about these, though…just run
+          <code>
+           git status
+          </code>
+          and it will display the information you need to know.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_An animated gif of the Terminal application. The `git status` command is run in the `course-git-blog-project` project._" class="img img-fluid" src="img/ud123-l2-git-status-blog-project.gif"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             An animated gif of the Terminal application. The
+             <code>
+              git status
+             </code>
+             command is run in the
+             <code>
+              course-git-blog-project
+             </code>
+             project.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-status-explanation">
+          Git Status Explanation
+         </h2>
+         <p>
+          As you can see in the GIF above, running
+          <code>
+           git status
+          </code>
+          in the
+          <code>
+           course-git-blog-project
+          </code>
+          project produces the following output:
+         </p>
+         <pre><code class="shell language-shell">On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean</code></pre>
+         <p>
+          The output tells us two things:
+         </p>
+         <ol>
+          <li>
+           <code>
+            On branch master
+           </code>
+           – this tells us that Git is on the
+           <code>
+            master
+           </code>
+           branch. You've got a description of a branch on your terms sheet so this is the "master" branch (which is the default branch). We'll be looking more at branches in lesson 5
+          </li>
+         </ol>
+         <ul>
+          <li>
+           <code>
+            Your branch is up-to-date with 'origin/master'.
+           </code>
+           – Because
+           <code>
+            git clone
+           </code>
+           was used to copy this repository from another computer, this is telling us if our project is in sync with the one we copied from. We won't be dealing with the project on the other computer, so this line can be ignored.
+          </li>
+          <li>
+           <code>
+            nothing to commit, working directory clean
+           </code>
+           – this is saying that there are no pending changes.
+          </li>
+         </ul>
+         <p>
+          Think of this output as the "resting state" (that's not an official description - it's how I like to describe it!). This is the resting state because there are no new files, no changes have been made in files, nothing is in the staging area about to be committed…no change or action is pending, so that's why I like to call it the resting state.
+         </p>
+         <p>
+          So this is what it looks like when running
+          <code>
+           git status
+          </code>
+          in a repository that already has commits. Let's switch to the
+          <code>
+           new-git-project
+          </code>
+          project to see what the
+          <code>
+           git status
+          </code>
+          output will produce.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <blockquote>
+          <h3 id="💡-changes-in-git-v214-💡">
+           💡 Changes in Git v2.14 💡
+          </h3>
+         </blockquote>
+         <blockquote>
+          <p>
+           In Git version 2.14, running the
+           <code>
+            git status
+           </code>
+           command in an empty directory changed the wording of "Inital commit" to the much clearer "No commits yet". So the output would be:
+          </p>
+         </blockquote>
+         <blockquote>
+          <pre><code class="bash language-bash">On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)</code></pre>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             To answer this quiz, make sure you've
+             <code>
+              cd
+             </code>
+             ed into the
+             <code>
+              new-git-project
+             </code>
+             project.
+            </p>
+            <p>
+             If you've been following along in this lesson and haven't added any files to this project, then what does running
+             <code>
+              git status
+             </code>
+             display?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1486766973483" name="264376" type="radio" value="a1486766973483"/>
+           <label for="a1486766973483">
+            <p>
+             Status: good
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1486767002437" name="264376" type="radio" value="a1486767002437"/>
+           <label for="a1486767002437">
+            <p>
+             On branch master
+             <br/>
+             Initial commit
+             <br/>
+             nothing to commit (create/copy files and use "git add" to track)
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1486767003147" name="264376" type="radio" value="a1486767003147"/>
+           <label for="a1486767003147">
+            <p>
+             master branch
+             <br/>
+             Please commit some files
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1486767003798" name="264376" type="radio" value="a1486767003798"/>
+           <label for="a1486767003798">
+            <p>
+             On branch master
+             <br/>
+             nothing to commit, working directory clean
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          On branch master
+          <br/>
+          Initial commit
+          <br/>
+          nothing to commit (create/copy files and use "git add" to track)
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_An animated GIF of the Terminal application. The `git status` command is run in the `new-git-project` project._" class="img img-fluid" src="img/ud123-l2-git-status-new-project.gif"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             An animated GIF of the Terminal application. The
+             <code>
+              git status
+             </code>
+             command is run in the
+             <code>
+              new-git-project
+             </code>
+             project.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="explanation-of-git-status-in-a-new-repo">
+          Explanation Of Git Status In A New Repo
+         </h2>
+         <p>
+          This is the output of running
+          <code>
+           git status
+          </code>
+          in the
+          <code>
+           new-git-project
+          </code>
+          project:
+         </p>
+         <pre><code class="bash language-bash">$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)</code></pre>
+         <p>
+          To be completely clear, I haven't made any commits in my project yet. If you have made a commit, then your output should look exactly like that of the course-git-blog-project project.
+         </p>
+         <p>
+          If you compare this to the
+          <code>
+           git status
+          </code>
+          output from the course-git-blog-project project, then you'll see that they're pretty similar. The thing to note that's different is that this output includes the line
+          <code>
+           Initial commit
+          </code>
+          . This is the tiniest bit confusing because there actually aren't any commits in this repository yet! We haven't discussed making a commit yet, but when we do, we will be able to make an initial commit.
+         </p>
+         <p>
+          Wanna have a sneak peak of the next lesson and at the same time prove that there aren't any commits in this repo yet? Great, I knew you did! Try running the command
+          <code>
+           git log
+          </code>
+          and check out its response:
+         </p>
+         <pre><code class="bash language-bash">$ git log
+fatal: your current branch 'master' does not have any commits yet</code></pre>
+         <p>
+          Well, that's kind of scary looking. "Fatal"? Fortunately, it turns out that just means that the Git program is exiting because it can't find any work to do. Git tells us this as if it were an error, but it's really not a problem. We know we haven't put any commits into this repo yet.
+         </p>
+         <p>
+          It's pretty clear from the response that there aren't any commits!
+         </p>
+         <p>
+          We've just taken a very brief look at the
+          <code>
+           git status
+          </code>
+          command. Remember that the output of
+          <code>
+           git status
+          </code>
+          will change depending on if files have been added/deleted/modified, what's on the staging index, and the state of the repository. We'll be using the
+          <code>
+           git status
+          </code>
+          command throughout this entire course, so get comfortable running it!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-status-recap">
+          Git Status Recap
+         </h2>
+         <p>
+          The
+          <code>
+           git status
+          </code>
+          command will display the current status of the repository.
+         </p>
+         <pre><code class="bash language-bash">$ git status</code></pre>
+         <p>
+          I can't stress enough how important it is to use this command
+          <em>
+           all the time
+          </em>
+          as you're first learning Git. This command will:
+         </p>
+         <ul>
+          <li>
+           tell us about new files that have been created in the Working Directory that Git hasn't started tracking, yet
+          </li>
+          <li>
+           files that Git
+           <em>
+            is
+           </em>
+           tracking that have been modified
+          </li>
+          <li>
+           a whole bunch of other things that we'll be learning about throughout the rest of the course ;-)
+          </li>
+         </ul>
+         <h2 id="helpful-links">
+          Helpful Links
+         </h2>
+         <ul>
+          <li>
+           <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files" rel="noopener noreferrer" target="_blank">
+            Checking the Status of Your Files
+           </a>
+          </li>
+          <li>
+           <a href="https://git-scm.com/docs/git-status" rel="noopener noreferrer" target="_blank">
+            git status docs
+           </a>
+          </li>
+          <li>
+           <a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-status" rel="noopener noreferrer" target="_blank">
+            git status Tutorial
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="05. Outro.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. Determine A Repo&#x27;s Status')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

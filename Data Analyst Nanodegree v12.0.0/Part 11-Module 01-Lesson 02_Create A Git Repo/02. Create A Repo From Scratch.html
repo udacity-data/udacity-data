@@ -1,0 +1,708 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Create A Repo From Scratch
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Create A Git Repo
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Create A Repo From Scratch.html">
+       02. Create A Repo From Scratch
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Clone An Existing Repo.html">
+       03. Clone An Existing Repo
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Determine A Repo's Status.html">
+       04. Determine A Repo's Status
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Outro.html">
+       05. Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          02. Create A Repo From Scratch
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Before you can make commits or do anything else with a git repository, the repository needs to actually exist. To create a new repository with Git, we'll use the
+          <code>
+           git init
+          </code>
+          command.
+         </p>
+         <p>
+          The
+          <code>
+           init
+          </code>
+          subcommand is short for "initialize", which is helpful because it's the command that will do all of the initial setup of a repository. We'll look at what it does in just a second.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <blockquote>
+          <h2 id="required-commands">
+           Required Commands
+          </h2>
+          <p>
+           Heads up! We'll be using the following terminal commands in this lesson:
+          </p>
+          <ul>
+           <li>
+            <code>
+             ls
+            </code>
+            - used to list files and directories
+           </li>
+           <li>
+            <code>
+             mkdir
+            </code>
+            - used to create a new directory
+           </li>
+           <li>
+            <code>
+             cd
+            </code>
+            - used to change directories
+           </li>
+           <li>
+            <code>
+             rm
+            </code>
+            - used to remove files and directories
+           </li>
+          </ul>
+          <p>
+           If you're not sure how to use them, check out our course
+           <a href="https://www.udacity.com/course/shell-workshop--ud206" rel="noopener noreferrer" target="_blank">
+            Shell Workshop
+           </a>
+           !
+          </p>
+          <p>
+           We'll also be using the idea of the current working directory, the directory that your shell is "looking at" right now. Using
+           <code>
+            cd
+           </code>
+           changes your working directory, and using
+           <code>
+            ls
+           </code>
+           (by itself) lists the files in the working directory. If you lose track of what your shell's working directory is, you can print its name with the
+           <code>
+            pwd
+           </code>
+           command (which stands for "print working directory").
+          </p>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="create-course-directories">
+          Create Course Directories
+         </h2>
+         <p>
+          We're about to create a new project for this course. Since we're all professionals, we want our projects organized. If you already have a location on your computer where you put all your projects, then keep doing what you're doing. I'll be storing all of my work in a directory called
+          <code>
+           udacity-git-course
+          </code>
+          .
+         </p>
+         <p>
+          If you want to follow along with me:
+         </p>
+         <ul>
+          <li>
+           create a directory called
+           <code>
+            udacity-git-course
+           </code>
+          </li>
+          <li>
+           inside that, create another directory called
+           <code>
+            new-git-project
+           </code>
+          </li>
+          <li>
+           use the
+           <code>
+            cd
+           </code>
+           command to move into the
+           <code>
+            new-git-project
+           </code>
+           directory
+          </li>
+         </ul>
+         <p>
+          If you're a copy/paster like me, just run this command on the terminal -
+          <code>
+           mkdir -p udacity-git-course/new-git-project &amp;&amp; cd $_
+          </code>
+          (Before running this command, make sure you
+          <code>
+           cd
+          </code>
+          to where you want these files stored. For example, if you want the files stored on your Desktop, then make sure you
+          <code>
+           cd
+          </code>
+          to the Desktop before running the command.)
+         </p>
+         <p>
+          If you're all set, then your terminal should be "inside" the
+          <code>
+           new-git-project
+          </code>
+          directory and look like this:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application located in the new-git-project directory._" class="img img-fluid" src="img/ud123-l2-new-git-project.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application located in the new-git-project directory.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-init">
+          Git Init
+         </h2>
+         <p>
+          Fantastic work - we're all set up and ready to start using the
+          <code>
+           git init
+          </code>
+          command!
+         </p>
+         <p>
+          This is one of the easiest commands to run. All you have to do is run
+          <code>
+           git init
+          </code>
+          on the terminal. That's it! Go ahead, why not give it a try right now!
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The terminal application showing the `git init` command being run. The command initializes an empty Git repository in the current directory._" class="img img-fluid" src="img/ud123-l2-git-init.gif"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The terminal application showing the
+             <code>
+              git init
+             </code>
+             command being run. The command initializes an empty Git repository in the current directory.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Command Prompt Changes?
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             Did you run
+             <code>
+              git init
+             </code>
+             yet? If not, do it now because you'll need it to answer this quiz!
+            </p>
+            <p>
+             After running
+             <code>
+              git init
+             </code>
+             , the text "Initialized empty Git repository in " followed by a path. should have appeared. The question is, has anything changed with your command prompt? If so, what?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1485550964594" name="262285" type="radio" value="a1485550964594"/>
+           <label for="a1485550964594">
+            <p>
+             Yes - I now see the word "master".
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1485550981096" name="262285" type="radio" value="a1485550981096"/>
+           <label for="a1485550981096">
+            <p>
+             No, it looks exactly the same.
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          Yes - I now see the word "master".
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-inits-effect">
+          Git Init's Effect
+         </h2>
+         <p>
+          Running the
+          <code>
+           git init
+          </code>
+          command sets up all of the necessary files and directories that Git will use to keep track of everything. All of these files are stored in a directory called
+          <code>
+           .git
+          </code>
+          (notice the
+          <code>
+           .
+          </code>
+          at the beginning - that means it'll be a hidden directory on Mac/Linux). This
+          <code>
+           .git
+          </code>
+          directory
+          <em>
+           is the "repo"
+          </em>
+          ! This is where git records all of the commits and keeps track of everything!
+         </p>
+         <p>
+          Let's take a brief look at the contents of the
+          <code>
+           .git
+          </code>
+          directory.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <blockquote>
+          <p>
+           WARNING: Don't directly edit any files inside the
+           <code>
+            .git
+           </code>
+           directory. This is the heart of the repository. If you change file names and/or file content, git will probably lose track of the files that you're keeping in the repo, and you could lose a lot of work! It's okay to look at those files though, but don't edit or delete them.
+          </p>
+         </blockquote>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_Mac's Finder window showing the contents of the hidden &quot;.git&quot; directory._" class="img img-fluid" src="img/ud123-l2-.git-directory.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             Mac's Finder window showing the contents of the hidden ".git" directory.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-directory-contents">
+          .Git Directory Contents
+         </h2>
+         <p>
+          <em>
+           We're about to take a look at the
+           <code>
+            .git
+           </code>
+           directory…it's not vital for this course, though, so don't worry about memorizing anything, it's here if you want to dig a little deeper into how Git works under the hood.
+          </em>
+         </p>
+         <p>
+          Here's a brief synopsis on each of the items in the
+          <code>
+           .git
+          </code>
+          directory:
+         </p>
+         <ul>
+          <li>
+           <strong>
+            config file
+           </strong>
+           - where all
+           <em>
+            project specific
+           </em>
+           configuration settings are stored.
+           <br/>
+           <br>
+            From the
+            <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration" rel="noopener noreferrer" target="_blank">
+             Git Book
+            </a>
+            :
+            <br/>
+           </br>
+          </li>
+         </ul>
+         <blockquote>
+          <p>
+           Git looks for configuration values in the configuration file in the Git directory (.git/config) of whatever repository you’re currently using. These values are specific to that single repository.
+          </p>
+         </blockquote>
+         <p>
+          For example, let's say you set that the global configuration for Git uses your personal email address. If you want your work email to be used for a specific project rather than your personal email, that change would be added to this file.
+         </p>
+         <ul>
+          <li>
+           <p>
+            <strong>
+             description file
+            </strong>
+            - this file is only used by the GitWeb program, so we can ignore it
+           </p>
+          </li>
+          <li>
+           <p>
+            <strong>
+             hooks directory
+            </strong>
+            - this is where we could place client-side or server-side scripts that we can use to hook into Git's different lifecycle events
+           </p>
+          </li>
+          <li>
+           <p>
+            <strong>
+             info directory
+            </strong>
+            - contains the global excludes file
+           </p>
+          </li>
+          <li>
+           <p>
+            <strong>
+             objects directory
+            </strong>
+            - this directory will store all of the commits we make
+           </p>
+          </li>
+          <li>
+           <p>
+            <strong>
+             refs directory
+            </strong>
+            - this directory holds pointers to commits (basically the "branches" and "tags")
+           </p>
+          </li>
+         </ul>
+         <p>
+          Remember, other than the "hooks" directory, you shouldn't mess with pretty much any of the content in here. The "hooks" directory
+          <em>
+           can
+          </em>
+          be used to hook into different parts or events of Git's workflow, but that's a more advanced topic that we won't be getting into in this course.
+         </p>
+         <h3 id="further-research">
+          Further Research
+         </h3>
+         <ul>
+          <li>
+           <a href="https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain" rel="noopener noreferrer" target="_blank">
+            Git Internals - Plumbing and Porcelain
+           </a>
+           (advanced - bookmark this and check it out later)
+          </li>
+          <li>
+           <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks" rel="noopener noreferrer" target="_blank">
+            Customizing Git - Git Hooks
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="git-init-recap">
+          Git Init Recap
+         </h2>
+         <p>
+          Use the
+          <code>
+           git init
+          </code>
+          command to create a new, empty repository in the current directory.
+         </p>
+         <pre><code class="bash language-bash">$ git init</code></pre>
+         <p>
+          Running this command creates a hidden
+          <code>
+           .git
+          </code>
+          directory. This
+          <code>
+           .git
+          </code>
+          directory is the brain/storage center for the repository. It holds all of the configuration files and directories and is where all of the commits are stored.
+         </p>
+         <h3 id="helpful-links">
+          Helpful Links
+         </h3>
+         <ul>
+          <li>
+           <a href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Initializing-a-Repository-in-an-Existing-Directory" rel="noopener noreferrer" target="_blank">
+            Initializing a Repository in an Existing Directory
+           </a>
+          </li>
+          <li>
+           <a href="https://git-scm.com/docs/git-init" rel="noopener noreferrer" target="_blank">
+            git init docs
+           </a>
+          </li>
+          <li>
+           <a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository" rel="noopener noreferrer" target="_blank">
+            git init Tutorial
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="03. Clone An Existing Repo.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. Create A Repo From Scratch')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

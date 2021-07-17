@@ -1,0 +1,41 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.165 --> 00:00:01.551
+Nesta aula,
+
+00:00:01.584 --> 00:00:04.719
+usamos git init para criar
+nosso próprio repositório,
+
+00:00:04.752 --> 00:00:08.145
+usamos git clone para copiar
+um repositório existente
+
+00:00:08.178 --> 00:00:11.996
+e usamos git status para determinar
+o status de um repositório.
+
+00:00:12.029 --> 00:00:14.606
+Você deve estar querendo
+pular logo para os commits,
+
+00:00:14.639 --> 00:00:17.322
+porque um repositório
+não é muito útil sem isso.
+
+00:00:17.355 --> 00:00:18.880
+Mas antes de começarmos,
+
+00:00:18.913 --> 00:00:21.630
+conseguir revisar commits
+será extremamente útil
+
+00:00:21.663 --> 00:00:23.294
+quando fizermos os nossos.
+
+00:00:23.327 --> 00:00:25.763
+Então vamos aprender
+a revisar commits existentes.
+

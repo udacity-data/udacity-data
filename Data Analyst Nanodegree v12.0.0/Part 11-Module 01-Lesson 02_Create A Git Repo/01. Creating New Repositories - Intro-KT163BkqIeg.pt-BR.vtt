@@ -1,0 +1,98 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.363 --> 00:00:01.837
+Na última aula,
+
+00:00:01.870 --> 00:00:05.369
+vimos os termos comuns usados
+nos sistemas de controle de versão.
+
+00:00:05.402 --> 00:00:07.226
+Você também instalou o Git
+
+00:00:07.259 --> 00:00:11.137
+e fez configurações iniciais,
+como adicionar seu nome e e-mail.
+
+00:00:11.170 --> 00:00:12.526
+Se você pulou estes passos,
+
+00:00:12.559 --> 00:00:16.456
+talvez seja uma boa ideia voltar
+e verificá-los antes de continuar.
+
+00:00:16.489 --> 00:00:20.540
+Nesta aula, vamos aprender a criar
+nossos próprios repositórios Git.
+
+00:00:20.573 --> 00:00:23.460
+Não conseguimos fazer nada
+sem um repo.
+
+00:00:23.493 --> 00:00:27.017
+Ah, e "repo" é só um apelido
+para "repositório".
+
+00:00:27.050 --> 00:00:28.508
+Significa a mesma coisa,
+
+00:00:28.541 --> 00:00:30.638
+então vou usar
+os dois igualmente.
+
+00:00:30.671 --> 00:00:33.686
+Lembre-se de manter por perto
+a lista de termos para referência.
+
+00:00:33.719 --> 00:00:36.568
+Vamos dar uma olhada
+em três comandos do Git nesta aula:
+
+00:00:36.601 --> 00:00:40.318
+git init, git clone
+e git status.
+
+00:00:40.351 --> 00:00:41.547
+Com git init,
+
+00:00:41.580 --> 00:00:44.680
+você vai criar novos repositórios
+do zero no seu computador.
+
+00:00:44.713 --> 00:00:45.798
+Com git clone,
+
+00:00:45.831 --> 00:00:48.443
+você vai clonar ou copiar
+um repo existente
+
+00:00:48.476 --> 00:00:52.081
+de outro lugar
+para o seu computador local.
+
+00:00:52.114 --> 00:00:54.491
+Você também vai aprender
+como é importante saber
+
+00:00:54.524 --> 00:00:56.123
+o status de um repo.
+
+00:00:56.156 --> 00:00:58.251
+Vai aprender a verificar
+o status de um repo
+
+00:00:58.482 --> 00:01:00.385
+com o comando git status.
+
+00:01:00.418 --> 00:01:01.749
+Três comandos simples,
+
+00:01:01.782 --> 00:01:05.199
+mas eles são o início da sua jornada
+como mestre em controle de versão.
+
+00:01:05.232 --> 00:01:07.564
+Vamos começar com o git init.
+
