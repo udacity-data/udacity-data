@@ -1,0 +1,179 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.380 --> 00:00:03.150
+A lot of times you'll be working with projects that require
+很多时候 你要处理的项目需要
+
+00:00:03.150 --> 00:00:07.030
+different library versions or different versions of python even.
+不同的库版本 甚至不同版本的 python 
+
+00:00:07.030 --> 00:00:11.580
+In my experience and in many other people's' it's really difficult to get
+根据我的经验和许多其他人的经验 这真的很难得到
+
+00:00:11.580 --> 00:00:14.370
+all these versions to play nicely together on one computer.
+所有这些版本在同一台电脑上可以很好的配合 
+
+00:00:15.510 --> 00:00:19.220
+To solve this problem we use virtual environments managed with libraries such
+为了解决这个问题 我们使用虚拟环境管理的库 如
+
+00:00:19.220 --> 00:00:21.000
+as Virtualenv.
+作为 Virtualenv 
+
+00:00:21.000 --> 00:00:23.970
+Virtual environments let you separate libraries required by
+使用虚拟环境可以将
+
+00:00:23.970 --> 00:00:26.530
+different projects, so you can avoid conflicts.
+不同的项目 这样你就可以避免冲突 
+
+00:00:28.060 --> 00:00:31.720
+If you're working with data though, Anaconda is the way to go.
+如果你正在处理数据 那么蟒蛇就是你的选择 
+
+00:00:31.720 --> 00:00:35.900
+Anaconda is a distribution of libraries and software specifically built for
+Anaconda 是一个图书馆和软件的分发专门为
+
+00:00:35.900 --> 00:00:36.560
+data science.
+数据科学 
+
+00:00:38.540 --> 00:00:40.380
+It comes with Conda, a package and
+它带有康达 一个包裹和
+
+00:00:40.380 --> 00:00:44.310
+environment manager that will make your life a thousand times better.
+环境管理员 将使你的生活一千倍更好 
+
+00:00:44.310 --> 00:00:47.320
+Now I'll show you a bit about using Conda.
+现在我将向你们展示一些使用 Conda 的方法 
+
+00:00:47.320 --> 00:00:51.280
+I generally create a new environment for each project I start,
+我通常会为我开始的每个项目创建一个新的环境,
+
+00:00:51.280 --> 00:00:54.770
+this way I can keep the necessary package versions separate.
+这样我就可以将必要的包版本分离开来 
+
+00:00:54.770 --> 00:00:58.070
+For example if I want to start a new project using Python 3.
+例如 如果我想使用 python3启动一个新项目 
+
+00:00:58.070 --> 00:01:00.820
+Which you should be using for all new projects,
+你应该在所有的新项目中使用它,
+
+00:01:00.820 --> 00:01:02.892
+I can create an environment for it.
+我可以为它创造一个环境 
+
+00:01:02.892 --> 00:01:09.468
+Type in conde create, give it a name, tea_facts.
+输入 conde create 给它一个名字 tea _ facts 
+
+00:01:09.468 --> 00:01:12.244
+[BLANK_AUDIO]
+[ BLANK _ audio ]
+
+00:01:12.244 --> 00:01:16.588
+It's a bot that tweets facts about tea and
+这是一个发布关于茶的事实的机器人
+
+00:01:16.588 --> 00:01:20.690
+the python version, three and enter.
+Python 版本 三 然后进入 
+
+00:01:20.690 --> 00:01:25.947
+[BLANK_AUDIO]
+[ BLANK _ audio ]
+
+00:01:25.947 --> 00:01:27.797
+This will create the environment for me.
+这将为我创造环境 
+
+00:01:27.797 --> 00:01:34.976
+Now, I can enter the environment like so, source activate tea_facts.
+现在 我可以像这样进入环境 源激活茶事实 
+
+00:01:34.976 --> 00:01:37.560
+[BLANK_AUDIO]
+[ BLANK _ audio ]
+
+00:01:37.560 --> 00:01:41.100
+This is the command on Mac in Linux, on Window it's just activate.
+这是 Linux 系统中 Mac 上的命令 在 windows 上它只是被激活 
+
+00:01:42.280 --> 00:01:46.110
+Now I'm in the environment, you can see the name in the prompt.
+现在我在环境中 您可以在提示符中看到名称 
+
+00:01:46.110 --> 00:01:49.220
+And you can see here the packages that are installed,
+你们可以看到这里安装的软件包,
+
+00:01:49.220 --> 00:01:51.300
+these are just the default packages.
+这些只是默认的包裹 
+
+00:01:51.300 --> 00:01:54.100
+Now I can start installing what I want for this projects.
+现在我可以开始为这个项目安装我想要的东西了 
+
+00:01:55.290 --> 00:01:59.990
+Let's install Numpy Pandas, for working with the t data and matplotlib for
+让我们安装 numpypandas 用于处理 t 数据和 matplotlib
+
+00:01:59.990 --> 00:02:01.539
+making visualization.
+形象化 
+
+00:02:01.539 --> 00:02:11.539
+[BLANK_AUDIO]
+[ BLANK _ audio ]
+
+00:02:16.085 --> 00:02:20.193
+Then I'll start notebooks which I like to use to develop code.
+然后我会开始使用笔记本电脑来开发代码 
+
+00:02:20.193 --> 00:02:30.193
+[BLANK_AUDIO]
+[ BLANK _ audio ]
+
+00:02:39.617 --> 00:02:42.910
+And again looking at the installed packages.
+再次查看已安装的软件包 
+
+00:02:42.910 --> 00:02:44.940
+I have all these ready to use for my project.
+我有所有这些准备使用我的项目 
+
+00:02:46.100 --> 00:02:48.620
+And these are separated from other environments, so
+这些是与其他环境分开的 所以
+
+00:02:48.620 --> 00:02:52.200
+I won't run into any conflicting version issues.
+我不会遇到任何版本冲突的问题 
+
+00:02:52.200 --> 00:02:55.940
+Okay, now it's your turn to learn how to use Conda for your own projects,
+好了现在轮到你学习如何在自己的项目中使用 Conda 了,
+
+00:02:55.940 --> 00:02:59.300
+because that thing will take around 30 minutes up to an hour.
+因为那东西要花30分钟到1小时 
+
+00:02:59.300 --> 00:02:59.910
+Okay, have fun.
+好的 玩得开心 .最新课程跟课件还有一对一辅导请加wx：udacity6

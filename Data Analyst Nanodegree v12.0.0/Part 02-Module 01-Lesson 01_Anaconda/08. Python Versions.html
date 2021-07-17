@@ -1,0 +1,286 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Python Versions
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Anaconda
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction.html">
+       01. Introduction
+      </a>
+     </li>
+     <li class="">
+      <a href="02. What is Anaconda.html">
+       02. What is Anaconda?
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Installing Anaconda.html">
+       03. Installing Anaconda
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Managing packages.html">
+       04. Managing packages
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Managing environments.html">
+       05. Managing environments
+      </a>
+     </li>
+     <li class="">
+      <a href="06. More environment actions.html">
+       06. More environment actions
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Best practices.html">
+       07. Best practices
+      </a>
+     </li>
+     <li class="">
+      <a href="08. Python Versions.html">
+       08. Python Versions
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          08. Python Versions
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="python-versions-at-udacity">
+          Python versions at Udacity
+         </h1>
+         <p>
+          Most Nanodegree programs at Udacity, including DAND, will be (or are already) using Python 3 almost exclusively.
+         </p>
+         <h2 id="why-were-using-python-3">
+          Why we're using Python 3
+         </h2>
+         <ul>
+          <li>
+           Jupyter has switched to Python 3 only
+          </li>
+          <li>
+           Python 2.7 is
+           <a href="https://pythonclock.org/" rel="noopener noreferrer" target="_blank">
+            being retired
+           </a>
+          </li>
+          <li>
+           Python 3 has been out for over 10 years, and there are very few dependencies (and none in this program) that are incompatible.
+          </li>
+         </ul>
+         <p>
+          At this point, there are enough new features in Python 3 that it doesn't make much sense to stick with Python 2 unless you're working with old code. All new Python code should be written for version 3. Read more
+          <a href="https://wiki.python.org/moin/Python2orPython3" rel="noopener noreferrer" target="_blank">
+           here
+          </a>
+          .
+         </p>
+         <h2 id="the-main-breakage-between-python-2-and-3">
+          The main breakage between Python 2 and 3
+         </h2>
+         <p>
+          For the most part, Python 2 code will work with Python 3. Of course, most new features introduced with Python 3 versions won't be backwards compatible. The place where your Python 2 code will fail most often is the
+          <code>
+           print
+          </code>
+          statement.
+         </p>
+         <p>
+          For most of Python's history including Python 2, printing was done like so:
+         </p>
+         <pre><code>print "Hello", "world!"
+&gt; Hello world!</code></pre>
+         <p>
+          This was changed in Python 3 to a function.
+         </p>
+         <pre><code>print("Hello", "world!")
+&gt; Hello world!</code></pre>
+         <p>
+          The
+          <code>
+           print
+          </code>
+          function was back-ported to Python 2 in version 2.6 through the
+          <code>
+           __future__
+          </code>
+          module:
+         </p>
+         <pre><code># In Python 2.6+
+from __future__ import print_function
+print("Hello", "world!")
+&gt; Hello world!</code></pre>
+         <p>
+          The
+          <code>
+           print
+          </code>
+          statement doesn't work in Python 3. If you want to print something and have it work in both Python versions, you'll need to import
+          <code>
+           print_function
+          </code>
+          in your Python 2 code.
+         </p>
+         <h3 id="use-python-3-in-dand">
+          Use Python 3 in DAND
+         </h3>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. Python Versions')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>
