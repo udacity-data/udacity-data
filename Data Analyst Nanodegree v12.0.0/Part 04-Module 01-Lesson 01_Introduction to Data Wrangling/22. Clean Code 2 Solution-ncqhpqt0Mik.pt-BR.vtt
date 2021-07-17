@@ -1,0 +1,72 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.695 --> 00:00:02.428
+Vamos estruturar o loop "for"
+
+00:00:02.461 --> 00:00:04.113
+ao fazer um loop
+em todas as frases
+
+00:00:04.146 --> 00:00:06.680
+da lista de frases semelhantes
+a "urgente"
+
+00:00:07.269 --> 00:00:09.123
+também conhecido
+como "asap_list".
+
+00:00:09.554 --> 00:00:11.632
+Então usar a função ".replace"
+do Panda
+
+00:00:11.665 --> 00:00:13.875
+para substituir todas as instâncias
+dessa frase
+
+00:00:13.908 --> 00:00:18.486
+que atualmente queremos
+na iteração do loop com "urgente".
+
+00:00:18.519 --> 00:00:20.761
+E vamos verificar novamente
+nossa documentação aqui.
+
+00:00:20.966 --> 00:00:23.796
+Então substituir os valores dados
+em "to_replace" com "value".
+
+00:00:23.829 --> 00:00:26.500
+"To_replace" é o valor
+que queremos substituir,
+
+00:00:26.533 --> 00:00:29.102
+que é o primeiro parâmetro
+da função que é "phrase"
+
+00:00:29.135 --> 00:00:32.446
+ou a frase atual em que estamos
+no loop,
+
+00:00:32.479 --> 00:00:34.234
+que é uma dessas entradas aqui.
+
+00:00:34.580 --> 00:00:38.467
+Queremos substituir no valor
+todos aqueles com "urgente",
+
+00:00:38.795 --> 00:00:40.543
+e novamente "inplace=True".
+
+00:00:40.761 --> 00:00:43.828
+E se apertamos "shift+enter",
+acontece.
+
+00:00:45.105 --> 00:00:46.869
+Podemos testar imediatamente,
+
+00:00:46.902 --> 00:00:49.320
+mas aguardamos
+para fins educacionais.
+

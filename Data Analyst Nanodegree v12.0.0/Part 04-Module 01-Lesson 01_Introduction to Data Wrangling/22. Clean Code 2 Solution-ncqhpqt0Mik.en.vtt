@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.459
+Okay, so we'll structure our four loop by looping through every phrase in the list of
+
+00:00:04.459 --> 00:00:08.925
+phrases similar to ASAP, aka ASAP list.
+
+00:00:08.925 --> 00:00:13.179
+Then use the Panda's function.replace to replace all of the instances of
+
+00:00:13.179 --> 00:00:18.370
+that phrase that we're currently on in the iteration of the loop with ASAP.
+
+00:00:18.370 --> 00:00:20.705
+And let's double check our documentation here.
+
+00:00:20.704 --> 00:00:23.674
+Okay, so replace the values given in to_replace with value.
+
+00:00:23.675 --> 00:00:27.280
+Okay, so to_replace is the value that we want to replace which is the first parameter of
+
+00:00:27.280 --> 00:00:32.125
+the function which is phrase or the current phrase that we're on in this loop,
+
+00:00:32.125 --> 00:00:34.075
+which is one of these entries here.
+
+00:00:34.075 --> 00:00:40.465
+In the value we want to replace all of those with is ASAP, and again inplace=True.
+
+00:00:40.465 --> 00:00:42.408
+And if we click shift enter,
+
+00:00:42.408 --> 00:00:45.015
+that should be it.
+
+00:00:45.015 --> 00:00:46.869
+We can test immediately after,
+
+00:00:46.869 --> 00:00:49.320
+but we'll hold for instructional purposes.
+

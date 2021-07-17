@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.009
+Alright. So we've successfully downloaded and imported our dataset.
+
+00:00:05.009 --> 00:00:08.160
+Now we need to assess our data to determine what's clean and
+
+00:00:08.160 --> 00:00:11.875
+potentially what else to gather if we're missing some data.
+
+00:00:11.875 --> 00:00:13.460
+We're not exploring our dataset.
+
+00:00:13.460 --> 00:00:16.440
+We just want to make sure our data is in a form that
+
+00:00:16.440 --> 00:00:19.975
+makes our analysis easier later on. More on this in a bit.
+
+00:00:19.975 --> 00:00:21.960
+Okay. So what are we assessing?
+
+00:00:21.960 --> 00:00:23.830
+What is dirty data?
+
+00:00:23.829 --> 00:00:25.799
+What is messy data?
+
+00:00:25.800 --> 00:00:29.658
+We're looking for two main things: Our data's quality and it's tidiness.
+
+00:00:29.658 --> 00:00:31.545
+Low quality data is dirty.
+
+00:00:31.545 --> 00:00:33.660
+Untidy data is messy.
+
+00:00:33.659 --> 00:00:36.639
+We don't have to look for these in order, but you can.
+
+00:00:36.640 --> 00:00:40.960
+Let's formerly define quality and tininess next.
+

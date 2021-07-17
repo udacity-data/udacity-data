@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.529
+Let's visually inspect our jobs data first.
+
+00:00:03.529 --> 00:00:08.099
+To do this, we'll type in "df" in this cell here below the "Assess" heading,
+
+00:00:08.099 --> 00:00:10.789
+and process it using Shift+Enter,
+
+00:00:10.789 --> 00:00:14.154
+and we'll just scroll through our data frame.
+
+00:00:14.154 --> 00:00:17.984
+Okay, so we've got the first row here as column headers: "job post",
+
+00:00:17.984 --> 00:00:20.964
+"date", "title", "company", etc.
+
+00:00:20.964 --> 00:00:23.759
+and we've got a bunch of rows here.
+
+00:00:23.760 --> 00:00:26.205
+Scroll to the bottom,
+
+00:00:26.204 --> 00:00:30.904
+and we've got 19,001 rows and 24 columns.
+
+00:00:30.905 --> 00:00:32.975
+Let's scroll up a bit here.
+
+00:00:32.975 --> 00:00:37.260
+Something caught my eye. Okay. So in this snapshot of the data frame,
+
+00:00:37.259 --> 00:00:39.149
+check the boxes that, to you,
+
+00:00:39.149 --> 00:00:43.000
+feel like data quality or tidiness issues that we'll need to fix.
+

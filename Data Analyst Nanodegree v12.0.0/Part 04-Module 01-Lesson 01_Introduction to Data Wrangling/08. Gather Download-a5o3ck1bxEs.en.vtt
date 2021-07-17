@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.450
+For this walkthrough, we're going to download a file from the internet and import it
+
+00:00:04.450 --> 00:00:08.800
+into a Jupyter Notebook which is one of many ways of gathering data.
+
+00:00:08.800 --> 00:00:10.820
+When downloading files from the Internet,
+
+00:00:10.820 --> 00:00:14.464
+downloading could be as simple as going to the page where the data set is hosted,
+
+00:00:14.464 --> 00:00:16.324
+like this Kaggle page for example,
+
+00:00:16.324 --> 00:00:18.730
+and clicking the download button.
+
+00:00:18.730 --> 00:00:23.414
+But best practice is actually to download files programmatically, i.e.
+
+00:00:23.414 --> 00:00:28.079
+with code, for two reasons, scalability and reproducibility.
+

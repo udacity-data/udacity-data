@@ -1,0 +1,161 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:01.182 --> 00:00:05.094
+Agora é hora de testar uma parte
+da limpeza programática de dados.
+
+00:00:05.562 --> 00:00:08.872
+O teste pode ser feito imediatamente
+após cada operação de codificação,
+
+00:00:09.110 --> 00:00:10.812
+como ter uma definição aqui,
+
+00:00:10.845 --> 00:00:12.497
+então converter isso em código,
+aqui,
+
+00:00:12.530 --> 00:00:14.434
+então testar aqui embaixo
+imediatamente,
+
+00:00:14.750 --> 00:00:17.535
+o que alteraria esse título
+para codificação e teste.
+
+00:00:17.902 --> 00:00:20.971
+Mas vou separar
+a parte de teste para esta lição.
+
+00:00:21.538 --> 00:00:24.630
+O teste pode ser feito
+visualmente para soluções simples,
+
+00:00:24.663 --> 00:00:26.856
+como modificar
+os títulos da coluna,
+
+00:00:27.174 --> 00:00:30.061
+conhecido
+como nosso primeiro problema aqui.
+
+00:00:30.518 --> 00:00:33.018
+Arrumar todos os títulos das colunas
+e erros de ortográfica
+
+00:00:33.051 --> 00:00:35.030
+e substituir por palavras completas.
+
+00:00:35.063 --> 00:00:36.291
+Para verificar visualmente,
+
+00:00:36.324 --> 00:00:39.819
+digitamos no "df_clean"
+e veremos nosso "DataFrame".
+
+00:00:40.109 --> 00:00:41.560
+E vamos rolar.
+
+00:00:42.434 --> 00:00:44.404
+"ApplicationProcedure".
+
+00:00:44.941 --> 00:00:46.402
+Isso costumava ser
+"ApplicationP",
+
+00:00:46.435 --> 00:00:48.028
+para que ficasse bom,
+nós corrigimos.
+
+00:00:48.351 --> 00:00:50.510
+E "Sobre a Empresa"
+que costumava ser "AboutC".
+
+00:00:50.777 --> 00:00:52.045
+Estão todos corrigidos.
+
+00:00:52.078 --> 00:00:53.499
+Mas os outros dois títulos
+de coluna
+
+00:00:53.532 --> 00:00:55.121
+que estávamos tentando
+consertar,
+
+00:00:55.154 --> 00:00:57.529
+"Qualificações" e "Exigências",
+
+00:00:57.562 --> 00:01:00.467
+estão escondidos nas colunas
+que o Panda colapsa aqui.
+
+00:01:00.783 --> 00:01:02.995
+É onde o teste programático
+é útil.
+
+00:01:03.427 --> 00:01:05.234
+Vamos usar a função "info"
+do Panda
+
+00:01:05.267 --> 00:01:07.297
+para verificar as colunas escondidas
+aqui.
+
+00:01:07.330 --> 00:01:09.485
+"Info" é uma
+das avaliações programáticas
+
+00:01:09.518 --> 00:01:11.309
+que falamos nos vídeos
+sobre avaliação.
+
+00:01:11.342 --> 00:01:14.324
+E, sim, certo,
+Consertei "Exigências".
+
+00:01:14.357 --> 00:01:16.256
+Consertei "Qualificações".
+
+00:01:17.102 --> 00:01:20.136
+O código de limpeza precisará
+ser testado programaticamente assim,
+
+00:01:20.169 --> 00:01:21.393
+na maioria dos casos.
+
+00:01:22.119 --> 00:01:24.030
+Vamos usar o teste programático
+novamente
+
+00:01:24.063 --> 00:01:25.847
+para testar a segunda operação
+de limpeza,
+
+00:01:25.880 --> 00:01:28.296
+a padronização do "urgente"
+em "data de início",
+
+00:01:28.911 --> 00:01:30.411
+para ver se realmente
+funcionou.
+
+00:01:30.444 --> 00:01:32.922
+No teste a seguir, use
+a função "value_counts" do Panda
+
+00:01:32.955 --> 00:01:34.824
+para verificar
+se todas essas frases semelhantes
+
+00:01:34.857 --> 00:01:36.833
+foram convertidas para "urgente"
+
+00:01:37.214 --> 00:01:39.801
+e me informe quantas entradas
+na coluna "data de início"
+
+00:01:40.428 --> 00:01:41.867
+agora estão com "urgente".
+

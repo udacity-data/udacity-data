@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.799
+If we scroll through our DataFrame a bit more,
+
+00:00:02.799 --> 00:00:06.309
+we'll notice that Pandas automatically collapses some columns
+
+00:00:06.309 --> 00:00:10.390
+and rows of larger DataSets like this one, which you can see here.
+
+00:00:10.390 --> 00:00:13.810
+Between row 29 and row 18,971,
+
+00:00:13.810 --> 00:00:16.824
+all of the rows are collapsed using these ellipses here.
+
+00:00:16.824 --> 00:00:20.919
+And the same thing is true if we scroll right here and check out all of our columns.
+
+00:00:20.920 --> 00:00:25.330
+Every column between duration and salary was again collapsed using these ellipses.
+
+00:00:25.329 --> 00:00:29.679
+Pandas does this because viewing large DataSets takes up too much space.
+
+00:00:29.679 --> 00:00:33.054
+And scrolling that much can cause headaches.
+
+00:00:33.054 --> 00:00:35.085
+This is also the downside I mentioned previously,
+
+00:00:35.085 --> 00:00:37.512
+about visual assessment being difficult in Pandas.
+
+00:00:37.512 --> 00:00:41.699
+Uncollapsing these columns and rows is finicky,
+
+00:00:41.700 --> 00:00:46.590
+and scrolling up and down and side to side in Jupyter Notebook cells isn't great.
+
+00:00:46.590 --> 00:00:52.140
+Instead, I like to use Pandas's Info function to get more information about our DataSet.
+
+00:00:52.140 --> 00:00:54.734
+This is a form of programmatic assessment.
+
+00:00:54.734 --> 00:00:57.034
+This function is extremely simple.
+
+00:00:57.034 --> 00:00:58.454
+We type the name of our DataFrame,
+
+00:00:58.454 --> 00:01:01.644
+which is df, then .Info.
+
+00:01:01.645 --> 00:01:03.570
+And again, I'll use SHIFT and TAB here,
+
+00:01:03.570 --> 00:01:07.081
+to explore the Signature and Docstring of the function.
+
+00:01:07.081 --> 00:01:11.040
+Okay. Signature, DF dot info and Docstring.
+
+00:01:11.040 --> 00:01:13.005
+Concise summary of a DataFrame.
+
+00:01:13.004 --> 00:01:15.949
+Docstring tells us what the function does.
+
+00:01:15.950 --> 00:01:18.030
+Concise summary of a DataFrame.
+
+00:01:18.030 --> 00:01:20.969
+Okay. So we'll process this cell, SHIFT and ENTER.
+
+00:01:20.969 --> 00:01:23.177
+And here's that Concise Summary.
+
+00:01:23.177 --> 00:01:26.954
+We've got 19,001 entries and 24 columns.
+
+00:01:26.954 --> 00:01:30.385
+Then, a bunch of information about each of those columns below,
+
+00:01:30.385 --> 00:01:33.000
+including the types of values in those columns
+
+00:01:33.000 --> 00:01:36.632
+and the total memory usage of the DataFrame.
+
+00:01:36.632 --> 00:01:38.844
+Okay. So let's look through these columns a bit.
+
+00:01:38.844 --> 00:01:41.025
+What is ApplicationP?
+
+00:01:41.025 --> 00:01:42.792
+What's AboutC?
+
+00:01:42.792 --> 00:01:48.045
+One of the fundamentals of quality data is having descriptive variable and value names.
+
+00:01:48.045 --> 00:01:54.245
+Even RequiredQual, which means required qualifications, isn't that descriptive.
+
+00:01:54.245 --> 00:01:57.980
+Even JobRequirment, which has a small typo in it,
+
+00:01:57.980 --> 00:02:00.646
+that's descriptive enough, but you might as well fix it if we can.
+
+00:02:00.646 --> 00:02:04.659
+Let's make a note to clarify all of these when cleaning.
+

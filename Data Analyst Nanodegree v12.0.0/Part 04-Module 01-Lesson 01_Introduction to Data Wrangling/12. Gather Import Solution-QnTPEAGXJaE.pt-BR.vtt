@@ -1,0 +1,38 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:03.233
+Para simplesmente usar
+o nome do arquivo assim,
+
+00:00:03.267 --> 00:00:06.333
+que, repito,
+é "online-job-postings.csv",
+
+00:00:06.367 --> 00:00:09.800
+não mais
+"armeninan-online-postings.zip",
+
+00:00:09.833 --> 00:00:12.967
+o arquivo CSV deve estar
+na mesma pasta do nosso notebook,
+
+00:00:13.000 --> 00:00:15.200
+o que já acontece.
+
+00:00:15.233 --> 00:00:18.467
+Pressionamos shift+enter
+e vamos nessa.
+
+00:00:18.500 --> 00:00:20.300
+É simples assim.
+
+00:00:20.333 --> 00:00:24.533
+Se digitarmos em DF e processarmos
+a célula abaixo, veremos
+
+00:00:24.567 --> 00:00:27.567
+o arquivo CSV exibido
+como um "Pandas Dataframe".
+

@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.569
+Now we've gathered the data and made a few assessments.
+
+00:00:03.569 --> 00:00:05.639
+The few is important. We don't need to
+
+00:00:05.639 --> 00:00:09.050
+identify every issue right from the start. We can iterate.
+
+00:00:09.050 --> 00:00:11.355
+So now we can start cleaning.
+
+00:00:11.355 --> 00:00:15.634
+Cleaning means acting on the assessments we made to improve quality and tidiness.
+
+00:00:15.634 --> 00:00:19.804
+Improving quality doesn't mean changing the data to make it say something different.
+
+00:00:19.804 --> 00:00:21.419
+That would be data fraud.
+
+00:00:21.420 --> 00:00:24.575
+Instead, we're talking about things like correcting it when it's
+
+00:00:24.574 --> 00:00:28.359
+inaccurate or removing data when it's wrong or irrelevant.
+
+00:00:28.359 --> 00:00:31.199
+Yeah, or replacing, like filling in missing values;
+
+00:00:31.199 --> 00:00:34.600
+or merging, like combining gather datasets that were split up.
+
+00:00:34.600 --> 00:00:36.440
+All of this stuff can be done manually,
+
+00:00:36.439 --> 00:00:40.049
+but it's most efficiently done using code that minimizes repetition.
+
+00:00:40.049 --> 00:00:44.330
+Improving tidiness means transforming the dataset so that each variable is a column,
+
+00:00:44.331 --> 00:00:45.900
+each observation is a row,
+
+00:00:45.899 --> 00:00:48.945
+and each type of observational unit is a table.
+
+00:00:48.945 --> 00:00:51.814
+There are special functions of Pandas that help us do that.
+
+00:00:51.814 --> 00:00:54.189
+We'll dive deeper into those in Lesson Four of the course.
+

@@ -1,0 +1,397 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.167 --> 00:00:03.233
+Uma experiência memorável
+de preparação de dados para mim
+
+00:00:03.267 --> 00:00:06.100
+foi um post que escrevi
+para meu blog sobre hóquei.
+
+00:00:06.133 --> 00:00:10.633
+Não sei jogar hóquei, mas adoro
+análise e o Toronto Maple Leafs.
+
+00:00:10.667 --> 00:00:14.267
+Os Leafs jogaram muito mal
+por bastante tempo,
+
+00:00:14.300 --> 00:00:17.000
+ficaram em último
+no campeonato do ano passado.
+
+00:00:17.033 --> 00:00:21.400
+Daí, no começo da temporada,
+eles começaram a jogar muito.
+
+00:00:21.433 --> 00:00:25.433
+Fiquei curioso. Teria o time
+melhorado como nunca na história?
+
+00:00:25.467 --> 00:00:27.767
+Os dados de que eu precisava
+para saber disso
+
+00:00:27.800 --> 00:00:29.733
+estavam em três conjuntos
+de informação,
+
+00:00:29.767 --> 00:00:32.867
+porque quem compilou os dados
+não o tinha feito muito bem.
+
+00:00:32.900 --> 00:00:34.633
+Você vai me entender
+em breve.
+
+00:00:34.667 --> 00:00:38.300
+Isso complicou a preparação
+de dados para esse projeto.
+
+00:00:38.333 --> 00:00:41.300
+O processo começou
+com o download desses três arquivos.
+
+00:00:41.333 --> 00:00:43.167
+Um aqui,
+
+00:00:43.200 --> 00:00:45.233
+um segundo aqui
+
+00:00:45.267 --> 00:00:47.433
+e o terceiro aqui.
+
+00:00:47.467 --> 00:00:51.033
+Cada arquivo continha dados
+sobre o desempenho bom ou ruim
+
+00:00:51.067 --> 00:00:54.467
+de cada time no quesito
+marcar ou evitar gols.
+
+00:00:54.500 --> 00:00:57.533
+O título da maioria das colunas
+não deve ter sentido para você,
+
+00:00:57.567 --> 00:01:00.567
+e tudo bem, eu vou explicar
+as que você precisa saber
+
+00:01:00.600 --> 00:01:02.867
+ao longo do caminho.
+
+00:01:02.900 --> 00:01:05.933
+Depois de importar os dados,
+comecei a avaliá-los.
+
+00:01:05.967 --> 00:01:08.467
+Os conjuntos de informação
+eram totalmente distintos.
+
+00:01:08.500 --> 00:01:10.633
+Tem um aqui,
+um segundo aqui
+
+00:01:10.667 --> 00:01:12.433
+e o terceiro aqui.
+
+00:01:12.467 --> 00:01:16.900
+O primeiro e o terceiro têm
+os dados divididos por temporada,
+
+00:01:16.933 --> 00:01:20.367
+enquanto no do meio
+a divisão é por jogo.
+
+00:01:20.400 --> 00:01:23.933
+Eu teria de padronizar os dados
+antes de poder analisá-los.
+
+00:01:23.967 --> 00:01:27.567
+Então, notei que
+o segundo e o terceiro
+
+00:01:27.600 --> 00:01:30.733
+estavam divididos
+por total de gols,
+
+00:01:30.767 --> 00:01:34.567
+e o primeiro por
+estatísticas percentuais.
+
+00:01:34.600 --> 00:01:37.233
+Gols por hora de jogo
+são uma estatística percentual,
+
+00:01:37.267 --> 00:01:39.867
+como milhas
+ou quilômetros por hora
+
+00:01:39.900 --> 00:01:42.700
+ou mesmo padrão de cliques
+na publicidade on-line,
+
+00:01:42.733 --> 00:01:44.833
+como cliques
+por visualização.
+
+00:01:44.867 --> 00:01:47.600
+A equipe jogou quantidades
+de tempo levemente distintas,
+
+00:01:47.633 --> 00:01:50.100
+então comparar totais
+para julgar gols marcados
+
+00:01:50.133 --> 00:01:51.500
+não é justo.
+
+00:01:51.533 --> 00:01:53.767
+Totais versus percentuais
+é algo que você verá muito
+
+00:01:53.800 --> 00:01:55.733
+na sua carreira
+em preparação de dados.
+
+00:01:55.767 --> 00:01:58.400
+Para saber o percentual que queria,
+gols por hora,
+
+00:01:58.433 --> 00:02:01.133
+teria que dividir o número total
+de gols de cada time
+
+00:02:01.166 --> 00:02:05.700
+pelo número de minutos jogados,
+conhecido como "tempo no gelo".
+
+00:02:05.733 --> 00:02:07.700
+"TNG" significa
+"tempo no gelo",
+
+00:02:07.733 --> 00:02:11.933
+informação que está nesses
+dois conjuntos, mas não nesse.
+
+00:02:11.967 --> 00:02:14.767
+Como?
+Nessa hora, eu fiz uma pausa.
+
+00:02:14.800 --> 00:02:16.500
+Quando comecei
+a preparar dados,
+
+00:02:16.533 --> 00:02:19.300
+problemas como esse
+me deixavam estressado.
+
+00:02:19.333 --> 00:02:23.167
+Era muito trabalhoso
+e parecia impossível de fazer.
+
+00:02:23.200 --> 00:02:26.433
+Aprendi que, se anotasse
+cada problema, fizesse uma pausa
+
+00:02:26.467 --> 00:02:29.267
+e digerisse o que precisava fazer
+por um momento,
+
+00:02:29.300 --> 00:02:30.967
+a preparação
+se tornava prazerosa,
+
+00:02:31.000 --> 00:02:34.100
+como o trabalho de um detetive
+para resolver um mistério.
+
+00:02:34.133 --> 00:02:38.000
+Fiz uma pausa, anotei os problemas
+e respirei fundo.
+
+00:02:38.033 --> 00:02:42.067
+Eu tinha que preencher essa parte
+do "TNG" no terceiro conjunto.
+
+00:02:42.100 --> 00:02:44.467
+Não havia um arquivo à mão
+para baixar,
+
+00:02:44.500 --> 00:02:47.767
+então tive que obter informações
+de um site de estatísticas,
+
+00:02:47.800 --> 00:02:51.867
+essa coluna de "TNG",
+"tempo no gelo", aqui.
+
+00:02:51.900 --> 00:02:55.533
+Esse site tinha os dados
+de várias temporadas,
+
+00:02:55.567 --> 00:02:57.900
+divididos por cada equipe.
+
+00:02:57.933 --> 00:03:01.267
+"Obter" é um jeito sofisticado
+de dizer "extrair" dados de sites
+
+00:03:01.300 --> 00:03:03.033
+usando códigos,
+a propósito.
+
+00:03:03.067 --> 00:03:05.433
+Não vou mostrar como fiz,
+mas é uma habilidade útil,
+
+00:03:05.467 --> 00:03:07.267
+bastante mágica,
+na verdade,
+
+00:03:07.300 --> 00:03:10.700
+vamos vê-la em detalhes
+na segunda aula deste curso.
+
+00:03:10.733 --> 00:03:13.033
+Agora temos os dados
+que faltavam
+
+00:03:13.067 --> 00:03:14.833
+depois de obtermos
+os resultados daqui,
+
+00:03:14.867 --> 00:03:17.967
+mas a questão é que os resultados
+vêm em forma de string.
+
+00:03:18.000 --> 00:03:20.700
+Precisava de inteiros para formar
+multiplicações e divisões
+
+00:03:20.733 --> 00:03:23.133
+e criar os percentuais
+de que falamos antes,
+
+00:03:23.167 --> 00:03:25.233
+gols por 60 minutos.
+
+00:03:25.267 --> 00:03:28.767
+Então seria necessário converter
+de string para número inteiro.
+
+00:03:28.800 --> 00:03:31.000
+Tranquilo, podemos converter.
+
+00:03:31.033 --> 00:03:32.967
+Daí notei que havia
+mais problemas
+
+00:03:33.000 --> 00:03:34.700
+com os dados obtidos.
+
+00:03:34.733 --> 00:03:37.633
+Os três conjuntos de dados
+baixados aqui, um, dois e três,
+
+00:03:37.667 --> 00:03:42.033
+tinham o nome das equipes
+abreviados: "BOS" para "Boston",
+
+00:03:42.067 --> 00:03:45.933
+"PIT" para "Pittsburgh",
+"TOR" para "Toronto", por exemplo.
+
+00:03:45.967 --> 00:03:49.200
+Mas os dados obtidos tinham
+o nome da equipe por extenso:
+
+00:03:49.233 --> 00:03:53.733
+Boston, Pittsburgh, Toronto.
+
+00:03:53.767 --> 00:03:55.833
+Isso precisava
+ser padronizado,
+
+00:03:55.867 --> 00:04:01.067
+ou a junção dos dados de "TNG",
+entre outros, não daria certo.
+
+00:04:01.100 --> 00:04:02.533
+Havia mais informações
+
+00:04:02.567 --> 00:04:05.367
+que eu precisava limpar
+antes de responder à pergunta.
+
+00:04:05.400 --> 00:04:07.733
+Não vou discuti-las agora,
+mas dá para entender.
+
+00:04:07.767 --> 00:04:10.800
+Dados são "sujos", principalmente
+se vêm de fontes diferentes.
+
+00:04:10.833 --> 00:04:13.733
+Avaliar os dados era necessário
+para identificar e ajustar
+
+00:04:13.767 --> 00:04:15.333
+todos esses problemas.
+
+00:04:15.367 --> 00:04:18.000
+Depois de isso ser feito,
+escrevi códigos de limpeza
+
+00:04:18.033 --> 00:04:20.200
+para consertar os problemas,
+
+00:04:20.233 --> 00:04:23.633
+fiz um cálculo,
+que era a parte da análise,
+
+00:04:23.667 --> 00:04:25.500
+e pronto.
+
+00:04:25.533 --> 00:04:30.433
+Só me restava criar as visualizações
+e escrever o texto.
+
+00:04:30.467 --> 00:04:32.667
+Todo esse trabalho
+valeu a pena?
+
+00:04:32.700 --> 00:04:34.400
+É legal bancar
+o detetive de dados,
+
+00:04:34.433 --> 00:04:36.533
+então, para mim, valeu.
+
+00:04:36.567 --> 00:04:38.467
+E minha intuição estava certa:
+
+00:04:38.500 --> 00:04:41.167
+o Leafs era o time que mais
+havia melhorado na história
+
+00:04:41.200 --> 00:04:44.100
+àquela altura da temporada,
+em termos de marcar gols.
+
+00:04:44.133 --> 00:04:46.633
+Literalmente pulei da cadeira
+quando passei pela tabela
+
+00:04:46.667 --> 00:04:48.467
+e os vi no topo,
+
+00:04:48.500 --> 00:04:51.067
+o que fica mais claro
+por meio dessa inclinação
+
+00:04:51.100 --> 00:04:53.300
+neste gráfico de barras.
+

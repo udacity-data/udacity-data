@@ -1,0 +1,98 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.279 --> 00:00:03.531
+Agora reunimos os dados
+e fizemos algumas avaliações.
+
+00:00:03.564 --> 00:00:04.799
+O pouco é importante.
+
+00:00:04.832 --> 00:00:07.799
+Não precisamos identificar
+todos os problemas desde o início.
+
+00:00:07.832 --> 00:00:08.928
+Podemos iterar.
+
+00:00:09.164 --> 00:00:11.381
+Agora podemos começar
+a limpar.
+
+00:00:11.732 --> 00:00:14.119
+Limpeza significa atuar
+sobre as avaliações que fizemos
+
+00:00:14.152 --> 00:00:15.887
+para melhorar a qualidade
+e a organização.
+
+00:00:15.920 --> 00:00:18.455
+Melhorar a qualidade
+não significa alterar os dados
+
+00:00:18.488 --> 00:00:19.983
+para fazê-los dizer
+algo diferente.
+
+00:00:20.016 --> 00:00:21.403
+Isso seria fraudar os dados.
+
+00:00:21.436 --> 00:00:23.038
+Em vez disso,
+estamos falando sobre coisas
+
+00:00:23.071 --> 00:00:25.482
+como corrigi-los
+quando são dados imprecisos
+
+00:00:25.515 --> 00:00:28.505
+ou removê-los quando estão errados
+ou são irrelevantes.
+
+00:00:28.538 --> 00:00:31.127
+Sim, ou substituir,
+como preencher valores perdidos;
+
+00:00:31.160 --> 00:00:32.302
+ou mesclar,
+
+00:00:32.335 --> 00:00:34.632
+como combinar conjuntos de dados
+coletados que foram divididos.
+
+00:00:34.665 --> 00:00:36.550
+Todas essas coisas podem ser
+feitas manualmente,
+
+00:00:36.583 --> 00:00:38.210
+mas é feito com mais eficiência
+
+00:00:38.243 --> 00:00:40.164
+ao usar o código
+que minimiza a repetição.
+
+00:00:40.583 --> 00:00:42.633
+Melhorar a organização é
+transformar o conjunto de dados
+
+00:00:42.666 --> 00:00:44.337
+para que cada variável
+seja uma coluna,
+
+00:00:44.370 --> 00:00:45.928
+cada observação seja uma linha
+
+00:00:45.961 --> 00:00:48.514
+e cada tipo de unidade de observação
+seja uma tabela.
+
+00:00:49.076 --> 00:00:51.340
+Existem funções especiais no Pandas
+que nos ajudam a fazer isso.
+
+00:00:51.910 --> 00:00:54.066
+Nos aprofundaremos mais nisso
+na lição quatro do curso.
+

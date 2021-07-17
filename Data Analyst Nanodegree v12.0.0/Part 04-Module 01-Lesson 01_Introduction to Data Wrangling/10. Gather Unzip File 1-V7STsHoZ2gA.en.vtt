@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.424
+So before we can unzip the zip file,
+
+00:00:02.424 --> 00:00:04.134
+which we'll do in the cell here,
+
+00:00:04.134 --> 00:00:08.134
+we'll move our downloaded zip file to our projects working directory,
+
+00:00:08.134 --> 00:00:11.304
+which you can see here in our Jupyter Notebook dashboard.
+
+00:00:11.304 --> 00:00:12.939
+We don't need to do this,
+
+00:00:12.939 --> 00:00:15.234
+but it's good to have all of our files in the same place,
+
+00:00:15.234 --> 00:00:17.704
+and it makes unzipping slightly easier.
+
+00:00:17.704 --> 00:00:22.129
+So we can do that by opening up a new terminal window or new command prompt,
+
+00:00:22.129 --> 00:00:24.852
+and using our move command.
+
+00:00:24.853 --> 00:00:27.395
+For Mac or Linux, that's MV,
+
+00:00:27.394 --> 00:00:31.003
+and the analogous command for Windows is move, M-O-V-E.
+
+00:00:31.004 --> 00:00:34.859
+The structure of the command is the same.
+
+00:00:34.859 --> 00:00:36.969
+First, we type in, move,
+
+00:00:36.969 --> 00:00:40.199
+then the current file path of our zip file,
+
+00:00:40.200 --> 00:00:45.520
+which for me is Downloads/armenian-online-job-postings.zip.
+
+00:00:45.520 --> 00:00:48.780
+We can take advantage of the autocomplete feature here by typing in AR,
+
+00:00:48.780 --> 00:00:53.245
+then clicking tab, and that will save us some typing time.
+
+00:00:53.244 --> 00:00:56.265
+Then we type in the destination folder,
+
+00:00:56.265 --> 00:01:00.969
+which for me is Documents/udacity/data-wrangling.
+
+00:01:00.969 --> 00:01:04.742
+And again, taking advantage of autocomplete, click enter,
+
+00:01:04.742 --> 00:01:09.070
+and the file should show up in our Jupyter Notebook dashboard now.
+
+00:01:09.070 --> 00:01:10.209
+And great, there.
+

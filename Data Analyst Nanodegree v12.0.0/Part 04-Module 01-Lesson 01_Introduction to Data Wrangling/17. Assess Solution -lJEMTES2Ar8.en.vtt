@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.899
+So no. This data set isn't tidy.
+
+00:00:03.899 --> 00:00:07.299
+For tidy data, we need each variable to be a column,
+
+00:00:07.299 --> 00:00:09.202
+each observation to be a row,
+
+00:00:09.202 --> 00:00:12.459
+and each type of observational unit to be a table.
+
+00:00:12.460 --> 00:00:16.070
+So first, we have duplicate representation of data.
+
+00:00:16.070 --> 00:00:18.765
+One in this column here, the date column,
+
+00:00:18.765 --> 00:00:22.105
+January 5th 2004 for example, month, day,
+
+00:00:22.105 --> 00:00:25.379
+year that also again at the end
+
+00:00:25.379 --> 00:00:28.945
+of the data set here with Year and Month having their own columns.
+
+00:00:28.945 --> 00:00:32.105
+Here is the duplicate representation of date data.
+
+00:00:32.104 --> 00:00:35.669
+So that means we have two representations of year and month data.
+
+00:00:35.670 --> 00:00:37.875
+For tidy, we need one day,
+
+00:00:37.875 --> 00:00:39.659
+one month and one year.
+
+00:00:39.659 --> 00:00:43.464
+So if we have to make updates to the data we only have to do it in one place.
+
+00:00:43.465 --> 00:00:47.475
+I would also argue that there are two types of observational units in this dataset;
+
+00:00:47.475 --> 00:00:50.420
+job posting data and then company data.
+
+00:00:50.420 --> 00:00:55.155
+To make this tidy, we would have to separate these into two tables: One,
+
+00:00:55.155 --> 00:00:59.965
+the job posting data having everything in this dataset except for this AboutC column.
+
+00:00:59.965 --> 00:01:03.330
+And then a second, the Company table with
+
+00:01:03.329 --> 00:01:09.090
+only desk company column and this AboutC column or About Company column.
+
+00:01:09.090 --> 00:01:12.090
+For this walk through though we are going to skip documenting
+
+00:01:12.090 --> 00:01:15.635
+this lack of tidiness and not fix it in the clean step.
+
+00:01:15.635 --> 00:01:17.040
+I want to keep this lesson short.
+
+00:01:17.040 --> 00:01:21.900
+For one it also because non-tidy data is okay sometimes.
+
+00:01:21.900 --> 00:01:25.650
+Jeff Leek explains this well in his blog post on non-tidy data.
+
+00:01:25.650 --> 00:01:29.484
+Pause the video and take a moment to read this paragraph.
+
+00:01:29.484 --> 00:01:32.969
+Take my word that forth this walkthrough and the analyses and visualizations that you are
+
+00:01:32.969 --> 00:01:36.579
+going to create are data in a non tidy format works
+

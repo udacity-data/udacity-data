@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.633 --> 00:00:03.700
+Então modificamos o arquivo
+e parâmetros de modo,
+
+00:00:03.733 --> 00:00:06.500
+como mencionado
+na documentação do zipfile.
+
+00:00:06.533 --> 00:00:09.533
+Arquivo e modo.
+
+00:00:09.567 --> 00:00:15.233
+Nosso arquivo se chama
+"online-job-postings.zip",
+
+00:00:15.267 --> 00:00:19.800
+e o queremos no modo "leitura",
+"R", não "W", de "edição".
+
+00:00:20.733 --> 00:00:24.000
+Podemos processar a célula
+usando shift e enter.
+
+00:00:27.333 --> 00:00:28.667
+O que houve aqui?
+
+00:00:28.700 --> 00:00:33.133
+Temos um zipfile não definido.
+
+00:00:36.233 --> 00:00:38.000
+Certo, é o seguinte...
+
+00:00:38.033 --> 00:00:40.333
+Com "zipfile.zipfile".
+
+00:00:41.767 --> 00:00:44.067
+Isso resolveu.
+
+00:00:44.100 --> 00:00:47.267
+Vamos ver a pasta no terminal
+para saber se o arquivo
+
+00:00:47.300 --> 00:00:49.167
+foi extraído do zipfile.
+
+00:00:51.600 --> 00:00:55.767
+E... Vamos digitar "ls".
+
+00:00:56.700 --> 00:01:01.400
+Parece que sim,
+"data job posts.csv".
+
+00:01:02.000 --> 00:01:06.067
+Na verdade, também verificamos,
+e está tudo certo.
+
+00:01:07.667 --> 00:01:11.033
+Bom trabalho. Agora temos
+um arquivo csv.
+
+00:01:11.067 --> 00:01:13.567
+Vamos aprender sobre esse arquivo
+no próximo vídeo.
+
+00:01:13.600 --> 00:01:17.967
+E a parte empolgante da preparação,
+que é abrir ou importar
+
+00:01:18.000 --> 00:01:20.567
+o conjunto de dados
+para o ambiente de programação.
+

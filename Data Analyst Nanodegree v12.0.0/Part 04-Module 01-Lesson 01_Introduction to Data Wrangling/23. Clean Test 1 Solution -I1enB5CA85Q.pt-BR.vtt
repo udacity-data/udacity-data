@@ -1,0 +1,149 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.541 --> 00:00:03.385
+Usaremos "value counts"
+na coluna "data de início".
+
+00:00:03.828 --> 00:00:07.759
+Agora temos 6.856 entradas
+na coluna "data de início"
+
+00:00:07.792 --> 00:00:09.800
+que têm "urgente" como "value".
+
+00:00:10.104 --> 00:00:12.240
+e todas essas frases
+na "asap_list"
+
+00:00:12.273 --> 00:00:14.269
+estão longe de serem vistas
+neste resultado.
+
+00:00:14.302 --> 00:00:17.332
+Entretanto, porque Panda esconde
+algumas das entradas aqui,
+
+00:00:17.876 --> 00:00:20.718
+não podemos ter certeza
+de que tudo foi corrigido,
+
+00:00:20.751 --> 00:00:22.428
+com esse resultado sozinho.
+
+00:00:22.650 --> 00:00:25.703
+E expandir este resultado
+e rolar por todas as entradas,
+
+00:00:26.256 --> 00:00:27.653
+não é um bom uso
+do nosso tempo.
+
+00:00:27.686 --> 00:00:28.931
+Em casos como esse,
+
+00:00:28.964 --> 00:00:31.577
+podemos emprestar uma técnica
+do teste de software aqui,
+
+00:00:31.929 --> 00:00:33.361
+instruções "assert".
+
+00:00:33.394 --> 00:00:36.013
+Este é outro tipo
+de avaliação programática.
+
+00:00:36.046 --> 00:00:38.029
+Instruções "assert"
+se parecem com isso.
+
+00:00:38.062 --> 00:00:42.194
+"Assert" é uma instrução lógica
+que avalia como verdadeiro ou falso.
+
+00:00:42.716 --> 00:00:45.572
+Por exemplo, 2+2=5,
+
+00:00:45.605 --> 00:00:46.876
+o que obviamente é falso.
+
+00:00:46.906 --> 00:00:49.303
+Quando Python encontra
+uma instrução "assert" como essa,
+
+00:00:49.336 --> 00:00:51.526
+se a instrução lógica é falsa,
+
+00:00:51.559 --> 00:00:53.910
+o Python vai gritar
+com um erro de asserção
+
+00:00:53.943 --> 00:00:55.791
+para nos informar que a coisa
+que estávamos testando
+
+00:00:55.824 --> 00:00:57.028
+não é verdadeira,
+
+00:00:57.061 --> 00:00:59.421
+nesse ponto, tentamos ver
+onde as coisas deram errado,
+
+00:00:59.976 --> 00:01:01.427
+"erro de asserção".
+
+00:01:01.746 --> 00:01:03.782
+Dois mais dois igual a cinco
+não é verdadeiro.
+
+00:01:04.238 --> 00:01:06.618
+Se essa instrução for verdadeira,
+nada acontece.
+
+00:01:07.174 --> 00:01:09.100
+Nada é bom
+para a instrução "assert".
+
+00:01:09.566 --> 00:01:11.618
+Usaremos a instrução "assert"
+para testar
+
+00:01:11.651 --> 00:01:13.729
+se segunda operação de limpeza
+funcionou.
+
+00:01:14.157 --> 00:01:15.694
+Mais uma vez,
+como quando estávamos limpando,
+
+00:01:15.991 --> 00:01:19.118
+precisávamos escrever um loop "for"
+porque há muitas entradas aqui.
+
+00:01:19.151 --> 00:01:21.435
+Você terá que fazer a mesma coisa
+ao testar.
+
+00:01:21.468 --> 00:01:23.376
+Então, vai copiar e colar
+a estrutura deste loop "for"
+
+00:01:23.698 --> 00:01:25.883
+colocar aqui, se livrar disso.
+
+00:01:26.758 --> 00:01:28.127
+No teste a seguir,
+
+00:01:28.160 --> 00:01:31.054
+verifique se todas as frases
+semelhantes a "urgente"
+
+00:01:31.087 --> 00:01:34.666
+na "asap_list" realmente foram
+convertidas para ela,
+
+00:01:34.699 --> 00:01:37.095
+usando a instrução "assert"
+no corpo deste loop.
+

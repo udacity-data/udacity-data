@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.700
+Okay, so missing records are a common issue that
+
+00:00:02.700 --> 00:00:05.429
+you'll deal with a ton in your data wrangling career.
+
+00:00:05.429 --> 00:00:11.455
+Pandas represents them as NaNs or NaN which means not a number.
+
+00:00:11.455 --> 00:00:15.175
+These are important to be aware of as they can cause problems when coding.
+
+00:00:15.175 --> 00:00:16.964
+Okay then, as soon as possible,
+
+00:00:16.964 --> 00:00:20.670
+immediately, and ASAP for a start date.
+
+00:00:20.670 --> 00:00:22.335
+These all mean the same thing.
+
+00:00:22.335 --> 00:00:24.650
+Start this job now.
+
+00:00:24.649 --> 00:00:27.750
+But searching for that single notion in that column
+
+00:00:27.750 --> 00:00:31.079
+isn't easy because there are multiple ways of referring to the same thing.
+
+00:00:31.079 --> 00:00:33.750
+ASAP, immediately, as soon as possible.
+
+00:00:33.750 --> 00:00:36.405
+Ideally, there would only be one way.
+
+00:00:36.405 --> 00:00:39.600
+Let's make a note to fix these two quality issues that we
+
+00:00:39.600 --> 00:00:44.100
+identified and we'll do that by inserting a new cell below here,
+
+00:00:44.100 --> 00:00:48.609
+a markdown cell, and we'll write missing values,
+
+00:00:48.609 --> 00:00:52.914
+NaN and StartDate inconsistencies.
+
+00:00:52.914 --> 00:00:56.435
+Assessing your data is often this easy.
+
+00:00:56.435 --> 00:01:00.200
+You look through it, notice glaring errors and make notes of them.
+
+00:01:00.200 --> 00:01:02.685
+In this snapshot of the data set,
+
+00:01:02.685 --> 00:01:04.344
+everything else seems okay.
+
+00:01:04.344 --> 00:01:10.049
+These funky symbols here are okay since that is the original job posting with raw HTML.
+
+00:01:10.049 --> 00:01:12.980
+These backslashes followed by letters are called
+
+00:01:12.980 --> 00:01:16.520
+Escape Constructs and they help structure text on webpages,
+
+00:01:16.519 --> 00:01:19.155
+like newlines and special characters.
+
+00:01:19.155 --> 00:01:22.070
+We want to preserve the structure of the original posting so we
+
+00:01:22.069 --> 00:01:25.149
+won't make note of these as issues to fix in the clean step.
+

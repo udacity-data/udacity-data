@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.960
+Gathering data is always the first step in data wrangling.
+
+00:00:03.960 --> 00:00:05.724
+The idea is before gathering,
+
+00:00:05.724 --> 00:00:08.369
+we have no data and after it, we do.
+
+00:00:08.369 --> 00:00:11.910
+This is sometimes called acquiring your data, or collecting it.
+
+00:00:11.910 --> 00:00:15.390
+Gathering captures the spirit of the task best, in my opinion.
+
+00:00:15.390 --> 00:00:19.789
+A bit of a scurrying is often required plus some unexpectedness.
+
+00:00:19.789 --> 00:00:23.219
+Yeah for sure. As you saw my personal example I had to download
+
+00:00:23.219 --> 00:00:26.942
+three datasets and scrape data off of a web page to fill in missing values.
+
+00:00:26.943 --> 00:00:28.500
+It was a lot of scurrying around.
+
+00:00:28.500 --> 00:00:32.475
+And depending on where you find your data and what format it's in,
+
+00:00:32.475 --> 00:00:35.429
+the steps of the gathering process can vary.
+
+00:00:35.429 --> 00:00:36.914
+If the data is in a file,
+
+00:00:36.914 --> 00:00:39.329
+gathering often means downloading the file and
+
+00:00:39.329 --> 00:00:42.725
+importing it into your programming environment like a Jupyter Notebook.
+
+00:00:42.725 --> 00:00:43.940
+Yes, exactly.
+
+00:00:43.939 --> 00:00:45.329
+This is what we'll do on our walk through.
+
+00:00:45.329 --> 00:00:49.019
+Other methods of gathering are things like collecting
+
+00:00:49.020 --> 00:00:53.465
+data from files and databases which is what you'll usually do in the workplace.
+
+00:00:53.465 --> 00:00:57.540
+Or you can scrape data off a website or get it from an API,
+
+00:00:57.539 --> 00:01:00.494
+which stands for application programming interface.
+
+00:01:00.494 --> 00:01:06.009
+APIs let us programmatically access data from applications like Twitter and Facebook.
+
+00:01:06.010 --> 00:01:07.685
+There are even more on top of that.
+
+00:01:07.685 --> 00:01:09.734
+But let's stay focused and get to our walk through.
+
+00:01:09.734 --> 00:01:12.655
+Gathering data is fun to me because it can vary so
+
+00:01:12.655 --> 00:01:17.290
+widely but we'll get to the fancier methods in Lesson 2 of the course, so stay tuned.
+
+00:01:17.290 --> 00:01:19.440
+For now we're going to download a file from a website
+
+00:01:19.439 --> 00:01:22.000
+and import it into our programming environment.
+

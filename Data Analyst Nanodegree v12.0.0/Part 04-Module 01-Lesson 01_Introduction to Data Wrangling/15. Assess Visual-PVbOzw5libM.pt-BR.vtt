@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.963 --> 00:00:03.722
+Vamos examinar visualmente
+os dados de trabalho primeiro.
+
+00:00:03.931 --> 00:00:06.777
+Para fazer isso,
+vamos digitar "df" nesta célula aqui
+
+00:00:06.810 --> 00:00:08.388
+embaixo do cabeçalho "Assess",
+
+00:00:08.650 --> 00:00:10.698
+processá-los usando
+"shift+enter"
+
+00:00:11.394 --> 00:00:13.561
+e vamos navegar
+pela estrutura de dados.
+
+00:00:14.255 --> 00:00:18.150
+Certo, temos a primeira linha como
+cabeçalho das colunas: descrição,
+
+00:00:18.183 --> 00:00:20.815
+data, cargo, empresa, etc.
+
+00:00:21.504 --> 00:00:23.462
+E temos muitas linhas aqui.
+
+00:00:24.625 --> 00:00:25.980
+Vamos até o final
+
+00:00:27.004 --> 00:00:30.005
+e temos 19.001 linhas
+e 24 colunas.
+
+00:00:31.022 --> 00:00:32.915
+Vamos subir um pouco aqui.
+
+00:00:33.206 --> 00:00:34.636
+Algo me chamou a atenção.
+
+00:00:34.669 --> 00:00:37.388
+Nesta imagem
+da estrutura de dados,
+
+00:00:37.421 --> 00:00:39.354
+marque as caixas
+que, para você,
+
+00:00:39.387 --> 00:00:41.785
+parecem ter problemas
+de qualidade ou organização de dados
+
+00:00:41.818 --> 00:00:43.038
+para corrigirmos.
+

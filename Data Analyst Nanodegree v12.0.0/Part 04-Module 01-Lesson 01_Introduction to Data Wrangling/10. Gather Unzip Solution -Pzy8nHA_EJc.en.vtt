@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.280 --> 00:00:07.919
+So we modified the file and mode parameters as mentioned in the zipfile documentation.
+
+00:00:07.919 --> 00:00:10.734
+File and mode.
+
+00:00:10.734 --> 00:00:14.029
+So, our file is called,
+
+00:00:14.029 --> 00:00:18.669
+online-job-postings.zip, and the mode we want is read,
+
+00:00:18.670 --> 00:00:22.455
+r, not w, write.
+
+00:00:22.454 --> 00:00:30.432
+Then we can process the cell using shift and enter. What happened here?
+
+00:00:30.432 --> 00:00:35.670
+We have zipfile not defined.
+
+00:00:36.060 --> 00:00:39.435
+Okay. That's what we have to do.
+
+00:00:39.435 --> 00:00:42.375
+With zipfile.zipfile.
+
+00:00:42.375 --> 00:00:45.204
+And that should do it.
+
+00:00:45.204 --> 00:00:53.070
+Let's check our folder in our terminal to see if our file was extracted from the zipfile.
+
+00:00:53.070 --> 00:00:57.630
+And we'll type ls.
+
+00:00:57.630 --> 00:01:02.170
+And it looks like it is. Data job posts.csv.
+
+00:01:02.170 --> 00:01:05.195
+We actually check it here too.
+
+00:01:05.194 --> 00:01:08.229
+And there it is as well.
+
+00:01:08.230 --> 00:01:09.945
+Great job.
+
+00:01:09.944 --> 00:01:12.649
+We now have ourselves a csv file.
+
+00:01:12.650 --> 00:01:15.045
+We'll cover this file type in the next video.
+
+00:01:15.045 --> 00:01:17.504
+Plus the actual exciting part of gathering,
+
+00:01:17.504 --> 00:01:22.000
+which is opening, or importing the data set in our programming environment.
+

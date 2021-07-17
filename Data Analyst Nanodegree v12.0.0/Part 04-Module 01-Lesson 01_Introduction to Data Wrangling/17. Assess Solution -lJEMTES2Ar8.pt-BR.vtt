@@ -1,0 +1,150 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.981 --> 00:00:03.563
+Não, o conjunto de dados
+não está organizado.
+
+00:00:04.527 --> 00:00:05.624
+Para dados organizados,
+
+00:00:05.657 --> 00:00:07.432
+precisamos que cada variável
+seja uma coluna,
+
+00:00:07.465 --> 00:00:09.253
+cada observação seja
+uma linha
+
+00:00:09.286 --> 00:00:12.249
+e cada tipo de unidade de observação
+seja uma tabela.
+
+00:00:12.701 --> 00:00:13.818
+Então, primeiro, temos
+
+00:00:13.851 --> 00:00:16.221
+a representação duplicada
+dos dados da data.
+
+00:00:16.492 --> 00:00:18.561
+Uma nesta coluna aqui,
+a coluna "data".
+
+00:00:19.058 --> 00:00:22.672
+5 de janeiro de 2004, por exemplo.
+Mês, dia, ano.
+
+00:00:23.956 --> 00:00:26.275
+De novo aqui no final
+do conjunto de dados,
+
+00:00:26.908 --> 00:00:29.116
+com mês e ano
+tendo suas próprias colunas.
+
+00:00:29.439 --> 00:00:32.034
+Aqui está a representação duplicada
+dos dados da data.
+
+00:00:32.067 --> 00:00:33.264
+Isso significa que temos
+
+00:00:33.297 --> 00:00:35.776
+duas representações
+de dados de ano e mês.
+
+00:00:36.195 --> 00:00:38.037
+Para organizar,
+precisamos de um dia,
+
+00:00:38.070 --> 00:00:39.624
+um mês e um ano.
+
+00:00:39.657 --> 00:00:41.497
+Então, se tivermos
+que atualizar os dados,
+
+00:00:41.530 --> 00:00:43.533
+só precisamos atualizar
+em um lugar.
+
+00:00:43.566 --> 00:00:44.831
+Eu também afirmaria
+que existem
+
+00:00:44.864 --> 00:00:47.569
+dois tipos de unidades de observação
+neste conjunto de dados;
+
+00:00:47.602 --> 00:00:50.400
+dados de postagem do trabalho
+e dados da empresa.
+
+00:00:50.728 --> 00:00:51.828
+Para deixar isso organizado,
+
+00:00:51.861 --> 00:00:54.023
+teríamos que separá-los
+em duas tabelas.
+
+00:00:54.528 --> 00:00:58.147
+Uma com dados da descrição,
+com tudo do conjunto de dados,
+
+00:00:58.180 --> 00:00:59.992
+exceto a coluna "AboutC".
+
+00:01:00.025 --> 00:01:02.234
+E então a segunda,
+a tabela "empresa",
+
+00:01:03.258 --> 00:01:04.895
+somente com essa coluna
+
+00:01:04.928 --> 00:01:08.964
+e esta coluna "AboutC"
+ou coluna "sobre a empresa".
+
+00:01:09.641 --> 00:01:10.814
+Para esse passo a passo,
+
+00:01:10.847 --> 00:01:13.151
+vamos ignorar documentar
+essa falta de organização,
+
+00:01:13.184 --> 00:01:15.415
+e não consertar isso
+na etapa de limpeza.
+
+00:01:15.756 --> 00:01:17.206
+Quero manter essa lição curta.
+
+00:01:17.239 --> 00:01:20.913
+Por exemplo, às vezes é bom
+os dados não estarem organizados.
+
+00:01:22.025 --> 00:01:24.355
+Jeff Lee explica isso bem
+em sua postagem no blog
+
+00:01:24.388 --> 00:01:25.692
+sobre dados bagunçados.
+
+00:01:26.261 --> 00:01:29.092
+Pause o vídeo e tire um tempo
+para ler este parágrafo.
+
+00:01:29.622 --> 00:01:31.582
+Acredite quando digo
+que depois deste passo a passo
+
+00:01:31.615 --> 00:01:33.762
+e das visualizações
+que você vai criar,
+
+00:01:34.166 --> 00:01:36.578
+os dados estarão em um formato
+bagunçado que funciona.
+

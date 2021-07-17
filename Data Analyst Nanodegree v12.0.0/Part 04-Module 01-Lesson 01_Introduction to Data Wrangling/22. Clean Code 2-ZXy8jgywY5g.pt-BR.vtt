@@ -1,0 +1,275 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.669 --> 00:00:02.978
+Certo, vamos atacar
+esse problema engraçado.
+
+00:00:03.531 --> 00:00:05.908
+Você realmente vai se sentir
+um mágico depois disso.
+
+00:00:06.848 --> 00:00:09.158
+Precisamos identificar
+todos os registros
+
+00:00:09.191 --> 00:00:12.342
+na coluna "data de início",
+que tem "o quanto antes",
+
+00:00:12.874 --> 00:00:14.828
+"imediatamente" e semelhantes,
+
+00:00:15.439 --> 00:00:19.112
+então precisamos substituir o texto
+dessas células com "urgente".
+
+00:00:19.705 --> 00:00:21.442
+Quais são as outras versões
+disso?
+
+00:00:22.120 --> 00:00:24.183
+Vamos procurar as mais comuns
+em "data de início",
+
+00:00:24.216 --> 00:00:26.035
+usando a função "value counts"
+do Panda
+
+00:00:26.068 --> 00:00:28.922
+na coluna "data de início"
+no "df clean data frame".
+
+00:00:29.382 --> 00:00:31.188
+"Value counts" é uma
+das avaliações programáticas
+
+00:00:31.221 --> 00:00:32.569
+que falamos anteriormente.
+
+00:00:32.952 --> 00:00:35.788
+Então "imediatamente",
+"o quanto antes",
+
+00:00:36.282 --> 00:00:40.236
+"imediato", "cargo imediato",
+"o quanto antes" com um ponto,
+
+00:00:40.955 --> 00:00:42.151
+"oportunidade imediata"...
+
+00:00:42.982 --> 00:00:45.231
+Todas parecem semelhantes
+em significado
+
+00:00:45.264 --> 00:00:47.053
+a "o quanto antes" para mim.
+
+00:00:47.342 --> 00:00:48.993
+E há muito mais,
+
+00:00:49.467 --> 00:00:51.531
+expressadas
+por estas reticências aqui.
+
+00:00:51.808 --> 00:00:53.601
+Você pode expandir
+esses resultados aqui
+
+00:00:53.634 --> 00:00:56.249
+e verificar
+todas as frases semelhantes.
+
+00:00:56.915 --> 00:00:58.877
+Preparei algumas tarefas
+legais para esta aula,
+
+00:00:59.168 --> 00:01:02.044
+e descobri todos os valores
+semelhantes em significado
+
+00:01:02.077 --> 00:01:04.918
+listados para sua conveniência
+e vou colar eles aqui.
+
+00:01:05.594 --> 00:01:07.364
+Você vai precisar fazer
+esse trabalho sujo
+
+00:01:07.397 --> 00:01:09.788
+quando sair por aí
+preparando por conta própria.
+
+00:01:09.821 --> 00:01:11.191
+Portanto, tenha isso em mente.
+
+00:01:11.224 --> 00:01:14.632
+Vamos converter todos estes
+para "urgente".
+
+00:01:14.940 --> 00:01:18.024
+Vamos ter que testar cada entrada
+na coluna "data de início"
+
+00:01:18.057 --> 00:01:20.916
+para corresponder
+com cada item desta lista.
+
+00:01:21.360 --> 00:01:23.967
+Então substituir os que
+correspondem com "urgente".
+
+00:01:24.854 --> 00:01:27.454
+Observe que os itens desta lista
+devem ser strings,
+
+00:01:28.061 --> 00:01:31.100
+porque o tipo de dados da coluna
+"data de início" é string,
+
+00:01:31.458 --> 00:01:33.807
+também conhecida
+como objeto no Pandas.
+
+00:01:34.502 --> 00:01:36.661
+"dtype O" ou objeto.
+
+00:01:36.968 --> 00:01:38.552
+Então vamos de novo ao Google
+
+00:01:38.585 --> 00:01:40.247
+para ver como o Pandas
+pode nos ajudar aqui.
+
+00:01:40.661 --> 00:01:43.414
+O Pandas substitui
+os valores em série.
+
+00:01:44.131 --> 00:01:46.015
+Uma série também é conhecida
+como uma coluna
+
+00:01:46.048 --> 00:01:47.510
+em um "DataFrame" do Pandas.
+
+00:01:47.543 --> 00:01:50.699
+E queremos substituir valores
+na coluna "data de início"
+
+00:01:50.732 --> 00:01:52.285
+ou na "série
+de inícios imediatos".
+
+00:01:52.575 --> 00:01:55.243
+Este primeiro resultado de pesquisa
+é o que você vai usar,
+
+00:01:55.658 --> 00:01:58.709
+mas há muitas maneiras de realizar
+essa tarefa no Pandas.
+
+00:01:58.742 --> 00:02:00.232
+Porém, essa é a mais direta.
+
+00:02:00.636 --> 00:02:02.549
+Então "panda.Series.replace".
+
+00:02:03.018 --> 00:02:06.180
+A função ".replace" funciona
+em uma série do Pandas
+
+00:02:07.261 --> 00:02:08.824
+e substitui os valores dados
+
+00:02:08.857 --> 00:02:12.448
+para substituir onde o primeiro
+parâmetro "with value"
+
+00:02:12.481 --> 00:02:14.046
+ou o segundo parâmetro.
+
+00:02:14.079 --> 00:02:17.406
+Mais uma coisa a ter em mente
+é este parâmetro "inplace" aqui.
+
+00:02:18.374 --> 00:02:20.259
+O padrão para "inplace"
+é falso.
+
+00:02:21.019 --> 00:02:22.940
+Na verdade, vamos converter isso
+para verdadeiro.
+
+00:02:22.973 --> 00:02:24.307
+Podemos minimizar nosso código.
+
+00:02:24.340 --> 00:02:26.320
+Você verá como funciona
+em um segundo.
+
+00:02:26.353 --> 00:02:28.532
+Vamos fazer isso
+no Notebook Jupyter.
+
+00:02:29.110 --> 00:02:31.471
+E "df_clean.StartDate"
+é nossa série
+
+00:02:32.030 --> 00:02:34.427
+e queremos usar ponto
+para substituir nesta série.
+
+00:02:35.295 --> 00:02:37.427
+"Inplace" verdadeiro significa
+que podemos escrever
+
+00:02:37.460 --> 00:02:39.160
+apenas essa linha de código aqui
+e executar
+
+00:02:39.193 --> 00:02:41.781
+e as mudanças que ele faz
+serão refletidas em "df_clean".
+
+00:02:41.814 --> 00:02:43.685
+Se não houvesse "inplace"
+verdadeiro aqui,
+
+00:02:43.965 --> 00:02:45.826
+teríamos que reatribuir
+os resultados desta função
+
+00:02:45.859 --> 00:02:47.144
+à nossa coluna "data de início".
+
+00:02:47.794 --> 00:02:50.451
+Como há muitas frases
+semelhantes a "urgente",
+
+00:02:51.045 --> 00:02:52.752
+precisamos usar um loop "for"
+
+00:02:52.785 --> 00:02:54.818
+para minimizar
+a repetição do código,
+
+00:02:55.193 --> 00:02:58.185
+com o corpo do loop "for"
+sendo a função ".replace".
+
+00:02:58.750 --> 00:03:01.483
+O resto deste código
+é a sua tarefa no próximo teste.
+
+00:03:02.035 --> 00:03:03.150
+Escreva um loop "for"
+
+00:03:03.183 --> 00:03:05.435
+e preencha os parâmetros
+nesta linha de código aqui,
+
+00:03:05.468 --> 00:03:10.511
+para substituir todas as frases
+semelhantes a "urgente" com ela.
+

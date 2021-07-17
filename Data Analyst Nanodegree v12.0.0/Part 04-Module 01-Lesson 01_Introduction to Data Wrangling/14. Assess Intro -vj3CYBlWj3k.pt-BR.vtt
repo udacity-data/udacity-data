@@ -1,0 +1,140 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.329 --> 00:00:03.824
+Agora como avaliamos a qualidade
+e a organização?
+
+00:00:04.130 --> 00:00:06.100
+Existem dois estilos
+de avaliação de dados:
+
+00:00:06.133 --> 00:00:07.537
+visual e programático.
+
+00:00:08.026 --> 00:00:09.560
+Avaliar os dados visualmente
+
+00:00:09.593 --> 00:00:11.776
+significa ter uma pessoa
+observando.
+
+00:00:12.018 --> 00:00:14.813
+Isso pode ser feito no Pandas,
+mas para arquivos pequenos
+
+00:00:14.846 --> 00:00:17.400
+geralmente é mais fácil fazer isso
+em uma aplicação de planilha,
+
+00:00:17.433 --> 00:00:19.714
+como o Excel
+ou as planilhas do Google.
+
+00:00:19.964 --> 00:00:21.861
+Alguns conjuntos de dados
+são tão grandes
+
+00:00:21.894 --> 00:00:25.038
+que a maioria das aplicações
+de planilha falham ao tentar abrir.
+
+00:00:25.071 --> 00:00:27.738
+Sim, isso aconteceu comigo
+com o conjunto de dados de trabalho.
+
+00:00:27.771 --> 00:00:30.139
+Manipular arquivos grandes
+é uma das muitas áreas
+
+00:00:30.172 --> 00:00:34.392
+em que o Pandas se destaca
+e o Excel não é excelente.
+
+00:00:34.425 --> 00:00:36.006
+-Muito engraçado.
+-Obrigado.
+
+00:00:36.515 --> 00:00:38.715
+Mas, sim, o Pandas também
+não é ótimo para navegar
+
+00:00:38.748 --> 00:00:40.116
+por grandes conjuntos de dados.
+
+00:00:40.149 --> 00:00:42.670
+O Pandas colapsa automaticamente
+linhas e colunas,
+
+00:00:42.703 --> 00:00:45.791
+mas a rolagem não é muito divertida
+nas células do notebook Jupyter.
+
+00:00:45.824 --> 00:00:46.958
+Não, não é.
+
+00:00:46.991 --> 00:00:50.728
+Para conjuntos de dados maiores,
+a avaliação programática é melhor.
+
+00:00:50.960 --> 00:00:52.933
+Avaliar os dados
+de forma programática
+
+00:00:52.966 --> 00:00:54.762
+significa usar
+um programa de computador
+
+00:00:54.795 --> 00:00:56.592
+para ajudar a detectar problemas
+nos dados.
+
+00:00:56.625 --> 00:00:58.253
+É nisso que o Pandas se destaca.
+
+00:00:58.521 --> 00:01:01.059
+Um exemplo simples
+é a função "info" do Pandas,
+
+00:01:01.092 --> 00:01:02.635
+que nos dá a estrutura básica
+
+00:01:02.668 --> 00:01:04.430
+e o conteúdo
+da estrutura de dados.
+
+00:01:04.463 --> 00:01:06.997
+Então temos avaliação visual
+e programática,
+
+00:01:07.030 --> 00:01:09.339
+procurando qualidade
+e organização.
+
+00:01:09.372 --> 00:01:11.829
+É aqui que você começa a jogar
+"detetive de dados".
+
+00:01:12.138 --> 00:01:13.543
+Vamos voltar
+ao nosso passo a passo.
+
+00:01:13.576 --> 00:01:14.906
+Nos exercícios a seguir,
+
+00:01:14.939 --> 00:01:16.928
+você usará avaliações visuais
+e programáticas
+
+00:01:16.961 --> 00:01:18.573
+para detectar problemas
+de qualidade nos dados
+
+00:01:18.606 --> 00:01:20.536
+e detectar a presença
+de um conjunto de dados
+
+00:01:20.569 --> 00:01:22.130
+organizado e não organizado.
+

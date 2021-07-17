@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.567 --> 00:00:04.433
+Antes de "deszipar" o arquivo .zip,
+que é o que farei nessa célula,
+
+00:00:04.467 --> 00:00:08.233
+vamos mover o arquivo .zip baixado
+para o diretório de projetos,
+
+00:00:08.267 --> 00:00:11.433
+que você vê aqui no painel
+do Jupyter Notebook.
+
+00:00:11.467 --> 00:00:14.400
+Não precisamos fazer isso,
+mas é bom ter todos os arquivos
+
+00:00:14.433 --> 00:00:18.233
+no mesmo local,
+e "deszipados" fica mais fácil.
+
+00:00:18.267 --> 00:00:21.000
+Podemos fazer isso abrindo
+uma nova janela de terminal
+
+00:00:21.033 --> 00:00:24.800
+ou um novo prompt de comando
+e usando o comando de movimento.
+
+00:00:24.833 --> 00:00:29.500
+Para Mac e Linux, é o MV,
+e o comando analógico para Windows
+
+00:00:29.533 --> 00:00:32.533
+é "move".
+
+00:00:32.567 --> 00:00:34.900
+A estrutura do comando
+é a mesma.
+
+00:00:34.933 --> 00:00:39.133
+Primeiro digitamos "move",
+então o caminho do arquivo
+
+00:00:39.167 --> 00:00:42.567
+do nosso arquivo .zip,
+que, para mim, é...
+
+00:00:42.600 --> 00:00:45.800
+"Download/armenian-online-job-
+postings.zip".
+
+00:00:45.833 --> 00:00:49.367
+Podemos aproveitar o recurso
+de autocompletar ao digitar "AR"
+
+00:00:49.400 --> 00:00:53.467
+e depois clicar em tab, o que
+nos poupa o tempo de digitar.
+
+00:00:53.500 --> 00:00:57.033
+Então digitamos
+a pasta de destino, que será
+
+00:00:57.067 --> 00:01:01.133
+"Documents/udacity/
+data-wrangling".
+
+00:01:01.167 --> 00:01:04.667
+De novo, use o autocompletar
+e clique em "enter",
+
+00:01:04.700 --> 00:01:09.033
+e o arquivo deve aparecer agora
+no painel do Jupyter Notebook.
+
+00:01:09.067 --> 00:01:10.500
+Aí está. Ótimo.
+

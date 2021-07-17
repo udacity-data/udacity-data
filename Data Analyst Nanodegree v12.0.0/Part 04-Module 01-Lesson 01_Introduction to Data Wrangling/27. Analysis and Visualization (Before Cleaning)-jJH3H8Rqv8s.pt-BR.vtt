@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.309 --> 00:00:03.976
+E se tentássemos fazer a análise
+e a visualização de "urgente"
+
+00:00:04.009 --> 00:00:05.841
+no conjunto de dados original?
+
+00:00:06.228 --> 00:00:08.746
+Você se lembra
+como esse conjunto de dados era?
+
+00:00:09.162 --> 00:00:12.211
+Já que fizemos uma cópia
+do conjunto de dados original aqui,
+
+00:00:12.955 --> 00:00:14.876
+facilmente podemos acessar
+o original,
+
+00:00:15.393 --> 00:00:17.756
+simplesmente "df"
+em vez de "df_clean",
+
+00:00:18.240 --> 00:00:20.471
+e realizamos
+a mesma análise e visualização
+
+00:00:20.504 --> 00:00:22.823
+que fizemos aqui
+no conjunto de dados original.
+
+00:00:23.461 --> 00:00:24.565
+Vamos fazer isso.
+
+00:00:26.105 --> 00:00:29.017
+E queremos mudar todos esses
+"df_cleans" só para "df".
+
+00:00:30.989 --> 00:00:33.711
+E os resultados
+são drasticamente diferentes.
+
+00:00:34.272 --> 00:00:36.022
+A proporção de postagens
+de trabalho urgentes
+
+00:00:36.055 --> 00:00:37.744
+está abaixo de 50% aqui,
+
+00:00:38.174 --> 00:00:41.778
+20% menor do que o nosso valor
+mais preciso após a preparação.
+
+00:00:42.203 --> 00:00:44.126
+Esta visualização torna
+isso bastante claro.
+
+00:00:44.575 --> 00:00:48.758
+Na anterior, uma quantidade maciça
+de 71% em azul.
+
+00:00:49.152 --> 00:00:54.654
+Na posterior, 49%
+e menos da metade de "urgente".
+
+00:00:55.123 --> 00:00:57.842
+O poder da preparação de dados
+é óbvio aqui.
+

@@ -1,0 +1,194 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.563 --> 00:00:02.815
+Agora, para a etapa 2 da limpeza
+de dados programática,
+
+00:00:02.848 --> 00:00:04.413
+precisamos pegar o código.
+
+00:00:04.809 --> 00:00:08.200
+Vamos converter as definições
+de limpeza no código Python.
+
+00:00:08.875 --> 00:00:11.175
+Antes de fazer qualquer modificação
+no conjunto de dados,
+
+00:00:11.208 --> 00:00:12.299
+faremos uma cópia
+
+00:00:12.332 --> 00:00:14.914
+para acessar o conjunto de dados
+original mais tarde.
+
+00:00:15.497 --> 00:00:18.125
+Podemos fazer isso usando
+a função ".copy" do Pandas.
+
+00:00:18.826 --> 00:00:21.958
+E chamaremos a estrutura de dados
+retornada de "df_clean".
+
+00:00:22.570 --> 00:00:24.736
+Ainda não está limpo,
+mas logo estará.
+
+00:00:25.251 --> 00:00:26.341
+Primeiro vamos atacar
+
+00:00:26.374 --> 00:00:28.931
+os problemas dos cabeçalhos
+não-descritivos das colunas
+
+00:00:28.964 --> 00:00:30.076
+porque é mais fácil.
+
+00:00:30.109 --> 00:00:31.597
+Vamos alterar essas definições
+
+00:00:32.213 --> 00:00:33.647
+e vamos copiar e colar
+a definição
+
+00:00:33.680 --> 00:00:35.307
+embaixo do cabeçalho do código
+também.
+
+00:00:35.340 --> 00:00:37.068
+Esta célula tem que ser
+uma célula "Markdown"
+
+00:00:37.101 --> 00:00:38.333
+para aceitar texto.
+
+00:00:38.776 --> 00:00:42.171
+Vamos abrir o Google
+e pesquisar "rename columns Pandas".
+
+00:00:42.470 --> 00:00:44.467
+Vou dizer, metade de ser
+um bom programador
+
+00:00:44.500 --> 00:00:45.742
+é saber pesquisar.
+
+00:00:46.933 --> 00:00:49.846
+O primeiro resultado não é
+a documentação do Pandas.
+
+00:00:49.879 --> 00:00:52.213
+Na verdade, é uma postagem
+sobre "transbordamento de pilha".
+
+00:00:52.246 --> 00:00:54.395
+A resposta aqui deve ser
+muito útil.
+
+00:00:55.162 --> 00:00:57.776
+Pause o vídeo e leia a pergunta,
+se quiser.
+
+00:00:58.763 --> 00:01:00.686
+"Renomeando Colunas no Pandas".
+
+00:01:00.719 --> 00:01:02.632
+"Eu tenho uma tabela de dados
+usando Pandas,
+
+00:01:02.880 --> 00:01:04.416
+provavelmente querem dizer
+"DataFrame",
+
+00:01:04.658 --> 00:01:06.886
+e rótulos de coluna
+que preciso editar
+
+00:01:06.919 --> 00:01:08.644
+para substituir os rótulos
+das colunas originais.
+
+00:01:08.846 --> 00:01:10.592
+Sim, tudo bem.
+Parece ser o nosso problema.
+
+00:01:11.270 --> 00:01:13.722
+E vamos rolar para baixo
+até a resposta mais votada.
+
+00:01:14.803 --> 00:01:16.613
+Aqui tem uma aceita
+com a marca de seleção,
+
+00:01:16.646 --> 00:01:18.162
+mais de 740 votos.
+
+00:01:19.310 --> 00:01:22.661
+Tem uma aqui com mais, 1.263.
+
+00:01:23.827 --> 00:01:26.704
+De novo, pause o vídeo
+e leia esta resposta, se quiser.
+
+00:01:27.256 --> 00:01:30.572
+"Use a função 'rename' e indique
+as colunas a serem renomeadas.
+
+00:01:30.605 --> 00:01:32.605
+Nem todas as colunas
+devem ser renomeadas."
+
+00:01:32.909 --> 00:01:34.346
+E nos dá duas opções.
+
+00:01:34.379 --> 00:01:37.237
+Então vou copiar e colar este aqui
+no Notebook Jupyter.
+
+00:01:37.270 --> 00:01:39.294
+Mas, de novo,
+você não deveria.
+
+00:01:39.327 --> 00:01:42.150
+Escrever o código te ajudará
+a se tornar um programador melhor.
+
+00:01:42.183 --> 00:01:43.569
+E temos que fazer
+esse "df_clean"
+
+00:01:43.602 --> 00:01:46.124
+porque não queremos modificar
+o conjunto de dados original.
+
+00:01:46.539 --> 00:01:48.981
+Queremos modificar a cópia
+que acabamos de fazer aqui.
+
+00:01:49.595 --> 00:01:52.013
+Certo, então a resposta nos deu
+parâmetros falsos.
+
+00:01:52.046 --> 00:01:55.786
+"nomevelho1" : "nomenovo'",
+"nomevelho2 : "nomenovo2".
+
+00:01:56.479 --> 00:01:57.564
+No teste a seguir,
+
+00:01:57.597 --> 00:01:59.543
+substitua-os
+com títulos de coluna atuais,
+
+00:01:59.576 --> 00:02:01.637
+"Antiga" e "Nova",
+
+00:02:02.305 --> 00:02:04.628
+para corrigir esse problema
+dos títulos das colunas
+
+00:02:04.661 --> 00:02:05.766
+e com erros ortográficos.
+

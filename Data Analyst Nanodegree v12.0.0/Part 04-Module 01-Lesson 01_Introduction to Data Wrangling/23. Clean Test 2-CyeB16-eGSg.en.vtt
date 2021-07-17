@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.349
+Okay, so we loop through the phrases in asap_list. Again, up here.
+
+00:00:04.349 --> 00:00:07.714
+And we want to assert that each phrase is not
+
+00:00:07.714 --> 00:00:12.280
+in the start date column of our supposedly clean data frame.
+
+00:00:12.279 --> 00:00:19.324
+So assert phrase not in df_clean.StartDate and then there's some Pandas trickery here.
+
+00:00:19.324 --> 00:00:21.864
+We actually need to type in. values here.
+
+00:00:21.864 --> 00:00:24.474
+If not, as I'll show you below,
+
+00:00:24.475 --> 00:00:30.830
+Pandas check to see if each phrase is in the index column of df_clean.StartDate.
+
+00:00:30.829 --> 00:00:32.289
+We want the values,
+
+00:00:32.289 --> 00:00:36.600
+and if we process the cell and we have no assertion errors, we're good.
+
+00:00:36.600 --> 00:00:39.414
+Our cleaning code worked. And great.
+
+00:00:39.414 --> 00:00:42.460
+So this is what would happen if there was a phrase left.
+
+00:00:42.460 --> 00:00:45.929
+There should be plenty of entries with ASAP.
+
+00:00:45.929 --> 00:00:49.524
+6,856, in fact.
+
+00:00:49.524 --> 00:00:53.859
+So if we assert that ASAP is not in df_clean.StartDate.values,
+
+00:00:53.859 --> 00:00:57.000
+Python should yell at us and it does. AssertionError.
+

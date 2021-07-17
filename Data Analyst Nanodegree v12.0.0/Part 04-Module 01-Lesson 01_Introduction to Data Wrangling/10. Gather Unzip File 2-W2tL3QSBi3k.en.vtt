@@ -1,0 +1,169 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.529
+Now we can unzip the file.
+
+00:00:02.529 --> 00:00:05.384
+We'll do that using Python zip file library.
+
+00:00:05.384 --> 00:00:08.740
+Using code to make our wrangling work as reproduceable as possible,
+
+00:00:08.740 --> 00:00:12.769
+as opposed to using an external program or clicking and unzipping the file.
+
+00:00:12.769 --> 00:00:15.924
+So we import the zip file library in this cell,
+
+00:00:15.925 --> 00:00:19.789
+then process that cell using shift and enter.
+
+00:00:19.789 --> 00:00:21.019
+At this point, we should open up
+
+00:00:21.019 --> 00:00:23.089
+the zip file library documentation to
+
+00:00:23.089 --> 00:00:25.875
+figure out how to read the contents of the zip file.
+
+00:00:25.875 --> 00:00:29.035
+You can briefly scan through it here, but it's kind of dense.
+
+00:00:29.035 --> 00:00:30.620
+So I like to use our browsers find
+
+00:00:30.620 --> 00:00:35.289
+feature which is command+F or control+F depending on your operating system.
+
+00:00:35.289 --> 00:00:36.774
+Let's look for read.
+
+00:00:36.774 --> 00:00:39.699
+We want to read the contents of our zip file.
+
+00:00:39.700 --> 00:00:45.555
+Okay. Class zipfile.ZipFile, the class for reading and writing zip files.
+
+00:00:45.554 --> 00:00:50.615
+Then it directs us down here, ZipFile Objects.
+
+00:00:50.615 --> 00:00:53.859
+If you're not an expert in Python classes, don't worry.
+
+00:00:53.859 --> 00:00:59.582
+This just means we can type zipfile.ZipFile with some parameters,
+
+00:00:59.582 --> 00:01:01.234
+together called the constructor,
+
+00:01:01.234 --> 00:01:03.994
+to create something called an object
+
+00:01:03.994 --> 00:01:08.204
+that has special coding abilities also known as methods.
+
+00:01:08.204 --> 00:01:10.210
+Okay. If you read through here a little,
+
+00:01:10.210 --> 00:01:16.010
+notice that it says the mode parameter should be 'r' to read an existing file.
+
+00:01:16.010 --> 00:01:17.800
+That's what we want to do.
+
+00:01:17.799 --> 00:01:21.554
+If we scroll even further we see,
+
+00:01:21.555 --> 00:01:28.116
+"ZipFile is also a context manager and therefore supports the with statement."
+
+00:01:28.115 --> 00:01:31.590
+Context managers are very popular for reading files.
+
+00:01:31.590 --> 00:01:33.219
+The act of opening a file,
+
+00:01:33.219 --> 00:01:35.200
+which we need to do in reading and writing files,
+
+00:01:35.200 --> 00:01:37.465
+consumes a resource on your computer.
+
+00:01:37.465 --> 00:01:39.085
+And if we forget to close the file,
+
+00:01:39.084 --> 00:01:41.984
+we can get in trouble with error messages or crashes.
+
+00:01:41.984 --> 00:01:45.010
+Context managers make sure all files we open are closed,
+
+00:01:45.010 --> 00:01:48.225
+and all resources we use are properly cleaned up.
+
+00:01:48.224 --> 00:01:52.799
+Okay. So we can actually just copy and paste this code here into our Jupyter Notebook,
+
+00:01:52.799 --> 00:01:56.155
+but you shouldn't copy and paste it, now and in the future.
+
+00:01:56.155 --> 00:01:58.719
+Wherever possible, it's best to type out the code.
+
+00:01:58.719 --> 00:02:00.745
+It will help you learn, but for the sake of time,
+
+00:02:00.745 --> 00:02:03.340
+I'll take a shortcut here and copy and paste.
+
+00:02:03.340 --> 00:02:04.793
+We actually need one more thing here,
+
+00:02:04.793 --> 00:02:07.730
+zipfile.ZipFile to make this code work.
+
+00:02:07.730 --> 00:02:10.217
+Okay, so we don't want to write to a zip file though
+
+00:02:10.217 --> 00:02:13.080
+with this 'w' and this write method here.
+
+00:02:13.080 --> 00:02:17.225
+We want to extract or read the files within our zip file.
+
+00:02:17.224 --> 00:02:21.634
+A quick Google search directed me to this method within the zip file documentation.
+
+00:02:21.634 --> 00:02:25.774
+Extractall, which doesn't need any parameters as you can see here,
+
+00:02:25.775 --> 00:02:29.110
+default none, default none, default none.
+
+00:02:29.110 --> 00:02:32.155
+In contrast to the Write method which I'll delete right now.
+
+00:02:32.155 --> 00:02:39.027
+Okay, so we'll change our code to myzip.extractall with no parameters.
+
+00:02:39.027 --> 00:02:44.524
+And all that's left to do now is change these two parameters, file and mode.
+
+00:02:44.525 --> 00:02:49.219
+File is the name of the zip file and mode is what we want to do with the file,
+
+00:02:49.219 --> 00:02:51.199
+like read or write to it.
+
+00:02:51.199 --> 00:02:53.000
+The zip file we want to open should be in
+
+00:02:53.000 --> 00:02:55.905
+the same directory as your Jupyter Notebook at this point.
+
+00:02:55.905 --> 00:02:57.640
+Go ahead and change those parameters.
+

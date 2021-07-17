@@ -1,0 +1,25 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.895
+To simply use the name of the file like this,
+
+00:00:02.895 --> 00:00:09.775
+which again is online-job- postings.csv, not armenian-online-job-postings.zip anymore.
+
+00:00:09.775 --> 00:00:12.734
+The CSV file needs to be in the same folder as our notebook,
+
+00:00:12.734 --> 00:00:14.684
+which again, it is.
+
+00:00:14.685 --> 00:00:18.324
+And we press shift and enter and there we go.
+
+00:00:18.324 --> 00:00:23.280
+It's as simple as that. If we type in DF and process the cell below,
+
+00:00:23.280 --> 00:00:27.240
+we'll see our CSV file shown as a Pandas DataFrame.
+

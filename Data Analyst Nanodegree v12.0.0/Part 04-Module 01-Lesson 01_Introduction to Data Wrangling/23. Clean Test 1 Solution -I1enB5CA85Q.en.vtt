@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.660
+We'll use value counts on the start date column.
+
+00:00:03.660 --> 00:00:09.669
+Now we have 6,856 entries in the start date column that have ASAP as their value,
+
+00:00:09.669 --> 00:00:14.189
+and all of these phrases in ASAP list are nowhere to be seen in this output.
+
+00:00:14.189 --> 00:00:17.564
+However, because Panda hides some of the entries from us here,
+
+00:00:17.565 --> 00:00:20.515
+we can't exactly be sure that everything was fixed though,
+
+00:00:20.515 --> 00:00:22.260
+with this output alone.
+
+00:00:22.260 --> 00:00:25.860
+And expanding this output and scrolling through all of the entries,
+
+00:00:25.859 --> 00:00:27.550
+isn't a great use of our time.
+
+00:00:27.550 --> 00:00:28.785
+In cases like these,
+
+00:00:28.785 --> 00:00:33.365
+we can borrow a technique from software testing here, assert statements.
+
+00:00:33.365 --> 00:00:35.579
+This is another type of programmatic assessment.
+
+00:00:35.579 --> 00:00:37.979
+Assert statements look like this.
+
+00:00:37.979 --> 00:00:42.484
+Assert, then a logical statement that evaluates to TRUE or FALSE.
+
+00:00:42.484 --> 00:00:45.210
+For example, two plus two equals five,
+
+00:00:45.210 --> 00:00:46.715
+which is obviously false.
+
+00:00:46.715 --> 00:00:49.125
+When Python encounters an assert statement like this,
+
+00:00:49.125 --> 00:00:51.359
+if the logical statement is false,
+
+00:00:51.359 --> 00:00:53.880
+Python will yell at us with an assertion error to
+
+00:00:53.880 --> 00:00:56.609
+let us know that the thing we were testing wasn't true,
+
+00:00:56.609 --> 00:01:01.262
+at which point we try to see where things went sideways, assertion error.
+
+00:01:01.262 --> 00:01:03.914
+Two plus two equals five isn't true.
+
+00:01:03.914 --> 00:01:07.015
+If that statement is true, nothing happens.
+
+00:01:07.015 --> 00:01:09.284
+Nothing is good for assert statements.
+
+00:01:09.284 --> 00:01:13.674
+We'll use the assert statement to test that our second cleaning operation worked.
+
+00:01:13.674 --> 00:01:15.926
+Again, like when we were cleaning,
+
+00:01:15.927 --> 00:01:19.155
+we needed to write a for loop because there are so many entries here.
+
+00:01:19.155 --> 00:01:21.150
+You'll have to do the same thing when testing.
+
+00:01:21.150 --> 00:01:23.434
+So will copy and paste the structure of this for loop,
+
+00:01:23.433 --> 00:01:26.375
+put it down here, get rid of this.
+
+00:01:26.375 --> 00:01:28.034
+In the quiz ahead,
+
+00:01:28.034 --> 00:01:31.424
+verify that all the similar phrases to ASAP in
+
+00:01:31.424 --> 00:01:33.780
+ASAP list were actually converted to
+
+00:01:33.780 --> 00:01:37.000
+ASAP using an assert statement in the body of the this loop.
+

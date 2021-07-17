@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.014
+&gt;&gt; Now, how do we actually assess quality and tidiness?
+
+00:00:04.014 --> 00:00:07.664
+There are two styles of assessing your data, visual and programmatic.
+
+00:00:07.665 --> 00:00:11.969
+Assessing the data visually means having a human look at over with their eyes.
+
+00:00:11.970 --> 00:00:13.275
+This can be done in Pandas,
+
+00:00:13.275 --> 00:00:14.535
+but for small files,
+
+00:00:14.535 --> 00:00:19.800
+it's usually easier to do this in a spreadsheet application like Excel or Google sheets.
+
+00:00:19.800 --> 00:00:21.765
+Some data sets are so large though
+
+00:00:21.765 --> 00:00:25.105
+that most spreadsheet apps will crash just trying to open them.
+
+00:00:25.105 --> 00:00:27.750
+&gt;&gt; Yeah, this happened to me with the job data set.
+
+00:00:27.750 --> 00:00:30.675
+Handling large files is one of many areas where Pandas
+
+00:00:30.675 --> 00:00:34.149
+actually excels, and Excel doesn't.
+
+00:00:34.149 --> 00:00:35.350
+&gt;&gt; Pretty funny.
+
+00:00:35.350 --> 00:00:37.005
+&gt;&gt; Thanks. But yeah,
+
+00:00:37.005 --> 00:00:39.915
+Pandas isn't great for browsing through large data sets either.
+
+00:00:39.914 --> 00:00:42.659
+Pandas automatically collapses rows and columns,
+
+00:00:42.659 --> 00:00:45.769
+plus scrolling isn't super fun in Jupyter Notebook cells.
+
+00:00:45.770 --> 00:00:46.970
+&gt;&gt; No, it's not.
+
+00:00:46.969 --> 00:00:48.865
+So for larger data sets,
+
+00:00:48.865 --> 00:00:50.960
+programmatic assessment is better.
+
+00:00:50.960 --> 00:00:53.475
+Assessing the data programmatically means using
+
+00:00:53.475 --> 00:00:56.640
+a computer program to help detect problems in the data.
+
+00:00:56.640 --> 00:00:58.429
+&gt;&gt; This is where Pandas excels.
+
+00:00:58.429 --> 00:01:01.005
+One simple example is Pandas' info function
+
+00:01:01.005 --> 00:01:04.170
+which gives us the basic structure and content of our data frame.
+
+00:01:04.170 --> 00:01:07.079
+&gt;&gt; So we've got visual and programmatic assessment,
+
+00:01:07.079 --> 00:01:09.239
+searching for quality and tidiness.
+
+00:01:09.239 --> 00:01:11.949
+This is where you get to play data detective.
+
+00:01:11.950 --> 00:01:13.424
+&gt;&gt; Let's get back to our walkthrough.
+
+00:01:13.424 --> 00:01:14.724
+In the following exercises,
+
+00:01:14.724 --> 00:01:17.204
+you'll use visual and programmatic assessments to spot
+
+00:01:17.204 --> 00:01:22.000
+data quality issues plus detect the presence of a tidy or non-tidy data set.
+

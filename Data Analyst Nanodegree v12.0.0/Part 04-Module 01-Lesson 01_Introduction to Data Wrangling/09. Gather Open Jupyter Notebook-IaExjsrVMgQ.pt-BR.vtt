@@ -1,0 +1,114 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.733 --> 00:00:04.667
+A seguir, vamos "deszipar" o arquivo
+e abrir os arquivos extraídos
+
+00:00:04.700 --> 00:00:07.600
+para vê-los e trabalhar
+com os dados dentro deles.
+
+00:00:07.633 --> 00:00:10.567
+Faremos isso programaticamente
+e de forma reproduzível,
+
+00:00:10.600 --> 00:00:13.000
+e ambos no Jupyter Notebook.
+
+00:00:13.033 --> 00:00:16.100
+Primeiramente, abrimos
+o Jupyter Notebook.
+
+00:00:16.133 --> 00:00:18.900
+Podemos fazer isso digitando
+"Jupyter Notebook" no terminal
+
+00:00:18.933 --> 00:00:22.467
+no Mac, no Linux ou no
+prompt de comando do PC.
+
+00:00:22.500 --> 00:00:24.967
+Antes, porém, um servidor
+do notebook vai iniciar
+
+00:00:25.000 --> 00:00:27.233
+em qualquer diretório
+que executarmos o comando.
+
+00:00:27.267 --> 00:00:30.033
+Qualquer arquivo do notebook
+será salvo no diretório.
+
+00:00:30.067 --> 00:00:32.767
+Arquivos externos, como
+o conjunto de dados que baixamos,
+
+00:00:32.800 --> 00:00:35.467
+são importados mais facilmente
+quando nesse diretório.
+
+00:00:35.500 --> 00:00:38.133
+Vou até a pasta em que quero
+trabalhar no que chamamos
+
+00:00:38.167 --> 00:00:41.333
+de preparação de dados:
+dentro de Meus Documentos
+
+00:00:41.367 --> 00:00:42.667
+com o nome de Udacity.
+
+00:00:42.700 --> 00:00:45.333
+Do diretório inicial,
+todos os diretórios alterados
+
+00:00:45.367 --> 00:00:50.700
+ou CD para documentos,
+então CD para Udacity,
+
+00:00:50.733 --> 00:00:54.500
+e, por fim, mudanças de diretório
+para preparação de dados.
+
+00:00:54.533 --> 00:00:57.467
+Agora podemos entrar com o comando
+do Jupyter Notebook.
+
+00:00:57.500 --> 00:01:00.267
+Aqui vemos o painel
+do Jupyter Notebook,
+
+00:01:00.300 --> 00:01:03.133
+que mostra uma lista de notebooks,
+arquivos e subdiretórios
+
+00:01:03.167 --> 00:01:06.000
+no diretório em que o servidor
+do notebook foi iniciado.
+
+00:01:06.033 --> 00:01:10.033
+Aqui podemos criar novos notebooks
+ao clicar em "New in Python 3"
+
+00:01:10.067 --> 00:01:13.433
+ou você pode usar o notebook
+de template de preparação,
+
+00:01:13.467 --> 00:01:18.367
+que está disponível para baixar
+e que botei nessa pasta aqui.
+
+00:01:18.400 --> 00:01:22.533
+Observação: "IPYNB" significa
+"I Python Notebook",
+
+00:01:22.567 --> 00:01:24.767
+o nome antigo
+do Jupyter Notebook.
+
+00:01:24.800 --> 00:01:28.600
+Clico nele e vamos lá.
+Abrimos o Jupyter Notebook.
+

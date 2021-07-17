@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.555
+So, my experience was pretty low stakes.
+
+00:00:03.555 --> 00:00:08.140
+Wrangling data for a blog post that would maybe get a few hundred views.
+
+00:00:08.140 --> 00:00:11.100
+But data wrangling, or more appropriately,
+
+00:00:11.099 --> 00:00:13.740
+the consequences from a lack of data wrangling,
+
+00:00:13.740 --> 00:00:15.210
+can be serious business.
+
+00:00:15.210 --> 00:00:16.673
+For sure.
+
+00:00:16.672 --> 00:00:21.539
+Imagine you're a financial analyst creating models to make million dollar trades for you.
+
+00:00:21.539 --> 00:00:25.439
+Your data better be clean or you could go broke.
+
+00:00:25.440 --> 00:00:29.695
+Or imagine you're a scientist for a drug company that's about to start human trials for
+
+00:00:29.695 --> 00:00:31.829
+a life-saving new drug and you need to determine
+
+00:00:31.829 --> 00:00:35.759
+the right dosage for humans based on your lab and animal tests.
+
+00:00:35.759 --> 00:00:37.710
+Your data needs to be clean or your drug
+
+00:00:37.710 --> 00:00:40.575
+might not work and you could seriously hurt people.
+
+00:00:40.575 --> 00:00:44.255
+So while you're going to get some analysis and visualization in this course.
+
+00:00:44.255 --> 00:00:46.440
+It's really about getting your data ready so that
+
+00:00:46.439 --> 00:00:49.059
+anything you create is built on a solid foundation.
+

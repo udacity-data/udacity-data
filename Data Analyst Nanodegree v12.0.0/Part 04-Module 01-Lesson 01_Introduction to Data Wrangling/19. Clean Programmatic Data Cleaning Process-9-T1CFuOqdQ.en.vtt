@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.605
+So how do we start cleaning?
+
+00:00:01.605 --> 00:00:06.039
+When done manually, like in spreadsheet programs or text editors, we just clean.
+
+00:00:06.040 --> 00:00:10.035
+But manual cleaning is inefficient, error-prone and demoralizing.
+
+00:00:10.035 --> 00:00:13.214
+Never clean manually, unless the issues are one-off occurrences,
+
+00:00:13.214 --> 00:00:14.714
+like changing column headers.
+
+00:00:14.714 --> 00:00:17.370
+Programmatic data cleaning is usually best and it's
+
+00:00:17.370 --> 00:00:20.160
+the best thought as its own process with three steps,
+
+00:00:20.160 --> 00:00:23.125
+defining, coding and testing.
+
+00:00:23.125 --> 00:00:26.009
+So first we'll define a data cleaning plan in writing,
+
+00:00:26.010 --> 00:00:29.245
+where we turn our assessments into defined cleaning tasks.
+
+00:00:29.245 --> 00:00:31.980
+This plan will also serve as an instruction list so others
+
+00:00:31.980 --> 00:00:35.810
+or us in the future can look at our work and reproduce it.
+
+00:00:35.810 --> 00:00:39.730
+Second, we'll translate these definitions to code and run that code.
+
+00:00:39.729 --> 00:00:41.549
+And finally we'll test our data set,
+
+00:00:41.549 --> 00:00:45.289
+often using code, to make sure our cleaning operations worked.
+
+00:00:45.289 --> 00:00:47.024
+Let's get back to our walk-through again.
+
+00:00:47.024 --> 00:00:50.979
+In the following exercises, you're going to write code to clean your data.
+
+00:00:50.979 --> 00:00:52.279
+This is where the magic happens.
+

@@ -1,0 +1,316 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.571 --> 00:00:01.817
+Muito bem. Parabéns.
+
+00:00:01.850 --> 00:00:04.069
+Você preparou com sucesso
+um conjunto de dados.
+
+00:00:04.404 --> 00:00:06.809
+Você completou todo
+o processo de preparação,
+
+00:00:06.842 --> 00:00:09.386
+da reunião à avaliação,
+
+00:00:09.864 --> 00:00:12.716
+e terminou a limpeza dos dados,
+o que significa definir,
+
+00:00:12.749 --> 00:00:16.102
+codificar e testar
+as operações de limpeza.
+
+00:00:16.668 --> 00:00:19.041
+Depois de ficarmos satisfeitos
+com o estado dos dados,
+
+00:00:19.074 --> 00:00:21.325
+e ficamos, para o propósito
+deste passo a passo,
+
+00:00:21.358 --> 00:00:22.976
+agora é hora de atuar nisso.
+
+00:00:23.009 --> 00:00:25.158
+O que pode significar
+análise e visualização,
+
+00:00:25.191 --> 00:00:26.815
+o que faremos agora.
+
+00:00:27.189 --> 00:00:30.150
+Que insights queremos extrair
+desses dados?
+
+00:00:30.685 --> 00:00:31.991
+É sobre vagas de emprego,
+
+00:00:32.024 --> 00:00:33.925
+então uma coisa
+que talvez seria útil saber
+
+00:00:34.370 --> 00:00:36.977
+é a porcentagem de postagens
+que estão à procura de alguém
+
+00:00:37.010 --> 00:00:40.303
+para começar com urgência,
+que é "urgente".
+
+00:00:40.690 --> 00:00:42.544
+Esse é um bom ângulo
+para a análise
+
+00:00:42.577 --> 00:00:44.784
+e agora temos dados limpos
+para isso também
+
+00:00:44.817 --> 00:00:46.248
+na coluna "data de início".
+
+00:00:46.281 --> 00:00:48.908
+Porque o foco deste curso
+é a preparação de dados
+
+00:00:48.941 --> 00:00:50.358
+e não a análise de dados,
+
+00:00:50.391 --> 00:00:53.924
+vou mostrar como o código funciona
+para esta análise aqui.
+
+00:00:54.176 --> 00:00:56.450
+Mas haverá um Notebook Jupyter
+embaixo deste vídeo
+
+00:00:56.483 --> 00:00:58.429
+para você mesmo fazer,
+se quiser.
+
+00:00:58.462 --> 00:01:00.062
+Eu te incentivo a explorar.
+
+00:01:00.387 --> 00:01:02.916
+Ao fazer cálculos simples
+como estes,
+
+00:01:03.200 --> 00:01:06.458
+gosto de escrever fisicamente
+o numerador e o denominador.
+
+00:01:06.491 --> 00:01:08.474
+Isso me ajuda a isolar
+o problema.
+
+00:01:11.295 --> 00:01:14.690
+Uma porcentagem ou fração
+tem um numerador e um denominador.
+
+00:01:15.149 --> 00:01:16.998
+De novo, estamos procurando
+a porcentagem de postagens
+
+00:01:17.031 --> 00:01:19.313
+que estão procurando alguém
+para começar com urgência,
+
+00:01:19.346 --> 00:01:22.333
+que é "urgente".
+Aqui vamos nós.
+
+00:01:22.366 --> 00:01:23.902
+O número
+de "datas de início urgentes"
+
+00:01:23.935 --> 00:01:26.168
+dividido pelo número
+de datas de início preenchidas.
+
+00:01:27.188 --> 00:01:29.004
+Certo, é assim
+que o código funciona.
+
+00:01:29.309 --> 00:01:31.123
+Podemos usar
+a função "value_counts" de novo
+
+00:01:31.156 --> 00:01:34.812
+e escolher a contagem
+de "urgente": 6.856,
+
+00:01:35.551 --> 00:01:38.346
+que devemos ver aqui. Ótimo.
+
+00:01:38.923 --> 00:01:40.448
+Esse é o nosso numerador.
+
+00:01:40.878 --> 00:01:43.893
+E para as "non-empty counts"
+podemos usar a função "count".
+
+00:01:43.926 --> 00:01:48.229
+Isso exclui todas as entradas NaN,
+9.675.
+
+00:01:48.262 --> 00:01:52.097
+Esse deve ser o mesmo valor
+que vemos na função "info".
+
+00:01:53.957 --> 00:01:58.411
+"StartDate",
+9.675 objetos não nulos.
+
+00:01:59.258 --> 00:02:02.622
+"Não nulo" significa "não vazio"
+ou "não-NaN".
+
+00:02:04.227 --> 00:02:06.049
+E agora temos
+que dividir os dois,
+
+00:02:06.082 --> 00:02:07.717
+numerador por denominador,
+
+00:02:07.750 --> 00:02:12.223
+e aproximadamente 71% das postagens
+têm uma data de início urgente.
+
+00:02:12.466 --> 00:02:15.128
+Uau, isso é muito mais
+do que eu teria adivinhado!
+
+00:02:15.700 --> 00:02:17.265
+Seria fantástico
+fazer um gráfico
+
+00:02:17.298 --> 00:02:19.899
+mostrando a distribuição
+das datas de início nos dados.
+
+00:02:20.434 --> 00:02:22.433
+É aí que entra a visualização.
+
+00:02:22.832 --> 00:02:25.173
+Vamos converter essa análise
+em uma visualização.
+
+00:02:25.861 --> 00:02:28.135
+Vamos criar um gráfico de pizza
+e sim,
+
+00:02:28.168 --> 00:02:30.205
+os gráficos de torta são legais,
+às vezes.
+
+00:02:31.153 --> 00:02:32.625
+De novo,
+eu o guiarei pelo código aqui,
+
+00:02:32.658 --> 00:02:35.275
+pois este curso não é
+sobre visualização de dados.
+
+00:02:35.308 --> 00:02:37.780
+Novamente,
+haverá oportunidade de codificar
+
+00:02:37.813 --> 00:02:40.957
+no Notebook Jupyter
+abaixo deste vídeo, se você quiser.
+
+00:02:41.396 --> 00:02:43.676
+Então aqui está o nosso
+código de visualização.
+
+00:02:44.342 --> 00:02:46.765
+Novamente,
+usamos a função "value_counts"
+
+00:02:47.079 --> 00:02:48.999
+e anexamos a função "plot".
+
+00:02:49.032 --> 00:02:51.412
+Queremos um gráfico de torta
+e pressionamos "shift+enter",
+
+00:02:51.445 --> 00:02:53.146
+e deve ser isso.
+Na verdade, eu menti.
+
+00:02:53.179 --> 00:02:55.069
+Precisamos colocar
+este código aqui primeiro
+
+00:02:55.102 --> 00:02:57.803
+para exibir os gráficos
+dentro do notebook,
+
+00:02:58.456 --> 00:02:59.932
+e aqui está
+o gráfico de torta.
+
+00:02:59.965 --> 00:03:03.047
+É bem feio porque existem
+muitos rótulos aqui
+
+00:03:03.799 --> 00:03:07.197
+abordando cada entrada
+no resultado "value counts",
+
+00:03:07.487 --> 00:03:10.323
+como você pode ver aqui em cima,
+tem muitos.
+
+00:03:10.867 --> 00:03:13.049
+Então, vamos importar
+uma biblioteca chamada "numpy",
+
+00:03:13.082 --> 00:03:15.634
+abreviado como
+ou com o apelido de "np".
+
+00:03:16.129 --> 00:03:18.842
+Então, criaremos uma matriz
+personalizada de rótulos
+
+00:03:19.477 --> 00:03:20.999
+e esta matriz terá
+o mesmo comprimento
+
+00:03:21.032 --> 00:03:22.582
+que a saída "value_counts".
+
+00:03:23.130 --> 00:03:24.601
+A matriz começará vazia,
+
+00:03:25.125 --> 00:03:29.754
+ou seja, esta string vazia aqui
+com o tipo de objeto.
+
+00:03:30.200 --> 00:03:32.897
+Isto entra nos aspectos importantes
+de "numpy",
+
+00:03:32.930 --> 00:03:35.570
+então não se preocupe
+se isso não faz sentido agora.
+
+00:03:35.843 --> 00:03:38.875
+E vamos fazer o primeiro rótulo
+na matriz, "urgente",
+
+00:03:39.705 --> 00:03:41.867
+porque a primeira entrada
+é "urgente" aqui.
+
+00:03:42.492 --> 00:03:43.651
+E verifique a visualização.
+
+00:03:43.684 --> 00:03:48.183
+É muita postagem urgente!
+Aproximadamente 71%.
+

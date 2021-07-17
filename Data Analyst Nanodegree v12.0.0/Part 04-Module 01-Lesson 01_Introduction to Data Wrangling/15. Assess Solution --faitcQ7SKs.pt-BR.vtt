@@ -1,0 +1,125 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.524 --> 00:00:04.185
+A falta registro é um problema comum
+com o qual você lida muito
+
+00:00:04.218 --> 00:00:05.791
+em sua carreira
+de preparador de dados.
+
+00:00:06.063 --> 00:00:09.117
+O Pandas os apresenta
+como "NaNs" ou "NaN",
+
+00:00:09.507 --> 00:00:11.311
+o que significa
+"não é um número".
+
+00:00:11.626 --> 00:00:12.821
+É importante estar ciente deles,
+
+00:00:12.854 --> 00:00:15.044
+pois podem gerar problemas
+na codificação.
+
+00:00:15.077 --> 00:00:16.973
+Então "o quanto antes",
+
+00:00:17.235 --> 00:00:20.214
+"iimediatamente" e "urgente"
+para data de início.
+
+00:00:21.124 --> 00:00:22.465
+Todos significam a mesma coisa:
+
+00:00:22.498 --> 00:00:24.421
+começar o trabalho agora.
+
+00:00:25.415 --> 00:00:28.626
+Mas procurar esse único conceito
+nessa coluna não é fácil,
+
+00:00:28.659 --> 00:00:31.261
+porque existem várias formas
+de se referir à mesma coisa.
+
+00:00:31.532 --> 00:00:33.804
+"Urgente", "imediatamente"
+e "o quanto antes".
+
+00:00:33.837 --> 00:00:36.289
+Idealmente,
+haveria apenas uma maneira.
+
+00:00:37.019 --> 00:00:39.658
+Vamos fazer uma nota para corrigir
+esses dois problemas de qualidade
+
+00:00:39.691 --> 00:00:40.941
+que identificamos.
+
+00:00:40.974 --> 00:00:44.159
+E faremos isso ao inserir
+uma nova célula aqui embaixo,
+
+00:00:44.916 --> 00:00:46.325
+uma célula "Markdown",
+
+00:00:47.083 --> 00:00:48.518
+e escreveremos
+os valores que faltam,
+
+00:00:48.551 --> 00:00:52.307
+inconsistências
+"NaN" e "StartDate".
+
+00:00:53.814 --> 00:00:56.188
+Geralmente,
+avaliar os dados é bem fácil.
+
+00:00:56.627 --> 00:01:00.167
+Você olha, observa erros evidentes
+e faz anotações sobre eles.
+
+00:01:01.024 --> 00:01:02.742
+Nesta imagem
+do conjunto de dados,
+
+00:01:02.775 --> 00:01:04.649
+tudo parece bem.
+
+00:01:04.682 --> 00:01:06.432
+Estes símbolos engraçados
+estão bem,
+
+00:01:06.465 --> 00:01:09.750
+pois a postagem do trabalho original
+com HTML bruto.
+
+00:01:10.391 --> 00:01:12.591
+Essas barras invertidas
+seguidas por letras
+
+00:01:12.624 --> 00:01:14.337
+são chamadas
+de "Escape Constructs"
+
+00:01:14.370 --> 00:01:16.632
+e ajudam a estruturar o texto
+nas páginas da web,
+
+00:01:16.665 --> 00:01:19.105
+como novas linhas
+e caracteres especiais.
+
+00:01:19.138 --> 00:01:21.935
+Queremos preservar a estrutura
+da publicação original.
+
+00:01:21.968 --> 00:01:25.439
+Não as marcaremos como problemas
+na etapa de limpeza.
+

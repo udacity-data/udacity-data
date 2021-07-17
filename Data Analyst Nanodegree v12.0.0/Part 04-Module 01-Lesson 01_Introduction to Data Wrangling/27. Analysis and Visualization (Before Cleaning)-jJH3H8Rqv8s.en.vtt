@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.019
+What if we tried to do that ASAP analysis and visualization on the original data set?
+
+00:00:06.019 --> 00:00:08.974
+Do you recall what that data set looked like?
+
+00:00:08.974 --> 00:00:12.404
+Since we made a copy of the original data set way back here,
+
+00:00:12.404 --> 00:00:14.969
+we can easily access the original one,
+
+00:00:14.970 --> 00:00:17.775
+simply df rather than df_clean,
+
+00:00:17.774 --> 00:00:20.279
+and perform the same analysis and visualization
+
+00:00:20.280 --> 00:00:22.900
+we did down here on the original data set.
+
+00:00:22.899 --> 00:00:29.779
+Let's do that. And we want to change all of these df_cleans just to df.
+
+00:00:29.780 --> 00:00:34.000
+And the results are drastically different.
+
+00:00:34.000 --> 00:00:37.704
+The proportion of urgent job postings is below 50% here,
+
+00:00:37.704 --> 00:00:42.129
+a full 20% lower than our more accurate value post wrangling.
+
+00:00:42.130 --> 00:00:44.185
+This viz makes it abundantly clear.
+
+00:00:44.185 --> 00:00:48.579
+The before, 71% massive amount of blue.
+
+00:00:48.579 --> 00:00:54.589
+The after, 49% and less than half ASAP.
+
+00:00:54.590 --> 00:00:58.000
+The power of data wrangling is obvious here.
+

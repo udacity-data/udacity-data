@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.554
+Downloading files programatically is a bit out of the scope of this walkthrough.
+
+00:00:04.554 --> 00:00:06.990
+Also some webites, including Kaggle,
+
+00:00:06.990 --> 00:00:08.496
+don't make it easy for us.
+
+00:00:08.496 --> 00:00:11.524
+So make sure to stay tuned for lesson two of the course,
+
+00:00:11.523 --> 00:00:13.764
+where we'll cover the details of how to do this.
+
+00:00:13.765 --> 00:00:15.565
+It feels pretty awesome.
+
+00:00:15.564 --> 00:00:18.004
+Right now, we'll just click download.
+
+00:00:18.004 --> 00:00:21.070
+For this to work, you need to be logged into your Kaggle account.
+
+00:00:21.070 --> 00:00:24.350
+So create one and log in, if you haven't already.
+
+00:00:24.350 --> 00:00:27.050
+Your browser should start downloading a.zip file,
+
+00:00:27.050 --> 00:00:30.880
+which is a format useful for reducing or compressing file sizes.
+
+00:00:30.879 --> 00:00:34.070
+This file will probably go to your downloads folder.
+
+00:00:34.070 --> 00:00:35.380
+Let's make this a quick quiz.
+
+00:00:35.380 --> 00:00:38.350
+What is the full name of the file we just downloaded?
+
+00:00:38.350 --> 00:00:39.539
+We'll need this
+

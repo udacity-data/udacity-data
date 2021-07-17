@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.140 --> 00:00:03.000
+Next, we need to unzip the file,
+
+00:00:03.000 --> 00:00:07.160
+then open the extracted files so that we can see and work with the data inside.
+
+00:00:07.160 --> 00:00:10.310
+We'll do both programmatically and therefore reproducibly,
+
+00:00:10.310 --> 00:00:12.660
+and we'll do both in our Jupyter Notebook.
+
+00:00:12.660 --> 00:00:13.990
+So first things first,
+
+00:00:13.990 --> 00:00:15.574
+we need to open up a Jupyter Notebook.
+
+00:00:15.574 --> 00:00:17.939
+We can do that by typing Jupyter Notebook in
+
+00:00:17.940 --> 00:00:22.230
+our terminal on Mac or Linux or command prompt on PC.
+
+00:00:22.230 --> 00:00:23.475
+Before we do that though,
+
+00:00:23.475 --> 00:00:26.690
+a notebook server will start in whatever directory we run this command in,
+
+00:00:26.690 --> 00:00:29.595
+which means any notebook files will be saved in that directory.
+
+00:00:29.594 --> 00:00:31.984
+And external files like our downloaded data set,
+
+00:00:31.984 --> 00:00:35.185
+are most easily imported when in this directory.
+
+00:00:35.185 --> 00:00:38.090
+So I'm going to navigate to the folder I want to work in which is called
+
+00:00:38.090 --> 00:00:42.170
+data wrangling which is within a folder in my documents called Udacity.
+
+00:00:42.170 --> 00:00:43.490
+So from my home directory,
+
+00:00:43.490 --> 00:00:46.910
+all changed directories or cd to documents,
+
+00:00:46.909 --> 00:00:54.199
+then cd to Udacity and finally change directories to data wrangling.
+
+00:00:54.200 --> 00:00:57.225
+And now we can enter our Jupyter Notebook command.
+
+00:00:57.225 --> 00:00:59.885
+Okay. So here we can see our Jupyter Notebook dashboard
+
+00:00:59.884 --> 00:01:01.354
+which shows a list of the notebooks,
+
+00:01:01.354 --> 00:01:05.649
+files and sub-directories in the directory where the notebook server was started.
+
+00:01:05.650 --> 00:01:09.650
+Here we can create new notebooks by clicking New in Python
+
+00:01:09.650 --> 00:01:11.510
+3 or you can use
+
+00:01:11.510 --> 00:01:15.550
+the wrangling template notebook that's available for download which I put in this folder,
+
+00:01:15.549 --> 00:01:18.004
+which you can see here.
+
+00:01:18.004 --> 00:01:22.159
+Side note: IPYNB stands for I Python Notebook,
+
+00:01:22.159 --> 00:01:24.060
+which is the old name for Jupyter Notebooks.
+
+00:01:24.060 --> 00:01:26.570
+And I'll click that. And there we go.
+
+00:01:26.569 --> 00:01:28.149
+We've opened up a Jupyter Notebook.
+

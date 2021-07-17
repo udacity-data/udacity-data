@@ -1,0 +1,91 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.060 --> 00:00:05.469
+Now it's time for the test portion of cleaning data programmatically.
+
+00:00:05.469 --> 00:00:08.794
+Testing can be done immediately after coding each operation,
+
+00:00:08.794 --> 00:00:10.660
+like having one definition here,
+
+00:00:10.660 --> 00:00:12.250
+then converting that to code here,
+
+00:00:12.250 --> 00:00:17.550
+then immediately testing below which would change this header to code and test.
+
+00:00:17.550 --> 00:00:21.219
+But I'll separate the test portion out for this lesson.
+
+00:00:21.219 --> 00:00:26.619
+Okay. So testing can be done visually for simple fixes like modifying the column headers,
+
+00:00:26.620 --> 00:00:30.200
+aka our first issue here.
+
+00:00:30.199 --> 00:00:32.019
+Slotting all non-descriptive and misspelled
+
+00:00:32.020 --> 00:00:34.950
+column headers and replacing them with full words.
+
+00:00:34.950 --> 00:00:39.070
+So to check visually, we'll just type in df_clean and view our DataFrame.
+
+00:00:39.070 --> 00:00:41.030
+And we'll scroll across.
+
+00:00:41.030 --> 00:00:44.329
+Okay, application procedure.
+
+00:00:44.329 --> 00:00:48.159
+That used to be application P so that is good we fixed that one.
+
+00:00:48.159 --> 00:00:51.864
+And about company that used to be about C. So we're all good there too.
+
+00:00:51.865 --> 00:00:54.810
+But the other two column headers that we were trying to fix,
+
+00:00:54.810 --> 00:00:57.450
+required qualifications and job requirements,
+
+00:00:57.450 --> 00:01:00.630
+are hidden in the columns that Panda's collapses here.
+
+00:01:00.630 --> 00:01:03.165
+This is where programmatic testing comes in handy.
+
+00:01:03.164 --> 00:01:07.219
+Let's use Panda's info function to check out the columns that are hidden here.
+
+00:01:07.219 --> 00:01:11.179
+Info is one of the programmatic assessments we covered in the assessed videos.
+
+00:01:11.180 --> 00:01:13.605
+And yes, okay, job requirements,
+
+00:01:13.605 --> 00:01:16.484
+fixed, required qualifications, fixed.
+
+00:01:16.484 --> 00:01:21.379
+Cleaning code will need to be tested programmatically just like this, in most cases.
+
+00:01:21.379 --> 00:01:25.914
+Let's use programmatic testing again to test that our second cleaning operation,
+
+00:01:25.915 --> 00:01:29.845
+standardizing the ASAP start dates, actually worked.
+
+00:01:29.844 --> 00:01:32.769
+In the quiz ahead, use Panda's value counts function
+
+00:01:32.769 --> 00:01:35.679
+to verify that all of these similar phrases were converted to
+
+00:01:35.680 --> 00:01:41.700
+ASAP and let me know how many entries in that start date column are ASAP.
+

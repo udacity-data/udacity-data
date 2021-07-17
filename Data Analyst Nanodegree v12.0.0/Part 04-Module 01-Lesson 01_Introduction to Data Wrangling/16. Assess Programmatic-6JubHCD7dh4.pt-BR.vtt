@@ -1,0 +1,183 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.835 --> 00:00:02.944
+Se descermos pela estrutura
+de dados um pouco mais,
+
+00:00:02.977 --> 00:00:05.458
+vamos observar que o Pandas
+colapsa automaticamente
+
+00:00:05.491 --> 00:00:08.219
+algumas colunas e linhas
+de conjuntos de dados maiores
+
+00:00:08.252 --> 00:00:10.527
+como este,
+que você pode ver aqui.
+
+00:00:10.560 --> 00:00:13.745
+Entre a linha 29
+e a linha 18.971,
+
+00:00:14.023 --> 00:00:16.748
+todas as linhas são colapsadas
+usando estas reticências aqui.
+
+00:00:17.300 --> 00:00:19.424
+E a mesma coisa é verdadeira
+se rolamos aqui
+
+00:00:19.457 --> 00:00:20.963
+e verificamos todas as colunas.
+
+00:00:21.409 --> 00:00:23.259
+Toda coluna
+entre "duração" e "salário"
+
+00:00:23.292 --> 00:00:25.373
+foi novamente colapsada
+usando essas reticências.
+
+00:00:25.938 --> 00:00:28.291
+O Pandas faz isso porque visualizar
+grandes conjuntos de dados
+
+00:00:28.324 --> 00:00:29.840
+ocupa muito espaço.
+
+00:00:30.099 --> 00:00:32.237
+E a rolagem pode causar
+dores de cabeça.
+
+00:00:33.165 --> 00:00:35.317
+Essa também é a desvantagem
+que mencionei antes,
+
+00:00:35.350 --> 00:00:37.725
+sobre a avaliação visual
+ser difícil no Pandas.
+
+00:00:38.138 --> 00:00:41.835
+Arrumar essas colunas e linhas
+é difícil,
+
+00:00:41.868 --> 00:00:44.017
+deslizar para cima e para baixo
+e para os lados
+
+00:00:44.050 --> 00:00:46.189
+nas células do Notebook Jupyter
+não é legal.
+
+00:00:46.709 --> 00:00:49.798
+Em vez disso, gosto de usar
+a função "info" do Pandas
+
+00:00:49.831 --> 00:00:52.142
+para ter mais informações
+sobre o conjunto de dados.
+
+00:00:52.175 --> 00:00:54.671
+Esta é uma forma
+de avaliação programática.
+
+00:00:55.050 --> 00:00:56.972
+Esta função
+é extremamente simples.
+
+00:00:57.005 --> 00:00:58.734
+Digitamos o nome
+da estrutura de dados,
+
+00:00:58.767 --> 00:01:01.565
+que é "df", então ".info".
+
+00:01:01.887 --> 00:01:03.822
+E novamente vou usar
+"shift" e "tab" aqui,
+
+00:01:03.855 --> 00:01:06.771
+para explorar a assinatura
+e a docstring da função.
+
+00:01:07.227 --> 00:01:10.901
+Certo. Assinatura, df.info
+e docstring.
+
+00:01:11.411 --> 00:01:13.308
+"Concise Summary
+of a Data Frame."
+
+00:01:13.341 --> 00:01:15.584
+A docstring nos diz
+o que a função faz.
+
+00:01:16.042 --> 00:01:17.879
+Resumo conciso
+de uma estrutura de dados.
+
+00:01:17.912 --> 00:01:21.131
+Vamos processar esta célula.
+Shift+enter.
+
+00:01:21.164 --> 00:01:23.396
+E aqui temos
+o concise summary.
+
+00:01:23.429 --> 00:01:26.954
+Temos 19.001 entradas
+e 24 colunas.
+
+00:01:27.346 --> 00:01:30.233
+Há muita informação sobre cada uma
+dessas colunas abaixo,
+
+00:01:30.927 --> 00:01:33.028
+incluindo os tipos de valores
+nessas colunas
+
+00:01:33.364 --> 00:01:36.359
+e o uso total da memória
+do DataFrame.
+
+00:01:36.948 --> 00:01:38.944
+Vamos observar um pouco
+essas colunas.
+
+00:01:38.977 --> 00:01:42.821
+O que é "ApplicationP"?
+E "AboutC"?
+
+00:01:43.250 --> 00:01:45.204
+Um dos fundamentos
+dos dados de qualidade
+
+00:01:45.237 --> 00:01:47.919
+está com variáveis descritivas
+e nomes de valores.
+
+00:01:48.555 --> 00:01:50.107
+Até "RequiredQual",
+
+00:01:50.140 --> 00:01:53.092
+que significa
+"qualificações necessárias",
+
+00:01:53.125 --> 00:01:54.379
+não é tão descritivo.
+
+00:01:54.412 --> 00:01:57.764
+E "JobRequirment",
+que tem erro de digitação,
+
+00:01:58.171 --> 00:02:00.859
+é bem descritivo, mas devemos
+corrigi-lo se pudermos.
+
+00:02:01.239 --> 00:02:03.970
+Vamos fazer uma nota
+para limparmos tudo.
+

@@ -1,0 +1,283 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.879
+One memorable data wrangling experience for
+
+00:00:02.879 --> 00:00:05.625
+me was for an article that I was writing for my hockey blog.
+
+00:00:05.625 --> 00:00:10.394
+I'm quite a bad hockey player but a huge analytics geek and Toronto Maple Leafs fan.
+
+00:00:10.394 --> 00:00:12.000
+So the Leafs were really,
+
+00:00:12.000 --> 00:00:14.054
+really bad for a really long time.
+
+00:00:14.054 --> 00:00:16.945
+Like last in the league bad last year.
+
+00:00:16.945 --> 00:00:21.260
+Then at the start of the season all of a sudden they were scoring goals like crazy.
+
+00:00:21.260 --> 00:00:25.575
+I was curious. Could this be the most improved team ever?
+
+00:00:25.574 --> 00:00:29.384
+The data I needed to answer that question was spread across three different data sets,
+
+00:00:29.385 --> 00:00:32.760
+because the person that compiled the data didn't organize it very well.
+
+00:00:32.759 --> 00:00:34.184
+You'll see what I mean in a second.
+
+00:00:34.185 --> 00:00:37.920
+That made data wrangling for this project pretty complicated.
+
+00:00:37.920 --> 00:00:40.980
+So the process started with downloading those three files.
+
+00:00:40.979 --> 00:00:44.619
+One here, a second here,
+
+00:00:44.619 --> 00:00:47.269
+and a third here.
+
+00:00:47.270 --> 00:00:50.109
+Each file contained data about how well or
+
+00:00:50.109 --> 00:00:54.365
+poorly each team was able to score or prevent goals.
+
+00:00:54.365 --> 00:00:58.984
+Most of these column headings will probably look like gibberish to you and that's okay,
+
+00:00:58.984 --> 00:01:02.640
+I'll explain the ones you need to know for this to make sense along the way.
+
+00:01:02.640 --> 00:01:05.519
+After importing the data then I started assessing it.
+
+00:01:05.519 --> 00:01:08.259
+And these datasets they were wildly different.
+
+00:01:08.260 --> 00:01:11.855
+There's one here, a second here, and a third here.
+
+00:01:11.855 --> 00:01:14.035
+The first one and the third one,
+
+00:01:14.034 --> 00:01:16.869
+had their data broken down by season.
+
+00:01:16.870 --> 00:01:19.885
+While this one in the middle had it broken down by game.
+
+00:01:19.885 --> 00:01:24.245
+I was going to have to standardize these before I could do any analysis.
+
+00:01:24.245 --> 00:01:26.135
+Then, I noticed that these two datasets,
+
+00:01:26.135 --> 00:01:30.670
+the second and third one had the data broken down as total goals,
+
+00:01:30.670 --> 00:01:34.015
+while this first one had it broken down as a rate stat.
+
+00:01:34.015 --> 00:01:36.939
+Goals per hour of game time is a rate stat,
+
+00:01:36.939 --> 00:01:39.685
+just like miles or kilometers per hour is
+
+00:01:39.685 --> 00:01:42.502
+or even click through rate in online advertising,
+
+00:01:42.501 --> 00:01:44.109
+like clicks per views.
+
+00:01:44.109 --> 00:01:46.510
+Team is played slightly different amounts of
+
+00:01:46.510 --> 00:01:50.770
+time so comparing totals to judge goal scoring skill is unfair.
+
+00:01:50.769 --> 00:01:55.099
+Totals vs rates is something you'll encounter a bunch in your data wrangling career.
+
+00:01:55.099 --> 00:01:57.219
+So to get the rate stat that I wanted, goals per hour,
+
+00:01:57.219 --> 00:01:59.920
+I would need to divide by the total number of
+
+00:01:59.920 --> 00:02:03.215
+goals for each team by the number of minutes they played,
+
+00:02:03.215 --> 00:02:05.130
+also known as time on ice.
+
+00:02:05.129 --> 00:02:06.539
+TOI stands for time on ice,
+
+00:02:06.540 --> 00:02:08.830
+which these two datasets had.
+
+00:02:08.830 --> 00:02:11.605
+One-two, but this one didn't.
+
+00:02:11.604 --> 00:02:14.409
+What? At this point I paused.
+
+00:02:14.409 --> 00:02:16.539
+When I first started data wrangling noticing
+
+00:02:16.539 --> 00:02:19.179
+a few issues in a row like this would stress me out.
+
+00:02:19.180 --> 00:02:22.985
+There was so much work to do and now it just felt forever away.
+
+00:02:22.985 --> 00:02:25.315
+What I learned was that if you write down each issue,
+
+00:02:25.314 --> 00:02:28.629
+pause and take a moment to digest what you need to do,
+
+00:02:28.629 --> 00:02:34.055
+wrangling becomes enjoyable, like a detective at work methodically solving a mystery.
+
+00:02:34.055 --> 00:02:37.875
+So I paused, wrote the issues down, took a deep breath.
+
+00:02:37.875 --> 00:02:41.944
+I had to fill in this missing time on ice data in this third data set somehow.
+
+00:02:41.944 --> 00:02:44.275
+There wasn't a file easily available for download,
+
+00:02:44.275 --> 00:02:47.414
+so I had to scrape it off a different hockey stats website.
+
+00:02:47.414 --> 00:02:49.060
+It was this time on ice column here,
+
+00:02:49.060 --> 00:02:51.860
+TOI again stands for time on ice.
+
+00:02:51.860 --> 00:02:57.820
+This site had the data for several seasons and broken down by each team.
+
+00:02:57.819 --> 00:02:59.560
+Scraping is just a fancy way of saying
+
+00:02:59.560 --> 00:03:02.455
+extracting data from websites using code, by the way.
+
+00:03:02.455 --> 00:03:04.075
+I won't show you how I did it here,
+
+00:03:04.074 --> 00:03:06.310
+but it's a really handy skill and pretty magical
+
+00:03:06.310 --> 00:03:10.270
+actually and we'll cover it in more detail on the second lesson in this course.
+
+00:03:10.270 --> 00:03:14.310
+So, now we have the missing time on ice data with the results from the scraping here.
+
+00:03:14.310 --> 00:03:18.110
+But one thing with scraping is that the results come in string form.
+
+00:03:18.110 --> 00:03:20.430
+I needed integers to form multiplication and division to
+
+00:03:20.430 --> 00:03:22.920
+create that rate stat that we'd talked about previously,
+
+00:03:22.919 --> 00:03:25.109
+goals per 60 minutes.
+
+00:03:25.110 --> 00:03:28.635
+So conversion from string to integer was going to be necessary.
+
+00:03:28.634 --> 00:03:30.745
+Not a problem, we can do that.
+
+00:03:30.745 --> 00:03:34.140
+Then, I noticed there were more problems with that scraped data.
+
+00:03:34.139 --> 00:03:37.000
+The previous three datasets that we downloaded here: one, two,
+
+00:03:37.000 --> 00:03:40.284
+three had team names in their abbreviation form.
+
+00:03:40.284 --> 00:03:43.530
+BOS stands for Boston, PIT stands for Pittsburgh,
+
+00:03:43.530 --> 00:03:45.675
+TOR stands for Toronto for example,
+
+00:03:45.675 --> 00:03:48.778
+but the scraped data had the full team name.
+
+00:03:48.777 --> 00:03:53.736
+There's Boston, there's Pittsburgh, there's Toronto.
+
+00:03:53.736 --> 00:03:58.409
+These needed to be standardized or merging each teams missing time on ice data,
+
+00:03:58.409 --> 00:04:00.509
+among other things wouldn't work.
+
+00:04:00.509 --> 00:04:03.269
+There is more stuff that I needed to clean to answer
+
+00:04:03.270 --> 00:04:06.870
+this question that I won't discuss right now, but you get the point.
+
+00:04:06.870 --> 00:04:10.605
+Data is dirty especially when it comes from different sources.
+
+00:04:10.604 --> 00:04:15.209
+Assessing the data here was necessary to identify and fix all of these issues.
+
+00:04:15.210 --> 00:04:19.612
+Once that was done, I wrote all of the required cleaning code to fix these issues,
+
+00:04:19.612 --> 00:04:24.985
+then performed one calculation which is the analysis part and that was it.
+
+00:04:24.985 --> 00:04:30.338
+All that was left was creating the visualizations and actually writing the article.
+
+00:04:30.338 --> 00:04:32.529
+Was all that work worth it?
+
+00:04:32.529 --> 00:04:34.094
+It's fun to play data detective,
+
+00:04:34.095 --> 00:04:36.390
+so that's a definite yes for me.
+
+00:04:36.389 --> 00:04:38.069
+Also my hunch was true,
+
+00:04:38.069 --> 00:04:41.564
+the Leafs were the most improved team ever at that point in the season,
+
+00:04:41.564 --> 00:04:43.594
+in terms of their goal scoring ability.
+
+00:04:43.595 --> 00:04:47.750
+I literally jumped out of my seat when I sorted the table and saw them at the top,
+
+00:04:47.750 --> 00:04:53.170
+which is way more clear via the slope in this slope graph or the bars in this bar chart.
+

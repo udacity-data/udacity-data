@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.290
+The first step in cleaning data programmatically which is
+
+00:00:03.290 --> 00:00:07.280
+a subprocess of data wrangling is defining what we want to clean.
+
+00:00:07.280 --> 00:00:10.660
+This is like creating a cleaning plan or instruction list.
+
+00:00:10.660 --> 00:00:13.120
+This can also be thought of as pseudo code,
+
+00:00:13.119 --> 00:00:16.291
+where we convert the notes we made in the assessed step like here,
+
+00:00:16.292 --> 00:00:18.330
+into specific cleaning tasks.
+
+00:00:18.329 --> 00:00:20.514
+So we made three assessments previously.
+
+00:00:20.515 --> 00:00:22.925
+The missing values or NaNs,
+
+00:00:22.925 --> 00:00:25.844
+the start date in consistencies for ASAP,
+
+00:00:25.844 --> 00:00:29.179
+and also the non-descriptive column headers.
+
+00:00:29.179 --> 00:00:31.550
+We can't really do anything with the NaNs,
+
+00:00:31.550 --> 00:00:35.840
+like we can't fill them in by finding missing information online or something.
+
+00:00:35.840 --> 00:00:38.205
+The job posting simply just didn't have this stuff,
+
+00:00:38.204 --> 00:00:42.989
+so let's just make a mental note of this and not write anything down here.
+
+00:00:42.990 --> 00:00:45.320
+We all have to be aware of these missing values when we start
+
+00:00:45.320 --> 00:00:48.355
+coding because they can cause unintuitive results.
+
+00:00:48.354 --> 00:00:52.069
+Okay, so we'll tackle the start date and consistencies first.
+
+00:00:52.070 --> 00:00:54.770
+Again a reminder, these were multiple representations
+
+00:00:54.770 --> 00:00:58.370
+of "as soon as possible" in the start date column,
+
+00:00:58.369 --> 00:01:01.859
+ASAP as soon as possible, even immediately.
+
+00:01:01.859 --> 00:01:05.739
+And there are actually more you can't see here because Pandas automatically collapses,
+
+00:01:05.739 --> 00:01:08.045
+some rows in this large data set.
+
+00:01:08.045 --> 00:01:09.850
+There are a lot of these here.
+
+00:01:09.849 --> 00:01:14.515
+So writing a script to minimize code repetition for the cleaning makes sense.
+
+00:01:14.515 --> 00:01:18.010
+Let's pick ASAP as our standard.
+
+00:01:18.010 --> 00:01:19.925
+Okay, so here's one definition.
+
+00:01:19.924 --> 00:01:21.849
+Select all records in the start date column that
+
+00:01:21.849 --> 00:01:24.659
+have "as soon as possible," "immediately" etc.,
+
+00:01:24.659 --> 00:01:27.204
+and replace the text in those cells with "ASAP."
+
+00:01:27.204 --> 00:01:31.894
+And now, we'll define how we're going to fix these non-descriptive column headers.
+
+00:01:31.894 --> 00:01:34.629
+This is a pretty small one off task that we
+
+00:01:34.629 --> 00:01:38.004
+could do manually in a spreadsheet application or text editor,
+
+00:01:38.004 --> 00:01:40.000
+but let's do it in Panda's.
+
+00:01:40.000 --> 00:01:44.049
+Again we'll define how we're going to fix this issue with code.
+
+00:01:44.049 --> 00:01:47.174
+Side note, we don't want spaces in the column headers because we can't
+
+00:01:47.174 --> 00:01:51.414
+access columns using dot notation in Panda's if there are spaces.
+
+00:01:51.415 --> 00:01:55.925
+Dot notation means accessing columns in your data frame like so.
+
+00:01:55.924 --> 00:01:58.605
+If the actual start date column header had a space,
+
+00:01:58.605 --> 00:02:00.344
+we wouldn't be able to do this.
+
+00:02:00.344 --> 00:02:04.000
+And we would only be able to access it using bracket notation.
+

@@ -1,0 +1,127 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.759
+Now, for step two of cleaning data programmatically,
+
+00:00:02.759 --> 00:00:04.599
+we actually get to code.
+
+00:00:04.599 --> 00:00:08.369
+Let's convert our cleaning definitions into Python code.
+
+00:00:08.369 --> 00:00:11.224
+Before we make any modifications to the dataset though,
+
+00:00:11.224 --> 00:00:15.279
+let's make a copy of it so we can access the original data set later.
+
+00:00:15.279 --> 00:00:18.344
+We can do this using Pandas.copy function.
+
+00:00:18.344 --> 00:00:22.210
+And we'll call the data frame that is returned df_clean.
+
+00:00:22.210 --> 00:00:25.060
+It's not clean yet, but it soon will be.
+
+00:00:25.059 --> 00:00:29.759
+Let's actually attack the non-descriptive column headers issue first because it's easier.
+
+00:00:29.760 --> 00:00:31.725
+Let's switch these definitions around
+
+00:00:31.725 --> 00:00:34.935
+and we'll copy and paste the definition below the code header too.
+
+00:00:34.935 --> 00:00:38.679
+This cell has to be a markdown cell to accept text.
+
+00:00:38.679 --> 00:00:42.350
+Let's pull up Google and search rename columns Pandas.
+
+00:00:42.350 --> 00:00:46.225
+I'm telling you, half of being a good programmer is searching skills.
+
+00:00:46.225 --> 00:00:49.789
+The first result isn't the Pandas documentation.
+
+00:00:49.789 --> 00:00:52.119
+It's actually a stack overflow post.
+
+00:00:52.119 --> 00:00:54.625
+The answer here must be really helpful.
+
+00:00:54.625 --> 00:00:58.125
+Pause the video and take a second to read this question if you'd like.
+
+00:00:58.125 --> 00:01:00.744
+Renaming columns and Pandas.
+
+00:01:00.744 --> 00:01:02.379
+I have a data table using Pandas,
+
+00:01:02.380 --> 00:01:05.530
+they probably mean DataFrame and column labels
+
+00:01:05.530 --> 00:01:08.670
+that I need to edit to replace the original column labels.
+
+00:01:08.670 --> 00:01:10.814
+Yeah, okay. That sounds like our issue.
+
+00:01:10.814 --> 00:01:14.084
+And let's scroll down to the most up voted answer.
+
+00:01:14.084 --> 00:01:18.664
+Here's the accepted one with the check mark, 740 up votes.
+
+00:01:18.665 --> 00:01:22.535
+But there's actually one down here with more, 1263.
+
+00:01:22.534 --> 00:01:26.950
+Again, pause the video and take a second to read this answer if you'd like.
+
+00:01:26.950 --> 00:01:30.510
+So, use the rename function and refer the columns to be renamed.
+
+00:01:30.510 --> 00:01:32.054
+Not all the columns have to be renamed,
+
+00:01:32.054 --> 00:01:34.320
+and it give us two options.
+
+00:01:34.319 --> 00:01:37.104
+So, I'll copy and paste this one here into our Jupyter Notebook.
+
+00:01:37.105 --> 00:01:39.158
+But again, you shouldn't.
+
+00:01:39.158 --> 00:01:41.879
+Writing the code out will help make you a better programmer.
+
+00:01:41.879 --> 00:01:46.420
+And we have to make this df_clean because we don't want to modify the original dataset.
+
+00:01:46.420 --> 00:01:49.325
+We want to modify the copy we just made above here.
+
+00:01:49.325 --> 00:01:51.930
+Okay, so the answer gave us dummy parameters.
+
+00:01:51.930 --> 00:01:53.954
+{ 'oldName1' : 'NewName1',
+
+00:01:53.953 --> 00:01:55.882
+'oldName2' : 'newName2' }.
+
+00:01:55.882 --> 00:01:57.134
+In the quiz ahead,
+
+00:01:57.135 --> 00:01:59.450
+replace these with our actual column headers.
+
+00:01:59.450 --> 00:02:05.189
+Old and New to fix this non-descriptive and misspelled column headers issue.
+

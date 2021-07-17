@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.490
+Hi and welcome. My name's David.
+
+00:00:02.490 --> 00:00:04.740
+And I'm Mat. In this course,
+
+00:00:04.740 --> 00:00:07.024
+we'll be learning all about data wrangling.
+
+00:00:07.024 --> 00:00:09.629
+Data wrangling is the process of gathering your data,
+
+00:00:09.630 --> 00:00:11.400
+assessing its quality and structure,
+
+00:00:11.400 --> 00:00:14.130
+and cleaning it before you do things like analysis,
+
+00:00:14.130 --> 00:00:17.725
+visualization, or build predictive models using machine learning.
+
+00:00:17.725 --> 00:00:20.445
+Sometimes, it's as simple as downloading a file,
+
+00:00:20.445 --> 00:00:21.585
+spotting a few typos,
+
+00:00:21.585 --> 00:00:23.115
+and fixing those typos.
+
+00:00:23.114 --> 00:00:25.559
+But other times, your data really isn't clean.
+
+00:00:25.559 --> 00:00:27.674
+That is, you'll have missing records,
+
+00:00:27.675 --> 00:00:29.894
+duplicates, and inaccurate data.
+
+00:00:29.894 --> 00:00:33.240
+Sometimes, the data itself is fine but structurally,
+
+00:00:33.240 --> 00:00:34.810
+it's difficult to work with.
+
+00:00:34.810 --> 00:00:37.530
+Taking care of all this is necessary or else,
+
+00:00:37.530 --> 00:00:38.715
+you risk making mistakes,
+
+00:00:38.715 --> 00:00:40.890
+missing insights and wasting time.
+
+00:00:40.890 --> 00:00:45.200
+Wrangling is a core skill that you'll use to varying degrees on
+
+00:00:45.200 --> 00:00:49.932
+every data set that you work with because so much of the world's data isn't clean.
+
+00:00:49.932 --> 00:00:52.215
+Fortunately, when done with code,
+
+00:00:52.215 --> 00:00:55.560
+wrangling is fast and almost magical.
+
+00:00:55.560 --> 00:00:57.015
+And by the end of this course,
+
+00:00:57.015 --> 00:00:59.250
+data wrangling will become instinctual.
+
+00:00:59.250 --> 00:01:02.000
+So, are you ready to wrangle? Let's get to it.
+

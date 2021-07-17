@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.404 --> 00:00:04.861
+Fizemos o download e importamos
+nosso conjunto de dados com êxito.
+
+00:00:04.894 --> 00:00:07.992
+Agora precisamos avaliar os dados
+para determinar o que está limpo
+
+00:00:08.025 --> 00:00:11.682
+e potencialmente o que mais reunir
+se perdemos alguns dados.
+
+00:00:11.945 --> 00:00:13.819
+Não estamos explorando
+o conjunto de dados.
+
+00:00:13.852 --> 00:00:16.331
+Apenas queremos garantir
+que os dados estejam de uma forma
+
+00:00:16.364 --> 00:00:18.613
+que facilite a análise mais tarde.
+
+00:00:18.646 --> 00:00:20.132
+A seguir, mais sobre isso.
+
+00:00:20.165 --> 00:00:22.229
+Certo. Então
+o que estamos avaliando?
+
+00:00:22.262 --> 00:00:23.832
+O que são dados sujos?
+
+00:00:23.865 --> 00:00:25.690
+O que são dados bagunçados?
+
+00:00:25.723 --> 00:00:27.299
+Estamos procurando
+duas coisas principais:
+
+00:00:27.332 --> 00:00:29.634
+a qualidade dos dados
+e a organização.
+
+00:00:29.910 --> 00:00:31.700
+Os dados de baixa qualidade
+estão sujos.
+
+00:00:31.733 --> 00:00:33.684
+Dados desordenados
+estão bagunçados.
+
+00:00:33.717 --> 00:00:36.501
+Não precisamos procurar nesta ordem,
+mas você pode.
+
+00:00:37.158 --> 00:00:40.089
+Primeiro vamos definir qualidade
+e depois organização.
+

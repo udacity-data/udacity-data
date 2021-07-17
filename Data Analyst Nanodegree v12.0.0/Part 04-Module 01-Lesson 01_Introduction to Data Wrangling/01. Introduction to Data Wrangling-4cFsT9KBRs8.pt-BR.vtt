@@ -1,0 +1,89 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.334 --> 00:00:02.834
+Oi. Seja bem-vindo.
+Meu nome é David.
+
+00:00:02.868 --> 00:00:05.367
+E eu sou Mat.
+Neste curso, vamos aprender
+
+00:00:05.400 --> 00:00:07.067
+tudo sobre
+preparação de dados.
+
+00:00:07.100 --> 00:00:09.601
+Preparação de dados é o processo
+de reunir dados,
+
+00:00:09.633 --> 00:00:14.033
+acessar sua qualidade e estrutura
+e limpá-los antes de analisá-los,
+
+00:00:14.067 --> 00:00:16.400
+visualizá-los ou construir
+modelos previsíveis
+
+00:00:16.434 --> 00:00:18.033
+usando aprendizado de máquina.
+
+00:00:18.067 --> 00:00:21.667
+Às vezes, é simples como baixar
+um arquivo, notar erros de digitação
+
+00:00:21.701 --> 00:00:23.400
+e consertá-los.
+
+00:00:23.434 --> 00:00:25.701
+Mas, outras vezes,
+os dados não estão limpos.
+
+00:00:25.734 --> 00:00:30.067
+Faltam registros, há dados
+duplicados ou incorretos.
+
+00:00:30.100 --> 00:00:32.367
+Às vezes, os dados em si
+estão certos,
+
+00:00:32.400 --> 00:00:35.200
+mas é difícil trabalhar
+com a estrutura deles.
+
+00:00:35.234 --> 00:00:37.200
+Cuidar de tudo isso
+é necessário,
+
+00:00:37.234 --> 00:00:41.534
+ou você se arrisca a cometer erros,
+perder ideias e tempo.
+
+00:00:41.567 --> 00:00:44.901
+A preparação é essencial
+e você a usará em graus variados
+
+00:00:44.934 --> 00:00:47.300
+em cada conjunto de informações
+com que trabalhar,
+
+00:00:47.334 --> 00:00:50.534
+porque muitos dos dados mundiais
+não estão limpos.
+
+00:00:50.567 --> 00:00:53.701
+Felizmente, ao usar códigos,
+a preparação é rápida
+
+00:00:53.734 --> 00:00:55.968
+e quase mágica.
+
+00:00:56.000 --> 00:00:59.334
+Ao fim do curso, preparar dados
+se tornará algo instintivo.
+
+00:00:59.367 --> 00:01:02.367
+Você está pronto para preparar?
+Vamos nessa.
+

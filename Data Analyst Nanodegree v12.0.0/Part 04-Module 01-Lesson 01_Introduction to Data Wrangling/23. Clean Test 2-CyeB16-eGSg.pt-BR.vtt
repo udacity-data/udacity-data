@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.329 --> 00:00:02.795
+Fizemos um loop nas frases
+da "asap_list."
+
+00:00:03.206 --> 00:00:04.596
+De novo, aqui em cima.
+
+00:00:04.997 --> 00:00:07.235
+E queremos usar o "assert"
+para que cada frase
+
+00:00:07.268 --> 00:00:11.932
+que não está na coluna "start date"
+do "DataFrame" supostamente limpo.
+
+00:00:12.480 --> 00:00:16.681
+Então "assert phrase
+not in df_clean.StartDate"
+
+00:00:16.714 --> 00:00:19.304
+e há um truque do Panda aqui.
+
+00:00:19.337 --> 00:00:21.628
+Precisamos digitar
+".values" aqui.
+
+00:00:22.369 --> 00:00:24.072
+Caso contrário,
+como vou mostrar abaixo,
+
+00:00:24.868 --> 00:00:28.908
+o Pandas verifica se cada frase
+está na coluna index
+
+00:00:28.941 --> 00:00:30.729
+do "df_clean.StartDate".
+
+00:00:31.047 --> 00:00:32.434
+Queremos os valores,
+
+00:00:32.766 --> 00:00:36.661
+e se processamos a célula e não há
+erros de asserção, estamos bem.
+
+00:00:36.694 --> 00:00:38.100
+O código de limpeza funcionou.
+
+00:00:38.381 --> 00:00:39.519
+E bem.
+
+00:00:39.552 --> 00:00:42.369
+Isso é o que aconteceria
+se uma frase fosse esquecida.
+
+00:00:42.929 --> 00:00:45.520
+Deve haver muitas entradas
+com "urgente".
+
+00:00:46.656 --> 00:00:48.820
+Na verdade, 6.856.
+
+00:00:49.665 --> 00:00:52.037
+Então, se afirmamos
+que "urgente" não está
+
+00:00:52.070 --> 00:00:54.124
+em "df_clean.StartDate.values",
+
+00:00:54.593 --> 00:00:57.263
+o Python grita conosco e mostra:
+"AssertionError".
+

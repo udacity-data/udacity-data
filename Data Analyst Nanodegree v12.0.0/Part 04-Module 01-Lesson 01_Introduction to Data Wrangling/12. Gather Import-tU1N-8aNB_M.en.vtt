@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.444
+Now that we have our zip file downloaded and unzipped,
+
+00:00:03.444 --> 00:00:08.824
+we need to open the extracted CSV file so that we can see and work with the data inside.
+
+00:00:08.824 --> 00:00:11.649
+We'll do this by importing it into a table like structure in
+
+00:00:11.650 --> 00:00:16.130
+our Jupyter Notebook using a python library called Pandas.
+
+00:00:16.129 --> 00:00:18.734
+Pandas, created by West McKinney,
+
+00:00:18.734 --> 00:00:21.704
+is an open source library providing high performance,
+
+00:00:21.704 --> 00:00:26.084
+easy to use data structures and data analysis tools for the Python programming language.
+
+00:00:26.085 --> 00:00:30.795
+Using Pandas is standard and best practice for data analysis in Python nowadays.
+
+00:00:30.795 --> 00:00:33.609
+In the context of the gather step of wrangling,
+
+00:00:33.609 --> 00:00:36.975
+Pandas can import pretty much every file format you can think of,
+
+00:00:36.975 --> 00:00:39.329
+plus link to databases.
+
+00:00:39.329 --> 00:00:41.074
+I'll cover the Pandas basics here,
+
+00:00:41.075 --> 00:00:42.450
+but if you'd like to know more,
+
+00:00:42.450 --> 00:00:45.700
+I recommend that you check out our Pandas course if you haven't already.
+
+00:00:45.700 --> 00:00:47.910
+There's a link to that in the notes below this video.
+
+00:00:47.909 --> 00:00:52.079
+So, Pandas will let us view and work with their CSV file in a simple,
+
+00:00:52.079 --> 00:00:55.405
+tabular format, known as the panda's data frame.
+
+00:00:55.405 --> 00:00:57.396
+Think of the data frame like a spreadsheet,
+
+00:00:57.396 --> 00:01:00.759
+but easier to manipulate using code and more powerful in general,
+
+00:01:00.759 --> 00:01:03.519
+but not as good for browsing through data sets.
+
+00:01:03.520 --> 00:01:04.692
+Okay, so our task,
+
+00:01:04.691 --> 00:01:08.294
+import a CSV file into a panda's data frame.
+
+00:01:08.295 --> 00:01:09.989
+This is actually what I do every time to
+
+00:01:09.989 --> 00:01:12.774
+figure out how to do this, Google is your friend.
+
+00:01:12.775 --> 00:01:16.785
+So, I search "import CSV Pandas" and hey,
+
+00:01:16.784 --> 00:01:20.109
+first result, the read_csv function.
+
+00:01:20.109 --> 00:01:23.935
+Read CSV, comma separated file into data frame.
+
+00:01:23.935 --> 00:01:25.710
+Let's actually copy and paste the description
+
+00:01:25.709 --> 00:01:29.729
+of the function to add a comment to our code.
+
+00:01:30.299 --> 00:01:34.539
+Okay, so the main argument and accept is the path to
+
+00:01:34.540 --> 00:01:37.935
+the CSV file that we want to read into our Jupyter Notebook.
+
+00:01:37.935 --> 00:01:39.980
+You can ignore the rest for now.
+
+00:01:39.980 --> 00:01:42.010
+If we scroll to the bottom,
+
+00:01:42.010 --> 00:01:45.960
+we'll see that the function returns a data frame.
+
+00:01:45.959 --> 00:01:48.949
+Okay, so let's go back to our Jupyter Notebook and first,
+
+00:01:48.950 --> 00:01:51.745
+we'll actually have to import the Pandas library,
+
+00:01:51.745 --> 00:01:55.075
+which we customarily do, like so.
+
+00:01:55.075 --> 00:01:58.950
+Import Pandas as PD which is called aliasing.
+
+00:01:58.950 --> 00:02:02.078
+In this case, so we don't have to type out four extra letter,
+
+00:02:02.078 --> 00:02:07.049
+shortening Pandas to PD as coders, so efficient.
+
+00:02:07.049 --> 00:02:10.949
+And we process that cell, and we'll go back down here,
+
+00:02:10.949 --> 00:02:18.163
+and type in pd.read csv and we'll name the result of this function,
+
+00:02:18.163 --> 00:02:22.699
+the data fragment returns DF, short for data frame.
+
+00:02:22.699 --> 00:02:24.599
+This is a common convention.
+
+00:02:24.599 --> 00:02:28.039
+So, all that's left now is filling out the file path parameter,
+
+00:02:28.039 --> 00:02:31.019
+which you can go check out here,
+
+00:02:31.020 --> 00:02:36.230
+or using a new feature that we haven't talked about yet called shift tab completion.
+
+00:02:36.229 --> 00:02:37.429
+If you click shift tab here,
+
+00:02:37.430 --> 00:02:39.215
+you'll see the signature of the function
+
+00:02:39.215 --> 00:02:42.569
+and the file path or buffer argument we need to fill in.
+
+00:02:42.569 --> 00:02:44.280
+Okay, so fill that in now.
+

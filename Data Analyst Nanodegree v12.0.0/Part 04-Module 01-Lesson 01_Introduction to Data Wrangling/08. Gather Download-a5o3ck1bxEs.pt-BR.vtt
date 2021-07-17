@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.434 --> 00:00:04.033
+Para essa atividade, vamos baixar
+um arquivo da internet
+
+00:00:04.067 --> 00:00:06.167
+e importá-lo
+para o Jupyter Notebook,
+
+00:00:06.200 --> 00:00:09.133
+uma das muitas maneiras
+de reunir dados.
+
+00:00:09.167 --> 00:00:11.167
+Quando baixamos arquivos
+da internet,
+
+00:00:11.200 --> 00:00:14.467
+pode ser simples como ir à página
+na qual os dados estão,
+
+00:00:14.501 --> 00:00:16.400
+como esta página do Kaggle,
+por exemplo,
+
+00:00:16.434 --> 00:00:18.667
+e clicar no botão "baixar".
+
+00:00:18.701 --> 00:00:21.601
+Mas a melhor prática
+é baixar arquivos
+
+00:00:21.634 --> 00:00:24.434
+de forma programática, isto é,
+usando códigos,
+
+00:00:24.467 --> 00:00:28.234
+por razões de escala
+e de reprodução.
+

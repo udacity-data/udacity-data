@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.270 --> 00:00:06.900
+We've gathered, assessed and just cleaned our data. Are we done?
+
+00:00:06.900 --> 00:00:09.730
+No. After cleaning, we always
+
+00:00:09.730 --> 00:00:13.345
+reassess and then iterate on any of the steps if we need to.
+
+00:00:13.345 --> 00:00:16.565
+If we're happy with the quality and tightness of our data,
+
+00:00:16.565 --> 00:00:20.484
+we can end our wrangling process and move on to storing our clean data,
+
+00:00:20.484 --> 00:00:23.839
+or analyzing, visualizing, or modeling it.
+
+00:00:23.839 --> 00:00:27.629
+Sometimes we realize we need to gather more data.
+
+00:00:27.629 --> 00:00:29.549
+Sometimes we miss assessments.
+
+00:00:29.550 --> 00:00:31.760
+It's hard to catch everything on the first go,
+
+00:00:31.760 --> 00:00:33.760
+and it's also very common to find
+
+00:00:33.759 --> 00:00:37.344
+new issues as you're fixing the ones you've already identified.
+
+00:00:37.344 --> 00:00:41.335
+Sometimes our cleaning operations don't work as we intended.
+
+00:00:41.335 --> 00:00:43.774
+Once we go through each step once,
+
+00:00:43.774 --> 00:00:46.864
+we can revisit any step in the process any time.
+
+00:00:46.865 --> 00:00:52.995
+Even after we've finished wrangling and moved on to analysis, visualization, or modeling.
+
+00:00:52.994 --> 00:00:55.789
+So don't worry if wrangling seems daunting.
+
+00:00:55.789 --> 00:01:00.000
+Feel free to start small and cycle through the process a few times.
+
