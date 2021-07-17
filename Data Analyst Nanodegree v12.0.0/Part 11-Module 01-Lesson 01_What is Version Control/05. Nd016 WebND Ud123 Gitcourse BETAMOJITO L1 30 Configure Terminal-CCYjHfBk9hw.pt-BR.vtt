@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.033 --> 00:00:04.182
+Aqui estão os arquivos
+que baixei e descompactei.
+
+00:00:04.215 --> 00:00:06.745
+Preciso mover estes arquivos
+para o diretório principal.
+
+00:00:06.778 --> 00:00:09.575
+A maneira mais fácil é clicar
+com o botão direito na janela
+
+00:00:09.608 --> 00:00:13.061
+e escolher Git Bash Here
+na lista de opções.
+
+00:00:13.094 --> 00:00:17.187
+Esta opção aparece
+porque instalei o Git nesta máquina.
+
+00:00:17.548 --> 00:00:20.817
+No shell, digite cd
+e pressione enter.
+
+00:00:20.850 --> 00:00:23.152
+Isto move o shell
+para o diretório principal.
+
+00:00:23.185 --> 00:00:25.349
+Para abrir o diretório
+no Windows Explorer,
+
+00:00:25.382 --> 00:00:27.501
+digite start e um ponto.
+
+00:00:28.552 --> 00:00:30.885
+Gosto de poder pular
+para este diretório,
+
+00:00:30.918 --> 00:00:33.750
+então vou fixá-lo
+no menu de acesso rápido.
+
+00:00:33.783 --> 00:00:36.121
+Clique com o botão direito
+em Acesso Rápido
+
+00:00:36.154 --> 00:00:39.716
+e escolha Fixar Pasta Atual
+em Acesso Rápido.
+
+00:00:40.145 --> 00:00:43.277
+Vou arrumar estas janelas
+para organizá-las melhor.
+
+00:00:43.310 --> 00:00:45.419
+Agora que temos
+o diretório principal aberto,
+
+00:00:45.452 --> 00:00:47.658
+podemos mover
+os arquivos de configuração.
+
+00:00:47.691 --> 00:00:48.887
+Selecione os dois itens
+
+00:00:48.920 --> 00:00:51.586
+e arraste-os para a janela
+do diretório principal.
+
+00:00:52.143 --> 00:00:53.939
+Eles estão
+na localização correta.
+
+00:00:53.972 --> 00:00:56.457
+Agora eles só precisam ser
+nomeados corretamente.
+
+00:00:56.490 --> 00:01:00.247
+Os dois arquivos precisam ter
+um ponto no início do nome.
+
+00:01:00.604 --> 00:01:03.385
+Como o recurso Renomear
+no Windows não permite isso,
+
+00:01:03.418 --> 00:01:05.704
+temos que fazer isso
+na linha de comando.
+
+00:01:05.737 --> 00:01:08.743
+Usamos o comando mv
+para renomear bash_profile
+
+00:01:08.776 --> 00:01:10.948
+para .bash_profile.
+
+00:01:11.864 --> 00:01:14.004
+Fazemos o mesmo com a pasta.
+
+00:01:14.037 --> 00:01:15.505
+Usamos o comando mv
+
+00:01:15.538 --> 00:01:17.447
+para renomear
+udacity-terminal-config
+
+00:01:17.480 --> 00:01:20.348
+para .udacity-terminal-config.
+
+00:01:20.381 --> 00:01:23.605
+Para ver as mudanças,
+temos que abrir um novo shell.
+
+00:01:24.453 --> 00:01:27.643
+Agora o shell está configurado
+com o conteúdo correto,
+
+00:01:27.676 --> 00:01:31.297
+mas eu também gosto de ter
+o fundo branco com o texto preto.
+
+00:01:31.330 --> 00:01:33.832
+Então clico no canto superior
+esquerdo do aplicativo,
+
+00:01:34.109 --> 00:01:36.065
+escolho Options
+
+00:01:36.611 --> 00:01:39.770
+e atualizo a cor
+do primeiro plano para preto
+
+00:01:40.261 --> 00:01:42.512
+e a cor do plano de fundo
+para branco.
+
+00:01:44.614 --> 00:01:46.661
+Perfeito.
+Agora tudo está configurado.
+

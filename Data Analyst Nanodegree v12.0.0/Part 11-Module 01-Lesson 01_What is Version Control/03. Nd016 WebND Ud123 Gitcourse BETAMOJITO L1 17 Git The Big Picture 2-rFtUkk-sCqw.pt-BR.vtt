@@ -1,0 +1,65 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.316 --> 00:00:01.908
+Quando um commit é feito,
+
+00:00:01.941 --> 00:00:03.893
+apenas as mudanças
+da área temporária
+
+00:00:03.926 --> 00:00:06.141
+são movidas
+para o repositório.
+
+00:00:06.174 --> 00:00:09.297
+Se queremos incluir o segundo grupo
+de mudanças,
+
+00:00:09.330 --> 00:00:11.362
+precisamos preparar
+as mudanças.
+
+00:00:11.395 --> 00:00:14.906
+Agora que a segunda mudança
+do arquivo HTML foi preparada,
+
+00:00:14.939 --> 00:00:16.833
+os dois grupos de mudanças
+do arquivo HTML
+
+00:00:16.866 --> 00:00:19.248
+foram combinados
+em um só grupo de mudanças.
+
+00:00:19.281 --> 00:00:20.736
+Então podemos
+seguir normalmente
+
+00:00:20.769 --> 00:00:22.795
+para mover estas mudanças
+para o repositório,
+
+00:00:22.828 --> 00:00:25.624
+Temos todas estas mudanças
+salvas no repositório,
+
+00:00:25.657 --> 00:00:27.872
+mas como acessamos os commits?
+
+00:00:27.905 --> 00:00:30.372
+E se quisermos olhar
+um específico?
+
+00:00:30.405 --> 00:00:33.948
+Quando cada commit é feito,
+o Git cria um ID para ele.
+
+00:00:33.981 --> 00:00:36.306
+O ID para o commit é o SHA,
+
+00:00:36.339 --> 00:00:40.661
+que são estes sete
+primeiros caracteres.
+

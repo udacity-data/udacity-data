@@ -1,0 +1,483 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Git and Version Control Terminology
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      What is Version Control?
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. What is Version Control.html">
+       01. What is Version Control
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Version Control In Daily Use.html">
+       02. Version Control In Daily Use
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Git and Version Control Terminology.html">
+       03. Git and Version Control Terminology
+      </a>
+     </li>
+     <li class="">
+      <a href="04. MacLinux Setup.html">
+       04. Mac/Linux Setup
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Windows Setup.html">
+       05. Windows Setup
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Onward.html">
+       06. Onward
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. Git and Version Control Terminology
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Gitfinal L1 13 Git'S Terminology
+         </p>
+        </h3>
+        <video controls="">
+         <source src="03. Gitfinal L1 13 Git'S Terminology-bf26adzeqMM.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="03. Gitfinal L1 13 Git'S Terminology-bf26adzeqMM.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="03. Gitfinal L1 13 Git'S Terminology-bf26adzeqMM.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="03. Gitfinal L1 13 Git'S Terminology-bf26adzeqMM.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="03. Gitfinal L1 13 Git'S Terminology-bf26adzeqMM.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          You can find the Terminology handout at the bottom of the page. The file is named
+          <strong>
+           Git Key Terms
+          </strong>
+          and is in the Course Materials section.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="terminology">
+          Terminology
+         </h2>
+         <h2 id="version-control-system--source-code-manager">
+          Version Control System / Source Code Manager
+         </h2>
+         <p>
+          A
+          <strong>
+           version control system
+          </strong>
+          (abbreviated as
+          <strong>
+           VCS
+          </strong>
+          ) is a tool that manages different versions of source code. A
+          <strong>
+           source code manager
+          </strong>
+          (abbreviated as
+          <strong>
+           SCM
+          </strong>
+          ) is another name for a version control system.
+         </p>
+         <p>
+          Git is an SCM (and therefore a VCS!). The URL for the Git website is
+          <a href="https://git-scm.com/" rel="noopener noreferrer" target="_blank">
+           https://git-scm.com/
+          </a>
+          (see how it has "SCM" directly in its domain!).
+         </p>
+         <h2 id="commit">
+          Commit
+         </h2>
+         <p>
+          Git thinks of its data like a set of snapshots of a mini filesystem. Every time you
+          <strong>
+           commit
+          </strong>
+          (save the state of your project in Git), it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. You can think of it as a save point in a game - it saves your project's files and any information about them.
+         </p>
+         <p>
+          Everything you do in Git is to help you make commits, so a commit is
+          <em>
+           the
+          </em>
+          fundamental unit in Git.
+         </p>
+         <h2 id="repository--repo">
+          Repository / repo
+         </h2>
+         <p>
+          A
+          <strong>
+           repository
+          </strong>
+          is a directory which contains your project work, as well as a few files (hidden by default on Mac OS X) which are used to communicate with Git. Repositories can exist either locally on your computer or as a remote copy on another computer. A repository is made up of commits.
+         </p>
+         <h2 id="working-directory">
+          Working Directory
+         </h2>
+         <p>
+          The
+          <strong>
+           Working Directory
+          </strong>
+          is the files that you see in your computer's file system. When you open your project files up on a code editor, you're working with files in the Working Directory.
+         </p>
+         <p>
+          This is in contrast to the files that have been saved (in commits!) in the repository.
+         </p>
+         <p>
+          When working with Git, the Working Directory is also different from the command line's concept of the
+          <em>
+           current working directory
+          </em>
+          which is the directory that your shell is "looking at" right now.
+         </p>
+         <h2 id="checkout">
+          Checkout
+         </h2>
+         <p>
+          A
+          <strong>
+           checkout
+          </strong>
+          is when content in the repository has been copied to the Working Directory.
+         </p>
+         <h2 id="staging-area--staging-index--index">
+          Staging Area / Staging Index / Index
+         </h2>
+         <p>
+          A file in the Git directory that stores information about what will go into your next commit. You can think of the
+          <strong>
+           staging area
+          </strong>
+          as a prep table where Git will take the next commit. Files on the Staging Index are poised to be added to the repository.
+         </p>
+         <h2 id="sha">
+          SHA
+         </h2>
+         <p>
+          A
+          <strong>
+           SHA
+          </strong>
+          is basically an ID number for each commit. Here's what a commit's SHA might look like:
+          <code>
+           e2adf8ae3e2e4ed40add75cc44cf9d0a869afeb6
+          </code>
+          .
+         </p>
+         <p>
+          It is a 40-character string composed of characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. "SHA" is shorthand for "Secure Hash Algorithm". If you're interested in learning about hashes, check out our
+          <a href="https://www.udacity.com/course/intro-to-computer-science--cs101" rel="noopener noreferrer" target="_blank">
+           Intro to Computer Science course
+          </a>
+          .
+         </p>
+         <h2 id="branch">
+          Branch
+         </h2>
+         <p>
+          A
+          <strong>
+           branch
+          </strong>
+          is when a new line of development is created that diverges from the main line of development. This alternative line of development can continue without altering the main line.
+         </p>
+         <p>
+          Going back to the example of save point in a game, you can think of a branch as where you make a save point in your game and then decide to try out a risky move in the game. If the risky move doesn't pan out, then you can just go back to the save point. The key thing that makes branches incredibly powerful is that you can make save points on one branch, and then switch to a different branch and make save points there, too.
+         </p>
+         <p>
+          With this terminology in mind, let's take a high-level look at how we'll be using Git by looking at the typical workflow when working with version control.
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 15 Git The Big Picture
+         </p>
+        </h3>
+        <video controls="">
+         <source src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 15 Git The Big Picture-dVil8e0yptQ.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 15 Git The Big Picture-dVil8e0yptQ.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 15 Git The Big Picture-dVil8e0yptQ.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 15 Git The Big Picture-dVil8e0yptQ.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 15 Git The Big Picture-dVil8e0yptQ.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          What Gets Committed
+         </p>
+        </h3>
+        <div>
+         <form>
+          <fieldset>
+           <legend>
+            <p>
+             The HTML file has HTML and CSS changes on the Staging Index and an additional HTML change in the Working Directory. From what you've learned so far with how committing works, what do you think will get committed if a commit were made right now?
+            </p>
+           </legend>
+          </fieldset>
+          <div>
+           <input id="a1485546208838" name="262251" type="radio" value="a1485546208838"/>
+           <label for="a1485546208838">
+            <p>
+             only the HTML file changes on the Staging Index
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1485546224180" name="262251" type="radio" value="a1485546224180"/>
+           <label for="a1485546224180">
+            <p>
+             only the CSS file changes on the Staging Index
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1485546229305" name="262251" type="radio" value="a1485546229305"/>
+           <label for="a1485546229305">
+            <p>
+             the HTML and CSS file changes on the Staging Index
+            </p>
+           </label>
+          </div>
+          <div>
+           <input id="a1485546237338" name="262251" type="radio" value="a1485546237338"/>
+           <label for="a1485546237338">
+            <p>
+             the HTML file changes in
+             <em>
+              both
+             </em>
+             the Working Directory
+             <em>
+              and
+             </em>
+             the Staging Index
+            </p>
+           </label>
+          </div>
+         </form>
+         <details>
+          <summary>
+           <strong>
+            SOLUTION:
+           </strong>
+          </summary>
+          the HTML and CSS file changes on the Staging Index
+         </details>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 17 Git The Big Picture 2
+         </p>
+        </h3>
+        <video controls="">
+         <source src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 17 Git The Big Picture 2-rFtUkk-sCqw.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 17 Git The Big Picture 2-rFtUkk-sCqw.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 17 Git The Big Picture 2-rFtUkk-sCqw.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 17 Git The Big Picture 2-rFtUkk-sCqw.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 17 Git The Big Picture 2-rFtUkk-sCqw.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+         <p>
+          Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 18 Recap
+         </p>
+        </h3>
+        <video controls="">
+         <source src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 18 Recap-xqD9ImXXXHk.mp4" type="video/mp4"/>
+         <track default="false" kind="subtitles" label="ar" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 18 Recap-xqD9ImXXXHk.ar.vtt" srclang="ar"/>
+         <track default="false" kind="subtitles" label="zh-CN" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 18 Recap-xqD9ImXXXHk.zh-CN.vtt" srclang="zh-CN"/>
+         <track default="true" kind="subtitles" label="en" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 18 Recap-xqD9ImXXXHk.en.vtt" srclang="en"/>
+         <track default="false" kind="subtitles" label="pt-BR" src="03. Nd016 WebND Ud123 Gitcourse BETAMOJITO L1 18 Recap-xqD9ImXXXHk.pt-BR.vtt" srclang="pt-BR"/>
+        </video>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. MacLinux Setup.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Git and Version Control Terminology')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

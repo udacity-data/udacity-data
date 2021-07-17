@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.099 --> 00:00:03.037
+Há vários sistemas
+de controle de versão por aí,
+
+00:00:03.070 --> 00:00:07.926
+mas três dos mais populares são
+o Git, o Subversion e o Mercurial.
+
+00:00:07.959 --> 00:00:11.551
+Não apenas há vários sistemas
+de controle de versão
+
+00:00:11.584 --> 00:00:13.941
+mas também há
+duas categorias diferentes.
+
+00:00:13.974 --> 00:00:17.946
+Há o modelo centralizado
+e o modelo distribuído.
+
+00:00:17.979 --> 00:00:19.140
+No modelo centralizado,
+
+00:00:19.173 --> 00:00:21.314
+há um computador central
+superpoderoso
+
+00:00:21.347 --> 00:00:22.824
+que hospeda o projeto.
+
+00:00:22.857 --> 00:00:26.038
+Toda interação deve passar
+por este computador central.
+
+00:00:26.071 --> 00:00:27.573
+No modelo distribuído,
+
+00:00:27.606 --> 00:00:30.277
+não há um repositório central
+de informação.
+
+00:00:30.310 --> 00:00:32.482
+Cada desenvolvedor tem
+uma cópia do projeto
+
+00:00:32.515 --> 00:00:33.631
+no seu computador,
+
+00:00:33.664 --> 00:00:36.188
+o que é legal, porque você
+pode trabalhar off-line.
+
+00:00:36.221 --> 00:00:39.588
+Neste curso, vamos usar
+o sistema de controle de versão Git,
+
+00:00:39.621 --> 00:00:42.604
+que é um sistema de controle
+distribuído.
+
+00:00:42.637 --> 00:00:45.151
+Você já deve ter
+ouvido falar do GitHub.
+
+00:00:45.184 --> 00:00:47.709
+Git e GitHub
+são bem diferentes.
+
+00:00:47.742 --> 00:00:50.093
+Git é a ferramenta
+de controle de versão,
+
+00:00:50.126 --> 00:00:53.811
+enquanto GitHub é o serviço
+que hospeda os projetos do Git.
+
+00:00:53.844 --> 00:00:56.828
+Para trabalhar com o Git,
+não é necessário usar o GitHub,
+
+00:00:56.861 --> 00:00:59.696
+mas é uma ótima ferramenta,
+e você deveria conhecê-la.
+
+00:00:59.729 --> 00:01:02.489
+Mas você pode pensar nele
+como um computador qualquer
+
+00:01:02.522 --> 00:01:04.932
+em que você faz o upload
+de uma cópia do projeto.
+
+00:01:04.965 --> 00:01:06.353
+Centralizado, distribuído,
+
+00:01:06.386 --> 00:01:09.359
+se não faz muito sentido agora,
+tudo bem.
+
+00:01:09.392 --> 00:01:12.872
+Isso é só para você ter uma ideia
+de como as coisas se encaixam.
+
+00:01:12.905 --> 00:01:15.684
+Estes termos são mais importantes
+em trabalho em equipe,
+
+00:01:15.717 --> 00:01:19.332
+mas você vai trabalhar localmente
+no seu computador durante o curso.
+

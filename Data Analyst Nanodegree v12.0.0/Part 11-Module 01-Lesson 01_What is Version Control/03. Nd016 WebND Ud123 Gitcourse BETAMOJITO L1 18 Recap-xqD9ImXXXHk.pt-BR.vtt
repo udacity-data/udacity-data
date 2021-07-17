@@ -1,0 +1,80 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.132 --> 00:00:03.969
+No fundo, o Git grava as mudanças
+nos arquivos como commits.
+
+00:00:04.002 --> 00:00:06.591
+Eles são todos salvos
+em um repositório.
+
+00:00:06.624 --> 00:00:08.838
+Todo o resto,
+como o diretório de trabalho,
+
+00:00:08.871 --> 00:00:13.084
+branches e SHAs, estão lá
+para ajudar a fazer e citar commits.
+
+00:00:13.117 --> 00:00:14.229
+Como você viu,
+
+00:00:14.262 --> 00:00:17.937
+a terminologia que o controle
+de versão usa é difícil no início.
+
+00:00:17.970 --> 00:00:20.556
+Espero que esteja com a apostila
+e a tenha revisado
+
+00:00:20.589 --> 00:00:23.800
+ao passar por esta apresentação
+avançada de como usar o Git.
+
+00:00:23.833 --> 00:00:27.077
+Na próxima seção,
+vamos instalar e configurar o Git.
+
+00:00:27.110 --> 00:00:29.800
+Siga cada passo em ordem
+para o seu computador
+
+00:00:29.833 --> 00:00:31.848
+ser configurado como o meu.
+
+00:00:31.881 --> 00:00:34.421
+Agora, configurar seu terminal
+não é necessário
+
+00:00:34.454 --> 00:00:37.438
+para o Git funcionar corretamente
+ou continuar este curso.
+
+00:00:37.471 --> 00:00:40.024
+Você pode fazer o curso inteiro
+sem este passo,
+
+00:00:40.057 --> 00:00:42.715
+mas isso não só o torna
+mais fácil de usar,
+
+00:00:42.748 --> 00:00:45.175
+como todos os profissionais
+reconfiguram seu terminal.
+
+00:00:45.208 --> 00:00:46.876
+A reconfiguração
+que vamos fazer
+
+00:00:46.909 --> 00:00:48.341
+vai adicionar cor ao terminal
+
+00:00:48.374 --> 00:00:50.685
+e mostrar informações
+específicas do Git.
+
+00:00:50.718 --> 00:00:52.656
+Parece bom? Vamos começar.
+
