@@ -1,0 +1,141 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.271 --> 00:00:03.423
+Temos as três seções
+do repositório:
+
+00:00:03.465 --> 00:00:05.774
+o diretório de trabalho,
+a área temporária
+
+00:00:05.816 --> 00:00:07.617
+e o repositório, no topo.
+
+00:00:07.659 --> 00:00:10.484
+Imagine que o repositório
+tem estes commits
+
+00:00:10.526 --> 00:00:13.824
+e o master aponta
+o commit mais recente.
+
+00:00:13.866 --> 00:00:15.570
+O HEAD está apontando
+para master
+
+00:00:15.612 --> 00:00:18.153
+e os arquivos
+estão no diretório de trabalho.
+
+00:00:18.195 --> 00:00:20.258
+Vamos mudar
+um pouco as coisas.
+
+00:00:20.300 --> 00:00:21.801
+Estes são os três lugares
+
+00:00:21.843 --> 00:00:24.289
+para onde o conteúdo
+de um commit recente irá:
+
+00:00:24.331 --> 00:00:26.995
+para o diretório de trabalho,
+a área temporária
+
+00:00:27.037 --> 00:00:29.593
+ou para a lixeira,
+ou seja, será apagado.
+
+00:00:29.635 --> 00:00:33.761
+Executar o pai git reset HEAD
+moverá HEAD e master
+
+00:00:33.803 --> 00:00:35.258
+para o commit anterior,
+
+00:00:35.300 --> 00:00:38.938
+mas o que acontece ao commit
+com o número 3?
+
+00:00:38.980 --> 00:00:41.993
+As alterações podem seguir
+para o diretório de trabalho,
+
+00:00:42.035 --> 00:00:45.274
+para a área temporária
+ou podem ser descartadas.
+
+00:00:45.316 --> 00:00:48.882
+Tudo depende da flag usada
+com o comando reset.
+
+00:00:48.924 --> 00:00:50.473
+Vamos voltar o commit.
+
+00:00:50.515 --> 00:00:53.275
+Se executarmos git reset
+sem nenhuma flag,
+
+00:00:53.317 --> 00:00:56.106
+as alterações feitas
+no commit com SHA-3
+
+00:00:56.148 --> 00:00:59.105
+serão aplicadas nos arquivos
+do diretório de trabalho.
+
+00:00:59.147 --> 00:01:02.163
+Isso porque --mixed
+é o padrão.
+
+00:01:02.205 --> 00:01:06.769
+Executar git reset sem uma flag
+é o mesmo que executar com --mixed.
+
+00:01:06.811 --> 00:01:08.961
+Se criarmos outro commit
+com os arquivos,
+
+00:01:09.003 --> 00:01:11.163
+obteremos
+o mesmo conteúdo de commit.
+
+00:01:11.205 --> 00:01:16.025
+Obteremos outro SHA,
+porque o rótulo de tempo será outro,
+
+00:01:16.067 --> 00:01:18.920
+mas o conteúdo
+será exatamente o mesmo.
+
+00:01:18.962 --> 00:01:21.897
+Usando a flag --soft
+
+00:01:21.939 --> 00:01:24.481
+moveremos as alterações
+do commit com SHA-3
+
+00:01:24.523 --> 00:01:26.283
+para a área temporária.
+
+00:01:26.325 --> 00:01:29.272
+São as mesmas alterações
+e agora estão organizadas.
+
+00:01:29.314 --> 00:01:32.743
+Só precisaremos executar git commit
+para trazer o commit de volta.
+
+00:01:32.785 --> 00:01:36.987
+Como o rótulo de tempo será outro,
+o novo SHA será diferente.
+
+00:01:37.029 --> 00:01:40.226
+Por último, a flag --hard.
+
+00:01:40.268 --> 00:01:44.098
+Ela jogará fora as alterações
+do commit com SHA-3.
+

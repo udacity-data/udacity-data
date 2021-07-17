@@ -1,0 +1,370 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Reverting A Commit
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Undoing Changes
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Intro.html">
+       01. Intro
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Modifying The Last Commit.html">
+       02. Modifying The Last Commit
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Reverting A Commit.html">
+       03. Reverting A Commit
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Resetting Commits.html">
+       04. Resetting Commits
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Lesson Outro.html">
+       05. Lesson Outro
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Course Outro.html">
+       06. Course Outro
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. Reverting A Commit
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="what-is-a-revert">
+          What Is A Revert?
+         </h2>
+         <p>
+          When you tell Git to
+          <strong>
+           revert
+          </strong>
+          a specific commit, Git takes the changes that were made in commit and does the exact opposite of them. Let's break that down a bit. If a character is added in commit A, if Git
+          <em>
+           reverts
+          </em>
+          commit A, then Git will make a new commit where that character is deleted. It also works the other way where if a character/line is removed, then reverting that commit will
+          <em>
+           add
+          </em>
+          that content back!
+         </p>
+         <p>
+          We ended the previous lesson with a merge conflict and resolved that conflict by setting the heading to
+          <code>
+           Adventurous Quest
+          </code>
+          . Let's say that there's a commit in your repository that changes the heading now to
+          <code>
+           Quests &amp; Crusades
+          </code>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt='_The Terminal application showing the log of a repository. The most-recent commit changes the heading from "Adventurous Quest" to "Quests &amp; Crusades"._' class="img img-fluid" src="img/ud123-l6-git-revert-prep.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the log of a repository. The most-recent commit changes the heading from "Adventurous Quest" to "Quests &amp; Crusades".
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="the-git-revert-command">
+          The
+          <code>
+           git revert
+          </code>
+          Command
+         </h2>
+         <p>
+          Now that I've made a commit with some changes, I can revert it with the
+          <code>
+           git revert
+          </code>
+          command
+         </p>
+         <pre><code class="bash language-bash">$ git revert &lt;SHA-of-commit-to-revert&gt;</code></pre>
+         <p>
+          Since the SHA of the most-recent commit is
+          <code>
+           db7e87a
+          </code>
+          , to revert it:
+          <br/>
+          I'll just run
+          <code>
+           git revert db7e87a
+          </code>
+          (this will pop open my code editor to edit/accept the provided commit message)
+         </p>
+         <p>
+          I'll get the following output:
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <figure class="figure">
+          <img alt="_The Terminal application showing the output of reverting a commit. The output provides the commit message of the commit that was reverted. It also creates a new commit to record this change._" class="img img-fluid" src="img/ud123-l6-git-revert-post.png"/>
+          <figcaption class="figure-caption">
+           <p>
+            <em>
+             The Terminal application showing the output of reverting a commit. The output provides the commit message of the commit that was reverted. It also creates a new commit to record this change.
+            </em>
+           </p>
+          </figcaption>
+         </figure>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Did you see how the output of the
+          <code>
+           git revert
+          </code>
+          command tells us what it reverted? It uses the commit message of the commit that I told it to revert. Something that's also important is that it creates
+          <em>
+           a new commit
+          </em>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h2 id="revert-recap">
+          Revert Recap
+         </h2>
+         <p>
+          To recap, the
+          <code>
+           git revert
+          </code>
+          command is used to reverse a previously made commit:
+         </p>
+         <pre><code class="bash language-bash">$ git revert &lt;SHA-of-commit-to-revert&gt;</code></pre>
+         <p>
+          This command:
+         </p>
+         <ul>
+          <li>
+           will undo the changes that were made by the provided commit
+          </li>
+          <li>
+           creates a new commit to record the change
+          </li>
+         </ul>
+         <h3 id="further-research">
+          Further Research
+         </h3>
+         <ul>
+          <li>
+           <a href="https://git-scm.com/docs/git-revert" rel="noopener noreferrer" target="_blank">
+            git-revert
+           </a>
+           from Git Docs
+          </li>
+          <li>
+           <a href="https://www.atlassian.com/git/tutorials/undoing-changes" rel="noopener noreferrer" target="_blank">
+            git revert
+           </a>
+           Atlassian tutorial
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. Resetting Commits.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Reverting A Commit')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

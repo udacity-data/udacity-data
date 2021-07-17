@@ -1,0 +1,92 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.379 --> 00:00:03.610
+Criar commits em um repositório
+pode ser estressante.
+
+00:00:03.652 --> 00:00:05.113
+E se eu errar?
+
+00:00:05.155 --> 00:00:07.410
+E se eu quiser
+desfazer algo?
+
+00:00:07.452 --> 00:00:10.354
+E se eu quiser apagar
+os últimos commits,
+
+00:00:10.396 --> 00:00:13.345
+pois sei que jamais
+serão usados?
+
+00:00:13.387 --> 00:00:15.833
+É exatamente isso que veremos.
+
+00:00:15.875 --> 00:00:19.249
+Nesta aula, veremos
+o git commit --amend,
+
+00:00:19.291 --> 00:00:22.196
+o git revert e o git reset.
+
+00:00:22.238 --> 00:00:27.040
+Com git commit --amend,
+alteramos o commit mais recente.
+
+00:00:27.082 --> 00:00:30.370
+Isso para o caso de esquecermos
+de incluir um arquivo no commit
+
+00:00:30.412 --> 00:00:33.166
+ou se houver um erro de digitação
+na mensagem do commit.
+
+00:00:33.208 --> 00:00:37.377
+Com git revert, fornecermos o SHA
+do commit que desejamos reverter.
+
+00:00:37.419 --> 00:00:40.618
+As alterações realizadas no commit
+serão revertidas.
+
+00:00:40.660 --> 00:00:43.546
+As linhas que foram adicionadas
+serão removidas.
+
+00:00:43.588 --> 00:00:45.793
+Não se preocupe,
+veremos isso em detalhes.
+
+00:00:45.835 --> 00:00:49.232
+Com git reset,
+podemos deletar commits.
+
+00:00:49.274 --> 00:00:51.137
+Não podemos deletar
+qualquer commit,
+
+00:00:51.179 --> 00:00:53.034
+precisamos fazer isso
+em ordem,
+
+00:00:53.076 --> 00:00:55.775
+mas esse é um comando
+potencialmente perigoso,
+
+00:00:55.817 --> 00:00:58.972
+pois removeremos itens
+do repositório.
+
+00:00:59.014 --> 00:01:00.360
+Com esses novos comandos,
+
+00:01:00.402 --> 00:01:03.902
+você será capaz de encarar
+qualquer desafio do seu trabalho.
+
+00:01:03.944 --> 00:01:06.766
+Vejamos a flag
+git commit --amend.
+

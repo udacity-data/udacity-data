@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.284 --> 00:00:04.532
+Vimos a flag git commits --amend
+para reescrever ou atualizar
+
+00:00:04.574 --> 00:00:06.355
+o commit mais recente,
+
+00:00:06.397 --> 00:00:10.163
+vimos o comando git revert
+para desfazer um commit específico
+
+00:00:10.205 --> 00:00:14.872
+e vimos o comando git reset
+para reiniciar ou apagar alterações,
+
+00:00:14.914 --> 00:00:17.319
+mas tenha cuidado
+com este último.
+
+00:00:17.361 --> 00:00:22.079
+Saber como consertar erros
+me deu confiança para experimentar,
+
+00:00:22.121 --> 00:00:26.025
+espero que você se sinta assim agora
+que sabe como desfazer alterações.
+
